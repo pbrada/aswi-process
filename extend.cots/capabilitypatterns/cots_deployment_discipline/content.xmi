@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1">
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="-NxzytiwnnJK9yB57bhOsmw" name="beta_test_product,{293A215D-E3D2-47D9-9A2E-89431862EFDA}" guid="-NxzytiwnnJK9yB57bhOsmw">
+    <mainDescription>&lt;a id=&quot;Description&quot; name=&quot;Description&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    A beta test gives the product a controlled, real-world test, so that feedback from potential users can be used to shape&#xD;
+    the final product.&amp;nbsp; It also provides a preview of the next release to interested customers.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    It is most appropriate in situations where the product being built is unprecedented or where the product will be&#xD;
+    shrink-wrapped and made available for sale commercially.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Feedback from the Beta Program is treated as Stakeholder Requests and factored into the developing product features in&#xD;
+    subsequent iterations.&#xD;
+&lt;/p></mainDescription>
+    <keyConsiderations>&lt;a id=&quot;Timing&quot; name=&quot;Timing&quot;>&lt;/a>&lt;a id=&quot;Optionality&quot; name=&quot;Optionality&quot;>&lt;/a>&lt;a id=&quot;WorkGuidelines&quot;&#xD;
+name=&quot;WorkGuidelines&quot;>&lt;/a></keyConsiderations>
+    <usageGuidance>&lt;p>&#xD;
+    This work is generally performed in the construction and transition phases, although there may be situations where it&#xD;
+    is useful to perform it as early as the elaboration phase. It is typical for beta testing to be the primary focus for&#xD;
+    iterations in which it is conducted,&amp;nbsp; As such this activity will typically be preceded by integration and build&#xD;
+    activities focused on enabling the beta test work. This activity itself will typically begin part-way into the&#xD;
+    iteration and may continue until the end of the iteration.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    This&amp;nbsp;activity can be considered optional. It is most appropriate in situations where the product being built is&#xD;
+    unprecedented or where the product will be shrink-wrapped and made available for sale commercially.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Generally, products will either be beta tested or final acceptance tested&amp;nbsp;(at the installation site), but not&#xD;
+    both.&#xD;
+&lt;/p></usageGuidance>
+    <howtoStaff>&lt;a id=&quot;HowToStaff&quot; name=&quot;HowToStaff&quot;>&lt;/a> 
+&lt;p>
+    A deployment manager needs to be someone who is aware of the operational needs of the end user and capable of pulling
+    together all the items that go in to making the product. The deployment manager runs the beta test and, in the case of
+    &quot;shrink wrap&quot; products, deals with the manufacturers to ensure that adequate quality is achieved in the product.
+&lt;/p>
+&lt;p>
+    The deployment manager gets the product delivered and, as such, needs to be well versed in the required infrastructure
+    and user needs to ensure that the product is available for the users.
+&lt;/p></howtoStaff>
+  </org.eclipse.epf.uma:ActivityDescription>
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="-WBCFoTHCRzW9_zVeaqo1VA" name="package_product,{B089A6F0-53E7-4A54-9E5F-8BCCCE46E862}" guid="-WBCFoTHCRzW9_zVeaqo1VA">
+    <mainDescription>&lt;a id=&quot;Description&quot; name=&quot;Description&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    This activity packages the deployment unit, installation scripts, and user manuals for mass production, as in a&#xD;
+    consumer product.&#xD;
+&lt;/p></mainDescription>
+    <usageGuidance>&lt;p>&#xD;
+    This work is performed in iterations in which an executable release will be externally delivered, most typically where&#xD;
+    the chosen deployment method requires the creation of a &quot;shrink-wrapped&quot; product.&#xD;
+&lt;/p></usageGuidance>
+    <howtoStaff>&lt;a id=&quot;HowToStaff&quot; name=&quot;HowToStaff&quot;>&lt;/a> 
+&lt;p>
+    Apart from the software logistics people like the deployment manager, this&amp;nbsp;activity calls for the product
+    image-makers such as the technical &quot;copy&quot; writers and graphic artists to lend their talents to add to the product's
+    visual appeal as it competes for consumer attention. Also required is handing off of the product to manufacturing, who
+    will produce the product in massive quantities.
+&lt;/p></howtoStaff>
+  </org.eclipse.epf.uma:ActivityDescription>
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="-bloiHMyvvptBvMDkcz6A0g" name="produce_deployment_unit,{8D0B4C74-F70A-4BDC-B3C9-CA0FD95922B6}" guid="-bloiHMyvvptBvMDkcz6A0g">
+    <mainDescription>&lt;a id=&quot;Description&quot; name=&quot;Description&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    This activity produces the deployment unit.&amp;nbsp; The deployment unit consists of all the software and necessary&#xD;
+    accompanying work products&amp;nbsp;required to install and use the product.&amp;nbsp; The final product&amp;nbsp;is made up of the&#xD;
+    deployment unit, installation artifacts and product documentation.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Deployment units are created for beta tests, as well as for the final product.&amp;nbsp;&#xD;
+&lt;/p></mainDescription>
+    <usageGuidance>&lt;p>&#xD;
+    This work is primarily performed in the construction and transition phases, although it may start in the elaboration&#xD;
+    phase, especially where aspects of the deployment of the product are determined to involve significant architectural&#xD;
+    risk. This work typically begins mid-way through the iteration and may be repeated several times during the remainder&#xD;
+    of the iteration.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    This work is not considered optional, although it will differ in format, style and level of ceremony to suit the&#xD;
+    project context.&#xD;
+&lt;/p></usageGuidance>
+    <howtoStaff>&lt;a id=&quot;HowToStaff&quot; name=&quot;HowToStaff&quot;>&lt;/a>&lt;p>
+    This activity relies on the skill set of described roles to create the product,&amp;nbsp; installation scripts, and
+    associated user support material, in a form that can be effectively delivered to the end users.
+&lt;/p></howtoStaff>
+  </org.eclipse.epf.uma:ActivityDescription>
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="-4i4j78SqT-riJf4HD2W6_Q" name="provide_access_to_download_site,{E2830C63-8132-4495-967A-93CAD98881D1}" guid="-4i4j78SqT-riJf4HD2W6_Q">
+    <mainDescription>&lt;a id=&quot;Description&quot; name=&quot;Description&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    The appeal of the Internet as a software distribution channel is obvious. The product is entirely accessible through&#xD;
+    the software environment via browsers and Web sites. The challenge for the provider is to make sure the product is&#xD;
+    reliably available at all times to a global marketplace, even through varying conditions that could choke the host&#xD;
+    hardware and communication bandwidths.&#xD;
+&lt;/p></mainDescription>
+    <usageGuidance>&lt;p>&#xD;
+    While this work often begins in the construction phase, it isn't typically considered important until the transition&#xD;
+    phase. It will generally be done later in an iteration.&lt;br />&#xD;
+&lt;/p></usageGuidance>
+    <howtoStaff>&lt;a id=&quot;HowToStaff&quot; name=&quot;HowToStaff&quot;>&lt;/a> 
+&lt;p>
+    Setting up the hardware infrastructure to host the corporate Web presence is beyond the scope of a software development
+    process. However, the deployment manager needs to know how to add the product offering to the list of products
+    available over the Web and ensure that the product is available for purchase and delivery on demand.
+&lt;/p></howtoStaff>
+  </org.eclipse.epf.uma:ActivityDescription>
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="-3PXuO2tlPXOV3NS24jKVxw" name="plan_deployment,{9B5E6B08-625F-40DF-AA4E-0BD056C0553A}" guid="-3PXuO2tlPXOV3NS24jKVxw">
+    <mainDescription>&lt;a id=&quot;Description&quot; name=&quot;Description&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    Deployment planning requires a high degree of customer collaboration and preparation. A successful conclusion to a&#xD;
+    software project can be severely impacted by factors &lt;i>outside the scope of software development&lt;/i> such as the&#xD;
+    building, hardware infrastructure not being in place, and the staff being ill-prepared for changing to the new system.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    To ensure successful deployment and transition to the new system and ways of doing business, the Deployment Plan needs&#xD;
+    to address not only the deliverable software, but also the development of training material and system support material&#xD;
+    to ensure that end users can successfully use the delivered software product.&#xD;
+&lt;/p></mainDescription>
+    <usageGuidance>&lt;p>&#xD;
+    This work is performed early in each iteration, generally starting late in the construction phase and continuing&#xD;
+    through transition. It can begin as soon as iteration planning is reasonably complete for the iteration.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    This task is recommended whenever an executable release will be externally deployed outside the primary development&#xD;
+    team, either for the purposes of delivering the software to the end user, or for testing purposes.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    See the &lt;a href=&quot;#RelatedInformation&quot;>Related Information&lt;/a> section for additional guidance that will help you in&#xD;
+    performing this work.&lt;br />&#xD;
+&lt;/p></usageGuidance>
+    <howtoStaff>&lt;a id=&quot;HowToStaff&quot; name=&quot;HowToStaff&quot;>&lt;/a> 
+&lt;p>
+    A deployment manager needs to be someone who is aware of the operational needs of the end user and capable of pulling
+    together all the items that go into making the product. The deployment manager runs the beta test and, in the case of
+    &quot;shrink wrap&quot; products, deals with the manufacturers to ensure that adequate quality is achieved in the product.
+&lt;/p>
+&lt;p>
+    The deployment manager &quot;gets the product delivered&quot; and, therefore, needs to be well versed in the required
+    infrastructure and user needs to ensure that the product is available for the users.
+&lt;/p></howtoStaff>
+  </org.eclipse.epf.uma:ActivityDescription>
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="-C1y-aM8vStxHzDVwcL4IUA" name="develop_support_material,{3124AE63-F6A4-48E9-A517-E484845B9F09}" guid="-C1y-aM8vStxHzDVwcL4IUA">
+    <mainDescription>&lt;a id=&quot;Description&quot; name=&quot;Description&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    Support material covers the full range of information that will be required by the end-user to install, operate, use,&#xD;
+    and maintain the delivered system. It also includes training material for all of the various positions that will be&#xD;
+    required to effectively use the new system.&#xD;
+&lt;/p></mainDescription>
+    <usageGuidance>&lt;p>&#xD;
+    While this work might begin as early as the elaboration phase, it is generally conducted in construction and transition&#xD;
+    iterations. Within an iteration, it can start as soon as the first software build is produced.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Most software requires some level of support material to be provided with it. In exceptional cases, this material might&#xD;
+    be excluded from the deliverables in agreement with the project stakeholders.&#xD;
+&lt;/p></usageGuidance>
+    <howtoStaff>&lt;a id=&quot;HowToStaff&quot; name=&quot;HowToStaff&quot;>&lt;/a> 
+&lt;p>
+    Both the technical writer and course developer need to be articulate and adept at creating information, written or
+    otherwise, that is relevant from an end-user perspective.
+&lt;/p></howtoStaff>
+  </org.eclipse.epf.uma:ActivityDescription>
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="-v19_4zp_o5KIlQBQLqfOuQ" name="manage_acceptance_test_for_custom_install,_64Ee0DK4EdqHc6VRvq68Uw" guid="-v19_4zp_o5KIlQBQLqfOuQ">
+    <mainDescription>&lt;p>&#xD;
+    The Deployment Manager organizes the installation of the product on one or more Test Environment Configurations that&#xD;
+    represents an environment acceptable to the customer as specified in the Product Acceptance Plan. For acceptance&#xD;
+    testing for a custom install, this may actually be the production deployment environment itself.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    In some cases, the installation process itself may be subject to an acceptance test, as may any preceding hardware&#xD;
+    upgrades and configurations.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Once installed, the Tester typically runs through a preselected set of tests, usually based on a selected subset of the&#xD;
+    existing Test Suites, and determines the Test Results. The Deployment Manager and other stakeholders review the Test&#xD;
+    Results for anomalies. If there are &quot;show stoppers&quot;, the Deployment Manager raises Change Requests that require&#xD;
+    immediate attention and resolution, and may delay or postpone subsequent plans for deployment to a wider user base.&#xD;
+&lt;/p></mainDescription>
+    <usageGuidance>&lt;p>&#xD;
+    This work is generally performed in Transition, when the product is ready to release to the customer.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Note that when acceptance testing is performed, the formality of that testing will differ to suit the project&#xD;
+    context.&lt;br />&#xD;
+&lt;/p></usageGuidance>
+    <howtoStaff>A Deployment Manager needs to be someone who is aware of the operational needs of the end user and capable of enabling a
+valid assessment of the product in a suitable environment. Pulling together all the many items, events and resources
+required for a successful acceptance test requires exceptional planning and organizational skills.</howtoStaff>
+  </org.eclipse.epf.uma:ActivityDescription>
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="-h8SzIsI1-Af2bX1Fa_yh9A" name="manage_acceptance_test,_tASIQDK7EdqseP6pgOfC6g" guid="-h8SzIsI1-Af2bX1Fa_yh9A">
+    <mainDescription>&lt;p>&#xD;
+    The Deployment Manager organizes the installation of the product on one or more Test Environment Configurations that&#xD;
+    represents an environment acceptable to the customer as specified in the Product Acceptance Plan.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    In some cases, the installation process itself may be subject to an acceptance test, as may any preceding hardware&#xD;
+    upgrades and configurations.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Once installed, the Tester typically runs through a preselected set of tests, usually based on a selected subset of the&#xD;
+    existing Test Suites, and determines the Test Results. The Deployment Manager and other stakeholders review the Test&#xD;
+    Results for anomalies. If there are &quot;show stoppers&quot;, the Deployment Manager raises Change Requests that require&#xD;
+    immediate attention and resolution, and may delay or postpone subsequent plans for deployment to a wider user base.&#xD;
+&lt;/p></mainDescription>
+    <usageGuidance>&lt;p>&#xD;
+    This work is generally performed in Construction and Transition, typically starting later into construction. In some&#xD;
+    exceptional cases, acceptance testing may be useful in Elaboration iterations. Within an iteration, it is typically&#xD;
+    conducted later in the iteration on a more mature software build.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Note that when acceptance testing is performed, the formality of that testing will differ to suit the project context.&#xD;
+&lt;/p></usageGuidance>
+    <howtoStaff>A Deployment Manager needs to be someone who is aware of the operational needs of the end user and capable of enabling a
+valid assessment of the product in a suitable environment. Pulling together all the many items, events and resources
+required for a successful acceptance test requires exceptional planning and organizational skills.</howtoStaff>
+  </org.eclipse.epf.uma:ActivityDescription>
+  <org.eclipse.epf.uma:ProcessDescription xmi:id="-l9NpOdLscB26QfC1NtHdLA" name="deployment,{1A85DC2F-36E6-4D1C-ACF0-6658CE7108A0}" guid="-l9NpOdLscB26QfC1NtHdLA">
+    <mainDescription>&lt;p>&#xD;
+    To explain the work involved in the Deployment discipline, the activities and work products are organized into a&#xD;
+    capability pattern for the discipline.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Deployment is about making the software product available to the end-user and is the culmination of the software&#xD;
+    development effort.&amp;nbsp;&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Deployment planning (&lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../core.base_rup/capabilitypatterns/plan_deployment_C83CF0FB.html&quot;&#xD;
+    guid=&quot;{9B5E6B08-625F-40DF-AA4E-0BD056C0553A}&quot;>Activity: Plan Deployment&lt;/a>) starts early in the project lifecycle and&#xD;
+    addresses not only the production of the deliverable software, but also the development of training material and system&#xD;
+    support material to ensure that the end-user can successfully use the delivered software product.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Support material (&lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../core.base_rup/capabilitypatterns/develop_support_material_D8434BFC.html&quot;&#xD;
+    guid=&quot;{3124AE63-F6A4-48E9-A517-E484845B9F09}&quot;>Activity: Develop Support Material&lt;/a>)&amp;nbsp;covers the full range of&#xD;
+    information that will be required by the end-user to install, operate, use and maintain the delivered system. It also&#xD;
+    includes training material for all the various positions that will be required to effectively use the new system.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    The Deployment Discipline places a great emphasis on ensuring the product is well tested prior to its release to the&#xD;
+    customer base. The&amp;nbsp;activity Manage Acceptance Test&amp;nbsp;covers to two kinds of test environments. Firstly, the&#xD;
+    build needs to be sufficiently tested in the development test environment (&lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../core.base_rup/capabilitypatterns/manage_acceptance_test_3F0A2A1D.html&quot; guid=&quot;_tASIQDK7EdqseP6pgOfC6g&quot;>Activity:&#xD;
+    Manage Acceptance Test&lt;/a>), and then re-tested at the target site (&lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../core.base_rup/capabilitypatterns/manage_acceptance_test_for_custom_install_60E767DE.html&quot;&#xD;
+    guid=&quot;_64Ee0DK4EdqHc6VRvq68Uw&quot;>Activity: Manage Acceptance Test for Custom Install&lt;/a>). The 'test environment' should&#xD;
+    be an 'instance' of the target environment.&amp;nbsp;&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Once the product has been tested at the development site it needs to be prepared for delivery to the customer. The&#xD;
+    release can created for the purposes of beta-testing, a test deployment to the final users, or depending on it level of&#xD;
+    maturity for the final product. &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../core.base_rup/capabilitypatterns/produce_deployment_unit_C2DEB153.html&quot;&#xD;
+    guid=&quot;{8D0B4C74-F70A-4BDC-B3C9-CA0FD95922B6}&quot;>Activity: Produce Deployment Unit&lt;/a> describes the logistics of creating&#xD;
+    a product release that consists of the software, and the necessary accompanying work products required to effectively&#xD;
+    install and use it.&amp;nbsp;&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    A beta-program refers to the process used by an organization to solicit feedback from a subset of users on products&#xD;
+    that are under development. The feedback is used to augment the product. &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../core.base_rup/capabilitypatterns/beta_test_product_854E72BD.html&quot;&#xD;
+    guid=&quot;{293A215D-E3D2-47D9-9A2E-89431862EFDA}&quot;>Activity: Beta Test Product&lt;/a>&amp;nbsp;describes the activities to enable&#xD;
+    iterative deployment of a product, and systematic customer engagement in creating the final product.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    For 'shrink wrap' software, &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../core.base_rup/capabilitypatterns/package_product_7DE5CFD8.html&quot;&#xD;
+    guid=&quot;{B089A6F0-53E7-4A54-9E5F-8BCCCE46E862}&quot;>Activity: Package Product&lt;/a>&amp;nbsp;describes the activities to take the&#xD;
+    software product, installation scripts and user manuals, and package them for mass production like any other consumer&#xD;
+    product.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    You could have your software installed for you by the developing contractor, or you could buy the software over the&#xD;
+    counter, or download it over the internet. &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../core.base_rup/capabilitypatterns/provide_access_to_download_site_CA76125A.html&quot;&#xD;
+    guid=&quot;{E2830C63-8132-4495-967A-93CAD98881D1}&quot;>Activity: Provide Access to Download Site&lt;/a>&amp;nbsp;refers to the product&#xD;
+    being made available for purchase and download over the internet as a software distribution channel.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;br />&#xD;
+     &amp;nbsp;&#xD;
+&lt;/p></mainDescription>
+    <usageNotes>&lt;h4>&#xD;
+    Decide How to Perform the Workflow&#xD;
+&lt;/h4>&#xD;
+&lt;p>&#xD;
+    The following decisions should be made regarding the Deployment discipline's workflow:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Decide how to perform the workflow by looking at the activities in this workflow. Study the diagram with its &lt;a&#xD;
+        class=&quot;elementLink&quot; href=&quot;./../../core.base_rup/guidances/termdefinitions/guard_condition_E3068D2.html&quot;&#xD;
+        guid=&quot;_yJ5m89nmEdmO6L4XMImrsA&quot;>guard condition&lt;/a>s and the guidelines. Decide which activities to perform and in&#xD;
+        which order.&amp;nbsp;The most significant decision you need to make is what kind of deployment you will do: &#xD;
+        &lt;ul>&#xD;
+            &lt;li>&#xD;
+                Custom install&#xD;
+            &lt;/li>&#xD;
+            &lt;li>&#xD;
+                'Shrink wrap' product offering&#xD;
+            &lt;/li>&#xD;
+            &lt;li>&#xD;
+                Access to software over the internet&#xD;
+            &lt;/li>&#xD;
+        &lt;/ul>&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Decide what parts of the Deployment activities to perform. The following are some parts that are more or less&#xD;
+        optional and can be introduced relatively independently from the rest.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;div align=&quot;center&quot;>&#xD;
+    &lt;table&#xD;
+    style=&quot;BORDER-RIGHT: rgb(128,128,128) 1px solid; BORDER-TOP: rgb(128,128,128) 1px solid; BORDER-LEFT: rgb(128,128,128) 1px solid; BORDER-BOTTOM: rgb(128,128,128) 1px solid&quot;&#xD;
+     cellspacing=&quot;0&quot; bordercolordark=&quot;#808080&quot; cellpadding=&quot;4&quot; width=&quot;85%&quot; bordercolorlight=&quot;#808080&quot; border=&quot;1&quot;>&#xD;
+        &lt;tbody>&#xD;
+            &lt;tr>&#xD;
+                &lt;th scope=&quot;col&quot; align=&quot;middle&quot; width=&quot;25%&quot;>&#xD;
+                    &lt;p class=&quot;tableheading&quot;>&#xD;
+                        Part of workflow&#xD;
+                    &lt;/p>&#xD;
+                &lt;/th>&#xD;
+                &lt;th align=&quot;middle&quot; width=&quot;75%&quot;>&#xD;
+                    &lt;p class=&quot;tableheading&quot; scope=&quot;col&quot;>&#xD;
+                        Comments&#xD;
+                    &lt;/p>&#xD;
+                &lt;/th>&#xD;
+            &lt;/tr>&#xD;
+            &lt;tr>&#xD;
+                &lt;td width=&quot;25%&quot;>&#xD;
+                    Developing end-user materials&#xD;
+                &lt;/td>&#xD;
+                &lt;td width=&quot;75%&quot;>&#xD;
+                    This includes &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+                    href=&quot;./../../core.base_rup/roles/rup_technical_writer_220AF1A5.html&quot;&#xD;
+                    guid=&quot;{DB243660-A480-47E5-B082-F3F8222B7A18}&quot;>Role: Technical Writer&lt;/a>, &lt;a&#xD;
+                    class=&quot;elementLinkWithType&quot; href=&quot;./../../core.base_rup/tasks/develop_end_user_support_materials_E46AC109.html&quot;&#xD;
+                    guid=&quot;{7732A646-764A-41F5-8F20-C7418041D481}&quot;>Task: Develop Support Materials&lt;/a>, and &lt;a&#xD;
+                    class=&quot;elementLinkWithType&quot; href=&quot;./../../core.base_rup/workproducts/rup_support_material_F6EEF661.html&quot;&#xD;
+                    guid=&quot;{84C28309-4BB7-4243-8760-1B40C537A175}&quot;>Artifact: User Support Material&lt;/a>.&amp;nbsp;&#xD;
+                &lt;/td>&#xD;
+            &lt;/tr>&#xD;
+            &lt;tr>&#xD;
+                &lt;td width=&quot;25%&quot;>&#xD;
+                    Developing training materials&#xD;
+                &lt;/td>&#xD;
+                &lt;td width=&quot;75%&quot;>&#xD;
+                    This includes &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+                    href=&quot;./../../core.base_rup/roles/rup_course_developer_2071DA6D.html&quot;&#xD;
+                    guid=&quot;{BC76E16E-C63B-4195-9BEF-4BCFF01EED76}&quot;>Role: Course Developer&lt;/a>, &lt;a&#xD;
+                    class=&quot;elementLinkWithType&quot; href=&quot;./../../core.base_rup/tasks/develop_training_materials_FD8BB380.html&quot;&#xD;
+                    guid=&quot;{A1AA5FDB-9096-438C-A4CF-096496ED3663}&quot;>Task: Develop Training Materials&lt;/a>, and &lt;a&#xD;
+                    class=&quot;elementLinkWithType&quot; href=&quot;./../../core.base_rup/workproducts/rup_training_materials_AFBA1A46.html&quot;&#xD;
+                    guid=&quot;{F4612E56-C8DC-40AA-91C0-C6FA974D3D6E}&quot;>Artifact: Training Materials&lt;/a>.&amp;nbsp;&amp;nbsp;&#xD;
+                &lt;/td>&#xD;
+            &lt;/tr>&#xD;
+            &lt;tr>&#xD;
+                &lt;td width=&quot;25%&quot;>&#xD;
+                    Beta testing&#xD;
+                &lt;/td>&#xD;
+                &lt;td width=&quot;75%&quot;>&#xD;
+                    Only introduce&amp;nbsp;&lt;a class=&quot;elementLinkWithType&quot;&#xD;
+                    href=&quot;./../../core.base_rup/capabilitypatterns/beta_test_product_854E72BD.html&quot;&#xD;
+                    guid=&quot;{293A215D-E3D2-47D9-9A2E-89431862EFDA}&quot;>Activity: Beta Test Product&lt;/a> if you do beta&#xD;
+                    testing.&amp;nbsp;&#xD;
+                &lt;/td>&#xD;
+            &lt;/tr>&#xD;
+        &lt;/tbody>&#xD;
+    &lt;/table>&lt;br />&#xD;
+&lt;/div>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Decide when, during the project lifecycle, to introduce each part of the workflow.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></usageNotes>
+  </org.eclipse.epf.uma:ProcessDescription>
+</xmi:XMI>

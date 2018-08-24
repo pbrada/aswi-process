@@ -1,0 +1,433 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2// EN">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>UML Profile for Software Services</title>
+<link type="text/css" href="../../../../css/default.css" rel="StyleSheet">
+<script src="../../../../scripts/contentpage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					backPath = './../../';
+				</script>
+</head>
+<body>
+<h1><a name="Top">UML 2.0 Profile for Software Services</a></h1>
+<p>By <a href="mailto:skjohn@us.ibm.com">Simon Johnston</a>, Architect, IBM Corporation.</p>
+<h2><a name="Abstract">Abstract</a></h2>
+<p>This paper describes the UML Profile for Software Services, a profile for UML 
+  2.0 which allows for the modeling of services, SOA and service-oriented solutions. 
+  The aim of the profile is to provide a common language for describing services 
+  that covers a number of activities through the development lifecycle and also 
+  provides views to different stakeholders. So, for example, the profile provides 
+  capabilities for the architect to map out services early in the lifecycle using 
+  logical partitions to describe the entire enterprise-wide service portfolio. 
+  This view is further detailed by designers who develop the service specifications, 
+  both structural and behavioral that act as the contracts between the service 
+  clients and implementers. The message view provides the ability for designers 
+  to reuse information models for common service data definitions.</p>
+<p>The profile has been implemented in Rational Software Architect and used successfully 
+  in developing models of complex customer scenarios and also in educating people 
+  to the concerns relevant to development of service-oriented solutions.</p>
+<h2><a name="Overview">Overview of the UML Profile for Software Services</a></h2>
+<h3><a name="OV_Conceptual">Conceptual Model</a></h3>
+<p>The following diagram is a model showing the concepts important in modeling 
+  services. As you can see the number of concepts is relatively small and should 
+  be reasonably familiar to anyone having worked on service-oriented solutions. 
+  Note, however that although the profile is a realization of this model a number 
+  of the concepts are not explicit stereotypes in the profile. For example there 
+  is no stereotype for operation or for protocol as these are existing notions 
+  in the UML 2.0 that the profile reuses without any ambiguity or further constraint.</p>
+<p align="center"><img src="profile-01.gif" alt="Diagram is described in the textual content." width="616" height="415" border="0"></p>
+<h3><a name="OV_Subset">Identified Subset of UML 2.0</a></h3>
+<p>The following table lists the elements of the UML 2.0 meta model that are
+used as meta classes for stereotypes in the UML Profile.</p>
+<table border="1" width="100%">
+  <tbody>
+    <tr>
+      <th width="30%">UML 2.0 Meta class</th>
+      <th width="70%">Stereotypes</th>
+    </tr>
+    <tr>
+      <td width="30%">Class</td>
+      <td width="70%">Message, Service Partition, Service Provider</td>
+    </tr>
+    <tr>
+      <td width="30%">Classifier</td>
+      <td width="70%">Service Consumer</td>
+    </tr>
+    <tr>
+      <td width="30%">Collaboration</td>
+      <td width="70%">Service Collaboration</td>
+    </tr>
+    <tr>
+      <td width="30%">Connector</td>
+      <td width="70%">Service Channel</td>
+    </tr>
+    <tr>
+      <td width="30%">Interface</td>
+      <td width="70%">Service Specification</td>
+    </tr>
+    <tr>
+      <td width="30%">Port</td>
+      <td width="70%">Service, Service Gateway</td>
+    </tr>
+    <tr>
+      <td width="30%">Property</td>
+      <td width="70%">Message Attachment</td>
+    </tr>
+  </tbody>
+</table>
+<h2><a name="Profile">The Profile Itself</a></h2>
+<p>The following (clickable) diagram is a UML 2.0 profile diagram, it demonstrates
+the actual details of the profile with each stereotype, its meta class
+using the extension notation (filled arrow head).You can also see some
+of the constraints in the model, particularly those co-constraints between
+profile elements.</p>
+<p align="center"><img src="profile-02.gif" alt="Diagram is described in the textual content." width="682" height="420" border="0" usemap="#profile-02"></p>
+<map name="profile-02">
+  <area shape="rect" coords="7,74,101,116" href="#P_Message" alt="Message">
+  <area shape="rect" coords="133,74,238,112" href="#P_Service_Partition" alt="Service Partition">
+  <area shape="rect" coords="267,73,389,127" href="#P_Service_Provider" alt="Service Provider">
+  <area shape="rect" coords="456,73,530,113" href="#P_Service" alt="Service">
+  <area shape="rect" coords="555,73,661,112" href="#P_Service_Gateway" alt="Service Gateway">
+  <area shape="rect" coords="2,296,128,343" href="#P_Message_Attachment" alt="Message Attachment">
+  <area shape="rect" coords="131,299,246,339" href="#P_Service_Consumer" alt="Service Consumer">
+  <area shape="rect" coords="276,298,405,339" href="#P_Service_Collaboration" alt="Service Collaboration">
+  <area shape="rect" coords="428,299,533,341" href="#P_Service_Channel" alt="Service Channel">
+  <area shape="rect" coords="556,299,683,338" href="#P_Service_Specification" alt="Service Specification">
+</map>
+<p class=MsoBodyTextIndent>The following sections outline the elements of the UML 2.0 profile as it
+is currently defined. Each section outlines an individual stereotype; the
+details of each specify its meta class, properties and any constraints
+which should be applied when using the profile.</p>
+
+<h3><a name="P_Message">stereotype Message</a></h3>
+<h4>Extends</h4>
+<p>Class</p>
+<h4>Semantics</h4>
+<p class=MsoBodyTextIndent>A message represents the concept as defined in the 
+  WSDL specification, i.e. a container for actual data which has meaning to the 
+  service and the consumer. A message may not have operations, it may have properties 
+  and associations to other classes (one assumes classes of some domain model). 
+  A message stereotype has a property to denote its assumed encoding form (i.e. 
+  <code>SOAP-literal</code>, <code>SOAP-rpc</code>, <code>ASN.1</code>, etc.).</p>
+<p>The use of this element may be optional in a tool for two reasons. Firstly
+the modeler may simply wish to use elements from a domain model directly
+as the parameters to an operation rather than specifying a message. Secondly
+the modeler may wish to use the convention of specifying a set of input
+and output messages on an operation, in which case the modeling tool would
+have to construct an input and output message matching the parameters when
+generating service descriptions in WSDL.</p>
+<h4>Properties</h4>
+<table border="1" width="100%">
+  <tbody>
+    <tr>
+      <th width="20%">Kind</th>
+      <th width="20%">Name</th>
+      <th width="20%">Type</th>
+      <th width="40%">Description</th>
+    </tr>
+    <tr>
+      <td width="20%" valign="top" align="left">Property</td>
+      <td width="20%" valign="top" align="left">encoding</td>
+      <td width="20%" valign="top" align="left">String</td>
+      <td width="40%" valign="top" align="left">Denotes the platform encoding mechanism to use in generating the schema
+      for the message; examples might be <code>SOAP-RPC, Doc-Literal, ASN.1</code>, and so on.
+</td>
+    </tr>
+  </tbody>
+</table>
+<h4>Notation</h4>
+<p><img src="soa_message_48.gif" alt="Message Notation" width="48" height="48" border="0"></p>
+<h4>Constraints</h4>
+<ul>
+  <li>Shall not have any owned operations.
+  <li>Shall not have any owned behaviors.
+  <li>All owned properties shall be public.
+</ul>
+<h3><a name="P_Message_Attachment">stereotype Message Attachment</a></h3>
+<h4>Extends</h4>
+<p>Property</p>
+<h4>Semantics</h4>
+<p class=MsoBodyTextIndent>This stereotype is used to denote that <i>some component of a messages is an attachment to it</i> (as opposed to a direct part of the message itself). In general this is not likely to be used greatly in higher level design activities, but for many processes attached data is important to differentiate from embedded message data. For example, a catalog service may return general product details as a part of the structured message but images as attachments to the message; this also allows us to denote that the encoding of the images is binary (as opposed to the textual encoding of the main message).</p>
+
+<h4>Properties</h4>
+<table border="1" width="100%">
+  <tbody>
+    <tr>
+      <th width="20%" valign="top">Kind</th>
+      <th width="20%" valign="top">Name</th>
+      <th width="20%" valign="top">Type</th>
+      <th width="40%" valign="top">Description</th>
+    </tr>
+    <tr>
+      <td width="20%" valign="top">Property</td>
+      <td width="20%" valign="top">encoding</td>
+      <td width="20%" valign="top">String</td>
+      <td width="40%" valign="top">Denotes the platform encoding mechanism to use in generating the schema
+      for the message; examples might be <code>SOAP-RPC, Doc-Literal, ASN.1</code>, and so on.
+</td>
+    </tr>
+  </tbody>
+</table>
+<h4>Notation</h4>
+<p><img src="soa_msg_attachment_48.gif" alt="Message Attachment Notation" width="48" height="48" border="0"></p>
+<h4>Constraints</h4>
+<ul>
+  <li>Shall only be used on properties owned by classes stereotyped as &lt;&lt;Message&gt;&gt;..
+</ul>
+  <h3><a name="P_Service">stereotype Service</a></h3>
+<h4>Extends</h4>
+<p>Port</p>
+<h4>Semantics</h4>
+<p class=MsoBodyTextIndent>The service model element provides the end-point for 
+  service interaction (in web service terminology) whereas the definition of these 
+  interactions are a part of the service specification. In the model a service 
+  not only identifies the provided interface, but may also identify required interfaces 
+  (such as callback interfaces). A service has an additional property that denotes 
+  the binding to be used, such as <code>SOAP-HTTP</code>, <code>SOAP-JMS</code>, 
+  and so on.</p>
+
+<h4>Properties</h4>
+<p>None.</p>
+<h4>Notation</h4>
+<p><img src="soa_service_48.gif" alt="Service Notation" width="48" height="48" border="0"></p>
+<h4>Constraints</h4>
+<ul>
+  <li>Shall only be used on a Class stereotyped as &lt;&lt;Service Provider&gt;&gt;.
+  <li>Shall be typed by an Interface stereotyped as &lt;&lt;Service Specification&gt;&gt;.
+</ul>
+  <h3><a name="P_Service_Channel">stereotype Service Channel</a></h3>
+<h4>Extends</h4>
+<p>Connector</p>
+<h4>Semantics</h4>
+<p class=MsoBodyTextIndent>A channel represents <i>the communication path between two services</i>. It is important to note that interaction may occur over a channel, but the channel does not represent any particular interaction. In the web services world, each service denotes the binding(s) associated with it (so that a client may access it). In a modeling profile, you denote binding either on the communication between services or between a service and consumers. In this way, you can be flexible in understanding the binding requirements .</p>
+
+<h4>Properties</h4>
+<table border="1" width="100%">
+  <tbody>
+    <tr>
+      <th width="20%" valign="top">Kind</th>
+      <th width="20%" valign="top">Name</th>
+      <th width="20%" valign="top">Type</th>
+      <th width="40%" valign="top">Description</th>
+    </tr>
+    <tr>
+      <td width="20%" valign="top">Property</td>
+      <td width="20%" valign="top">binding</td>
+      <td width="20%" valign="top">String</td>
+      <td width="40%" valign="top">Denotes the platform binding mechanism to use in generating the service binding in WSDL; examples might be <code>SOAP-RPC</code>, <code>SOAP-Doc</code>, <code>HTTP-Get</code>, and so on.</td>
+    </tr>
+  </tbody>
+</table>
+<h4>Notation</h4>
+<p><img src="soa_svc_channel_48.gif" alt="Service Channel Notation" width="48" height="48" border="0"></p>
+<h4>Constraints</h4>
+<ul>
+  <li>At least one end of the connector shall connect to a port stereotyped as
+  &lt;&lt;Service&gt;&gt;.
+  <li>At most one end of the connector may connect to a port stereotyped as &lt;&lt;Service
+  Gateway&gt;&gt;, a class stereotyped as &lt;&lt;Service Provider&gt;&gt;
+  or classifier stereotyped as &lt;&lt;Service Consumer&gt;&gt;.
+</ul>
+<h3><a name="P_Service_Collaboration">stereotype Service Collaboration</a></h3>
+<p>Collaboration</p>
+<h4>Extends</h4>
+<h4>Semantics</h4>
+<p class=MsoBodyTextIndent>A service collaboration is a <i>way of specifying the implementation of a service as a collaboration of
+other services</i>. From a web services point of view this corresponds to the use of BPEL4WS
+in specifying service implementation. So, this means that a service collaboration
+is used as the behavior of a service and, if it is intended to generate
+to a language such as BPEL -- it may have other implementation-specific
+constraints.</p>
+
+<h4>Properties</h4>
+<table border="1" width="100%">
+  <tbody>
+    <tr>
+      <th width="20%" valign="top">Kind</th>
+      <th width="20%" valign="top">Name</th>
+      <th width="20%" valign="top">Type</th>
+      <th width="40%" valign="top">Description</th>
+    </tr>
+    <tr>
+      <td width="20%" valign="top">Property</td>
+      <td width="20%" valign="top">Binding</td>
+      <td width="20%" valign="top">String</td>
+      <td width="40%" valign="top">Denotes the platform binding mechanism to use in generating the collaboration
+      as a process choreography; examples might be &quot;BPEL&quot;, &quot;WSFL&quot;,
+      etc.</td>
+    </tr>
+  </tbody>
+</table>
+<h4>Notation</h4>
+<p><img src="soa_svc_collaboration_48.gif" alt="Service Collaboration Notation" width="48" height="48" border="0"></p>
+<h4>Constraints</h4>
+<ul>
+  <li>Collaboration participants shall be either &lt;&lt;ServiceConsumer&gt;&gt;, 
+    &lt;&lt;ServiceProvider&gt;&gt; or &lt;&lt;ServiceSpecification&gt;&gt; elements. 
+</ul>
+<h3><a name="P_Service_Consumer">stereotype Service Consumer</a></h3>
+<p>Classifier</p>
+<h4>Extends</h4>
+<h4>Semantics</h4>
+<p class=MsoBodyTextIndent><i>Any</i> classifier (class, component, ...) <i>may 
+  act as the consumer of a service</i>, and that includes another service. While 
+  this stereotype is most definitely optional it may be useful in identifying 
+  elements of a model -- that are not services themselves -- as <i>clients of 
+  services</i>. On the other hand it may be overhead and not used.</p>
+
+<h4>Properties</h4>
+<p>None.</p>
+<h4>Notation</h4>
+<p><img src="soa_svc_consumer_48.gif" alt="Service Consumer Notation" width="48" height="48" border="0"></p>
+<h4>Constraints</h4>
+<p>None.</p>
+<h3><a name="P_Service_Gateway">stereotype Service Gateway</a></h3>
+<h4>Extends</h4>
+<p>Port</p>
+<h4>Semantics</h4>
+<p class=MsoBodyTextIndent>A service gateway looks like a service but is <i>only available for use on partitions and not service providers</i>. A gateway acts as a proxy service and can be used to mediate protocols
+or denote the interface available to a partition. For example, we might
+denote that although a number of services are implemented within a partition
+-- only some are available for use outside the partition, and therefore
+gateways are provided for these services. This disallows other services
+or partitions from communicating to services that are not exposed via gateways.</p>
+
+<h4>Properties</h4>
+<p>None.</p>
+<h4>Notation</h4>
+<p><img src="soa_svc_gateway_48.gif" alt="Service Gateway Notation" width="48" height="48" border="0"></p>
+<h4>Constraints</h4>
+<ul>
+  <li>Shall only be used on a Class stereotyped as &lt;&lt;Service Partition&gt;&gt;.
+  <li>Shall be typed by an Interface stereotyped as &lt;&lt;Service Specification&gt;&gt;.
+</ul>
+  <h3><a name="P_Service_Partition">stereotype Service Partition</a></h3>
+<h4>Extends</h4>
+<p>Class</p>
+<h4>Semantics</h4>
+<p class=MsoBodyTextIndent>A partition represents <i>some logical or physical boundary of the system</i>. It is optional to model partitions but useful. For example partitions
+could be used to represent the web, business and data tiers of a traditional
+n-tier application. Partitions might also be used to denote more physical
+boundaries (such as my primary data center, secondary site, customer site,
+partners and so on), in which case the crossing of partitions may have
+particular constraints for security, allowed protocols, bandwidth and so
+on. </p>
+<p class=MsoBodyTextIndent>A partition may only have properties that represent 
+  nested parts, be they services or other partitions. Note that <i>this is a constraint</i> 
+  - no other elements may currently be represented in a partition.</p>
+<p>A partition also has the notion of being &quot;strict&quot;, if a partition 
+  denotes that all communication between it and other partitions must be directed 
+  through typed gateways then it is said to be a <i>strict partition</i>.</p>
+<h4>Properties</h4>
+<table border="1" width="100%">
+  <tbody>
+    <tr>
+      <th width="20%" valign="top">Kind</th>
+      <th width="20%" valign="top">Name</th>
+      <th width="20%" valign="top">Type</th>
+      <th width="40%" valign="top">Description</th>
+    </tr>
+    <tr>
+      <td width="20%" valign="top">Property</td>
+      <td width="20%" valign="top">Classifier</td>
+      <td width="20%" valign="top">String</td>
+      <td width="40%" valign="top">A classification name, to denote the namespace scope of this partition.</td>
+    </tr>
+  </tbody>
+</table>
+<h4>Notation</h4>
+<p><img src="soa_svc_partition_48.gif" alt="Service Partition Notation" width="48" height="48" border="0"></p>
+<h4>Constraints</h4>
+<ul>
+  <li>Shall not have any owned properties.
+  <li>Shall not have any owned operations.
+  <li>Shall not have any owned behaviors.
+  <li>Any owned Part shall be either &lt;&lt;Service Consumer&gt;&gt;, &lt;&lt;Service
+  Provider&gt;&gt; or &lt;&lt;Service Specification&gt;&gt; elements.
+</ul>
+  <h3><a name="P_Service_Provider">stereotype Service Provider</a></h3>
+<h4>Extends</h4>
+<p>Class</p>
+<h4>Semantics</h4>
+<p class=MsoBodyTextIndent>The Service Provider is a <i>software element that provides one or more services</i>. In modeling terms one would most usually expect to see a UML component here, however such a restriction seems arbitrary and so the metaclass is noted as Class for more flexibility. A service provider has a property that captures information about its location although the meaning of this is implementation dependent. The Class acting as the service provider may not expose any attributes or operations directly, only public ports may be provided (stereotyped as service) and these are typed by service specifications.</p>
+<p>The location property, while implementation/platform specific is useful
+in generating service endpoint names. For example with WSDL the location
+may be <code>http://svc.myco.com/</code> and a service might be called <code>CustInfo</code>, in which case the endpoint name for the service could be generated as
+<code>http://svc.myco.com/CustInfo</code>.</p>
+<h4>Properties</h4>
+<table border="1" width="100%">
+  <tbody>
+    <tr>
+      <th width="20%" valign="top">Kind</th>
+      <th width="20%" valign="top">Name</th>
+      <th width="20%" valign="top">Type</th>
+      <th width="40%" valign="top">Description</th>
+    </tr>
+    <tr>
+      <td width="20%" valign="top">Property</td>
+      <td width="20%" valign="top">allowedBindings</td>
+      <td width="20%" valign="top">String</td>
+      <td width="40%" valign="top">Denotes the allowed platform binding mechanism a channel may use in connecting to the service; examples might be <code>SOAP-RPC</code>, <code>SOAP-Doc</code>, <code>HTTP-Get</code>, and so on.</td>
+    </tr>
+    <tr>
+      <td width="20%" valign="top">Property</td>
+      <td width="20%" valign="top">location</td>
+      <td width="20%" valign="top">String</td>
+      <td width="40%" valign="top">The location of the provider, this may be used by generators to create endpoint names. </td>
+    </tr>
+  </tbody>
+</table>
+<h4>Notation</h4>
+<p><img src="soa_svc_provider_48.gif" alt="Service Provider Notation" width="48" height="48" border="0"></p>
+<h4>Constraints</h4>
+<ul>
+  <li>Shall not have any owned properties.
+  <li>Shall not have any owned operations.
+  <li>Shall not have any owned behaviors.
+  <li>Any owned Port shall be stereotyped &lt;&lt;Service&gt;&gt;.
+</ul>
+  <h3><a name="P_Service_Specification">stereotype Service Specification</a></h3>
+<h4>Extends</h4>
+<p>Interface</p>
+<h4>Semantics</h4>
+<p class=MsoBodyTextIndent>The use of an interface <i>denotes a set of operations provided by a service</i>. Note that a service may implement more than one interface. By convention
+it is possible to attach a protocol state machine or UML 2.0 Collaboration
+to such a specification to denote the order of invocation of operations
+on a service specification. With such a behavioral specification any implementing
+service can be validated against not only a static but dynamic specification
+of its structure and behavior. Note that the service specification may
+only provide public operations.</p>
+
+<h4>Properties</h4>
+<table border="1" width="100%">
+  <tbody>
+    <tr>
+      <th width="20%" valign="top">Kind</th>
+      <th width="20%" valign="top">Name</th>
+      <th width="20%" valign="top">Type</th>
+      <th width="40%" valign="top">Description</th>
+    </tr>
+    <tr>
+      <td width="20%" valign="top">Property</td>
+      <td width="20%" valign="top">published</td>
+      <td width="20%" valign="top">Boolean</td>
+      <td width="40%" valign="top">This property denotes whether the service is assumed to be published into
+      a service repository; this is a different notion from the public/private
+      property provided by UML.</td>
+    </tr>
+  </tbody>
+</table>
+<h4>Notation</h4>
+<p><img src="soa_svc_specification_48.gif" alt="Service Specification Notation" width="48" height="48" border="0"></p>
+<h4>Constraints</h4>
+<ul>
+  <li>Shall not have any owned properties.
+  <li>All operations shall be marked as &quot;public&quot;.
+  <li>May only be used as the type for a Port stereotyped as &lt;&lt;Service&gt;&gt;
+  or &lt;&lt;Service Gateway&gt;&gt;.
+</ul>
+<div align="left">
+<address><font size="-1">&copy; Copyright IBM Corp. 2005. All Rights Reserved.</font></address>
+</div>
+</body>
+</html>

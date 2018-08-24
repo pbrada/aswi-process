@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_syNQENoTEdmCj7Yn9Ev4rg" name="cots_perform_data_migration,{824ABA0E-BEC0-456D-9833-50781300B274}" guid="_syNQENoTEdmCj7Yn9Ev4rg" version="7.1.0">
+  <sections xmi:id="_tn-acNoTEdmCj7Yn9Ev4rg" name=" Extract, Transform, and Migrate Source Data to Target Data " guid="_tn-acNoTEdmCj7Yn9Ev4rg">
+    <sectionDescription>&lt;p>&#xD;
+    Using the &lt;a class=&quot;elementlink&quot;&#xD;
+    href=&quot;./../../extend.cots/workproducts/cots_data_migration_specification_CB88B6AD.html&quot;&#xD;
+    guid=&quot;{DDBF46D5-6238-4897-AA3B-2386C5861361}&quot;>Data Migration Specification&lt;/a>, &lt;a&#xD;
+    href=&quot;./../../core.base_rup/workproducts/rup_test_plan_53712941.html&quot; guid=&quot;{B95CA9FA-A00E-4C6C-AA16-133297812CC0}&quot;>Test&#xD;
+    Plan&lt;/a>, and &lt;a class=&quot;elementlink&quot; href=&quot;./../../core.base_rup/workproducts/rup_test_strategy_C1677B8.html&quot;&#xD;
+    guid=&quot;{DC3E85E6-C5A9-4AC6-8DDF-E2CF2CB0573E}&quot;>Test Strategy&lt;/a> as your guide:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Extract source data&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Transform source data&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Migrate transformed data&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>&#xD;
+    To successfully perform this step, the &lt;a class=&quot;presentationname&quot;&#xD;
+    href=&quot;./../../extend.cots/roles/cots_implementer_A21B2BF1.html&quot;&#xD;
+    guid=&quot;{266D6A6A-3E9B-4C68-BEDA-0A4B22E89769}&quot;>cots_implementer&lt;/a> needs to work with a &lt;a class=&quot;elementlink&quot;&#xD;
+    href=&quot;./../../extend.bus_model/roles/rup_business_designer_30BD5E18.html&quot; guid=&quot;{75C2C53E-AAB7-48F1-8CF6-ABA55D1C3469}&quot;>Business&#xD;
+    Designer&lt;/a> possessing an intimate knowledge of the data that needs to be migrated and a &lt;a class=&quot;elementlink&quot;&#xD;
+    href=&quot;./../../core.base_rup/roles/rup_system_analyst_C3C9C9AC.html&quot; guid=&quot;{F1F206DF-3AA0-4AC0-92EF-8E4A01B6C5B5}&quot;>System&#xD;
+    Analyst&lt;/a> with knowledge of both the source and target system data.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Ideally, the completion of data migration should immediately precede the start of production running of the system.&#xD;
+    However, when the data is very volatile or very large or when the validation of the migration results is a lengthy&#xD;
+    process, amendments to the migrated data might be necessary. This is especially true where manual data has to be&#xD;
+    collected, verified, and then entered to the automated system; in these circumstances, data capture might take many&#xD;
+    months.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    In such cases, you need to plan and define the maintenance procedures to keep the migrated data up-to-date in any&#xD;
+    interim period between the completion of the data migration and the initiation of production running. These procedures&#xD;
+    need to strike a balance between economy (they will not normally be in use for very long) and accuracy (they must not&#xD;
+    introduce errors into the converted data). They should also incorporate controls and audit trails as applicable.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Whenever possible, entry of manually converted data should be performed using the standard data entry processes of the&#xD;
+    new system. Occasionally, specially built conversion processes are unavoidable. A typical example is the bulk batch&#xD;
+    entry of data which would normally be entered interactively, but where volumes are too high to make interactive entry&#xD;
+    practical. The manually migrated data can be identified in the Data Mapping Table contained in the &lt;a&#xD;
+    class=&quot;elementlink&quot;&#xD;
+    href=&quot;./../../extend.cots/workproducts/cots_data_migration_specification_CB88B6AD.html&quot;&#xD;
+    guid=&quot;{DDBF46D5-6238-4897-AA3B-2386C5861361}&quot;>Data Migration Specification&lt;/a>.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_toW08NoTEdmCj7Yn9Ev4rg" name=" Validate and Verify Source Data and Target Data " guid="_toW08NoTEdmCj7Yn9Ev4rg">
+    <sectionDescription>&lt;a id=&quot;ValidateandVerifyData&quot; name=&quot;ValidateandVerifyData&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    After extracting, transforming and migrating data, as specified in the &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../extend.cots/workproducts/cots_data_migration_specification_CB88B6AD.html&quot;&#xD;
+    guid=&quot;{DDBF46D5-6238-4897-AA3B-2386C5861361}&quot;>Data Migration Specification&lt;/a>, you need to validate and verify the&#xD;
+    resulting data. A summary analysis of the results of the data migration will be captured in the &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../extend.cots/workproducts/cots_data_migration_evaluation_summary_85312F12.html&quot;&#xD;
+    guid=&quot;{918BE37B-AB78-4E9C-98DD-B9EDB7A40A6B}&quot;>Data Migration Evaluation Summary&lt;/a>.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Validation and verification is a critical step. Improperly converted data can lie dormant and cause invalid results in&#xD;
+    the new system and, often worse, invalid results that remain undetected. Careful validation is needed to prevent this&#xD;
+    time bomb effect. The risk is often heightened because of the volume of much of the data and because the project team&#xD;
+    might have only indirect control of the migration process.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    As with all testing tasks, you should first define the test strategy that you will use to validate and verify the&#xD;
+    migrated data. In addition to what is described in &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../core.base_rup/tasks/define_test_approach_structured_testing_1681E126.html&quot;&#xD;
+    guid=&quot;{8D3A7FB1-CCC3-4EE0-B312-74A7957F54F3}&quot;>define_test_approach_structured_testing&lt;/a>, the following considerations&#xD;
+    should be taken into account:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Data accuracy&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Testing of Automated Data Migration&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Control procedures&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&lt;br /></sectionDescription>
+  </sections>
+  <purpose>&lt;a id=&quot;Top&quot; name=&quot;Top&quot;>&lt;/a> &#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        To extract, transform, migrate, validate, and verify data has been correctly migrated based on the &lt;a&#xD;
+        class=&quot;elementLink&quot;&#xD;
+        href=&quot;./../../extend.cots/workproducts/cots_data_migration_specification_CB88B6AD.html&quot;&#xD;
+        guid=&quot;{DDBF46D5-6238-4897-AA3B-2386C5861361}&quot;>Data Migration Specification&lt;/a>&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></purpose>
+</org.eclipse.epf.uma:TaskDescription>

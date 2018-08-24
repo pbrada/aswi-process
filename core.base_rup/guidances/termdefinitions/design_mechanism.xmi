@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_yF4ClNnmEdmO6L4XMImrsA" name="design_mechanism,_yF4Ck9nmEdmO6L4XMImrsA" guid="_yF4ClNnmEdmO6L4XMImrsA" version="7.1.0">
+  <mainDescription>An &lt;i>&lt;a class=&quot;elementLink&quot; href=&quot;./../../../core.base_rup/guidances/termdefinitions/architectural_mechanism_8730DF1F.html&quot;&#xD;
+guid=&quot;_x7JZQ9nmEdmO6L4XMImrsA&quot;>architectural mechanism&lt;/a>&lt;/i> used during the design process, during the period in which&#xD;
+the details of the design are being worked out. They are related to associated &lt;i>&lt;a class=&quot;elementLinkWithUserText&quot;&#xD;
+href=&quot;./../../../core.base_rup/guidances/termdefinitions/analysis_mechanism_4DAA970A.html&quot; guid=&quot;_x6stV9nmEdmO6L4XMImrsA&quot;>analysis&#xD;
+mechanisms&lt;/a>&lt;/i>, of which they are additional refinements, and they may bind one or more architectural and design&#xD;
+patterns. There is not necessarily any difference in scale between the analysis mechanism and the design mechanism- it is&#xD;
+thus possible to speak of a persistence mechanism at the analysis level and the design level and mean the same thing, but&#xD;
+at a different level of refinement. A design mechanism assumes some details of the implementation environment, but it is&#xD;
+not tied to a specific implementation (as is an &lt;i>&lt;a class=&quot;elementLink&quot;&#xD;
+href=&quot;./../../../core.base_rup/guidances/termdefinitions/implementation_mechanism_59389269.html&quot;&#xD;
+guid=&quot;_yKfc2dnmEdmO6L4XMImrsA&quot;>implementation mechanism&lt;/a>&lt;/i>). For example, the analysis mechanism for inter-process&#xD;
+communication may be refined by several design mechanisms for interprocess communication (IPC): shared memory,&#xD;
+function-call-like IPC, semaphore-based IPC, and so on. Each design mechanism has certain strengths and weaknesses; the&#xD;
+choice of a particular design mechanism is determined by the characteristics of the objects using the mechanism.</mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

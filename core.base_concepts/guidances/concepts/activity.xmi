@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_zaqEMNnmEdmO6L4XMImrsA" name="activity,3.132140065969088E-305" guid="_zaqEMNnmEdmO6L4XMImrsA" changeDate="2005-10-27T01:00:09.167-0700" version="7.1.0">
+  <mainDescription>&lt;p>&#xD;
+    Activities are the fundamental concept for defining processes.&amp;nbsp; Activities define the breakdown as well as flow of&#xD;
+    work.&amp;nbsp; In other words, Activities can be nested into each other defining a breakdown structure of work or they can&#xD;
+    define predecessor relationships to other Activities defining a flow presented in Activity diagrams.&amp;nbsp; Activities&#xD;
+    can also contain references to Task, Roles, and Work Products called &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../../core.base_concepts/guidances/concepts/descriptor_FA0AB9FE.html&quot;&#xD;
+    guid=&quot;_5V9HEBUEEdqrUt4zetC1gg&quot;>Descriptor&lt;/a>.&amp;nbsp; Activities as well as Descriptors relate to timelines by allowing&#xD;
+    their instances to define start and/or end dates.&amp;nbsp; Further, they specify information relevant to the instantiation&#xD;
+    of work in project such as if an Activity shall be performed several times and if so if they can be performed in&#xD;
+    parallel (hasMultipleOccurrences attribute) or one after other (isRepeatable attribute).&amp;nbsp; Activities and Task&#xD;
+    Descriptors can also be event driven or describing ongoing work that does not have a fixed start and end time.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    UMA defines several&amp;nbsp;special Activities that allow expressing processes with terms many users are familiar&#xD;
+    with.&amp;nbsp; For example, Phase or Iteration are just special Activities for which specific attribute values have been&#xD;
+    set with predefined values. A process such as a &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../../core.base_concepts/guidances/concepts/capability_pattern_ECA78A86.html&quot;&#xD;
+    guid=&quot;1.7072348895114264E-305&quot;>Capability Pattern&lt;/a>&amp;nbsp;or &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../../core.base_concepts/guidances/concepts/delivery_process_CFEBBC78.html&quot;&#xD;
+    guid=&quot;_EhgqwO8MEdmKSqa_gSYthg&quot;>Delivery Process&lt;/a>&amp;nbsp;is also nothing else than just a special Activity that&#xD;
+    contains additional documentation on why and how to use the process. Hence, because Activities could be nested into&#xD;
+    each other, so can processes.&#xD;
+&lt;/p></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_3kDihNnmEdmO6L4XMImrsA" name="perform_configuration_audit,{766CE150-54BC-4BD3-9EAB-09857114B268}" guid="_3kDihNnmEdmO6L4XMImrsA" changeDate="2005-07-25T21:06:00.287-0700" version="7.1.0">
+  <sections xmi:id="_Zt7x4NnnEdmO6L4XMImrsA" name=" Perform Physical Configuration Audit " guid="_Zt7x4NnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;Perform Physical Configuration Audit&quot; name=&quot;Perform Physical Configuration Audit&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    A Physical Configuration Audit (PCA) identifies the components of a product to be deployed from the Project&#xD;
+    Repository.&amp;nbsp; Steps are:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Identify the baseline to be deployed (typically just a name and/or number, but may also be a full list of all files&#xD;
+        and their versions).&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Confirm that all required work products, as specified by the &lt;a class=&quot;elementLink&quot;&#xD;
+        href=&quot;./../../core.base_rup/workproducts/rup_development_process_A6449790.html&quot;&#xD;
+        guid=&quot;{345D1811-317B-47EC-AC9D-10E1072A7D68}&quot;>Development Process&lt;/a>, are present in the baseline.&amp;nbsp; List&#xD;
+        missing work products in the Configuration Audit Findings.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;h4>&#xD;
+    &lt;b>Other Levels of Physical Configuration Audit&lt;/b>&#xD;
+&lt;/h4>&#xD;
+&lt;p>&#xD;
+    Some organizations use a Physical Configuration Audit to confirm consistency of design and/or user documentation with&#xD;
+    the code.&amp;nbsp; The Rational Unified Process recommends that this consistency checking be performed as part of the&#xD;
+    review activity throughout the delivery process.&amp;nbsp; At this late stage, audits should be restricted to auditing that&#xD;
+    required deliverables are present, and not reviewing content.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_Zt7x4dnnEdmO6L4XMImrsA" name=" Perform Functional Configuration Audit " guid="_Zt7x4dnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;Perform Functional Configuration Audit&quot; name=&quot;Perform Functional Configuration Audit&quot;>&lt;/a>&#xD;
+&lt;p>&#xD;
+    A Functional Configuration Audit (FCA) confirms that a baseline meets the requirements targeted for the baseline.&amp;nbsp;&#xD;
+    Steps for performing this audit are:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Prepare a report which lists each requirement targeted for the baseline, its corresponding test procedure, and test&#xD;
+        result (pass/fail) for the baseline.&amp;nbsp;&amp;nbsp;&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Confirm that each requirement has one or more tests, and that all tests of the requirement have passed.&amp;nbsp; List&#xD;
+        any requirements without test procedures, and requirements with incomplete or failed tests, in the Configuration&#xD;
+        Audit Findings.&amp;nbsp;&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Generate a list of CRs targeted for this baseline.&amp;nbsp; Confirm that each CR has been closed.&amp;nbsp; List any CRs&#xD;
+        which are not closed in the Configuration Audit Findings.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></sectionDescription>
+  </sections>
+  <sections xmi:id="_Zt7x4tnnEdmO6L4XMImrsA" name=" Report Findings " guid="_Zt7x4tnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;Report Findings&quot; name=&quot;Report Findings&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    If there are any discrepancies, then these are captured in the Audit Findings as described above.&amp;nbsp; In addition,&#xD;
+    the following steps should be taken:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Identify corrective actions.&amp;nbsp; This may require interviewing various members of the project team to identify&#xD;
+        the source of the discrepancy and appropriate corrections:&#xD;
+    &lt;/li>&#xD;
+    &lt;li style=&quot;list-style: none&quot;>&#xD;
+        &lt;ul>&#xD;
+            &lt;li>&#xD;
+                For missing work products, the appropriate action is typically to place the work product under&#xD;
+                configuration control, or to create a CR or task to create the missing work product.&#xD;
+            &lt;/li>&#xD;
+            &lt;li>&#xD;
+                For untested or failed requirements, the requirement may be targeted to a later baseline, or negotiated for&#xD;
+                removal from the set of requirements.&#xD;
+            &lt;/li>&#xD;
+            &lt;li>&#xD;
+                For un-closed CRs, the CR may simply need to be closed, or it may need further testing, or deferred to a&#xD;
+                later baseline.&lt;br />&#xD;
+            &lt;/li>&#xD;
+        &lt;/ul>&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        For each corrective action, assign responsibility and determine a completion date.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&lt;br />&#xD;
+&lt;br /></sectionDescription>
+  </sections>
+  <purpose>&lt;a id=&quot;Top&quot; name=&quot;Top&quot;>&lt;/a> &#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        To determine that a baseline contains all required work products&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        To determine that a baseline meets requirements.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></purpose>
+</org.eclipse.epf.uma:TaskDescription>

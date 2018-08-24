@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ArtifactDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_1EUJpNnmEdmO6L4XMImrsA" name="rup_usecase_package,{102E424E-98DE-4F54-B1A0-8F8FD54D6BEE}" guid="_1EUJpNnmEdmO6L4XMImrsA" changeDate="2005-09-28T17:56:10.170-0700" version="7.1.0">
+  <purpose>&lt;a id=&quot;Top&quot; name=&quot;Top&quot;>&lt;/a>&lt;a id=&quot;XE_use-case_package__as_artifact&quot; name=&quot;XE_use-case_package__as_artifact&quot;>&lt;/a>&lt;a&#xD;
+id=&quot;XE_use-case_package__purpose_of&quot; name=&quot;XE_use-case_package__purpose_of&quot;>&lt;/a>&lt;a id=&quot;Purpose&quot; name=&quot;Purpose&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    The following people use the use-case packages:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        System analysts use use-case packages to structure the use-case model.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Those who capture the requirements on the next version of the system use the use-case packages to understand the&#xD;
+        structure of the use-case model.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Requirements specifiers use use-case packages as a reference for other parts of the system than they are working&#xD;
+        in.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Testers use use-case packages as input to planning test activities.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></purpose>
+  <representationOptions>UML Representation: Package in the use-case model, either its top-level package, or stereotyped as &amp;lt;&amp;lt;use-case&#xD;
+package&amp;gt;&amp;gt;&amp;nbsp; &#xD;
+&lt;p>&#xD;
+    &lt;a id=&quot;Tailoring&quot; name=&quot;Tailoring&quot;>&lt;/a>&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;b>+&lt;/b> Provide a hierarchical model structure with separate functional units. This is easier to understand than a&#xD;
+    flat model structure (without packages) if the use-case model and the system is relatively large.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;b>+&lt;/b> Offer a good opportunity to distribute work and responsibilities among several developers according to their&#xD;
+    area of competence. This is particularly important when you are building a large system. Use-case packages also offer a&#xD;
+    secure basis if you need to ensure confidentiality among your developers so that only a few know about the complete&#xD;
+    functionality of the system.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;b>+&lt;/b> Because use-case packages should be units of high cohesion, changing one package will not affect other&#xD;
+    packages.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;b>-&lt;/b> Maintaining use-case packages means more work for the use-case modeling team.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;b>-&lt;/b> Using use-case packages means that there is yet another notational concept for the developers to learn.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    If you use this technique you have to decide how many levels of packages to use. A rule of thumb is that each use-case&#xD;
+    package should contain approximately 3 to 10 smaller units (use cases, actors, or other packages). The table below&#xD;
+    gives some suggestions as to how many packages you should use given the number of use cases and actors. The quantities&#xD;
+    overlap because it is impossible to give exact guidelines.&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        0-15: No use-case packages needed.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        10-50: Use one level of use-case packages.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &amp;gt; 25: Use two levels of use-case packages.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&lt;br />&#xD;
+&lt;br /></representationOptions>
+</org.eclipse.epf.uma:ArtifactDescription>

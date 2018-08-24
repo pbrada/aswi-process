@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.uma:ProcessComponent xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.ibm.uma="http://www.ibm.com/uma/1.0.2/uma.ecore" xmi:id="_EjHzE9wuEdmRU7lXzo6lKQ" name="rup_analysis_design_discipline" guid="_EjHzE9wuEdmRU7lXzo6lKQ">
+  <childPackages xsi:type="com.ibm.uma:ProcessPackage" xmi:id="_FFNzgNwuEdmRU7lXzo6lKQ" name="design_components" guid="_FFNzgNwuEdmRU7lXzo6lKQ">
+    <processElements xsi:type="com.ibm.uma:Activity" xmi:id="_EjHzEdwuEdmRU7lXzo6lKQ" name="design_components" guid="_EjHzEdwuEdmRU7lXzo6lKQ" presentationName="design_components" superActivities="_EjHzEtwuEdmRU7lXzo6lKQ" variabilityType="contributes" breakdownElements="_FFNzgdwuEdmRU7lXzo6lKQ _FFNzgtwuEdmRU7lXzo6lKQ _FFNzg9wuEdmRU7lXzo6lKQ _FFNzhNwuEdmRU7lXzo6lKQ _FFNzhdwuEdmRU7lXzo6lKQ _FFNzhtwuEdmRU7lXzo6lKQ _FFNzh9wuEdmRU7lXzo6lKQ"/>
+    <processElements xsi:type="com.ibm.uma:TaskDescriptor" xmi:id="_FFNzgdwuEdmRU7lXzo6lKQ" name="Enterprise JavaBean (EJB) Design" guid="_FFNzgdwuEdmRU7lXzo6lKQ" presentationName="Enterprise JavaBean (EJB) Design" superActivities="_EjHzEdwuEdmRU7lXzo6lKQ" mandatoryInput="_FFNzg9wuEdmRU7lXzo6lKQ" optionalInput="_FFNzhNwuEdmRU7lXzo6lKQ _FFNzhdwuEdmRU7lXzo6lKQ _FFNzhtwuEdmRU7lXzo6lKQ _FFNzh9wuEdmRU7lXzo6lKQ" performedPrimarilyBy="_FFNzgtwuEdmRU7lXzo6lKQ">
+      <Task href="uma://{928369F7-6023-4D92-9476-A24595B9D4BC}#{6B77C6D4-C40F-4CE0-A186-5FA13F6458A9}"/>
+    </processElements>
+    <processElements xsi:type="com.ibm.uma:RoleDescriptor" xmi:id="_FFNzgtwuEdmRU7lXzo6lKQ" name="rup_designer_j2ee" guid="_FFNzgtwuEdmRU7lXzo6lKQ" presentationName="rup_designer_j2ee" superActivities="_EjHzEdwuEdmRU7lXzo6lKQ" performsAsOwner="_FFNzgdwuEdmRU7lXzo6lKQ">
+      <Role href="uma://{928369F7-6023-4D92-9476-A24595B9D4BC}#{6FD351CF-15B5-4C9E-AAAF-3BD419530464}"/>
+    </processElements>
+    <processElements xsi:type="com.ibm.uma:WorkProductDescriptor" xmi:id="_FFNzg9wuEdmRU7lXzo6lKQ" name="Analysis Class" guid="_FFNzg9wuEdmRU7lXzo6lKQ" presentationName="Analysis Class" superActivities="_EjHzEdwuEdmRU7lXzo6lKQ" mandatoryInputTo="_FFNzgdwuEdmRU7lXzo6lKQ">
+      <WorkProduct xsi:type="com.ibm.uma:Artifact" href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{1E20603F-A5B8-42D5-BDBC-69DCE9C0FCDB}"/>
+    </processElements>
+    <processElements xsi:type="com.ibm.uma:WorkProductDescriptor" xmi:id="_FFNzhNwuEdmRU7lXzo6lKQ" name="Analysis Model" guid="_FFNzhNwuEdmRU7lXzo6lKQ" presentationName="Analysis Model" superActivities="_EjHzEdwuEdmRU7lXzo6lKQ" OptionalInputTo="_FFNzgdwuEdmRU7lXzo6lKQ">
+      <WorkProduct xsi:type="com.ibm.uma:Artifact" href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{98EA224C-36F6-46E6-AB36-2999382B58B3}"/>
+    </processElements>
+    <processElements xsi:type="com.ibm.uma:WorkProductDescriptor" xmi:id="_FFNzhdwuEdmRU7lXzo6lKQ" name="rup_design_model_j2ee" guid="_FFNzhdwuEdmRU7lXzo6lKQ" presentationName="rup_design_model_j2ee" superActivities="_EjHzEdwuEdmRU7lXzo6lKQ" OptionalInputTo="_FFNzgdwuEdmRU7lXzo6lKQ">
+      <WorkProduct xsi:type="com.ibm.uma:Artifact" href="uma://{928369F7-6023-4D92-9476-A24595B9D4BC}#{19E6AF60-5474-4A7D-A4B2-5C0AB1C88179}"/>
+    </processElements>
+    <processElements xsi:type="com.ibm.uma:WorkProductDescriptor" xmi:id="_FFNzhtwuEdmRU7lXzo6lKQ" name="Enterprise Java Bean (EJB)" guid="_FFNzhtwuEdmRU7lXzo6lKQ" presentationName="Enterprise Java Bean (EJB)" superActivities="_EjHzEdwuEdmRU7lXzo6lKQ" OptionalInputTo="_FFNzgdwuEdmRU7lXzo6lKQ">
+      <WorkProduct xsi:type="com.ibm.uma:Artifact" href="uma://{928369F7-6023-4D92-9476-A24595B9D4BC}#{1F2EC40A-6660-4744-B138-4491A490542F}"/>
+    </processElements>
+    <processElements xsi:type="com.ibm.uma:WorkProductDescriptor" xmi:id="_FFNzh9wuEdmRU7lXzo6lKQ" name="Software Requirements Specification" guid="_FFNzh9wuEdmRU7lXzo6lKQ" presentationName="Software Requirements Specification" superActivities="_EjHzEdwuEdmRU7lXzo6lKQ" OptionalInputTo="_FFNzgdwuEdmRU7lXzo6lKQ">
+      <WorkProduct xsi:type="com.ibm.uma:Artifact" href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{BE8165DC-BAF2-4237-B27D-F2A037023364}"/>
+    </processElements>
+  </childPackages>
+  <process xsi:type="com.ibm.uma:ProcessContribution" xmi:id="_EjHzEtwuEdmRU7lXzo6lKQ" name="rup_analysis_design_discipline" guid="_EjHzEtwuEdmRU7lXzo6lKQ" briefDescription="TBD" presentationName="rup_analysis_design_discipline" breakdownElements="_EjHzEdwuEdmRU7lXzo6lKQ"/>
+</com.ibm.uma:ProcessComponent>

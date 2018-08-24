@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_d7QQABUFEdqrUt4zetC1gg" name="configuration,_d698IBUFEdqrUt4zetC1gg" guid="_d7QQABUFEdqrUt4zetC1gg" changeDate="2005-11-04T18:15:35.245-0800" version="7.1.0">
+  <mainDescription>&lt;p>&#xD;
+    A Method Configuration is a collection of selected &lt;a class=&quot;elementLinkWithUserText&quot;&#xD;
+    href=&quot;./../../../core.base_concepts/guidances/concepts/method_plugin_B417B6A2.html&quot; guid=&quot;_0KeEMBUFEdqrUt4zetC1gg&quot;>Method&#xD;
+    Plugins&lt;/a>, &lt;a class=&quot;elementLinkWithUserText&quot;&#xD;
+    href=&quot;./../../../core.base_concepts/customcategories/method_package_CD28C7B8.html&quot; guid=&quot;_R5Vk4BtpEdqSLrJ4Ij2LVA&quot;>Method&#xD;
+    Packages&lt;/a> and Processes (see &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../../core.base_concepts/guidances/concepts/capability_pattern_ECA78A86.html&quot;&#xD;
+    guid=&quot;1.7072348895114264E-305&quot;>Concept: Capability Pattern&lt;/a>, &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../../core.base_concepts/guidances/concepts/delivery_process_CFEBBC78.html&quot;&#xD;
+    guid=&quot;_EhgqwO8MEdmKSqa_gSYthg&quot;>Concept: Delivery Process&lt;/a>). A Configuration can be exported into its own stand-alone&#xD;
+    library when it includes the full transitive closure of all elements it depends on. A Method Configuration defines a&#xD;
+    logical subset of a &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../../core.base_concepts/guidances/concepts/method_library_CC7515AF.html&quot; guid=&quot;_m8lGkBUFEdqrUt4zetC1gg&quot;>Method&#xD;
+    Library&lt;/a>.&#xD;
+&lt;/p>&#xD;
+&lt;h3>&#xD;
+    Applications&#xD;
+&lt;/h3>&#xD;
+&lt;p>&#xD;
+    A Configuration is often built around one or more Delivery Processes. A Delivery Process can be valid for different&#xD;
+    Method Configurations, but each Configuration may include or exclude particular content for specific situations. For&#xD;
+    example, a Delivery Process can be defined to include content for developing schemas for different types of database&#xD;
+    management systems, such as content for RDBMS and OODBMS. When using such a Delivery Process, users may want to select&#xD;
+    just the type of DBMS used within their project, and hence exclude all content pertaining to other types of DBMS. They&#xD;
+    achieve this by selecting a Configuration which excludes the respective content or by creating a new one if none such&#xD;
+    already exists.&lt;br />&#xD;
+&lt;/p></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

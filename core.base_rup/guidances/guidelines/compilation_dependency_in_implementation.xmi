@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_2SZGUNnmEdmO6L4XMImrsA" name="compilation_dependency_in_implementation,6.725844217842153E-306" guid="_2SZGUNnmEdmO6L4XMImrsA" changeDate="2005-06-21T10:56:52.573-0700" version="7.1.0">
+  <mainDescription>&lt;a id=&quot;Top&quot; name=&quot;Top&quot;>&lt;/a>&lt;a id=&quot;XE_compilation_dependency__guidelines_for&quot;&#xD;
+name=&quot;XE_compilation_dependency__guidelines_for&quot;>&lt;/a>&lt;a id=&quot;XE_compilation_dependency__representing&quot;&#xD;
+name=&quot;XE_compilation_dependency__representing&quot;>&lt;/a> &#xD;
+&lt;h3>&#xD;
+    &lt;a id=&quot;Explanation&quot; name=&quot;Explanation&quot;>&lt;/a>Explanation&#xD;
+&lt;/h3>&#xD;
+&lt;p>&#xD;
+    An important use of a dependency relationship is to represent compilation dependencies. A compilation dependency exists&#xD;
+    from one element to the elements that are needed to compile it. In C++, for example, the compilation dependencies are&#xD;
+    indicated with #include statements. In Ada, compilation dependencies are indicated by the with clause. In Java the&#xD;
+    compilation dependency is indicated by the import statement. In general there should be no cyclical compilation&#xD;
+    dependencies.&#xD;
+&lt;/p>&#xD;
+&lt;h5>&#xD;
+    Example 1:&#xD;
+&lt;/h5>&#xD;
+&lt;p class=&quot;example&quot;>&#xD;
+    The following component diagram illustrates compilation dependencies between source files. The Invoicing_UI file (the&#xD;
+    top), requires Invoice, which requires Order to compile.&#xD;
+&lt;/p>&#xD;
+&lt;p class=&quot;picturecenter&quot; align=&quot;center&quot;>&#xD;
+    &lt;img src=&quot;resources/md_impc2.gif&quot; width=&quot;120&quot; height=&quot;202&quot; alt=&quot;Diagram described in accompanying text.&quot; />&#xD;
+&lt;/p>&#xD;
+&lt;p class=&quot;picturetext&quot;>&#xD;
+    Figure 1: Example Compilation Dependencies (Generic)&#xD;
+&lt;/p>&lt;br />&#xD;
+&lt;br /></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

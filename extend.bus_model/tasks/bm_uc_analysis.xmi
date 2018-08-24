@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="-InL-DiK2nncmLlft9Q8J_A" name="bm_uc_analysis,_T1XJMBpXEdqUwb9RAn2tTA" guid="-InL-DiK2nncmLlft9Q8J_A" changeDate="2005-10-12T11:20:40.104-0700" version="7.1.0">
+  <sections xmi:id="_KqIoMB8XEdqrYeJuOWf-Yg" name="Identify Business Workers" guid="_KqIoMB8XEdqrYeJuOWf-Yg">
+    <sectionDescription>&lt;p>&#xD;
+    For each role (human or system) in the organization, identify a business worker and give it a brief description.&#xD;
+    Employment positions are a good place to start, but be aware that a person in a specific position is usually required&#xD;
+    to fulfill more than one role and that various roles are often filled by people in different positions. You can also&#xD;
+    look at the software systems currently being used. However, you must be aware that-like people-many software systems&#xD;
+    perform multiple roles within the organization. This integration of sometimes completely different roles is one of the&#xD;
+    factors that makes software maintenance so difficult and locks a business in to a system.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    After you have identified your business workers, walk through each business use case and state which business workers&#xD;
+    are involved in which steps. This ensures that no business workers have been missed and that the ones that you have&#xD;
+    listed are all &quot;inside&quot; the part of the business you are modeling.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    For more information on business workers, see &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../extend.bus_model/guidances/guidelines/business_worker_A7C3AF61.html&quot; guid=&quot;2.0515380886761288E-306&quot;>Guideline:&#xD;
+    Business Worker&lt;/a>.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_lE8TEB8XEdqrYeJuOWf-Yg" name="Identify Business Entities" guid="_lE8TEB8XEdqrYeJuOWf-Yg">
+    <sectionDescription>&lt;p>&#xD;
+    To find candidate business entities, consider what information each business worker handles. The information that must&#xD;
+    be queried, validated, created, or communicated is a good starting point. Only significant, persistent information&#xD;
+    should be considered as a business entity.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    To show how business entities need to &quot;know about&quot; one another, use associations (see &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../extend.bus_model/guidances/guidelines/association_in_the_business_analysis_model_BB06CDDA.html&quot;&#xD;
+    guid=&quot;3.692812179186766E-305&quot;>Guideline: Association in the Business Analysis Model&lt;/a>). Give the associations role&#xD;
+    names for clarification.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    If business entities have clear whole-part relationships, show that fact with aggregation-relationships (see &lt;a&#xD;
+    class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../extend.bus_model/guidances/guidelines/aggregation_in_the_business_analysis_model_486F84A9.html&quot;&#xD;
+    guid=&quot;5.888288202551755E-305&quot;>Guideline: Aggregation in the Business Analysis Model&lt;/a>).&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    If business entities are specializations or generalizations of one another, use generalization-relationships to show&#xD;
+    this (see &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../extend.bus_model/guidances/guidelines/generalization_in_the_business_analysis_model_C74DAF63.html&quot;&#xD;
+    guid=&quot;1.410487898839562E-305&quot;>Guideline: Generalization in the Business Analysis Model&lt;/a>). It is often wise to wait&#xD;
+    to establish generalizations until after you have worked on describing the business entities (see &lt;a&#xD;
+    class=&quot;elementLinkWithType&quot; href=&quot;./../../extend.bus_model/tasks/detail_a_business_entity_11E120FA.html&quot;&#xD;
+    guid=&quot;{06A9A8AA-171C-4A9C-8CD8-A366F32AA77F}&quot;>Task: Detail a Business Entity&lt;/a>).&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Document the relationships in class diagrams (see &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../extend.bus_model/guidances/guidelines/diagrams_in_the_business_analysis_model_F0F7B759.html&quot;&#xD;
+    guid=&quot;2.967860873569252E-305&quot;>Guideline: Diagrams in the Business Analysis Model&lt;/a>&amp;nbsp;- Class Diagrams section).&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Walk through the workflow of each business use case to ensure that no business entities have been forgotten. Also, make&#xD;
+    sure that the ones you have identified are actually participating in a workflow.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    For more information on business entities, see &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../extend.bus_model/guidances/guidelines/business_entity_734D1170.html&quot; guid=&quot;1.0295540980844903E-304&quot;>Guideline:&#xD;
+    Business Entity&lt;/a>.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_eEhkUB8XEdqrYeJuOWf-Yg" name="Identify Business Events" guid="_eEhkUB8XEdqrYeJuOWf-Yg">
+    <sectionDescription>&lt;p>&#xD;
+    Inspect the interactions between business actors, business workers, and business entities. Business actors may initiate&#xD;
+    a business use case by sending a business event. Business workers may send business events to business actors or to&#xD;
+    each other. If a message between two business workers has one of the following characteristics, it might be a business&#xD;
+    event:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        The sender of the message does not need to wait for the receiver to process the message.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        There is a significant lapse of time between when the message is sent and when it is received.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        There is a significant physical distance between sender and receiver.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        The receiver is in another business system. In this case, the business event must be sent to the business system&#xD;
+        and not directly to the business worker within it.&amp;nbsp;&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>&#xD;
+    Business events may also be used to send signals between business systems and business use cases.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    For more information on business events, see &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../extend.bus_model/guidances/guidelines/business_event_213B3FAC.html&quot; guid=&quot;1.3382783818773036E-305&quot;>Guideline:&#xD;
+    Business Event&lt;/a>.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_sH_HwB8GEdqp2L-b_uRNLA" name="Define Business Use-Case Realizations" guid="_sH_HwB8GEdqp2L-b_uRNLA">
+    <sectionDescription>&lt;a id=&quot;DEFINE Business Use Case Realizations?&quot; name=&quot;Define Business Use Case Realizations&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    For each business use case, create a Business Use-Case Realization in the Business Analysis Model. The name of the&#xD;
+    Business Use-case Realization must be the same as the associated business use case. Furthermore, a&#xD;
+    realization-relationship should be established from the business use case realization to its associated business use&#xD;
+    case.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Identify which business workers and business entities participate in the execution of each business use case. They form&#xD;
+    the business use-case realization of the business use case.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Present the business workers and business entities of the business use-case realization in a sequence diagram (see &lt;a&#xD;
+    class=&quot;elementlinkwithtype&quot;&#xD;
+    href=&quot;./../../extend.bus_model/guidances/guidelines/diagrams_in_the_business_analysis_model_F0F7B759.html&quot;&#xD;
+    guid=&quot;2.967860873569252E-305&quot;>Guideline: Diagrams in the Business Analysis Model&lt;/a>&amp;nbsp;- Sequence Diagrams section).&#xD;
+    Show only those interactions that are necessary an understanding of how the business workers and entities perform this&#xD;
+    business use-case realization workflow. There should be at least one interaction (sequence diagram) for every flow&#xD;
+    described in the business use case.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Instead of using a sequence diagram, you can present the participating business workers and business entities in a&#xD;
+    communication diagram (see &lt;a class=&quot;elementlinkwithtype&quot;&#xD;
+    href=&quot;./../../extend.bus_model/guidances/guidelines/diagrams_in_the_business_analysis_model_F0F7B759.html&quot;&#xD;
+    guid=&quot;2.967860873569252E-305&quot;>Guideline: Diagrams in the Business Analysis Model&lt;/a>). Sequence diagrams are superior&#xD;
+    for large and complex interactions, while communication diagrams provide a better overview of relationships between&#xD;
+    participants.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    To clarify the meaning of the communication diagrams, you can describe the workflow of each business use-case&#xD;
+    realization in terms of its elements-the interacting business workers handling business entities. This is optional, and&#xD;
+    it only adds value for more complex workflows or parts of workflows. To perform this task:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Describe the normal workflow of the business use-case realization.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Describe any alternative and optional workflows.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Define performance goals in terms of cost and lead times for business workers and business entities.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>&#xD;
+    For more information on business use-case realizations, see &lt;a class=&quot;elementlinkwithtype&quot;&#xD;
+    href=&quot;./../../extend.bus_model/guidances/guidelines/business_use-case_realization_65988530.html&quot;&#xD;
+    guid=&quot;1.0660567082472948E-304&quot;>Guideline: Business Use-Case Realization&lt;/a>.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_EpWvUB8IEdqp2L-b_uRNLA" name="Structure the Business Analysis Model" guid="_EpWvUB8IEdqp2L-b_uRNLA">
+    <sectionDescription>&lt;a id=&quot;STRUCTURE Model? Analysis the&quot; name=&quot;Structure the Business Analysis Model&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    Analyze the lifecycle of each business entity. Each one should be created and removed by someone during the life of a&#xD;
+    business. Make sure that each business entity is accessed and used by a business worker or another business entity. Do&#xD;
+    this by creating a matrix or generating a report showing which business workers create and use the business entities.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Reduce the number of workers. As you develop your models, it is likely that you will find one or more too many workers&#xD;
+    per use-case realization. Make sure that each business worker corresponds to a set of tasks that one person typically&#xD;
+    would do, even though those tasks are divided among more than one business use case. You can do this by deriving and&#xD;
+    examining the responsibilities required of the business worker from all business use-case realizations in which the&#xD;
+    business worker participates.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Each business entity should have an owner-that is, someone who is responsible for it. You can model this with an&#xD;
+    association from the business worker to the business entities for which the business worker is responsible. Some&#xD;
+    business entities might be owned by people outside the business. If that is the case, make sure that it is mentioned in&#xD;
+    the brief description of the business entity.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    For very large or complex business models, you can use &lt;a class=&quot;elementlinkwithtype&quot;&#xD;
+    href=&quot;./../../extend.bus_model/workproducts/rup_business_system_BB28EEB.html&quot;&#xD;
+    guid=&quot;{4064F184-314B-4965-9F08-6AE5DBF6205A}&quot;>Artifact: Business System&lt;/a> for structuring and partitioning. In this&#xD;
+    case, you can assign business workers, business entities, and business events to a business system. Make sure that the&#xD;
+    relationships and responsibilities defined by the business systems support the interactions between the business&#xD;
+    workers, entities, and events. If necessary, the business systems must be slightly adjusted (in consultation with the&#xD;
+    business process analyst), or the interactions must be refined.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    For guidelines on structuring the Business Analysis Model and naming business workers and business entities, see &lt;a&#xD;
+    class=&quot;elementlinkwithtype' href=&quot; guid=&quot;4.008082751699213E-306&quot; resources=&quot;resources&quot;>Checklist: Business Analysis&#xD;
+    Model&lt;/a>.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_f3DsMB8HEdqp2L-b_uRNLA" name="Evaluate Your Results" guid="_f3DsMB8HEdqp2L-b_uRNLA">
+    <sectionDescription>&lt;p>&#xD;
+    Evaluate the business use-case realization workflow, along with the text and diagrams documenting it. One way to do&#xD;
+    this is to conduct a walkthrough. In this method of evaluation, the person responsible for the business use-case&#xD;
+    realization leads some of the members of the team through the business use-case realization workflow. Another technique&#xD;
+    is to do &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../core.base_rup/guidances/guidelines/role_playing_18BB3ABF.html&quot;&#xD;
+    guid=&quot;2.582376960557169E-305&quot;>Guideline: Role Playing&lt;/a>, in which team members act as business actors, business&#xD;
+    workers, and business entities.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    See also checklists for Business Analysis Model and Business Use-Case Realizations in &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../extend.bus_model/tasks/review_the_business_object_model_1A938836.html&quot;&#xD;
+    guid=&quot;{6B6B459B-A5EA-43B4-BE8E-ED8DC9A9E2C6}&quot;>Task: Review the Business Analysis Model&lt;/a>.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <purpose>&lt;ul class=&quot;noindent&quot;>&#xD;
+    &lt;li>&#xD;
+        To identify the&amp;nbsp;elements (business systems,&amp;nbsp;business workers)&amp;nbsp;which perform a use case's flow of&#xD;
+        events&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        To distribute the use case behavior to those elements, using business analysis use-case realizations&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        To identify the responsibilities, attributes and associations of the business systems and workers&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        To identify the business entities and events&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></purpose>
+</org.eclipse.epf.uma:TaskDescription>

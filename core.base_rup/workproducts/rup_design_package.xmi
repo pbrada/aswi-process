@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ArtifactDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_15p2MNnmEdmO6L4XMImrsA" name="rup_design_package,{80CC5437-F481-487B-A69B-957D9D236D8D}" guid="_15p2MNnmEdmO6L4XMImrsA" changeDate="2005-08-23T20:33:51.991-0700" version="7.1.0">
+  <purpose>&lt;a id=&quot;XE_design_package__as_artifact&quot; name=&quot;XE_design_package__as_artifact&quot;>&lt;/a>&lt;a id=&quot;Top&quot; name=&quot;Top&quot;>&lt;/a>&lt;a&#xD;
+id=&quot;XE_design_package__purpose_of&quot; name=&quot;XE_design_package__purpose_of&quot;>&lt;/a>&lt;a id=&quot;Purpose&quot; name=&quot;Purpose&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    Design packages are used to group related Design Model elements together for organizational purposes, and often for&#xD;
+    configuration management. Unlike the &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../core.base_rup/workproducts/rup_design_subsystem_1A8D169B.html&quot;&#xD;
+    guid=&quot;{A3C60B25-9780-4BFA-81AF-C1AD40D8A833}&quot;>Artifact: Design Subsystem&lt;/a>, a design package does not offer a formal&#xD;
+    interface, though it may expose some of its contents (marked as 'public') which offer behavior. Design packages should&#xD;
+    be used primarily as a model organizational tool, to group related things together; if behavioral semantics are needed,&#xD;
+    use Design Subsystems.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    A design package and its contents are the responsibility of a single &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../core.base_rup/roles/rup_designer_BA8DE74E.html&quot; guid=&quot;{DB21F5EF-810B-4994-B120-79FA8774FA9D}&quot;>Role: Designer&lt;/a>.&#xD;
+    Elements within the package may be dependent on the elements contained by other packages; this gives rise to&#xD;
+    dependencies between packages. Package dependencies can be used as a tool to analyze the resiliency of the design&#xD;
+    model: a model with cross-dependent packages is less resilient to change.&#xD;
+&lt;/p></purpose>
+  <representationOptions>UML Representation: Package in the design model.&amp;nbsp; &#xD;
+&lt;p>&#xD;
+    &lt;a id=&quot;Tailoring&quot; name=&quot;Tailoring&quot;>&lt;/a>&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Packages are used in the models to group similar model elements, improving the organization of the model and making it&#xD;
+    easier to understand. Packaging in large models is essential. Even in smaller models, appropriate packaging can&#xD;
+    dramatically improve the comprehensibility of the model. Some packaging is almost always useful. For more information,&#xD;
+    see &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../core.base_rup/guidances/guidelines/design_package_8CF100B8.html&quot;&#xD;
+    guid=&quot;3.3691722315666536E-305&quot;>Guideline: Design Package&lt;/a>.&#xD;
+&lt;/p>&lt;br />&#xD;
+&lt;br /></representationOptions>
+</org.eclipse.epf.uma:ArtifactDescription>

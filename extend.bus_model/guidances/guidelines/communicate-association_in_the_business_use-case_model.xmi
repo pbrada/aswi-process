@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_0iCjBNnmEdmO6L4XMImrsA" name="communicate-association_in_the_business_use-case_model,1.5648316985246474E-304" guid="_0iCjBNnmEdmO6L4XMImrsA" changeDate="2005-06-22T18:31:16.085-0700" version="7.1.0">
+  <mainDescription>&lt;a id=&quot;Top&quot; name=&quot;Top&quot;>&lt;/a>&lt;a id=&quot;XE_communicates-association_in_business_use-case_model__guidelines_for&quot;&#xD;
+name=&quot;XE_communicates-association_in_business_use-case_model__guidelines_for&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    Business actors interact with the business by sending and receiving messages. Both parties can take the initiative to&#xD;
+    interact.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    To fully understand the role of a business actor, you must know in which processes the actor is involved. This is shown&#xD;
+    in by the communicate-association between the business actor and the business use case representing the process. The&#xD;
+    communicate-association indicates the existence of an interaction.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    The multiplicity of the association shows how many instances of a business use case one instance of a business actor&#xD;
+    can interact with at the same time; conversely, it shows how many instances of a business actor one instance of a&#xD;
+    business use case can interact with.&#xD;
+&lt;/p>&#xD;
+&lt;h5>&#xD;
+    Example:&#xD;
+&lt;/h5>&#xD;
+&lt;p class=&quot;example&quot;>&#xD;
+    When an instance of the business actor Passenger approaches the check-in counter and hands over his ticket and baggage,&#xD;
+    he sends a message to an instance of the use case Individual Check-in. At the end of the check-in procedure, the&#xD;
+    business use case will print out and hand over a boarding pass, and one or more customer claim checks to the passenger.&#xD;
+    The Passenger can only communicate with one instance of Individual Check-in. Thus, the multiplicity of the relationship&#xD;
+    is [1].&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;center&quot;>&#xD;
+    &lt;img height=&quot;52&quot; alt=&quot;Diagram described in accompanying text.&quot; src=&quot;resources/bcomm1.gif&quot; width=&quot;200&quot; />&#xD;
+&lt;/p>&#xD;
+&lt;p class=&quot;picturetext&quot;>&#xD;
+    A Passenger who wants to check-in at the airport will interact with the use case Individual Check-in.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    When an actor and a use case interact, it can be done using different media. For example, telephone, fax, mail, and&#xD;
+    e-mail. One or several messages can be sent, but there is only one communicate-association between the two.&#xD;
+&lt;/p>&lt;br />&#xD;
+&lt;br /></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:org.eclipse.epf.uma.resourcemanager="http:///org/eclipse/epf/uma/resourcemanager.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1">
+  <org.eclipse.epf.uma.resourcemanager:ResourceManager xmi:id="_juH_8PsOEdmQwKBXhQotBQ" guid="_juH_8PsOEdmQwKBXhQotBQ">
+    <resourceDescriptors xmi:id="_juH_8fsOEdmQwKBXhQotBQ" id="-955PC1hZRDxBoYN_NJT6EQ" uri="content.xmi"/>
+  </org.eclipse.epf.uma.resourcemanager:ResourceManager>
+  <org.eclipse.epf.uma:ProcessComponent xmi:id="_1iySMPr_EdmQwKBXhQotBQ" name="cots_inception_recommend_candidate_solutions" guid="_1iySMPr_EdmQwKBXhQotBQ">
+    <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="_icoroOz9EdqNQM4riIm-Mw" name="cots_recommend_solution" guid="_icoroOz9EdqNQM4riIm-Mw" presentationName="Recommend Solution" superActivities="_1iySMfr_EdmQwKBXhQotBQ" optionalInput="_idNTsuz9EdqNQM4riIm-Mw" output="_idTaAuz9EdqNQM4riIm-Mw _idTaLez9EdqNQM4riIm-Mw" performedPrimarilyBy="_idNTpOz9EdqNQM4riIm-Mw">
+      <Task href="uma://{D4626EC0-06BC-4592-A8A6-C8DE7E821952}#{74E63EE3-FA99-4409-A00D-CD863B1D6868}"/>
+      <selectedSteps href="uma://_smpgUNoTEdmCj7Yn9Ev4rg#_tkKRcNoTEdmCj7Yn9Ev4rg"/>
+      <selectedSteps href="uma://_smpgUNoTEdmCj7Yn9Ev4rg#_tkQYENoTEdmCj7Yn9Ev4rg"/>
+    </processElements>
+    <processElements xsi:type="org.eclipse.epf.uma:RoleDescriptor" xmi:id="_idNTpOz9EdqNQM4riIm-Mw" name="cots_acquirer" guid="_idNTpOz9EdqNQM4riIm-Mw" presentationName="Acquirer" superActivities="_1iySMfr_EdmQwKBXhQotBQ" modifies="_idTaAuz9EdqNQM4riIm-Mw _idTaLez9EdqNQM4riIm-Mw" responsibleFor="_idTaLez9EdqNQM4riIm-Mw _idTaAuz9EdqNQM4riIm-Mw">
+      <Role href="uma://{D4626EC0-06BC-4592-A8A6-C8DE7E821952}#{E929498F-3E9B-4BD5-8FD3-FAF7337E36AE}"/>
+    </processElements>
+    <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_idNTsuz9EdqNQM4riIm-Mw" name="rup_vision" guid="_idNTsuz9EdqNQM4riIm-Mw" presentationName="Vision" superActivities="_1iySMfr_EdmQwKBXhQotBQ">
+      <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{417F089F-6636-451A-A8AB-AB4EAC7AC4F1}"/>
+    </processElements>
+    <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_idTaAuz9EdqNQM4riIm-Mw" name="cots_cumulative_solution_eval_summary" guid="_idTaAuz9EdqNQM4riIm-Mw" presentationName="Cumulative Candidate Solution Evaluation Summary" superActivities="_1iySMfr_EdmQwKBXhQotBQ">
+      <WorkProduct href="uma://{D4626EC0-06BC-4592-A8A6-C8DE7E821952}#{E29F5020-BF6D-4D40-8BC9-52D25F9DD183}"/>
+    </processElements>
+    <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_idTaLez9EdqNQM4riIm-Mw" name="cots_solution_recommendation" guid="_idTaLez9EdqNQM4riIm-Mw" presentationName="Solution Recommendation" superActivities="_1iySMfr_EdmQwKBXhQotBQ">
+      <WorkProduct href="uma://{D4626EC0-06BC-4592-A8A6-C8DE7E821952}#{A4C2C8B3-4905-4C89-86E4-D3FBDAE512BF}"/>
+    </processElements>
+    <process xsi:type="org.eclipse.epf.uma:CapabilityPattern" xmi:id="_1iySMfr_EdmQwKBXhQotBQ" name="cots_inception_recommend_candidate_solutions" guid="_1iySMfr_EdmQwKBXhQotBQ" presentationName="Recommend Candidate Solutions" briefDescription="This covers essential tasks aiming at recommending solutions in the inception phase." breakdownElements="_icoroOz9EdqNQM4riIm-Mw _idNTpOz9EdqNQM4riIm-Mw _idNTsuz9EdqNQM4riIm-Mw _idTaAuz9EdqNQM4riIm-Mw _idTaLez9EdqNQM4riIm-Mw">
+      <presentation xmi:id="-955PC1hZRDxBoYN_NJT6EQ" href="uma://-955PC1hZRDxBoYN_NJT6EQ#-955PC1hZRDxBoYN_NJT6EQ"/>
+      <defaultContext href="uma://_0q85QJySEd2xJNwbI6lxKA#_sU4a4NoTEdmCj7Yn9Ev4rg"/>
+      <validContext href="uma://_0q85QJySEd2xJNwbI6lxKA#_sU4a4NoTEdmCj7Yn9Ev4rg"/>
+    </process>
+  </org.eclipse.epf.uma:ProcessComponent>
+</xmi:XMI>

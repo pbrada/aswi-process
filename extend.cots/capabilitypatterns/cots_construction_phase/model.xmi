@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:org.eclipse.epf.uma.resourcemanager="http:///org/eclipse/epf/uma/resourcemanager.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1">
+  <org.eclipse.epf.uma.resourcemanager:ResourceManager xmi:id="-ypYF0lAZuqqGdDDOqkvdDw" guid="-ypYF0lAZuqqGdDDOqkvdDw">
+    <resourceDescriptors xmi:id="_tl9VgBTdEdqsDoPowBCnuA" id="-ypYF0lAZuqqGdDDOqkvdDw" uri="content.xmi"/>
+  </org.eclipse.epf.uma.resourcemanager:ResourceManager>
+  <org.eclipse.epf.uma:ProcessComponent xmi:id="_qHbZIBTdEdqsDoPowBCnuA" name="cots_construction_phase" guid="_qHbZIBTdEdqsDoPowBCnuA">
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_8RWlgFVgEdqce-f0A5RH8g" name="cots_construction_gather_info_from_spheres" guid="_8RWlgFVgEdqce-f0A5RH8g">
+      <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_8RiywFVgEdqce-f0A5RH8g" name="cots_construction_gather_info_from_spheres" guid="_8RiywFVgEdqce-f0A5RH8g" superActivities="_qHbZIRTdEdqsDoPowBCnuA" variabilityType="extends">
+        <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:CapabilityPattern" href="uma://_Cv3dMAhWEdqjreXK-vtKOw#_Cv3dMQhWEdqjreXK-vtKOw"/>
+      </processElements>
+    </childPackages>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_9SM-gFVgEdqce-f0A5RH8g" name="cots_construction_define_candidate_solutions" guid="_9SM-gFVgEdqce-f0A5RH8g">
+      <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_9SfSYFVgEdqce-f0A5RH8g" name="cots_construction_define_candidate_solutions" guid="_9SfSYFVgEdqce-f0A5RH8g" superActivities="_qHbZIRTdEdqsDoPowBCnuA" variabilityType="extends">
+        <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:CapabilityPattern" href="uma://_pmO-UBTiEdqsDYPowBCnuA#_pmVE8BTiEdqsDYPowBCnuA"/>
+      </processElements>
+    </childPackages>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_-OXr0FVgEdqce-f0A5RH8g" name="cots_construction_prepare_fielding" guid="_-OXr0FVgEdqce-f0A5RH8g">
+      <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_-PCaMFVgEdqce-f0A5RH8g" name="cots_construction_prepare_fielding" guid="_-PCaMFVgEdqce-f0A5RH8g" superActivities="_qHbZIRTdEdqsDoPowBCnuA" variabilityType="extends">
+        <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:CapabilityPattern" href="uma://_keaXoBTcEdqsDoPowBCnuA#_keaXoRTcEdqsDoPowBCnuA"/>
+      </processElements>
+    </childPackages>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_-4Y5MFVgEdqce-f0A5RH8g" name="cots_construction_support_iteration" guid="_-4Y5MFVgEdqce-f0A5RH8g">
+      <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_-5P00FVgEdqce-f0A5RH8g" name="cots_construction_support_iteration" guid="_-5P00FVgEdqce-f0A5RH8g" superActivities="_qHbZIRTdEdqsDoPowBCnuA" variabilityType="extends">
+        <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:CapabilityPattern" href="uma://_YNthYBTkEdqsDYPowBCnuA#_YNthYRTkEdqsDYPowBCnuA"/>
+      </processElements>
+    </childPackages>
+    <process xsi:type="org.eclipse.epf.uma:CapabilityPattern" xmi:id="_qHbZIRTdEdqsDoPowBCnuA" name="cots_construction_phase" guid="_qHbZIRTdEdqsDoPowBCnuA" presentationName="COTS Construction Iteration" briefDescription="This is an example of construction phase iteration. It includes the activities typically performed during a single iteration in the construction phase. " isRepeatable="true" breakdownElements="_8RiywFVgEdqce-f0A5RH8g _9SfSYFVgEdqce-f0A5RH8g _-PCaMFVgEdqce-f0A5RH8g _-5P00FVgEdqce-f0A5RH8g">
+      <presentation xmi:id="-ypYF0lAZuqqGdDDOqkvdDw" href="uma://-ypYF0lAZuqqGdDDOqkvdDw#-ypYF0lAZuqqGdDDOqkvdDw"/>
+      <defaultContext href="uma://_0q85QJySEd2xJNwbI6lxKA#_sU4a4NoTEdmCj7Yn9Ev4rg"/>
+      <validContext href="uma://_0q85QJySEd2xJNwbI6lxKA#_sU4a4NoTEdmCj7Yn9Ev4rg"/>
+    </process>
+  </org.eclipse.epf.uma:ProcessComponent>
+</xmi:XMI>

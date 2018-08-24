@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ArtifactDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_q38AwPS3EdmIX5Pw7v8pRw" name="soa_svce_model_svce_chan,{95AA7C70-6259-4627-B705-6A67E33A47BC}" guid="_q38AwPS3EdmIX5Pw7v8pRw" changeDate="2006-08-15T10:34:28.035-0700" version="7.1.0">
+  <mainDescription>A channel represents the communication path between two services. It is important to note that interaction may occur over a&#xD;
+channel, but the channel does not represent any particular interaction. In the web services world, each service denotes the&#xD;
+binding(s) associated with it (so that a client may access it). In a modeling profile, you denote binding either on the&#xD;
+communication between services or between a service and consumers. In this way, you can be flexible in understanding the&#xD;
+binding requirements. &lt;br /></mainDescription>
+  <purpose>&lt;a id=&quot;XE_service_channel__artifact_definition&quot; name=&quot;XE_service_channel__artifact_definition&quot;>&lt;/a>&lt;a id=&quot;Purpose&quot;&#xD;
+name=&quot;Purpose&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    The service channel provides the connection between two services or between a service and a client that allows for&#xD;
+    communication. Consider the example of a dedicated telephone line between two parties; the connection is always there&#xD;
+    even if it is not used and the connection is distinct from any conversation that takes place on it. When modeling&#xD;
+    collaborations between services and specifically messages being sent between services, these take place over the&#xD;
+    connection.&#xD;
+&lt;/p></purpose>
+  <representationOptions>UML Representation: &#xD;
+&lt;p>&#xD;
+    Connector (UML 2.0), stereotyped as &amp;lt;&amp;lt;Service Channel&amp;gt;&amp;gt;.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Properties:&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    binding : String - Denotes the platform binding mechanism to use in generating the service binding in WSDL; examples&#xD;
+    might be SOAP-RPC, SOAP-Doc, HTTP-Get, and so on. The actual set of binding values, or rather the text used on the&#xD;
+    tagged value, available to use in a model is undefined by RUP and will vary by project.&lt;br />&#xD;
+     &lt;a id=&quot;Tailoring&quot; name=&quot;Tailoring&quot;>&lt;/a>&#xD;
+&lt;/p></representationOptions>
+</org.eclipse.epf.uma:ArtifactDescription>

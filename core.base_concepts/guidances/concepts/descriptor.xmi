@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_5WJUUBUEEdqrUt4zetC1gg" name="descriptor,_5V9HEBUEEdqrUt4zetC1gg" guid="_5WJUUBUEEdqrUt4zetC1gg" changeDate="2005-11-15T10:35:38.218-0800" version="7.1.0">
+  <mainDescription>&lt;p>&#xD;
+    A Descriptor represent an occurrence of one concrete Content Element (such as Task, Role, Work Product) in an Activity.&#xD;
+    Descriptors provides a proxy-like representation for these Content Elements within breakdown structures. In addition to&#xD;
+    just referencing Content Elements it allows overriding the Content Elements' structural relationships by defining its&#xD;
+    own sets of associations.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Descriptors are a key concept for realizing the separation of Processes from Method Content. A Descriptor can be&#xD;
+    characterized as a reference object for one particular Content Element, which has its own relationships and properties.&#xD;
+    When a Descriptor is created, it has the same relationships as the referenced Content Element. However, users can&#xD;
+    modify these relationships for the particular process situation for which the Descriptor has been created. The&#xD;
+    Descriptor concept allows defining new relationships and specific process related properties. Descriptors are not&#xD;
+    Content Elements and do not contain their own full descriptions. They refer or trace back to the Content Elements they&#xD;
+    are based on instead.&#xD;
+&lt;/p>&#xD;
+&lt;h3>&#xD;
+    Example&amp;nbsp;&#xD;
+&lt;/h3>&#xD;
+&lt;p align=&quot;center&quot;>&#xD;
+    &lt;img alt=&quot;Example of Method Content referenced by Descriptor&quot; src=&quot;resources/descriptors_uml.gif&quot; />&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;center&quot;>&#xD;
+    Example of Method Content referenced by Descriptors&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;br />&#xD;
+     The above illustration depicts an example using the UML 2.0 profile representation for UMA&amp;nbsp;in which Descriptors&#xD;
+    have been created for a Task, its performing Roles, as well as its input/output Work Products. The situation implied by&#xD;
+    this example is that the Task &quot;Prioritize Use Cases&quot; is to be performed differently in a project's Inception phase than&#xD;
+    in its Elaboration phase. (that is, with different emphasis on different Steps, utilizing different inputs, etc.). In&#xD;
+    particular, we can observe the following:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        The Task in Inception has an additional assisting Role (Customer.Project Manager) and does not provide a&#xD;
+        relationship to the Risk List Work Product that had been defined as an optional input in the Method Content (that&#xD;
+        is, Steps of the Task that work with the Risk List will be omitted in this phase).&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Two different types of Use Case Model Work Products are distinguished here: a Use Case Model as it is normally&#xD;
+        being used during Inception, which describes use cases only briefly, versus use cases that have been detailed as it&#xD;
+        is the case during the Elaboration phase.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

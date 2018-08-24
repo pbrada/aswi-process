@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.uma:ProcessComponent xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.ibm.uma="http://www.ibm.com/uma/1.0.2/uma.ecore" xmi:id="_s2Ts89oTEdmCj7Yn9Ev4rg" name="rup_project_management_discipline" guid="_s2Ts89oTEdmCj7Yn9Ev4rg">
+  <childPackages xsi:type="com.ibm.uma:ProcessPackage" xmi:id="_twYvuNoTEdmCj7Yn9Ev4rg" name="plan_the_project" guid="_twYvuNoTEdmCj7Yn9Ev4rg">
+    <processElements xsi:type="com.ibm.uma:Activity" xmi:id="_s2Ts8doTEdmCj7Yn9Ev4rg" name="plan_the_project" guid="_s2Ts8doTEdmCj7Yn9Ev4rg" presentationName="plan_the_project" superActivities="_s2Ts8toTEdmCj7Yn9Ev4rg" variabilityType="contributes" breakdownElements="_twYvudoTEdmCj7Yn9Ev4rg _twYvutoTEdmCj7Yn9Ev4rg _twYvu9oTEdmCj7Yn9Ev4rg _twYvvNoTEdmCj7Yn9Ev4rg _twYvvdoTEdmCj7Yn9Ev4rg _twYvvtoTEdmCj7Yn9Ev4rg _twYvv9oTEdmCj7Yn9Ev4rg _twYvwNoTEdmCj7Yn9Ev4rg _twYvwdoTEdmCj7Yn9Ev4rg _twYvwtoTEdmCj7Yn9Ev4rg _twYvw9oTEdmCj7Yn9Ev4rg"/>
+    <processElements xsi:type="com.ibm.uma:TaskDescriptor" xmi:id="_twYvudoTEdmCj7Yn9Ev4rg" name="Develop Business Process Change Management Plan" guid="_twYvudoTEdmCj7Yn9Ev4rg" presentationName="Develop Business Process Change Management Plan" superActivities="_s2Ts8doTEdmCj7Yn9Ev4rg" optionalInput="_twYvu9oTEdmCj7Yn9Ev4rg _twYvvNoTEdmCj7Yn9Ev4rg _twYvvdoTEdmCj7Yn9Ev4rg _twYvvtoTEdmCj7Yn9Ev4rg _twYvv9oTEdmCj7Yn9Ev4rg _twYvwNoTEdmCj7Yn9Ev4rg _twYvwdoTEdmCj7Yn9Ev4rg _twYvwtoTEdmCj7Yn9Ev4rg" output="_twYvw9oTEdmCj7Yn9Ev4rg" performedPrimarilyBy="_twYvutoTEdmCj7Yn9Ev4rg">
+      <Task href="uma://{D4626EC0-06BC-4592-A8A6-C8DE7E821952}#{855F4DCF-13FF-45F1-A654-8A938579A22B}"/>
+    </processElements>
+    <processElements xsi:type="com.ibm.uma:RoleDescriptor" xmi:id="_twYvutoTEdmCj7Yn9Ev4rg" name="cots_project_manager" guid="_twYvutoTEdmCj7Yn9Ev4rg" presentationName="cots_project_manager" superActivities="_s2Ts8doTEdmCj7Yn9Ev4rg" performsAsOwner="_twYvudoTEdmCj7Yn9Ev4rg">
+      <Role href="uma://{D4626EC0-06BC-4592-A8A6-C8DE7E821952}#{DBD8AC30-D642-4213-A393-F9D0D0980A24}"/>
+    </processElements>
+    <processElements xsi:type="com.ibm.uma:WorkProductDescriptor" xmi:id="_twYvu9oTEdmCj7Yn9Ev4rg" name="Business Case" guid="_twYvu9oTEdmCj7Yn9Ev4rg" presentationName="Business Case" superActivities="_s2Ts8doTEdmCj7Yn9Ev4rg" OptionalInputTo="_twYvudoTEdmCj7Yn9Ev4rg">
+      <WorkProduct xsi:type="com.ibm.uma:Artifact" href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{9B13F235-E8E9-4CDC-9ACE-216124C8C5EC}"/>
+    </processElements>
+    <processElements xsi:type="com.ibm.uma:WorkProductDescriptor" xmi:id="_twYvvNoTEdmCj7Yn9Ev4rg" name="Business Analysis Model" guid="_twYvvNoTEdmCj7Yn9Ev4rg" presentationName="Business Analysis Model" superActivities="_s2Ts8doTEdmCj7Yn9Ev4rg" OptionalInputTo="_twYvudoTEdmCj7Yn9Ev4rg">
+      <WorkProduct xsi:type="com.ibm.uma:Artifact" href="uma://_875O8A6hEdqg5YAaNtnnCw#{CF53445C-3351-46C6-810E-8251830029A7}"/>
+    </processElements>
+    <processElements xsi:type="com.ibm.uma:WorkProductDescriptor" xmi:id="_twYvvdoTEdmCj7Yn9Ev4rg" name="Business Architecture Document" guid="_twYvvdoTEdmCj7Yn9Ev4rg" presentationName="Business Architecture Document" superActivities="_s2Ts8doTEdmCj7Yn9Ev4rg" OptionalInputTo="_twYvudoTEdmCj7Yn9Ev4rg">
+      <WorkProduct xsi:type="com.ibm.uma:Artifact" href="uma://_875O8A6hEdqg5YAaNtnnCw#{D3A0CA96-30AD-4461-9386-A3EC9A7E879F}"/>
+    </processElements>
+    <processElements xsi:type="com.ibm.uma:WorkProductDescriptor" xmi:id="_twYvvtoTEdmCj7Yn9Ev4rg" name="Business Use Case Model" guid="_twYvvtoTEdmCj7Yn9Ev4rg" presentationName="Business Use Case Model" superActivities="_s2Ts8doTEdmCj7Yn9Ev4rg" OptionalInputTo="_twYvudoTEdmCj7Yn9Ev4rg">
+      <WorkProduct xsi:type="com.ibm.uma:Artifact" href="uma://_875O8A6hEdqg5YAaNtnnCw#{89BEF367-5875-47E0-97D6-23E5BCCE52B8}"/>
+    </processElements>
+    <processElements xsi:type="com.ibm.uma:WorkProductDescriptor" xmi:id="_twYvv9oTEdmCj7Yn9Ev4rg" name="Business Vision" guid="_twYvv9oTEdmCj7Yn9Ev4rg" presentationName="Business Vision" superActivities="_s2Ts8doTEdmCj7Yn9Ev4rg" OptionalInputTo="_twYvudoTEdmCj7Yn9Ev4rg">
+      <WorkProduct xsi:type="com.ibm.uma:Artifact" href="uma://_875O8A6hEdqg5YAaNtnnCw#{C1A31211-2C05-4665-8DC5-6BFB63F4FCE4}"/>
+    </processElements>
+    <processElements xsi:type="com.ibm.uma:WorkProductDescriptor" xmi:id="_twYvwNoTEdmCj7Yn9Ev4rg" name="Reference Architecture" guid="_twYvwNoTEdmCj7Yn9Ev4rg" presentationName="Reference Architecture" superActivities="_s2Ts8doTEdmCj7Yn9Ev4rg" OptionalInputTo="_twYvudoTEdmCj7Yn9Ev4rg">
+      <WorkProduct xsi:type="com.ibm.uma:Artifact" href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{855CE09A-D297-4373-BEEA-D38B8AB348DA}"/>
+    </processElements>
+    <processElements xsi:type="com.ibm.uma:WorkProductDescriptor" xmi:id="_twYvwdoTEdmCj7Yn9Ev4rg" name="rup_software_development_plan" guid="_twYvwdoTEdmCj7Yn9Ev4rg" presentationName="rup_software_development_plan" superActivities="_s2Ts8doTEdmCj7Yn9Ev4rg" OptionalInputTo="_twYvudoTEdmCj7Yn9Ev4rg">
+      <WorkProduct xsi:type="com.ibm.uma:Artifact" href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{4778F35B-36C4-4F29-87F8-DAA1207CEF7D}"/>
+    </processElements>
+    <processElements xsi:type="com.ibm.uma:WorkProductDescriptor" xmi:id="_twYvwtoTEdmCj7Yn9Ev4rg" name="Business System" guid="_twYvwtoTEdmCj7Yn9Ev4rg" presentationName="Business System" superActivities="_s2Ts8doTEdmCj7Yn9Ev4rg" OptionalInputTo="_twYvudoTEdmCj7Yn9Ev4rg">
+      <WorkProduct xsi:type="com.ibm.uma:Artifact" href="uma://_875O8A6hEdqg5YAaNtnnCw#{4064F184-314B-4965-9F08-6AE5DBF6205A}"/>
+    </processElements>
+    <processElements xsi:type="com.ibm.uma:WorkProductDescriptor" xmi:id="_twYvw9oTEdmCj7Yn9Ev4rg" name="Business Process Change Management Plan" guid="_twYvw9oTEdmCj7Yn9Ev4rg" presentationName="Business Process Change Management Plan" superActivities="_s2Ts8doTEdmCj7Yn9Ev4rg" outputFrom="_twYvudoTEdmCj7Yn9Ev4rg">
+      <WorkProduct xsi:type="com.ibm.uma:Artifact" href="uma://{D4626EC0-06BC-4592-A8A6-C8DE7E821952}#{D75AF5A7-8E32-4F53-89ED-E4BB101BB527}"/>
+    </processElements>
+  </childPackages>
+  <process xsi:type="com.ibm.uma:ProcessContribution" xmi:id="_s2Ts8toTEdmCj7Yn9Ev4rg" name="rup_project_management_discipline" guid="_s2Ts8toTEdmCj7Yn9Ev4rg" briefDescription="TBD" presentationName="rup_project_management_discipline" breakdownElements="_s2Ts8doTEdmCj7Yn9Ev4rg"/>
+</com.ibm.uma:ProcessComponent>

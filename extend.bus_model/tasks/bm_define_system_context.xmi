@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="-t9tVQv4kcHDspAvW4MJgCw" name="bm_define_system_context,_tPtHgBpVEdqUwb9RAn2tTA" guid="-t9tVQv4kcHDspAvW4MJgCw" changeDate="2005-10-07T17:56:27.681-0700" version="7.1.0">
+  <sections xmi:id="_EoeW4CC7Edq2Lq6r0Grljg" name="Introduction" guid="_EoeW4CC7Edq2Lq6r0Grljg">
+    <sectionDescription>&lt;p>&#xD;
+    Whereas the Use-Case Model shows the behavioral context for the system, in this task you create a logical model of the&#xD;
+    system in its environment, using the following: &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../extend.bus_model/workproducts/rup_business_use_case_model_EC79264C.html&quot;&#xD;
+    guid=&quot;{89BEF367-5875-47E0-97D6-23E5BCCE52B8}&quot;>Artifact: Business Use Case Model&lt;/a>, &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../extend.bus_model/workproducts/rup_supplementary_business_specification_BBC64E05.html&quot;&#xD;
+    guid=&quot;{0DADA95B-7C1D-44BD-9DB5-41AC99767753}&quot;>Artifact: Supplementary Business Specification&lt;/a>. The model is used to&#xD;
+    delineate a &lt;i>Context Diagram&lt;/i>.&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        The interfaces to be &lt;i>realized&lt;/i> by the system (in terms of the &lt;i>operations&lt;/i> the systems provides, and the&#xD;
+        associated protocols supported, the &lt;i>state variables&lt;/i> and &lt;i>stores&lt;/i> that the system realizes, and&#xD;
+        attributes).&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        The &lt;i>I/O entities&lt;/i> that flow between the system and its actors.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        The interfaces &lt;i>required&lt;/i> by the system (to be realized by the actors which interact with the system) for&#xD;
+        correct performance. Often, if the actor represents an existing system with which the system must communicate,&#xD;
+        these required interfaces simply reflect constraints imposed by that other system.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>&#xD;
+    A context diagram shows the top-level collaboration between the system and its actors. It is the structural analog to&#xD;
+    the Use-Case Model for the system. This collaboration is created in the Analysis Model.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    I/O entities (represented for modeling as &quot;I/O&quot; stereotyped classes with attributes but no operations) describe things&#xD;
+    that flow into or out of the system, and can, in the general system case, include data, mass, energy, or physical&#xD;
+    parts. I/O entities are associated (during modeling) with actor-system pairs, indicating that these particular I/O&#xD;
+    entities flow between actor and system. They can optionally be shown on the diagrams, associated with the actor, and&#xD;
+    the direction of flow is indicated by a stereotype &quot;send&quot;or &quot;receive&quot; on the association, indicating the direction&#xD;
+    relative to the actor.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    A System Operation is a service that can be requested from an object to effect behavior. An operation specifies the&#xD;
+    name, type, parameters, and constraints for invoking an associated behavior. The Operations are grouped around&#xD;
+    interfaces along the main responsibilities of the (sub)system under consideration. A system operation invocation&#xD;
+    represents a finer grained interaction with the system than a use-case instance, and a use-case instance is a&#xD;
+    composition of operation invocations and responses.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    State variables and stores are attributes defined on the interfaces realized by the system. These are abstract and&#xD;
+    require that the system maintain information corresponding to the type and multiplicity of the attribute and permit&#xD;
+    storage, retrieval and modification of that information. There is no implication that there an attribute in the system&#xD;
+    directly corresponds to the attribute defined at the interface. The difference between state variables and stores is&#xD;
+    not intrinsic, it just reflects the way the attributes are used to control the operation of the system's (abstract)&#xD;
+    state machine. A &quot;state&quot; persists over a period of time, unlike an event (such as the arrival of a signal) that occurs&#xD;
+    at a point in time. The state machines mentioned here are finite state machines, and the delineation of &quot;state&quot; is&#xD;
+    usually decided by relatively few variables; for example, the current state could be specified by the value of a single&#xD;
+    attribute of an enumeration type. The reaction of the system however, to an event, might depend not only on the nature&#xD;
+    of the event (and the information it carries, for example, in the operation parameters), and the current state, but&#xD;
+    also on the value of (perhaps many) other attributes.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_orKFgCC8Edq2Lq6r0Grljg" name="Create initial Context Diagram" guid="_orKFgCC8Edq2Lq6r0Grljg">
+    <sectionDescription>&lt;p>&#xD;
+    As you evolve and add more detail to the Use-Case Model (discovering the business actors; or if actors and perhaps&#xD;
+    operations have already been identified, elaborating their interaction), you can create the initial collaboration and&#xD;
+    illustrate this with a Context Diagram. The Context Diagram can be created as shown, initially with the system&#xD;
+    interfaces abstracted away. The system is depicted as a top-level subsystem (stereotyped &quot;system&quot;), which eventually&#xD;
+    realizes several interfaces. Business actors and their associations are also shown, again, with no detail initially.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_0wk_MCC8Edq2Lq6r0Grljg" name="Refine associations and interfaces" guid="_0wk_MCC8Edq2Lq6r0Grljg">
+    <sectionDescription>&lt;p>&#xD;
+    Next, you refine the associations between the business actors and system, and the system interface. You can start to&#xD;
+    reason about the system operations and the system attributes as they emerge from &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../extend.bus_model/tasks/find_business_actors_and_use_cases_2D0CD77E.html&quot;&#xD;
+    guid=&quot;{1CCEB101-0027-451C-81CA-521D8B127F98}&quot;>Task: Find Business Actors and Use Cases&lt;/a>. Later you can use &lt;a&#xD;
+    class=&quot;elementLinkWithType&quot; href=&quot;./../../extend.bus_model/tasks/detail_business_use_case_FDA3D473.html&quot;&#xD;
+    guid=&quot;{0DD91699-9FBA-420D-8E2B-C0945557A791}&quot;>Task: Detail a Business Use Case&lt;/a>). Note that now the system as it&#xD;
+    appears to the actors, by showing the interface. The realization of this can be shown if you wish, but can be omitted&#xD;
+    without much loss of information.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    At this stage, only tentatively identify the I/O business entities, based on domain knowledge and any work done&#xD;
+    previously in realizing business use cases at the enterprise level.&amp;nbsp;Note that it is not required that the I/O&#xD;
+    business entities be shown on the diagram, but this can be helpful in reasoning about actor-system interactions.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Thus, you can start to characterize the connection(s) between actor and system (for example, record the protocol&#xD;
+    required) and record the entities that flow between them.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_5QKI4CC8Edq2Lq6r0Grljg" name="Detail business Operations and other characteristics" guid="_5QKI4CC8Edq2Lq6r0Grljg">
+    <sectionDescription>&lt;p>&#xD;
+    In this step, you start to construct business use-case scenarios (instances of use cases) from which you can describe&#xD;
+    business system operations (provided and required). The scenarios can be illustrated by interaction or activity&#xD;
+    diagrams. Each black-box step in a use case represents a finer-grained interaction with the system and maps to a&#xD;
+    operation invocation (but not necessarily a unique operation; other black-box steps might use the same operation). As&#xD;
+    well as defining the system operations in the Context Diagram (and hence in the Business Analysis Model), the use cases&#xD;
+    are also annotated, for traceability, to the operations invoked. The operations also inherit any performance&#xD;
+    requirements or other non-functional requirements that have been allocated to the black-box steps. As you examine each&#xD;
+    black-box step performed in the scenario, you discover the use of names that might suggest state variables and stores&#xD;
+    that the system must maintain&amp;nbsp;to execute the use-case scenario. You can also refine the I/O business entities that&#xD;
+    are required and associate these with operation invocations to form the signals sent between actor and system.&amp;nbsp;&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    It might aid understanding to divide the system interface into more specific interfaces; indeed, there can be interface&#xD;
+    requirements in the Business Supplementary Specification which drive this. The illustration below shows the evolution&#xD;
+    of the system interface into a &quot;provided system interface&quot; for each actor type, although this is not a fixed&#xD;
+    prescription. Actors might share an interface, or there could be more than one interface for an actor.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    This analysis might also identify interfaces &lt;i>required&lt;/i> by the system, that is, interfaces that must be supported&#xD;
+    by the business actors (to process messages from the system). These can be added to the diagram in a symmetrical&#xD;
+    way.&amp;nbsp;A business&amp;nbsp;actor might support (realize) more than one interface.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    The operations, stores and so forth., need to be added to an expanded form of the interfaces (in the attribute and&#xD;
+    operation compartments) as shown.&amp;nbsp;Again, the realization of the provided system interfaces can be omitted without&#xD;
+    much loss of information.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    This top-level collaboration, captured in the Context Diagram, allows the interfaces, connections, what flows into and&#xD;
+    out of the system, and associated performance characteristics, to be rigorously specified.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <purpose>Based on the Business Use-Case Model,&amp;nbsp; to create a top-level collaboration showing the system (modeled as a top-level&#xD;
+subsystem), its interfaces and its relationships with its actors, including the external I/O business entities that flow&#xD;
+between business actor and business&amp;nbsp;system.</purpose>
+</org.eclipse.epf.uma:TaskDescription>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_0nQaNNnmEdmO6L4XMImrsA" name="association_in_the_business_analysis_model,3.692812179186766E-305" guid="_0nQaNNnmEdmO6L4XMImrsA" changeDate="2005-06-20T18:58:02.893-0700" version="7.1.0">
+  <mainDescription>&lt;a id=&quot;Top&quot; name=&quot;Top&quot;>&lt;/a>&lt;a id=&quot;XE_association_in_business-object_model__guidelines_for&quot;&#xD;
+name=&quot;XE_association_in_business-object_model__guidelines_for&quot;>&lt;/a> &#xD;
+&lt;h3>&#xD;
+    &lt;a id=&quot;Explanation&quot; name=&quot;Explanation&quot;>Explanation&lt;/a>&#xD;
+&lt;/h3>&#xD;
+&lt;p>&#xD;
+    An association represents structural relationships between instances of business workers and business entities in the&#xD;
+    business analysis model. It is information that must be preserved for some duration, and does not simply show&#xD;
+    procedural dependency relationships. Each association has a name and a multiplicity. The multiplicity defines how many&#xD;
+    objects of the connected class can be connected. It is either a constant or a range (e.g., 0..5) that shows the number&#xD;
+    of objects that can be connected.&#xD;
+&lt;/p>&#xD;
+&lt;h5>&#xD;
+    Example:&#xD;
+&lt;/h5>&#xD;
+&lt;p class=&quot;example&quot;>&#xD;
+    An agent who checks in airline passengers follows a set of instructions that describe his tasks in the check-in&#xD;
+    business use case. Each employee acting as a check-in agent should know these procedures by heart, in order for the&#xD;
+    check-in use case to work smoothly. The business worker class Check-in Agent should have an association to a business&#xD;
+    entity class representing the set of instructions.&#xD;
+&lt;/p>&#xD;
+&lt;h3>&#xD;
+    &lt;a id=&quot;Roles&quot; name=&quot;Roles&quot;>Roles&lt;/a>&#xD;
+&lt;/h3>&#xD;
+&lt;p>&#xD;
+    Some types of associations may have a rather broad interpretation. For these types, it is important that you specify&#xD;
+    the particular interpretation in each case. For this purpose, the roles that involved parties play in the association&#xD;
+    can be specified. If this is not sufficient to describe the association, the association can be given a name as well.&#xD;
+    Avoid names like &quot;has&quot; and &quot;contains&quot; which do not add any information to what the association already indicates.&#xD;
+&lt;/p>&lt;br />&#xD;
+&lt;br /></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ArtifactDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_4IPrUPJpEdmUp5CEICY-aQ" guid="_4IPrUPJpEdmUp5CEICY-aQ" changeDate="2005-09-28T07:16:22.159-0700" version="7.1.0">
+  <mainDescription>&lt;p class=&quot;reactive&quot;>&#xD;
+    Protocols allow the specification for a set of &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../core.base_rup/workproducts/rup_capsule_FC4A34FD.html&quot; guid=&quot;{4423FCE1-FF59-4C8E-A6C4-AA4B13CB3250}&quot;>Artifact:&#xD;
+    Capsule&lt;/a> ports to be defined and reused. The protocol defines a set of incoming and outgoing message types (e.g.&#xD;
+    operations, signals), and optionally a collaboration (usually consisting of a set of sequence diagrams, see &lt;a&#xD;
+    class=&quot;elementLinkWithType&quot; href=&quot;./../../core.base_rup/guidances/guidelines/sequence_diagram_AFA76EBB.html&quot;&#xD;
+    guid=&quot;3.211008403369512E-306&quot;>Guideline: Sequence Diagram&lt;/a>) which defines the required ordering of messages, and a&#xD;
+    state machine (described by a set of statechart diagrams, see &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../core.base_rup/guidances/guidelines/statechart_diagram_640B5D0B.html&quot; guid=&quot;1.4528459404144188E-304&quot;>Guideline:&#xD;
+    Statechart Diagram&lt;/a>) which specifies the abstract behavior that the participants in a protocol must provide.&#xD;
+&lt;/p>&#xD;
+&lt;p class=&quot;reactive&quot;>&#xD;
+    A protocol is a specification of &lt;b>desired&lt;/b> behavior that can take place over a connector -- an explicit&#xD;
+    specification of the contractual agreement between the participants in the protocol. It is pure behavior and does not&#xD;
+    specify any structural elements. A protocol comprises a set of participants, each of which plays a specific role in the&#xD;
+    protocol.&#xD;
+&lt;/p>&#xD;
+&lt;p class=&quot;reactive&quot;>&#xD;
+    Each such &lt;b>protocol role&lt;/b> is specified by a unique name and a set of signals that are received by that role as&#xD;
+    well as the set of signals that are sent by that role (either set could be empty). As an option, a protocol can also&#xD;
+    have a specification of the valid communication sequences; a state machine may specify this. Finally, a protocol may&#xD;
+    also have a set of prototypical interaction sequences (these can be shown as sequence diagrams). These must conform to&#xD;
+    the protocol state machine, if one is defined.&#xD;
+&lt;/p>&#xD;
+&lt;p class=&quot;reactive&quot;>&#xD;
+    &lt;b>Binary protocols&lt;/b>, involving just two participants, are by far the most common and the simplest to specify. One&#xD;
+    advantage of these protocols is that only one role, called the &lt;b>base role&lt;/b>, needs to be specified. The other,&#xD;
+    called the &lt;b>conjugate&lt;/b>, can be derived from the base role simply by inverting the incoming and outgoing signal&#xD;
+    sets. This inversion operation is known as &lt;b>conjugation&lt;/b>.&#xD;
+&lt;/p>&#xD;
+&lt;p class=&quot;reactive&quot; align=&quot;center&quot;>&#xD;
+    &lt;img height=&quot;277&quot; alt=&quot;Composition of Protocol Class&quot; src=&quot;resources/ar_prot1.gif&quot; width=&quot;436&quot; />&#xD;
+&lt;/p>&#xD;
+&lt;p class=&quot;reactivepicturetext&quot; align=&quot;center&quot;>&#xD;
+    Composition of &amp;lt;&amp;lt;protocol&amp;gt;&amp;gt; class.&#xD;
+&lt;/p>&#xD;
+&lt;p class=&quot;reactive&quot; align=&quot;left&quot;>&#xD;
+    As noted in above figure, a protocol typically contains one or more sequence diagrams which illustrate the valid&#xD;
+    message exchange sequences specified by the protocol. The protocol also consists of a set of incoming (request)&#xD;
+    messages and a set of outgoing (response) messages. An optional state machine can be used to specify the behavior that&#xD;
+    participants in the protocol must support.&#xD;
+&lt;/p></mainDescription>
+  <representationOptions>UML Representation: Class, stereotyped as &amp;lt;&amp;lt;protocol&amp;gt;&amp;gt;. Note that this representation is based on UML 1.5&#xD;
+notation. Much of this can be represented in UML 2.0 using the &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+href=&quot;./../../core.base_rup/guidances/concepts/structured_class_FF8DB16F.html&quot; guid=&quot;1.1994826813129747E-304&quot;>Concept: Structured&#xD;
+Class&lt;/a>.&amp;nbsp; Refer to &lt;a class=&quot;elementLink&quot;&#xD;
+href=&quot;./../../core.base_rup/guidances/supportingmaterials/differences_between_uml_1_x_and_uml_2_0_CA70F2E6.html&quot;&#xD;
+guid=&quot;4.792914878943572E-306&quot;>Differences Between UML 1.x and UML 2.0&lt;/a> for more information.</representationOptions>
+</org.eclipse.epf.uma:ArtifactDescription>

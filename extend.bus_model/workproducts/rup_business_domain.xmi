@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ArtifactDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="-RbzccpFhZt5ORqFtutUGHw" name="new_artifact,__IIS0ExMEduGSMz-5zscXg" guid="-RbzccpFhZt5ORqFtutUGHw" changeDate="2006-11-01T14:59:14.113-0800" version="1.0.0">
+  <mainDescription>&lt;p>&#xD;
+    A Business Domain is a tool to allow a &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../extend.bus_model/workproducts/rup_business_analysis_model_9449F63A.html&quot;&#xD;
+    guid=&quot;{CF53445C-3351-46C6-810E-8251830029A7}&quot;>Artifact: Business Analysis Model&lt;/a>&amp;nbsp;to group business systems,&#xD;
+    especially when a model is used to describe high-level business architecture or organization (such as that produced by&#xD;
+    &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../extend.bus_model/guidances/concepts/business_component_modeling_527F8FC0.html&quot;&#xD;
+    guid=&quot;_uKecsC7xEdu14aFGpEDchg&quot;>Concept: Component Business Modeling&lt;/a>). The Business Domain itself is the expression&#xD;
+    of a competency of the business whereas the contained &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../extend.bus_model/workproducts/rup_business_system_BB28EEB.html&quot;&#xD;
+    guid=&quot;{4064F184-314B-4965-9F08-6AE5DBF6205A}&quot;>Artifact: Business System&lt;/a>s&amp;nbsp;are the autonomous units of the&#xD;
+    business operating within that particular domain. As described in &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../extend.bus_model/guidances/guidelines/business_system_4B3288B3.html&quot; guid=&quot;5.503233494422666E-306&quot;>Guideline:&#xD;
+    Business System&lt;/a>&amp;nbsp;Systems communicate using provided and required Business Services (capabilities of the system)&#xD;
+    and the introduction of Business Domains does not complicate this in any way, there is no notion of priviledged&#xD;
+    communication between Systems in the same Domain (for example).&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    The example below demonstrates a partial model with business domains containing business systems, we assume that the&#xD;
+    enclosed systems contain far more detail than is shown here.&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;center&quot;>&#xD;
+    &amp;nbsp;&lt;img height=&quot;310&quot; alt=&quot;Illustration of business domains containing business systems&quot;&#xD;
+    src=&quot;./../guidances/concepts/resources/rup_cbm_map.PNG&quot; width=&quot;516&quot; />&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    One key aspect of the Business Domain is that Business Systems are contained within the domain; that is a Business&#xD;
+    System may only be categorized as part of one Business Domain at any time.&#xD;
+&lt;/p></mainDescription>
+  <keyConsiderations>Business Domains are not intented to model organizational structures and should not be used to do so; they are logical&#xD;
+containers for Business Systems only.</keyConsiderations>
+  <purpose>To provide a logical (only) grouping of Business Systems such that they are categorized according to the competencies of&#xD;
+the larger organization.</purpose>
+  <impactOfNotHaving>&lt;p>&#xD;
+    A &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../extend.bus_model/workproducts/rup_business_analysis_model_9449F63A.html&quot;&#xD;
+    guid=&quot;{CF53445C-3351-46C6-810E-8251830029A7}&quot;>Artifact: Business Analysis Model&lt;/a>&amp;nbsp;which does include a number of&#xD;
+    &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../extend.bus_model/workproducts/rup_business_system_BB28EEB.html&quot;&#xD;
+    guid=&quot;{4064F184-314B-4965-9F08-6AE5DBF6205A}&quot;>Artifact: Business System&lt;/a>&amp;nbsp;but which does not manage them using&#xD;
+    Business Domains provides far less information in terms of the catagorization of the systems it includes. When the&#xD;
+    model is used as part of a broad business transformation effort then the use of Business Domains is critical.&#xD;
+&lt;/p></impactOfNotHaving>
+  <reasonsForNotNeeding>&lt;p>&#xD;
+    When the &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../extend.bus_model/workproducts/rup_business_analysis_model_9449F63A.html&quot;&#xD;
+    guid=&quot;{CF53445C-3351-46C6-810E-8251830029A7}&quot;>Artifact: Business Analysis Model&lt;/a>&amp;nbsp;represents a smaller effort&#xD;
+    and focused perhaps only upon one Business System then the additional overhead of modeling a corresponding Business&#xD;
+    Domain may be unnecessary.&#xD;
+&lt;/p></reasonsForNotNeeding>
+  <representationOptions>UML Representation:&amp;nbsp;a package, stereotyped as &amp;lt;&amp;lt;Business Domain&amp;gt;&amp;gt; within the &lt;a&#xD;
+class=&quot;elementLinkWithType&quot; href=&quot;./../../extend.bus_model/workproducts/rup_business_analysis_model_9449F63A.html&quot;&#xD;
+guid=&quot;{CF53445C-3351-46C6-810E-8251830029A7}&quot;>Artifact: Business Analysis Model&lt;/a>.</representationOptions>
+</org.eclipse.epf.uma:ArtifactDescription>

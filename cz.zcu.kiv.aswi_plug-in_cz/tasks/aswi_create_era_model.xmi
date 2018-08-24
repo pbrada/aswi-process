@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-05hmYJAcYWDnXCI7QDPGHg" name=",_SJljYCqSEeKro62q_nzUjw" guid="-05hmYJAcYWDnXCI7QDPGHg" changeDate="2013-03-25T20:12:03.211+0100" version="7.5.1">
+  <mainDescription>&lt;p class=&quot;MsoNormal&quot; style=&quot;MARGIN: 0cm 0cm 10pt&quot;>&#xD;
+    &lt;span style=&quot;FONT-SIZE: 10pt; FONT-FAMILY: 'Arial','sans-serif'; LINE-HEIGHT: 115%&quot;>V patřičném nástroji, popř. v&#xD;
+    odpovídající kvalitě ručně, nastínit plánovanou finální strukturu databáze vyvíjeného (nebo upravovaného) systému.&#xD;
+    Jedná-li se o rozšíření databáze, je vhodné vytvořit nejprve model pouze nových nebo upravovaných tabulek a těch, se&#xD;
+    kterými jsou v relaci, a poté tento parciální model spojit s původním modelem databáze, čímž dostaneme finální celkový&#xD;
+    model. ERA model je jednou z častých součástí dokumenty Architektura.&lt;/span>&#xD;
+&lt;/p></mainDescription>
+  <keyConsiderations>jedná se o úpravu existující nebo vytváření nové databáze, typ databáze (relační, ORM, atd.)</keyConsiderations>
+  <sections xmi:id="_mCXrsCqSEeKro62q_nzUjw" name="Prozkoumat současný stav" guid="_mCXrsCqSEeKro62q_nzUjw">
+    <sectionDescription>Najít a prostudovat ERA model současné databáze, pokud existuje (pouze pro brown-field projekty). Pokud existuje databáze,&#xD;
+ale nikoli její projekt, vytvořit jej.</sectionDescription>
+  </sections>
+  <sections xmi:id="_4kAa4CqSEeKro62q_nzUjw" name="Vytvořit model změn" guid="_4kAa4CqSEeKro62q_nzUjw">
+    <sectionDescription>&lt;p>&#xD;
+    Vytvořit částečný ERA model pouze nových nebo měněných tabulek v současném projektu.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_-95VICqSEeKro62q_nzUjw" name="Spojit modely" guid="_-95VICqSEeKro62q_nzUjw">
+    <sectionDescription>Spojit model původní verze databáze a model změněné/nové části.</sectionDescription>
+  </sections>
+  <purpose>Zachytit novou strukturu databáze systému.</purpose>
+</org.eclipse.epf.uma:TaskDescription>

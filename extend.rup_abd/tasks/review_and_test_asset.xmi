@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="--p9y61JXnF7zxQyetppOAQ" name="review_asset,_oWo8gN92EdqhGsqsJmAtOw" guid="--p9y61JXnF7zxQyetppOAQ" changeDate="2007-05-03T12:07:12.984-0700" version="1.0.0">
+  <mainDescription>&lt;p>&#xD;
+    As assets are submitted to the Repository the relevant parties are notified of their role in the review process. Some&#xD;
+    may be in the role of Reviewers whereas others are in the role of the Review Board. There are many possible review&#xD;
+    processes given the variety of asset types, cultures, and other restrictions.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    The review processes are defined per Community. There are three kinds of review processes:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        AS-IS&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Built-in&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Extensible&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>&#xD;
+    The Built-in and Extensible review processes can use a Review Board. The Review Board provides oversight to the review&#xD;
+    process, they can modify the set of reviewers, initiate the review process, and cast final votes on the asset. Without&#xD;
+    a Review Board the Reviewers are notified and the assets are approved/rejected based on the votes cast by the&#xD;
+    Reviewers.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    &amp;nbsp;&lt;img style=&quot;WIDTH: 814px; HEIGHT: 583px&quot; height=&quot;527&quot; alt=&quot;Review Process with and without Review Board.&quot;&#xD;
+    src=&quot;./resources/builtinreview_comparereviewboard.gif&quot; width=&quot;600&quot; />&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        As-Is: this really means there is no review process, meaning that assets submitted using AS-IS are automatically&#xD;
+        approved. Administrators normally have to approve this.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Built-in: in this case the Asset Repository provides fundamental asset review capabilities which can be configured&#xD;
+        by the Administrator. Review Board members and reviewers can be identified to review assets of a particular type,&#xD;
+        owner, or classification. The Asset Repository notifies participants when an asset comes in for a review process.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Extensible: this kind of review process is customizable to reflect the workflow the enterprise needs. This review&#xD;
+        process is specified by a process language or by a change management system.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>&#xD;
+    There are many possible review processes given the variety of asset types, cultures, and other restrictions. The review&#xD;
+    process can be netted to two major groups, the Review Board and the Reviewers. The review process was specified in the&#xD;
+    Task: Configure Repository. If the Review Board is enabled then for each asset that is submitted the Review Board&#xD;
+    should be notified and they begin their activities. The Review Board will plan the review, select reviewers, initiate&#xD;
+    the review, evaluate the submitted reviews, and cast the final, deciding vote on the asset. In the image below a&#xD;
+    built-in review process has been specified called “Service Implementation Review” for assets of type “Service&#xD;
+    Implementation”. A Review Board has been enabled, this means they will cast the final vote on the asset. Also one&#xD;
+    review has been identified, by name, rather than by role.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Once the Reviewers are notified of the review they can claim the review request and conduct the review and submit the&#xD;
+    review with vote to the Repository. Reviewers may also suggest other Reviewers to the Review Board. If the Review Board&#xD;
+    is not enabled for the review, then the votes from the Reviewers determine if the asset is accepted or rejected.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    The actual set of reviewers, the steps of the review process, and the parties involved generally requires customization&#xD;
+    for each organization.&#xD;
+&lt;/p></mainDescription>
+  <sections xmi:id="_Fdd5cKdAEdu3IsnteZnoTw" name="Submitt Asset for Review" guid="_Fdd5cKdAEdu3IsnteZnoTw">
+    <sectionDescription>&lt;p>&#xD;
+    The Asset Owner or Producer has completed their refinements of the asset and now submits the asset to the review and&#xD;
+    approval process. The Asset Owner or Producer may have suggestions on subject matter experts who could fill the role of&#xD;
+    Reviewers.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Setting up the Reviewers in the Repository is helpful, but should be extensible for specific assets.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_G3dyQKdAEdu3IsnteZnoTw" name="Notify Parties" guid="_G3dyQKdAEdu3IsnteZnoTw">
+    <sectionDescription>The Repository should handle the activities of notifying Reviewers of the asset to be reviewed.&amp;nbsp;However, in practice,&#xD;
+the Asset Owner or the Review Board may need to provide reminders.</sectionDescription>
+  </sections>
+  <sections xmi:id="_IB-dkKdAEdu3IsnteZnoTw" name="Conduct Review" guid="_IB-dkKdAEdu3IsnteZnoTw">
+    <sectionDescription>&lt;p>&#xD;
+    There are many kinds of reviews to be performed on assets. Some types of reviews include:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Asset name review: the proposed asset name is compared with understanding of the target Asset Consumers.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Classification review: the classification aligns with the manner in which target Asset Consumers will search for&#xD;
+        the asset.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Functional compliance review: the asset goes through typical functional testing, executing test cases and using&#xD;
+        testing tools to validate the asset.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Non-functional compliance review: the asset goes through non-functional testing to verifies the asset’s&#xD;
+        performance, scalability, security, and so forth.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Packaging review: verify the asset contains necessary support material, making it easy for the Asset Consumer to&#xD;
+        use, and also support contact information is present and accurate and the support team is ready to support the&#xD;
+        asset.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Similar asset review: The asset is evaluated compared to other assets to determine if the implementation overlaps&#xD;
+        or is similar to other assets in the Repository.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Subject Matter expert review: A fit for purpose evaluation is conducted, examining of the asset fulfills the&#xD;
+        purpose properly and aligns with the Asset Specification.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>&#xD;
+    When a Reviewer completes a review they submit the review files (if any) and cast a vote.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_JCWVcKdAEdu3IsnteZnoTw" name="Browse Review" guid="_JCWVcKdAEdu3IsnteZnoTw">
+    <sectionDescription>&lt;p>&#xD;
+    If the Review Board is enabled they cast their vote on approving or rejecting the asset. If the asset is rejected then&#xD;
+    it returns to an early submission state, such as Draft, otherwise it transitions to a state such as Approved.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    An asset that is Approved is made visible to the anticipated Asset Consumer audience through the Repository. An asset&#xD;
+    may transition to other states as well after it has been approved. For example, if the asset is a service, then it may&#xD;
+    be published to a service registry, which may change the state to Published.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_KPFOUKdAEdu3IsnteZnoTw" name="Review Board Vote" guid="_KPFOUKdAEdu3IsnteZnoTw">
+    <sectionDescription>&lt;p>&#xD;
+    If the Review Board is enabled, they cast their vote on approving or rejecting the asset. If the asset is rejected,&#xD;
+    then it returns to an early submission state, such as Draft, otherwise it transitions to a state such as Approved.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    An asset that is Approved is made visible to the anticipated Asset Consumer audience through the Repository. An asset&#xD;
+    may transition to other states as well after it has been approved. For example, if the asset is a service, then it may&#xD;
+    be published to a service registry, which may change the state to Published.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <purpose>To maintain control, quality, and management of the content into the Repository.</purpose>
+</org.eclipse.epf.uma:TaskDescription>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_yKfc2tnmEdmO6L4XMImrsA" name="implementation_mechanism,_yKfc2dnmEdmO6L4XMImrsA" guid="_yKfc2tnmEdmO6L4XMImrsA" version="7.1.0">
+  <mainDescription>An &lt;i>&lt;a class=&quot;elementLink&quot; href=&quot;./../../../core.base_rup/guidances/termdefinitions/architectural_mechanism_8730DF1F.html&quot;&#xD;
+guid=&quot;_x7JZQ9nmEdmO6L4XMImrsA&quot;>architectural mechanism&lt;/a>&lt;/i> used during the implementation process. They are refinements&#xD;
+of &lt;i>&lt;a class=&quot;elementLinkWithUserText&quot; href=&quot;./../../../core.base_rup/guidances/termdefinitions/design_mechanism_5F46BEF2.html&quot;&#xD;
+guid=&quot;_yF4Ck9nmEdmO6L4XMImrsA&quot;>design mechanisms&lt;/a>&lt;/i> , which specify the exact implementation of the mechanism, and&#xD;
+which will also very likely employ several implementation patterns (idioms) in their construction. Again, there is not&#xD;
+necessarily any difference in scale between the design mechanism and the implementation mechanism.&lt;br />&#xD;
+ &lt;br />&#xD;
+For example, one particular implementation of the inter-process communication analysis mechanism is a shared memory design&#xD;
+mechanism utilizing a particular operating system's shared memory function calls. Concurrency conflicts (inappropriate&#xD;
+simultaneous access to shared memory) may be prevented using semaphores, or using a latching mechanism, which in turn rest&#xD;
+upon other implementation mechanisms.</mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

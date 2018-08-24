@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ArtifactDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_0sxMUNnmEdmO6L4XMImrsA" name="rup_business_system,{4064F184-314B-4965-9F08-6AE5DBF6205A}" guid="_0sxMUNnmEdmO6L4XMImrsA" changeDate="2005-08-30T23:31:13.816-0700" version="7.1.0">
+  <copyrightStatement href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#_NH1FoPTFEdmkpYARNN468A"/>
+  <purpose>&lt;a id=&quot;Top&quot; name=&quot;Top&quot;>&lt;/a>&lt;a id=&quot;XE_class__purpose_of&quot; name=&quot;XE_class__purpose_of&quot;>&lt;/a>&lt;a id=&quot;Purpose&quot; name=&quot;Purpose&quot;>&lt;/a>&#xD;
+&#xD;
+&lt;p>&#xD;
+    The purpose of a Business System is to reduce and manage the complex web of interdependencies and interactions within a&#xD;
+    business. This is done by defining a set of capabilities so that those dependent on these capabilities need have no&#xD;
+    knowledge of how those capabilities are performed. In this way, Business Systems are used in much the same manner that&#xD;
+    hardware and software components are used. They define a unit of structure that encapsulates the structural elements&#xD;
+    that they contain and are characterized by their externally visible properties.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Business Systems are used by business-process analysts to determine whether the capabilities required within the&#xD;
+    organization are present and to ensure that the business model is anticipating change or is at least resilient to&#xD;
+    change. Business designers use Business Systems to form collections of related business workers and business entities&#xD;
+    and explicitly define and manage dependencies within the organization. Project managers also use Business Systems for&#xD;
+    scheduling work in parallel.&#xD;
+&lt;/p></purpose>
+  <representationOptions>&lt;p>&#xD;
+    UML Representation:&amp;nbsp;component in the business analysis model, stereotyped as &amp;lt;&amp;lt;business system&amp;gt;&amp;gt;. A&#xD;
+    business system is at the same scale as a UML subsystem and, because it is a component,&amp;nbsp;has packaging semantics as&#xD;
+    well. The top-level component of the model &lt;em>is&lt;/em> the business or part of the business under consideration, and&#xD;
+    appears in the context diagram in the &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../extend.bus_model/workproducts/rup_business_analysis_model_9449F63A.html&quot;&#xD;
+    guid=&quot;{CF53445C-3351-46C6-810E-8251830029A7}&quot;>Artifact: Business Analysis Model&lt;/a>,&amp;nbsp;where its relationship with&#xD;
+    the business environment is shown.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;a id=&quot;Tailoring&quot; name=&quot;Tailoring&quot;>&lt;/a>&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Business Systems should be used to manage dependencies within the organization by explicitly defining the capabilities&#xD;
+    (or services) that each Business System provides. This implies that the Business System encapsulates its contained&#xD;
+    elements so that users of its services do not depend on &lt;b>how&lt;/b> it provides its services but rather on &lt;b>what&lt;/b>&#xD;
+    services it provides.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    This rule can be relaxed when encapsulation is not important. In this case, Business Systems may directly interact&#xD;
+    with, or be dependent on elements contained within other Business Systems. Formally specifying in detail the notional&#xD;
+    services that must be provided&amp;nbsp;at the Business System boundary is less important in this case because ultimately&#xD;
+    those services belong with the elements contained in the Business System, and it is to services on those contained&#xD;
+    elements that a service user will bind.&amp;nbsp;This variation regards the Business System&amp;nbsp;more as a packaging&#xD;
+    (structuring) mechanism, rather than as a concept in itself.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    When this is done, the business system essentially does not exist at execution time, that is, as the business operates,&#xD;
+    because its notional services are provided directly by its contained elements. Even so, it may still indicate a real&#xD;
+    business organizational boundary, with ownership of resources.&#xD;
+&lt;/p></representationOptions>
+</org.eclipse.epf.uma:ArtifactDescription>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_3wbKkNnmEdmO6L4XMImrsA" name="review_change_request,{1CD358DF-3FFC-4281-B3EF-8E3CD76C5900}" guid="_3wbKkNnmEdmO6L4XMImrsA" changeDate="2005-11-03T11:22:03.876-0800" version="7.1.0">
+  <sections xmi:id="_aZTDENnnEdmO6L4XMImrsA" name=" Schedule CCB Review Meeting " guid="_aZTDENnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;Schedule CCB Review Meeting&quot; name=&quot;Schedule CCB Review Meeting&quot;>&lt;/a>&#xD;
+&lt;p>&#xD;
+    The Change (or Configuration) Control Board (CCB) is the board that oversees the change process consisting of&#xD;
+    representatives from all interested parties, including customers, developers, and users. In a small project, a single&#xD;
+    person, such as the project manager or software architect, may play this role. In the Rational Unified Process, this is&#xD;
+    shown by the &lt;a class=&quot;elementLink&quot; href=&quot;./../../core.base_rup/roles/rup_change_manager_51E43456.html&quot;&#xD;
+    guid=&quot;{C1D3C2C0-15A0-49AD-9788-8C163E53CB96}&quot;>Change Control Manager&lt;/a> role.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    The function of this meeting is to review &lt;b>&lt;i>Submitted&lt;/i>&lt;/b> Change Requests. An initial review of the contents of&#xD;
+    the CR is done in the meeting to determine if it is a valid request. If so, then a determination is made if the change&#xD;
+    is in or out of scope for the current release(s), based on priority, schedule, resources, level-of-effort, risk,&#xD;
+    severity and any other relevant criteria as determined by the group. This meeting is typically held once per week. If&#xD;
+    the CR volume increases substantially, or as the end of a release cycle approaches, the meeting may be held as&#xD;
+    frequently as daily. Typical members of the CCB Review Meeting are the Test Manager, Development Manager and a member&#xD;
+    of the Marketing Department. Additional attendees may be deemed necessary by the members on an &quot;as needed&quot; basis.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_aZTDEdnnEdmO6L4XMImrsA" name=" Retrieve Change Requests for Review " guid="_aZTDEdnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;Retrieve Change Requests for Review&quot; name=&quot;Retrieve Change Requests for Review&quot;>&lt;/a>&#xD;
+&lt;p>&#xD;
+    The Change Request Form is a formally submitted work product that is used to track all requests, including new&#xD;
+    features, enhancement requests, defects, changed requirements, etc. This includes related status information throughout&#xD;
+    the project lifecycle. All change history will be maintained with the CR, including all state changes along with dates&#xD;
+    and reasons for the change. This information will be available for any repeat reviews and for final closing. An example&#xD;
+    Change Request Form is provided in &lt;a class=&quot;elementLinkWithUserText&quot;&#xD;
+    href=&quot;./../../core.base_rup/workproducts/rup_change_request_F2E6419.html&quot; guid=&quot;{694A7BC8-3D20-4172-BC56-6C7BD4590BA5}&quot;>Work&#xD;
+    Product: Change Requests&lt;/a>.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_aZTDEtnnEdmO6L4XMImrsA" name=" Review Submitted Change Requests " guid="_aZTDEtnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;Review Submitted Change Requests&quot; name=&quot;Review Submitted Change Requests&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    The function of this task is to review &lt;b>&lt;i>Submitted&lt;/i>&lt;/b> Change Requests. This state occurs as the result of 1) a&#xD;
+    new CR submission, 2) update of an existing CR or 3) consideration of a &lt;b>&lt;i>Postponed&lt;/i>&lt;/b> CR for a new release&#xD;
+    cycle. CR is placed in the CCB Review queue. No owner assignment takes place as a result of this action.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    An initial review of the contents of the CR is done in the CCB Review meeting to determine if it is a valid request. If&#xD;
+    so, then a determination is made if the change is in or out of scope for the current release(s), based on priority,&#xD;
+    schedule, resources, level-of-effort, risk, severity and any other relevant criteria as determined by the group.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    If the CR is determined to be valid, but &quot;out of scope&quot; for the current release(s) it will be put in the&#xD;
+    &lt;b>&lt;i>Postponed&lt;/i>&lt;/b> state and will be held and reconsidered for future releases. A target release may be assigned&#xD;
+    to indicate the timeframe in which the CR may be &lt;b>&lt;i>Submitted&lt;/i>&lt;/b> to re-enter the CCB Review queue.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    If a CR is believed to be a duplicate of another CR that has already been submitted, its should be assigned to the CCB&#xD;
+    Review Admin or the team member assigned to resolve it. When the CR is placed into the &lt;b>&lt;i>Duplicate&lt;/i>&lt;/b> state,&#xD;
+    the CR number it duplicates will be recorded (on the Attachments tab in ClearQuest). A submitter should initially query&#xD;
+    the CR database for duplicates of a CR before it is submitted. This will prevent several steps of the review process&#xD;
+    and therefore save a lot of time. Submitters of duplicate CRs should be added to the notification list of the original&#xD;
+    CR for future notifications regarding resolution.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Sometimes a CR is determined in the CCB Review Meeting or by the assigned team member to be an invalid request or more&#xD;
+    information is needed from the submitter. If already assigned (&lt;b>&lt;i>Opened&lt;/i>&lt;/b>), the CR is removed from the&#xD;
+    resolution queue and will be reviewed again. A designated authority of the CCB is assigned to confirm. No action is&#xD;
+    required from the submitter unless deemed necessary, in which case the CR state will be changed to &lt;b>&lt;i>More&#xD;
+    Info&lt;/i>&lt;/b>. The CR will be reviewed again in the CCB Review Meeting considering any new information. If confirmed&#xD;
+    invalid, the CR will be &lt;b>&lt;i>Closed&lt;/i>&lt;/b> by the CCB and the submitter notified.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    When a CR has been determined to be &quot;in scope&quot; for the current release it is assigned to an &lt;b>&lt;i>Opened&lt;/i>&lt;/b> state&#xD;
+    and is awaiting resolution. It has been slated for resolution before an upcoming target milestone. It is defined as&#xD;
+    being in the &quot;assignment queue&quot;. The meeting members are the sole authority for opening a CR into the resolution queue.&#xD;
+    If a CR of priority two or higher is found, it should be brought to the immediate attention of the QE or Project&#xD;
+    Manager. At that point they may decide to convene an emergency CCB Review Meeting or simply open the CR into the&#xD;
+    resolution queue instantly.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    An &lt;b>&lt;i>Opened&lt;/i>&lt;/b> CR is then the responsibility of the Project Manager to Assign Work based on the type of CR and&#xD;
+    update the schedule, if appropriate.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Typical states that a Change Request may pass through are shown in &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../core.base_rup/guidances/concepts/change_request_management_119F2E47.html&quot; guid=&quot;5.975934904188119E-305&quot;>Change&#xD;
+    Request Management&lt;/a>.&#xD;
+&lt;/p>&lt;br />&#xD;
+&lt;br /></sectionDescription>
+  </sections>
+  <purpose>&lt;a id=&quot;Top&quot; name=&quot;Top&quot;>&lt;/a>&lt;a id=&quot;XE_change_request_management__reviewing_change_requests&quot;&#xD;
+name=&quot;XE_change_request_management__reviewing_change_requests&quot;>&lt;/a> &#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        The purpose of this task is to determine if the Change Request (CR) should be accepted or flagged for rejection.&#xD;
+        For accepted CRs, this task assesses priority, effort, schedule, and so on to determine if the change is in scope&#xD;
+        for the current release.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></purpose>
+</org.eclipse.epf.uma:TaskDescription>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_2OXh8tnmEdmO6L4XMImrsA" name="plan_system_integration,{11538D9A-7439-4FDD-8333-9E2E47E5E173}" guid="_2OXh8tnmEdmO6L4XMImrsA" changeDate="2005-11-04T07:39:38.694-0800" version="7.1.0">
+  <sections xmi:id="_VX3wkNnnEdmO6L4XMImrsA" name=" Identify Subsystems " guid="_VX3wkNnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;Identify Subsystems&quot; name=&quot;Identify Subsystems&quot;>&lt;/a>&#xD;
+&lt;p>&#xD;
+    The iteration plan specifies all use cases and scenarios that should be implemented in this iteration. Identify which&#xD;
+    implementation subsystems participate in the use cases and scenarios for the current iteration. Study the design&#xD;
+    use-case realization's sequence diagrams, communication diagrams, and so on. Also identify which other implementation&#xD;
+    subsystems are needed to make it possible to compile, that is, create builds.&#xD;
+&lt;/p>&#xD;
+&lt;p class=&quot;picturecenter&quot; align=&quot;center&quot;>&#xD;
+    &lt;img src=&quot;resources/plsyint1.gif&quot; alt=&quot;Use-cases and Scenarios for an Iteration Diagram&quot; width=&quot;339&quot; height=&quot;171&quot;&#xD;
+    align=&quot;center&quot; />&#xD;
+&lt;/p>&#xD;
+&lt;p class=&quot;picturetext&quot;>&#xD;
+    Implementation subsystems are identified from the design use-case realizations.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_VYnXcNnnEdmO6L4XMImrsA" name=" Define Build Sets " guid="_VYnXcNnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;Define &amp;quot;Build Sets&amp;quot;&quot; name=&quot;Define &amp;quot;Build Sets&amp;quot;&quot;>&lt;/a>&#xD;
+&lt;p>&#xD;
+    In large systems where you may have up to a hundred implementation subsystems, it becomes a complex task to plan the&#xD;
+    integration.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    To facilitate integration planning, and manage complexity you need to reduce the number of things you need to think&#xD;
+    about. It is recommended that you define meaningful sets of subsystems (&lt;b>build sets&lt;/b> or &lt;b>towers&lt;/b>), that&#xD;
+    belong together from an integration point of view. 'Belong together' in the sense that these subsystems are sometimes&#xD;
+    integrated as a group; it does not make sense to integrate just one of the subsystems. For example, all the subsystems&#xD;
+    in lower layers that a subsystem needs (imports directly, or indirectly) to execute, could be a meaningful build set.&#xD;
+&lt;/p>&#xD;
+&lt;p class=&quot;picturecenter&quot; align=&quot;center&quot;>&#xD;
+    &lt;img src=&quot;resources/plsyint2.gif&quot; alt=&quot;Sample Build Set Diagram&quot; width=&quot;327&quot; height=&quot;188&quot; align=&quot;center&quot; />&#xD;
+&lt;/p>&#xD;
+&lt;p class=&quot;picturetext&quot;>&#xD;
+    A build set is defined for the lowest layer if these two subsystem often are integrated as a group. A build set is&#xD;
+    defined with all subsystems that are needed to compile and execute subsystem A.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Notice that the build sets can, and will, overlap. Which build sets and their contents you have may vary during the&#xD;
+    life of a project.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    The purpose of defining these build sets is to make it easier to do the integration planning. Instead of thinking about&#xD;
+    individual subsystems you can think about sets of subsystems.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_VZXlYNnnEdmO6L4XMImrsA" name=" Define a Series of Builds " guid="_VZXlYNnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;Define a Series of Builds&quot; name=&quot;Define a Series of Builds&quot;>&lt;/a>&#xD;
+&lt;p>&#xD;
+    You define a series of builds to incrementally integrate the system. This is typically done bottom-up in the layered&#xD;
+    structure of subsystems in the implementation model. For each build, define which subsystems should go into it, and&#xD;
+    which other subsystems must be available as stubs. In the figure following, three builds have been defined.&#xD;
+&lt;/p>&#xD;
+&lt;p class=&quot;picturecenter&quot; align=&quot;center&quot;>&#xD;
+    &lt;img src=&quot;resources/plsyint3.gif&quot; alt=&quot;Three Build Integration Plan Diagram&quot; width=&quot;339&quot; height=&quot;171&quot; />&#xD;
+&lt;/p>&#xD;
+&lt;p class=&quot;picturetext&quot;>&#xD;
+    An integration planned to be done in three builds.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_VZ9bQNnnEdmO6L4XMImrsA" name=" Evaluate the Integration Build Plan " guid="_VZ9bQNnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;Evaluate the Integration Build Plan&quot; name=&quot;Evaluate the Integration Build Plan&quot;>&lt;/a>&lt;a&#xD;
+id=&quot;XE_Integration_Build_Plan_document__evaluating&quot; name=&quot;XE_Integration_Build_Plan_document__evaluating&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    To evaluate the Integration Build Plan consider the following checklist:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Does the integration order make it easy to locate errors?&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Does integration order keep the need for stubs to a minimum?&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Is the integration order coordinated with the order in which components are developed?&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&lt;br />&#xD;
+ &lt;br /></sectionDescription>
+  </sections>
+</org.eclipse.epf.uma:TaskDescription>

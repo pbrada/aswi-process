@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_3NQMENnmEdmO6L4XMImrsA" name="develop_deployment_plans,{2448A577-EEC4-4FB1-B64F-9E7879E10089}" guid="_3NQMENnmEdmO6L4XMImrsA" changeDate="2005-11-04T05:21:52.127-0800" version="7.1.0">
+  <mainDescription>&lt;a id=&quot;XE_deployment_plan__developing&quot; name=&quot;XE_deployment_plan__developing&quot;>&lt;/a>&lt;a id=&quot;XE_planning__deployment&quot;&#xD;
+name=&quot;XE_planning__deployment&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    The Deployment Plan documents how and when the product is to be made available to the user community.&amp;nbsp; It includes&#xD;
+    packaging and distribution of the software.&amp;nbsp; It also includes installation of the software, migration to the new&#xD;
+    software, as well as help and training of new users.&amp;nbsp; The user's willingness to use the product is the mark of its&#xD;
+    success.&#xD;
+&lt;/p></mainDescription>
+  <sections xmi:id="_YIdB0NnnEdmO6L4XMImrsA" name=" Plan How to Produce the Software " guid="_YIdB0NnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;Plan How to Produce the Software&quot; name=&quot;Plan How to Produce the Software&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    The output of the implementation and the test activities are tested executable programs. These executable programs must&#xD;
+    be associated with other work products to constitute a complete deployment unit / product:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Installation scripts&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        User documentation&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Configuration data&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Additional programs for migration: data conversion.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>&#xD;
+    In some circumstances, different executable programs may have to be produced for different user configurations. Or&#xD;
+    different sets of work products have to be assembled for different classes of users: new users versus existing users,&#xD;
+    variants by country or language, and so on.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    For distributed software, different sets may have to be produced for different computing nodes in the network.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    This aspect of the deployment effort is captured in the tasks for producing deployment units.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_YImy0NnnEdmO6L4XMImrsA" name=" Plan How to Package the Software " guid="_YImy0NnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;Plan How to Package the Software&quot; name=&quot;Plan How to Package the Software&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    The various work products that constitute the delivered product are packaged on suitable media: diskettes, tapes,&#xD;
+    CD-ROM, archived server files, books, videotapes, and so on, and should be properly identified and labeled. The tasks&#xD;
+    often involve dealing with external organizations to package the software.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    In some circumstances (for example, small embedded systems) the software becomes part of another system in the form of&#xD;
+    PROM.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    This aspect of deployment is captured in the tasks related to packaging the product.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_YImy0dnnEdmO6L4XMImrsA" name=" Plan How to Distribute the Software " guid="_YImy0dnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;Plan How to Distribute the Software&quot; name=&quot;Plan How to Distribute the Software&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    Again there is a wide range of options, from shipping boxes, to using a network of distributors, to Internet&#xD;
+    distribution.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    One issue is that of controlling who is authorized to use the software: licensing. Software licensing usually involves&#xD;
+    the set up of procedures and tools to manage licenses and communicate license codes to the users.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    This aspect of deployment is covered in the &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../core.base_rup/tasks/provide_access_to_dl_site_798466B8.html&quot; guid=&quot;{04CE4A6C-3DB6-4637-A04D-AD3BAD0ED32A}&quot;>Task:&#xD;
+    Provide Access to Download Site&lt;/a>&amp;nbsp;and &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../core.base_rup/tasks/manage_acceptance_test_B3133BF7.html&quot; guid=&quot;{B02C96A3-93A6-492E-B633-9A2D91E504DF}&quot;>Task:&#xD;
+    Manage Acceptance Test&lt;/a>&lt;a class=&quot;elementLinkWithUserText&quot;&#xD;
+    href=&quot;./../../core.base_rup/capabilitypatterns/provide_access_to_download_site_CA76125A.html&quot;&#xD;
+    guid=&quot;{E2830C63-8132-4495-967A-93CAD98881D1}&quot;>.&lt;/a>&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_YImy0tnnEdmO6L4XMImrsA" name=" Plan How to Install the Software " guid="_YImy0tnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;Plan How to Install the Software&quot; name=&quot;Plan How to Install the Software&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    With the advent of Internet distribution, more and more software installation is a user-controlled process. It must&#xD;
+    however be supported by installation tools and procedures delivered with the product. In some rarer cases (large&#xD;
+    complex technical systems) installation is performed by the independent software vendor.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Installation is generally more complex in the case of a distributed system, where all nodes have to be brought up to&#xD;
+    date in a timely fashion, and where the installation may split up in multiple installation procedures.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    This aspect of deployment is covered in the &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../core.base_rup/tasks/manage_acceptance_test_B3133BF7.html&quot; guid=&quot;{B02C96A3-93A6-492E-B633-9A2D91E504DF}&quot;>Task:&#xD;
+    Manage Acceptance Test&lt;/a>&amp;nbsp;and &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../core.base_rup/tasks/provide_access_to_dl_site_798466B8.html&quot; guid=&quot;{04CE4A6C-3DB6-4637-A04D-AD3BAD0ED32A}&quot;>Task:&#xD;
+    Provide Access to Download Site&lt;/a>&lt;a class=&quot;elementLinkWithUserText&quot;&#xD;
+    href=&quot;./../../core.base_rup/capabilitypatterns/provide_access_to_download_site_CA76125A.html&quot;&#xD;
+    guid=&quot;{E2830C63-8132-4495-967A-93CAD98881D1}&quot;>.&lt;/a>&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_YImy09nnEdmO6L4XMImrsA" name=" Migration " guid="_YImy09nnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;Migration&quot; name=&quot;Migration&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    As part of the installation comes often the issue of migration:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Replacing an older system with a new one, with or without constraints of continuity of operation.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Converting existing data to a new format.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>&#xD;
+    The programs associated with this migration are developed and tested using exactly the same process as the primary&#xD;
+    product.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Part of the process of preparing the customer for the next generation of software is through providing earlier beta&#xD;
+    versions of the product. This aspect of deployment is covered under the tasks related to beta testing the product.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_YImy1NnnEdmO6L4XMImrsA" name=" Providing Help and Assistance to the Users " guid="_YImy1NnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;Providing Help and Assistance to the Users&quot; name=&quot;Providing Help and Assistance to the Users&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    This can take various forms:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Formal training courses&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Computer based training&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Online guidance and help&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Telephone support&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Internet support&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Collateral: tips, application notes, examples, and wizards&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>&#xD;
+    Support often involves setting up procedures for problem tracking and resolution, which integrate to the change&#xD;
+    management task.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    This aspect of deployment is covered under the tasks related to developing support materials.&#xD;
+&lt;/p>&lt;br />&#xD;
+&lt;br /></sectionDescription>
+  </sections>
+</org.eclipse.epf.uma:TaskDescription>

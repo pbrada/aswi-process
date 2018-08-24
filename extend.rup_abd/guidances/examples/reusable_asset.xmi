@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:GuidanceDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="-9xRmzAKHf7XlQ_LN--Cilw" name="new_example,_NkN_8O3SEduIE9pfhwXQKQ" guid="-9xRmzAKHf7XlQ_LN--Cilw" changeDate="2007-05-28T09:24:41.843-0700" version="1.0.0">
+  <mainDescription>&lt;p>
+    Development-time repositories manage assets that are relevant to development roles, such as managers, analysts,
+    architects, developers, and testers. This repository governs the assets as they are submitted, categorizes the assets,
+    provides access control to the assets, and measures the activity level of assets in terms of their usage. An asset has
+    several major characteristics, including:
+&lt;/p>
+&lt;ul>
+    &lt;li>
+        A&amp;nbsp;collection of one or more artifacts: files, binaries, models, tests,&amp;nbsp;etc.
+    &lt;/li>
+    &lt;li>
+        Relationships to other assets: dependencies, aggregation, etc.&amp;nbsp;
+    &lt;/li>
+    &lt;li>
+        Classification: tagged values and terms to classify assets
+    &lt;/li>
+    &lt;li>
+        Usage measurements: who is using the asset, what defects does it have,&amp;nbsp;etc.
+    &lt;/li>
+    &lt;li>
+        Access control: who can do what with the asset
+    &lt;/li>
+    &lt;li>
+        Policies: descriptions of proper structure and content for the asset
+    &lt;/li>
+&lt;/ul>
+&lt;p>
+    &lt;img height=&quot;129&quot; alt=&quot;Several major characteristics of an asset.&quot; src=&quot;./resources/asset.gif&quot; width=&quot;331&quot; />
+&lt;/p>
+&lt;p>
+    The asset is stored in the repository, where the asset metadata is stored in a database, and the asset content is
+    placed in the file system or stored in a source control system. The asset may also be externalized and put into a .ras
+    file. In short, the .ras file has a manifest.rmd file&amp;nbsp;that contains the asset metadata. It&amp;nbsp;also has the
+    asset’s content files. This file can be opened using&amp;nbsp;file compression&amp;nbsp;tools such as WinZip. See the sample
+    asset file below. See also the OMG Reusable Asset Specification (http://www.omg.org) for further
+    description&amp;nbsp;regarding the structure of the .ras file.
+&lt;/p>
+&lt;p>
+    &lt;a href=&quot;./resources/asset.ras&quot; target=&quot;_blank&quot;>asset.ras&lt;/a>
+&lt;/p></mainDescription>
+</org.eclipse.epf.uma:GuidanceDescription>

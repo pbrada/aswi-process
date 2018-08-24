@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_0iMUANnmEdmO6L4XMImrsA" name="structure_business_use_case_model,{CBD0232E-3AE5-49A7-AF3B-A251179D18D6}" guid="_0iMUANnmEdmO6L4XMImrsA" changeDate="2005-10-12T11:26:28.079-0700" version="7.1.0">
+  <sections xmi:id="_Lfwb8NnnEdmO6L4XMImrsA" name=" Establish Include-Relationships Between Business Use Cases " guid="_Lfwb8NnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;Establish Include-Relationships Between Business Use Cases&quot;&#xD;
+name=&quot;Establish Include-Relationships Between Business Use Cases&quot;>&lt;/a>&#xD;
+&lt;p>&#xD;
+    If you find that there are large portions in a workflow than can be factored out as an inclusion to simplify the&#xD;
+    original business use case, those parts can form a new business use case that is included in the original business use&#xD;
+    cases. Examples of such behavior are common behavior, optional behavior, and behavior that is to be developed in later&#xD;
+    iterations.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    You should briefly describe every relationship you define.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    See also &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../extend.bus_model/guidances/guidelines/business_use-case_model_1C8E857B.html&quot;&#xD;
+    guid=&quot;3.9905535055726305E-306&quot;>Guideline: Business Use-Case Model&lt;/a> and &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../extend.bus_model/guidances/guidelines/include-relationship_in_the_business_use-case_model_F3DC3A5B.html&quot;&#xD;
+    guid=&quot;8.096716256124967E-305&quot;>Guideline: Include-Relationship in the Business Use-Case Model&lt;/a>.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_Lfwb8dnnEdmO6L4XMImrsA" name=" Establish Extend-Relationships Between Business Use Cases " guid="_Lfwb8dnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;Establish Extend-Relationships Between Business Use Cases&quot;&#xD;
+name=&quot;Establish Extend-Relationships Between Business Use Cases&quot;>&lt;/a>&#xD;
+&lt;p>&#xD;
+    If you find major parts of a workflow that form an option to the normal workflow, you can factor that part out to a new&#xD;
+    business use case that is an extension to the original business use case.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Make sure that the workflow of the original business use case is still complete and understandable in and of itself.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    See also &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../extend.bus_model/guidances/guidelines/business_use-case_model_1C8E857B.html&quot;&#xD;
+    guid=&quot;3.9905535055726305E-306&quot;>Guideline: Business Use-Case Model&lt;/a> and &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../extend.bus_model/guidances/guidelines/extend-relationship_in_the_business_use-case_model_17CD0314.html&quot;&#xD;
+    guid=&quot;3.452362968952187E-305&quot;>Guideline: Extend-Relationship in the Business Use-Case Model&lt;/a>.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_Lfwb8tnnEdmO6L4XMImrsA" name=" Establish Generalizations Between Business Use Cases " guid="_Lfwb8tnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;Establish Generalizations Between Business Use Cases&quot;&#xD;
+name=&quot;Establish Generalizations Between Business Use Cases&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    In the business use-case model, use-case-generalizations can be used to find workflows that structure purpose and&#xD;
+    behavior.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    See also &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../extend.bus_model/guidances/guidelines/business_use-case_model_1C8E857B.html&quot;&#xD;
+    guid=&quot;3.9905535055726305E-306&quot;>Guideline: Business Use-Case Model&lt;/a> and &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../extend.bus_model/guidances/guidelines/use-case-generalization_in_the_business_use-case_model_7244BA6B.html&quot;&#xD;
+    guid=&quot;1.7507761609726586E-307&quot;>Guideline: Use-Case-Generalization in the Business Use-Case Model&lt;/a>.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_Lfwb89nnEdmO6L4XMImrsA" name=" Establish Generalizations Between Business Actors " guid="_Lfwb89nnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;Establish Generalizations Between Business Actors&quot; name=&quot;Establish Generalizations Between Business Actors&quot;>&lt;/a>&#xD;
+&lt;p>&#xD;
+    If two business actors interact with the same business use case in exactly the same way, they play the same role with&#xD;
+    respect to that business use case. To clarify this situation you can create a new business actor for this common role.&#xD;
+    The original business actors inherit this new business actor.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    See also &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../extend.bus_model/guidances/guidelines/actor-generalization_in_the_business_use-case_model_5527CF57.html&quot;&#xD;
+    guid=&quot;1.5325179132148465E-305&quot;>Guideline: Actor-Generalization in the Business Use-Case Model&lt;/a>.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_Lfwb9NnnEdmO6L4XMImrsA" name=" Evaluate Your Results " guid="_Lfwb9NnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;Evaluate Your Results&quot; name=&quot;Evaluate Your Results&quot;>&lt;/a>&#xD;
+&lt;p>&#xD;
+    You should continuously evaluate the structure of your business use-case model to make sure it is understandable to&#xD;
+    your stakeholders.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    See the checklists for business actor, business use case and business use-case model in &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../extend.bus_model/tasks/review_the_business_use_case_model_B683345A.html&quot;&#xD;
+    guid=&quot;{9FDA0E91-E5C1-4B4D-A4E6-4CF74655542F}&quot;>Task: Review the Business Use-Case Model&lt;/a>.&#xD;
+&lt;/p>&lt;br />&#xD;
+&lt;br /></sectionDescription>
+  </sections>
+  <purpose>&lt;a id=&quot;Top&quot; name=&quot;Top&quot;>&lt;/a>&lt;a id=&quot;XE_business_use-case_model__structuring_of&quot;&#xD;
+name=&quot;XE_business_use-case_model__structuring_of&quot;>&lt;/a>&lt;a id=&quot;XE_structuring___of_business_use-case_models&quot;&#xD;
+name=&quot;XE_structuring___of_business_use-case_models&quot;>&lt;/a> &#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        To extract behavior in business use cases that need to be considered as abstract business use cases.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        To find new abstract business actors that define roles that are shared by several business actors.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></purpose>
+</org.eclipse.epf.uma:TaskDescription>

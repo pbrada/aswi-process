@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="-I8-Oa3Llmb-llPBrIff_ng" name="user-experience_navigation_map,3.326793936743437E-306" guid="-I8-Oa3Llmb-llPBrIff_ng" changeDate="2005-11-19T21:00:54.546-0800" version="7.1.0">
+  <sections xmi:id="_dpe9AFmBEdqHqJ6HN8Yo0w" name="General" guid="_dpe9AFmBEdqHqJ6HN8Yo0w">
+    <sectionDescription>&lt;ul>&#xD;
+    &lt;li>&#xD;
+        There is at least one navigation map class diagram that contains the&amp;nbsp;&lt;a class=&quot;elementLink&quot;&#xD;
+        href=&quot;./../../../extend.ux_model/workproducts/user_experience_element_D76CBED9.html&quot;&#xD;
+        guid=&quot;{359C3727-8E7C-4C08-BBAA-D428674CB552}&quot;>User-Experience Element&lt;/a>s and the navigation paths between them.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        The navigation map is clear and consistent and provides optimal navigation paths for performing system functions&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        The level of detail displayed on the navigation map is consistent with the project-specific guidelines.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        The number of elements displayed on the navigation map diagram is reasonable (i.e., small enough to view entire&#xD;
+        diagram on one page).&amp;nbsp; If not, the diagram should be split into smaller diagrams.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        All User-Experience Elements have been identified and modeled properly.&amp;nbsp; For more information, see &lt;a&#xD;
+        class=&quot;elementLinkWithType&quot;&#xD;
+        href=&quot;./../../../extend.ux_model/guidances/checklists/user_experience_element_4F8BED55.html&quot;&#xD;
+        guid=&quot;1.0933258756459082E-305&quot;>Checklist: User-Experience Element&lt;/a>.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        All possible navigation paths between the User-Experience Elements have been identified and modeled as&#xD;
+        associations.&amp;nbsp; See the &quot;Navigation Associations&quot; section of this checklist for more information.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        All User-Experience Elements and navigation associations appear on at least one navigation map diagram.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></sectionDescription>
+  </sections>
+  <sections xmi:id="_gUWAwFmBEdqHqJ6HN8Yo0w" name="Navigation Associations" guid="_gUWAwFmBEdqHqJ6HN8Yo0w">
+    <sectionDescription>&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Every navigation association is named to reflect the reason for the navigation.&amp;nbsp; For a navigation resulting&#xD;
+        from a &lt;a class=&quot;elementLinkWithUserText&quot;&#xD;
+        href=&quot;./../../../extend.ux_model/guidances/guidelines/user_experience_element_F0023A91.html#User%20Actions&quot;&#xD;
+        guid=&quot;9.763858677053972E-306&quot;>user action&lt;/a>, the navigation is named so that it can be easily associated with the&#xD;
+        initiating user action (i.e., the user action defined for the User-Experience Element that originated the&#xD;
+        navigation association).&lt;br />&#xD;
+         Remember, every user action does not have to result in a navigation and every navigation is not necessarily the&#xD;
+        result of a user action.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        The number of navigation paths is minimal. Ideally, all User-Experience Elements should be &quot;navigate-able to&quot; from&#xD;
+        a main screen, resulting in a maximum navigation length of two. There should not be any navigation path lengths&#xD;
+        greater than three.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &amp;lt;&amp;lt;input form&amp;gt;&amp;gt; classes are only the source/initiator of a navigation association, not the&#xD;
+        destination/recipient.&amp;nbsp; Navigation is always to a &amp;lt;&amp;lt;screen&amp;gt;&amp;gt; class (however, the&#xD;
+        &amp;lt;&amp;lt;screen&amp;gt;&amp;gt; class my contain an &amp;lt;&amp;lt;input form&amp;gt;&amp;gt; class).&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Every&lt;span style=&quot;mso-spacerun: yes&quot;>&amp;nbsp;&lt;/span> &amp;lt;&amp;lt;input form&amp;gt;&amp;gt; class has at least two navigation&#xD;
+        paths originating from it - a &quot;submitted information valid&quot; navigation path and &quot;submitted information not valid&quot;&#xD;
+        navigation path.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&lt;br /></sectionDescription>
+  </sections>
+</org.eclipse.epf.uma:ContentDescription>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_1rzAYNnmEdmO6L4XMImrsA" name="capsule,1.2115414799051158E-305" guid="_1rzAYNnmEdmO6L4XMImrsA" changeDate="2005-06-21T09:40:01.379-0700" version="7.1.0">
+  <mainDescription>&lt;a id=&quot;XE_capsule__checkpoints&quot; name=&quot;XE_capsule__checkpoints&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    See also &lt;a class=&quot;elementLinkWithUserText&quot; href=&quot;./../../../core.base_rup/guidances/checklists/design_class_436B6210.html&quot;&#xD;
+    guid=&quot;1.1028389988231071E-306&quot;>Checklist: Design Classes&lt;/a>&#xD;
+&lt;/p>&lt;br />&#xD;
+&lt;br /></mainDescription>
+  <sections xmi:id="_F_iHAfM1Edmy-_OjcFOpJQ" name=" The capsule's name and description accurately portrays the role the capsule plays in the system" guid="_F_iHAfM1Edmy-_OjcFOpJQ">
+    <sectionName> The capsule's name and description accurately portrays the role the capsule plays in the system</sectionName>
+  </sections>
+  <sections xmi:id="_F_iHAvM1Edmy-_OjcFOpJQ" name=" The capsule has a well-defined purpose, and encompasses a single set of related responsibilities" guid="_F_iHAvM1Edmy-_OjcFOpJQ">
+    <sectionName> The capsule has a well-defined purpose, and encompasses a single set of related responsibilities</sectionName>
+  </sections>
+  <sections xmi:id="_F_iHA_M1Edmy-_OjcFOpJQ" name=" The capsule represent a significant focus of control in the system, and represents a significant thread of control in the system" guid="_F_iHA_M1Edmy-_OjcFOpJQ">
+    <sectionName> The capsule represent a significant focus of control in the system, and represents a significant thread of control in the system</sectionName>
+  </sections>
+  <sections xmi:id="_F_oNoPM1Edmy-_OjcFOpJQ" name=" The roles the capsule plays are reflected in its external ports, and each role has one or more separate ports" guid="_F_oNoPM1Edmy-_OjcFOpJQ">
+    <sectionName> The roles the capsule plays are reflected in its external ports, and each role has one or more separate ports</sectionName>
+  </sections>
+  <sections xmi:id="_F_oNofM1Edmy-_OjcFOpJQ" name=" No port is used in more than one role" guid="_F_oNofM1Edmy-_OjcFOpJQ">
+    <sectionName> No port is used in more than one role</sectionName>
+  </sections>
+  <sections xmi:id="_F_oNovM1Edmy-_OjcFOpJQ" name=" Where there is a need to control the interaction of concurrent scenarios, a capsule with multiple distinct ports has been used" guid="_F_oNovM1Edmy-_OjcFOpJQ">
+    <sectionName> Where there is a need to control the interaction of concurrent scenarios, a capsule with multiple distinct ports has been used</sectionName>
+  </sections>
+  <sections xmi:id="_F_oNo_M1Edmy-_OjcFOpJQ" name=" Interface capsules have been used to provide decoupling where future change are expected" guid="_F_oNo_M1Edmy-_OjcFOpJQ">
+    <sectionName> Interface capsules have been used to provide decoupling where future change are expected</sectionName>
+  </sections>
+  <sections xmi:id="_F_oNpPM1Edmy-_OjcFOpJQ" name=" Capsules used effectively to isolate potential future changes and design decisions" guid="_F_oNpPM1Edmy-_OjcFOpJQ">
+    <sectionName> Capsules used effectively to isolate potential future changes and design decisions</sectionName>
+  </sections>
+  <sections xmi:id="_F_oNpfM1Edmy-_OjcFOpJQ" name=" Coordinator capsules are used to manage complex and dynamic relationships between entities (either one-to-many or many-to-many)" guid="_F_oNpfM1Edmy-_OjcFOpJQ">
+    <sectionName> Coordinator capsules are used to manage complex and dynamic relationships between entities (either one-to-many or many-to-many)</sectionName>
+  </sections>
+  <sections xmi:id="_F_oNpvM1Edmy-_OjcFOpJQ" name=" Coordinator capsules are used where there is a need to mediate between capsules to encapsulate a process" guid="_F_oNpvM1Edmy-_OjcFOpJQ">
+    <sectionName> Coordinator capsules are used where there is a need to mediate between capsules to encapsulate a process</sectionName>
+  </sections>
+  <sections xmi:id="_F_oNp_M1Edmy-_OjcFOpJQ" name=" Initialization order has been considered correctly" guid="_F_oNp_M1Edmy-_OjcFOpJQ">
+    <sectionName> Initialization order has been considered correctly</sectionName>
+  </sections>
+  <sections xmi:id="_F_oNqPM1Edmy-_OjcFOpJQ" name=" The start-up and synchronization of independent threads of control has been considered" guid="_F_oNqPM1Edmy-_OjcFOpJQ">
+    <sectionName> The start-up and synchronization of independent threads of control has been considered</sectionName>
+  </sections>
+  <sections xmi:id="_F_oNqfM1Edmy-_OjcFOpJQ" name=" Inheritance is used appropriately" guid="_F_oNqfM1Edmy-_OjcFOpJQ">
+    <sectionName> Inheritance is used appropriately</sectionName>
+    <sectionDescription>&lt;div style=&quot;MARGIN-LEFT: 2em&quot;>&#xD;
+    There is no evidence of either a very flat or overly deep generalization/specialization hierarchy. Obvious commonality&#xD;
+    has been reflected in the inheritance hierarchy. Inheritance is not being used primarily for implementation&#xD;
+    considerations (e.g. code reuse), but rather as a way of capturing common design abstractions. Superclasses are no&#xD;
+    simply merges of the attributes of the subclasses, but instead represent a logical abstraction. The inheritance&#xD;
+    hierarchy does not contain intermediate abstract classes with orthogonal properties.&#xD;
+&lt;/div></sectionDescription>
+  </sections>
+</org.eclipse.epf.uma:ContentDescription>

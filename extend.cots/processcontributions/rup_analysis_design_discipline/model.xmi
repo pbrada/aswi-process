@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.uma:ProcessComponent xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.ibm.uma="http://www.ibm.com/uma/1.0.2/uma.ecore" xmi:id="_s2sHc9oTEdmCj7Yn9Ev4rg" name="rup_analysis_design_discipline" guid="_s2sHc9oTEdmCj7Yn9Ev4rg">
+  <childPackages xsi:type="com.ibm.uma:ProcessPackage" xmi:id="_twYvxNoTEdmCj7Yn9Ev4rg" name="design_components" guid="_twYvxNoTEdmCj7Yn9Ev4rg">
+    <processElements xsi:type="com.ibm.uma:Activity" xmi:id="_s2sHcdoTEdmCj7Yn9Ev4rg" name="design_components" guid="_s2sHcdoTEdmCj7Yn9Ev4rg" presentationName="design_components" superActivities="_s2sHctoTEdmCj7Yn9Ev4rg" variabilityType="contributes" breakdownElements="_twYvxdoTEdmCj7Yn9Ev4rg _twYvxtoTEdmCj7Yn9Ev4rg _twYvx9oTEdmCj7Yn9Ev4rg _twYvyNoTEdmCj7Yn9Ev4rg"/>
+    <processElements xsi:type="com.ibm.uma:TaskDescriptor" xmi:id="_twYvxdoTEdmCj7Yn9Ev4rg" name="Specify Package Configuration" guid="_twYvxdoTEdmCj7Yn9Ev4rg" presentationName="Specify Package Configuration" superActivities="_s2sHcdoTEdmCj7Yn9Ev4rg" optionalInput="_twYvx9oTEdmCj7Yn9Ev4rg" output="_twYvyNoTEdmCj7Yn9Ev4rg" performedPrimarilyBy="_twYvxtoTEdmCj7Yn9Ev4rg">
+      <Task href="uma://{D4626EC0-06BC-4592-A8A6-C8DE7E821952}#{1159A75E-CD3E-459C-8450-2930022CD146}"/>
+    </processElements>
+    <processElements xsi:type="com.ibm.uma:RoleDescriptor" xmi:id="_twYvxtoTEdmCj7Yn9Ev4rg" name="cots_designer" guid="_twYvxtoTEdmCj7Yn9Ev4rg" presentationName="cots_designer" superActivities="_s2sHcdoTEdmCj7Yn9Ev4rg" performsAsOwner="_twYvxdoTEdmCj7Yn9Ev4rg">
+      <Role href="uma://{D4626EC0-06BC-4592-A8A6-C8DE7E821952}#{6845DE99-E24D-402C-AD97-74988EA73DA5}"/>
+    </processElements>
+    <processElements xsi:type="com.ibm.uma:WorkProductDescriptor" xmi:id="_twYvx9oTEdmCj7Yn9Ev4rg" name="Solution Dossier" guid="_twYvx9oTEdmCj7Yn9Ev4rg" presentationName="Solution Dossier" superActivities="_s2sHcdoTEdmCj7Yn9Ev4rg" OptionalInputTo="_twYvxdoTEdmCj7Yn9Ev4rg">
+      <WorkProduct xsi:type="com.ibm.uma:Artifact" href="uma://{D4626EC0-06BC-4592-A8A6-C8DE7E821952}#{4F2452F1-8664-4198-A228-72A12745079D}"/>
+    </processElements>
+    <processElements xsi:type="com.ibm.uma:WorkProductDescriptor" xmi:id="_twYvyNoTEdmCj7Yn9Ev4rg" name="Package Configuration Specification" guid="_twYvyNoTEdmCj7Yn9Ev4rg" presentationName="Package Configuration Specification" superActivities="_s2sHcdoTEdmCj7Yn9Ev4rg" outputFrom="_twYvxdoTEdmCj7Yn9Ev4rg">
+      <WorkProduct xsi:type="com.ibm.uma:Artifact" href="uma://{D4626EC0-06BC-4592-A8A6-C8DE7E821952}#{64C479CF-3557-44C0-9408-E109DF54E400}"/>
+    </processElements>
+  </childPackages>
+  <process xsi:type="com.ibm.uma:ProcessContribution" xmi:id="_s2sHctoTEdmCj7Yn9Ev4rg" name="rup_analysis_design_discipline" guid="_s2sHctoTEdmCj7Yn9Ev4rg" briefDescription="TBD" presentationName="rup_analysis_design_discipline" breakdownElements="_s2sHcdoTEdmCj7Yn9Ev4rg"/>
+</com.ibm.uma:ProcessComponent>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:org.eclipse.epf.uma.resourcemanager="http:///org/eclipse/epf/uma/resourcemanager.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1">
+  <org.eclipse.epf.uma.resourcemanager:ResourceManager xmi:id="_SryCACJaEdqQipbmJ0SDbw" guid="_SryCACJaEdqQipbmJ0SDbw">
+    <resourceDescriptors xmi:id="_SryCASJaEdqQipbmJ0SDbw" id="-ZLvCeic6dd95a8MaQeKH9w" uri="content.xmi"/>
+  </org.eclipse.epf.uma.resourcemanager:ResourceManager>
+  <org.eclipse.epf.uma:ProcessComponent xmi:id="_MiAAUCJaEdqQipbmJ0SDbw" name="ongoing_management_and_support" guid="_MiAAUCJaEdqQipbmJ0SDbw">
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_deuKsCJbEdqQipbmJ0SDbw" name="support_environment_during_an_iteration" guid="_deuKsCJbEdqQipbmJ0SDbw">
+      <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_de6X8CJbEdqQipbmJ0SDbw" name="support_environment_during_an_iteration" guid="_de6X8CJbEdqQipbmJ0SDbw" isPlanned="false" superActivities="_MiAAUSJaEdqQipbmJ0SDbw" variabilityType="extends">
+        <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:Activity" href="uma://_5q6AwhpREdqFPPVWQscZ5A#{250BC41A-650E-4E26-A26C-54F74C71552D}"/>
+      </processElements>
+    </childPackages>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_fnxh4CJbEdqQipbmJ0SDbw" name="manage_iteration" guid="_fnxh4CJbEdqQipbmJ0SDbw">
+      <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_foD1wCJbEdqQipbmJ0SDbw" name="manage_iteration" guid="_foD1wCJbEdqQipbmJ0SDbw" isPlanned="false" superActivities="_MiAAUSJaEdqQipbmJ0SDbw" variabilityType="extends">
+        <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:Activity" href="uma://_5rMUoRpREdqFPPVWQscZ5A#{D2D59931-DBA1-4624-B5E6-161DE57451D1}"/>
+      </processElements>
+    </childPackages>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_hote4CJbEdqQipbmJ0SDbw" name="monitor_control_project" guid="_hote4CJbEdqQipbmJ0SDbw">
+      <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_hpF5YCJbEdqQipbmJ0SDbw" name="monitor_control_project" guid="_hpF5YCJbEdqQipbmJ0SDbw" isPlanned="false" superActivities="_MiAAUSJaEdqQipbmJ0SDbw" variabilityType="extends">
+        <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:Activity" href="uma://_5rMUoRpREdqFPPVWQscZ5A#{F40E3BFA-9909-4D3D-8AEB-E08E3C0DC8F0}"/>
+      </processElements>
+    </childPackages>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_kcDJMCJbEdqQipbmJ0SDbw" name="manage_changing_requirements" guid="_kcDJMCJbEdqQipbmJ0SDbw">
+      <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_kcnw8CJbEdqQipbmJ0SDbw" name="manage_changing_requirements" guid="_kcnw8CJbEdqQipbmJ0SDbw" isPlanned="false" superActivities="_MiAAUSJaEdqQipbmJ0SDbw" isEventDriven="true" variabilityType="extends">
+        <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:Activity" href="uma://_5rYh4RpREdqFPPVWQscZ5A#{28B39D62-9D73-4254-9CB8-26CFA737D45E}"/>
+      </processElements>
+    </childPackages>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_lwtPACJbEdqQipbmJ0SDbw" name="manage_change_requests" guid="_lwtPACJbEdqQipbmJ0SDbw">
+      <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_lxX9YCJbEdqQipbmJ0SDbw" name="manage_change_requests" guid="_lxX9YCJbEdqQipbmJ0SDbw" isPlanned="false" superActivities="_MiAAUSJaEdqQipbmJ0SDbw" isEventDriven="true" variabilityType="extends">
+        <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:Activity" href="uma://_5qDFIxpREdqFPPVWQscZ5A#{BFBA9E6A-CB4B-45A7-9A25-FF7CA1A1153D}"/>
+      </processElements>
+    </childPackages>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_nhqCoDHaEdqLw-lQEI8RPw" name="change_and_deliver_configuration_items" guid="_nhqCoDHaEdqLw-lQEI8RPw">
+      <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_nj3CEDHaEdqLw-lQEI8RPw" name="change_and_deliver_configuration_items" guid="_nj3CEDHaEdqLw-lQEI8RPw" isPlanned="false" superActivities="_MiAAUSJaEdqQipbmJ0SDbw" isEventDriven="true" linkToPredecessor="_ic6_sOz9EdqNQM4riIm-Mw" variabilityType="extends">
+        <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:Activity" href="uma://_5qDFIxpREdqFPPVWQscZ5A#{FD5B58EB-7B18-4B5E-AF3A-B8F49E3915BE}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_ic6_sOz9EdqNQM4riIm-Mw" guid="_ic6_sOz9EdqNQM4riIm-Mw">
+        <pred xsi:type="org.eclipse.epf.uma:Activity" href="uma://_5qDFIxpREdqFPPVWQscZ5A#{C241B2F9-AA48-45E6-89F0-F0A3DC2496DA}"/>
+      </processElements>
+    </childPackages>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_o4FqEDHaEdqLw-lQEI8RPw" name="manage_baselines_releases" guid="_o4FqEDHaEdqLw-lQEI8RPw">
+      <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_o6SpgDHaEdqLw-lQEI8RPw" name="manage_baselines_releases" guid="_o6SpgDHaEdqLw-lQEI8RPw" isPlanned="false" superActivities="_MiAAUSJaEdqQipbmJ0SDbw" isEventDriven="true" linkToPredecessor="_idHNFuz9EdqNQM4riIm-Mw" variabilityType="extends">
+        <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:Activity" href="uma://_5qDFIxpREdqFPPVWQscZ5A#{22B90B6F-6F9F-41CF-9A05-8F64BF39CD36}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_idHNFuz9EdqNQM4riIm-Mw" guid="_idHNFuz9EdqNQM4riIm-Mw">
+        <pred xsi:type="org.eclipse.epf.uma:Activity" href="uma://_5qDFIxpREdqFPPVWQscZ5A#{C241B2F9-AA48-45E6-89F0-F0A3DC2496DA}"/>
+      </processElements>
+    </childPackages>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_qVfcMDHaEdqLw-lQEI8RPw" name="monitor_report_configuration_status" guid="_qVfcMDHaEdqLw-lQEI8RPw">
+      <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_qX4o4DHaEdqLw-lQEI8RPw" name="monitor_report_configuration_status" guid="_qX4o4DHaEdqLw-lQEI8RPw" isPlanned="false" superActivities="_MiAAUSJaEdqQipbmJ0SDbw" linkToPredecessor="_idTaAez9EdqNQM4riIm-Mw" variabilityType="extends">
+        <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:Activity" href="uma://_5qDFIxpREdqFPPVWQscZ5A#{0E00700B-4D61-4B80-A1D3-152F97B29F6A}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_idTaAez9EdqNQM4riIm-Mw" guid="_idTaAez9EdqNQM4riIm-Mw">
+        <pred xsi:type="org.eclipse.epf.uma:Activity" href="uma://_5qDFIxpREdqFPPVWQscZ5A#{C241B2F9-AA48-45E6-89F0-F0A3DC2496DA}"/>
+      </processElements>
+    </childPackages>
+    <process xsi:type="org.eclipse.epf.uma:CapabilityPattern" xmi:id="_MiAAUSJaEdqQipbmJ0SDbw" name="ongoing_management_and_support" guid="_MiAAUSJaEdqQipbmJ0SDbw" presentationName="Ongoing Management and Support" briefDescription="This covers the various management and support activities that are repeated on an ongoing basis throughout the project." isOngoing="true" breakdownElements="_foD1wCJbEdqQipbmJ0SDbw _hpF5YCJbEdqQipbmJ0SDbw _kcnw8CJbEdqQipbmJ0SDbw _lxX9YCJbEdqQipbmJ0SDbw _de6X8CJbEdqQipbmJ0SDbw _nj3CEDHaEdqLw-lQEI8RPw _o6SpgDHaEdqLw-lQEI8RPw _qX4o4DHaEdqLw-lQEI8RPw">
+      <presentation xmi:id="-ZLvCeic6dd95a8MaQeKH9w" href="uma://-ZLvCeic6dd95a8MaQeKH9w#-ZLvCeic6dd95a8MaQeKH9w"/>
+      <defaultContext href="uma://_0q85QJySEd2xJNwbI6lxKA#_xqmb0NnmEdmO6L4XMImrsA"/>
+      <validContext href="uma://_0q85QJySEd2xJNwbI6lxKA#_xqmb0NnmEdmO6L4XMImrsA"/>
+    </process>
+  </org.eclipse.epf.uma:ProcessComponent>
+</xmi:XMI>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="-vjhDyJ502Tqfw67LydiySQ" name="report_on_asset,_keqlYN92EdqhGsqsJmAtOw" guid="-vjhDyJ502Tqfw67LydiySQ" changeDate="2007-04-18T13:30:56.953-0700" version="1.0.0">
+  <mainDescription>&lt;p>&#xD;
+    There are many kinds of metrics to track. Some metrics are tracked by the Repository, others are tracked by other tools&#xD;
+    or roles. These metrics can come from various sources, such as:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Asset Consumers&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Asset Owners/Producers/Reviewers&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Repository&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Derived for Managers&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>&#xD;
+    Asset Consumer metrics generally include qualitative metrics, such as reusability ratings (4 out of 5 stars) or text&#xD;
+    feedback in the form of comments and discussions. Typically these metrics are stored on the Repository.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Asset Owners/Producers/Reviewers tend to create asset-level metrics. These include metrics such as anticipated level of&#xD;
+    effort for an Asset Consumer to use the asset, and the level of effort to create a given version of an asset. The&#xD;
+    metrics also include size, such as number of bytes, lines of code, or number of components. Typically these metrics are&#xD;
+    stored with the asset in the Repository.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Repository metrics are largely quantitative. These include metrics such as number of downloads for a given asset&#xD;
+    version, number of searches and kinds of searches, number of browses from searches, as well as information on which&#xD;
+    Asset Consumers conducted certain downloads. Some of the other metrics may be repository activity over a period of&#xD;
+    time, such as, number of repository accesses, or asset submissions and so forth over a period of time. The Repository&#xD;
+    can also track number of problems or defects associated with an asset.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    In general, Repositories are not tracking the cost side of asset development. This is typically tracked in project&#xD;
+    management and financial reporting tools. Bringing together the metrics from Asset Consumers, Asset&#xD;
+    Owners/Producers/Reviewers and the Repository with costing metrics gives a foundation for derived metrics. Some of&#xD;
+    these metrics include project reuse percentage, project productivity gains, and return on investment.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;img height=&quot;417&quot; alt=&quot;Describes the different metrics and the main users of these metrics&quot;&#xD;
+    src=&quot;./resources/Image15.gif&quot; width=&quot;459&quot; />&#xD;
+&lt;/p></mainDescription>
+  <sections xmi:id="_oOQIQKd2Edu3IsnteZnoTw" name="Practitioners provide values" guid="_oOQIQKd2Edu3IsnteZnoTw">
+    <sectionDescription>As described earlier, the Asset Owner, Reviewer and Consumer provide both qualitative and quantitative values on assets.</sectionDescription>
+  </sections>
+  <sections xmi:id="_xKAiUKd2Edu3IsnteZnoTw" name="Repository and Assets Used" guid="_xKAiUKd2Edu3IsnteZnoTw">
+    <sectionDescription>Managers, administrators, and Asset Owners, Reviewers and Consumers interact with the repository and the assets, thereby&#xD;
+creating the basis for generating reports.</sectionDescription>
+  </sections>
+  <sections xmi:id="_57x58Kd2Edu3IsnteZnoTw" name="Generate Report" guid="_57x58Kd2Edu3IsnteZnoTw">
+    <sectionDescription>&lt;p>&#xD;
+    Reports may be generated graphically or textually. The metrics may be exported from the Repository into reporting&#xD;
+    tools, or the Repository may render the reports.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Managers often requires reports on a periodic basis, which generally means Repositories need a way to run reporting&#xD;
+    jobs and send them to the appropriate stakeholders.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Repositories should be integrated with portfolio and project management tools to aid the generation of derived metrics.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <purpose>Deliver activity measurements to managers for governance and management functions.</purpose>
+</org.eclipse.epf.uma:TaskDescription>

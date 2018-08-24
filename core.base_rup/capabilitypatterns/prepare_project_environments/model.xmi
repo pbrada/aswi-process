@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:org.eclipse.epf.uma.resourcemanager="http:///org/eclipse/epf/uma/resourcemanager.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1">
+  <org.eclipse.epf.uma.resourcemanager:ResourceManager xmi:id="_g6LKwECgEdqq6ZkmZwN8ug" guid="_g6LKwECgEdqq6ZkmZwN8ug">
+    <resourceDescriptors xmi:id="_g6LKwUCgEdqq6ZkmZwN8ug" id="-RFAmm1znULLyPnx5I1kpiA" uri="content.xmi"/>
+  </org.eclipse.epf.uma.resourcemanager:ResourceManager>
+  <org.eclipse.epf.uma:ProcessComponent xmi:id="_gunbAECgEdqq6ZkmZwN8ug" name="prepare_project_environments" guid="_gunbAECgEdqq6ZkmZwN8ug">
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_arObkECoEdqq6ZkmZwN8ug" name="prepare_environment_for_project" guid="_arObkECoEdqq6ZkmZwN8ug">
+      <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_arUiMECoEdqq6ZkmZwN8ug" name="prepare_environment_for_project" guid="_arUiMECoEdqq6ZkmZwN8ug" isPlanned="false" superActivities="_gunbAUCgEdqq6ZkmZwN8ug" variabilityType="extends">
+        <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:Activity" href="uma://_5q6AwhpREdqFPPVWQscZ5A#{37A50EF5-CC73-4E38-B851-997879548110}"/>
+      </processElements>
+    </childPackages>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_bxguMECoEdqq6ZkmZwN8ug" name="create_project_configuration_management_cm_environments" guid="_bxguMECoEdqq6ZkmZwN8ug">
+      <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_bxzCEECoEdqq6ZkmZwN8ug" name="create_project_configuration_management_cm_environments" guid="_bxzCEECoEdqq6ZkmZwN8ug" isPlanned="false" superActivities="_gunbAUCgEdqq6ZkmZwN8ug" linkToPredecessor="_PZaowECrEdqq6ZkmZwN8ug" variabilityType="extends">
+        <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:Activity" href="uma://_5qDFIxpREdqFPPVWQscZ5A#{C241B2F9-AA48-45E6-89F0-F0A3DC2496DA}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_PZaowECrEdqq6ZkmZwN8ug" guid="_PZaowECrEdqq6ZkmZwN8ug">
+        <pred xsi:type="org.eclipse.epf.uma:Activity" href="uma://_5qDFIxpREdqFPPVWQscZ5A#{043594BF-28ED-41EF-8C55-FBD65551D0CA}"/>
+      </processElements>
+    </childPackages>
+    <process xsi:type="org.eclipse.epf.uma:CapabilityPattern" xmi:id="_gunbAUCgEdqq6ZkmZwN8ug" name="prepare_project_environments" guid="_gunbAUCgEdqq6ZkmZwN8ug" presentationName="Prepare Project Environments" briefDescription="This covers preparation of the various project environments for the project, including the appropriate configuration management and environment discipline activities." breakdownElements="_arUiMECoEdqq6ZkmZwN8ug _bxzCEECoEdqq6ZkmZwN8ug">
+      <presentation xmi:id="-RFAmm1znULLyPnx5I1kpiA" href="uma://-RFAmm1znULLyPnx5I1kpiA#-RFAmm1znULLyPnx5I1kpiA"/>
+      <defaultContext href="uma://_0q85QJySEd2xJNwbI6lxKA#_xqmb0NnmEdmO6L4XMImrsA"/>
+      <validContext href="uma://_0q85QJySEd2xJNwbI6lxKA#_xqmb0NnmEdmO6L4XMImrsA"/>
+    </process>
+  </org.eclipse.epf.uma:ProcessComponent>
+</xmi:XMI>

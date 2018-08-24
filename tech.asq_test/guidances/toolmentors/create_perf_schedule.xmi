@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="-irRy1sU9evWnqTMiSvgb7g" name="create_perf_schedule,_C6cQsMwCEdq9s5d23VYjZw" guid="-irRy1sU9evWnqTMiSvgb7g" changeDate="2006-04-27T13:49:03.818-0700" version="7.1.0">
+  <mainDescription>&lt;p>&#xD;
+    A schedule allows you to order, group, and run tests. With schedules, you can run tests remotely, establish the order&#xD;
+    of tests (sequential, random, or weighted order), run tests at a specific rate, or specify the number of times a given&#xD;
+    test runs. You can also use schedules to run tests against specified builds.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    IBM&amp;reg; Rational&amp;reg; Performance Tester provides a convenient wizard for creating schedules. To create a performance&#xD;
+    schedule, right-click your project and then click &lt;strong>New &amp;gt; Performance Schedule&lt;/strong>.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    In the Performance Schedule Wizard, enter the name of the schedule and click &lt;strong>Finish&lt;/strong>. At this point, a&#xD;
+    new schedule with one user group appears. User groups allow you to create logical groupings by using various&#xD;
+    characteristics representing various types of users on your system. In order to achieve a more realistic distribution&#xD;
+    of users, you may want to create various groups to represent different categories, such as &lt;i>buyers&lt;/i>,&#xD;
+    &lt;i>sellers&lt;/i>, &lt;i>users checking on the status of an order&lt;/i>, or &lt;i>browsers&lt;/i>. The user group types will be&#xD;
+    determined by the characteristic of the users of your system.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    In the Perforance Schedule Wizard, you can also easily add tests. With the schedule you just created open, right-click&#xD;
+    the user group and select &lt;strong>Add &amp;gt; Test&lt;/strong>. In the Select Performance Test window, select the test you&#xD;
+    want to add to your schedule. You can also alternate start times for users in the User Load section of the schedule by&#xD;
+    selecting the check box &lt;strong>Add a delay between starting each user&lt;/strong>.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    In general, when you are building a schedule, you will want to achieve a random arrival delay with every transaction.&#xD;
+    You will also want to prevent authentication rejections by ramping up user numbers slowly, or by starting with random&#xD;
+    delays. You can, for example, start with 1 to 4 users per second and ramp-up, or start with 10 to 20 with random delays&#xD;
+    over several minutes. Finally, when you are building your schedule, make sure that the test runs long enough to get&#xD;
+    steady state results. This can be achieved by making the workload last a long time relative to ramp-up.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    For more information on working with schedules using Rational Performance Tester, see the &lt;a&#xD;
+    class=&quot;elementLinkWithType&quot; href=&quot;./../../../tech.asq_test/guidances/toolmentors/edit_perf_schedule_865B9BD.html&quot;&#xD;
+    guid=&quot;_HxMkQMwCEdq9s5d23VYjZw&quot;>Tool Mentor: Edit Schedules with IBM Rational Performance Tester&lt;/a>.&#xD;
+&lt;/p></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

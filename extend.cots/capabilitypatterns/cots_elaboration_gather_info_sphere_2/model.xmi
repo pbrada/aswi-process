@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:org.eclipse.epf.uma.resourcemanager="http:///org/eclipse/epf/uma/resourcemanager.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1">
+  <org.eclipse.epf.uma.resourcemanager:ResourceManager xmi:id="_QndJYRTeEdqsDYPowBCnuA" guid="_QndJYRTeEdqsDYPowBCnuA">
+    <resourceDescriptors xmi:id="_QndJYhTeEdqsDYPowBCnuA" id="-gUKWfM4a8-xaYKS4anlxbw" uri="content.xmi"/>
+  </org.eclipse.epf.uma.resourcemanager:ResourceManager>
+  <org.eclipse.epf.uma:ProcessComponent xmi:id="_Jh5b8BTeEdqsDYPowBCnuA" name="cots_elaboration_gather_info_sphere_2" guid="_Jh5b8BTeEdqsDYPowBCnuA">
+    <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="_bJU_EFU8EdqAFdl4QtpfhQ" name="bm_define_system_context" guid="_bJU_EFU8EdqAFdl4QtpfhQ" presentationName="Define Business System Context" superActivities="_Jh5b8RTeEdqsDYPowBCnuA" additionallyPerformedBy="_bJtZkFU8EdqAFdl4QtpfhQ" mandatoryInput="_bJ_tcFU8EdqAFdl4QtpfhQ _bKL6sFU8EdqAFdl4QtpfhQ _bKYH8FU8EdqAFdl4QtpfhQ" output="_bJ_tcFU8EdqAFdl4QtpfhQ _bKkVMFU8EdqAFdl4QtpfhQ _bKL6sFU8EdqAFdl4QtpfhQ" performedPrimarilyBy="_bJhMUFU8EdqAFdl4QtpfhQ">
+      <Task href="uma://_875O8A6hEdqg5YAaNtnnCw#_tPtHgBpVEdqUwb9RAn2tTA"/>
+      <selectedSteps href="uma://-t9tVQv4kcHDspAvW4MJgCw#_EoeW4CC7Edq2Lq6r0Grljg"/>
+      <selectedSteps href="uma://-t9tVQv4kcHDspAvW4MJgCw#_orKFgCC8Edq2Lq6r0Grljg"/>
+      <selectedSteps href="uma://-t9tVQv4kcHDspAvW4MJgCw#_0wk_MCC8Edq2Lq6r0Grljg"/>
+      <selectedSteps href="uma://-t9tVQv4kcHDspAvW4MJgCw#_5QKI4CC8Edq2Lq6r0Grljg"/>
+    </processElements>
+    <processElements xsi:type="org.eclipse.epf.uma:RoleDescriptor" xmi:id="_bJhMUFU8EdqAFdl4QtpfhQ" name="rup_business_process_analyst" guid="_bJhMUFU8EdqAFdl4QtpfhQ" presentationName="Business-Process Analyst" superActivities="_Jh5b8RTeEdqsDYPowBCnuA" modifies="_bJ_tcFU8EdqAFdl4QtpfhQ _bKkVMFU8EdqAFdl4QtpfhQ _bKL6sFU8EdqAFdl4QtpfhQ" responsibleFor="_cTiIYFU8EdqAFdl4QtpfhQ _bKYH8FU8EdqAFdl4QtpfhQ _bKL6sFU8EdqAFdl4QtpfhQ">
+      <Role href="uma://_875O8A6hEdqg5YAaNtnnCw#{76FAC4FE-AA09-48AC-85A5-68BD1EE8A86A}"/>
+    </processElements>
+    <processElements xsi:type="org.eclipse.epf.uma:RoleDescriptor" xmi:id="_bJtZkFU8EdqAFdl4QtpfhQ" name="rup_business_architect_bom" guid="_bJtZkFU8EdqAFdl4QtpfhQ" presentationName="Business Architect" superActivities="_Jh5b8RTeEdqsDYPowBCnuA" modifies="_cUGwIFU8EdqAFdl4QtpfhQ _cUfKoFU8EdqAFdl4QtpfhQ _cUxegFU8EdqAFdl4QtpfhQ _uwT8oPRmEdyv-tm4a00cLg _uwT8ofRmEdyv-tm4a00cLg _uwT8ovRmEdyv-tm4a00cLg _bJ_tcFU8EdqAFdl4QtpfhQ" responsibleFor="_u23QkvRmEdyv-tm4a00cLg _uwT8ovRmEdyv-tm4a00cLg _cUxegFU8EdqAFdl4QtpfhQ _cUfKoFU8EdqAFdl4QtpfhQ _cUGwIFU8EdqAFdl4QtpfhQ _cT0cQFU8EdqAFdl4QtpfhQ _bJ_tcFU8EdqAFdl4QtpfhQ">
+      <Role href="uma://_875O8A6hEdqg5YAaNtnnCw#_RqlJIBpWEdqUwb9RAn2tTA"/>
+    </processElements>
+    <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_bJ_tcFU8EdqAFdl4QtpfhQ" name="rup_business_analysis_model" guid="_bJ_tcFU8EdqAFdl4QtpfhQ" presentationName="Business Analysis Model" superActivities="_Jh5b8RTeEdqsDYPowBCnuA">
+      <WorkProduct href="uma://_875O8A6hEdqg5YAaNtnnCw#{CF53445C-3351-46C6-810E-8251830029A7}"/>
+    </processElements>
+    <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_bKL6sFU8EdqAFdl4QtpfhQ" name="rup_business_use_case_model" guid="_bKL6sFU8EdqAFdl4QtpfhQ" presentationName="Business Use Case Model" superActivities="_Jh5b8RTeEdqsDYPowBCnuA">
+      <WorkProduct href="uma://_875O8A6hEdqg5YAaNtnnCw#{89BEF367-5875-47E0-97D6-23E5BCCE52B8}"/>
+    </processElements>
+    <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_bKYH8FU8EdqAFdl4QtpfhQ" name="rup_supplementary_business_specification" guid="_bKYH8FU8EdqAFdl4QtpfhQ" presentationName="Supplementary Business Specification" superActivities="_Jh5b8RTeEdqsDYPowBCnuA">
+      <WorkProduct href="uma://_875O8A6hEdqg5YAaNtnnCw#{0DADA95B-7C1D-44BD-9DB5-41AC99767753}"/>
+    </processElements>
+    <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_bKkVMFU8EdqAFdl4QtpfhQ" name="rup_bm_operation" guid="_bKkVMFU8EdqAFdl4QtpfhQ" presentationName="Business Operation" superActivities="_Jh5b8RTeEdqsDYPowBCnuA">
+      <WorkProduct href="uma://_875O8A6hEdqg5YAaNtnnCw#_Wg_T4BpVEdqUwb9RAn2tTA"/>
+    </processElements>
+    <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="_cTDnQFU8EdqAFdl4QtpfhQ" name="bm_architectural_analysis" guid="_cTDnQFU8EdqAFdl4QtpfhQ" presentationName="Business Architectural Analysis" superActivities="_Jh5b8RTeEdqsDYPowBCnuA" additionallyPerformedBy="_bJhMUFU8EdqAFdl4QtpfhQ" mandatoryInput="_cTiIYFU8EdqAFdl4QtpfhQ" optionalInput="_bJ_tcFU8EdqAFdl4QtpfhQ _cT0cQFU8EdqAFdl4QtpfhQ _cUGwIFU8EdqAFdl4QtpfhQ _bKL6sFU8EdqAFdl4QtpfhQ _bKYH8FU8EdqAFdl4QtpfhQ" output="_cUGwIFU8EdqAFdl4QtpfhQ _cUfKoFU8EdqAFdl4QtpfhQ _cUxegFU8EdqAFdl4QtpfhQ _uwT8oPRmEdyv-tm4a00cLg _uwT8ofRmEdyv-tm4a00cLg _uwT8ovRmEdyv-tm4a00cLg _bJ_tcFU8EdqAFdl4QtpfhQ" performedPrimarilyBy="_bJtZkFU8EdqAFdl4QtpfhQ">
+      <Task href="uma://_875O8A6hEdqg5YAaNtnnCw#_xfhhcBpWEdqUwb9RAn2tTA"/>
+      <selectedSteps href="uma://-o2YBNJ1dwvWsuBQfkUmo_w#_NUf1IB71Edqp2L-b_uRNLA"/>
+      <selectedSteps href="uma://-o2YBNJ1dwvWsuBQfkUmo_w#_mzh0QB71Edqp2L-b_uRNLA"/>
+      <selectedSteps href="uma://-o2YBNJ1dwvWsuBQfkUmo_w#_bzeN4B76Edqp2L-b_uRNLA"/>
+      <selectedSteps href="uma://-o2YBNJ1dwvWsuBQfkUmo_w#_oNwkUB76Edqp2L-b_uRNLA"/>
+      <selectedSteps href="uma://-o2YBNJ1dwvWsuBQfkUmo_w#_p_yioB76Edqp2L-b_uRNLA"/>
+      <selectedSteps href="uma://-wNdAT5v7mfVwly21C7vQdA#_uqJyQDdfEdqYasz4zY4A-Q"/>
+      <selectedSteps href="uma://-o2YBNJ1dwvWsuBQfkUmo_w#_zpImAB77Edqp2L-b_uRNLA"/>
+      <selectedSteps href="uma://-o2YBNJ1dwvWsuBQfkUmo_w#_8pUNEB77Edqp2L-b_uRNLA"/>
+      <selectedSteps href="uma://-o2YBNJ1dwvWsuBQfkUmo_w#_HpBb4B78Edqp2L-b_uRNLA"/>
+    </processElements>
+    <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_cTiIYFU8EdqAFdl4QtpfhQ" name="rup_business_vision" guid="_cTiIYFU8EdqAFdl4QtpfhQ" presentationName="Business Vision" superActivities="_Jh5b8RTeEdqsDYPowBCnuA">
+      <WorkProduct href="uma://_875O8A6hEdqg5YAaNtnnCw#{C1A31211-2C05-4665-8DC5-6BFB63F4FCE4}"/>
+    </processElements>
+    <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_cT0cQFU8EdqAFdl4QtpfhQ" name="rup_business_poc" guid="_cT0cQFU8EdqAFdl4QtpfhQ" presentationName="Business Architectural Proof-of-Concept" superActivities="_Jh5b8RTeEdqsDYPowBCnuA">
+      <WorkProduct href="uma://_875O8A6hEdqg5YAaNtnnCw#_gbqX0BpWEdqUwb9RAn2tTA"/>
+    </processElements>
+    <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_cUGwIFU8EdqAFdl4QtpfhQ" name="rup_business_architecture_document" guid="_cUGwIFU8EdqAFdl4QtpfhQ" presentationName="Business Architecture Document" superActivities="_Jh5b8RTeEdqsDYPowBCnuA">
+      <WorkProduct href="uma://_875O8A6hEdqg5YAaNtnnCw#{D3A0CA96-30AD-4461-9386-A3EC9A7E879F}"/>
+    </processElements>
+    <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_cUfKoFU8EdqAFdl4QtpfhQ" name="rup_business_design_model" guid="_cUfKoFU8EdqAFdl4QtpfhQ" presentationName="Business Design Model" superActivities="_Jh5b8RTeEdqsDYPowBCnuA">
+      <WorkProduct href="uma://_875O8A6hEdqg5YAaNtnnCw#_Yi4dsBpWEdqUwb9RAn2tTA"/>
+    </processElements>
+    <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_cUxegFU8EdqAFdl4QtpfhQ" name="rup_business_deployment_model" guid="_cUxegFU8EdqAFdl4QtpfhQ" presentationName="Business Deployment Model" superActivities="_Jh5b8RTeEdqsDYPowBCnuA">
+      <WorkProduct href="uma://_875O8A6hEdqg5YAaNtnnCw#_lm_NMBpWEdqUwb9RAn2tTA"/>
+    </processElements>
+    <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_uwT8oPRmEdyv-tm4a00cLg" name="rup_business_entity" guid="_uwT8oPRmEdyv-tm4a00cLg" presentationName="Business Entity" isPlanned="false" superActivities="_Jh5b8RTeEdqsDYPowBCnuA">
+      <WorkProduct href="uma://_875O8A6hEdqg5YAaNtnnCw#{9A14ED32-2AC5-457E-93B8-474642D33A50}"/>
+    </processElements>
+    <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_uwT8ofRmEdyv-tm4a00cLg" name="rup_business_worker" guid="_uwT8ofRmEdyv-tm4a00cLg" presentationName="Business Worker" isPlanned="false" superActivities="_Jh5b8RTeEdqsDYPowBCnuA">
+      <WorkProduct href="uma://_875O8A6hEdqg5YAaNtnnCw#{6C6AD4E6-C7B4-42E1-A3D1-FAC9DC2415B5}"/>
+    </processElements>
+    <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_uwT8ovRmEdyv-tm4a00cLg" name="rup_business_system" guid="_uwT8ovRmEdyv-tm4a00cLg" presentationName="Business System" isPlanned="false" superActivities="_Jh5b8RTeEdqsDYPowBCnuA">
+      <WorkProduct href="uma://_875O8A6hEdqg5YAaNtnnCw#{4064F184-314B-4965-9F08-6AE5DBF6205A}"/>
+    </processElements>
+    <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_u23QkPRmEdyv-tm4a00cLg" name="rup_business_worker" guid="_u23QkPRmEdyv-tm4a00cLg" presentationName="Business Worker" isPlanned="false" superActivities="_Jh5b8RTeEdqsDYPowBCnuA">
+      <WorkProduct href="uma://_875O8A6hEdqg5YAaNtnnCw#{6C6AD4E6-C7B4-42E1-A3D1-FAC9DC2415B5}"/>
+    </processElements>
+    <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_u23QkfRmEdyv-tm4a00cLg" name="rup_business_entity" guid="_u23QkfRmEdyv-tm4a00cLg" presentationName="Business Entity" isPlanned="false" superActivities="_Jh5b8RTeEdqsDYPowBCnuA">
+      <WorkProduct href="uma://_875O8A6hEdqg5YAaNtnnCw#{9A14ED32-2AC5-457E-93B8-474642D33A50}"/>
+    </processElements>
+    <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_u23QkvRmEdyv-tm4a00cLg" name="rup_business_system" guid="_u23QkvRmEdyv-tm4a00cLg" presentationName="Business System" isPlanned="false" superActivities="_Jh5b8RTeEdqsDYPowBCnuA">
+      <WorkProduct href="uma://_875O8A6hEdqg5YAaNtnnCw#{4064F184-314B-4965-9F08-6AE5DBF6205A}"/>
+    </processElements>
+    <process xsi:type="org.eclipse.epf.uma:CapabilityPattern" xmi:id="_Jh5b8RTeEdqsDYPowBCnuA" name="cots_elaboration_gather_info_sphere_2" guid="_Jh5b8RTeEdqsDYPowBCnuA" presentationName="Gather Info from Sphere 2" briefDescription="This covers essential tasks aiming at gathering information from the Architecture and Design sphere in the elaboration phase. " breakdownElements="_bJU_EFU8EdqAFdl4QtpfhQ _bJhMUFU8EdqAFdl4QtpfhQ _bJtZkFU8EdqAFdl4QtpfhQ _bJ_tcFU8EdqAFdl4QtpfhQ _bKL6sFU8EdqAFdl4QtpfhQ _bKYH8FU8EdqAFdl4QtpfhQ _bKkVMFU8EdqAFdl4QtpfhQ _cTDnQFU8EdqAFdl4QtpfhQ _cTiIYFU8EdqAFdl4QtpfhQ _cT0cQFU8EdqAFdl4QtpfhQ _cUGwIFU8EdqAFdl4QtpfhQ _cUfKoFU8EdqAFdl4QtpfhQ _cUxegFU8EdqAFdl4QtpfhQ _uwT8oPRmEdyv-tm4a00cLg _uwT8ofRmEdyv-tm4a00cLg _uwT8ovRmEdyv-tm4a00cLg _u23QkPRmEdyv-tm4a00cLg _u23QkfRmEdyv-tm4a00cLg _u23QkvRmEdyv-tm4a00cLg">
+      <presentation xmi:id="-gUKWfM4a8-xaYKS4anlxbw" href="uma://-gUKWfM4a8-xaYKS4anlxbw#-gUKWfM4a8-xaYKS4anlxbw"/>
+      <defaultContext href="uma://_0q85QJySEd2xJNwbI6lxKA#_sU4a4NoTEdmCj7Yn9Ev4rg"/>
+      <validContext href="uma://_0q85QJySEd2xJNwbI6lxKA#_sU4a4NoTEdmCj7Yn9Ev4rg"/>
+    </process>
+  </org.eclipse.epf.uma:ProcessComponent>
+</xmi:XMI>

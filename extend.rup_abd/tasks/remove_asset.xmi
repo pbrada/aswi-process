@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="-M6e1svtWSa7pXZhBjq68iQ" name="remove_asset,_mxwCUN92EdqhGsqsJmAtOw" guid="-M6e1svtWSa7pXZhBjq68iQ" changeDate="2007-04-18T13:43:12.406-0700" version="1.0.0">
+  <mainDescription>&lt;p>&#xD;
+    There are three levels of removing an asset from a repository. These include retiring an asset, archiving an asset, and&#xD;
+    deleting an asset.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;strong>Retire Asset&lt;/strong>&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    This is performed by an administrator who sets the state of the asset to retired. The effect of this is the asset is no&#xD;
+    longer visible to the Asset Consumers, but is still visible to the Asset Owner and the administrator.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;strong>Archive Asset&lt;/strong>&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    This is performed by an administrator who sets the state of the asset to archived. The effect of this is the asset is&#xD;
+    no longer visible to Asset Consumers or to the Asset Owner, but is still visible to the administrator.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;strong>Delete Asset&lt;/strong>&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    This is performed by the Asset Owner or the administrator. The effect of this is the asset is removed from the&#xD;
+    Repository. Certainly this needs to be handled with care.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;strong>Considerations for removing an asset&lt;/strong>&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Some of the considerations for removing an asset are:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Asset usage levels: the asset is dormant, few searches, few browses, few downloads, little feedback, and so forth.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Funding termination: sponsor changes or terminates funding support, perhaps due to business prioritization.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Need for solution diminishes: the problem either goes away, or a new solution is available, or level of effort to&#xD;
+        maintain become prohibitive.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></mainDescription>
+  <sections xmi:id="_01EM4Kd4Edu3IsnteZnoTw" name="Determine Need to Remove Asset" guid="_01EM4Kd4Edu3IsnteZnoTw">
+    <sectionDescription>An interested party brings forward concerns about an asset. Examining the considerations for removing an asset, an&#xD;
+administrator and Asset Owner verify the concerns and evaluate the need to remove the asset.</sectionDescription>
+  </sections>
+  <sections xmi:id="_8SC70Kd4Edu3IsnteZnoTw" name="Conduct Impact Analysis" guid="_8SC70Kd4Edu3IsnteZnoTw">
+    <sectionDescription>&lt;p>&#xD;
+    An impact analysis should be conducted where current Asset Consumers are evaluated and the impact to their projects is&#xD;
+    understood.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    The impact analysis should also address asset relationships, including the related assets’ Asset Owners/Producers, as&#xD;
+    well as other technical dependencies. The Asset Owners/Producers of related assets may need to participate in the&#xD;
+    planning depending on the nature of the problem and the nature of the asset relationship.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    The administrator and Asset Owner should communicate with&amp;nbsp;the Managers&amp;nbsp;to understand the business impact to&#xD;
+    removing the asset.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    A case should be prepared to determine the level of removing the asset. Enough insight should be collected to answer&#xD;
+    the question: Should the asset be retired, archived, or deleted?&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_JaVAsKd5Edu3IsnteZnoTw" name="Obtain Approval to Remove" guid="_JaVAsKd5Edu3IsnteZnoTw">
+    <sectionDescription>Approvals from Managers and other stakeholders should be obtained.</sectionDescription>
+  </sections>
+  <sections xmi:id="_ST1_EKd5Edu3IsnteZnoTw" name="Remove the Asset" guid="_ST1_EKd5Edu3IsnteZnoTw">
+    <sectionDescription>The asset is removed from the Repository according to the appropriate level.</sectionDescription>
+  </sections>
+  <keyConsiderations>&lt;p>&#xD;
+    In most cases the enterprise should avoid deleting the asset from the repository. To be more specific, assets which&#xD;
+    have just been submitted to the repository and are in the initial state or draft state, or rather, the asset has not&#xD;
+    gone through review and approval processes and are not available for asset consumers, are generally&amp;nbsp;OK to delete&#xD;
+    from the repository.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Asset owners can generally delete non-approved assets with little repercussion. Whereas assets which have been approved&#xD;
+    and are being reused are more difficult to delete. One of the more challenging aspects to removing assets is ensuring&#xD;
+    that the entire set of Asset Consumers are communicated with. Having support from the repository to automate much of&#xD;
+    this communication is a critical feature.&#xD;
+&lt;/p></keyConsiderations>
+  <purpose>Bring the asset to the end of its lifecycle in the Repository.</purpose>
+</org.eclipse.epf.uma:TaskDescription>

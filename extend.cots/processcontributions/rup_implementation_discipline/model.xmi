@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.uma:ProcessComponent xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.ibm.uma="http://www.ibm.com/uma/1.0.2/uma.ecore" xmi:id="_s247w9oTEdmCj7Yn9Ev4rg" name="rup_implementation_discipline" guid="_s247w9oTEdmCj7Yn9Ev4rg">
+  <childPackages xsi:type="com.ibm.uma:ProcessPackage" xmi:id="_twYv0NoTEdmCj7Yn9Ev4rg" name="integrate_subsystem_wfd" guid="_twYv0NoTEdmCj7Yn9Ev4rg">
+    <processElements xsi:type="com.ibm.uma:Activity" xmi:id="_s247wdoTEdmCj7Yn9Ev4rg" name="integrate_subsystem_wfd" guid="_s247wdoTEdmCj7Yn9Ev4rg" presentationName="integrate_subsystem_wfd" superActivities="_s247wtoTEdmCj7Yn9Ev4rg" variabilityType="contributes" breakdownElements="_twYv0doTEdmCj7Yn9Ev4rg _twYv0toTEdmCj7Yn9Ev4rg _twYv09oTEdmCj7Yn9Ev4rg _twYv1NoTEdmCj7Yn9Ev4rg _twYv1doTEdmCj7Yn9Ev4rg _twYv1toTEdmCj7Yn9Ev4rg _twYv19oTEdmCj7Yn9Ev4rg"/>
+    <processElements xsi:type="com.ibm.uma:TaskDescriptor" xmi:id="_twYv0doTEdmCj7Yn9Ev4rg" name="Perform Package Configuration" guid="_twYv0doTEdmCj7Yn9Ev4rg" presentationName="Perform Package Configuration" superActivities="_s247wdoTEdmCj7Yn9Ev4rg" optionalInput="_twYv09oTEdmCj7Yn9Ev4rg _twYv1NoTEdmCj7Yn9Ev4rg" performedPrimarilyBy="_twYv0toTEdmCj7Yn9Ev4rg">
+      <Task href="uma://{D4626EC0-06BC-4592-A8A6-C8DE7E821952}#{3EA46319-8D7F-4235-9642-B6E8DA75FEA5}"/>
+    </processElements>
+    <processElements xsi:type="com.ibm.uma:RoleDescriptor" xmi:id="_twYv0toTEdmCj7Yn9Ev4rg" name="cots_implementer" guid="_twYv0toTEdmCj7Yn9Ev4rg" presentationName="cots_implementer" superActivities="_s247wdoTEdmCj7Yn9Ev4rg" performsAsOwner="_twYv0doTEdmCj7Yn9Ev4rg _twYv1doTEdmCj7Yn9Ev4rg">
+      <Role href="uma://{D4626EC0-06BC-4592-A8A6-C8DE7E821952}#{266D6A6A-3E9B-4C68-BEDA-0A4B22E89769}"/>
+    </processElements>
+    <processElements xsi:type="com.ibm.uma:WorkProductDescriptor" xmi:id="_twYv09oTEdmCj7Yn9Ev4rg" name="Package Configuration Specification" guid="_twYv09oTEdmCj7Yn9Ev4rg" presentationName="Package Configuration Specification" superActivities="_s247wdoTEdmCj7Yn9Ev4rg" OptionalInputTo="_twYv0doTEdmCj7Yn9Ev4rg">
+      <WorkProduct xsi:type="com.ibm.uma:Artifact" href="uma://{D4626EC0-06BC-4592-A8A6-C8DE7E821952}#{64C479CF-3557-44C0-9408-E109DF54E400}"/>
+    </processElements>
+    <processElements xsi:type="com.ibm.uma:WorkProductDescriptor" xmi:id="_twYv1NoTEdmCj7Yn9Ev4rg" name="Implementation Element" guid="_twYv1NoTEdmCj7Yn9Ev4rg" presentationName="Implementation Element" superActivities="_s247wdoTEdmCj7Yn9Ev4rg" OptionalInputTo="_twYv0doTEdmCj7Yn9Ev4rg">
+      <WorkProduct xsi:type="com.ibm.uma:Artifact" href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{E1E0DDA3-914F-4CC1-9D0A-ED4B8E8BBA89}"/>
+    </processElements>
+    <processElements xsi:type="com.ibm.uma:TaskDescriptor" xmi:id="_twYv1doTEdmCj7Yn9Ev4rg" name="Perform Data Migration" guid="_twYv1doTEdmCj7Yn9Ev4rg" presentationName="Perform Data Migration" superActivities="_s247wdoTEdmCj7Yn9Ev4rg" optionalInput="_twYv1toTEdmCj7Yn9Ev4rg _twYv19oTEdmCj7Yn9Ev4rg" performedPrimarilyBy="_twYv0toTEdmCj7Yn9Ev4rg">
+      <Task href="uma://{D4626EC0-06BC-4592-A8A6-C8DE7E821952}#{824ABA0E-BEC0-456D-9833-50781300B274}"/>
+    </processElements>
+    <processElements xsi:type="com.ibm.uma:WorkProductDescriptor" xmi:id="_twYv1toTEdmCj7Yn9Ev4rg" name="Data Migration Specification" guid="_twYv1toTEdmCj7Yn9Ev4rg" presentationName="Data Migration Specification" superActivities="_s247wdoTEdmCj7Yn9Ev4rg" OptionalInputTo="_twYv1doTEdmCj7Yn9Ev4rg">
+      <WorkProduct xsi:type="com.ibm.uma:Artifact" href="uma://{D4626EC0-06BC-4592-A8A6-C8DE7E821952}#{DDBF46D5-6238-4897-AA3B-2386C5861361}"/>
+    </processElements>
+    <processElements xsi:type="com.ibm.uma:WorkProductDescriptor" xmi:id="_twYv19oTEdmCj7Yn9Ev4rg" name="Data Migration Evaluation Summary" guid="_twYv19oTEdmCj7Yn9Ev4rg" presentationName="Data Migration Evaluation Summary" superActivities="_s247wdoTEdmCj7Yn9Ev4rg" OptionalInputTo="_twYv1doTEdmCj7Yn9Ev4rg">
+      <WorkProduct xsi:type="com.ibm.uma:Artifact" href="uma://{D4626EC0-06BC-4592-A8A6-C8DE7E821952}#{918BE37B-AB78-4E9C-98DD-B9EDB7A40A6B}"/>
+    </processElements>
+  </childPackages>
+  <process xsi:type="com.ibm.uma:ProcessContribution" xmi:id="_s247wtoTEdmCj7Yn9Ev4rg" name="rup_implementation_discipline" guid="_s247wtoTEdmCj7Yn9Ev4rg" briefDescription="TBD" presentationName="rup_implementation_discipline" breakdownElements="_s247wdoTEdmCj7Yn9Ev4rg"/>
+</com.ibm.uma:ProcessComponent>

@@ -1,0 +1,614 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2// EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>System Requirements Specification</title>
+<link type="text/css" href="../../../../css/default.css" rel="StyleSheet">
+<script src="../../../../scripts/contentpage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					backPath = './../../';
+				</script>
+</head>
+
+<body >
+
+<div class=Section1>
+
+<p class=MsoTitle align=right style='text-align:right'>&lt;Project Name&gt;</p>
+
+<p class=MsoTitle align=right style='text-align:right'>System Requirements Specification</p>
+
+<p class=MsoTitle align=right style='text-align:right'>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoTitle align=right style='text-align:right'><span style='font-size:
+14.0pt;'>Version &lt;1.0&gt;</span></p>
+
+<p class=MsoTitle><span style='font-size:14.0pt;'>&nbsp;</span></p>
+
+<p class=MsoNormal align=right style='text-align:right'>&nbsp;</p>
+
+  <p class=InfoBlue><i>[<b>Note:</b> The following template is provided for use 
+    with the Rational Unified Process. Text enclosed in square brackets and displayed 
+    in blue italics (style=InfoBlue) is included to provide guidance to the author 
+    and must be deleted before publishing the document. A paragraph entered following 
+    this style is automatically set to normal (style=Body Text).]</i></p>
+
+</div>
+
+<p>
+
+<span style='font-size:10.0pt;font-family:"Times New Roman";'><br clear=all
+style='page-break-before:always;'>
+</span>
+
+</p>
+
+<div class=Section2>
+
+<p class=MsoTitle>Revision History</p>
+
+<table border=1 cellspacing=0 cellpadding=0 style='border-collapse:collapse;
+ border:none;'>
+ <tr>
+  <td width=154 valign=top style='width:1.6in;border:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=Tabletext align=center style='text-align:center'><b>Date</b></p>
+  </td>
+  <td width=77 valign=top style='width:.8in;border:solid windowtext .75pt;
+  border-left:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=Tabletext align=center style='text-align:center'><b>Version</b></p>
+  </td>
+  <td width=250 valign=top style='width:2.6in;border:solid windowtext .75pt;
+  border-left:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=Tabletext align=center style='text-align:center'><b>Description</b></p>
+  </td>
+  <td width=154 valign=top style='width:1.6in;border:solid windowtext .75pt;
+  border-left:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=Tabletext align=center style='text-align:center'><b>Author</b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=154 valign=top style='width:1.6in;border:solid windowtext .75pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=Tabletext>&lt;dd/mmm/yy&gt;</p>
+  </td>
+  <td width=77 valign=top style='width:.8in;border-top:none;border-left:none;
+  border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=Tabletext>&lt;x.x&gt;</p>
+  </td>
+  <td width=250 valign=top style='width:2.6in;border-top:none;border-left:none;
+  border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=Tabletext>&lt;details&gt;</p>
+  </td>
+  <td width=154 valign=top style='width:1.6in;border-top:none;border-left:none;
+  border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=Tabletext>&lt;name&gt;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=154 valign=top style='width:1.6in;border:solid windowtext .75pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=Tabletext>&nbsp;</p>
+  </td>
+  <td width=77 valign=top style='width:.8in;border-top:none;border-left:none;
+  border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=Tabletext>&nbsp;</p>
+  </td>
+  <td width=250 valign=top style='width:2.6in;border-top:none;border-left:none;
+  border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=Tabletext>&nbsp;</p>
+  </td>
+  <td width=154 valign=top style='width:1.6in;border-top:none;border-left:none;
+  border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=Tabletext>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=154 valign=top style='width:1.6in;border:solid windowtext .75pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=Tabletext>&nbsp;</p>
+  </td>
+  <td width=77 valign=top style='width:.8in;border-top:none;border-left:none;
+  border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=Tabletext>&nbsp;</p>
+  </td>
+  <td width=250 valign=top style='width:2.6in;border-top:none;border-left:none;
+  border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=Tabletext>&nbsp;</p>
+  </td>
+  <td width=154 valign=top style='width:1.6in;border-top:none;border-left:none;
+  border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=Tabletext>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=154 valign=top style='width:1.6in;border:solid windowtext .75pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=Tabletext>&nbsp;</p>
+  </td>
+  <td width=77 valign=top style='width:.8in;border-top:none;border-left:none;
+  border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=Tabletext>&nbsp;</p>
+  </td>
+  <td width=250 valign=top style='width:2.6in;border-top:none;border-left:none;
+  border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=Tabletext>&nbsp;</p>
+  </td>
+  <td width=154 valign=top style='width:1.6in;border-top:none;border-left:none;
+  border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=Tabletext>&nbsp;</p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<b><span style='font-size:18.0pt;font-family:Arial;'><br clear=all style='page-break-before:always'>
+</span></b>
+
+<p class=MsoTitle>Table of Contents</p>
+
+  <p class=MsoToc1><a href="#1.                  Introduction">1.<span style='font-size:12.0pt'>       
+    </span>Introduction</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<!--TOC font is smaller than the TOC font in the "System Architecture Document" template. --></p>
+
+<p class=MsoToc2><a href="#1.1     Purpose">1.1<span
+style='font-size:12.0pt'>     </span>Purpose</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p class=MsoToc2><a href="#1.2     Scope">1.2<span
+style='font-size:12.0pt'>     </span>Scope</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+  <p class=MsoToc2><a href="#1.3     Definitions, Acronyms and Abbreviations">1.3<span
+style='font-size:12.0pt'>     </span>Definitions, Acronyms, and Abbreviations</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p class=MsoToc2><a href="#1.4     References">1.4<span
+style='font-size:12.0pt'>     </span>References</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p class=MsoToc2><a href="#1.5     Overview">1.5<span
+style='font-size:12.0pt'>     </span>Overview</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p class=MsoToc1><a href="#2.                  Overall Description">2.<span style='font-size:12.0pt'>       </span>Overall
+Description</a>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p class=MsoToc1><a href="#3.                  Specific Requirements">3.<span style='font-size:12.0pt'>       </span>Specific
+Requirements</a></p>
+
+<p class=MsoToc2><a href="#3.1             &nbsp;&nbsp;System Capabilities">3.1<span
+style='font-size:12.0pt'>     </span>System Capabilities</a></p>
+
+  <p class=MsoToc3><a href="#3.1.1          &lt;System Capability One&gt;">3.1.1<span
+style='font-size:12.0pt'>         </span>&lt;System Capability One&gt;</a><!--Correct heading? Remove brackets? See also section 3.1.1 below in the template itself. -->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+</div>
+
+<p class=MsoToc2><a href="#3.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Non-Functional Requirements">3.2<span
+style='font-size:12.0pt'>     </span>Non-Functional Requirements</a> </p>
+<div class=Section2> 
+  <p class=MsoToc3><a href="#3.2.1          Usability">3.2.1 Usability&nbsp;</a><!--Item 3.2..1 is aligned improperly. It should be indented to align with, and above, 3.2.2, and without a blank line below it. --><!--Correct heading? See also section 3.2.1.1 below in the template itself. --></p>
+  <p class=MsoToc3><a href="#3.2.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reliability">3.2.2 
+    Reliability&nbsp;</a></p>
+  <p class=MsoToc3><a href="#3.2.3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Performance">3.2.3 
+    Performance&nbsp;</a></p>
+  <p class=MsoToc3><a href="#3.2.4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Supportability">3.2.4 
+    Supportability&nbsp;</a></p>
+  <p class=MsoToc3><a href="#3.2.5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Design Constraints">3.2.5 
+    Design Constraints&nbsp;</a></p>
+  <p class=MsoToc3><a href="#3.2.6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Additional Systems Engineering Considerations">3.2.6 
+    Additional Systems Engineering Considerations&nbsp;</a></p>
+  <p class=MsoToc7><a href="#3.2.6.1&nbsp;&nbsp;Physical Requirements">3.2.6.1 
+    Physical Requirements&nbsp;</a></p>
+  <p class=MsoToc7><a href="#3.2.6.2&nbsp;&nbsp;Environmental Requirements">3.2.6.2 
+    Environmental Requirements&nbsp;</a></p>
+  <p class=MsoToc7><a href="#3.2.6.3&nbsp;&nbsp;Other Product Assurance Requirements">3.2.6.3 
+    Other Product Assurance Requirements&nbsp;</a></p>
+  <p class=MsoToc7><a href="#3.2.6.4   Human-related Requirements">3.2.6.4 Human-Related 
+    Requirements&nbsp;</a></p>
+  <p class=MsoToc7><a href="#3.2.6.5   Logistics Requirements">3.2.6.5 Logistics 
+    Requirements&nbsp;</a></p>
+  <p class=MsoToc3><a href="#3.2.7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Online User Documentation and Help System Requirements">3.2.7 
+    Online User Documentation and Help System Requirements&nbsp;</a></p>
+  <p class=MsoToc3><a href="#3.2.8          Purchased Components">3.2.8 Purchased 
+    Components&nbsp;</a></p>
+  <p class=MsoToc3><a href="#3.2.9&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Interfaces">3.2.9 
+    Interfaces&nbsp;</a></p>
+  <p class=MsoToc7><a href="#3.2.9.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;User Interfaces">3.2.9.1 
+    User Interfaces&nbsp;</a></p>
+  <p class=MsoToc7><a href="#3.2.9.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hardware Interfaces">3.2.9.2 
+    Hardware Interfaces&nbsp;</a></p>
+  <p class=MsoToc7><a href="#3.2.9.3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Software Interfaces">3.2.9.3 
+    Software Interfaces&nbsp;</a></p>
+  <p class=MsoToc7><a href="#3.2.9.4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Communications Interfaces">3.2.9.4 
+    Communications Interfaces&nbsp;</a></p>
+  <p class=MsoToc3><a href="#3.2.10        Licensing Requirements">3.2.10 Licensing 
+    Requirements&nbsp;</a></p>
+  <p class=MsoToc3><a href="#3.2.11&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Legal, Copyright and Other Notices">3.2.11 
+    Legal, Copyright, and Other Notices&nbsp;</a></p>
+  <p class=MsoToc3><a href="#3.2.12        Applicable Standards">3.2.12 Applicable 
+    Standards</a></p>
+  <p class=MsoToc1><a href="#4.                  Supporting Information">4.<span style='font-size:12.0pt'>       
+    </span>Supporting Information</a>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+  <p class=MsoTitle><br
+clear=all style='page-break-before:always'>
+    System Requirements Specification </p>
+  <h1><a name="1.                  Introduction">1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+    </span>Introduction</a></h1>
+  <p class=InfoBlue><i>[The introduction of the <b>System Requirements Specification 
+    (SysRS) </b> provides an overview of the entire <b>SysRS</b>. It includes 
+    the purpose, scope, definitions, acronyms, abbreviations, references, and 
+    overview of the <b>SysRS</b>.]</i></p>
+  <p class=InfoBlue><i>[<b>Note:</b> The <b>SysRS</b> captures the complete system 
+    requirements for the system, or a portion of the system.&nbsp;Following is 
+    a typical <b>SysRS</b> outline for a project using only traditional natural-language 
+    style requirements - with <b>no use-case modeling.  </b>It captures all 
+    requirements in a single document,  with the Supplementary Specifications 
+    combined, or equivalent material inserted.]</i></p>
+  <h2 style='margin-left:0in;text-indent:0in'><a name="1.1     Purpose">1.1<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Purpose</a></h2>
+  <p class=InfoBlue><i>[Specify the purpose of this <b>SysRS</b>. The <b>SysRS</b> 
+    fully describes the functional and behavioral capabilities of the identified 
+    system. It also describes nonfunctional requirements, design constraints and 
+    other factors necessary to provide a complete and comprehensive description 
+    of the requirements for the system.]</i></p>
+  <h2 style='margin-left:0in;text-indent:0in'><a name="1.2     Scope">1.2<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Scope</a></h2>
+  <p class=InfoBlue><i>[A brief description of the system that the <b>SysRS</b> 
+    applies to, and anything else affected or influenced by this document.]</i></p>
+  <h2 style='margin-left:0in;text-indent:0in'><a name="1.3     Definitions, Acronyms and Abbreviations">1.3<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Definitions, 
+    Acronyms, and Abbreviations</a></h2>
+  <p class=InfoBlue><i>[This subsection provides the definitions of all terms, 
+    acronyms, and abbreviations required to properly interpret the <b>SysRS</b>. 
+    This information can be provided by reference to the project Glossary.]</i></p>
+  <h2 style='margin-left:0in;text-indent:0in'><a name="1.4     References">1.4<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span>References</a></h2>
+  <p class=InfoBlue><i>[This subsection provides a complete list of all documents 
+    referenced elsewhere in the <b>SysRS</b>. Identify each document by title, 
+    report number (if applicable), date, and publishing organization. Specify 
+    the sources from which the references can be obtained. This information can 
+    be provided by reference to an appendix or to another document.]</i></p>
+  <h2 style='margin-left:0in;text-indent:0in'><a name="1.5     Overview">1.5<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Overview</a></h2>
+  <p class=InfoBlue><i>[This subsection describes what the rest of the <b>SysRS</b> 
+    contains and explains how the document is organized.]</i></p>
+  <h1><a name="2.                  Overall Description">2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+    </span>Overall Description</a></h1>
+  <p class=InfoBlue><i>[This section of the <b>SysRS</b> describes the general 
+    factors that affect the system and its requirements. This section does not 
+    state specific requirements.  Instead, it provides a background for those 
+    requirements, which are defined in detail in Section 3, and makes them easier 
+    to understand. Include items such as the following: </i></p>
+</div>
+<ul>
+  <li> 
+    <div class=Section2><i> the context for the system</i></div>
+  </li>
+  <li> 
+    <div class=Section2><i>system functions</i></div>
+  </li>
+  <li> 
+    <div class=Section2><i>user characteristics</i></div>
+  </li>
+  <li> 
+    <div class=Section2><i> constraints</i></div>
+  </li>
+  <li> 
+    <div class=Section2><i> assumptions and dependencies</i></div>
+  </li>
+  <li> 
+    <div class=Section2><i>requirements subsets</i></div>
+  </li>
+</ul>
+<div class=Section2> 
+  <p class=InfoBlue><i>Reference can be made from this section to the Vision artifact, 
+    rather than replicating material from that document.]</i></p>
+  <h1><a name="3.                  Specific Requirements">3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+    </span>Specific Requirements</a> </h1>
+  <p class=InfoBlue><i>[This section of the <b>SysRS</b> contains all the system 
+    requirements to a level of detail sufficient to enable designers to design 
+    a system to satisfy those requirements, and testers to test that the system 
+    satisfies those requirements.]</i></p>
+  <h2 style='margin-left:0in;text-indent:0in'><a name="3.1             &nbsp;&nbsp;System Capabilities">3.1<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+    &nbsp;&nbsp;</span>System Capabilities</a></h2>
+  <p class=InfoBlue><i>[This section describes the required capabilities of the 
+    system, expressed in natural-language form. For many systems, this might constitute 
+    the bulk of the <b>SysRS</b> Package, and thought must be given to the organization 
+    of this section. This section is typically organized by feature, function, 
+    or functional group (tracing from the Vision artifact), but alternative organization 
+    methods might also be appropriate, for example, organization by user or role.</i></p>
+  <p class=InfoBlue><i>This section describes the refinement of the feature or 
+    function into constituent requirements, itemizing the requirements thus derived. 
+    The behavior that the system is required to exhibit in support of these derived 
+    requirements are described, along with any associated performance requirements 
+    (response time, speed, throughput, rates, frequency, accuracy, precision, 
+    capacity, and so on). This behavior description also includes required behavior 
+    under error or failure conditions (handling of erroneous input, unexpected 
+    conditions, fallback, and so on). It might not be necessary in every case 
+    to specify how errors and unexpected events are to be handled.  In many 
+    cases, this can be left to the system architect to decide.]</i></p>
+  <h3 style='margin-left:0in;text-indent:0in'><a name="3.1.1          &lt;System Capability One&gt;">3.1.1<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+    &nbsp; </span>&lt;System Capability One&gt;</a></h3>
+  <p class=InfoBlue><i>[The capability description, and its refinement.]</i></p>
+  <div class="Section2"> 
+    <h2><a name="3.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Non-Functional Requirements">3.2<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Non-Functional 
+      Requirements</a></h2>
+    <p class="InfoBlue"><i>[<b>Note:</b> If the Supplementary Specifications artifact 
+      has been produced, it might simply be included here. It covers the same 
+      topics.]</i></p>
+    <h3><a name="3.2.1          Usability">3.2.1<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+      &nbsp; </span>Usability</a></h3>
+    <p class="InfoBlue"><i>[This section includes all of those requirements that 
+      affect usability. Examples follow:</i></p>
+  </div>
+</div>
+<ul>
+  <li> 
+    <div class=Section2> 
+      <div class="Section2"><i><span style="font-family:Symbol;
+font-style:normal"><span style="font:7.0pt &quot;Times New Roman&quot;"> </span></span>Specify 
+        the required training time for normal users and power users to become 
+        productive at particular operations.</i></div>
+    </div>
+  </li>
+  <li> 
+    <div class=Section2> 
+      <div class="Section2"><i>Specify measurable task times for typical tasks.</i></div>
+    </div>
+  </li>
+  <li> 
+    <div class=Section2> 
+      <div class="Section2"><i>Specify requirements to conform to common usability 
+        standards, for example, IBM?s CUA standards or Microsoft?s GUI standards.]</i></div>
+    </div>
+  </li>
+</ul>
+<div class=Section2> 
+  <div class="Section2"> 
+    <h4><a name="3.2.1.1     &lt;Usability Requirement One&gt;">3.2.1.1<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp; 
+      </span>&lt;Usability Requirement One&gt;</a></h4>
+    <p class="InfoBlue"><i>[The requirement description.]</i></p>
+    <h3><a name="3.2.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reliability">3.2.2<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Reliability</a></h3>
+    <p class="InfoBlue"><i>[Specify the requirements for reliability of the system 
+      here. Suggestions are as follows:</i></p>
+  </div>
+</div>
+<ul>
+  <li>
+    <div class=Section2>
+      <div class="Section2"><i><span style="font-family:Symbol;
+font-style:normal"><span style="font:7.0pt &quot;Times New Roman&quot;"> </span></span>Availability - Specify 
+        percentage of time available ( xx.xx%), hours of use, maintenance access, 
+        degraded mode operations, and so forth.</i></div>
+    </div>
+  </li>
+  <li>
+    <div class=Section2>
+      <div class="Section2"><i>Mean Time Between Failures (MTBF) - This is usually 
+        specified in hours, but it could also be specified in terms of days, months, 
+        or years.</i></div>
+    </div>
+  </li>
+  <li>
+    <div class=Section2>
+      <div class="Section2"><i>Mean Time To Repair (MTTR) - How long is the 
+        system allowed to be out of operation after it has failed?</i></div>
+    </div>
+  </li>
+  <li>
+    <div class=Section2>
+      <div class="Section2"><i>Accuracy - Specify precision (resolution) and 
+        accuracy (by some known standard) that is required in the systems output.</i></div>
+    </div>
+  </li>
+  <li>
+    <div class=Section2>
+      <div class="Section2"><i>Maximum bugs or defect rate - usually expressed 
+        in terms of bugs/KLOC (thousands of lines of code), or bugs/function-point.</i></div>
+    </div>
+  </li>
+  <li>
+    <div class=Section2>
+      <div class="Section2"><i>Bugs or defect rate - categorized in terms of 
+        minor, significant, and critical bugs. The requirement(s) must define 
+        what is meant by a ?critical? bug (for example, complete loss of data 
+        or complete inability to use certain parts of the functionality of the 
+        system).]</i></div>
+    </div>
+  </li>
+</ul>
+<div class=Section2>
+  <div class="Section2">
+    <h4><a name="3.2.2.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Reliability Requirement One&gt;">3.2.2.1<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;Reliability 
+      Requirement One&gt;</a></h4>
+    <p class="InfoBlue"><i>[The requirement description.]</i></p>
+    <h3><a name="3.2.3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Performance">3.2.3<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Performance</a></h3>
+    <p class="InfoBlue"><i>[Outline the performance characteristics of the system 
+      in this section. Include specific response times. Where applicable, reference 
+      related Use Cases by name. In general, associate all required capabilities, 
+      whether described in use-case form or simply by text, with some performance 
+      statement (describing how well the system should provide the capability 
+      or function). It is better to keep those statements of performance in proximity 
+      to the affected capability (in the &quot;special requirements&quot; part 
+      of a use-case description, for example). Here, you can keep statements of 
+      requirements that need to be tested, but which are not aligned with specific 
+      capability. Some performance characteristics are:</i></p>
+  </div>
+</div>
+<ul>
+  <li><i><span style="font-family:Symbol;
+font-style:normal"></span>Response time for a transaction (average, maximum)</i>. 
+    <div class=Section2></div>
+  </li>
+  <li> 
+    <div class=Section2> 
+      <div class="Section2"><i><span style="font-family:Symbol;
+font-style:normal"><span style="font:7.0pt &quot;Times New Roman&quot;"> </span></span>Throughput 
+        (for example, transactions per second).</i></div>
+    </div>
+  </li>
+  <li> 
+    <div class=Section2> 
+      <div class="Section2"><i><span style="font-family:Symbol;
+font-style:normal"><span style="font:7.0pt &quot;Times New Roman&quot;"> </span></span>Capacity 
+        (for example, the number of customers or transactions the system can accommodate).</i></div>
+    </div>
+  </li>
+  <li> 
+    <div class=Section2> 
+      <div class="Section2"><i><span style="font-family:Symbol;
+font-style:normal"><span style="font:7.0pt &quot;Times New Roman&quot;"> </span></span>Degradation 
+        modes (what is the acceptable mode of operation when the system has been 
+        degraded in some manner).</i></div>
+    </div>
+  </li>
+  <li> 
+    <div class=Section2> 
+      <div class="Section2"><i><span style="font-family:Symbol;
+font-style:normal"><span style="font:7.0pt &quot;Times New Roman&quot;"> </span></span>Resource 
+        utilization: memory, disk, communications, and so on.]</i></div>
+    </div>
+  </li>
+</ul>
+<div class=Section2>
+  <div class="Section2">
+    <h4><a name="3.2.3.1      &lt;Performance Requirement One&gt;">3.2.3.1<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+      </span>&lt;Performance Requirement One&gt;</a></h4>
+    <p class="InfoBlue">[The requirement description.]</p>
+    <h3><a name="3.2.4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Supportability">3.2.4<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Supportability</a></h3>
+    <p class="InfoBlue"><i>[This section indicates any requirements that enhance 
+      the supportability or maintainability of the system being built, including 
+      coding standards, naming conventions, class libraries, maintenance access, 
+      and maintenance utilities.]</i></p>
+    <h4><a name="3.2.4.1&nbsp;&nbsp;&nbsp;&nbsp;&lt;Supportability Requirement One&gt;">3.2.4.1<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;Supportability 
+      Requirement One&gt;</a></h4>
+    <p class="InfoBlue"><i>[The requirement description.]</i></p>
+    <h3><a name="3.2.5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Design Constraints">3.2.5<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Design 
+      Constraints</a></h3>
+    <p class="InfoBlue"><i>[This section indicates any design constraints on the 
+      system being built. Design constraints represent design decisions that have 
+      been mandated and must be adhered to.&nbsp;Examples include software languages, 
+      software process requirements, prescribed use of developmental tools, architectural 
+      and design constraints, purchased components, class libraries, and so on.]</i></p>
+    <h4><a name="3.2.5.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Design Constraint One&gt;">3.2.5.1<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;Design 
+      Constraint One&gt;</a></h4>
+    <p class="InfoBlue"><i>[The requirement description.]</i></p>
+  </div>
+  <div class="Section2"> 
+    <h3><a name="3.2.6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Additional Systems Engineering Considerations">3.2.6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Additional 
+      Systems Engineering Considerations</a></h3>
+    <p class="InfoBlue"><i>[Systems engineering potentially requires other types 
+      of requirements to be addressed:]</i></p>
+    <h4><a name="3.2.6.1&nbsp;&nbsp;Physical Requirements">3.2.6.1&nbsp;&nbsp;Physical 
+      Requirements</a></h4>
+    <p class="InfoBlue"><i>[For example, weight, size, power, and so on.]</i></p>
+    <h4><a name="3.2.6.2&nbsp;&nbsp;Environmental Requirements">3.2.6.2&nbsp;&nbsp;Environmental 
+      Requirements</a></h4>
+    <p class="InfoBlue"><i>[For example, moisture, contaminant, thermal, electrical, 
+      mechanical, and so on.]</i></p>
+    <h4><a name="3.2.6.3&nbsp;&nbsp;Other Product Assurance Requirements">3.2.6.3&nbsp;&nbsp;Other 
+      Product Assurance Requirements</a></h4>
+    <p class="InfoBlue"><i>[For example, safety, security, other quality factors 
+      (for example, survivability).]</i></p>
+    <h4><a name="3.2.6.4   Human-related Requirements">3.2.6.4&nbsp;&nbsp; Human-Related 
+      Requirements</a></h4>
+    <p class="InfoBlue"><i>[Describe the requirements imposed on the system in 
+      support of the people who use and support the system. Examples include training 
+      capabilities - equipment and materials to be included for training - maintenance 
+      capabilities, and ergonomic considerations not covered by interface descriptions 
+      and standards.]</i></p>
+    <h4><a name="3.2.6.5   Logistics Requirements">3.2.6.5&nbsp;&nbsp; Logistics 
+      Requirements</a></h4>
+    <p class="InfoBlue"><i>[Describe the requirements imposed on the system because 
+      of logistics considerations including maintenance, support, transportation, 
+      supply, accommodation of existing systems.]</i></p>
+    <h3><a name="3.2.7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Online User Documentation and Help System Requirements">3.2.7<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Online 
+      User Documentation and Help System Requirements</a></h3>
+    <p class="InfoBlue"><i>[Describes the requirements, if any, for online user 
+      documentation, help systems, help about notices, and so forth.]</i></p>
+    <h3><a name="3.2.8          Purchased Components">3.2.8<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+      </span>Purchased Components</a></h3>
+    <p class="InfoBlue"><i>[This section describes any purchased components to 
+      be used with the system, any applicable licensing or usage restrictions, 
+      and any associated compatibility/interoperability or interface standards.]</i></p>
+    <h3><a name="3.2.9&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Interfaces">3.2.9<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Interfaces</a></h3>
+    <p class="InfoBlue"><i>[This section defines the interfaces that must be supported 
+      by the system. It contains adequate specificity, protocols, ports and logical 
+      addresses, and so forth, so that the system can be developed and verified 
+      against the interface requirements. Also, describe any requirements to be 
+      imposed on interfaces internal to the system. These arise, for example, 
+      when the system design is constrained to use existing hardware or software 
+      components internally.]</i></p>
+    <h4><a name="3.2.9.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;User Interfaces">3.2.9.1<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>User 
+      Interfaces</a></h4>
+    <p class="InfoBlue"><i>[Describe the user interfaces that are to be implemented 
+      by the system.]</i></p>
+    <h4><a name="3.2.9.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hardware Interfaces">3.2.9.2<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Hardware 
+      Interfaces</a></h4>
+    <p class="InfoBlue"><i>[This section defines any hardware interfaces that 
+      are to be supported by the system, including logical structure, physical 
+      addresses, expected behavior, and so on.]</i></p>
+    <h4><a name="3.2.9.3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Software Interfaces">3.2.9.3<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Software 
+      Interfaces</a></h4>
+    <p class="InfoBlue"><i>[This section describes software interfaces to be supported 
+      by the system, in terms of operations and signals supported (and for which 
+      support is required), protocols and data characteristics.]</i></p>
+    <h4><a name="3.2.9.4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Communications Interfaces">3.2.9.4<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Communications 
+      Interfaces</a></h4>
+    <p class="InfoBlue"><i>[Describe any communications interfaces to other systems 
+      or devices such as local area networks, and so forth.]</i></p>
+    <h3><a name="3.2.10        Licensing Requirements">3.2.10<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+      </span>Licensing Requirements</a></h3>
+    <p class="InfoBlue"><i>[Defines any licensing enforcement requirements or 
+      other usage restriction requirements which are to be exhibited by the system.]</i></p>
+    <h3><a name="3.2.11&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Legal, Copyright and Other Notices">3.2.11<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Legal, 
+      Copyright, and Other Notices</a></h3>
+    <p class="InfoBlue"><i>[This section describes any necessary legal disclaimers, 
+      warranties, copyright notices, patent notice, wordmark, trademark or logo 
+      compliance issues for the system.]</i></p>
+    <h3><a name="3.2.12        Applicable Standards">3.2.12<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+      </span>Applicable Standards</a></h3>
+    <p class="InfoBlue"><i>[This section describes by reference any applicable 
+      standards and the specific sections of any such standards that apply to 
+      the system being described. For example, this could include legal, quality 
+      and regulatory standards, industry standards for usability, interoperability, 
+      internationalization, operating system compliance, and so forth.]</i></p>
+  </div>
+  <h1><a name="4.                  Supporting Information">4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+    </span>Supporting Information</a></h1>
+  <p class=InfoBlue><i>[The supporting information makes the <b>SysRS</b> easier 
+    to use.  It includes:</i></p>
+</div>
+<ul>
+  <li> 
+    <div class=Section2><i>Index</i></div>
+  </li>
+  <li> 
+    <div class=Section2><i>Appendices</i></div>
+  </li>
+</ul>
+<div class=Section2> 
+  <p class=InfoBlue><i>These might include information about architectural and 
+    user-interface prototypes. When appendices are included, the <b>SysRS</b> 
+    must explicitly state whether or not the appendices are to be considered part 
+    of the requirements.]</i></p>
+</div>
+
+</body>
+
+</html>

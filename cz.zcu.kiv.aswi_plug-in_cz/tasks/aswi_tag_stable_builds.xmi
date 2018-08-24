@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-UvgUW4mkYIi51yokeDkfZw" name=",_JKkpwCwuEeKba8v-LXyWxg" guid="-UvgUW4mkYIi51yokeDkfZw" changeDate="2013-03-25T15:57:14.682+0100" version="7.5.1">
+  <mainDescription>&lt;p class=&quot;MsoNormal&quot; style=&quot;MARGIN: 0cm 0cm 10pt&quot;>&#xD;
+    &lt;span style=&quot;FONT-SIZE: 10pt; FONT-FAMILY: 'Arial','sans-serif'; LINE-HEIGHT: 115%&quot;>Kromě releasu na konci (téměř)&#xD;
+    každé fáze je dobré v jejich průběhu v SCM nástrojích označovat stabilní verze systému. Stabilní ve smyslu kompletních&#xD;
+    (ne polovičatých) feature, integrovaných všech částí systému v té době k dispozici (buildujících) a úspěšně podrobených&#xD;
+    všem do té doby vytvořeným/relevantním testům. Rozumným standardem je vytváření takovýchto buildů nebo releasů po každé&#xD;
+    iteraci/týdnu/implementaci několika požadavků (nejvyšších priorit, poté střední priorit atd.). Neoznačování stabilních&#xD;
+    verzí je rizikové, ale tvorba stabilního buildu např. každý den zase není nutná ani efektivní.&lt;/span>&#xD;
+&lt;/p></mainDescription>
+  <keyConsiderations>aktuální stabilita systému (dokončené feature, řádně otestované, buildující bez chyb), časová osa</keyConsiderations>
+  <sections xmi:id="_zq7b4CwuEeKba8v-LXyWxg" name="Implementovat část řešení/systému" guid="_zq7b4CwuEeKba8v-LXyWxg"/>
+  <sections xmi:id="_1q7kwCwuEeKba8v-LXyWxg" name="Integrovat všechny dostupné části" guid="_1q7kwCwuEeKba8v-LXyWxg"/>
+  <sections xmi:id="_3OUqICwuEeKba8v-LXyWxg" name="Testovat všemi dostupnými prostředky" guid="_3OUqICwuEeKba8v-LXyWxg"/>
+  <sections xmi:id="_4rJ0gCwuEeKba8v-LXyWxg" name="V případě úspěchu uchovat současnou verzi jako release v SCM" guid="_4rJ0gCwuEeKba8v-LXyWxg"/>
+  <purpose>Udržovat stabilní verze systém pro návrat k nim v případě, že v následujícím vývoji dojde k nevratné chybě.</purpose>
+</org.eclipse.epf.uma:TaskDescription>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ArtifactDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_82s-gPJpEdmUp5CEICY-aQ" name="rup_development_process,{345D1811-317B-47EC-AC9D-10E1072A7D68}" guid="_82s-gPJpEdmUp5CEICY-aQ" changeDate="2005-11-15T17:06:06.132-0800" version="7.1.0">
+  <mainDescription>&lt;p>&#xD;
+    Every Process is comprised of an n-level breakdown structure. Core method content provides step-by-step explanations,&#xD;
+    describing how very specific development goals are achieved, independent of the placement of these steps within a&#xD;
+    development lifecycle. Processes take these method elements and relate them to semi-ordered sequences that are&#xD;
+    customized to specific types of projects. Thus, a process is a set of partially ordered work descriptions intended to&#xD;
+    reach a higher development goal, such as the release of a specific software system. A process focuses on the lifecycle&#xD;
+    and the sequencing of work in breakdown structures.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    There are different types of processes: &lt;strong>Delivery Process&lt;/strong> and &lt;strong>Capability Pattern&lt;/strong>.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;strong>Delivery Process&lt;/strong>&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    A Delivery Processes describes a complete and integrated approach for performing a specific type of development&#xD;
+    project. A Delivery Process is a process that covers a whole development lifecycle from beginning to end. A Delivery&#xD;
+    Process is used as a template for planning and running a project. It provides a complete lifecycle model with&#xD;
+    predefined phases, iterations, and activities that have been detailed by sequencing method content in breakdown&#xD;
+    structures. It is defined on the basis of experience with past projects or engagements, and/or the best practice use of&#xD;
+    a development or delivery approach. It defines what gets produced, how those items are produced, and the required&#xD;
+    staffing in the form of integrated Work, Work Product, and Team Breakdown Structures. For example, a process engineer&#xD;
+    can define alternative Delivery Processes for software development projects that differ in the scale of the engagement&#xD;
+    and staffing necessary, the type of the software application to be developed, the development methods and technologies&#xD;
+    to be used, etc. Although, the Delivery Process aims to cover a whole project, it keeps certain decisions that are too&#xD;
+    project-specific open. For example, the breakdown structure defines which Breakdown Elements have multiple occurrences&#xD;
+    or is repeatable via its respective attributes, but does not say how many occurrences and how many repeats/iterations&#xD;
+    it will have. These decisions have to be done by a project manager when planning a concrete project, project phase, or&#xD;
+    project iterations.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;strong>Capability Pattern&lt;/strong>&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    A Capability Pattern describes a reusable cluster of Activities in common process areas. Capabilities Patterns express&#xD;
+    and communicate process knowledge for a key area of interest such as a Discipline and can be directly used by a process&#xD;
+    practitioner to guide his work. They are also used as building blocks to assemble Delivery Processes or larger&#xD;
+    Capability Patterns ensuring optimal reuse and application of the key practices they express. Examples for Capability&#xD;
+    Pattern could be 'use case-based requirements management', 'use case analysis', or 'unit testing'. Typically but not&#xD;
+    necessarily, Capability Patterns have the scope of one discipline providing a breakdown of reusable complex Activities,&#xD;
+    relationships to the Roles which perform Tasks within these Activities, as well as to the Work Products that are used&#xD;
+    and produced. A capability pattern does not relate to any specific phase or iteration of a development lifecycle, and&#xD;
+    should not imply any. In other words, a pattern should be designed in a way that it is applicable anywhere in a&#xD;
+    Delivery Process. This enables its Activities to be flexibly assigned to whatever phases there are in the Delivery&#xD;
+    Process to which it is being applied.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    It is a good practice to design a Capability Pattern to produce one or more generic Deliverables. The typical&#xD;
+    configuration is that each Activity in the Capability Pattern produces one Deliverable, and the last Task Descriptor in&#xD;
+    the Activity explicitly outputs just this Deliverable. This enables the process engineer to select Patterns or just&#xD;
+    Activities by deciding which Deliverables are required. It also offers a simple integration approach: an Activity from&#xD;
+    a capability pattern is linked to the Phase or Iteration which is required to produce the Activity's Deliverable.&#xD;
+&lt;/p></mainDescription>
+  <keyConsiderations>You may decide not to capture the entire process in the Development Process. In some cases, a lot of responsibility, and&#xD;
+decisions about the process, and the work products in particular, are delegated to members of the software development&#xD;
+project. For example, if there is an experienced, good project manager, you may leave it to this individual to decide on&#xD;
+what plans to produce and how to produce them. In the same way, many project managers aren't concerned about how each team&#xD;
+member designs his or her part of the system, as long as they deliver the expected functionality on time and within a&#xD;
+reasonable level of quality. &#xD;
+&lt;p>&#xD;
+    One reason for having a process description at all is so several people can share information. If this is not the case,&#xD;
+    then the cost of maintaining the process description may be too high. Therefore, you may decide not to have, or&#xD;
+    maintain, the process description for one or several disciplines. This doesn't mean that you don't put effort into that&#xD;
+    particular discipline, nor does it mean that you don't think it's important. For example, you may employ an excellent&#xD;
+    test manager, provide all possible support, but leave it to that test manager to decide how to work and what work&#xD;
+    products to produce.&#xD;
+&lt;/p></keyConsiderations>
+  <purpose>The purpose of the development process is to provide guidance and support for the members of the project. &quot;Information at&#xD;
+your finger tips&quot; is a metaphor that aligns well with the purpose of this work product.</purpose>
+</org.eclipse.epf.uma:ArtifactDescription>

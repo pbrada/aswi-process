@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:org.eclipse.epf.uma.resourcemanager="http:///org/eclipse/epf/uma/resourcemanager.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1">
+  <org.eclipse.epf.uma.resourcemanager:ResourceManager xmi:id="_ILJFsVVbEdqPv5WSBXcbUw" guid="_ILJFsVVbEdqPv5WSBXcbUw">
+    <resourceDescriptors xmi:id="_ILJFslVbEdqPv5WSBXcbUw" id="-R2-brvp8M9muc_o02MUSCw" uri="content.xmi"/>
+    <resourceDescriptors xmi:id="_argCgVVbEdqPv5WSBXcbUw" id="-BzJ7KQHUm4FlNPLz6xI7gw" uri="content.xmi"/>
+    <resourceDescriptors xmi:id="_vn6LAFVbEdqPv5WSBXcbUw" id="-dN6si7ZMzRSAabGMyqBI0g" uri="content.xmi"/>
+    <resourceDescriptors xmi:id="_n8t2YFVaEdqC2_9Wzz8saw" id="-CMTZONkzudyyC1CXY3N78A" uri="content.xmi"/>
+    <resourceDescriptors xmi:id="_c0O1QFY6EdqsI-u7NHlP2g" id="-V8JAIumYR0OAZ7biQb3uog" uri="content.xmi"/>
+    <resourceDescriptors xmi:id="_iV3XMFZNEdqbJfW_bxM90Q" id="-VYZer9abZc1lZPdYCyjh5w" uri="content.xmi"/>
+    <resourceDescriptors xmi:id="_4Qro0Fc2EdqYJN4qdJOeOw" id="-Mx8g8y-V8MXK2oNzrefW5A" uri="content.xmi"/>
+    <resourceDescriptors xmi:id="_ZsB-QFc3EdqYJN4qdJOeOw" id="-fMs7rstPOvESphgZG9haWg" uri="content.xmi"/>
+    <resourceDescriptors xmi:id="_I8CHoFc-EdqYJN4qdJOeOw" id="-ymBde9mrepf5qgcnJkpM2Q" uri="content.xmi"/>
+    <resourceDescriptors xmi:id="_QvrssFeXEdqYJN4qdJOeOw" id="-RTmhP0qZMfJF63N4iWyHEg" uri="content.xmi"/>
+  </org.eclipse.epf.uma.resourcemanager:ResourceManager>
+  <org.eclipse.epf.uma:ProcessComponent xmi:id="_H_yKQFVbEdqPv5WSBXcbUw" name="cots_delivery_process" guid="_H_yKQFVbEdqPv5WSBXcbUw">
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_pnBmoFVbEdqPv5WSBXcbUw" name="construction" guid="_pnBmoFVbEdqPv5WSBXcbUw">
+      <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_FVl3UFc8EdqYJN4qdJOeOw" name="cots_construction_phase" guid="_FVl3UFc8EdqYJN4qdJOeOw">
+        <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_FVl3UVc8EdqYJN4qdJOeOw" name="cots_construction_phase" guid="_FVl3UVc8EdqYJN4qdJOeOw" presentationName="Construction Iteration [n]" superActivities="_pnBmoVVbEdqPv5WSBXcbUw" isRepeatable="true" variabilityType="extends">
+          <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:CapabilityPattern" href="uma://_qHbZIBTdEdqsDoPowBCnuA#_qHbZIRTdEdqsDoPowBCnuA"/>
+        </processElements>
+      </childPackages>
+      <processElements xsi:type="org.eclipse.epf.uma:Phase" xmi:id="_pnBmoVVbEdqPv5WSBXcbUw" name="construction" guid="_pnBmoVVbEdqPv5WSBXcbUw" presentationName="COTS Construction" briefDescription="The goal of the construction phase is to achieve a production-quality release ready for its user community. The selected solution is prepared for fielding. " superActivities="_H_yKQVVbEdqPv5WSBXcbUw" linkToPredecessor="_pnBmulVbEdqPv5WSBXcbUw" breakdownElements="_FVl3UVc8EdqYJN4qdJOeOw _-R910Fc2EdqYJN4qdJOeOw">
+        <presentation xmi:id="-Mx8g8y-V8MXK2oNzrefW5A" href="uma://-R2-brvp8M9muc_o02MUSCw#-Mx8g8y-V8MXK2oNzrefW5A"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_pnBmulVbEdqPv5WSBXcbUw" guid="_pnBmulVbEdqPv5WSBXcbUw" pred="_pnBmvFVbEdqPv5WSBXcbUw"/>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_pnBmuFVbEdqPv5WSBXcbUw" guid="_pnBmuFVbEdqPv5WSBXcbUw"/>
+      <processElements xsi:type="org.eclipse.epf.uma:Milestone" xmi:id="_-R910Fc2EdqYJN4qdJOeOw" name="COTS Initial Operational Capability Milestone" guid="_-R910Fc2EdqYJN4qdJOeOw" presentationName="Initial Operational Capability Milestone" briefDescription="The construction phase only ends when the objectives of the phase are reached, as described in the Initial Operational Capability Milestone. This page presents the construction phase exit criteria, as well as an overview of the essential artifacts and tasks of the phase." superActivities="_pnBmoVVbEdqPv5WSBXcbUw" linkToPredecessor="_O8iG8Fc9EdqYJN4qdJOeOw">
+        <presentation xmi:id="-fMs7rstPOvESphgZG9haWg" href="uma://-R2-brvp8M9muc_o02MUSCw#-fMs7rstPOvESphgZG9haWg"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_O8iG8Fc9EdqYJN4qdJOeOw" guid="_O8iG8Fc9EdqYJN4qdJOeOw" pred="_FVl3UVc8EdqYJN4qdJOeOw"/>
+    </childPackages>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_pnBmu1VbEdqPv5WSBXcbUw" name="elaboration" guid="_pnBmu1VbEdqPv5WSBXcbUw">
+      <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_JhnacFZNEdqbJvW_bxM90Q" name="cots_elaboration_phase" guid="_JhnacFZNEdqbJvW_bxM90Q">
+        <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_JhnacVZNEdqbJvW_bxM90Q" name="cots_elaboration_phase" guid="_JhnacVZNEdqbJvW_bxM90Q" presentationName="Elaboration Iteration [n]" superActivities="_pnBmvFVbEdqPv5WSBXcbUw" isRepeatable="true" variabilityType="extends">
+          <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:CapabilityPattern" href="uma://_laZpUBTdEdqsDoPowBCnuA#_laZpURTdEdqsDoPowBCnuA"/>
+        </processElements>
+      </childPackages>
+      <processElements xsi:type="org.eclipse.epf.uma:Phase" xmi:id="_pnBmvFVbEdqPv5WSBXcbUw" name="elaboration" guid="_pnBmvFVbEdqPv5WSBXcbUw" presentationName="COTS Elaboration" briefDescription="The goal of the elaboration phase is to achieve sufficient stability of the requirements and architecture; to select and acquire COTS packages; and to mitigate risks so that a single, high-fidelity solution can be identified with predictable cost and schedule. " superActivities="_H_yKQVVbEdqPv5WSBXcbUw" linkToPredecessor="_pnBm11VbEdqPv5WSBXcbUw" breakdownElements="_JhnacVZNEdqbJvW_bxM90Q _7PR14FZPEdqbJPW_bxM90Q">
+        <presentation xmi:id="-V8JAIumYR0OAZ7biQb3uog" href="uma://-R2-brvp8M9muc_o02MUSCw#-V8JAIumYR0OAZ7biQb3uog"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_pnBm11VbEdqPv5WSBXcbUw" guid="_pnBm11VbEdqPv5WSBXcbUw" pred="_pnBm8FVbEdqPv5WSBXcbUw"/>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_pnBmvlVbEdqPv5WSBXcbUw" guid="_pnBmvlVbEdqPv5WSBXcbUw"/>
+      <processElements xsi:type="org.eclipse.epf.uma:Milestone" xmi:id="_7PR14FZPEdqbJPW_bxM90Q" name="COTS Lifecycle Architecture Milestone" guid="_7PR14FZPEdqbJPW_bxM90Q" presentationName="Lifecycle Architecture Milestone" briefDescription="The elaboration phase only ends when the objectives of the phase are reached, as described in the Lifecycle Architecture Milestone. This page presents the elaboration phase exit criteria, as well as an overview of the essential artifacts and tasks of the phase." superActivities="_pnBmvFVbEdqPv5WSBXcbUw" linkToPredecessor="_oAleUFZNEdqbJvW_bxM90Q">
+        <presentation xmi:id="-VYZer9abZc1lZPdYCyjh5w" href="uma://-R2-brvp8M9muc_o02MUSCw#-VYZer9abZc1lZPdYCyjh5w"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_oAleUFZNEdqbJvW_bxM90Q" guid="_oAleUFZNEdqbJvW_bxM90Q" pred="_JhnacVZNEdqbJvW_bxM90Q"/>
+    </childPackages>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_pnBm2FVbEdqPv5WSBXcbUw" name="inception" guid="_pnBm2FVbEdqPv5WSBXcbUw">
+      <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_10RD8FV5EdqaXe303dgnEA" name="cots_inception_phase" guid="_10RD8FV5EdqaXe303dgnEA">
+        <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_10RD8VV5EdqaXe303dgnEA" name="cots_inception_phase" guid="_10RD8VV5EdqaXe303dgnEA" presentationName="Inception Iteration [n]" superActivities="_pnBm8FVbEdqPv5WSBXcbUw" isRepeatable="true" variabilityType="extends">
+          <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:CapabilityPattern" href="uma://_mX7-EPfdEdmci7YbVnIGzg#_mX7-EffdEdmci7YbVnIGzg"/>
+        </processElements>
+      </childPackages>
+      <processElements xsi:type="org.eclipse.epf.uma:Phase" xmi:id="_pnBm8FVbEdqPv5WSBXcbUw" name="inception" guid="_pnBm8FVbEdqPv5WSBXcbUw" presentationName="COTS Inception" briefDescription="The goal of the inception phase is to achieve concurrence among all stakeholders on the lifecycle objectives for the project. The inception phase establishes that the project is worth doing and that one or more feasible candidate solutions exist. " superActivities="_H_yKQVVbEdqPv5WSBXcbUw" breakdownElements="_10RD8VV5EdqaXe303dgnEA _DSpiMFVaEdqC2_9Wzz8saw">
+        <presentation xmi:id="-dN6si7ZMzRSAabGMyqBI0g" href="uma://-R2-brvp8M9muc_o02MUSCw#-dN6si7ZMzRSAabGMyqBI0g"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_pnBm2VVbEdqPv5WSBXcbUw" guid="_pnBm2VVbEdqPv5WSBXcbUw"/>
+      <processElements xsi:type="org.eclipse.epf.uma:Milestone" xmi:id="_DSpiMFVaEdqC2_9Wzz8saw" name="Lifecycle Objectives Milestone" guid="_DSpiMFVaEdqC2_9Wzz8saw" presentationName="Lifecycle Objectives Milestone" briefDescription="The inception phase only ends when the objectives of the phase are reached, as described in the Lifecycle Objective Milestone. This page presents the phase exit criteria, as well as an overview of the essential artifacts and tasks of the phase. " superActivities="_pnBm8FVbEdqPv5WSBXcbUw" linkToPredecessor="_LvYpsFV1EdqaXu303dgnEA">
+        <presentation xmi:id="-CMTZONkzudyyC1CXY3N78A" href="uma://-R2-brvp8M9muc_o02MUSCw#-CMTZONkzudyyC1CXY3N78A"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_LvYpsFV1EdqaXu303dgnEA" guid="_LvYpsFV1EdqaXu303dgnEA" pred="_10RD8VV5EdqaXe303dgnEA"/>
+    </childPackages>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_pnHtQVVbEdqPv5WSBXcbUw" name="transition" guid="_pnHtQVVbEdqPv5WSBXcbUw">
+      <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_15xS0FeZEdqYJN4qdJOeOw" name="cots_transition_phase" guid="_15xS0FeZEdqYJN4qdJOeOw">
+        <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_15xS0VeZEdqYJN4qdJOeOw" name="cots_transition_phase" guid="_15xS0VeZEdqYJN4qdJOeOw" presentationName="Transition Iteration [n]" superActivities="_pnHtQ1VbEdqPv5WSBXcbUw" isRepeatable="true" variabilityType="extends">
+          <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:CapabilityPattern" href="uma://_qxozwBTdEdqsDoPowBCnuA#_qxozwRTdEdqsDoPowBCnuA"/>
+        </processElements>
+      </childPackages>
+      <processElements xsi:type="org.eclipse.epf.uma:Phase" xmi:id="_pnHtQ1VbEdqPv5WSBXcbUw" name="transition" guid="_pnHtQ1VbEdqPv5WSBXcbUw" presentationName="COTS Transition" briefDescription="The goal of the transition phase is to field the selected solution to the user community and provide necessary support." superActivities="_H_yKQVVbEdqPv5WSBXcbUw" linkToPredecessor="_pnHtRlVbEdqPv5WSBXcbUw" breakdownElements="_15xS0VeZEdqYJN4qdJOeOw _ySnqwFc9EdqYJN4qdJOeOw">
+        <presentation xmi:id="-RTmhP0qZMfJF63N4iWyHEg" href="uma://-R2-brvp8M9muc_o02MUSCw#-RTmhP0qZMfJF63N4iWyHEg"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_pnHtRlVbEdqPv5WSBXcbUw" guid="_pnHtRlVbEdqPv5WSBXcbUw" pred="_pnBmoVVbEdqPv5WSBXcbUw"/>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_pnHtQlVbEdqPv5WSBXcbUw" guid="_pnHtQlVbEdqPv5WSBXcbUw"/>
+      <processElements xsi:type="org.eclipse.epf.uma:Milestone" xmi:id="_ySnqwFc9EdqYJN4qdJOeOw" name="COTS Product Release Milestone" guid="_ySnqwFc9EdqYJN4qdJOeOw" presentationName="Product Release Milestone" briefDescription="The transition phase only ends when the objectives of the phase are reached, as described in the Product Release Milestone. This page presents the transition phase exit criteria, as well as an overview of the essential artifacts and tasks of the phase." superActivities="_pnHtQ1VbEdqPv5WSBXcbUw" linkToPredecessor="_FxTzQFeaEdqYJN4qdJOeOw">
+        <presentation xmi:id="-ymBde9mrepf5qgcnJkpM2Q" href="uma://-R2-brvp8M9muc_o02MUSCw#-ymBde9mrepf5qgcnJkpM2Q"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_FxTzQFeaEdqYJN4qdJOeOw" guid="_FxTzQFeaEdqYJN4qdJOeOw" pred="_15xS0VeZEdqYJN4qdJOeOw"/>
+    </childPackages>
+    <process xsi:type="org.eclipse.epf.uma:DeliveryProcess" xmi:id="_H_yKQVVbEdqPv5WSBXcbUw" name="cots_delivery_process" guid="_H_yKQVVbEdqPv5WSBXcbUw" presentationName="COTS Package Delivery Lifecycle" briefDescription="This delivery process is an example of the COTS Package Delivery Lifecycle.  It can be used as-is or copied and modified to suit your project's needs." breakdownElements="_pnBm8FVbEdqPv5WSBXcbUw _pnBmvFVbEdqPv5WSBXcbUw _pnBmoVVbEdqPv5WSBXcbUw _pnHtQ1VbEdqPv5WSBXcbUw">
+      <presentation xmi:id="-R2-brvp8M9muc_o02MUSCw" href="uma://-R2-brvp8M9muc_o02MUSCw#-R2-brvp8M9muc_o02MUSCw"/>
+      <includesPatterns href="uma://_dRZcYDYPEdqQ8Lb12XU1pw#_dRfjADYPEdqQ8Lb12XU1pw"/>
+      <includesPatterns href="uma://_mX7-EPfdEdmci7YbVnIGzg#_mX7-EffdEdmci7YbVnIGzg"/>
+      <includesPatterns href="uma://_laZpUBTdEdqsDoPowBCnuA#_laZpURTdEdqsDoPowBCnuA"/>
+      <includesPatterns href="uma://_qHbZIBTdEdqsDoPowBCnuA#_qHbZIRTdEdqsDoPowBCnuA"/>
+      <includesPatterns href="uma://_qxozwBTdEdqsDoPowBCnuA#_qxozwRTdEdqsDoPowBCnuA"/>
+      <defaultContext href="uma://_0q85QJySEd2xJNwbI6lxKA#_sU4a4NoTEdmCj7Yn9Ev4rg"/>
+      <validContext href="uma://_0q85QJySEd2xJNwbI6lxKA#_sU4a4NoTEdmCj7Yn9Ev4rg"/>
+    </process>
+  </org.eclipse.epf.uma:ProcessComponent>
+</xmi:XMI>

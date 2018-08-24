@@ -1,0 +1,1841 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2// EN">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Example: Project ABC Development Case</title>
+<link type="text/css" href="../../../../css/default.css" rel="StyleSheet">
+<script src="../../../../scripts/contentpage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					backPath = './../../';
+				</script>
+</head>
+
+
+
+<body>
+<h1 align="center" class="banner"><a name="Top"></a></h1>
+
+<p>This is an example of what a development case may look like. There is no point
+in restating information already in the process. What you have to describe are
+the deviations from the
+process. You may put together a Development Case
+that contains a small description of the process. However, the problem with that kind of
+document is that they tend to grow forever, until they're the size of
+the process handbook!&nbsp;<br>
+<br>
+This example is intended to give you an idea about how a development case would look
+for a small project, let's say a commercial information system.<br>
+<br>
+For more information about the Development Case, its contents, and outline, see Artifact: Development Case.</p>
+<h5>Topics</h5>
+      <ul>
+        <li><a href="#Introduction">Introduction</a> 
+          <ul>
+            <li><a href="#Revision History">Revision History</a></li>
+            <li><a href="#Purpose">Purpose</a></li>
+            <li><a href="#Definitions">Definitions, Acronyms and Abbreviations</a></li>
+            <li><a href="#References">References</a></li>
+          </ul>
+        </li>
+        <li><a href="#Overview of the Development Case">Overview of the Development 
+          Case</a> 
+          <ul>
+            <li><a href="#Lifecycle">Lifecycle Model</a></li>
+            <li><a href="#Overvew: Disciplines">Disciplines</a></li>
+            <li><a href="#Overview: Configuration">Discipline Configuration</a></li>
+            
+      <li><a href="#Artifact Classification">Work Product Classification</a></li>
+            <li><a href="#Review Procedures">Review Procedures</a></li>
+            <li><a href="#Sample Iteration Plans">Sample Iteration Plans</a></li>
+          </ul>
+        </li>
+        <li><a href="#Disciplines">Disciplines</a> 
+          <ul>
+            <li><a href="#Requirements">Requirements</a></li>
+            <li><a href="#Analysis &amp; Design">Analysis &amp; Design</a></li>
+            <li><a href="#Implementation">Implementation</a></li>
+            <li><a href="#Test">Test</a></li>
+            <li><a href="#Deployment">Deployment</a></li>
+            <li><a href="#Configuration &amp; Change Management">Configuration 
+              &amp; Change Management</a></li>
+            <li><a href="#Project Management">Project Management</a></li>
+            <li><a href="#Environment">Environment</a></li>
+          </ul>
+        </li>
+        <li><a href="#Workers">Roles</a></li>
+      </ul>
+      <h3><a name="#Introduction">Introduction</a> <a href="#Top"></a><img src="../../../../core.base_rup/resources/top.gif" alt="To top of page" border="0" width="26" height="20" ></h3>
+      <h4><a name="#Revision History">Revision History</a> <a href="#Top"></a><img src="../../../../core.base_rup/resources/top.gif" alt="To top of page" border="0" width="26" height="20" ></h4>
+      <div align="center">
+        <center>
+          <table border="1" cellspacing="0" cellpadding="2" width="90%">
+            <tr> 
+              <th valign="TOP" align="center" class="table_heading" width="25%" scope="col"> 
+                <p align="CENTER">Date
+              </th>
+              <th valign="TOP" align="center" class="table_heading" width="25%" scope="col"> 
+                <p align="CENTER">Version
+              </th>
+              <th valign="TOP" align="center" class="table_heading" width="25%" scope="col"> 
+                <p align="CENTER">Description
+              </th>
+              <th valign="TOP" align="center" class="table_heading" width="25%" scope="col"> 
+                <p align="CENTER">Author
+              </th>
+            </tr>
+            <tr> 
+              <td valign="TOP" align="center" width="25%" class="tablecell"> 
+                <p>01/01/2000
+              </td>
+              <td valign="TOP" align="center" width="25%" class="tablecell"> 1.0</td>
+              <td valign="TOP" align="center" width="25%" class="tablecell"> -</td>
+              <td valign="TOP" align="center" width="25%" class="tablecell"> Tom 
+                Smith</td>
+            </tr>
+          </table>
+        </center>
+      </div>
+      <p>&nbsp;</p>
+      <h4><a name="#Purpose">Purpose</a> <a href="#Top"></a><img src="../../../../core.base_rup/resources/top.gif" alt="To top of page" border="0" width="26" height="20" ></h4>
+      <p>The purpose of the document is to describe the development process for 
+        the project ABC.</p>
+      <h4><a name="#Definitions">Definitions</a>, Acronyms, and Abbreviations <a href="#Top"></a><img src="../../../../core.base_rup/resources/top.gif" alt="To top of page" border="0" width="26" height="20" ></h4>
+      <p>Not applicable.</p>
+      <h4><a name="#References">References</a> <a href="#Top"></a><img src="../../../../core.base_rup/resources/top.gif" alt="To top of page" border="0" width="26" height="20" ></h4>
+      <p>Not applicable.</p>
+      <h3><a name="Overview of the Development Case">Overview of the Development 
+        Case</a> <a href="#Top"><img src="../../../../core.base_rup/resources/top.gif" alt="To top of page" border="0" width="26" height="20"> </a></h3>
+      <h4><a name="#Lifecycle">Lifecycle</a> Model <a href="#Top"></a><img src="../../../../core.base_rup/resources/top.gif" alt="To top of page" border="0" width="26" height="20" ></h4>
+      <p>See the section titled &quot;Project Plan&quot; in the project's Software 
+        Development Plan.</p>
+      <h4><a name="#Overvew: Disciplines">Disciplines</a><a href="#Top"></a><img src="../../../../core.base_rup/resources/top.gif" alt="To top of page" border="0" width="26" height="20" ></h4>
+      <p>The development-case example presented here takes you through all nine 
+        disciplines: Business Modeling, Requirements, Analysis &amp; Design, Implementation, 
+        Test, Deployment, Configuration &amp; Change Management, Project Management, 
+        and Environment.</p>
+      <h4><a name="Overview: Configuration">Discipline</a> Configuration&nbsp; 
+        <a href="#Top"><img src="../../../../core.base_rup/resources/top.gif" alt="To top of page" border="0" width="26" height="20"></a></h4>
+      
+<p>The purpose of this section is to explain how the discipline configuration 
+  works. This includes the purpose of the different tables and sections that describe 
+  each activity in the section titled &quot;Activities&quot;.</p>
+      
+<h5>Section: &quot;Activities&quot;</h5>
+      
+<p>This section details any changes made to the structure of the activity itself. 
+  Typical changes include the addition of tasks to describe company-specific ways 
+  of working or the removal of tasks from the activity.</p>
+      
+<h5>Section: &quot;Work Products&quot;</h5>
+<p>The section describes, in a table, how the work product will be used. Additional 
+  'local' work products can be added to the table as needed.&nbsp;</p>
+<div align="center">
+           <table border="1" colspec="L20 L17" width="90%" cellspacing="0">
+  <tr>
+      <th width="30%" rowspan="2" valign="top" class="table_heading" id="un_14">Work 
+        Products</th>
+    <th width="40%" colspan="4" valign="top" class="table_heading" id="un_15"><b>How to
+        use</b></th>
+    <th rowspan="2" valign="top" class="table_heading" id="un_16"><b>Review Details</b></th>
+    <th width="25%" rowspan="2" valign="top" class="table_heading" id="un_17"><b>Tools used</b></th>
+    <th width="15%" rowspan="2" valign="top" class="table_heading" id="un_18"><b>Templates/<br>
+  Examples</b></th>
+  </tr>
+  <tr>
+    <th width="10%" valign="top" class="table_heading" id="un_19" headers="un_15"><b>Incep</b></th>
+    <th width="10%" valign="top" class="table_heading" id="un_20" headers="un_15"><b>Elab</b></th>
+    <th width="10%" valign="top" class="table_heading" id="un_21" headers="un_15"><b>Const</b></th>
+    <th width="10%" valign="top" class="table_heading" id="un_22" headers="un_15"><b>Trans</b></th>
+  </tr>
+            <tr> 
+              <td width="30%" valign="top" class="tablecell" headers="un_14">&nbsp;</td>
+              <td width="10%" valign="top" class="tablecell" headers="un_15 un_19">&nbsp;</td>
+              <td width="10%" valign="top" class="tablecell" headers="un_15 un_20">&nbsp;</td>
+              <td width="10%" valign="top" class="tablecell" headers="un_15 un_21">&nbsp;</td>
+              <td width="10%" valign="top" class="tablecell" headers="un_15 un_22">&nbsp;</td>
+              <td width="15%" valign="top" class="tablecell" headers="un_16">&nbsp;</td>
+              <td width="15%" valign="top" class="tablecell" headers="un_17">&nbsp;</td>
+              <td width="15%" valign="top" class="tablecell" headers="un_18">&nbsp;</td>
+            </tr>
+          </table>
+        
+</div>
+<div align="center">
+<h4>Explanation of the table</h4>
+<table border="1" cellpadding="2" cellspacing="0" width="90%">
+    <tr> 
+      <th valign="top" class="tablecell" scope="col"><b>Column Name</b></th>
+      <th valign="top" class="tablecell" scope="col"><b>Purpose</b></th>
+      <th valign="top" class="tablecell" scope="col"><b>Contents/Comments</b></th>
+    </tr>
+    <tr> 
+      <td valign="top" class="tablecell">Work Products</td>
+      <td valign="top" class="tablecell">To name of the work product&nbsp;</td>
+      <td valign="top" class="tablecell">A reference to the work product in the 
+        Rational Unified Process (RUP) or to a local work product definition that's 
+        held as part of the development case.&nbsp;</td>
+    </tr>
+    <tr> 
+      <td valign="top" class="tablecell">How to use</td>
+      <td valign="top" class="tablecell">To qualify how the work product is used 
+        across the life cycle</td>
+      <td valign="top" class="tablecell">For each phase, decide on:&nbsp; 
+        <ul>
+          <li>Must haves</li>
+          <li>Should haves</li>
+          <li>Could haves</li>
+          <li>Won't haves</li>
+        </ul>
+        <p>These are defined in the <!-- removed hyperlink href="../process/modguide/md_uclaar.htm" -->Guidelines: 
+          Classifying Work Products <!-- end of removed hyperlink -->.&nbsp;&nbsp;</p>
+      </td>
+    </tr>
+    <tr> 
+      <td valign="top" class="tablecell">Review Details</td>
+      <td valign="top" class="tablecell">To define the review level and review 
+        procedures&nbsp; applied to the work product.&nbsp;</td>
+      <td valign="top" class="tablecell">Decide on the review level:&nbsp; 
+        <ul>
+          <li>Formal-External</li>
+          <li>Formal-Internal</li>
+          <li>Informal</li>
+          <li>None</li>
+        </ul>
+        <p>Additional information: <!-- removed hyperlink href="../process/modguide/md_review.htm" -->Guidelines: 
+          Review Levels <!-- end of removed hyperlink -->.</p>
+        <p>Also add a reference to the definition and detail of the relevant review 
+          procedures.&nbsp;The reference could point to either the RUP or to the 
+          section titled &quot;Review Procedure&quot; in the development case. 
+          More specific review procedures are defined in the discipline's &quot;Additional 
+          Review Procedures&quot; sub-section. 
+      </td>
+    </tr>
+    <tr> 
+      <td valign="top" class="tablecell">Tools used</td>
+      <td valign="top" class="tablecell">To define the tool or tools used to produce 
+        the work product.</td>
+      <td valign="top" class="tablecell">References to the details of the tools 
+        used to develop and maintain the work product.</td>
+    </tr>
+    <tr> 
+      <td valign="top" class="tablecell">Templates/Examples</td>
+      <td valign="top" class="tablecell">To provide the templates to be used and 
+        examples of work product that use the templates.</td>
+      <td valign="top" class="tablecell">References to templates and examples. 
+        This could refer to either the templates and examples in the RUP or local 
+        templates and examples. This column may also contain references to actual 
+        work product that provide additional help to project members.</td>
+    </tr>
+  </table>
+<br>
+</div>
+      
+<h5>Section: &quot;Notes on Work Products&quot;</h5>
+<p>This section has three main purposes:&nbsp;</p>
+<ul>
+  <li>It contains a list all work products you <i>Won't</i> use and the motives 
+    behind your decision not to use them.&nbsp;</li>
+  <li>It contains a reference to the project's Configuration Management (CM) Plan, 
+    which describes the configuration management strategy used when working on 
+    these work products. The CM Plan allows developers to answer questions such 
+    as:&nbsp; 
+    <ul>
+      <li>When do I release my work product?&nbsp;</li>
+      <li>Where do I put my newly created or modified work product?</li>
+      <li>Where do I find existing work products for the project?</li>
+    </ul>
+  </li>
+  <li>If the development case is an organization-level development case, this 
+    is where you add notes on what each project needs to consider when they decide 
+    what to do with the work product. Use the predefined table below as a starting 
+    point.</li>
+</ul>
+      
+<div align="center">
+  <table border="1" colspec="L20 L17" width="90%" cellspacing="0">
+            <tr> 
+              
+      <th width="20%" class="table_heading" scope="col">Work Products</th>
+              <th width="15%" class="table_heading" scope="col"><b>How to Use</b></th>
+              <th class="table_heading" scope="col"><b>Reason</b></th>
+            </tr>
+            <tr> 
+              <td width="20%" class="tablecell">&nbsp;</td>
+              <td width="15%" class="tablecell"> 
+                <pre>&nbsp;</pre>
+              </td>
+              <td class="tablecell"> 
+                <pre>&nbsp;</pre>
+              </td>
+            </tr>
+          </table>
+        <br>
+      </div>
+      <h5>Section: &quot;Reports&quot;</h5>
+      <p>This section lists the reports to be used and additional 'local' reports 
+        can be added to the table as needed.</p>
+      
+<div align="center"> 
+  <table border="1" colspec="L20 L17" width="90%" cellspacing="0">
+            <tr> 
+              <th width="30%" class="table_heading" scope="col"><b>Reports</b></th>
+              <th width="15%" class="table_heading" scope="col"><b>How to use</b></th>
+              <th width="15%" class="table_heading" scope="col"><b>Templates/Examples</b></th>
+              <th width="15%" class="table_heading" scope="col"><b>Tools Used</b></th>
+            </tr>
+            <tr> 
+              <td width="30%" class="tablecell">&nbsp;</td>
+              <td width="15%" class="tablecell">&nbsp;</td>
+              <td width="15%" class="tablecell"> 
+                <pre> </pre>
+              </td>
+              <td width="15%" class="tablecell"> 
+                <pre> </pre>
+              </td>
+            </tr>
+          </table>
+        <br>
+      </div>
+      
+<h5>Section: &quot;Notes on the Reports&quot;</h5>
+<p>This section has two main purposes. First, it lists all reports that the project 
+  has decided it <i>Won't</i> use, and the motives behind its decision not to 
+  use them. Secondly, if the development case is a an organization-level use case, 
+  this is where to add notes on what each project needs to consider when they 
+  decide what to do with the report.</p>
+<h5>Section: &quot;Additional Review Procedures&quot;</h5>
+<p>This section captures any additional review procedures required for the work 
+  products used in the discipline. These supplement the general review procedures 
+  described in the &quot;Overview&quot; section of the Development Case.</p>
+<h5>Section: &quot;Other Issues&quot;</h5>
+<p>This section captures any outstanding issues with the discipline's configuration. 
+  This section can be used as an Issues List while building the development case.</p>
+
+      
+<h4><a name="#Artifact Classification">Work Product Classification</a> <a href="#Top"></a><img src="../../../../core.base_rup/resources/top.gif" alt="To top of page" border="0" width="26" height="20" ></h4>
+      
+<p>A work product is an artifact, outcome, or deliverable of the process. It is 
+  often developed within one discipline, although there are exceptions. Work products 
+  are organized in the discipline where it's created. To describe how a work product 
+  will be used, consider the following classification scheme and see 
+  <!-- removed hyperlink href="../process/modguide/md_uclaar.htm" -->Guidelines: 
+  Classifying Work Products <!-- end of removed hyperlink -->
+<ul>
+  <li>Must</li>
+  <li>Should</li>
+  <li>Could</li>
+  <li>Won't</li>
+</ul>
+
+    
+<h4><a name="#Review Procedures">Review Procedures</a> <a href="#Top"></a><img src="../../../../core.base_rup/resources/top.gif" alt="To top of page" border="0" width="26" height="20" ></h4>
+      
+<p>The project uses the following review levels:&nbsp;</p>
+  <ul>
+    <li>Formal-External</li>
+    <li>Formal-Internal</li>
+    <li>Informal</li>
+    <li>None</li>
+  </ul>
+<p>Additional information:
+	<!-- removed hyperlink href="../process/modguide/md_review.htm" -->Guidelines: Review Levels <!-- end of removed hyperlink -->.</p>
+
+<h4><a name="#Sample Iteration Plans">Sample Iteration Plans&nbsp;</a> <a href="#Top"></a><img src="../../../../core.base_rup/resources/top.gif" alt="To top of page" border="0" width="26" height="20" ></h4>
+      
+<h5>Inception Phase</h5>
+<ul>
+  <li><!-- removed hyperlink href="../process/itrwkfls/sip_iii.htm" -->Sample Iteration Plan: Inception 
+    Phase <!-- end of removed hyperlink --></li>
+</ul>
+      
+<h5>Elaboration Phase</h5>   
+<p>To be defined later in the project.</p>
+
+<h5>Construction Phase</h5>
+<p>To be defined later in the project.</p>
+      
+<h5>Transition Phase</h5>
+<p>To be defined later in the project.</p>
+
+
+<h3><a name="#Disciplines">Disciplines</a> <a href="#Top"></a><img src="../../../../core.base_rup/resources/top.gif" alt="To top of page" border="0" width="26" height="20" ></h3>
+
+
+<h4><a name="#Requirements">Requirements</a> <a href="#Top"></a><img src="../../../../core.base_rup/resources/top.gif" alt="To top of page" border="0" width="26" height="20" ></h4>
+<h5>Activity</h5>
+<p>No changes. For details see the <!-- removed hyperlink href="../process/workflow/ovu_req.htm" -->Requirements
+Overview <!-- end of removed hyperlink -->.</p>
+<h5>Work Products</h5>
+<div align="center">
+<table border="1" colspec="L20 L17" width="90%" cellspacing="0">
+  <tr>
+      <th width="30%" rowspan="2" valign="top" class="table_heading" id="un_32">Work 
+        Products</th>
+    <th width="40%" colspan="4" valign="top" class="table_heading" id="un_33"><b>How to
+        use</b></th>
+    <th rowspan="2" valign="top" class="table_heading" id="un_34"><b>Review Details</b></th>
+    <th width="25%" rowspan="2" valign="top" class="table_heading" id="un_35"><b>Tools used</b></th>
+    <th width="15%" rowspan="2" valign="top" class="table_heading" id="un_36"><b>Templates/<br>
+  Examples</b></th>
+  </tr>
+  <tr>
+    <th width="10%" valign="top" class="table_heading" id="un_37" headers="un_33"><b>Incep</b></th>
+    <th width="10%" valign="top" class="table_heading" id="un_38" headers="un_33"><b>Elab</b></th>
+    <th width="10%" valign="top" class="table_heading" id="un_39" headers="un_33"><b>Const</b></th>
+    <th width="10%" valign="top" class="table_heading" id="un_40" headers="un_33"><b>Trans</b></th>
+  </tr>
+  <tr>
+    <td width="30%" valign="top" class="tablecell" headers="un_32"><!-- removed hyperlink href="../process/artifact/ar_actor.htm" -->Actor <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_33 un_37">
+    <p><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink -->	</p>
+    </td>
+    <td width="10%" valign="top" class="tablecell" headers="un_33 un_38">
+    <p><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></p>
+    </td>
+    <td width="10%" valign="top" class="tablecell" headers="un_33 un_39">
+    <p><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></p>
+    </td>
+    <td width="10%" valign="top" class="tablecell" headers="un_33 un_40">
+    <p><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></p>
+    </td>
+    <td width="15%" valign="top" class="tablecell" headers="un_34"><!-- removed hyperlink href="../process/modguide/md_review.htm#XE_Informal_(review_level)" --><font size="2">Informal</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_35">
+    <p> <font size="2">&nbsp;</font> </p>
+    </td>
+    <td width="15%" valign="top" class="tablecell" headers="un_36">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="30%" class="tablecell" headers="un_32"><!-- removed hyperlink href="../process/artifact/ar_gloss.htm" -->Glossary <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_33 un_37"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_33 un_38"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_33 un_39"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_33 un_40"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_34"><!-- removed hyperlink href="../process/modguide/md_review.htm#XE_Formal-External_(review_level)" --><font size="2">Formal-External</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_35"><font size="2">&nbsp;</font></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_36">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="30%" class="tablecell" headers="un_32"><!-- removed hyperlink href="../process/artifact/ar_rattr.htm" -->Requirements
+    Attributes <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_33 un_37"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_33 un_38"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_33 un_39"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_33 un_40"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_34"><!-- removed hyperlink href="../process/modguide/md_review.htm#XE_Formal-Internal_(review_level)" --><font size="2">Formal-Internal</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_35"><font size="2">&nbsp;</font></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_36">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="30%" class="tablecell" headers="un_32"><!-- removed hyperlink href="../process/artifact/ar_ratgl.htm" -->Requirements
+    Management Plan <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_33 un_37"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_33 un_38"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_33 un_39"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_33 un_40"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_34"><!-- removed hyperlink href="../process/modguide/md_review.htm#XE_Formal-Internal_(review_level)" --><font size="2">Formal-<br>
+    Internal</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_35">&nbsp;</td>
+    <td width="15%" valign="top" class="tablecell" headers="un_36">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="30%" class="tablecell" headers="un_32"><!-- removed hyperlink href="../process/artifact/ar_stnds.htm" -->Stakeholder
+    Requests <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_33 un_37"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_33 un_38"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_33 un_39"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_33 un_40"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_34"><!-- removed hyperlink href="../process/modguide/md_review.htm#XE_Formal-External_(review_level)" --><font size="2">Formal-External</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_35">&nbsp;</td>
+    <td width="15%" valign="top" class="tablecell" headers="un_36">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="30%" class="tablecell" headers="un_32"><!-- removed hyperlink href="../process/artifact/ar_srs.htm" -->Software
+    Requirements Specification <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_33 un_37"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_33 un_38"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_33 un_39"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_33 un_40"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_34"><!-- removed hyperlink href="../process/modguide/md_review.htm#XE_Formal-External_(review_level)" --><font size="2">Formal-External</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_35">&nbsp;</td>
+    <td width="15%" valign="top" class="tablecell" headers="un_36">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="30%" class="tablecell" headers="un_32"><!-- removed hyperlink href="../process/artifact/ar_sspec.htm" -->Supplementary
+    Specification <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_33 un_37"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_33 un_38"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_33 un_39"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_33 un_40"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_34"><!-- removed hyperlink href="../process/modguide/md_review.htm#XE_Formal-External_(review_level)" --><font size="2">Formal-External</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_35">&nbsp;</td>
+    <td width="15%" valign="top" class="tablecell" headers="un_36">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="30%" class="tablecell" headers="un_32"><!-- removed hyperlink href="../process/artifact/ar_uc.htm" -->Use
+    Case <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_33 un_37"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_33 un_38"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_33 un_39"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_33 un_40"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_34"><!-- removed hyperlink href="../process/modguide/md_review.htm#XE_Formal-External_(review_level)" --><font size="2">Formal-External</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_35">&nbsp;</td>
+    <td width="15%" valign="top" class="tablecell" headers="un_36">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="30%" class="tablecell" headers="un_32"><!-- removed hyperlink href="../process/artifact/ar_ucmod.htm" -->Use-Case
+    Model <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_33 un_37"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_33 un_38"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_33 un_39"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_33 un_40"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_34"><!-- removed hyperlink href="../process/modguide/md_review.htm#XE_Formal-External_(review_level)" --><font size="2">Formal-External</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_35">&nbsp;</td>
+    <td width="15%" valign="top" class="tablecell" headers="un_36">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="30%" class="tablecell" headers="un_32"><!-- removed hyperlink href="../process/artifact/ar_ucpkg.htm" -->Use-Case
+    Package <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_33 un_37"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_33 un_38"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_33 un_39"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_33 un_40"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_34"><!-- removed hyperlink href="../process/modguide/md_review.htm#XE_Informal_(review_level)" --><font size="2">Informal</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_35">&nbsp;</td>
+    <td width="15%" valign="top" class="tablecell" headers="un_36">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="30%" class="tablecell" headers="un_32"><!-- removed hyperlink href="../process/artifact/ar_storyboard.htm" -->Use-Case
+    Storyboard <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_33 un_37"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__won't_have" --><font size="2">Won't</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_33 un_38"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_33 un_39"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__could_have" --><font size="2">Could</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_33 un_40"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__could_have" --><font size="2">Could</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_34"><!-- removed hyperlink href="../process/modguide/md_review.htm#XE_Informal_(review_level)" --><font size="2">Informal</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_35">&nbsp;</td>
+    <td width="15%" valign="top" class="tablecell" headers="un_36">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="30%" class="tablecell" headers="un_32"><!-- removed hyperlink href="../process/artifact/ar_uiprt.htm" -->User-Interface
+    Prototype <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_33 un_37"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__won't_have" --><font size="2">Won't</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_33 un_38"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_33 un_39"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__could_have" --><font size="2">Could</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_33 un_40"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__could_have" --><font size="2">Could</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_34"><!-- removed hyperlink href="../process/modguide/md_review.htm#XE_Formal-External_(review_level)" --><font size="2">Formal-External</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_35">&nbsp;</td>
+    <td width="15%" valign="top" class="tablecell" headers="un_36">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="30%" class="tablecell" headers="un_32"><!-- removed hyperlink href="../process/artifact/ar_vsion.htm" -->Vision <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_33 un_37"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_33 un_38"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_33 un_39"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_33 un_40"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_34"><!-- removed hyperlink href="../process/modguide/md_review.htm#XE_Formal-External_(review_level)" --><font size="2">Formal-External</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_35">&nbsp;</td>
+    <td width="15%" valign="top" class="tablecell" headers="un_36">&nbsp;</td>
+  </tr>
+</table>
+<br>
+</div>
+
+<h5>Notes on the Work Products</h5>
+<p>See the project's Configuration Management Plan for information about how the work products are configuration-managed.</p>
+<h5>Reports</h5>
+<div align="center">
+<table border="1" colspec="L20 L17" width="90%" cellspacing="0">
+  <tr>
+    <th width="30%" class="table_heading" scope="col"><b>Reports</b></th>
+    <th width="15%" class="table_heading" scope="col"><b>How to Use</b></th>
+    <th width="15%" class="table_heading" scope="col"><b>Templates/Examples</b></th>
+    <th width="15%" class="table_heading" scope="col"><b>Tools Used</b></th>
+  </tr>
+  <tr>
+    <td width="30%" class="tablecell"><!-- removed hyperlink href="../process/reports/re_actor.htm" -->Actor <!-- end of removed hyperlink --></td>
+    <td width="15%" class="tablecell"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__could_have" --><font size="2">Could</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" class="tablecell"><font size="2">&nbsp;</font></td>
+    <td width="15%" class="tablecell"><font size="2">&nbsp;</font></td>
+  </tr>
+  <tr>
+    <td width="30%" class="tablecell"><!-- removed hyperlink href="../process/reports/re_ucrep.htm" -->Use-Case <!-- end of removed hyperlink --></td>
+    <td width="15%" class="tablecell"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__could_have" --><font size="2">Could</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" class="tablecell">
+    <p><font size="2">&nbsp;</font></p>
+    </td>
+    <td width="15%" class="tablecell"><font size="2">&nbsp;&nbsp;&nbsp; &nbsp;</font></td>
+  </tr>
+  <tr>
+    <td width="30%" class="tablecell"><!-- removed hyperlink href="../process/reports/re_ucmsv.htm" -->Use-Case
+    Model Survey <!-- end of removed hyperlink --></td>
+    <td width="15%" class="tablecell"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__could_have" --><font size="2">Could</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" class="tablecell">
+    <p> <font size="2">&nbsp;</font> </p>
+    </td>
+    <td width="15%" class="tablecell">
+    <p><font size="2">&nbsp;</font></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="30%" class="tablecell">Use-Case Storyboard</td>
+    <td width="15%" class="tablecell"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__could_have" --><font size="2">Could</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" class="tablecell"><font size="2">&nbsp;</font></td>
+    <td width="15%" class="tablecell"><font size="2">&nbsp;</font></td>
+  </tr>
+</table>
+<br></div>
+
+
+<h3><a name="#Analysis &amp; Design">Analysis &amp; Design</a> <a href="#Top"></a><img src="../../../../core.base_rup/resources/top.gif" alt="To top of page" border="0" width="26" height="20" ></h3>
+<h5>Activity</h5>
+<p>A real-time application is not being developed, therefore the Capsule Designer 
+  role and the task Capsule Design are excluded. For details on the activity, 
+  see the <!-- removed hyperlink href="../process/workflow/ovu_and.htm" -->Analysis &amp; Design Overview <!-- end of removed hyperlink -->.&nbsp;</p>
+<h5>Work Products</h5>
+<div align="center">
+<table border="1" colspec="L20 L17" width="90%" cellspacing="0">
+  <tr>
+      <th width="30%" rowspan="2" valign="top" class="table_heading" id="un_41">Work 
+        Products</th>
+    <th width="40%" colspan="4" valign="top" class="table_heading" id="un_42"><b>How to
+        use</b></th>
+    <th rowspan="2" valign="top" class="table_heading" id="un_43"><b>Review Details</b></th>
+    <th width="25%" rowspan="2" valign="top" class="table_heading" id="un_44"><b>Tools used</b></th>
+    <th width="15%" rowspan="2" valign="top" class="table_heading" id="un_45"><b>Templates/<br>
+  Examples</b></th>
+  </tr>
+  <tr>
+    <th width="10%" valign="top" class="table_heading" id="incep" headers="un_42"><b>Incep</b></th>
+    <th width="10%" valign="top" class="table_heading" id="elab" headers="un_42"><b>Elab</b></th>
+    <th width="10%" valign="top" class="table_heading" id="const" headers="un_42"><b>Const</b></th>
+    <th width="10%" valign="top" class="table_heading" id="trans" headers="un_42"><b>Trans</b></th>
+  </tr>
+  <tr>
+    <td width="30%" height="17" class="tablecell" headers="un_41"><!-- removed hyperlink href="../process/artifact/ar_datmd.htm" -->Data
+    Model <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_42 incep"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__won't_have" --><font size="2">Won't</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_42 elab"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__could_have" --><font size="2">Could</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_42 const"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__could_have" --><font size="2">Could</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_42 trans"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__could_have" --><font size="2">Could</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_43"><!-- removed hyperlink href="../process/modguide/md_review.htm#XE_Informal_(review_level)" --><font size="2">Informal</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_44"><font size="2">Rational
+      Rose</font></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_45">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="30%" height="19" class="tablecell" headers="un_41"><!-- removed hyperlink href="../process/artifact/ar_dplmdl.htm" -->Deployment
+      Model <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_42 incep"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__could_have" --><font size="2">Could</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_42 elab"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_42 const"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_42 trans"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_43"><!-- removed hyperlink href="../process/modguide/md_review.htm#XE_Formal-Internal_(review_level)" --><font size="2">Formal-<br>
+    Internal</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_44"><font size="2">Rational
+      Rose</font></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_45">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="30%" height="19" class="tablecell" headers="un_41"><!-- removed hyperlink href="../process/artifact/ar_class.htm" -->Design
+    Class <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_42 incep"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__could_have" --><font size="2">Could</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_42 elab"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_42 const"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_42 trans"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_43"><!-- removed hyperlink href="../process/modguide/md_review.htm#XE_Informal_(review_level)" --><font size="2">Informal</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_44"><font size="2">Rational
+      Rose</font></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_45">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="30%" height="19" class="tablecell" headers="un_41"><!-- removed hyperlink href="../process/artifact/ar_desmd.htm" -->Design
+    Model <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_42 incep"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__could_have" --><font size="2">Could</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_42 elab"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_42 const"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_42 trans"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_43"><!-- removed hyperlink href="../process/modguide/md_review.htm#XE_Formal-Internal_(review_level)" --><font size="2">Formal-<br>
+    Internal</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_44"><font size="2">Rational
+      Rose</font></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_45">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="30%" height="19" class="tablecell" headers="un_41"><!-- removed hyperlink href="../process/artifact/ar_despk.htm" -->Design
+    Package <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_42 incep"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__could_have" --><font size="2">Could</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_42 elab"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_42 const"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_42 trans"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_43"><!-- removed hyperlink href="../process/modguide/md_review.htm#XE_Formal-Internal_(review_level)" --><font size="2">Formal-<br>
+    Internal</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_44"><font size="2">Rational
+      Rose</font></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_45">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="30%" height="19" class="tablecell" headers="un_41"><!-- removed hyperlink href="../process/artifact/ar_dsub.htm" -->Design
+    Subsystem <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_42 incep"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__could_have" --><font size="2">Could</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_42 elab"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_42 const"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_42 trans"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_43"><!-- removed hyperlink href="../process/modguide/md_review.htm#XE_Formal-Internal_(review_level)" --><font size="2">Formal-<br>
+    Internal</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_44"><font size="2">Rational
+      Rose</font></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_45">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="30%" height="19" class="tablecell" headers="un_41"><!-- removed hyperlink href="../process/artifact/ar_if.htm" -->Interface <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_42 incep"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__could_have" --><font size="2">Could</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_42 elab"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_42 const"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_42 trans"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_43"><!-- removed hyperlink href="../process/modguide/md_review.htm#XE_Formal-Internal_(review_level)" --><font size="2">Formal-<br>
+    Internal</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_44"><font size="2">Rational
+      Rose</font></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_45">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="30%" height="19" class="tablecell" headers="un_41"><!-- removed hyperlink href="../process/artifact/ar_refarch.htm" -->Reference
+    Architecture <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_42 incep"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__could_have" --><font size="2">Could</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_42 elab"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_42 const"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_42 trans"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_43"><!-- removed hyperlink href="../process/modguide/md_review.htm#XE_Formal-Internal_(review_level)" --><font size="2">Formal-<br>
+    Internal</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_44"><font size="2">Rational
+      Rose</font></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_45">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="30%" height="19" class="tablecell" headers="un_41"><!-- removed hyperlink href="../process/artifact/ar_sadoc.htm" -->Software
+    Architecture Document (SAD) <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_42 incep"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__could_have" --><font size="2">Could</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_42 elab"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_42 const"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_42 trans"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_43"><!-- removed hyperlink href="../process/modguide/md_review.htm#XE_Formal-External_(review_level)" --><font size="2">Formal-<br>
+    External</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_44"><font size="2">Rational
+      SoDA<br>
+      Microsoft Word</font></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_45">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="30%" height="19" class="tablecell" headers="un_41"><!-- removed hyperlink href="../process/artifact/ar_ucrea.htm" -->Use-Case
+    Realization <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_42 incep"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__could_have" --><font size="2">Could</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_42 elab"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_42 const"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_42 trans"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_43"><!-- removed hyperlink href="../process/modguide/md_review.htm#XE_Informal_(review_level)" --><font size="2">Informal</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_44"><font size="2">Rational
+      Rose</font></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_45">&nbsp;</td>
+  </tr>
+</table>
+<br>
+</div>
+
+<h5>Notes on the Work Products</h5>
+<p>The project is not developing a real-time product, which means that the following 
+  work products will not developed: Capsule, Event, Protocol, and Signal.</p>
+<p>The project decided not to keep an analysis model, which means that the following 
+  work products will not be developed: Analysis Class and Analysis Model.&nbsp;</p>
+<h5>Reports</h5>
+<div align="center">
+<table border="1" colspec="L20 L17" width="90%" cellspacing="0">
+  <tr>
+    <th width="30%" class="table_heading" scope="col"><b>Reports</b></th>
+    <th width="15%" class="table_heading" scope="col"><b>How to Use</b></th>
+    <th width="15%" class="table_heading" scope="col"><b>Templates/Examples</b></th>
+    <th width="15%" class="table_heading" scope="col"><b>Tools Used</b></th>
+  </tr>
+  <tr>
+    <td height="19" width="30%" class="tablecell"><!-- removed hyperlink href="../process/reports/re_clrep.htm" -->Class <!-- end of removed hyperlink --></td>
+    <td width="15%" class="tablecell"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__could_have" --><font size="2">Could</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" class="tablecell">&nbsp;</td>
+    <td width="15%" class="tablecell"><font size="2">Rational SoDA<br>
+      Microsoft Word</font></td>
+  </tr>
+  <tr>
+    <td height="19" width="30%" class="tablecell"><!-- removed hyperlink href="../process/reports/re_desms.htm" -->Design-Model
+    Survey <!-- end of removed hyperlink --></td>
+    <td width="15%" class="tablecell"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__could_have" --><font size="2">Could</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" class="tablecell">&nbsp;</td>
+    <td width="15%" class="tablecell"><font size="2">Rational SoDA<br>
+      Microsoft
+    Word</font></td>
+  </tr>
+  <tr>
+    <td height="19" width="30%" class="tablecell"><!-- removed hyperlink href="../process/reports/re_dspkg.htm" -->Design
+    Package/Subsystem <!-- end of removed hyperlink --></td>
+    <td width="15%" class="tablecell"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__could_have" --><font size="2">Could</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" class="tablecell">&nbsp;</td>
+    <td width="15%" class="tablecell"><font size="2">Rational SoDA<br>
+      Microsoft
+    Word</font></td>
+  </tr>
+  <tr>
+    <td height="19" width="30%" class="tablecell"><!-- removed hyperlink href="../process/reports/re_ucrrp.htm" -->Use-Case
+    Realization <!-- end of removed hyperlink --></td>
+    <td width="15%" class="tablecell"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__could_have" --><font size="2">Could</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" class="tablecell">&nbsp;</td>
+    <td width="15%" class="tablecell"><font size="2">Rational SoDA<br>
+      Microsoft
+    Word</font></td>
+  </tr>
+</table>
+<br>
+</div>
+
+
+<h4><a name="#Implementation">Implementation</a> <a href="#Top"></a><img src="../../../../core.base_rup/resources/top.gif" alt="To top of page" border="0" width="26" height="20" ></h4>
+<h5>Activity</h5>
+<p>No changes in the activity. For details see the <!-- removed hyperlink href="../process/workflow/ovu_impl.htm" -->Implementation 
+  Overview. <!-- end of removed hyperlink --></p>
+<h5>Work Products</h5>
+<div align="center">
+<table border="1" colspec="L20 L17" width="90%" cellspacing="0">
+  <tr>
+      <th width="30%" rowspan="2" valign="top" class="table_heading" id="un_46">Work 
+        Products</th>
+    <th width="40%" colspan="4" valign="top" class="table_heading" id="un_47"><b>How to
+        use</b></th>
+    <th rowspan="2" valign="top" class="table_heading" id="un_48"><b>Review Details</b></th>
+    <th width="25%" rowspan="2" valign="top" class="table_heading" id="un_49"><b>Tools used</b></th>
+    <th width="15%" rowspan="2" valign="top" class="table_heading" id="un_50"><b>Templates/<br>
+  Examples</b></th>
+  </tr>
+  <tr>
+    <th width="10%" valign="top" class="table_heading" id="un_51" headers="un_47"><b>Incep</b></th>
+    <th width="10%" valign="top" class="table_heading" id="un_52" headers="un_47"><b>Elab</b></th>
+    <th width="10%" valign="top" class="table_heading" id="un_53" headers="un_47"><b>Const</b></th>
+    <th width="10%" valign="top" class="table_heading" id="un_54" headers="un_47"><b>Trans</b></th>
+  </tr>
+  <tr>
+    <td width="30%" class="tablecell" headers="un_46"><!-- removed hyperlink href="../process/artifact/ar_build.htm" -->Build <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_47 un_51"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__could_have" --><font size="2">Could</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_47 un_52"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_47 un_53"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_47 un_54"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_48"><!-- removed hyperlink href="../process/modguide/md_review.htm#XE_Informal_(review_level)" --><font size="2">Informal</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_49"><font size="2">Microsoft(R);
+      Visual Basic(R);</font></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_50">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="30%" class="tablecell" headers="un_46"><!-- removed hyperlink href="../process/artifact/ar_comp.htm" -->Implementation Element <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_47 un_51"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__could_have" --><font size="2">Could</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_47 un_52"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_47 un_53"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_47 un_54"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_48"><!-- removed hyperlink href="../process/modguide/md_review.htm#XE_Informal_(review_level)" --><font size="2">Informal</font> <!-- end of removed hyperlink -->
+    <p><font size="2">Code reviews</font></p>
+    </td>
+    <td width="15%" valign="top" class="tablecell" headers="un_49"><font size="2">Microsoft
+      Visual Basic</font></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_50">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="30%" class="tablecell" headers="un_46"><!-- removed hyperlink href="../process/artifact/ar_impmd.htm" -->Implementation
+    Model <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_47 un_51">
+    <p><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__could_have" --><font size="2">Could</font> <!-- end of removed hyperlink --></p>
+    </td>
+    <td width="10%" valign="top" class="tablecell" headers="un_47 un_52">
+    <p><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></p>
+    </td>
+    <td width="10%" valign="top" class="tablecell" headers="un_47 un_53">
+    <p><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></p>
+    </td>
+    <td width="10%" valign="top" class="tablecell" headers="un_47 un_54">
+    <p><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></p>
+    </td>
+    <td width="15%" valign="top" class="tablecell" headers="un_48"><!-- removed hyperlink href="../process/modguide/md_review.htm#XE_Informal_(review_level)" --><font size="2">Informal</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_49">
+    <p><font size="2">Microsoft Visual Basic</font></p>
+    </td>
+    <td width="15%" valign="top" class="tablecell" headers="un_50">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="30%" class="tablecell" headers="un_46"><!-- removed hyperlink href="../process/artifact/ar_impss.htm" -->Implementation
+    Subsystem <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_47 un_51">
+    <p><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__could_have" --><font size="2">Could</font> <!-- end of removed hyperlink --></p>
+    </td>
+    <td width="10%" valign="top" class="tablecell" headers="un_47 un_52">
+    <p><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></p>
+    </td>
+    <td width="10%" valign="top" class="tablecell" headers="un_47 un_53">
+    <p><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></p>
+    </td>
+    <td width="10%" valign="top" class="tablecell" headers="un_47 un_54">
+    <p><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></p>
+    </td>
+    <td width="15%" valign="top" class="tablecell" headers="un_48"><!-- removed hyperlink href="../process/modguide/md_review.htm#XE_Formal-Internal_(review_level)" --><font size="2">Formal-<br>
+    Internal</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_49">
+    <p><font size="2">Microsoft Visual Basic</font></p>
+    </td>
+    <td width="15%" valign="top" class="tablecell" headers="un_50">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="30%" class="tablecell" headers="un_46"><!-- removed hyperlink href="../process/artifact/ar_intbp.htm" -->Integration
+    Build Plan <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_47 un_51"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__could_have" --><font size="2">Could</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_47 un_52"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_47 un_53"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_47 un_54"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_48"><!-- removed hyperlink href="../process/modguide/md_review.htm#XE_Formal-Internal_(review_level)" --><font size="2">Formal-<br>
+    Internal</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_49"><font size="2">Microsoft
+      Word</font></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_50">&nbsp;</td>
+  </tr>
+</table>
+<br></div>
+
+<h5>Additional Review Procedures</h5>
+<p>Informal code reviews are performed.&nbsp;</p>
+<h4><a name="#Test">Test</a> <a href="#Top"></a><img src="../../../../core.base_rup/resources/top.gif" alt="To top of page" border="0" width="26" height="20" ></h4>
+<h5>Activity</h5>
+<p>No formal performance test is done, otherwise the activity is followed unchanged. 
+  For details on the process, see the <!-- removed hyperlink href="../process/workflow/ovu_test.htm" -->Test: 
+  Overview <!-- end of removed hyperlink -->.</p>
+<h5>Work Products</h5>
+<div align="center">
+
+<table border="1" colspec="L20 L17" width="90%" cellspacing="0">
+  <tr>
+      <th width="30%" rowspan="2" valign="top" class="table_heading" id="un_55">Work 
+        Products</th>
+    <th width="40%" colspan="4" valign="top" class="table_heading" id="un_56"><b>How to
+        use</b></th>
+    <th rowspan="2" valign="top" class="table_heading" id="un_57"><b>Review Details</b></th>
+    <th width="25%" rowspan="2" valign="top" class="table_heading" id="un_58"><b>Tools used</b></th>
+    <th width="15%" rowspan="2" valign="top" class="table_heading" id="un_59"><b>Templates/<br>
+  Examples</b></th>
+  </tr>
+  <tr>
+    <th width="10%" valign="top" class="table_heading" id="un_60" headers="un_56"><b>Incep</b></th>
+    <th width="10%" valign="top" class="table_heading" id="un_61" headers="un_56"><b>Elab</b></th>
+    <th width="10%" valign="top" class="table_heading" id="un_62" headers="un_56"><b>Const</b></th>
+    <th width="10%" valign="top" class="table_heading" id="un_63" headers="un_56"><b>Trans</b></th>
+  </tr>
+  <tr>
+    <td width="30%" class="tablecell" headers="un_55"><!-- removed hyperlink href="../process/artifact/ar_tstpl.htm" -->Test
+    Plan <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_56 un_60"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__could_have" --><font size="2">Could</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_56 un_61"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__could_have" --><font size="2">Could</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_56 un_62"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_56 un_63"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_57"><!-- removed hyperlink href="../process/modguide/md_review.htm#XE_Informal_(review_level)" --><font size="2">Informal</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_58"><font size="2">Microsoft
+      Word</font></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_59">&nbsp;</td>
+  </tr>
+  <tr>
+      <td width="30%" class="tablecell" headers="un_55"><!-- removed hyperlink href="../process/artifact/ar_tstidslst.htm" -->Test-Ideas 
+        List <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_56 un_60"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__won't_have" --><font size="2">Won't</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_56 un_61"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__could_have" --><font size="2">Could</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_56 un_62"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_56 un_63"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_57"><!-- removed hyperlink href="../process/modguide/md_review.htm#XE_Informal_(review_level)" --><font size="2">Informal</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_58"><font size="2">Microsoft
+      Word</font></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_59">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="30%" class="tablecell" headers="un_55"><!-- removed hyperlink href="../process/artifact/ar_tstcs.htm" -->Test
+    Case <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_56 un_60">
+    <p><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__won't_have" --><font size="2">Won't</font> <!-- end of removed hyperlink --></p>
+    </td>
+    <td width="10%" valign="top" class="tablecell" headers="un_56 un_61">
+    <p><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__could_have" --><font size="2">Could</font> <!-- end of removed hyperlink --></p>
+    </td>
+    <td width="10%" valign="top" class="tablecell" headers="un_56 un_62">
+    <p><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></p>
+    </td>
+    <td width="10%" valign="top" class="tablecell" headers="un_56 un_63">
+    <p><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></p>
+    </td>
+    <td width="15%" valign="top" class="tablecell" headers="un_57"><!-- removed hyperlink href="../process/modguide/md_review.htm#XE_Informal_(review_level)" --><font size="2">Informal</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_58">
+    <p><font size="2">Microsoft Word</font></p>
+    </td>
+    <td width="15%" valign="top" class="tablecell" headers="un_59">&nbsp;</td>
+  </tr>
+  <tr>
+      <td width="30%" class="tablecell" headers="un_55"><!-- removed hyperlink href="../process/artifact/ar_tstdta.htm" -->Test 
+        Data <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_56 un_60">
+    <p><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__won't_have" --><font size="2">Won't</font> <!-- end of removed hyperlink --></p>
+    </td>
+    <td width="10%" valign="top" class="tablecell" headers="un_56 un_61">
+    <p><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__could_have" --><font size="2">Could</font> <!-- end of removed hyperlink --></p>
+    </td>
+    <td width="10%" valign="top" class="tablecell" headers="un_56 un_62">
+    <p><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></p>
+    </td>
+    <td width="10%" valign="top" class="tablecell" headers="un_56 un_63">
+    <p><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></p>
+    </td>
+    <td width="15%" valign="top" class="tablecell" headers="un_57"><!-- removed hyperlink href="../process/modguide/md_review.htm#XE_Informal_(review_level)" --><font size="2">Informal</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_58">
+    <p><font size="2">Rational Rose</font></p>
+    </td>
+    <td width="15%" valign="top" class="tablecell" headers="un_59">&nbsp;</td>
+  </tr>
+  <tr>
+      <td width="30%" class="tablecell" headers="un_55"><!-- removed hyperlink href="../process/artifact/ar_wlmod.htm" -->Workload Model <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_56 un_60">
+    <p><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__won't_have" --><font size="2">Won't</font> <!-- end of removed hyperlink --></p>
+    </td>
+    <td width="10%" valign="top" class="tablecell" headers="un_56 un_61">
+    <p><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__could_have" --><font size="2">Could</font> <!-- end of removed hyperlink --></p>
+    </td>
+    <td width="10%" valign="top" class="tablecell" headers="un_56 un_62">
+    <p><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></p>
+    </td>
+    <td width="10%" valign="top" class="tablecell" headers="un_56 un_63">
+    <p><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></p>
+    </td>
+    <td width="15%" valign="top" class="tablecell" headers="un_57"><!-- removed hyperlink href="../process/modguide/md_review.htm#XE_Informal_(review_level)" --><font size="2">Informal</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_58">
+    <p><font size="2">Rational Rose</font></p>
+    </td>
+    <td width="15%" valign="top" class="tablecell" headers="un_59">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="30%" class="tablecell" headers="un_55"><!-- removed hyperlink href="../process/artifact/ar_tstcl.htm" -->Test
+    Class <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_56 un_60">
+    <p><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__won't_have" --><font size="2">Won't</font> <!-- end of removed hyperlink --></p>
+    </td>
+    <td width="10%" valign="top" class="tablecell" headers="un_56 un_61">
+    <p><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__could_have" --><font size="2">Could</font> <!-- end of removed hyperlink --></p>
+    </td>
+    <td width="10%" valign="top" class="tablecell" headers="un_56 un_62">
+    <p><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></p>
+    </td>
+    <td width="10%" valign="top" class="tablecell" headers="un_56 un_63">
+    <p><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></p>
+    </td>
+    <td width="15%" valign="top" class="tablecell" headers="un_57"><!-- removed hyperlink href="../process/modguide/md_review.htm#XE_Informal_(review_level)" --><font size="2">Informal</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_58">
+    <p><font size="2">Rational Rose</font></p>
+    </td>
+    <td width="15%" valign="top" class="tablecell" headers="un_59">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="30%" class="tablecell" headers="un_55"><!-- removed hyperlink href="../process/artifact/ar_tstcp.htm" -->Test
+    Components <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_56 un_60"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__won't_have" --><font size="2">Won't</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_56 un_61"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__could_have" --><font size="2">Could</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_56 un_62"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_56 un_63"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_57"><!-- removed hyperlink href="../process/modguide/md_review.htm#XE_Informal_(review_level)" --><font size="2">Informal</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_58"><font size="2">Microsoft
+      Visual Basic</font></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_59">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="30%" class="tablecell" headers="un_55"><!-- removed hyperlink href="../process/artifact/ar_tstrs.htm" -->Test
+    Results <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_56 un_60"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__won't_have" --><font size="2">Won't</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_56 un_61"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__could_have" --><font size="2">Could</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_56 un_62"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_56 un_63"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_57"><!-- removed hyperlink href="../process/modguide/md_review.htm#XE_Informal_(review_level)" --><font size="2">Informal</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_58"><font size="2">Microsoft
+      Word</font></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_59">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="30%" class="tablecell" headers="un_55"><!-- removed hyperlink href="../process/artifact/ar_tstev.htm" -->Test
+    Evaluation Summary <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_56 un_60"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__won't_have" --><font size="2">Won't</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_56 un_61"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__could_have" --><font size="2">Could</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_56 un_62"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_56 un_63"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_57"><!-- removed hyperlink href="../process/modguide/md_review.htm#XE_Informal_(review_level)" --><font size="2">Informal</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_58"><font size="2">Microsoft
+      Word</font></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_59">&nbsp;</td>
+  </tr>
+  <tr>
+      <td width="30%" class="tablecell" headers="un_55"><!-- removed hyperlink href="../process/artifact/ar_tstste.htm" -->Test 
+        Suite <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_56 un_60"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__won't_have" --><font size="2">Won't</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_56 un_61"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__could_have" --><font size="2">Could</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_56 un_62"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_56 un_63"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_57"><!-- removed hyperlink href="../process/modguide/md_review.htm#XE_Informal_(review_level)" --><font size="2">Informal</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_58"><font size="2">Rational
+      Rose</font></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_59">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="30%" class="tablecell" headers="un_55"><!-- removed hyperlink href="../process/artifact/ar_tstsc.htm" -->Test
+    Script <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_56 un_60"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__won't_have" --><font size="2">Won't</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_56 un_61"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__could_have" --><font size="2">Could</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_56 un_62"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_56 un_63"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_57"><!-- removed hyperlink href="../process/modguide/md_review.htm#XE_Informal_(review_level)" --><font size="2">Informal</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_58"><font size="2">Rational TestStudio</font></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_59">&nbsp;</td>
+  </tr>
+  <tr>
+      <td width="30%" class="tablecell" headers="un_55"><!-- removed hyperlink href="../process/artifact/ar_tstenv.htm" -->Test 
+        Environment Configuration <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_56 un_60"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__won't_have" --><font size="2">Won't</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_56 un_61"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__could_have" --><font size="2">Could</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_56 un_62"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_56 un_63"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_57"><!-- removed hyperlink href="../process/modguide/md_review.htm#XE_Informal_(review_level)" --><font size="2">Informal</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_58"><font size="2">Rational
+      Rose</font></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_59">&nbsp;</td>
+  </tr>
+  <tr>
+      <td width="30%" class="tablecell" headers="un_55"><!-- removed hyperlink href="../process/artifact/ar_tstatmarc.htm" -->Test 
+        Automation Architecture <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_56 un_60"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__won't_have" --><font size="2">Won't</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_56 un_61"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__could_have" --><font size="2">Could</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_56 un_62"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_56 un_63"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_57"><!-- removed hyperlink href="../process/modguide/md_review.htm#XE_Informal_(review_level)" --><font size="2">Informal</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_58"><font size="2">Rational
+      Rose</font></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_59">&nbsp;</td>
+  </tr>
+  <tr>
+      <td width="30%" class="tablecell" headers="un_55"><!-- removed hyperlink href="../process/artifact/ar_tstintspc.htm" -->Test 
+        Interface Specification <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_56 un_60"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__won't_have" --><font size="2">Won't</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_56 un_61"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__could_have" --><font size="2">Could</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_56 un_62"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_56 un_63"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_57"><!-- removed hyperlink href="../process/modguide/md_review.htm#XE_Informal_(review_level)" --><font size="2">Informal</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_58"><font size="2">Rational
+      Rose</font></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_59">&nbsp;</td>
+  </tr>
+</table>
+<br></div>
+
+<h5>Notes on the Work Products</h5>
+
+<p>No Workload Analysis Document is developed.</p>
+<h5>Additional Review Procedures</h5>
+<ul>
+  <li>Test cases-informally approved by the system testers.</li>
+  <li>The system testers decide if the test criteria for an iteration is
+    fulfilled.</li>
+  <li>The customer approves the final iteration.</li>
+</ul>
+
+
+<h4><a name="#Deployment">Deployment</a> <a href="#Top"></a><img src="../../../../core.base_rup/resources/top.gif" alt="To top of page" border="0" width="26" height="20" ></h4>
+<h5>Activity</h5>
+<p>A previously existing deployment activity was adapted to use the work products 
+  suggested in the RUP. An exception is the Course Material work product, which 
+  is excluded because no formal training is produced for our product.</p>
+<h5>Work Products</h5>
+<div align="center">
+<table border="1" colspec="L20 L17" width="90%" cellspacing="0">
+  <tr>
+      <th width="30%" rowspan="2" valign="top" class="table_heading" id="un_64">Work 
+        Products</th>
+    <th width="40%" colspan="4" valign="top" class="table_heading" id="un_65"><b>How to
+        use</b></th>
+    <th rowspan="2" valign="top" class="table_heading" id="un_66"><b>Review Details</b></th>
+    <th width="25%" rowspan="2" valign="top" class="table_heading" id="un_67"><b>Tools used</b></th>
+    <th width="15%" rowspan="2" valign="top" class="table_heading" id="un_68"><b>Templates/<br>
+  Examples</b></th>
+  </tr>
+  <tr>
+    <th width="10%" valign="top" class="table_heading" id="un_69" headers="un_65"><b>Incep</b></th>
+    <th width="10%" valign="top" class="table_heading" id="un_70" headers="un_65"><b>Elab</b></th>
+    <th width="10%" valign="top" class="table_heading" id="un_71" headers="un_65"><b>Const</b></th>
+    <th width="10%" valign="top" class="table_heading" id="un_72" headers="un_65"><b>Trans</b></th>
+  </tr>
+  <tr>
+    <td width="30%" class="tablecell" headers="un_64"><!-- removed hyperlink href="../process/artifact/ar_blomt.htm" -->Bill
+    of Materials <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_65 un_69">
+    <p><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__won't_have" --><font size="2">Won't</font> <!-- end of removed hyperlink --></p>
+    </td>
+    <td width="10%" valign="top" class="tablecell" headers="un_65 un_70">
+    <p><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__won't_have" --><font size="2">Won't</font> <!-- end of removed hyperlink --></p>
+    </td>
+    <td width="10%" valign="top" class="tablecell" headers="un_65 un_71">
+    <p><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__could_have" --><font size="2">Could</font> <!-- end of removed hyperlink --></p>
+    </td>
+    <td width="10%" valign="top" class="tablecell" headers="un_65 un_72">
+    <p><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></p>
+    </td>
+    <td width="15%" valign="top" class="tablecell" headers="un_66"><!-- removed hyperlink href="../process/modguide/md_review.htm#XE_Formal-Internal_(review_level)" --><font size="2">Formal-<br>
+    Internal</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_67">
+    <p><font size="2">Microsoft Word</font></p>
+    </td>
+    <td width="15%" valign="top" class="tablecell" headers="un_68">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="30%" class="tablecell" headers="un_64"><!-- removed hyperlink href="../process/artifact/ar_dppls.htm" -->Deployment
+    Plan <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_65 un_69">
+    <p><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__won't_have" --><font size="2">Won't</font> <!-- end of removed hyperlink --></p>
+    </td>
+    <td width="10%" valign="top" class="tablecell" headers="un_65 un_70">
+    <p><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__could_have" --><font size="2">Could</font> <!-- end of removed hyperlink --></p>
+    </td>
+    <td width="10%" valign="top" class="tablecell" headers="un_65 un_71">
+    <p><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></p>
+    </td>
+    <td width="10%" valign="top" class="tablecell" headers="un_65 un_72">
+    <p><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></p>
+    </td>
+    <td width="15%" valign="top" class="tablecell" headers="un_66"><!-- removed hyperlink href="../process/modguide/md_review.htm#XE_Informal_(review_level)" --><font size="2">Informal</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_67">
+    <p><font size="2">Microsoft Word</font></p>
+    </td>
+    <td width="15%" valign="top" class="tablecell" headers="un_68">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="30%" class="tablecell" headers="un_64"><!-- removed hyperlink href="../process/artifact/ar_prdct.htm" -->Deployment
+    Unit <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_65 un_69">
+    <p><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__won't_have" --><font size="2">Won't</font> <!-- end of removed hyperlink --></p>
+    </td>
+    <td width="10%" valign="top" class="tablecell" headers="un_65 un_70">
+    <p><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__could_have" --><font size="2">Could</font> <!-- end of removed hyperlink --></p>
+    </td>
+    <td width="10%" valign="top" class="tablecell" headers="un_65 un_71">
+    <p><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__could_have" --><font size="2">Could</font> <!-- end of removed hyperlink --></p>
+    </td>
+    <td width="10%" valign="top" class="tablecell" headers="un_65 un_72">
+    <p><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></p>
+    </td>
+    <td width="15%" valign="top" class="tablecell" headers="un_66"><!-- removed hyperlink href="../process/modguide/md_review.htm#XE_Informal_(review_level)" --><font size="2">Informal</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_67">
+    <p><font size="2">Microsoft Word</font></p>
+    </td>
+    <td width="15%" valign="top" class="tablecell" headers="un_68">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="30%" class="tablecell" headers="un_64"><!-- removed hyperlink href="../process/artifact/ar_eusm.htm" -->Support
+    Material <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_65 un_69">
+    <p><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__won't_have" --><font size="2">Won't</font> <!-- end of removed hyperlink --></p>
+    </td>
+    <td width="10%" valign="top" class="tablecell" headers="un_65 un_70">
+    <p><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__could_have" --><font size="2">Could</font> <!-- end of removed hyperlink --></p>
+    </td>
+    <td width="10%" valign="top" class="tablecell" headers="un_65 un_71">
+    <p><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__could_have" --><font size="2">Could</font> <!-- end of removed hyperlink --></p>
+    </td>
+    <td width="10%" valign="top" class="tablecell" headers="un_65 un_72">
+    <p><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></p>
+    </td>
+    <td width="15%" valign="top" class="tablecell" headers="un_66"><!-- removed hyperlink href="../process/modguide/md_review.htm#XE_Informal_(review_level)" --><font size="2">Informal</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_67">
+    <p><font size="2">Microsoft Word</font></p>
+    </td>
+    <td width="15%" valign="top" class="tablecell" headers="un_68">&nbsp;</td>
+  </tr>
+  <tr>
+      <td width="30%" class="tablecell" headers="un_64"><!-- removed hyperlink href="../process/artifact/ar_insta.htm" -->Installation 
+        Work Products <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_65 un_69"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__won't_have" --><font size="2">Won't</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_65 un_70"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__could_have" --><font size="2">Could</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_65 un_71"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__could_have" --><font size="2">Could</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_65 un_72"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_66"><!-- removed hyperlink href="../process/modguide/md_review.htm#XE_Informal_(review_level)" --><font size="2">Informal</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_67">
+    <p><font size="2">Microsoft Word</font></p>
+    </td>
+    <td width="15%" valign="top" class="tablecell" headers="un_68">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="30%" class="tablecell" headers="un_64"><!-- removed hyperlink href="../process/artifact/ar_pduct.htm" -->Product <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_65 un_69"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__won't_have" --><font size="2">Won't</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_65 un_70"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__could_have" --><font size="2">Could</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_65 un_71"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__could_have" --><font size="2">Could</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_65 un_72"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_66"><!-- removed hyperlink href="../process/modguide/md_review.htm#XE_Formal-External_(review_level)" --><font size="2">Formal-<br>
+    External</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_67">&nbsp;</td>
+    <td width="15%" valign="top" class="tablecell" headers="un_68">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="30%" class="tablecell" headers="un_64"><!-- removed hyperlink href="../process/artifact/ar_pdart.htm" -->Product
+    Artwork <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_65 un_69"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__won't_have" --><font size="2">Won't</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_65 un_70"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__could_have" --><font size="2">Could</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_65 un_71"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__could_have" --><font size="2">Could</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_65 un_72"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_66"><!-- removed hyperlink href="../process/modguide/md_review.htm#XE_Informal_(review_level)" --><font size="2">Informal</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_67">
+    <p><font size="2">Microsoft Word</font></p>
+    </td>
+    <td width="15%" valign="top" class="tablecell" headers="un_68">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="30%" class="tablecell" headers="un_64"><!-- removed hyperlink href="../process/artifact/ar_rlsnt.htm" -->Release
+    Notes <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_65 un_69"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__won't_have" --><font size="2">Won't</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_65 un_70"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__could_have" --><font size="2">Could</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_65 un_71"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__could_have" --><font size="2">Could</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_65 un_72"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_66"><!-- removed hyperlink href="../process/modguide/md_review.htm#XE_Formal-Internal_(review_level)" --><font size="2">Formal-<br>
+    Internal</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_67">
+    <p><font size="2">Microsoft Word</font></p>
+    </td>
+    <td width="15%" valign="top" class="tablecell" headers="un_68">&nbsp;</td>
+  </tr>
+</table>
+<br>
+</div>
+
+
+<h5>Notes on the Work Products</h5>
+<p>No Training Materials are developed because the product does not require formal
+training.&nbsp;</p>
+<h5>Reports</h5>
+<div align="center">
+<table border="1" colspec="L20 L17" width="90%" cellspacing="0">
+  <tr>
+    <th width="30%" class="table_heading" scope="col"><b>Reports</b></th>
+    <th width="15%" class="table_heading" scope="col"><b>How to Use</b></th>
+    <th width="15%" class="table_heading" scope="col"><b>Templates/Examples</b></th>
+    <th width="15%" class="table_heading" scope="col"><b>Tools Used</b></th>
+  </tr>
+  <tr>
+    <td width="30%" class="tablecell">&nbsp;</td>
+    <td width="15%" class="tablecell">&nbsp;</td>
+    <td width="15%" class="tablecell">
+    <pre> </pre>
+    </td>
+    <td width="15%" class="tablecell">
+    <pre> </pre>
+    </td>
+  </tr>
+</table>
+<br>
+</div>
+
+
+<h4><a name="Configuration &amp; Change Management">Configuration &amp; Change
+Management</a> <a href="#Top"><img src="../../../../core.base_rup/resources/top.gif" alt="To top of page" border="0" width="26" height="20"></a></h4>
+<h5>Activity</h5>
+<p>No changes in the activity. For details on the process, see the <!-- removed hyperlink href="../process/workflow/ovu_cm.htm" -->Configuration 
+  &amp; Change Management: Overview <!-- end of removed hyperlink -->.</p>
+<h5>Work Products</h5>
+<div align="center">
+
+<table border="1" colspec="L20 L17" width="90%" cellspacing="0">
+  <tr>
+      <th width="30%" rowspan="2" valign="top" class="table_heading" id="un_73">Work 
+        Products</th>
+    <th width="40%" colspan="4" valign="top" class="table_heading" id="un_74"><b>How to
+        use</b></th>
+    <th rowspan="2" valign="top" class="table_heading" id="un_75"><b>Review Details</b></th>
+    <th width="25%" rowspan="2" valign="top" class="table_heading" id="un_76"><b>Tools used</b></th>
+    <th width="15%" rowspan="2" valign="top" class="table_heading" id="un_77"><b>Templates/<br>
+  Examples</b></th>
+  </tr>
+  <tr>
+    <th width="10%" valign="top" class="table_heading" id="un_78" headers="un_74"><b>Incep</b></th>
+    <th width="10%" valign="top" class="table_heading" id="un_79" headers="un_74"><b>Elab</b></th>
+    <th width="10%" valign="top" class="table_heading" id="un_80" headers="un_74"><b>Const</b></th>
+    <th width="10%" valign="top" class="table_heading" id="un_81" headers="un_74"><b>Trans</b></th>
+  </tr>
+  <tr>
+    <td width="30%" class="tablecell" headers="un_73"><!-- removed hyperlink href="../process/artifact/ar_crqst.htm" -->Change
+    Request <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_74 un_78">
+    <p><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__won't_have" --><font size="2">Won't</font> <!-- end of removed hyperlink --></p>
+    </td>
+    <td width="10%" valign="top" class="tablecell" headers="un_74 un_79">
+    <p><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__could_have" --><font size="2">Could</font> <!-- end of removed hyperlink --></p>
+    </td>
+    <td width="10%" valign="top" class="tablecell" headers="un_74 un_80"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_74 un_81"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_75"><!-- removed hyperlink href="../process/modguide/md_review.htm#XE_Informal_(review_level)" --><font size="2">Informal</font> <!-- end of removed hyperlink --></td>
+    <td width="16%" valign="top" class="tablecell" headers="un_76">
+    <p><font size="2">Rational ClearQuest</font></p>
+    </td>
+    <td width="14%" valign="top" class="tablecell" headers="un_77">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="30%" class="tablecell" headers="un_73"><!-- removed hyperlink href="../process/artifact/ar_caudit.htm" -->Configuration
+    Audit Findings <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_74 un_78">
+    <p><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__won't_have" --><font size="2">Won't</font> <!-- end of removed hyperlink --></p>
+    </td>
+    <td width="10%" valign="top" class="tablecell" headers="un_74 un_79">
+    <p><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__could_have" --><font size="2">Could</font> <!-- end of removed hyperlink --></p>
+    </td>
+    <td width="10%" valign="top" class="tablecell" headers="un_74 un_80">
+    <p><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></p>
+    </td>
+    <td width="10%" valign="top" class="tablecell" headers="un_74 un_81">
+    <p><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></p>
+    </td>
+    <td width="15%" valign="top" class="tablecell" headers="un_75"><!-- removed hyperlink href="../process/modguide/md_review.htm#XE_Informal_(review_level)" --><font size="2">Informal</font> <!-- end of removed hyperlink --></td>
+    <td width="16%" valign="top" class="tablecell" headers="un_76">
+    <p><font size="2">Microsoft Word</font></p>
+    </td>
+    <td width="14%" valign="top" class="tablecell" headers="un_77">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="30%" class="tablecell" headers="un_73"><!-- removed hyperlink href="../process/artifact/ar_cmpln.htm" -->Configuration
+    Management Plan <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_74 un_78"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__won't_have" --><font size="2">Won't</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_74 un_79"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_74 un_80"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_74 un_81"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_75"><!-- removed hyperlink href="../process/modguide/md_review.htm#XE_Informal_(review_level)" --><font size="2">Informal</font> <!-- end of removed hyperlink --></td>
+    <td width="16%" valign="top" class="tablecell" headers="un_76">
+    <p><font size="2">Microsoft Word</font></p>
+    </td>
+    <td width="14%" valign="top" class="tablecell" headers="un_77">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="30%" class="tablecell" headers="un_73"><!-- removed hyperlink href="../process/artifact/ar_repos.htm" -->Project
+      Repository <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_74 un_78"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__won't_have" --><font size="2">Won't</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_74 un_79"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__could_have" --><font size="2">Could</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_74 un_80"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_74 un_81"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_75"><!-- removed hyperlink href="../process/modguide/md_review.htm#XE_None_(review_level)" --><font size="2">None</font> <!-- end of removed hyperlink --></td>
+    <td width="16%" valign="top" class="tablecell" headers="un_76"><font size="2">Rational
+      ClearCase</font></td>
+    <td width="14%" valign="top" class="tablecell" headers="un_77">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="30%" class="tablecell" headers="un_73"><!-- removed hyperlink href="../process/artifact/ar_wkspc.htm" -->Workspace <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_74 un_78"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__won't_have" --><font size="2">Won't</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_74 un_79"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__could_have" --><font size="2">Could</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_74 un_80"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_74 un_81"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_75"><!-- removed hyperlink href="../process/modguide/md_review.htm#XE_None_(review_level)" --><font size="2">None</font> <!-- end of removed hyperlink --></td>
+    <td width="16%" valign="top" class="tablecell" headers="un_76"><font size="2">Rational
+      ClearCase</font></td>
+    <td width="14%" valign="top" class="tablecell" headers="un_77">&nbsp;</td>
+  </tr>
+</table>
+<br>
+</div>
+
+
+<h4><a name="#Project Management">Project Management</a> <a href="#Top"></a><img src="../../../../core.base_rup/resources/top.gif" alt="To top of page" border="0" width="26" height="20" ></h4>
+<h5>Activity</h5>
+<p>No changes to the activity. Additional information: <!-- removed hyperlink href="../process/workflow/ovu_mgm.htm" -->Project 
+  Management: Overview <!-- end of removed hyperlink -->.</p>
+<h5>Work Products</h5>
+<div align="center"><center>
+
+<table border="1" colspec="L20 L17" width="90%" cellspacing="0">
+  <tr>
+        <th width="30%" rowspan="2" valign="top" class="table_heading" id="un_0">Work 
+          Products</th>
+    <th width="40%" colspan="4" valign="top" class="table_heading" id="un_1"><b>How to
+        use</b></th>
+    <th rowspan="2" valign="top" class="table_heading" id="un_2"><b>Review Details</b></th>
+    <th width="25%" rowspan="2" valign="top" class="table_heading" id="un_3"><b>Tools used</b></th>
+    <th width="15%" rowspan="2" valign="top" class="table_heading" id="un_4"><b>Templates/<br>
+  Examples</b></th>
+  </tr>
+  <tr>
+    <th width="10%" valign="top" class="table_heading" id="un_82" headers="un_1"><b>Incep</b></th>
+    <th width="10%" valign="top" class="table_heading" id="un_83" headers="un_1"><b>Elab</b></th>
+    <th width="10%" valign="top" class="table_heading" id="un_84" headers="un_1"><b>Const</b></th>
+    <th width="10%" valign="top" class="table_heading" id="un_85" headers="un_1"><b>Trans</b></th>
+  </tr>
+  <tr>
+    <td width="30%" class="tablecell" headers="un_0"><!-- removed hyperlink href="../process/artifact/ar_bcase.htm" -->Business
+    Case <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_1 un_82">
+    <p><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></p>
+    </td>
+    <td width="10%" valign="top" class="tablecell" headers="un_1 un_83">
+    <p><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></p>
+    </td>
+    <td width="10%" valign="top" class="tablecell" headers="un_1 un_84">
+    <p><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__could_have" --><font size="2">Could</font> <!-- end of removed hyperlink --></p>
+    </td>
+    <td width="10%" valign="top" class="tablecell" headers="un_1 un_85">
+    <p><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__could_have" --><font size="2">Could</font> <!-- end of removed hyperlink --></p>
+    </td>
+    <td width="15%" valign="top" class="tablecell" headers="un_2"><!-- removed hyperlink href="../process/modguide/md_review.htm#XE_Formal-External_(review_level)" --><font size="2">Formal-<br>
+    External</font> <!-- end of removed hyperlink --></td>
+    <td width="25%" valign="top" class="tablecell" headers="un_3">
+    <font size="2">Microsoft(R); Word(R);</font>
+    </td>
+    <td width="14%" valign="top" class="tablecell" headers="un_4">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="30%" class="tablecell" headers="un_0"><!-- removed hyperlink href="../process/artifact/ar_itass.htm" -->Iteration
+    Assessment <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_1 un_82">
+    <p><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></p>
+    </td>
+    <td width="10%" valign="top" class="tablecell" headers="un_1 un_83">
+    <p><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></p>
+    </td>
+    <td width="10%" valign="top" class="tablecell" headers="un_1 un_84">
+    <p><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></p>
+    </td>
+    <td width="10%" valign="top" class="tablecell" headers="un_1 un_85">
+    <p><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></p>
+    </td>
+    <td width="15%" valign="top" class="tablecell" headers="un_2"><!-- removed hyperlink href="../process/modguide/md_review.htm#XE_Informal_(review_level)" --><font size="2">Informal</font> <!-- end of removed hyperlink --></td>
+    <td width="25%" valign="top" class="tablecell" headers="un_3">
+    <p><font size="2">Microsoft Word</font></p>
+    </td>
+    <td width="14%" valign="top" class="tablecell" headers="un_4">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="30%" class="tablecell" headers="un_0"><!-- removed hyperlink href="../process/artifact/ar_itpln.htm" -->Iteration
+    Plan <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_1 un_82"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__could_have" --><font size="2">Could</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_1 un_83"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_1 un_84"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_1 un_85"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_2"><!-- removed hyperlink href="../process/modguide/md_review.htm#XE_Informal_(review_level)" --><font size="2">Informal</font> <!-- end of removed hyperlink --></td>
+    <td width="25%" valign="top" class="tablecell" headers="un_3"><font size="2">Microsoft
+      Word</font></td>
+    <td width="14%" valign="top" class="tablecell" headers="un_4">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="30%" class="tablecell" headers="un_0"><!-- removed hyperlink href="../process/artifact/ar_metr.htm" -->Measurement
+    Plan <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_1 un_82"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__could_have" --><font size="2">Could</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_1 un_83"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__could_have" --><font size="2">Could</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_1 un_84"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__could_have" --><font size="2">Could</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_1 un_85"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__could_have" --><font size="2">Could</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_2"><!-- removed hyperlink href="../process/modguide/md_review.htm#XE_Informal_(review_level)" --><font size="2">Informal</font> <!-- end of removed hyperlink --></td>
+    <td width="25%" valign="top" class="tablecell" headers="un_3"><font size="2">Microsoft
+      Word</font></td>
+    <td width="14%" valign="top" class="tablecell" headers="un_4">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="30%" class="tablecell" headers="un_0"><!-- removed hyperlink href="../process/artifact/ar_prrsp.htm" -->Problem
+    Resolution Plan <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_1 un_82"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_1 un_83"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_1 un_84"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_1 un_85"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_2"><!-- removed hyperlink href="../process/modguide/md_review.htm#XE_Informal_(review_level)" --><font size="2">Informal</font> <!-- end of removed hyperlink --></td>
+    <td width="25%" valign="top" class="tablecell" headers="un_3"><font size="2">Microsoft
+      Word</font></td>
+    <td width="14%" valign="top" class="tablecell" headers="un_4">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="30%" class="tablecell" headers="un_0"><!-- removed hyperlink href="../process/artifact/ar_acpl.htm" -->Product
+    Acceptance Plan <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_1 un_82"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__could_have" --><font size="2">Could</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_1 un_83"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_1 un_84"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_1 un_85"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_2"><!-- removed hyperlink href="../process/modguide/md_review.htm#XE_Informal_(review_level)" --><font size="2">Informal</font> <!-- end of removed hyperlink --></td>
+    <td width="25%" valign="top" class="tablecell" headers="un_3"><font size="2">Microsoft
+      Word</font></td>
+    <td width="14%" valign="top" class="tablecell" headers="un_4">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="30%" class="tablecell" headers="un_0"><!-- removed hyperlink href="../process/artifact/ar_prjms.htm" -->Project
+    Measurements <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_1 un_82"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__could_have" --><font size="2">Could</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_1 un_83"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__could_have" --><font size="2">Could</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_1 un_84"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_1 un_85"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_2"><!-- removed hyperlink href="../process/modguide/md_review.htm#XE_Informal_(review_level)" --><font size="2">Informal</font> <!-- end of removed hyperlink --></td>
+    <td width="25%" valign="top" class="tablecell" headers="un_3"><font size="2">Microsoft
+      Word</font></td>
+    <td width="14%" valign="top" class="tablecell" headers="un_4">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="30%" class="tablecell" headers="un_0"><!-- removed hyperlink href="../process/artifact/ar_qapl.htm" -->Quality
+    Assurance Plan <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_1 un_82"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__could_have" --><font size="2">Could</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_1 un_83"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__could_have" --><font size="2">Could</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_1 un_84"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__could_have" --><font size="2">Could</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_1 un_85"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__could_have" --><font size="2">Could</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_2"><!-- removed hyperlink href="../process/modguide/md_review.htm#XE_Informal_(review_level)" --><font size="2">Informal</font> <!-- end of removed hyperlink --></td>
+    <td width="25%" valign="top" class="tablecell" headers="un_3"><font size="2">Microsoft
+      Word</font></td>
+    <td width="14%" valign="top" class="tablecell" headers="un_4">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="30%" class="tablecell" headers="un_0"><!-- removed hyperlink href="../process/artifact/ar_rvrec.htm" -->Review
+    Record <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_1 un_82"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_1 un_83"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_1 un_84"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_1 un_85"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_2"><!-- removed hyperlink href="../process/modguide/md_review.htm#XE_Informal_(review_level)" --><font size="2">Informal</font> <!-- end of removed hyperlink --></td>
+    <td width="25%" valign="top" class="tablecell" headers="un_3"><font size="2">Microsoft
+      Word</font></td>
+    <td width="14%" valign="top" class="tablecell" headers="un_4">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="30%" class="tablecell" headers="un_0"><!-- removed hyperlink href="../process/artifact/ar_rskls.htm" -->Risk
+    List <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_1 un_82"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_1 un_83"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_1 un_84"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_1 un_85"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_2"><!-- removed hyperlink href="../process/modguide/md_review.htm#XE_Formal-Internal_(review_level)" --><font size="2">Formal-<br>
+    Internal</font> <!-- end of removed hyperlink --></td>
+    <td width="25%" valign="top" class="tablecell" headers="un_3"><font size="2">Microsoft
+      Word</font></td>
+    <td width="14%" valign="top" class="tablecell" headers="un_4">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="30%" class="tablecell" headers="un_0"><!-- removed hyperlink href="../process/artifact/ar_riskpl.htm" -->Risk
+    Management Plan <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_1 un_82"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__could_have" --><font size="2">Could</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_1 un_83"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_1 un_84"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_1 un_85"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_2"><!-- removed hyperlink href="../process/modguide/md_review.htm#XE_Informal_(review_level)" --><font size="2">Informal</font> <!-- end of removed hyperlink --></td>
+    <td width="25%" valign="top" class="tablecell" headers="un_3"><font size="2">Microsoft
+      Word</font></td>
+    <td width="14%" valign="top" class="tablecell" headers="un_4">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="30%" class="tablecell" headers="un_0"><!-- removed hyperlink href="../process/artifact/ar_sdp.htm" -->Software
+    Development Plan (SDP) <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_1 un_82"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__won't_have" --><font size="2">Won't</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_1 un_83"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__could_have" --><font size="2">Could</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_1 un_84"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_1 un_85"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_2"><!-- removed hyperlink href="../process/modguide/md_review.htm#XE_Formal-Internal_(review_level)" --><font size="2">Formal-<br>
+    Internal</font> <!-- end of removed hyperlink --></td>
+    <td width="25%" valign="top" class="tablecell" headers="un_3"><font size="2">Microsoft
+      Word<br>
+      Microsoft Project</font></td>
+    <td width="14%" valign="top" class="tablecell" headers="un_4">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="30%" class="tablecell" headers="un_0"><!-- removed hyperlink href="../process/artifact/ar_stass.htm" -->Status
+    Assessment <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_1 un_82"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__could_have" --><font size="2">Could</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_1 un_83"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_1 un_84"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_1 un_85"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_2"><!-- removed hyperlink href="../process/modguide/md_review.htm#XE_Informal_(review_level)" --><font size="2">Informal</font> <!-- end of removed hyperlink --></td>
+    <td width="25%" valign="top" class="tablecell" headers="un_3"><font size="2">Microsoft
+      Word</font></td>
+    <td width="14%" valign="top" class="tablecell" headers="un_4">&nbsp;</td>
+  </tr>
+</table>
+</center></div>
+
+<h5>Notes on the Work Products</h5>
+<p>The work product Work Order won't be used.&nbsp;</p>
+
+
+<h4><a name="#Environment">Environment</a> <a href="#Top"></a><img src="../../../../core.base_rup/resources/top.gif" alt="To top of page" border="0" width="26" height="20" ></h4>
+<h5>Activity</h5>
+<p>No changes in the activity. For details on the process, see the <!-- removed hyperlink href="../process/workflow/ovu_env.htm" -->Environment: 
+  Overview <!-- end of removed hyperlink -->.</p>
+<h5>Work Products</h5>
+<div align="center">
+
+<table border="1" colspec="L20 L17" width="85%" cellspacing="0">
+  <tr>
+      <th width="30%" rowspan="2" valign="top" class="table_heading" id="un_5">Work 
+        Products</th>
+    <th width="40%" colspan="4" valign="top" class="table_heading" id="un_6"><b>How to
+        use</b></th>
+    <th rowspan="2" valign="top" class="table_heading" id="un_7"><b>Review Details</b></th>
+    <th width="25%" rowspan="2" valign="top" class="table_heading" id="un_8"><b>Tools used</b></th>
+    <th width="15%" rowspan="2" valign="top" class="table_heading" id="un_9"><b>Templates/<br>
+  Examples</b></th>
+  </tr>
+  <tr>
+    <th width="10%" valign="top" class="table_heading" id="un_10" headers="un_6"><b>Incep</b></th>
+    <th width="10%" valign="top" class="table_heading" id="un_11" headers="un_6"><b>Elab</b></th>
+    <th width="10%" valign="top" class="table_heading" id="un_12" headers="un_6"><b>Const</b></th>
+    <th width="10%" valign="top" class="table_heading" id="un_13" headers="un_6"><b>Trans</b></th>
+  </tr>
+  
+  <tr>
+    <td width="30%" class="tablecell" headers="un_5"><!-- removed hyperlink href="../process/artifact/ar_projspecgls.htm" -->Design
+    Guidelines <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_6 un_10">
+    <p><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__won't_have" --><font size="2">Won't</font> <!-- end of removed hyperlink --></p>
+    </td>
+    <td width="10%" valign="top" class="tablecell" headers="un_6 un_11">
+    <p><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></p>
+    </td>
+    <td width="10%" valign="top" class="tablecell" headers="un_6 un_12">
+    <p><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></p>
+    </td>
+    <td width="10%" valign="top" class="tablecell" headers="un_6 un_13">
+    <p><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></p>
+    </td>
+    <td valign="top" class="tablecell" headers="un_7"><!-- removed hyperlink href="../process/modguide/md_review.htm#XE_Informal_(review_level)" --><font size="2">Informal</font> <!-- end of removed hyperlink --></td>
+    <td width="25%" valign="top" class="tablecell" headers="un_8">
+    <font size="2">Microsoft Word</font>
+    </td>
+    <td width="15%" valign="top" class="tablecell" headers="un_9">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="30%" class="tablecell" headers="un_5"><!-- removed hyperlink href="../process/artifact/ar_devcs.htm" -->Development
+    Case <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_6 un_10"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_6 un_11"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_6 un_12"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_6 un_13"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td valign="top" class="tablecell" headers="un_7"><!-- removed hyperlink href="../process/modguide/md_review.htm#XE_Informal_(review_level)" --><font size="2">Informal</font> <!-- end of removed hyperlink --></td>
+    <td width="25%" valign="top" class="tablecell" headers="un_8"><font size="2">Microsoft(R); FrontPage;</font></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_9">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="30%" class="tablecell" headers="un_5"><!-- removed hyperlink href="../process/artifact/ar_supp.htm" -->Development
+    Infrastructure <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_6 un_10"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_6 un_11"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_6 un_12"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_6 un_13"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td valign="top" class="tablecell" headers="un_7"><!-- removed hyperlink href="../process/modguide/md_review.htm#XE_Informal_(review_level)" --><font size="2">Informal</font> <!-- end of removed hyperlink --></td>
+    <td width="25%" valign="top" class="tablecell" headers="un_8"><font size="2">Microsoft
+      Word</font></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_9">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="30%" class="tablecell" headers="un_5"><!-- removed hyperlink href="../process/artifact/ar_deorv.htm" -->Development-Organization
+    Assessment <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_6 un_10"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_6 un_11"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__won't_have" --><font size="2">Won't</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_6 un_12"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__won't_have" --><font size="2">Won't</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_6 un_13"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__won't_have" --><font size="2">Won't</font> <!-- end of removed hyperlink --></td>
+    <td valign="top" class="tablecell" headers="un_7"><!-- removed hyperlink href="../process/modguide/md_review.htm#XE_Informal_(review_level)" --><font size="2">Informal</font> <!-- end of removed hyperlink --></td>
+    <td width="25%" valign="top" class="tablecell" headers="un_8"><font size="2">Microsoft
+      Word</font></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_9">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="30%" class="tablecell" headers="un_5"><!-- removed hyperlink href="../process/artifact/ar_mansg.htm" -->Manual
+    Styleguide <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_6 un_10"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__won't_have" --><font size="2">Won't</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_6 un_11"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__could_have" --><font size="2">Could</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_6 un_12"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_6 un_13"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td valign="top" class="tablecell" headers="un_7"><!-- removed hyperlink href="../process/modguide/md_review.htm#XE_Informal_(review_level)" --><font size="2">Informal</font> <!-- end of removed hyperlink --></td>
+    <td width="25%" valign="top" class="tablecell" headers="un_8"><font size="2">Microsoft
+      Word</font></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_9">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="30%" class="tablecell" headers="un_5">Project-Specific Templates</td>
+    <td width="10%" valign="top" class="tablecell" headers="un_6 un_10"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_6 un_11"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_6 un_12"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_6 un_13"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td valign="top" class="tablecell" headers="un_7"><!-- removed hyperlink href="../process/modguide/md_review.htm#XE_Informal_(review_level)" --><font size="2">Informal</font> <!-- end of removed hyperlink --></td>
+    <td width="25%" valign="top" class="tablecell" headers="un_8"><font size="2">Microsoft
+      Word</font></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_9">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="30%" class="tablecell" headers="un_5"><!-- removed hyperlink href="../process/artifact/ar_projspecgls.htm" -->Programming
+    Guidelines <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_6 un_10"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__won't_have" --><font size="2">Won't</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_6 un_11"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_6 un_12"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_6 un_13"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td valign="top" class="tablecell" headers="un_7"><!-- removed hyperlink href="../process/modguide/md_review.htm#XE_Informal_(review_level)" --><font size="2">Informal</font> <!-- end of removed hyperlink --></td>
+    <td width="25%" valign="top" class="tablecell" headers="un_8"><font size="2">Microsoft
+      Word</font></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_9">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="30%" class="tablecell" headers="un_5"><!-- removed hyperlink href="../process/artifact/ar_projspecgls.htm" -->Test
+    Guidelines <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_6 un_10"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__won't_have" --><font size="2">Won't</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_6 un_11"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_6 un_12"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_6 un_13"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td valign="top" class="tablecell" headers="un_7"><!-- removed hyperlink href="../process/modguide/md_review.htm#XE_Informal_(review_level)" --><font size="2">Informal</font> <!-- end of removed hyperlink --></td>
+    <td width="25%" valign="top" class="tablecell" headers="un_8"><font size="2">Microsoft
+      Word</font></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_9">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="30%" class="tablecell" headers="un_5"><!-- removed hyperlink href="../process/artifact/ar_tools.htm" -->Tools <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_6 un_10"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_6 un_11"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_6 un_12"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_6 un_13"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td valign="top" class="tablecell" headers="un_7"><!-- removed hyperlink href="../process/modguide/md_review.htm#XE_Informal_(review_level)" --><font size="2">Informal</font> <!-- end of removed hyperlink --></td>
+    <td width="25%" valign="top" class="tablecell" headers="un_8"><font size="2">Microsoft Word document</font></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_9">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="30%" class="tablecell" headers="un_5"><!-- removed hyperlink href="../process/artifact/ar_projspecgls.htm" -->Tool
+    Guidelines <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_6 un_10"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__won't_have" --><font size="2">Won't</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_6 un_11"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__could_have" --><font size="2">Could</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_6 un_12"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_6 un_13"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td valign="top" class="tablecell" headers="un_7"><!-- removed hyperlink href="../process/modguide/md_review.htm#XE_Informal_(review_level)" --><font size="2">Informal</font> <!-- end of removed hyperlink --></td>
+    <td width="25%" valign="top" class="tablecell" headers="un_8"><font size="2">Microsoft
+      Word</font></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_9">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="30%" class="tablecell" headers="un_5"><!-- removed hyperlink href="../process/artifact/ar_projspecgls.htm" -->Use-Case
+    Modeling Guidelines <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_6 un_10"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_6 un_11"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_6 un_12"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_6 un_13"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td valign="top" class="tablecell" headers="un_7"><!-- removed hyperlink href="../process/modguide/md_review.htm#XE_Informal_(review_level)" --><font size="2">Informal</font> <!-- end of removed hyperlink --></td>
+    <td width="25%" valign="top" class="tablecell" headers="un_8"><font size="2">Microsoft
+      Word</font></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_9">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="30%" class="tablecell" headers="un_5"><!-- removed hyperlink href="../process/artifact/ar_projspecgls.htm" -->User-Interface
+    Guidelines <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_6 un_10"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__won't_have" --><font size="2">Won't</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_6 un_11"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_6 un_12"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td width="10%" valign="top" class="tablecell" headers="un_6 un_13"><!-- removed hyperlink href="../process/modguide/md_uclaar.htm#XE_artifact__classification_of__must_have" --><font size="2">Must</font> <!-- end of removed hyperlink --></td>
+    <td valign="top" class="tablecell" headers="un_7"><!-- removed hyperlink href="../process/modguide/md_review.htm#XE_Informal_(review_level)" --><font size="2">Informal</font> <!-- end of removed hyperlink --></td>
+    <td width="25%" valign="top" class="tablecell" headers="un_8"><font size="2">Microsoft
+      Word</font></td>
+    <td width="15%" valign="top" class="tablecell" headers="un_9">&nbsp;</td>
+  </tr>
+</table>
+<br>
+</div>
+
+<h3><a name="#Workers">Roles</a> <a href="#Top"></a><img src="../../../../core.base_rup/resources/top.gif" alt="To top of page" border="0" width="26" height="20" ></h3>
+<p>Not applicable.</p>
+<br>
+<br>
+
+
+
+
+
+
+</body>
+
+</html>
+

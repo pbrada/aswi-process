@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_1GGSUNnmEdmO6L4XMImrsA" name="activity_diagram_in_the_use-case_model,7.230899877161861E-305" guid="_1GGSUNnmEdmO6L4XMImrsA" changeDate="2005-06-20T20:08:46.027-0700" version="7.1.0">
+  <mainDescription>&lt;a id=&quot;Top&quot; name=&quot;Top&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    The flow of events of a use case describes what needs to be done by the system to provide value to an actor. It&#xD;
+    consists of a sequence of tasks that together produce something for the actor. The flow of events consists of a basic&#xD;
+    flow, and one or several alternative flows.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    The flow of events of a use case can be described graphically with the help of an activity diagram. Such a diagram&#xD;
+    shows:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        &lt;b>Activity states&lt;/b>, which represent the performance of a task or step within the flow of events.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;a id=&quot;XE_transition_(in_activity_diagrams)__in_business_use-case_model&quot;&#xD;
+        name=&quot;XE_transition_(in_activity_diagrams)__in_business_use-case_model&quot;>&lt;/a>&lt;b>Transitions&lt;/b> that show what&#xD;
+        activity state follows after another. This type of transition is sometimes referred to as a completion transition,&#xD;
+        since it differs from a transition in that it does not require an explicit trigger event, it is triggered by the&#xD;
+        completion of the task the activity state represents.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;a id=&quot;XE_decision_(in_activity_diagrams)__business_use-case_model&quot;&#xD;
+        name=&quot;XE_decision_(in_activity_diagrams)__business_use-case_model&quot;>&lt;/a>&lt;b>Decisions&lt;/b> for which a set of &lt;b>guard&#xD;
+        conditions&lt;/b> are defined. These guard conditions control which transition (of a set of alternative transitions)&#xD;
+        follows once the task has been completed. Decisions and guard conditions allow you to show &lt;b>alternative&#xD;
+        threads&lt;/b> in the flow of events of a use case.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;b>Synchronization bars&lt;/b> which you can use to show parallel subflows. Synchronization bars allow you to show&#xD;
+        &lt;b>concurrent threads&lt;/b> in the flow of events of a use case.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p align=&quot;center&quot;>&#xD;
+    &lt;img height=&quot;495&quot; alt=&quot;Diagram described in accompanying text.&quot; src=&quot;resources/md_act.gif&quot; width=&quot;510&quot; />&#xD;
+&lt;/p>&#xD;
+&lt;p class=&quot;picturetext&quot;>&#xD;
+    A simplified activity diagram for the use case Withdraw Money in the use-case model of an automated teller machine&#xD;
+    (ATM).&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Activity diagram is a special case of a statechart diagram in which all or most of the states are activity states and&#xD;
+    in which all or most of the of the transitions are triggered by completion of actions in the source states.&lt;br />&#xD;
+&lt;/p></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

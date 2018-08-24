@@ -1,0 +1,662 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:org.eclipse.epf.uma.resourcemanager="http:///org/eclipse/epf/uma/resourcemanager.ecore" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1">
+  <org.eclipse.epf.uma.resourcemanager:ResourceManager xmi:id="_9BMUYC5iEeKVavM_dEXkKA" guid="_9BMUYC5iEeKVavM_dEXkKA">
+    <resourceDescriptors xmi:id="_9BMUYS5iEeKVavM_dEXkKA" id="-IH_g_jhSRCK81MewhvAOvw" uri="content.xmi"/>
+  </org.eclipse.epf.uma.resourcemanager:ResourceManager>
+  <org.eclipse.epf.uma:ProcessComponent xmi:id="_89A_AC5iEeKVavM_dEXkKA" name="aswi_iteration" guid="_89A_AC5iEeKVavM_dEXkKA">
+    <methodElementProperty xmi:id="_In8GUBMzEeiuHtBa8rFbkA" name="me_edited" value="true"/>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_gdtjoC6gEeKexfcpBXL2Tw" name="aswi_start_iteration" guid="_gdtjoC6gEeKexfcpBXL2Tw">
+      <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_gduKvC6gEeKexfcpBXL2Tw" name="aswi_start_iteration" guid="_gduKvC6gEeKexfcpBXL2Tw" presentationName="Zahájit iteraci" briefDescription="Na začátku každé iterace je zapotřebí provést úkony jako její plánování a schůzka se zákazníem za účelem zhodnocení minulé iterace a rozvržení nadcházející." superActivities="_89A_AS5iEeKVavM_dEXkKA" breakdownElements="_gduKty6gEeKexfcpBXL2Tw _gduKsC6gEeKexfcpBXL2Tw _gduKsi6gEeKexfcpBXL2Tw _gduKtS6gEeKexfcpBXL2Tw _gduKuy6gEeKexfcpBXL2Tw _gduxwS6gEeKexfcpBXL2Tw _gduKsy6gEeKexfcpBXL2Tw _gdtjoS6gEeKexfcpBXL2Tw _gduKui6gEeKexfcpBXL2Tw _gduKti6gEeKexfcpBXL2Tw _gduxwC6gEeKexfcpBXL2Tw _gduKtC6gEeKexfcpBXL2Tw _ICvbsDAjEeKiTvHIeSo-qw _ICvbsTAjEeKiTvHIeSo-qw _ICvbsjAjEeKiTvHIeSo-qw _ICvbszAjEeKiTvHIeSo-qw _ICvbtDAjEeKiTvHIeSo-qw"/>
+      <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="_gduKsC6gEeKexfcpBXL2Tw" name="aswi_plan_iteration" guid="_gduKsC6gEeKexfcpBXL2Tw" presentationName="Naplánovat iteraci" isPlanned="true" superActivities="_gduKvC6gEeKexfcpBXL2Tw" isSynchronizedWithSource="false" additionallyPerformedBy="_gduKtS6gEeKexfcpBXL2Tw _gduKuy6gEeKexfcpBXL2Tw" mandatoryInput="_gdtjoS6gEeKexfcpBXL2Tw _ICvbsDAjEeKiTvHIeSo-qw" optionalInput="_gduKui6gEeKexfcpBXL2Tw _gduKti6gEeKexfcpBXL2Tw _gduxwC6gEeKexfcpBXL2Tw" output="_gduxwC6gEeKexfcpBXL2Tw _ICvbsDAjEeKiTvHIeSo-qw" performedPrimarilyBy="_gduKsi6gEeKexfcpBXL2Tw">
+        <ownedRules xmi:id="_gduKsS6gEeKexfcpBXL2Tw" name="wpStates" guid="_gduKsS6gEeKexfcpBXL2Tw" body="_KhAosynzEeKYLvS48FbiXw">
+          <methodElementProperty xmi:id="_geDh4C6gEeKexfcpBXL2Tw" name="constraint_wpStates" value="_we-hUC2vEeKtT515Esx8Vg/optionalInput/_54Ha8C2vEeKtT515Esx8Vg/output"/>
+        </ownedRules>
+        <ownedRules xmi:id="_XZVYED_CEeKEWZqXuRDJ4w" name="wpStates" guid="_XZVYED_CEeKEWZqXuRDJ4w" body="_gduxwC6gEeKexfcpBXL2Tw">
+          <methodElementProperty xmi:id="_XZnr8D_CEeKEWZqXuRDJ4w" name="constraint_wpStates" value="_54Ha8C2vEeKtT515Esx8Vg/output"/>
+        </ownedRules>
+        <ownedRules xmi:id="_Y8Vb4D_CEeKEWZqXuRDJ4w" name="wpStates" guid="_Y8Vb4D_CEeKEWZqXuRDJ4w" body="_ICvbsDAjEeKiTvHIeSo-qw">
+          <methodElementProperty xmi:id="_Y8Vb4T_CEeKEWZqXuRDJ4w" name="constraint_wpStates" value="_54Ha8C2vEeKtT515Esx8Vg/output"/>
+        </ownedRules>
+        <Task href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_OpzvUCkdEeK0bd3bdEdbgQ"/>
+        <selectedSteps href="uma://-NXtORBOybK1IPiEajwLGUg#_PTca8JV1EeKPfYuqAVau1w"/>
+        <selectedSteps href="uma://-NXtORBOybK1IPiEajwLGUg#_Yc89IJV1EeKPfYuqAVau1w"/>
+        <selectedSteps href="uma://-NXtORBOybK1IPiEajwLGUg#_fUHpQJV1EeKPfYuqAVau1w"/>
+        <selectedSteps href="uma://-NXtORBOybK1IPiEajwLGUg#_ncTRUJV1EeKPfYuqAVau1w"/>
+        <selectedSteps href="uma://-NXtORBOybK1IPiEajwLGUg#_y5uW4JV1EeKPfYuqAVau1w"/>
+        <selectedSteps href="uma://-NXtORBOybK1IPiEajwLGUg#_ATAsMJV2EeKPfYuqAVau1w"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="_gduKty6gEeKexfcpBXL2Tw" name="aswi_meet_customer" guid="_gduKty6gEeKexfcpBXL2Tw" presentationName="Sejít se se zákazníkem" superActivities="_gduKvC6gEeKexfcpBXL2Tw" isSynchronizedWithSource="false" additionallyPerformedBy="_gduKsy6gEeKexfcpBXL2Tw _gduKuy6gEeKexfcpBXL2Tw" mandatoryInput="_ICvbsTAjEeKiTvHIeSo-qw _ICvbsjAjEeKiTvHIeSo-qw" output="_gduKti6gEeKexfcpBXL2Tw _gduKui6gEeKexfcpBXL2Tw _ICvbsTAjEeKiTvHIeSo-qw _ICvbsjAjEeKiTvHIeSo-qw _ICvbtDAjEeKiTvHIeSo-qw" performedPrimarilyBy="_gduxwS6gEeKexfcpBXL2Tw _gduKtS6gEeKexfcpBXL2Tw">
+        <ownedRules xmi:id="_gduKuC6gEeKexfcpBXL2Tw" name="wpStates" guid="_gduKuC6gEeKexfcpBXL2Tw" body="_KhAosinzEeKYLvS48FbiXw">
+          <methodElementProperty xmi:id="_geDh4S6gEeKexfcpBXL2Tw" name="constraint_wpStates" value="_54Ha8C2vEeKtT515Esx8Vg/output"/>
+        </ownedRules>
+        <ownedRules xmi:id="_gduKuS6gEeKexfcpBXL2Tw" name="wpStates" guid="_gduKuS6gEeKexfcpBXL2Tw" body="_KhAosSnzEeKYLvS48FbiXw">
+          <methodElementProperty xmi:id="_geDh4i6gEeKexfcpBXL2Tw" name="constraint_wpStates" value="_54Ha8C2vEeKtT515Esx8Vg/output"/>
+        </ownedRules>
+        <ownedRules xmi:id="_iDmiYD_CEeKEWZqXuRDJ4w" name="wpStates" guid="_iDmiYD_CEeKEWZqXuRDJ4w" body="_gduKti6gEeKexfcpBXL2Tw">
+          <methodElementProperty xmi:id="_iDmiYT_CEeKEWZqXuRDJ4w" name="constraint_wpStates"/>
+        </ownedRules>
+        <ownedRules xmi:id="_itwSoD_CEeKEWZqXuRDJ4w" name="wpStates" guid="_itwSoD_CEeKEWZqXuRDJ4w" body="_gduKui6gEeKexfcpBXL2Tw">
+          <methodElementProperty xmi:id="_itwSoT_CEeKEWZqXuRDJ4w" name="constraint_wpStates"/>
+        </ownedRules>
+        <ownedRules xmi:id="_kB3l4D_CEeKEWZqXuRDJ4w" name="wpStates" guid="_kB3l4D_CEeKEWZqXuRDJ4w" body="_ICvbsTAjEeKiTvHIeSo-qw">
+          <methodElementProperty xmi:id="_kB3l4T_CEeKEWZqXuRDJ4w" name="constraint_wpStates" value="_54Ha8C2vEeKtT515Esx8Vg/output"/>
+        </ownedRules>
+        <ownedRules xmi:id="_3M4P8D_HEeKEWZqXuRDJ4w" name="wpStates" guid="_3M4P8D_HEeKEWZqXuRDJ4w" body="_ICvbsjAjEeKiTvHIeSo-qw">
+          <methodElementProperty xmi:id="_3M4P8T_HEeKEWZqXuRDJ4w" name="constraint_wpStates" value="_54Ha8C2vEeKtT515Esx8Vg/output"/>
+        </ownedRules>
+        <Task href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_C7FKQCkQEeK0bd3bdEdbgQ"/>
+        <selectedSteps href="uma://-SHdNYtHJc5xpNRSz9Gv3mA#_x8f2QD_ZEeKpyedCZGqBRw"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:RoleDescriptor" xmi:id="_gduKsi6gEeKexfcpBXL2Tw" name="aswi_team_leader" guid="_gduKsi6gEeKexfcpBXL2Tw" presentationName="Vedoucí týmu" isPlanned="false" superActivities="_gduKvC6gEeKexfcpBXL2Tw" modifies="_gduxwC6gEeKexfcpBXL2Tw _ICvbsDAjEeKiTvHIeSo-qw" responsibleFor="_gduxwC6gEeKexfcpBXL2Tw _gdtjoS6gEeKexfcpBXL2Tw">
+        <Role href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_DZhRACjUEeKUV4oljX-9JQ"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:RoleDescriptor" xmi:id="_gduKtS6gEeKexfcpBXL2Tw" name="aswi_team_member" guid="_gduKtS6gEeKexfcpBXL2Tw" presentationName="Člen týmu" isPlanned="false" superActivities="_gduKvC6gEeKexfcpBXL2Tw" modifies="_gduKti6gEeKexfcpBXL2Tw _gduKui6gEeKexfcpBXL2Tw _ICvbsTAjEeKiTvHIeSo-qw _ICvbsjAjEeKiTvHIeSo-qw _ICvbtDAjEeKiTvHIeSo-qw">
+        <Role href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_0BhzUCjTEeKUV4oljX-9JQ"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:RoleDescriptor" xmi:id="_gduKuy6gEeKexfcpBXL2Tw" name="aswi_team" guid="_gduKuy6gEeKexfcpBXL2Tw" presentationName="Vývojový tým" isPlanned="false" superActivities="_gduKvC6gEeKexfcpBXL2Tw" responsibleFor="_ICvbtDAjEeKiTvHIeSo-qw _ICvbsjAjEeKiTvHIeSo-qw _ICvbsTAjEeKiTvHIeSo-qw _ICvbsDAjEeKiTvHIeSo-qw _gduKtC6gEeKexfcpBXL2Tw _gduKti6gEeKexfcpBXL2Tw _gduKui6gEeKexfcpBXL2Tw">
+        <Role href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_6An5MCnqEeKEKJTuEqpfrw"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:RoleDescriptor" xmi:id="_gduxwS6gEeKexfcpBXL2Tw" name="aswi_main_customer" guid="_gduxwS6gEeKexfcpBXL2Tw" presentationName="Kontaktní osoba" isPlanned="false" superActivities="_gduKvC6gEeKexfcpBXL2Tw" modifies="_gduKti6gEeKexfcpBXL2Tw _gduKui6gEeKexfcpBXL2Tw _ICvbsTAjEeKiTvHIeSo-qw _ICvbsjAjEeKiTvHIeSo-qw _ICvbtDAjEeKiTvHIeSo-qw" responsibleFor="_ICvbszAjEeKiTvHIeSo-qw _ICvbsjAjEeKiTvHIeSo-qw _ICvbsTAjEeKiTvHIeSo-qw _gduKti6gEeKexfcpBXL2Tw _gduKui6gEeKexfcpBXL2Tw">
+        <Role href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_udiw4CjUEeKUV4oljX-9JQ"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:RoleDescriptor" xmi:id="_gduKsy6gEeKexfcpBXL2Tw" name="aswi_other_customer" guid="_gduKsy6gEeKexfcpBXL2Tw" presentationName="Další zástupce zákazníka" isPlanned="false" superActivities="_gduKvC6gEeKexfcpBXL2Tw">
+        <Role href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_IMDWcCjVEeKUV4oljX-9JQ"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_gdtjoS6gEeKexfcpBXL2Tw" name="aswi_project_plan" guid="_gdtjoS6gEeKexfcpBXL2Tw" presentationName="Plán projektu" isPlanned="false" superActivities="_gduKvC6gEeKexfcpBXL2Tw">
+        <WorkProduct href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_o7VG4CkTEeK0bd3bdEdbgQ"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_gduKui6gEeKexfcpBXL2Tw" name="aswi_change_request_list" guid="_gduKui6gEeKexfcpBXL2Tw" presentationName="Seznam požadavků na změny" isPlanned="false" isOptional="true" superActivities="_gduKvC6gEeKexfcpBXL2Tw">
+        <WorkProduct href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_yc3AICkWEeK0bd3bdEdbgQ"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_gduKti6gEeKexfcpBXL2Tw" name="aswi_bug_list" guid="_gduKti6gEeKexfcpBXL2Tw" presentationName="Seznam závad" isPlanned="false" isOptional="true" superActivities="_gduKvC6gEeKexfcpBXL2Tw">
+        <WorkProduct href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_B_N6wCkXEeK0bd3bdEdbgQ"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_gduxwC6gEeKexfcpBXL2Tw" name="aswi_iteration_plan" guid="_gduxwC6gEeKexfcpBXL2Tw" presentationName="Plán iterace" isPlanned="false" superActivities="_gduKvC6gEeKexfcpBXL2Tw">
+        <WorkProduct href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_XiDKECkXEeK0bd3bdEdbgQ"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_gduKtC6gEeKexfcpBXL2Tw" name="aswi_meeting_report" guid="_gduKtC6gEeKexfcpBXL2Tw" presentationName="Záznam schůzky" isPlanned="false" isOptional="true" superActivities="_gduKvC6gEeKexfcpBXL2Tw">
+        <WorkProduct href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_YgkW4CkOEeK0bd3bdEdbgQ"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_ICvbsDAjEeKiTvHIeSo-qw" name="aswi_project_page" guid="_ICvbsDAjEeKiTvHIeSo-qw" presentationName="Stránka projektu" isPlanned="false" superActivities="_gduKvC6gEeKexfcpBXL2Tw">
+        <WorkProduct href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_OIw5wCkHEeK0bd3bdEdbgQ"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_ICvbsTAjEeKiTvHIeSo-qw" name="aswi_functional_requirements_list" guid="_ICvbsTAjEeKiTvHIeSo-qw" presentationName="Seznam funkčních požadavků" isPlanned="false" superActivities="_gduKvC6gEeKexfcpBXL2Tw">
+        <WorkProduct href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_M1tyoCppEeKg3ezC6H-3kw"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_ICvbsjAjEeKiTvHIeSo-qw" name="aswi_non-functional_requirements_list" guid="_ICvbsjAjEeKiTvHIeSo-qw" presentationName="Seznam mimofunkčních požadavků" isPlanned="false" superActivities="_gduKvC6gEeKexfcpBXL2Tw">
+        <WorkProduct href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_tewhYCppEeKg3ezC6H-3kw"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_ICvbszAjEeKiTvHIeSo-qw" name="aswi_project_topic" guid="_ICvbszAjEeKiTvHIeSo-qw" presentationName="Zadání projektu" isPlanned="false" superActivities="_gduKvC6gEeKexfcpBXL2Tw">
+        <WorkProduct href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_kSctMC8nEeKz94mGtucTWw"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_ICvbtDAjEeKiTvHIeSo-qw" name="aswi_customer_meeting_report" guid="_ICvbtDAjEeKiTvHIeSo-qw" presentationName="Záznam schůzky se zákazníkem" isPlanned="false" superActivities="_gduKvC6gEeKexfcpBXL2Tw">
+        <WorkProduct href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_lk93oC9sEeKH54VgI3aDow"/>
+      </processElements>
+    </childPackages>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_gduxwi6gEeKexfcpBXL2Tw" name="aswi_procede_in_development" guid="_gduxwi6gEeKexfcpBXL2Tw">
+      <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_gd1fdC6gEeKexfcpBXL2Tw" name="aswi_procede_in_development" guid="_gd1fdC6gEeKexfcpBXL2Tw" presentationName="Posunout vývoj" briefDescription="Aktivita zahrnuje veškeré nutné úpravy plánů, či jiných pracovních položek v projektu." isPlanned="false" superActivities="_89A_AS5iEeKVavM_dEXkKA" isOngoing="true" linkToPredecessor="_JErVwT-5EeKEWZqXuRDJ4w" breakdownElements="_497hYD_IEeKEWZqXuRDJ4w _gd0RVC6gEeKexfcpBXL2Tw _gdx1FC6gEeKexfcpBXL2Tw _gd0RUi6gEeKexfcpBXL2Tw _gd1fcS6gEeKexfcpBXL2Tw _gdvY1C6gEeKexfcpBXL2Tw _gd1fcy6gEeKexfcpBXL2Tw _gd1fci6gEeKexfcpBXL2Tw _gd1fcC6gEeKexfcpBXL2Tw _gd04Yy6gEeKexfcpBXL2Tw _gduxxS6gEeKexfcpBXL2Tw _gdycIC6gEeKexfcpBXL2Tw _gdx1Fi6gEeKexfcpBXL2Tw _gd04YS6gEeKexfcpBXL2Tw _gdycIy6gEeKexfcpBXL2Tw _gd04Yi6gEeKexfcpBXL2Tw _gdzqQy6gEeKexfcpBXL2Tw _gdzDNC6gEeKexfcpBXL2Tw _gd0RUC6gEeKexfcpBXL2Tw _gdycJC6gEeKexfcpBXL2Tw _gdx1Ey6gEeKexfcpBXL2Tw _gdycIi6gEeKexfcpBXL2Tw _gdvY0C6gEeKexfcpBXL2Tw _gdzDOS6gEeKexfcpBXL2Tw _gdvY0y6gEeKexfcpBXL2Tw _gdzqQS6gEeKexfcpBXL2Tw _gd0RVS6gEeKexfcpBXL2Tw _gd0RUS6gEeKexfcpBXL2Tw _gduxxC6gEeKexfcpBXL2Tw _gdxOCC6gEeKexfcpBXL2Tw _gdzqRC6gEeKexfcpBXL2Tw _gd0RUy6gEeKexfcpBXL2Tw _gdzqQi6gEeKexfcpBXL2Tw _Pj72oLlnEeKAQIhutdGAxA _QZygkLlnEeKAQIhutdGAxA _nRAXQD8FEeKg_b9GpyQkNg _nRA-UD8FEeKg_b9GpyQkNg _nRA-UT8FEeKg_b9GpyQkNg _4-BoAD_IEeKEWZqXuRDJ4w _TRk0UD_JEeKEWZqXuRDJ4w _TRk0UT_JEeKEWZqXuRDJ4w _TRk0Uj_JEeKEWZqXuRDJ4w _Fn19UD_LEeKEWZqXuRDJ4w _Pj72oblnEeKAQIhutdGAxA _Pj72orlnEeKAQIhutdGAxA"/>
+      <processElements xsi:type="org.eclipse.epf.uma:RoleDescriptor" xmi:id="_gd0RVC6gEeKexfcpBXL2Tw" name="aswi_team" guid="_gd0RVC6gEeKexfcpBXL2Tw" presentationName="Vývojový tým" isPlanned="false" superActivities="_gd1fdC6gEeKexfcpBXL2Tw" modifies="_gdx1Fi6gEeKexfcpBXL2Tw _gd04Yy6gEeKexfcpBXL2Tw _gd04YS6gEeKexfcpBXL2Tw _gduxxS6gEeKexfcpBXL2Tw _gdzqQy6gEeKexfcpBXL2Tw _gdzDNC6gEeKexfcpBXL2Tw _TRk0UD_JEeKEWZqXuRDJ4w _gdycJC6gEeKexfcpBXL2Tw _TRk0UT_JEeKEWZqXuRDJ4w _gd0RVS6gEeKexfcpBXL2Tw _gduxxC6gEeKexfcpBXL2Tw _gd1fci6gEeKexfcpBXL2Tw _Fn19UD_LEeKEWZqXuRDJ4w _gdvY0y6gEeKexfcpBXL2Tw _gdycIy6gEeKexfcpBXL2Tw _gd0RUS6gEeKexfcpBXL2Tw _gdxOCC6gEeKexfcpBXL2Tw _Pj72orlnEeKAQIhutdGAxA _gdycIC6gEeKexfcpBXL2Tw _nRA-UT8FEeKg_b9GpyQkNg" responsibleFor="_TRk0Uj_JEeKEWZqXuRDJ4w _TRk0UT_JEeKEWZqXuRDJ4w _TRk0UD_JEeKEWZqXuRDJ4w _nRA-UT8FEeKg_b9GpyQkNg _gdzqQi6gEeKexfcpBXL2Tw _gd0RUy6gEeKexfcpBXL2Tw _gdzqRC6gEeKexfcpBXL2Tw _gdxOCC6gEeKexfcpBXL2Tw _gduxxC6gEeKexfcpBXL2Tw _gd0RUS6gEeKexfcpBXL2Tw _gd0RVS6gEeKexfcpBXL2Tw _gdzqQS6gEeKexfcpBXL2Tw _gdvY0y6gEeKexfcpBXL2Tw _gdzDOS6gEeKexfcpBXL2Tw _gdvY0C6gEeKexfcpBXL2Tw _gdycIi6gEeKexfcpBXL2Tw _gdx1Ey6gEeKexfcpBXL2Tw _gdycJC6gEeKexfcpBXL2Tw _gd0RUC6gEeKexfcpBXL2Tw _gdzDNC6gEeKexfcpBXL2Tw _gdzqQy6gEeKexfcpBXL2Tw _gd04Yi6gEeKexfcpBXL2Tw _gdycIy6gEeKexfcpBXL2Tw _gd04YS6gEeKexfcpBXL2Tw _gdx1Fi6gEeKexfcpBXL2Tw _gdycIC6gEeKexfcpBXL2Tw _gduxxS6gEeKexfcpBXL2Tw _gd04Yy6gEeKexfcpBXL2Tw _gd1fci6gEeKexfcpBXL2Tw _gdvY1C6gEeKexfcpBXL2Tw _gd1fcS6gEeKexfcpBXL2Tw _gd0RUi6gEeKexfcpBXL2Tw _gdx1FC6gEeKexfcpBXL2Tw">
+        <Role href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_6An5MCnqEeKEKJTuEqpfrw"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_gdx1FC6gEeKexfcpBXL2Tw" name="aswi_develop_policies" guid="_gdx1FC6gEeKexfcpBXL2Tw" presentationName="Vývojářské konvence" isPlanned="false" isOptional="true" superActivities="_gd1fdC6gEeKexfcpBXL2Tw">
+        <WorkProduct href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_3HrEQCkoEeKoH7tlsUAjEg"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_gd0RUi6gEeKexfcpBXL2Tw" name="aswi_scm_policies" guid="_gd0RUi6gEeKexfcpBXL2Tw" presentationName="Konvence používání SCM nástrojů" isPlanned="false" isOptional="true" superActivities="_gd1fdC6gEeKexfcpBXL2Tw">
+        <WorkProduct href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_IWAKwCkkEeKoH7tlsUAjEg"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_gd1fcS6gEeKexfcpBXL2Tw" name="aswi_bug_list" guid="_gd1fcS6gEeKexfcpBXL2Tw" presentationName="Seznam závad" isPlanned="false" hasMultipleOccurrences="true" isOptional="true" superActivities="_gd1fdC6gEeKexfcpBXL2Tw">
+        <WorkProduct href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_B_N6wCkXEeK0bd3bdEdbgQ"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_gdvY1C6gEeKexfcpBXL2Tw" name="aswi_change_request_list" guid="_gdvY1C6gEeKexfcpBXL2Tw" presentationName="Seznam požadavků na změny" isPlanned="false" hasMultipleOccurrences="true" isOptional="true" superActivities="_gd1fdC6gEeKexfcpBXL2Tw">
+        <WorkProduct href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_yc3AICkWEeK0bd3bdEdbgQ"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_gd1fcy6gEeKexfcpBXL2Tw" name="aswi_iteration_plan" guid="_gd1fcy6gEeKexfcpBXL2Tw" presentationName="Plán iterace" isPlanned="false" superActivities="_gd1fdC6gEeKexfcpBXL2Tw">
+        <WorkProduct href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_XiDKECkXEeK0bd3bdEdbgQ"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_gd1fci6gEeKexfcpBXL2Tw" name="aswi_project_page" guid="_gd1fci6gEeKexfcpBXL2Tw" presentationName="Stránka projektu" isPlanned="false" superActivities="_gd1fdC6gEeKexfcpBXL2Tw">
+        <WorkProduct href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_OIw5wCkHEeK0bd3bdEdbgQ"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_gd1fcC6gEeKexfcpBXL2Tw" name="aswi_project_plan" guid="_gd1fcC6gEeKexfcpBXL2Tw" presentationName="Plán projektu" isPlanned="false" superActivities="_gd1fdC6gEeKexfcpBXL2Tw">
+        <WorkProduct href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_o7VG4CkTEeK0bd3bdEdbgQ"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_gd04ZS6gEeKexfcpBXL2Tw" guid="_gd04ZS6gEeKexfcpBXL2Tw"/>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_gd04Yy6gEeKexfcpBXL2Tw" name="aswi_executable_architecture" guid="_gd04Yy6gEeKexfcpBXL2Tw" presentationName="Spustitelná architektura" isPlanned="false" superActivities="_gd1fdC6gEeKexfcpBXL2Tw">
+        <WorkProduct href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_aKXewCqZEeKro62q_nzUjw"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_gduxxS6gEeKexfcpBXL2Tw" name="aswi_additional_documents" guid="_gduxxS6gEeKexfcpBXL2Tw" presentationName="Ostatní dokumenty" isPlanned="false" superActivities="_gd1fdC6gEeKexfcpBXL2Tw">
+        <WorkProduct href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_mTUXACwtEeKba8v-LXyWxg"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_gdycIC6gEeKexfcpBXL2Tw" name="aswi_system_documentation" guid="_gdycIC6gEeKexfcpBXL2Tw" presentationName="Programová dokumentace" isPlanned="false" superActivities="_gd1fdC6gEeKexfcpBXL2Tw">
+        <WorkProduct href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_Pg4L4CwrEeKba8v-LXyWxg"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_gdx1Fi6gEeKexfcpBXL2Tw" name="aswi_system_implementation" guid="_gdx1Fi6gEeKexfcpBXL2Tw" presentationName="Implementace systému" isPlanned="false" superActivities="_gd1fdC6gEeKexfcpBXL2Tw">
+        <WorkProduct href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_9TG7QCwnEeKba8v-LXyWxg"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_gd04YS6gEeKexfcpBXL2Tw" name="aswi_tests_implementation" guid="_gd04YS6gEeKexfcpBXL2Tw" presentationName="Implementované testy" isPlanned="false" superActivities="_gd1fdC6gEeKexfcpBXL2Tw">
+        <WorkProduct href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_ie6x8CwlEeKba8v-LXyWxg"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_gdycIy6gEeKexfcpBXL2Tw" name="aswi_user_documentation" guid="_gdycIy6gEeKexfcpBXL2Tw" presentationName="Uživatelská dokumentace" isPlanned="false" superActivities="_gd1fdC6gEeKexfcpBXL2Tw">
+        <WorkProduct href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_NKtJQCwsEeKba8v-LXyWxg"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_gd04Yi6gEeKexfcpBXL2Tw" name="aswi_actors_list" guid="_gd04Yi6gEeKexfcpBXL2Tw" presentationName="Seznam aktérů" isPlanned="false" superActivities="_gd1fdC6gEeKexfcpBXL2Tw">
+        <WorkProduct href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_V_p5ACpxEeKg3ezC6H-3kw"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_gdzqQy6gEeKexfcpBXL2Tw" name="aswi_additional_models" guid="_gdzqQy6gEeKexfcpBXL2Tw" presentationName="Přídavné modely" isPlanned="false" superActivities="_gd1fdC6gEeKexfcpBXL2Tw">
+        <WorkProduct href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_n-YOwCp5EeKg3ezC6H-3kw"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_gdzDNC6gEeKexfcpBXL2Tw" name="aswi_architecture_document" guid="_gdzDNC6gEeKexfcpBXL2Tw" presentationName="Dokument Architektura" isPlanned="false" superActivities="_gd1fdC6gEeKexfcpBXL2Tw" deliverableParts="_gd2GgC6gEeKexfcpBXL2Tw _gd1fdS6gEeKexfcpBXL2Tw _gdzDNS6gEeKexfcpBXL2Tw _4L0NgTitEeKy1NhQEbLI_Q _4L0NgjitEeKy1NhQEbLI_Q _4L0NgzitEeKy1NhQEbLI_Q">
+        <WorkProduct href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_BGBRgCqOEeKro62q_nzUjw"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_gd0RUC6gEeKexfcpBXL2Tw" name="aswi_candidate_architecture" guid="_gd0RUC6gEeKexfcpBXL2Tw" presentationName="Kandidátní architektura" isPlanned="false" superActivities="_gd1fdC6gEeKexfcpBXL2Tw">
+        <WorkProduct href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_YOj1ACp7EeKg3ezC6H-3kw"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_gdycJC6gEeKexfcpBXL2Tw" name="aswi_era_model" guid="_gdycJC6gEeKexfcpBXL2Tw" presentationName="ERA model" isPlanned="false" superActivities="_gd1fdC6gEeKexfcpBXL2Tw">
+        <WorkProduct href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_OnVvMCqTEeKro62q_nzUjw"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_gdx1Ey6gEeKexfcpBXL2Tw" name="aswi_functional_requirements_list" guid="_gdx1Ey6gEeKexfcpBXL2Tw" presentationName="Seznam funkčních požadavků" isPlanned="false" superActivities="_gd1fdC6gEeKexfcpBXL2Tw">
+        <WorkProduct href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_M1tyoCppEeKg3ezC6H-3kw"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_gdycIi6gEeKexfcpBXL2Tw" name="aswi_glossary" guid="_gdycIi6gEeKexfcpBXL2Tw" presentationName="Glosář" isPlanned="false" superActivities="_gd1fdC6gEeKexfcpBXL2Tw">
+        <WorkProduct href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_5D6m4CnKEeKEKJTuEqpfrw"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_gdvY0C6gEeKexfcpBXL2Tw" name="aswi_non-functional_requirements_list" guid="_gdvY0C6gEeKexfcpBXL2Tw" presentationName="Seznam mimofunkčních požadavků" isPlanned="false" superActivities="_gd1fdC6gEeKexfcpBXL2Tw">
+        <WorkProduct href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_tewhYCppEeKg3ezC6H-3kw"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_gdzDOS6gEeKexfcpBXL2Tw" name="aswi_risks_list" guid="_gdzDOS6gEeKexfcpBXL2Tw" presentationName="Popis rizik" isPlanned="false" superActivities="_gd1fdC6gEeKexfcpBXL2Tw">
+        <WorkProduct href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_hpBd8CpzEeKg3ezC6H-3kw"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_gdvY0y6gEeKexfcpBXL2Tw" name="aswi_srs" guid="_gdvY0y6gEeKexfcpBXL2Tw" presentationName="Dokument specifikace požadavků" isPlanned="false" superActivities="_gd1fdC6gEeKexfcpBXL2Tw">
+        <WorkProduct href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_6ShmcCp3EeKg3ezC6H-3kw"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_gdzqQS6gEeKexfcpBXL2Tw" name="aswi_test_cases" guid="_gdzqQS6gEeKexfcpBXL2Tw" presentationName="Testovací případy" isPlanned="false" superActivities="_gd1fdC6gEeKexfcpBXL2Tw">
+        <WorkProduct href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_cdEWoCqYEeKro62q_nzUjw"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_gd0RVS6gEeKexfcpBXL2Tw" name="aswi_requirements_description" guid="_gd0RVS6gEeKexfcpBXL2Tw" presentationName="Popis požadavků" isPlanned="false" superActivities="_gd1fdC6gEeKexfcpBXL2Tw">
+        <WorkProduct href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_uMZ4QCpuEeKg3ezC6H-3kw"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_gd0RUS6gEeKexfcpBXL2Tw" name="aswi_ui_prototypes" guid="_gd0RUS6gEeKexfcpBXL2Tw" presentationName="Prototypy uživatelských rozhraní" isPlanned="false" superActivities="_gd1fdC6gEeKexfcpBXL2Tw">
+        <WorkProduct href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_J6prgCpwEeKg3ezC6H-3kw"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_gduxxC6gEeKexfcpBXL2Tw" name="aswi_requirements_model" guid="_gduxxC6gEeKexfcpBXL2Tw" presentationName="Model požadavků" isPlanned="false" superActivities="_gd1fdC6gEeKexfcpBXL2Tw">
+        <WorkProduct href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_LR9O8CprEeKg3ezC6H-3kw"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_gdxOCC6gEeKexfcpBXL2Tw" name="aswi_vision" guid="_gdxOCC6gEeKexfcpBXL2Tw" presentationName="Dokument Vize produktu" isPlanned="false" superActivities="_gd1fdC6gEeKexfcpBXL2Tw" deliverableParts="_gdx1FS6gEeKexfcpBXL2Tw _gd04ZC6gEeKexfcpBXL2Tw _INRQsDAjEeKiTvHIeSo-qw _gdycIS6gEeKexfcpBXL2Tw _INRQsTAjEeKiTvHIeSo-qw _4L0NgDitEeKy1NhQEbLI_Q _gdxOCS6gEeKexfcpBXL2Tw">
+        <WorkProduct href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_nlEjcCpkEeKg3ezC6H-3kw"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_gdzqRC6gEeKexfcpBXL2Tw" name="aswi_develop_tools" guid="_gdzqRC6gEeKexfcpBXL2Tw" presentationName="Vývojové prostředky" isPlanned="false" superActivities="_gd1fdC6gEeKexfcpBXL2Tw">
+        <WorkProduct href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_dB10gCnQEeKEKJTuEqpfrw"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_gdxOCS6gEeKexfcpBXL2Tw" name="aswi_project_plan" guid="_gdxOCS6gEeKexfcpBXL2Tw" presentationName="Plán projektu" isPlanned="false">
+        <WorkProduct href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_o7VG4CkTEeK0bd3bdEdbgQ"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_gdx1FS6gEeKexfcpBXL2Tw" name="aswi_functional_requirements_list" guid="_gdx1FS6gEeKexfcpBXL2Tw" presentationName="Seznam funkčních požadavků" isPlanned="false">
+        <WorkProduct href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_M1tyoCppEeKg3ezC6H-3kw"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_gd04ZC6gEeKexfcpBXL2Tw" name="aswi_non-functional_requirements_list" guid="_gd04ZC6gEeKexfcpBXL2Tw" presentationName="Seznam mimofunkčních požadavků" isPlanned="false">
+        <WorkProduct href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_tewhYCppEeKg3ezC6H-3kw"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_gdycIS6gEeKexfcpBXL2Tw" name="aswi_risks_list" guid="_gdycIS6gEeKexfcpBXL2Tw" presentationName="Popis rizik" isPlanned="false">
+        <WorkProduct href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_hpBd8CpzEeKg3ezC6H-3kw"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_gd2GgC6gEeKexfcpBXL2Tw" name="aswi_era_model" guid="_gd2GgC6gEeKexfcpBXL2Tw" presentationName="ERA model" isPlanned="false">
+        <WorkProduct href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_OnVvMCqTEeKro62q_nzUjw"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_gd1fdS6gEeKexfcpBXL2Tw" name="aswi_additional_models" guid="_gd1fdS6gEeKexfcpBXL2Tw" presentationName="Přídavné modely" isPlanned="false">
+        <WorkProduct href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_n-YOwCp5EeKg3ezC6H-3kw"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_gdzDNS6gEeKexfcpBXL2Tw" name="aswi_candidate_architecture" guid="_gdzDNS6gEeKexfcpBXL2Tw" presentationName="Kandidátní architektura" isPlanned="false">
+        <WorkProduct href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_YOj1ACp7EeKg3ezC6H-3kw"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_gd0RUy6gEeKexfcpBXL2Tw" name="aswi_deployment plan" guid="_gd0RUy6gEeKexfcpBXL2Tw" presentationName="Plán nasazení" isPlanned="false" superActivities="_gd1fdC6gEeKexfcpBXL2Tw">
+        <WorkProduct href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_IcDfcCxFEeK9G72Y0pXoVw"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_gdzqQi6gEeKexfcpBXL2Tw" name="aswi_fallback_plan" guid="_gdzqQi6gEeKexfcpBXL2Tw" presentationName="Havarijní plán" isPlanned="false" superActivities="_gd1fdC6gEeKexfcpBXL2Tw">
+        <WorkProduct href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_wixgsCxFEeK9G72Y0pXoVw"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_INRQsDAjEeKiTvHIeSo-qw" name="aswi_project_topic" guid="_INRQsDAjEeKiTvHIeSo-qw" presentationName="Zadání projektu" isPlanned="false">
+        <WorkProduct href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_kSctMC8nEeKz94mGtucTWw"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_INRQsTAjEeKiTvHIeSo-qw" name="aswi_stakeholders_list" guid="_INRQsTAjEeKiTvHIeSo-qw" presentationName="Seznam stakeholderů" isPlanned="false">
+        <WorkProduct href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_33hZADAcEeKlGeKA-dTFIA"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_4L0NgDitEeKy1NhQEbLI_Q" name="aswi_production_environment_knowledge" guid="_4L0NgDitEeKy1NhQEbLI_Q" presentationName="Informace o produkčním prostředí" isPlanned="false">
+        <WorkProduct href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_9MBp8DPJEeKtnbVmxqJ4qQ"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_4L0NgTitEeKy1NhQEbLI_Q" name="aswi_develop_policies" guid="_4L0NgTitEeKy1NhQEbLI_Q" presentationName="Vývojářské konvence" isPlanned="false">
+        <WorkProduct href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_3HrEQCkoEeKoH7tlsUAjEg"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_4L0NgjitEeKy1NhQEbLI_Q" name="aswi_project_topic" guid="_4L0NgjitEeKy1NhQEbLI_Q" presentationName="Zadání projektu" isPlanned="false">
+        <WorkProduct href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_kSctMC8nEeKz94mGtucTWw"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_4L0NgzitEeKy1NhQEbLI_Q" name="aswi_production_environment_knowledge" guid="_4L0NgzitEeKy1NhQEbLI_Q" presentationName="Informace o produkčním prostředí" isPlanned="false">
+        <WorkProduct href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_9MBp8DPJEeKtnbVmxqJ4qQ"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="_nRAXQD8FEeKg_b9GpyQkNg" name="aswi_tag_stable_builds" guid="_nRAXQD8FEeKg_b9GpyQkNg" presentationName="Vytvářet a označovat stabilní verze" hasMultipleOccurrences="true" isOptional="true" superActivities="_gd1fdC6gEeKexfcpBXL2Tw" isEventDriven="true" mandatoryInput="_gdx1Fi6gEeKexfcpBXL2Tw _nRA-UD8FEeKg_b9GpyQkNg" output="_nRA-UT8FEeKg_b9GpyQkNg" performedPrimarilyBy="_gd0RVC6gEeKexfcpBXL2Tw">
+        <Task href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_JKkpwCwuEeKba8v-LXyWxg"/>
+        <selectedSteps href="uma://-UvgUW4mkYIi51yokeDkfZw#_zq7b4CwuEeKba8v-LXyWxg"/>
+        <selectedSteps href="uma://-UvgUW4mkYIi51yokeDkfZw#_1q7kwCwuEeKba8v-LXyWxg"/>
+        <selectedSteps href="uma://-UvgUW4mkYIi51yokeDkfZw#_3OUqICwuEeKba8v-LXyWxg"/>
+        <selectedSteps href="uma://-UvgUW4mkYIi51yokeDkfZw#_4rJ0gCwuEeKba8v-LXyWxg"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_nRA-UD8FEeKg_b9GpyQkNg" name="aswi_test_results" guid="_nRA-UD8FEeKg_b9GpyQkNg" presentationName="Výsledky testů" isPlanned="false" superActivities="_gd1fdC6gEeKexfcpBXL2Tw">
+        <WorkProduct href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_XqFkICwqEeKba8v-LXyWxg"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_nRA-UT8FEeKg_b9GpyQkNg" name="aswi_internal_release" guid="_nRA-UT8FEeKg_b9GpyQkNg" presentationName="Průběžná stabilní verze systému" isPlanned="false" superActivities="_gd1fdC6gEeKexfcpBXL2Tw">
+        <WorkProduct href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_J9HrkCwvEeKba8v-LXyWxg"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_JErVwT-5EeKEWZqXuRDJ4w" guid="_JErVwT-5EeKEWZqXuRDJ4w" pred="_gduKvC6gEeKexfcpBXL2Tw"/>
+      <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="_497hYD_IEeKEWZqXuRDJ4w" name="aswi_replan_project" guid="_497hYD_IEeKEWZqXuRDJ4w" presentationName="Upravit plán projektu" superActivities="_gd1fdC6gEeKexfcpBXL2Tw" isEventDriven="true" additionallyPerformedBy="_gd0RVC6gEeKexfcpBXL2Tw" mandatoryInput="_gd1fcC6gEeKexfcpBXL2Tw _gd1fcy6gEeKexfcpBXL2Tw" optionalInput="_gdvY1C6gEeKexfcpBXL2Tw _gd1fcS6gEeKexfcpBXL2Tw" output="_gd1fcC6gEeKexfcpBXL2Tw" performedPrimarilyBy="_4-BoAD_IEeKEWZqXuRDJ4w">
+        <ownedRules xmi:id="_7lTzUD_IEeKEWZqXuRDJ4w" name="wpStates" guid="_7lTzUD_IEeKEWZqXuRDJ4w" body="_gd1fcC6gEeKexfcpBXL2Tw">
+          <methodElementProperty xmi:id="_7lZ58D_IEeKEWZqXuRDJ4w" name="constraint_wpStates" value="_54Ha8C2vEeKtT515Esx8Vg/output"/>
+        </ownedRules>
+        <Task href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_ZoOlsCkSEeK0bd3bdEdbgQ"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:RoleDescriptor" xmi:id="_4-BoAD_IEeKEWZqXuRDJ4w" name="aswi_team_leader" guid="_4-BoAD_IEeKEWZqXuRDJ4w" presentationName="Vedoucí týmu" isPlanned="false" superActivities="_gd1fdC6gEeKexfcpBXL2Tw" modifies="_gd1fcC6gEeKexfcpBXL2Tw" responsibleFor="_Fn19UD_LEeKEWZqXuRDJ4w _gd1fcC6gEeKexfcpBXL2Tw _gd1fcy6gEeKexfcpBXL2Tw">
+        <Role href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_DZhRACjUEeKUV4oljX-9JQ"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_TRk0UD_JEeKEWZqXuRDJ4w" name="aswi_database_script" guid="_TRk0UD_JEeKEWZqXuRDJ4w" presentationName="Skript databáze" isPlanned="false" superActivities="_gd1fdC6gEeKexfcpBXL2Tw">
+        <WorkProduct href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_WkZVgDPMEeKtnbVmxqJ4qQ"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_TRk0UT_JEeKEWZqXuRDJ4w" name="aswi_infrastructure" guid="_TRk0UT_JEeKEWZqXuRDJ4w" presentationName="Vývojářská infrastruktura" isPlanned="false" superActivities="_gd1fdC6gEeKexfcpBXL2Tw" deliverableParts="_2R5RkD_LEeKEWZqXuRDJ4w _2R5RkT_LEeKEWZqXuRDJ4w">
+        <WorkProduct href="uma://_jk5eQCjSEeKUV4oljX-9JQ#__ckDMC8pEeKz94mGtucTWw"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_TRk0Uj_JEeKEWZqXuRDJ4w" name="aswi_stakeholders_list" guid="_TRk0Uj_JEeKEWZqXuRDJ4w" presentationName="Seznam stakeholderů" isPlanned="false" superActivities="_gd1fdC6gEeKexfcpBXL2Tw">
+        <WorkProduct href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_33hZADAcEeKlGeKA-dTFIA"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_Fn19UD_LEeKEWZqXuRDJ4w" name="aswi_project_retrospective" guid="_Fn19UD_LEeKEWZqXuRDJ4w" presentationName="Retrospektiva projektu" isPlanned="false" superActivities="_gd1fdC6gEeKexfcpBXL2Tw">
+        <WorkProduct href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_YIREMCxGEeK9G72Y0pXoVw"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_2R5RkD_LEeKEWZqXuRDJ4w" name="aswi_scm_policies" guid="_2R5RkD_LEeKEWZqXuRDJ4w" presentationName="Konvence používání SCM nástrojů" isPlanned="false">
+        <WorkProduct href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_IWAKwCkkEeKoH7tlsUAjEg"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_2R5RkT_LEeKEWZqXuRDJ4w" name="aswi_project_page" guid="_2R5RkT_LEeKEWZqXuRDJ4w" presentationName="Stránka projektu" isPlanned="false">
+        <WorkProduct href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_OIw5wCkHEeK0bd3bdEdbgQ"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="_Pj72oLlnEeKAQIhutdGAxA" name="aswi_update_artifacts" guid="_Pj72oLlnEeKAQIhutdGAxA" presentationName="Upravit artefakty" superActivities="_gd1fdC6gEeKexfcpBXL2Tw" additionallyPerformedBy="_gd0RVC6gEeKexfcpBXL2Tw" mandatoryInput="_gd1fcS6gEeKexfcpBXL2Tw _gdvY1C6gEeKexfcpBXL2Tw" optionalInput="_gdx1FC6gEeKexfcpBXL2Tw _gd0RUi6gEeKexfcpBXL2Tw _gd1fcy6gEeKexfcpBXL2Tw _gd1fci6gEeKexfcpBXL2Tw _gd1fcC6gEeKexfcpBXL2Tw _gduxxS6gEeKexfcpBXL2Tw _gdycIC6gEeKexfcpBXL2Tw _gdx1Fi6gEeKexfcpBXL2Tw _gd04YS6gEeKexfcpBXL2Tw _gdycIy6gEeKexfcpBXL2Tw _gd04Yi6gEeKexfcpBXL2Tw _gdzqQy6gEeKexfcpBXL2Tw _gdzDNC6gEeKexfcpBXL2Tw _gd0RUC6gEeKexfcpBXL2Tw _gdycJC6gEeKexfcpBXL2Tw _gdx1Ey6gEeKexfcpBXL2Tw _gdycIi6gEeKexfcpBXL2Tw _gdvY0C6gEeKexfcpBXL2Tw _gdzDOS6gEeKexfcpBXL2Tw _gdvY0y6gEeKexfcpBXL2Tw _gdzqQS6gEeKexfcpBXL2Tw _gd0RVS6gEeKexfcpBXL2Tw _gd0RUS6gEeKexfcpBXL2Tw _gduxxC6gEeKexfcpBXL2Tw _gdxOCC6gEeKexfcpBXL2Tw _gdzqRC6gEeKexfcpBXL2Tw _gd0RUy6gEeKexfcpBXL2Tw _gdzqQi6gEeKexfcpBXL2Tw _TRk0UD_JEeKEWZqXuRDJ4w _gd04Yy6gEeKexfcpBXL2Tw _TRk0UT_JEeKEWZqXuRDJ4w _TRk0Uj_JEeKEWZqXuRDJ4w _Pj72orlnEeKAQIhutdGAxA" output="_gduxxS6gEeKexfcpBXL2Tw _gdycIC6gEeKexfcpBXL2Tw _gdx1Fi6gEeKexfcpBXL2Tw _gd04YS6gEeKexfcpBXL2Tw _gdycIy6gEeKexfcpBXL2Tw _gd04Yi6gEeKexfcpBXL2Tw _gdzqQy6gEeKexfcpBXL2Tw _gdzDNC6gEeKexfcpBXL2Tw _gd0RUC6gEeKexfcpBXL2Tw _gdycJC6gEeKexfcpBXL2Tw _gdx1Ey6gEeKexfcpBXL2Tw _gdycIi6gEeKexfcpBXL2Tw _gdvY0C6gEeKexfcpBXL2Tw _gdzDOS6gEeKexfcpBXL2Tw _gdvY0y6gEeKexfcpBXL2Tw _gdzqQS6gEeKexfcpBXL2Tw _gd0RVS6gEeKexfcpBXL2Tw _gd0RUS6gEeKexfcpBXL2Tw _gduxxC6gEeKexfcpBXL2Tw _gdxOCC6gEeKexfcpBXL2Tw _gdx1FC6gEeKexfcpBXL2Tw _gdzqRC6gEeKexfcpBXL2Tw _gd0RUi6gEeKexfcpBXL2Tw _gd1fcS6gEeKexfcpBXL2Tw _gdvY1C6gEeKexfcpBXL2Tw _gd1fcy6gEeKexfcpBXL2Tw _gd1fci6gEeKexfcpBXL2Tw _gd1fcC6gEeKexfcpBXL2Tw _gd0RUy6gEeKexfcpBXL2Tw _gdzqQi6gEeKexfcpBXL2Tw _TRk0UD_JEeKEWZqXuRDJ4w _gd04Yy6gEeKexfcpBXL2Tw _TRk0UT_JEeKEWZqXuRDJ4w _TRk0Uj_JEeKEWZqXuRDJ4w _Pj72orlnEeKAQIhutdGAxA" performedPrimarilyBy="_Pj72oblnEeKAQIhutdGAxA">
+        <ownedRules xmi:id="_aPn9QLlnEeKAQIhutdGAxA" name="wpStates" guid="_aPn9QLlnEeKAQIhutdGAxA" body="_gduxxS6gEeKexfcpBXL2Tw">
+          <methodElementProperty xmi:id="_aPuD4LlnEeKAQIhutdGAxA" name="constraint_wpStates" value="_54Ha8C2vEeKtT515Esx8Vg/output"/>
+        </ownedRules>
+        <ownedRules xmi:id="_a2r9QLlnEeKAQIhutdGAxA" name="wpStates" guid="_a2r9QLlnEeKAQIhutdGAxA" body="_gdycIC6gEeKexfcpBXL2Tw">
+          <methodElementProperty xmi:id="_a2r9QblnEeKAQIhutdGAxA" name="constraint_wpStates" value="_54Ha8C2vEeKtT515Esx8Vg/output"/>
+        </ownedRules>
+        <ownedRules xmi:id="_bgehILlnEeKAQIhutdGAxA" name="wpStates" guid="_bgehILlnEeKAQIhutdGAxA" body="_gdx1Fi6gEeKexfcpBXL2Tw">
+          <methodElementProperty xmi:id="_bgehIblnEeKAQIhutdGAxA" name="constraint_wpStates" value="_54Ha8C2vEeKtT515Esx8Vg/output"/>
+        </ownedRules>
+        <ownedRules xmi:id="_b63XELlnEeKAQIhutdGAxA" name="wpStates" guid="_b63XELlnEeKAQIhutdGAxA" body="_gd04YS6gEeKexfcpBXL2Tw">
+          <methodElementProperty xmi:id="_b63-ILlnEeKAQIhutdGAxA" name="constraint_wpStates" value="_54Ha8C2vEeKtT515Esx8Vg/output"/>
+        </ownedRules>
+        <ownedRules xmi:id="_dJyoULlnEeKAQIhutdGAxA" name="wpStates" guid="_dJyoULlnEeKAQIhutdGAxA" body="_gdycIy6gEeKexfcpBXL2Tw">
+          <methodElementProperty xmi:id="_dJzPYLlnEeKAQIhutdGAxA" name="constraint_wpStates" value="_54Ha8C2vEeKtT515Esx8Vg/output"/>
+        </ownedRules>
+        <ownedRules xmi:id="_eiT6cLlnEeKAQIhutdGAxA" name="wpStates" guid="_eiT6cLlnEeKAQIhutdGAxA" body="_gd04Yi6gEeKexfcpBXL2Tw">
+          <methodElementProperty xmi:id="_eiT6cblnEeKAQIhutdGAxA" name="constraint_wpStates" value="_54Ha8C2vEeKtT515Esx8Vg/output"/>
+        </ownedRules>
+        <ownedRules xmi:id="_fQ1NULlnEeKAQIhutdGAxA" name="wpStates" guid="_fQ1NULlnEeKAQIhutdGAxA" body="_gdzqQy6gEeKexfcpBXL2Tw">
+          <methodElementProperty xmi:id="_fQ10YLlnEeKAQIhutdGAxA" name="constraint_wpStates" value="_54Ha8C2vEeKtT515Esx8Vg/output"/>
+        </ownedRules>
+        <ownedRules xmi:id="_fv02cLlnEeKAQIhutdGAxA" name="wpStates" guid="_fv02cLlnEeKAQIhutdGAxA" body="_gdzDNC6gEeKexfcpBXL2Tw">
+          <methodElementProperty xmi:id="_fv02cblnEeKAQIhutdGAxA" name="constraint_wpStates" value="_54Ha8C2vEeKtT515Esx8Vg/output"/>
+        </ownedRules>
+        <ownedRules xmi:id="_harOsLlnEeKAQIhutdGAxA" name="wpStates" guid="_harOsLlnEeKAQIhutdGAxA" body="_gd0RUC6gEeKexfcpBXL2Tw">
+          <methodElementProperty xmi:id="_har1wLlnEeKAQIhutdGAxA" name="constraint_wpStates" value="_54Ha8C2vEeKtT515Esx8Vg/output"/>
+        </ownedRules>
+        <ownedRules xmi:id="_iVpCILlnEeKAQIhutdGAxA" name="wpStates" guid="_iVpCILlnEeKAQIhutdGAxA" body="_gdycJC6gEeKexfcpBXL2Tw">
+          <methodElementProperty xmi:id="_iVpCIblnEeKAQIhutdGAxA" name="constraint_wpStates" value="_54Ha8C2vEeKtT515Esx8Vg/output"/>
+        </ownedRules>
+        <ownedRules xmi:id="_iz-j8LlnEeKAQIhutdGAxA" name="wpStates" guid="_iz-j8LlnEeKAQIhutdGAxA" body="_gdx1Ey6gEeKexfcpBXL2Tw">
+          <methodElementProperty xmi:id="_iz_yELlnEeKAQIhutdGAxA" name="constraint_wpStates" value="_54Ha8C2vEeKtT515Esx8Vg/output"/>
+        </ownedRules>
+        <ownedRules xmi:id="_jXx0kLlnEeKAQIhutdGAxA" name="wpStates" guid="_jXx0kLlnEeKAQIhutdGAxA" body="_gdycIi6gEeKexfcpBXL2Tw">
+          <methodElementProperty xmi:id="_jXyboLlnEeKAQIhutdGAxA" name="constraint_wpStates" value="_54Ha8C2vEeKtT515Esx8Vg/output"/>
+        </ownedRules>
+        <ownedRules xmi:id="_kC7DULlnEeKAQIhutdGAxA" name="wpStates" guid="_kC7DULlnEeKAQIhutdGAxA" body="_gdvY0C6gEeKexfcpBXL2Tw">
+          <methodElementProperty xmi:id="_kC7qYLlnEeKAQIhutdGAxA" name="constraint_wpStates" value="_54Ha8C2vEeKtT515Esx8Vg/output"/>
+        </ownedRules>
+        <ownedRules xmi:id="_ki6yALlnEeKAQIhutdGAxA" name="wpStates" guid="_ki6yALlnEeKAQIhutdGAxA" body="_gdzDOS6gEeKexfcpBXL2Tw">
+          <methodElementProperty xmi:id="_ki6yAblnEeKAQIhutdGAxA" name="constraint_wpStates" value="_54Ha8C2vEeKtT515Esx8Vg/output"/>
+        </ownedRules>
+        <ownedRules xmi:id="_lITXALlnEeKAQIhutdGAxA" name="wpStates" guid="_lITXALlnEeKAQIhutdGAxA" body="_gdvY0y6gEeKexfcpBXL2Tw">
+          <methodElementProperty xmi:id="_lITXAblnEeKAQIhutdGAxA" name="constraint_wpStates" value="_54Ha8C2vEeKtT515Esx8Vg/output"/>
+        </ownedRules>
+        <ownedRules xmi:id="_l2LJoLlnEeKAQIhutdGAxA" name="wpStates" guid="_l2LJoLlnEeKAQIhutdGAxA" body="_gdzqQS6gEeKexfcpBXL2Tw">
+          <methodElementProperty xmi:id="_l2LJoblnEeKAQIhutdGAxA" name="constraint_wpStates" value="_54Ha8C2vEeKtT515Esx8Vg/output"/>
+        </ownedRules>
+        <ownedRules xmi:id="_mnKhsLlnEeKAQIhutdGAxA" name="wpStates" guid="_mnKhsLlnEeKAQIhutdGAxA" body="_gd0RVS6gEeKexfcpBXL2Tw">
+          <methodElementProperty xmi:id="_mnLIwLlnEeKAQIhutdGAxA" name="constraint_wpStates" value="_54Ha8C2vEeKtT515Esx8Vg/output"/>
+        </ownedRules>
+        <ownedRules xmi:id="_nT5r4LlnEeKAQIhutdGAxA" name="wpStates" guid="_nT5r4LlnEeKAQIhutdGAxA" body="_gd0RUS6gEeKexfcpBXL2Tw">
+          <methodElementProperty xmi:id="_nT6S8LlnEeKAQIhutdGAxA" name="constraint_wpStates" value="_54Ha8C2vEeKtT515Esx8Vg/output"/>
+        </ownedRules>
+        <ownedRules xmi:id="_nyCZYLlnEeKAQIhutdGAxA" name="wpStates" guid="_nyCZYLlnEeKAQIhutdGAxA" body="_gduxxC6gEeKexfcpBXL2Tw">
+          <methodElementProperty xmi:id="_nyCZYblnEeKAQIhutdGAxA" name="constraint_wpStates" value="_54Ha8C2vEeKtT515Esx8Vg/output"/>
+        </ownedRules>
+        <ownedRules xmi:id="_oPOrsLlnEeKAQIhutdGAxA" name="wpStates" guid="_oPOrsLlnEeKAQIhutdGAxA" body="_gdxOCC6gEeKexfcpBXL2Tw">
+          <methodElementProperty xmi:id="_oPPSwLlnEeKAQIhutdGAxA" name="constraint_wpStates" value="_54Ha8C2vEeKtT515Esx8Vg/output"/>
+        </ownedRules>
+        <ownedRules xmi:id="_pBhrULlnEeKAQIhutdGAxA" name="wpStates" guid="_pBhrULlnEeKAQIhutdGAxA" body="_gdx1FC6gEeKexfcpBXL2Tw">
+          <methodElementProperty xmi:id="_pBhrUblnEeKAQIhutdGAxA" name="constraint_wpStates" value="_54Ha8C2vEeKtT515Esx8Vg/output"/>
+        </ownedRules>
+        <ownedRules xmi:id="_pdPW8LlnEeKAQIhutdGAxA" name="wpStates" guid="_pdPW8LlnEeKAQIhutdGAxA" body="_gdzqRC6gEeKexfcpBXL2Tw">
+          <methodElementProperty xmi:id="_pdP-ALlnEeKAQIhutdGAxA" name="constraint_wpStates" value="_54Ha8C2vEeKtT515Esx8Vg/output"/>
+        </ownedRules>
+        <ownedRules xmi:id="_p4HVELlnEeKAQIhutdGAxA" name="wpStates" guid="_p4HVELlnEeKAQIhutdGAxA" body="_gd0RUi6gEeKexfcpBXL2Tw">
+          <methodElementProperty xmi:id="_p4HVEblnEeKAQIhutdGAxA" name="constraint_wpStates" value="_54Ha8C2vEeKtT515Esx8Vg/output"/>
+        </ownedRules>
+        <ownedRules xmi:id="_qlUZULlnEeKAQIhutdGAxA" name="wpStates" guid="_qlUZULlnEeKAQIhutdGAxA" body="_gd1fcS6gEeKexfcpBXL2Tw">
+          <methodElementProperty xmi:id="_qlVAYLlnEeKAQIhutdGAxA" name="constraint_wpStates" value="_54Ha8C2vEeKtT515Esx8Vg/output"/>
+        </ownedRules>
+        <ownedRules xmi:id="_rCoAYLlnEeKAQIhutdGAxA" name="wpStates" guid="_rCoAYLlnEeKAQIhutdGAxA" body="_gdvY1C6gEeKexfcpBXL2Tw">
+          <methodElementProperty xmi:id="_rCoAYblnEeKAQIhutdGAxA" name="constraint_wpStates" value="_54Ha8C2vEeKtT515Esx8Vg/output"/>
+        </ownedRules>
+        <ownedRules xmi:id="_rl_zMLlnEeKAQIhutdGAxA" name="wpStates" guid="_rl_zMLlnEeKAQIhutdGAxA" body="_gd1fcy6gEeKexfcpBXL2Tw">
+          <methodElementProperty xmi:id="_rl_zMblnEeKAQIhutdGAxA" name="constraint_wpStates" value="_54Ha8C2vEeKtT515Esx8Vg/output"/>
+        </ownedRules>
+        <ownedRules xmi:id="_slvY8LlnEeKAQIhutdGAxA" name="wpStates" guid="_slvY8LlnEeKAQIhutdGAxA" body="_gd1fci6gEeKexfcpBXL2Tw">
+          <methodElementProperty xmi:id="_slvY8blnEeKAQIhutdGAxA" name="constraint_wpStates" value="_54Ha8C2vEeKtT515Esx8Vg/output"/>
+        </ownedRules>
+        <ownedRules xmi:id="_tTlWYLlnEeKAQIhutdGAxA" name="wpStates" guid="_tTlWYLlnEeKAQIhutdGAxA" body="_gd1fcC6gEeKexfcpBXL2Tw">
+          <methodElementProperty xmi:id="_tTl9cLlnEeKAQIhutdGAxA" name="constraint_wpStates" value="_54Ha8C2vEeKtT515Esx8Vg/output"/>
+        </ownedRules>
+        <ownedRules xmi:id="_txgBcLlnEeKAQIhutdGAxA" name="wpStates" guid="_txgBcLlnEeKAQIhutdGAxA" body="_gd0RUy6gEeKexfcpBXL2Tw">
+          <methodElementProperty xmi:id="_txhPkLlnEeKAQIhutdGAxA" name="constraint_wpStates" value="_54Ha8C2vEeKtT515Esx8Vg/output"/>
+        </ownedRules>
+        <ownedRules xmi:id="_u67usLlnEeKAQIhutdGAxA" name="wpStates" guid="_u67usLlnEeKAQIhutdGAxA" body="_gdzqQi6gEeKexfcpBXL2Tw">
+          <methodElementProperty xmi:id="_u67usblnEeKAQIhutdGAxA" name="constraint_wpStates" value="_54Ha8C2vEeKtT515Esx8Vg/output"/>
+        </ownedRules>
+        <ownedRules xmi:id="_vZG4cLlnEeKAQIhutdGAxA" name="wpStates" guid="_vZG4cLlnEeKAQIhutdGAxA" body="_TRk0UD_JEeKEWZqXuRDJ4w">
+          <methodElementProperty xmi:id="_vZG4cblnEeKAQIhutdGAxA" name="constraint_wpStates" value="_54Ha8C2vEeKtT515Esx8Vg/output"/>
+        </ownedRules>
+        <ownedRules xmi:id="_xtrjILlnEeKAQIhutdGAxA" name="wpStates" guid="_xtrjILlnEeKAQIhutdGAxA" body="_gd04Yy6gEeKexfcpBXL2Tw">
+          <methodElementProperty xmi:id="_xtrjIblnEeKAQIhutdGAxA" name="constraint_wpStates" value="_54Ha8C2vEeKtT515Esx8Vg/output"/>
+        </ownedRules>
+        <ownedRules xmi:id="_ybo1ULlnEeKAQIhutdGAxA" name="wpStates" guid="_ybo1ULlnEeKAQIhutdGAxA" body="_TRk0UT_JEeKEWZqXuRDJ4w">
+          <methodElementProperty xmi:id="_ybpcYLlnEeKAQIhutdGAxA" name="constraint_wpStates" value="_54Ha8C2vEeKtT515Esx8Vg/output"/>
+        </ownedRules>
+        <ownedRules xmi:id="_zWX_QLlnEeKAQIhutdGAxA" name="wpStates" guid="_zWX_QLlnEeKAQIhutdGAxA" body="_TRk0Uj_JEeKEWZqXuRDJ4w">
+          <methodElementProperty xmi:id="_zWYmULlnEeKAQIhutdGAxA" name="constraint_wpStates" value="_54Ha8C2vEeKtT515Esx8Vg/output"/>
+        </ownedRules>
+        <ownedRules xmi:id="_0OG4gLlnEeKAQIhutdGAxA" name="wpStates" guid="_0OG4gLlnEeKAQIhutdGAxA" body="_Pj72orlnEeKAQIhutdGAxA">
+          <methodElementProperty xmi:id="_0OHfkLlnEeKAQIhutdGAxA" name="constraint_wpStates" value="_54Ha8C2vEeKtT515Esx8Vg/output"/>
+        </ownedRules>
+        <Task href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_wTN4MCnIEeKEKJTuEqpfrw"/>
+        <selectedSteps href="uma://-XnGRZSTA0QBNTtGGa4zjVQ#_7Q9kEJV0EeKPfYuqAVau1w"/>
+        <selectedSteps href="uma://-XnGRZSTA0QBNTtGGa4zjVQ#_9kuWcJV0EeKPfYuqAVau1w"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:RoleDescriptor" xmi:id="_Pj72oblnEeKAQIhutdGAxA" name="aswi_team_member" guid="_Pj72oblnEeKAQIhutdGAxA" presentationName="Člen týmu" isPlanned="false" superActivities="_gd1fdC6gEeKexfcpBXL2Tw" modifies="_gduxxS6gEeKexfcpBXL2Tw _gdycIC6gEeKexfcpBXL2Tw _gdx1Fi6gEeKexfcpBXL2Tw _gd04YS6gEeKexfcpBXL2Tw _gdycIy6gEeKexfcpBXL2Tw _gd04Yi6gEeKexfcpBXL2Tw _gdzqQy6gEeKexfcpBXL2Tw _gdzDNC6gEeKexfcpBXL2Tw _gd0RUC6gEeKexfcpBXL2Tw _gdycJC6gEeKexfcpBXL2Tw _gdx1Ey6gEeKexfcpBXL2Tw _gdycIi6gEeKexfcpBXL2Tw _gdvY0C6gEeKexfcpBXL2Tw _gdzDOS6gEeKexfcpBXL2Tw _gdvY0y6gEeKexfcpBXL2Tw _gdzqQS6gEeKexfcpBXL2Tw _gd0RVS6gEeKexfcpBXL2Tw _gd0RUS6gEeKexfcpBXL2Tw _gduxxC6gEeKexfcpBXL2Tw _gdxOCC6gEeKexfcpBXL2Tw _gdx1FC6gEeKexfcpBXL2Tw _gdzqRC6gEeKexfcpBXL2Tw _gd0RUi6gEeKexfcpBXL2Tw _gd1fcS6gEeKexfcpBXL2Tw _gdvY1C6gEeKexfcpBXL2Tw _gd1fcy6gEeKexfcpBXL2Tw _gd1fci6gEeKexfcpBXL2Tw _gd1fcC6gEeKexfcpBXL2Tw _gd0RUy6gEeKexfcpBXL2Tw _gdzqQi6gEeKexfcpBXL2Tw _TRk0UD_JEeKEWZqXuRDJ4w _gd04Yy6gEeKexfcpBXL2Tw _TRk0UT_JEeKEWZqXuRDJ4w _TRk0Uj_JEeKEWZqXuRDJ4w _Pj72orlnEeKAQIhutdGAxA">
+        <Role href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_0BhzUCjTEeKUV4oljX-9JQ"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_Pj72orlnEeKAQIhutdGAxA" name="aswi_installation_guide" guid="_Pj72orlnEeKAQIhutdGAxA" presentationName="Instalační příručka" isPlanned="false" superActivities="_gd1fdC6gEeKexfcpBXL2Tw">
+        <WorkProduct href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_W7Rr0Kj5EeKZXdO8zHuw_Q"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="_QZygkLlnEeKAQIhutdGAxA" name="aswi_perform_refactoring" guid="_QZygkLlnEeKAQIhutdGAxA" presentationName="Provést refactoring" superActivities="_gd1fdC6gEeKexfcpBXL2Tw" linkToPredecessor="_Se5y8LlnEeKAQIhutdGAxA" optionalInput="_gduxxS6gEeKexfcpBXL2Tw _gdycIC6gEeKexfcpBXL2Tw _gdx1Fi6gEeKexfcpBXL2Tw _gd04YS6gEeKexfcpBXL2Tw _gdycIy6gEeKexfcpBXL2Tw _gdzqQy6gEeKexfcpBXL2Tw _gdzDNC6gEeKexfcpBXL2Tw _TRk0UD_JEeKEWZqXuRDJ4w _gdycJC6gEeKexfcpBXL2Tw _gd04Yy6gEeKexfcpBXL2Tw _gd0RVS6gEeKexfcpBXL2Tw _gduxxC6gEeKexfcpBXL2Tw _gdvY0y6gEeKexfcpBXL2Tw _gd0RUS6gEeKexfcpBXL2Tw _TRk0UT_JEeKEWZqXuRDJ4w _gdxOCC6gEeKexfcpBXL2Tw _gd1fci6gEeKexfcpBXL2Tw _Fn19UD_LEeKEWZqXuRDJ4w _Pj72orlnEeKAQIhutdGAxA" output="_gd04Yy6gEeKexfcpBXL2Tw _gdx1Fi6gEeKexfcpBXL2Tw _gd04YS6gEeKexfcpBXL2Tw _gduxxS6gEeKexfcpBXL2Tw _gdzqQy6gEeKexfcpBXL2Tw _gdzDNC6gEeKexfcpBXL2Tw _TRk0UD_JEeKEWZqXuRDJ4w _gdycJC6gEeKexfcpBXL2Tw _TRk0UT_JEeKEWZqXuRDJ4w _gd0RVS6gEeKexfcpBXL2Tw _gduxxC6gEeKexfcpBXL2Tw _gd1fci6gEeKexfcpBXL2Tw _Fn19UD_LEeKEWZqXuRDJ4w _gdvY0y6gEeKexfcpBXL2Tw _gdycIy6gEeKexfcpBXL2Tw _gd0RUS6gEeKexfcpBXL2Tw _gdxOCC6gEeKexfcpBXL2Tw _Pj72orlnEeKAQIhutdGAxA _gdycIC6gEeKexfcpBXL2Tw" performedPrimarilyBy="_gd0RVC6gEeKexfcpBXL2Tw">
+        <ownedRules xmi:id="_17LeULlnEeKAQIhutdGAxA" name="wpStates" guid="_17LeULlnEeKAQIhutdGAxA" body="_gdycIy6gEeKexfcpBXL2Tw">
+          <methodElementProperty xmi:id="_17LeUblnEeKAQIhutdGAxA" name="constraint_wpStates" value="_54Ha8C2vEeKtT515Esx8Vg/output"/>
+        </ownedRules>
+        <ownedRules xmi:id="_2cGaELlnEeKAQIhutdGAxA" name="wpStates" guid="_2cGaELlnEeKAQIhutdGAxA" body="_gd0RUS6gEeKexfcpBXL2Tw">
+          <methodElementProperty xmi:id="_2cGaEblnEeKAQIhutdGAxA" name="constraint_wpStates" value="_54Ha8C2vEeKtT515Esx8Vg/output"/>
+        </ownedRules>
+        <ownedRules xmi:id="_28ysULlnEeKAQIhutdGAxA" name="wpStates" guid="_28ysULlnEeKAQIhutdGAxA" body="_gdxOCC6gEeKexfcpBXL2Tw">
+          <methodElementProperty xmi:id="_28ysUblnEeKAQIhutdGAxA" name="constraint_wpStates" value="_54Ha8C2vEeKtT515Esx8Vg/output"/>
+        </ownedRules>
+        <ownedRules xmi:id="_3fE6ALlnEeKAQIhutdGAxA" name="wpStates" guid="_3fE6ALlnEeKAQIhutdGAxA" body="_Pj72orlnEeKAQIhutdGAxA">
+          <methodElementProperty xmi:id="_3fFhELlnEeKAQIhutdGAxA" name="constraint_wpStates" value="_54Ha8C2vEeKtT515Esx8Vg/output"/>
+        </ownedRules>
+        <ownedRules xmi:id="_4Vx4gLlnEeKAQIhutdGAxA" name="wpStates" guid="_4Vx4gLlnEeKAQIhutdGAxA" body="_gd04Yy6gEeKexfcpBXL2Tw">
+          <methodElementProperty xmi:id="_4Vx4gblnEeKAQIhutdGAxA" name="constraint_wpStates" value="_54Ha8C2vEeKtT515Esx8Vg/output"/>
+        </ownedRules>
+        <ownedRules xmi:id="_411RkLlnEeKAQIhutdGAxA" name="wpStates" guid="_411RkLlnEeKAQIhutdGAxA" body="_gdx1Fi6gEeKexfcpBXL2Tw">
+          <methodElementProperty xmi:id="_4114oLlnEeKAQIhutdGAxA" name="constraint_wpStates" value="_54Ha8C2vEeKtT515Esx8Vg/output"/>
+        </ownedRules>
+        <ownedRules xmi:id="_5T_NMLlnEeKAQIhutdGAxA" name="wpStates" guid="_5T_NMLlnEeKAQIhutdGAxA" body="_gd04YS6gEeKexfcpBXL2Tw">
+          <methodElementProperty xmi:id="_5T_NMblnEeKAQIhutdGAxA" name="constraint_wpStates" value="_54Ha8C2vEeKtT515Esx8Vg/output"/>
+        </ownedRules>
+        <ownedRules xmi:id="_5zkFILlnEeKAQIhutdGAxA" name="wpStates" guid="_5zkFILlnEeKAQIhutdGAxA" body="_gduxxS6gEeKexfcpBXL2Tw">
+          <methodElementProperty xmi:id="_5zksMLlnEeKAQIhutdGAxA" name="constraint_wpStates" value="_54Ha8C2vEeKtT515Esx8Vg/output"/>
+        </ownedRules>
+        <ownedRules xmi:id="_6m60sLlnEeKAQIhutdGAxA" name="wpStates" guid="_6m60sLlnEeKAQIhutdGAxA" body="_gdzqQy6gEeKexfcpBXL2Tw">
+          <methodElementProperty xmi:id="_6m60sblnEeKAQIhutdGAxA" name="constraint_wpStates" value="_54Ha8C2vEeKtT515Esx8Vg/output"/>
+        </ownedRules>
+        <ownedRules xmi:id="_7GEO0LlnEeKAQIhutdGAxA" name="wpStates" guid="_7GEO0LlnEeKAQIhutdGAxA" body="_gdzDNC6gEeKexfcpBXL2Tw">
+          <methodElementProperty xmi:id="_7GEO0blnEeKAQIhutdGAxA" name="constraint_wpStates" value="_54Ha8C2vEeKtT515Esx8Vg/output"/>
+        </ownedRules>
+        <ownedRules xmi:id="_7nN0ELlnEeKAQIhutdGAxA" name="wpStates" guid="_7nN0ELlnEeKAQIhutdGAxA" body="_TRk0UD_JEeKEWZqXuRDJ4w">
+          <methodElementProperty xmi:id="_7nN0EblnEeKAQIhutdGAxA" name="constraint_wpStates" value="_54Ha8C2vEeKtT515Esx8Vg/output"/>
+        </ownedRules>
+        <ownedRules xmi:id="_8XyVYLlnEeKAQIhutdGAxA" name="wpStates" guid="_8XyVYLlnEeKAQIhutdGAxA" body="_gdycJC6gEeKexfcpBXL2Tw">
+          <methodElementProperty xmi:id="_8Xy8cLlnEeKAQIhutdGAxA" name="constraint_wpStates" value="_54Ha8C2vEeKtT515Esx8Vg/output"/>
+        </ownedRules>
+        <ownedRules xmi:id="_8zmHoLlnEeKAQIhutdGAxA" name="wpStates" guid="_8zmHoLlnEeKAQIhutdGAxA" body="_TRk0UT_JEeKEWZqXuRDJ4w">
+          <methodElementProperty xmi:id="_8zmusLlnEeKAQIhutdGAxA" name="constraint_wpStates" value="_54Ha8C2vEeKtT515Esx8Vg/output"/>
+        </ownedRules>
+        <ownedRules xmi:id="_9eEoALlnEeKAQIhutdGAxA" name="wpStates" guid="_9eEoALlnEeKAQIhutdGAxA" body="_gd0RVS6gEeKexfcpBXL2Tw">
+          <methodElementProperty xmi:id="_9eEoAblnEeKAQIhutdGAxA" name="constraint_wpStates" value="_54Ha8C2vEeKtT515Esx8Vg/output"/>
+        </ownedRules>
+        <ownedRules xmi:id="_-KFZcLlnEeKAQIhutdGAxA" name="wpStates" guid="_-KFZcLlnEeKAQIhutdGAxA" body="_gduxxC6gEeKexfcpBXL2Tw">
+          <methodElementProperty xmi:id="_-KGAgLlnEeKAQIhutdGAxA" name="constraint_wpStates" value="_54Ha8C2vEeKtT515Esx8Vg/output"/>
+        </ownedRules>
+        <ownedRules xmi:id="_-n4vwLlnEeKAQIhutdGAxA" name="wpStates" guid="_-n4vwLlnEeKAQIhutdGAxA" body="_gd1fci6gEeKexfcpBXL2Tw">
+          <methodElementProperty xmi:id="_-n5W0LlnEeKAQIhutdGAxA" name="constraint_wpStates" value="_54Ha8C2vEeKtT515Esx8Vg/output"/>
+        </ownedRules>
+        <ownedRules xmi:id="__O0z8LlnEeKAQIhutdGAxA" name="wpStates" guid="__O0z8LlnEeKAQIhutdGAxA" body="_Fn19UD_LEeKEWZqXuRDJ4w">
+          <methodElementProperty xmi:id="__O1bALlnEeKAQIhutdGAxA" name="constraint_wpStates" value="_54Ha8C2vEeKtT515Esx8Vg/output"/>
+        </ownedRules>
+        <ownedRules xmi:id="_AGmJcLloEeKAQIhutdGAxA" name="wpStates" guid="_AGmJcLloEeKAQIhutdGAxA" body="_gdvY0y6gEeKexfcpBXL2Tw">
+          <methodElementProperty xmi:id="_AGmJcbloEeKAQIhutdGAxA" name="constraint_wpStates" value="_54Ha8C2vEeKtT515Esx8Vg/output"/>
+        </ownedRules>
+        <Task href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_4buH8CqaEeKro62q_nzUjw"/>
+        <selectedSteps href="uma://--W3q5MdkUiJU_gwqBo6ATA#_MksgQJV2EeKPfYuqAVau1w"/>
+        <selectedSteps href="uma://--W3q5MdkUiJU_gwqBo6ATA#_Qk7bgJV2EeKPfYuqAVau1w"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_Se5y8LlnEeKAQIhutdGAxA" guid="_Se5y8LlnEeKAQIhutdGAxA" pred="_Pj72oLlnEeKAQIhutdGAxA"/>
+    </childPackages>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_gd2GgS6gEeKexfcpBXL2Tw" name="aswi_conclude_iteration" guid="_gd2GgS6gEeKexfcpBXL2Tw">
+      <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_gd2tki6gEeKexfcpBXL2Tw" name="aswi_conclude_iteration" guid="_gd2tki6gEeKexfcpBXL2Tw" presentationName="Ukončit iteraci" briefDescription="Obvyklými kroky na konci iterace je uzavírací schůzka se zákazníkem (předvedení dosažených výsledků, sběr připomínek, navržení dalšího postupu), revize iterace s mentorem, interní týmová retrospektiva a následné zdokumentování iterace." superActivities="_89A_AS5iEeKVavM_dEXkKA" linkToPredecessor="_JlMo4T-5EeKEWZqXuRDJ4w _JlSvgD-5EeKEWZqXuRDJ4w" breakdownElements="_gd2Ggi6gEeKexfcpBXL2Tw _gd4ixS6gEeKexfcpBXL2Tw _gd2tkC6gEeKexfcpBXL2Tw _gd4iwC6gEeKexfcpBXL2Tw _gd2tli6gEeKexfcpBXL2Tw _gd4iwi6gEeKexfcpBXL2Tw _gd4iwS6gEeKexfcpBXL2Tw _gd2tlC6gEeKexfcpBXL2Tw _gd3UoS6gEeKexfcpBXL2Tw _gd3UoC6gEeKexfcpBXL2Tw _gd37sC6gEeKexfcpBXL2Tw _gd37si6gEeKexfcpBXL2Tw _gd4iwy6gEeKexfcpBXL2Tw _gd2tlS6gEeKexfcpBXL2Tw _gd37tS6gEeKexfcpBXL2Tw _gd37sS6gEeKexfcpBXL2Tw _IWbzwDAjEeKiTvHIeSo-qw _IWbzwTAjEeKiTvHIeSo-qw _IWbzwjAjEeKiTvHIeSo-qw _IWbzwzAjEeKiTvHIeSo-qw _IWbzxDAjEeKiTvHIeSo-qw _IWbzxTAjEeKiTvHIeSo-qw _IWbzxjAjEeKiTvHIeSo-qw"/>
+      <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="_gd2tkC6gEeKexfcpBXL2Tw" name="aswi_review_iterarion" guid="_gd2tkC6gEeKexfcpBXL2Tw" presentationName="Zrevidovat iteraci" isPlanned="true" superActivities="_gd2tki6gEeKexfcpBXL2Tw" isEventDriven="true" linkToPredecessor="_2Dh-ID8KEeKg_b9GpyQkNg" additionallyPerformedBy="_gd3UoS6gEeKexfcpBXL2Tw" output="_gd2tlS6gEeKexfcpBXL2Tw _gd37si6gEeKexfcpBXL2Tw" performedPrimarilyBy="_gd3UoC6gEeKexfcpBXL2Tw _gd37sC6gEeKexfcpBXL2Tw">
+        <ownedRules xmi:id="_gd2tkS6gEeKexfcpBXL2Tw" name="wpStates" guid="_gd2tkS6gEeKexfcpBXL2Tw" body="_KhnssCnzEeKYLvS48FbiXw">
+          <methodElementProperty xmi:id="_geEI_i6gEeKexfcpBXL2Tw" name="constraint_wpStates" value="_54Ha8C2vEeKtT515Esx8Vg/output"/>
+        </ownedRules>
+        <Task href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_aB17YCkZEeK0bd3bdEdbgQ"/>
+        <selectedSteps href="uma://-JPo0x6uDrBluwuZbZ1L3NQ#_mdVLsCkZEeK0bd3bdEdbgQ"/>
+        <selectedSteps href="uma://-JPo0x6uDrBluwuZbZ1L3NQ#_qWz-sCkZEeK0bd3bdEdbgQ"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="_gd4ixS6gEeKexfcpBXL2Tw" name="aswi_perform_iteration_retrospective" guid="_gd4ixS6gEeKexfcpBXL2Tw" presentationName="Provést retrospektivu iterace" isPlanned="true" superActivities="_gd2tki6gEeKexfcpBXL2Tw" linkToPredecessor="_0hj1ED8KEeKg_b9GpyQkNg" mandatoryInput="_IWbzxDAjEeKiTvHIeSo-qw" output="_gd37si6gEeKexfcpBXL2Tw _gd4iwy6gEeKexfcpBXL2Tw _IWbzxTAjEeKiTvHIeSo-qw" performedPrimarilyBy="_gd3UoS6gEeKexfcpBXL2Tw">
+        <ownedRules xmi:id="_gd4ixi6gEeKexfcpBXL2Tw" name="wpStates" guid="_gd4ixi6gEeKexfcpBXL2Tw" body="_KhnssCnzEeKYLvS48FbiXw">
+          <methodElementProperty xmi:id="_geEI_y6gEeKexfcpBXL2Tw" name="constraint_wpStates" value="_54Ha8C2vEeKtT515Esx8Vg/output"/>
+        </ownedRules>
+        <ownedRules xmi:id="_gd4ixy6gEeKexfcpBXL2Tw" name="wpStates" guid="_gd4ixy6gEeKexfcpBXL2Tw" body="_KhnssSnzEeKYLvS48FbiXw">
+          <methodElementProperty xmi:id="_geEJAC6gEeKexfcpBXL2Tw" name="constraint_wpStates" value="_54Ha8C2vEeKtT515Esx8Vg/output"/>
+        </ownedRules>
+        <Task href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_4jpPkCnDEeKEKJTuEqpfrw"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="_gd2tli6gEeKexfcpBXL2Tw" name="aswi_document_iteration_history" guid="_gd2tli6gEeKexfcpBXL2Tw" presentationName="Popsat průběh iterace" isPlanned="true" superActivities="_gd2tki6gEeKexfcpBXL2Tw" linkToPredecessor="_3TvBwD8KEeKg_b9GpyQkNg" mandatoryInput="_gd37tS6gEeKexfcpBXL2Tw _IWbzwzAjEeKiTvHIeSo-qw _gd2tlS6gEeKexfcpBXL2Tw _IWbzxTAjEeKiTvHIeSo-qw _IWbzxjAjEeKiTvHIeSo-qw" output="_gd37tS6gEeKexfcpBXL2Tw" performedPrimarilyBy="_gd4iwS6gEeKexfcpBXL2Tw">
+        <ownedRules xmi:id="_gd2tly6gEeKexfcpBXL2Tw" name="wpStates" guid="_gd2tly6gEeKexfcpBXL2Tw" body="_KhnssynzEeKYLvS48FbiXw">
+          <methodElementProperty xmi:id="_geEJAS6gEeKexfcpBXL2Tw" name="constraint_wpStates" value="_54Ha8C2vEeKtT515Esx8Vg/output"/>
+        </ownedRules>
+        <ownedRules xmi:id="_yDleED_LEeKEWZqXuRDJ4w" name="wpStates" guid="_yDleED_LEeKEWZqXuRDJ4w" body="_gd37tS6gEeKexfcpBXL2Tw">
+          <methodElementProperty xmi:id="_yDleET_LEeKEWZqXuRDJ4w" name="constraint_wpStates" value="_54Ha8C2vEeKtT515Esx8Vg/output"/>
+        </ownedRules>
+        <Task href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_4GfN8CnNEeKEKJTuEqpfrw"/>
+        <selectedSteps href="uma://-1Pj_rlHsMOoEIF_vUbxivg#_NWUowCnOEeKEKJTuEqpfrw"/>
+        <selectedSteps href="uma://-1Pj_rlHsMOoEIF_vUbxivg#_SopeACnOEeKEKJTuEqpfrw"/>
+        <selectedSteps href="uma://-1Pj_rlHsMOoEIF_vUbxivg#_UlI_4CnOEeKEKJTuEqpfrw"/>
+        <selectedSteps href="uma://-1Pj_rlHsMOoEIF_vUbxivg#_ZfsOUCnOEeKEKJTuEqpfrw"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="_gd2Ggi6gEeKexfcpBXL2Tw" name="aswi_meet_customer" guid="_gd2Ggi6gEeKexfcpBXL2Tw" presentationName="Sejít se se zákazníkem" isPlanned="true" superActivities="_gd2tki6gEeKexfcpBXL2Tw" isSynchronizedWithSource="false" additionallyPerformedBy="_gd2tlC6gEeKexfcpBXL2Tw _gd3UoS6gEeKexfcpBXL2Tw" mandatoryInput="_IWbzwDAjEeKiTvHIeSo-qw _IWbzwTAjEeKiTvHIeSo-qw" output="_gd37si6gEeKexfcpBXL2Tw _gd4iwy6gEeKexfcpBXL2Tw _IWbzwDAjEeKiTvHIeSo-qw _IWbzwTAjEeKiTvHIeSo-qw _IWbzwzAjEeKiTvHIeSo-qw" performedPrimarilyBy="_gd4iwi6gEeKexfcpBXL2Tw _gd4iwS6gEeKexfcpBXL2Tw">
+        <ownedRules xmi:id="_gd2GhC6gEeKexfcpBXL2Tw" name="wpStates" guid="_gd2GhC6gEeKexfcpBXL2Tw" body="_KhnssCnzEeKYLvS48FbiXw">
+          <methodElementProperty xmi:id="_geEJAi6gEeKexfcpBXL2Tw" name="constraint_wpStates" value="_54Ha8C2vEeKtT515Esx8Vg/output"/>
+        </ownedRules>
+        <ownedRules xmi:id="_gd2Ggy6gEeKexfcpBXL2Tw" name="wpStates" guid="_gd2Ggy6gEeKexfcpBXL2Tw" body="_KhnssSnzEeKYLvS48FbiXw">
+          <methodElementProperty xmi:id="_geEwAC6gEeKexfcpBXL2Tw" name="constraint_wpStates" value="_54Ha8C2vEeKtT515Esx8Vg/output"/>
+        </ownedRules>
+        <ownedRules xmi:id="_jambcD_LEeKEWZqXuRDJ4w" name="wpStates" guid="_jambcD_LEeKEWZqXuRDJ4w" body="_gd4iwy6gEeKexfcpBXL2Tw">
+          <methodElementProperty xmi:id="_jambcT_LEeKEWZqXuRDJ4w" name="constraint_wpStates"/>
+        </ownedRules>
+        <ownedRules xmi:id="_klv_8D_LEeKEWZqXuRDJ4w" name="wpStates" guid="_klv_8D_LEeKEWZqXuRDJ4w" body="_IWbzwDAjEeKiTvHIeSo-qw">
+          <methodElementProperty xmi:id="_klv_8T_LEeKEWZqXuRDJ4w" name="constraint_wpStates" value="_54Ha8C2vEeKtT515Esx8Vg/output"/>
+        </ownedRules>
+        <ownedRules xmi:id="_k9fxkD_LEeKEWZqXuRDJ4w" name="wpStates" guid="_k9fxkD_LEeKEWZqXuRDJ4w" body="_IWbzwTAjEeKiTvHIeSo-qw">
+          <methodElementProperty xmi:id="_k9l4MD_LEeKEWZqXuRDJ4w" name="constraint_wpStates" value="_54Ha8C2vEeKtT515Esx8Vg/output"/>
+        </ownedRules>
+        <Task href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_C7FKQCkQEeK0bd3bdEdbgQ"/>
+        <selectedSteps href="uma://-SHdNYtHJc5xpNRSz9Gv3mA#_sG4GsD_ZEeKpyedCZGqBRw"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:RoleDescriptor" xmi:id="_gd4iwi6gEeKexfcpBXL2Tw" name="aswi_main_customer" guid="_gd4iwi6gEeKexfcpBXL2Tw" presentationName="Kontaktní osoba" isPlanned="false" superActivities="_gd2tki6gEeKexfcpBXL2Tw" modifies="_gd37si6gEeKexfcpBXL2Tw _gd4iwy6gEeKexfcpBXL2Tw _IWbzwDAjEeKiTvHIeSo-qw _IWbzwTAjEeKiTvHIeSo-qw _IWbzwzAjEeKiTvHIeSo-qw" responsibleFor="_IWbzwjAjEeKiTvHIeSo-qw _IWbzwTAjEeKiTvHIeSo-qw _IWbzwDAjEeKiTvHIeSo-qw _gd4iwy6gEeKexfcpBXL2Tw _gd37si6gEeKexfcpBXL2Tw">
+        <Role href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_udiw4CjUEeKUV4oljX-9JQ"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:RoleDescriptor" xmi:id="_gd4iwS6gEeKexfcpBXL2Tw" name="aswi_team_member" guid="_gd4iwS6gEeKexfcpBXL2Tw" presentationName="Člen týmu" isPlanned="false" superActivities="_gd2tki6gEeKexfcpBXL2Tw" modifies="_gd37si6gEeKexfcpBXL2Tw _gd4iwy6gEeKexfcpBXL2Tw _IWbzwDAjEeKiTvHIeSo-qw _IWbzwTAjEeKiTvHIeSo-qw _IWbzwzAjEeKiTvHIeSo-qw _gd37tS6gEeKexfcpBXL2Tw">
+        <Role href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_0BhzUCjTEeKUV4oljX-9JQ"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:RoleDescriptor" xmi:id="_gd2tlC6gEeKexfcpBXL2Tw" name="aswi_other_customer" guid="_gd2tlC6gEeKexfcpBXL2Tw" presentationName="Další zástupce zákazníka" isPlanned="false" superActivities="_gd2tki6gEeKexfcpBXL2Tw">
+        <Role href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_IMDWcCjVEeKUV4oljX-9JQ"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:RoleDescriptor" xmi:id="_gd3UoS6gEeKexfcpBXL2Tw" name="aswi_team" guid="_gd3UoS6gEeKexfcpBXL2Tw" presentationName="Vývojový tým" isPlanned="false" superActivities="_gd2tki6gEeKexfcpBXL2Tw" modifies="_gd37si6gEeKexfcpBXL2Tw _gd4iwy6gEeKexfcpBXL2Tw _IWbzxTAjEeKiTvHIeSo-qw" responsibleFor="_IWbzxjAjEeKiTvHIeSo-qw _IWbzxTAjEeKiTvHIeSo-qw _IWbzwzAjEeKiTvHIeSo-qw _IWbzwTAjEeKiTvHIeSo-qw _IWbzwDAjEeKiTvHIeSo-qw _gd37tS6gEeKexfcpBXL2Tw _gd2tlS6gEeKexfcpBXL2Tw _gd4iwy6gEeKexfcpBXL2Tw _gd37si6gEeKexfcpBXL2Tw">
+        <Role href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_6An5MCnqEeKEKJTuEqpfrw"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:RoleDescriptor" xmi:id="_gd3UoC6gEeKexfcpBXL2Tw" name="aswi_mentor" guid="_gd3UoC6gEeKexfcpBXL2Tw" presentationName="Mentor" isPlanned="false" superActivities="_gd2tki6gEeKexfcpBXL2Tw" modifies="_gd37sS6gEeKexfcpBXL2Tw _gd2tlS6gEeKexfcpBXL2Tw _gd37si6gEeKexfcpBXL2Tw" responsibleFor="_IWbzwjAjEeKiTvHIeSo-qw _gd37sS6gEeKexfcpBXL2Tw">
+        <Role href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_4iZrkCjVEeKUV4oljX-9JQ"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:RoleDescriptor" xmi:id="_gd37sC6gEeKexfcpBXL2Tw" name="aswi_team_leader" guid="_gd37sC6gEeKexfcpBXL2Tw" presentationName="Vedoucí týmu" isPlanned="false" superActivities="_gd2tki6gEeKexfcpBXL2Tw" modifies="_gd2tlS6gEeKexfcpBXL2Tw _gd37si6gEeKexfcpBXL2Tw" responsibleFor="_IWbzxDAjEeKiTvHIeSo-qw">
+        <Role href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_DZhRACjUEeKUV4oljX-9JQ"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_gd37si6gEeKexfcpBXL2Tw" name="aswi_bug_list" guid="_gd37si6gEeKexfcpBXL2Tw" presentationName="Seznam závad" isPlanned="false" superActivities="_gd2tki6gEeKexfcpBXL2Tw">
+        <WorkProduct href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_B_N6wCkXEeK0bd3bdEdbgQ"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_gd4iwy6gEeKexfcpBXL2Tw" name="aswi_change_request_list" guid="_gd4iwy6gEeKexfcpBXL2Tw" presentationName="Seznam požadavků na změny" isPlanned="false" superActivities="_gd2tki6gEeKexfcpBXL2Tw">
+        <WorkProduct href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_yc3AICkWEeK0bd3bdEdbgQ"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_gd2tlS6gEeKexfcpBXL2Tw" name="aswi_meeting_report" guid="_gd2tlS6gEeKexfcpBXL2Tw" presentationName="Záznam schůzky" isPlanned="false" hasMultipleOccurrences="true" isOptional="true" superActivities="_gd2tki6gEeKexfcpBXL2Tw">
+        <WorkProduct href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_YgkW4CkOEeK0bd3bdEdbgQ"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_gd37tS6gEeKexfcpBXL2Tw" name="aswi_project_page" guid="_gd37tS6gEeKexfcpBXL2Tw" presentationName="Stránka projektu" isPlanned="false" superActivities="_gd2tki6gEeKexfcpBXL2Tw">
+        <WorkProduct href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_OIw5wCkHEeK0bd3bdEdbgQ"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="_gd4iwC6gEeKexfcpBXL2Tw" name="aswi_evaluate_iteration" guid="_gd4iwC6gEeKexfcpBXL2Tw" presentationName="Ohodnotit iteraci" superActivities="_gd2tki6gEeKexfcpBXL2Tw" isEventDriven="true" linkToPredecessor="_gd37sy6gEeKexfcpBXL2Tw" mandatoryInput="_IWbzxTAjEeKiTvHIeSo-qw" output="_gd37sS6gEeKexfcpBXL2Tw" performedPrimarilyBy="_gd3UoC6gEeKexfcpBXL2Tw">
+        <Task href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_MbOlAC5ZEeKVavM_dEXkKA"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_gd37sS6gEeKexfcpBXL2Tw" name="aswi_iteration_evaluation" guid="_gd37sS6gEeKexfcpBXL2Tw" presentationName="Hodnocení iterace" isPlanned="false" superActivities="_gd2tki6gEeKexfcpBXL2Tw">
+        <WorkProduct href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_rtEFsC5YEeKVavM_dEXkKA"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_gd37sy6gEeKexfcpBXL2Tw" guid="_gd37sy6gEeKexfcpBXL2Tw" pred="_gd2tkC6gEeKexfcpBXL2Tw"/>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_IWbzwDAjEeKiTvHIeSo-qw" name="aswi_functional_requirements_list" guid="_IWbzwDAjEeKiTvHIeSo-qw" presentationName="Seznam funkčních požadavků" isPlanned="false" superActivities="_gd2tki6gEeKexfcpBXL2Tw">
+        <WorkProduct href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_M1tyoCppEeKg3ezC6H-3kw"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_IWbzwTAjEeKiTvHIeSo-qw" name="aswi_non-functional_requirements_list" guid="_IWbzwTAjEeKiTvHIeSo-qw" presentationName="Seznam mimofunkčních požadavků" isPlanned="false" superActivities="_gd2tki6gEeKexfcpBXL2Tw">
+        <WorkProduct href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_tewhYCppEeKg3ezC6H-3kw"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_IWbzwjAjEeKiTvHIeSo-qw" name="aswi_project_topic" guid="_IWbzwjAjEeKiTvHIeSo-qw" presentationName="Zadání projektu" isPlanned="false" superActivities="_gd2tki6gEeKexfcpBXL2Tw">
+        <WorkProduct href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_kSctMC8nEeKz94mGtucTWw"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_IWbzwzAjEeKiTvHIeSo-qw" name="aswi_customer_meeting_report" guid="_IWbzwzAjEeKiTvHIeSo-qw" presentationName="Záznam schůzky se zákazníkem" isPlanned="false" superActivities="_gd2tki6gEeKexfcpBXL2Tw">
+        <WorkProduct href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_lk93oC9sEeKH54VgI3aDow"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_IWbzxDAjEeKiTvHIeSo-qw" name="aswi_iteration_plan" guid="_IWbzxDAjEeKiTvHIeSo-qw" presentationName="Plán iterace" isPlanned="false" superActivities="_gd2tki6gEeKexfcpBXL2Tw">
+        <WorkProduct href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_XiDKECkXEeK0bd3bdEdbgQ"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_IWbzxTAjEeKiTvHIeSo-qw" name="aswi_retrospective_report" guid="_IWbzxTAjEeKiTvHIeSo-qw" presentationName="Záznam retrospektivy iterace" isPlanned="false" superActivities="_gd2tki6gEeKexfcpBXL2Tw">
+        <WorkProduct href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_o2JUgC9sEeKH54VgI3aDow"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_IWbzxjAjEeKiTvHIeSo-qw" name="aswi_weekly_standup_report" guid="_IWbzxjAjEeKiTvHIeSo-qw" presentationName="Záznam weekly standupu" isPlanned="false" superActivities="_gd2tki6gEeKexfcpBXL2Tw">
+        <WorkProduct href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_l8VOwC9sEeKH54VgI3aDow"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_0hj1ED8KEeKg_b9GpyQkNg" guid="_0hj1ED8KEeKg_b9GpyQkNg" pred="_gd2Ggi6gEeKexfcpBXL2Tw"/>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_2Dh-ID8KEeKg_b9GpyQkNg" guid="_2Dh-ID8KEeKg_b9GpyQkNg" pred="_gd4ixS6gEeKexfcpBXL2Tw"/>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_3TvBwD8KEeKg_b9GpyQkNg" guid="_3TvBwD8KEeKg_b9GpyQkNg" pred="_gd2tkC6gEeKexfcpBXL2Tw"/>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_JlMo4T-5EeKEWZqXuRDJ4w" guid="_JlMo4T-5EeKEWZqXuRDJ4w" pred="_gd1fdC6gEeKexfcpBXL2Tw"/>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_JlSvgD-5EeKEWZqXuRDJ4w" guid="_JlSvgD-5EeKEWZqXuRDJ4w" pred="_tHw-8S6hEeKexfcpBXL2Tw"/>
+    </childPackages>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_gd4iyC6gEeKexfcpBXL2Tw" name="aswi_week" guid="_gd4iyC6gEeKexfcpBXL2Tw">
+      <processElements xsi:type="org.eclipse.epf.uma:CapabilityPattern" xmi:id="_gd4iyS6gEeKexfcpBXL2Tw" name="aswi_week" guid="_gd4iyS6gEeKexfcpBXL2Tw" presentationName="Týden" superActivities="_89A_AS5iEeKVavM_dEXkKA" isRepeatable="true" isOngoing="true" variabilityType="extends">
+        <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:CapabilityPattern" href="uma://_MTeLoC5jEeKVavM_dEXkKA#_MTeLoS5jEeKVavM_dEXkKA"/>
+      </processElements>
+    </childPackages>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_tHw-8C6hEeKexfcpBXL2Tw" name="aswi_adress_bugs_and_backlogs" guid="_tHw-8C6hEeKexfcpBXL2Tw">
+      <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_tHw-8S6hEeKexfcpBXL2Tw" name="aswi_adress_bugs_and_backlogs" guid="_tHw-8S6hEeKexfcpBXL2Tw" presentationName="Opravit chyby a nedodělky" briefDescription="Dokončit, přesunout či eliminovat nevyřešené úkoly z předchozího vývoje." isPlanned="false" superActivities="_89A_AS5iEeKVavM_dEXkKA" isOngoing="true" isEventDriven="true" linkToPredecessor="_JErVwj-5EeKEWZqXuRDJ4w" breakdownElements="_z3JoEC6hEeKexfcpBXL2Tw _IKWfkDAjEeKiTvHIeSo-qw _IKWfkTAjEeKiTvHIeSo-qw _IKWfkjAjEeKiTvHIeSo-qw _Ta4hYD8FEeKg_b9GpyQkNg _TbBrUD8FEeKg_b9GpyQkNg"/>
+      <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="_z3JoEC6hEeKexfcpBXL2Tw" name="aswi_adress_pending_issues" guid="_z3JoEC6hEeKexfcpBXL2Tw" presentationName="Dodělat zbytky z předchozího vývoje" superActivities="_tHw-8S6hEeKexfcpBXL2Tw" isOngoing="true" isEventDriven="true" mandatoryInput="_IKWfkTAjEeKiTvHIeSo-qw _IKWfkjAjEeKiTvHIeSo-qw" output="_IKWfkTAjEeKiTvHIeSo-qw _IKWfkjAjEeKiTvHIeSo-qw" performedPrimarilyBy="_IKWfkDAjEeKiTvHIeSo-qw">
+        <ownedRules xmi:id="_CE47UD_IEeKEWZqXuRDJ4w" name="wpStates" guid="_CE47UD_IEeKEWZqXuRDJ4w" body="_IKWfkTAjEeKiTvHIeSo-qw">
+          <methodElementProperty xmi:id="_CE47UT_IEeKEWZqXuRDJ4w" name="constraint_wpStates" value="_54Ha8C2vEeKtT515Esx8Vg/output"/>
+        </ownedRules>
+        <ownedRules xmi:id="_Ceo4ED_IEeKEWZqXuRDJ4w" name="wpStates" guid="_Ceo4ED_IEeKEWZqXuRDJ4w" body="_IKWfkjAjEeKiTvHIeSo-qw">
+          <methodElementProperty xmi:id="_Ceu-sD_IEeKEWZqXuRDJ4w" name="constraint_wpStates" value="_54Ha8C2vEeKtT515Esx8Vg/output"/>
+        </ownedRules>
+        <Task href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_-2rLcCqVEeKro62q_nzUjw"/>
+        <selectedSteps href="uma://-GmuN4EteKiAJjv-YPkOw8Q#_NBOloCqWEeKro62q_nzUjw"/>
+        <selectedSteps href="uma://-GmuN4EteKiAJjv-YPkOw8Q#_OrUv8CqWEeKro62q_nzUjw"/>
+        <selectedSteps href="uma://-GmuN4EteKiAJjv-YPkOw8Q#_RXIO4CqWEeKro62q_nzUjw"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:RoleDescriptor" xmi:id="_IKWfkDAjEeKiTvHIeSo-qw" name="aswi_team" guid="_IKWfkDAjEeKiTvHIeSo-qw" presentationName="Vývojový tým" isPlanned="false" superActivities="_tHw-8S6hEeKexfcpBXL2Tw" modifies="_TbBrUD8FEeKg_b9GpyQkNg _IKWfkTAjEeKiTvHIeSo-qw _IKWfkjAjEeKiTvHIeSo-qw" responsibleFor="_TbBrUD8FEeKg_b9GpyQkNg">
+        <Role href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_6An5MCnqEeKEKJTuEqpfrw"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_IKWfkTAjEeKiTvHIeSo-qw" name="aswi_iteration_plan" guid="_IKWfkTAjEeKiTvHIeSo-qw" presentationName="Plán iterace" isPlanned="false" superActivities="_tHw-8S6hEeKexfcpBXL2Tw">
+        <WorkProduct href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_XiDKECkXEeK0bd3bdEdbgQ"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_IKWfkjAjEeKiTvHIeSo-qw" name="aswi_project_plan" guid="_IKWfkjAjEeKiTvHIeSo-qw" presentationName="Plán projektu" isPlanned="false" superActivities="_tHw-8S6hEeKexfcpBXL2Tw">
+        <WorkProduct href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_o7VG4CkTEeK0bd3bdEdbgQ"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="_Ta4hYD8FEeKg_b9GpyQkNg" name="aswi_fix_bugs" guid="_Ta4hYD8FEeKg_b9GpyQkNg" presentationName="Opravit chyby v produktu" superActivities="_tHw-8S6hEeKexfcpBXL2Tw" isOngoing="true" isEventDriven="true" mandatoryInput="_TbBrUD8FEeKg_b9GpyQkNg" output="_TbBrUD8FEeKg_b9GpyQkNg" performedPrimarilyBy="_IKWfkDAjEeKiTvHIeSo-qw">
+        <ownedRules xmi:id="_EAS4ED_IEeKEWZqXuRDJ4w" name="wpStates" guid="_EAS4ED_IEeKEWZqXuRDJ4w" body="_TbBrUD8FEeKg_b9GpyQkNg">
+          <methodElementProperty xmi:id="_EAS4ET_IEeKEWZqXuRDJ4w" name="constraint_wpStates" value="_54Ha8C2vEeKtT515Esx8Vg/output"/>
+        </ownedRules>
+        <Task href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_UXHTsDPOEeKtnbVmxqJ4qQ"/>
+        <selectedSteps href="uma://-8NQNX6hiTgyyGH_79QgG7Q#_8-lRkJV2EeKPfYuqAVau1w"/>
+        <selectedSteps href="uma://-8NQNX6hiTgyyGH_79QgG7Q#_-1V-4JV2EeKPfYuqAVau1w"/>
+        <selectedSteps href="uma://-8NQNX6hiTgyyGH_79QgG7Q#_ABAgwJV3EeKPfYuqAVau1w"/>
+        <selectedSteps href="uma://-8NQNX6hiTgyyGH_79QgG7Q#_GdHBgJV3EeKPfYuqAVau1w"/>
+        <selectedSteps href="uma://-8NQNX6hiTgyyGH_79QgG7Q#_J0DvMJV3EeKPfYuqAVau1w"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_TbBrUD8FEeKg_b9GpyQkNg" name="aswi_bug_list" guid="_TbBrUD8FEeKg_b9GpyQkNg" presentationName="Seznam závad" isPlanned="false" superActivities="_tHw-8S6hEeKexfcpBXL2Tw">
+        <WorkProduct href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_B_N6wCkXEeK0bd3bdEdbgQ"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_JErVwj-5EeKEWZqXuRDJ4w" guid="_JErVwj-5EeKEWZqXuRDJ4w" pred="_gduKvC6gEeKexfcpBXL2Tw"/>
+    </childPackages>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_di3WoD8IEeKg_b9GpyQkNg" name="aswi_manage_iteration" guid="_di3WoD8IEeKg_b9GpyQkNg">
+      <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_di3WoT8IEeKg_b9GpyQkNg" name="aswi_manage_iteration" guid="_di3WoT8IEeKg_b9GpyQkNg" presentationName="Řídit iteraci" isPlanned="false" superActivities="_89A_AS5iEeKVavM_dEXkKA" isOngoing="true" breakdownElements="_fz_EsD8IEeKg_b9GpyQkNg _fz_EsT8IEeKg_b9GpyQkNg _fz_Esj8IEeKg_b9GpyQkNg _fz_Esz8IEeKg_b9GpyQkNg _fz_EtD8IEeKg_b9GpyQkNg _fz_rwD8IEeKg_b9GpyQkNg _fz_rwT8IEeKg_b9GpyQkNg _fz_rwj8IEeKg_b9GpyQkNg"/>
+      <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="_fz_EsD8IEeKg_b9GpyQkNg" name="aswi_manage_iteration" guid="_fz_EsD8IEeKg_b9GpyQkNg" presentationName="Řídit iteraci" superActivities="_di3WoT8IEeKg_b9GpyQkNg" isOngoing="true" additionallyPerformedBy="_fz_Esj8IEeKg_b9GpyQkNg" mandatoryInput="_fz_Esz8IEeKg_b9GpyQkNg _fz_EtD8IEeKg_b9GpyQkNg _fz_rwD8IEeKg_b9GpyQkNg _fz_rwT8IEeKg_b9GpyQkNg _fz_rwj8IEeKg_b9GpyQkNg" output="_fz_EtD8IEeKg_b9GpyQkNg _fz_rwD8IEeKg_b9GpyQkNg _fz_rwT8IEeKg_b9GpyQkNg _fz_rwj8IEeKg_b9GpyQkNg" performedPrimarilyBy="_fz_EsT8IEeKg_b9GpyQkNg">
+        <ownedRules xmi:id="_bv0hED_LEeKEWZqXuRDJ4w" name="wpStates" guid="_bv0hED_LEeKEWZqXuRDJ4w" body="_fz_EtD8IEeKg_b9GpyQkNg">
+          <methodElementProperty xmi:id="_bv6nsD_LEeKEWZqXuRDJ4w" name="constraint_wpStates" value="_54Ha8C2vEeKtT515Esx8Vg/output"/>
+        </ownedRules>
+        <ownedRules xmi:id="_cJMDUD_LEeKEWZqXuRDJ4w" name="wpStates" guid="_cJMDUD_LEeKEWZqXuRDJ4w" body="_fz_rwD8IEeKg_b9GpyQkNg">
+          <methodElementProperty xmi:id="_cJMDUT_LEeKEWZqXuRDJ4w" name="constraint_wpStates" value="_54Ha8C2vEeKtT515Esx8Vg/output"/>
+        </ownedRules>
+        <ownedRules xmi:id="_cjCGsD_LEeKEWZqXuRDJ4w" name="wpStates" guid="_cjCGsD_LEeKEWZqXuRDJ4w" body="_fz_rwT8IEeKg_b9GpyQkNg">
+          <methodElementProperty xmi:id="_cjCGsT_LEeKEWZqXuRDJ4w" name="constraint_wpStates" value="_54Ha8C2vEeKtT515Esx8Vg/output"/>
+        </ownedRules>
+        <ownedRules xmi:id="_c_1XcD_LEeKEWZqXuRDJ4w" name="wpStates" guid="_c_1XcD_LEeKEWZqXuRDJ4w" body="_fz_rwj8IEeKg_b9GpyQkNg">
+          <methodElementProperty xmi:id="_c_1XcT_LEeKEWZqXuRDJ4w" name="constraint_wpStates" value="_54Ha8C2vEeKtT515Esx8Vg/output"/>
+        </ownedRules>
+        <Task href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_Tt5zoC9lEeK99MkrWqAuAg"/>
+        <selectedSteps href="uma://-OFxoW93eJc4h1lXPSDo7Kw#_q7B7YDlGEeKQMd9EkvAhAw"/>
+        <selectedSteps href="uma://-OFxoW93eJc4h1lXPSDo7Kw#_sZWTgDlGEeKQMd9EkvAhAw"/>
+        <selectedSteps href="uma://-OFxoW93eJc4h1lXPSDo7Kw#_vMnsYDlGEeKQMd9EkvAhAw"/>
+        <selectedSteps href="uma://-OFxoW93eJc4h1lXPSDo7Kw#_wNyOcDlGEeKQMd9EkvAhAw"/>
+        <selectedSteps href="uma://-OFxoW93eJc4h1lXPSDo7Kw#_yJH5wDlGEeKQMd9EkvAhAw"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:RoleDescriptor" xmi:id="_fz_EsT8IEeKg_b9GpyQkNg" name="aswi_team_leader" guid="_fz_EsT8IEeKg_b9GpyQkNg" presentationName="Vedoucí týmu" isPlanned="false" superActivities="_di3WoT8IEeKg_b9GpyQkNg" modifies="_fz_EtD8IEeKg_b9GpyQkNg _fz_rwD8IEeKg_b9GpyQkNg _fz_rwT8IEeKg_b9GpyQkNg _fz_rwj8IEeKg_b9GpyQkNg" responsibleFor="_fz_rwj8IEeKg_b9GpyQkNg _fz_rwT8IEeKg_b9GpyQkNg">
+        <Role href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_DZhRACjUEeKUV4oljX-9JQ"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:RoleDescriptor" xmi:id="_fz_Esj8IEeKg_b9GpyQkNg" name="aswi_team_member" guid="_fz_Esj8IEeKg_b9GpyQkNg" presentationName="Člen týmu" isPlanned="false" superActivities="_di3WoT8IEeKg_b9GpyQkNg">
+        <Role href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_0BhzUCjTEeKUV4oljX-9JQ"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_fz_Esz8IEeKg_b9GpyQkNg" name="aswi_functional_requirements_list" guid="_fz_Esz8IEeKg_b9GpyQkNg" presentationName="Seznam funkčních požadavků" isPlanned="false" superActivities="_di3WoT8IEeKg_b9GpyQkNg">
+        <WorkProduct href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_M1tyoCppEeKg3ezC6H-3kw"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_fz_EtD8IEeKg_b9GpyQkNg" name="aswi_bug_list" guid="_fz_EtD8IEeKg_b9GpyQkNg" presentationName="Seznam závad" isPlanned="false" superActivities="_di3WoT8IEeKg_b9GpyQkNg">
+        <WorkProduct href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_B_N6wCkXEeK0bd3bdEdbgQ"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_fz_rwD8IEeKg_b9GpyQkNg" name="aswi_change_request_list" guid="_fz_rwD8IEeKg_b9GpyQkNg" presentationName="Seznam požadavků na změny" isPlanned="false" superActivities="_di3WoT8IEeKg_b9GpyQkNg">
+        <WorkProduct href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_yc3AICkWEeK0bd3bdEdbgQ"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_fz_rwT8IEeKg_b9GpyQkNg" name="aswi_iteration_plan" guid="_fz_rwT8IEeKg_b9GpyQkNg" presentationName="Plán iterace" isPlanned="false" superActivities="_di3WoT8IEeKg_b9GpyQkNg">
+        <WorkProduct href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_XiDKECkXEeK0bd3bdEdbgQ"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_fz_rwj8IEeKg_b9GpyQkNg" name="aswi_project_plan" guid="_fz_rwj8IEeKg_b9GpyQkNg" presentationName="Plán projektu" isPlanned="false" superActivities="_di3WoT8IEeKg_b9GpyQkNg">
+        <WorkProduct href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_o7VG4CkTEeK0bd3bdEdbgQ"/>
+      </processElements>
+    </childPackages>
+    <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_KLQYwC6hEeKexfcpBXL2Tw" guid="_KLQYwC6hEeKexfcpBXL2Tw" pred="_gduKvC6gEeKexfcpBXL2Tw"/>
+    <process xsi:type="org.eclipse.epf.uma:CapabilityPattern" xmi:id="_89A_AS5iEeKVavM_dEXkKA" name="aswi_iteration" guid="_89A_AS5iEeKVavM_dEXkKA" presentationName="Iterace" briefDescription="Capability pattern popisující průběh iterace, respektive těch jejích činností, které se nemění v závislosti na fázi vývoje." isRepeatable="true" isOngoing="true" breakdownElements="_gduKvC6gEeKexfcpBXL2Tw _tHw-8S6hEeKexfcpBXL2Tw _gd1fdC6gEeKexfcpBXL2Tw _di3WoT8IEeKg_b9GpyQkNg _gd2tki6gEeKexfcpBXL2Tw _gd4iyS6gEeKexfcpBXL2Tw">
+      <presentation xmi:id="-IH_g_jhSRCK81MewhvAOvw" href="uma://-IH_g_jhSRCK81MewhvAOvw#-IH_g_jhSRCK81MewhvAOvw"/>
+      <defaultContext href="uma://_0q85QJySEd2xJNwbI6lxKA#_Pht1ECjYEeKUV4oljX-9JQ"/>
+      <validContext href="uma://_0q85QJySEd2xJNwbI6lxKA#_Pht1ECjYEeKUV4oljX-9JQ"/>
+    </process>
+  </org.eclipse.epf.uma:ProcessComponent>
+</xmi:XMI>

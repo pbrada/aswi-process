@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_13bBktnmEdmO6L4XMImrsA" name="identify_design_mechanisms,{C7A26BD7-3820-48D9-830F-684C3AF155F9}" guid="_13bBktnmEdmO6L4XMImrsA" changeDate="2005-07-25T20:08:54.596-0700" version="7.1.0">
+  <sections xmi:id="_TzJOcNnnEdmO6L4XMImrsA" name=" Categorize Clients of Analysis Mechanisms " guid="_TzJOcNnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;XE_analysis_mechanisms__categorizing&quot; name=&quot;XE_analysis_mechanisms__categorizing&quot;>&lt;/a>&lt;a id=&quot;categorize clients&quot;&#xD;
+name=&quot;categorize clients&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    Analysis mechanisms provide conceptual sets of services which are used by &lt;a class=&quot;elementLinkWithUserText&quot;&#xD;
+    href=&quot;./../../core.base_rup/workproducts/rup_analysis_class_DAF7CE03.html&quot; guid=&quot;{1E20603F-A5B8-42D5-BDBC-69DCE9C0FCDB}&quot;>Analysis&#xD;
+    Classes&lt;/a>. They offer a convenient short-hand for fairly complex behaviors which will ultimately have to be worried&#xD;
+    about, but which are out of scope for the analysis effort. Their main purpose is to allow us to capture the&#xD;
+    requirements on these yet-to-be designed services of the system without having to be concerned about the details of the&#xD;
+    service provider itself.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Now we must begin the refine the information gathered on the analysis mechanisms. The steps for doing this are as&#xD;
+    follows:&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;b>Identify the clients of each analysis mechanism.&lt;/b> Scan all clients of a given analysis mechanism, looking at the&#xD;
+    characteristics they require for that mechanism. For example, a number of &lt;a class=&quot;elementLinkWithUserText&quot;&#xD;
+    href=&quot;./../../core.base_rup/workproducts/rup_analysis_class_DAF7CE03.html&quot; guid=&quot;{1E20603F-A5B8-42D5-BDBC-69DCE9C0FCDB}&quot;>Analysis&#xD;
+    Classes&lt;/a> may make use of a Persistence mechanism, but their requirements on this may widely vary: a class which will&#xD;
+    have a thousand persistent instances has significantly different persistence requirements than a class which will have&#xD;
+    four million persistent instances. Similarly, a class whose instances must provide sub-millisecond response to instance&#xD;
+    data will require a different persistence approach than a class whose instance data is only accessed through ad-hoc&#xD;
+    queries and batch reporting applications.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;b>Identify characteristic profiles for each analysis mechanism&lt;/b>. There may be widely varying &lt;b>characteristics&#xD;
+    profiles&lt;/b>, providing varying degrees of performance, footprint, security, economic cost, etc. Each analysis&#xD;
+    mechanism is different - different characteristics will apply to each. Many mechanisms will require estimates of the&#xD;
+    number of instances to be managed, and their expected size in terms of the expected number of bytes. The movement of&#xD;
+    large amounts of data through any system will create tremendous performance issues which must be dealt with.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;b>Group clients according to their use of characteristic profiles.&lt;/b> Form groups of clients that seem to share a&#xD;
+    need for an analysis mechanism with a similar characteristics profile; identify a design mechanism based on each such&#xD;
+    need. These groupings provide an initial cut at the design mechanisms. An example analysis mechanism, &quot;inter-process&#xD;
+    communication&quot;, may map onto a design mechanism &quot;object request broker&quot;. Different characteristic profiles will lead to&#xD;
+    different design mechanisms which emerge from the same analysis mechanism. The simple persistence mechanism in analysis&#xD;
+    will give rise to a number of persistence mechanisms in design: in-memory persistence, file-based, database-based,&#xD;
+    distributed, etc. The design mechanisms are refinements of the analysis mechanisms, based on different characteristic&#xD;
+    profiles.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_TzJOcdnnEdmO6L4XMImrsA" name=" Inventory the Implementation Mechanisms " guid="_TzJOcdnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;XE_implementation_mechanism__inventorying&quot; name=&quot;XE_implementation_mechanism__inventorying&quot;>&lt;/a>&lt;a&#xD;
+id=&quot;inventory impl mechanisms&quot; name=&quot;inventory impl mechanisms&quot;>&lt;/a>&#xD;
+&lt;p>&#xD;
+    Proceed bottom-up and make an inventory of the implementation mechanisms (see &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../core.base_rup/guidances/concepts/design_and_implementation_mechanisms_A37EAC7D.html&quot;&#xD;
+    guid=&quot;6.131233324119695E-305&quot;>Concept: Design and Implementation Mechanisms&lt;/a>) that you have at your disposal:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Mechanisms offered by a middleware product or component framework.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Mechanisms offered by operating systems.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Mechanisms offered by a component.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Mechanisms offered by a class library.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Legacy code (see also &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+        href=&quot;./../../core.base_rup/tasks/incorporate_design_elements_D3C582B5.html&quot;&#xD;
+        guid=&quot;{5C647173-4E32-4594-96A9-2548B47722FA}&quot;>Task: Incorporate Existing Design Elements&lt;/a>)&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Special purpose packages: GUI builder, Geographical Information System, DBMS, etc.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>&#xD;
+    Determine where existing implementation mechanisms can be used and where new implementation mechanisms need to be&#xD;
+    built.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_TzJOctnnEdmO6L4XMImrsA" name=" Map Design Mechanisms to Implementation Mechanisms " guid="_TzJOctnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;XE_implementation_mechanism__mapping_from_design_mechanisms&quot;&#xD;
+name=&quot;XE_implementation_mechanism__mapping_from_design_mechanisms&quot;>&lt;/a>&lt;a&#xD;
+id=&quot;XE_design_mechanism__mapping_to_implementation_mechanisms&quot;&#xD;
+name=&quot;XE_design_mechanism__mapping_to_implementation_mechanisms&quot;>&lt;/a>&lt;a&#xD;
+id=&quot;Map Design Mechanisms to Implementation Mechanisms&quot; name=&quot;Map Design Mechanisms to Implementation Mechanisms&quot;>&lt;/a>&#xD;
+&lt;p>&#xD;
+    Design mechanisms provide an abstraction of the implementation mechanisms, bridging the gap between Analysis Mechanisms&#xD;
+    and Implementation Mechanisms. The use of abstract architectural mechanisms during design allows us to consider how we&#xD;
+    are going to provide architectural mechanisms without obscuring the problem-at-hand with the details of a particular&#xD;
+    mechanism. It also allows us to potentially substitute one specific implementation mechanism for another without&#xD;
+    adversely affecting the design.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;b>Determine the ranges of characteristics.&lt;/b> Take the characteristics identified for the design mechanisms to&#xD;
+    determine reasonable, economical, or feasible ranges of values to use in the candidate-implementation mechanism.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;b>Consider the cost of acquisition for purchased components&lt;/b>. For candidate implementation mechanisms, consider the&#xD;
+    cost of acquisition or licensing, the maturity of the product, relationship with the vendor, support, etc. in addition&#xD;
+    to purely technical criteria.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;b>Conduct a search for the right components, or build the components.&lt;/b> You will often find that there is no&#xD;
+    apparently suitable implementation mechanism for some design mechanisms; this will trigger a search for the right&#xD;
+    product, or identify the need for in-house development. You may also find that some implementation mechanisms are not&#xD;
+    used at all.&lt;br />&#xD;
+    &lt;br />&#xD;
+     The choice of implementation mechanisms is based not only on a good match for the technical characteristics, but also&#xD;
+    on the non-technical characteristics, such as cost. Some of the choices may be &lt;b>provisional&lt;/b>; almost all have some&#xD;
+    risks attached to them: performance, robustness, and scalability are nearly always concerns and must be validated by&#xD;
+    evaluation, exploratory prototyping, or inclusion in the architectural prototype.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_TzJOc9nnEdmO6L4XMImrsA" name=" Document Architectural Mechanisms " guid="_TzJOc9nnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;XE_architectural_mechanism__documenting&quot; name=&quot;XE_architectural_mechanism__documenting&quot;>&lt;/a>&lt;a&#xD;
+id=&quot;document mechanisms&quot; name=&quot;document mechanisms&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    The role of the Software Architect in this task is to decide upon and validate these mechanisms by building, or&#xD;
+    integrating them, and verifying that they do the job, then consistently impose them upon the rest of the system design.&#xD;
+    The software architect role collaborates with the process engineer role to document the mechanisms and details&#xD;
+    regarding their use in project-specific design guidelines. See &lt;a class=&quot;elementLinkWithUserText&quot;&#xD;
+    href=&quot;./../../core.base_rup/tasks/prepare_project_specific_guidelines_A9AD00DB.html&quot;&#xD;
+    guid=&quot;{1E706674-C1E7-4F8D-BF06-35FFE49C5E42}&quot;>Task: Prepare Project Specific Guidelines&lt;/a>. The relationship (or&#xD;
+    mapping) of analysis mechanisms to design mechanisms to implementation mechanisms, and the associated rationale for&#xD;
+    these choices, should be documented in the &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../core.base_rup/workproducts/rup_software_architecture_document_C367485C.html&quot;&#xD;
+    guid=&quot;{6F49641A-ED10-47B5-9E5D-3F90A6BF3006}&quot;>Software Architecture Document&lt;/a>. The mechanisms themselves are Design&#xD;
+    Model elements (such as Design Package, Design Class, and Design Subsystem) which are detailed in &lt;a&#xD;
+    class=&quot;elementLinkWithType&quot; href=&quot;./../../core.base_rup/workproducts/rup_design_model_2830034D.html&quot;&#xD;
+    guid=&quot;{8CDAEAD4-5E84-4F50-87FD-3240ED047DE7}&quot;>Artifact: Design Model&lt;/a> as part of their respective design tasks.&#xD;
+&lt;/p>&lt;br />&#xD;
+ &lt;br /></sectionDescription>
+  </sections>
+  <purpose>&lt;a id=&quot;Top&quot; name=&quot;Top&quot;>&lt;/a> &#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        &lt;a id=&quot;XE_class__refining_analysis_classes&quot; name=&quot;XE_class__refining_analysis_classes&quot;>&lt;/a>To refine the analysis&#xD;
+        mechanisms into design mechanisms based on the constraints imposed by the implementation environment.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></purpose>
+</org.eclipse.epf.uma:TaskDescription>

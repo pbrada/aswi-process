@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_BbHsAN0NEdmhp5PapAYf4w" name="find_actors_and_use_cases,_9arVYN0MEdmhp5PapAYf4w" guid="_BbHsAN0NEdmhp5PapAYf4w" version="7.1.0">
+  <sections xmi:id="_qGiZwFIREdqHgYHu1YVD0g" name="Find Actors - Systems Engineering Note" guid="_qGiZwFIREdqHgYHu1YVD0g">
+    <sectionDescription>When this&amp;nbsp;task is performed in the context of &lt;i>systems engineering&lt;/i> (with the expectation that the system under&#xD;
+scrutiny will decompose into further subsystems), the expectation is that business modeling (or some equivalent) will have&#xD;
+identified and characterized the boundary of the system to be developed (as a &lt;i>Business System&lt;/i> in the case of&#xD;
+business modeling), and that the actors in the enterprise with which the system must interact to deliver business value,&#xD;
+have been identified. In this context then, this&amp;nbsp;task is concerned mainly with the derivation of system use cases. If&#xD;
+business modeling is not performed, some equivalent mission modeling is needed to discover actors and use cases - in this&#xD;
+case the following steps may have value in this discovery.</sectionDescription>
+  </sections>
+  <sections xmi:id="_NzflcFISEdqHgYHu1YVD0g" name="Find Use Cases - Systems Engineering Note" guid="_NzflcFISEdqHgYHu1YVD0g">
+    <sectionDescription>If analysis has proceeded at the enterprise level (using business modeling or some equivalent) then&amp;nbsp;business use&#xD;
+cases&amp;nbsp;and a&amp;nbsp;business analysis model&amp;nbsp;(with business use-case realizations and operations) will be available.&#xD;
+The business use-case realizations will have delineated the role the system will play in the enterprise and defined the&#xD;
+interactions between the system and other entities in the enterprise. These other entities are the actors. The use cases&#xD;
+for the system can be determined from a process of aggregation of the system's interactions with other entities, by looking&#xD;
+for similarities in the messages exchanged. This process can proceed from the business use-case realizations, or from the&#xD;
+'white-box' description of the business use-case. See the &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+href=&quot;./../../core.base_rup/guidances/concepts/use_case_flowdown_6BF482DB.html&quot; guid=&quot;_6SxgEOM9EdmaZcY4PeqVxA&quot;>Concept: Use-Case&#xD;
+Flowdown&lt;/a>, for more information. The use cases so discovered may be captured in diagrams (associated with the &lt;a&#xD;
+class=&quot;elementLinkWithType&quot; href=&quot;./../../core.base_rup/workproducts/rup_usecase_model_EF15E534.html&quot;&#xD;
+guid=&quot;{9C66F2EC-EDEB-4369-9AFB-04B9E7CBCB8E}&quot;>Artifact: Use-Case Model&lt;/a>). Any performance or other constraints (derived&#xD;
+from the supplementary business specification or other source) that may be associated with the system use-cases should be&#xD;
+captured in the 'special requirements' property of the use case. &#xD;
+&lt;h5>&#xD;
+    Outline the Flow of Events&#xD;
+&lt;/h5>&#xD;
+&lt;p>&#xD;
+    This initial description of the interactions between the system's actors and the system is pure 'black box', that is,&#xD;
+    it does not reveal anything about the internal structure of the system. It should be constructed as a sequence of steps&#xD;
+    ('black box steps' - see &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../core.base_rup/guidances/guidelines/use_case_CC89870D.html&quot;&#xD;
+    guid=&quot;4.1983217662266927E-305&quot;>Guideline: Use Case&lt;/a>), each of which represents a fine-grain interaction with the&#xD;
+    system. These black box steps will be used to guide the identification of 'services' to be supported by the system (see&#xD;
+    &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../systems.rup_se/tasks/se_define_system_context_1233657D.html&quot;&#xD;
+    guid=&quot;{C66A11BC-B869-4702-AE8D-C8347BD0AA96}&quot;>Task: Define the System Context&lt;/a>). Each black box step may be&#xD;
+    annotated with performance or other resource constraints which are driven by external needs (for example in order to&#xD;
+    achieve some overall response time). The allocation of such budgets has to be done carefully, recognizing the&#xD;
+    complexity of each step, and will be refined as the use-case description is refined and realized. It may be the case&#xD;
+    that the driving requirement itself has to be relaxed.&#xD;
+&lt;/p>&#xD;
+&lt;h5>&#xD;
+    Collect Additional Requirements&#xD;
+&lt;/h5>For many systems, there may be: &#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        physical requirements such as constraints on size, weight or power consumption&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        environmental requirements, such as heat tolerance, vibration resistance or contaminant resistance&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        additional product assurance requirements, such as safety, security, survivability&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></sectionDescription>
+  </sections>
+  <sections xmi:id="_GjJu4FITEdqHgYHu1YVD0g" name="Describe How Actors and Use Cases Interact - Systems Engineering Note" guid="_GjJu4FITEdqHgYHu1YVD0g">
+    <sectionDescription>In this context we will delineate the input/output entities that flow between actor and system. In the general systems&#xD;
+case, these entities can include data, mass flow, energy or discrete physical objects. Later, outside this task, we will&#xD;
+also describe the interface protocols associated with their exchange. This is done in &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+href=&quot;./../../core.base_rup/tasks/detail_a_use_case_D9BECBF4.html&quot; guid=&quot;{536BC669-A8FB-426D-88FF-CBEA806A9066}&quot;>Task: Detail a Use&#xD;
+Case&lt;/a> and &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../systems.rup_se/tasks/se_define_system_context_1233657D.html&quot;&#xD;
+guid=&quot;{C66A11BC-B869-4702-AE8D-C8347BD0AA96}&quot;>Task: Define the System Context&lt;/a>. In this&amp;nbsp;task (Find Actors and Use&#xD;
+Cases), you should include a broad description of what is exchanged in the actor-system use-case association (with each&#xD;
+association). Any interface constraints (because the system must communicate with an existing system or external hardware)&#xD;
+should be captured in &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+href=&quot;./../../core.base_rup/workproducts/rup_supplementary_specification_F5ACAA22.html&quot;&#xD;
+guid=&quot;{B16C2941-791C-44E6-B353-354109B5C9DE}&quot;>Artifact: Supplementary Specifications&lt;/a>.</sectionDescription>
+  </sections>
+</org.eclipse.epf.uma:TaskDescription>

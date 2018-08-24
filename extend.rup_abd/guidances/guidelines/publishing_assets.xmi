@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="-ZZSgaOCye2X0tkwcFqzE8w" name=",_tsoTkO3iEduIE9pfhwXQKQ" guid="-ZZSgaOCye2X0tkwcFqzE8w" changeDate="2007-04-18T12:27:02.296-0700" version="1.0.0">
+  <mainDescription>&lt;p>&#xD;
+    To publish an asset means making it visible to the target audience in a target repository. This requires coordination&#xD;
+    of asset content and metadata.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Publishing an asset to another repository provides a cross community view of the asset. To do this requires federating&#xD;
+    metadata and content across the repositories. In some cases this is achieved by physically replicating information&#xD;
+    while in other cases links are used that users can navigate from one repository to the other. For any artifact that is&#xD;
+    replicated between the repositories, it is important to establish which repository owns the “master copy” and which&#xD;
+    holds a “cached copy” of the original for the purpose of providing a context-specific view on it.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Each repository serves a community. Different communities require different governance and authorization models. Often&#xD;
+    in development context a rather coarse grained “workgroup” model is used to facilitate collaboration where any member&#xD;
+    of a workgroup can pretty much perform any operation on an artifact once in the scope of the workgroup; on the other&#xD;
+    hand, governance requirements for deployed services often imply a much more fine grained and restrictive model for who&#xD;
+    can perform which tasks on specific artifacts. Rather than trying to unify these authorization models,&amp;nbsp;you&#xD;
+    can&amp;nbsp;introduce “bridging” roles in each community that are authorized to make content from one environment&#xD;
+    available in another environment.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    As part of determining ownership and mastership of the asset and metadata, some key metadata must be addressed,&#xD;
+    specifically regarding classification and access control. The classification schemas and access control must be&#xD;
+    coordinated between repositories. The enterprise should be careful to not betray the access control rights of an asset&#xD;
+    in another repository and thereby open up the asset to access it was intended to protect.&#xD;
+&lt;/p></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

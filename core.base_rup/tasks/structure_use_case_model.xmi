@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_1CrK5tnmEdmO6L4XMImrsA" name="structure_use_case_model,{F7D9D038-B184-43CC-9353-15BA154F87B5}" guid="_1CrK5tnmEdmO6L4XMImrsA" changeDate="2005-10-06T11:08:53.010-0700" version="7.1.0">
+  <sections xmi:id="_OAQCwNnnEdmO6L4XMImrsA" name="Identify Common Requirements " guid="_OAQCwNnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;Identify Common Requirements&quot; name=&quot;Identify Common Requirements&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    The first step in structuring the &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../core.base_rup/workproducts/rup_usecase_model_EF15E534.html&quot; guid=&quot;{9C66F2EC-EDEB-4369-9AFB-04B9E7CBCB8E}&quot;>Use-Case&#xD;
+    Model&lt;/a>&amp;nbsp;is to understand the requirements that are common to more than one &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../core.base_rup/workproducts/rup_usecase_A5D30E62.html&quot; guid=&quot;{B1526BC5-E346-42CB-A08A-3C0D7F382407}&quot;>Use Case&lt;/a>.&#xD;
+    Review each use case, taking notes of any commonality.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Use these notes in the later steps (creating included, extended, and generalized use cases) to minimize redundancy. The&#xD;
+    goal is to make the requirements more understandable and easier to maintain, NOT to define a functional decomposition&#xD;
+    that is carried forward into the design.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Common requirements aren't always handled best by creating new use cases. Consider moving common content into other&#xD;
+    requirements work products, such as the &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../core.base_rup/workproducts/rup_glossary_A5D79A0C.html&quot; guid=&quot;{3BF8CC04-9101-47A4-9473-C8205EA588B6}&quot;>Glossary&lt;/a>&#xD;
+    and&amp;nbsp;&lt;a class=&quot;elementLink&quot; href=&quot;./../../core.base_rup/workproducts/rup_supplementary_specification_F5ACAA22.html&quot;&#xD;
+    guid=&quot;{B16C2941-791C-44E6-B353-354109B5C9DE}&quot;>Supplementary Specifications&lt;/a> and reference as needed from use cases.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_OAQCwdnnEdmO6L4XMImrsA" name="Establish Include-Relationships Between Use Cases " guid="_OAQCwdnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;XE_include-relationship__establish_between_use_cases&quot;&#xD;
+name=&quot;XE_include-relationship__establish_between_use_cases&quot;>&lt;/a>&lt;a id=&quot;Establish Include-Relationships Between Use Cases&quot;&#xD;
+name=&quot;Establish Include-Relationships Between Use Cases&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    If a use case contains a segment of behavior of which only the result, not the method for getting the result, is of any&#xD;
+    importance to the rest of the use case, this behavior can be factored out to a new &lt;b>inclusion use case&lt;/b>. The&#xD;
+    original use case then becomes the &lt;b>base use case&lt;/b> in an include-relationship with the inclusion use case. See&#xD;
+    also &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../core.base_rup/guidances/guidelines/use-case_model_CC121CF4.html&quot;&#xD;
+    guid=&quot;1.7617672560167394E-305&quot;>Guideline: Use-Case Model&lt;/a> and &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../core.base_rup/guidances/guidelines/include-relationship_5AE2718.html&quot; guid=&quot;7.259881398615376E-305&quot;>Guideline:&#xD;
+    Include-Relationship&lt;/a>.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    An include-relationship between two use cases means that a use-case instance following the description of the base use&#xD;
+    case also needs to follow the description of the inclusion use case in order to be complete.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    The include-relationship can help clarify a use case by:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Isolating and encapsulating complex details so they do not obscure the real meaning of the use case.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Improving consistency by including behavior which are included in several base use cases.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>&#xD;
+    Generally, more than one use case must include an inclusion use case to make it worth it to maintain an extra use case&#xD;
+    and the include-relationship.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Only the base use case knows of the relationship between the two use cases; no inclusion use case knows what other use&#xD;
+    cases includes it.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Describe the include-relationship by briefly stating the purpose of the inclusion, as well as the location in the base&#xD;
+    use case at which the inclusion is to be inserted.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    When describing the flow of events of the base use case, you should refer to the inclusion at the location in which the&#xD;
+    inclusion is inserted.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_OAQCwtnnEdmO6L4XMImrsA" name="Establish Extend-Relationships Between Use Cases " guid="_OAQCwtnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;XE_extend-relationship__establish_between_use_cases&quot;&#xD;
+name=&quot;XE_extend-relationship__establish_between_use_cases&quot;>&lt;/a>&lt;a id=&quot;Establish Extend-Relationships Between Use Cases&quot;&#xD;
+name=&quot;Establish Extend-Relationships Between Use Cases&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    If a use case has segments of behavior that are optional or exceptional in character, and that do not add to the&#xD;
+    understanding of the primary purpose of the use case, factor those out to a new &lt;b>extension use case&lt;/b>. The original&#xD;
+    use case then becomes a &lt;b>base use case&lt;/b>, to which the extension use case has an extend-relationship. See also &lt;a&#xD;
+    class=&quot;elementLinkWithType&quot; href=&quot;./../../core.base_rup/guidances/guidelines/use-case_model_CC121CF4.html&quot;&#xD;
+    guid=&quot;1.7617672560167394E-305&quot;>Guideline: Use-Case Model&lt;/a> and &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../core.base_rup/guidances/guidelines/extend-relationship_EF38D814.html&quot; guid=&quot;3.679940320411645E-305&quot;>Guideline:&#xD;
+    Extend-Relationship&lt;/a>.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    In the base use case you declare extension points, which define where in the base use case extensions may be made. See&#xD;
+    also &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../core.base_rup/guidances/guidelines/use_case_CC89870D.html&quot;&#xD;
+    guid=&quot;4.1983217662266927E-305&quot;>Guideline: Use Case&lt;/a>.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Complex sub-flows and optional behavior are the first candidates for being partitioned out into extension use cases.&#xD;
+    Often this behavior can be quite complex and hard to describe: including it in the flow of events of a use case can&#xD;
+    make the &quot;normal&quot; behavior harder to see. Extracting it should improve the comprehensibility of the use-case model.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Make sure that the flow of events of the base use case is still complete and understandable by itself, without any&#xD;
+    reference to the extension use case.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Only the extension use case knows of the relationship between the two use cases. The base use case only knows it has&#xD;
+    extension points, it doesn't know what extension use cases are using them.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Briefly describe every extend-relationship you define. Define the conditions that must be met for the extension to&#xD;
+    occur. Make sure to define the extension point in the base use case at which the extension should be inserted.&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        If you do not define any conditions, it means the extension always is performed.&amp;nbsp;&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        If the extension use case has several behavior segments that are to be inserted at different extension points in&#xD;
+        the base use case, make sure to define these segments and the extension point for each segment in the base use&#xD;
+        case.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></sectionDescription>
+  </sections>
+  <sections xmi:id="_OAQCw9nnEdmO6L4XMImrsA" name="Establish Generalizations Between Use Cases " guid="_OAQCw9nnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;XE_use-case-generalization__establish_between_use_cases&quot;&#xD;
+name=&quot;XE_use-case-generalization__establish_between_use_cases&quot;>&lt;/a>&lt;a id=&quot;Establish Generalizations Between Use Cases&quot;&#xD;
+name=&quot;Establish Generalizations Between Use Cases&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    If two or more use cases have similarities in structure and behavior, you can factor out the common behavior to create&#xD;
+    a new &lt;b>parent use case&lt;/b>. The original use cases will then be &lt;b>child use cases&lt;/b> in&#xD;
+    generalization-relationships with the parent. The child use case inherits all behavior described for the parent use&#xD;
+    case. See also &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../core.base_rup/guidances/guidelines/use-case_model_CC121CF4.html&quot;&#xD;
+    guid=&quot;1.7617672560167394E-305&quot;>Guideline: Use-Case Model&lt;/a> and &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../core.base_rup/guidances/guidelines/use-case_generalization_B301F53B.html&quot; guid=&quot;3.7061366529594173E-305&quot;>Guideline:&#xD;
+    Use-Case Generalization&lt;/a>.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    A generalization-relationship between two use cases means that when a use-case instance follows the description of a&#xD;
+    child use case, it also needs to follow the description of the parent use case in order to be considered complete.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Generally, for it to be worth it to maintain a parent use case and a generalization-relationship with a child, there&#xD;
+    needs to be at least two child use cases inheriting from the same parent. An exception is if you have two use cases&#xD;
+    where one is a specialization of the other, but both need to be independently instantiable.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Only the child use case knows of the relationship between the two use cases; no parent use case knows what child use&#xD;
+    cases are specializing it.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    To assist others in understanding the model, you should briefly describe the generalization-relationship. Explain why&#xD;
+    you created the generalization-relationship.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    In the flow of events of the child use case you need to explain how the child will modify the inherited behavior&#xD;
+    sequences by inserting new segments of behavior.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_OAQCxNnnEdmO6L4XMImrsA" name="Establish Generalizations Between Actors " guid="_OAQCxNnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;XE_actor-generalization__establishing&quot; name=&quot;XE_actor-generalization__establishing&quot;>&lt;/a>&lt;a&#xD;
+id=&quot;Establish Generalizations Between Actors&quot; name=&quot;Establish Generalizations Between Actors&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    Actors will have common characteristics that you should model by using actor-generalizations. This part of the work is&#xD;
+    best performed after you have made your first attempts at a use-case model.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Write a brief description of the actor-generalizations, and include them in use-case diagrams for further&#xD;
+    clarification.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    For more information, see &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../core.base_rup/guidances/guidelines/actor-generalization_2AFC6BE3.html&quot; guid=&quot;2.144844789747145E-305&quot;>Guideline:&#xD;
+    Actor-Generalization&lt;/a>.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_Q_kVkDaXEdqp39qgkZWKSA" name="Organize the Use-Case Model Content into Packages" guid="_Q_kVkDaXEdqp39qgkZWKSA">
+    <sectionDescription>&lt;p>&#xD;
+    If the use-case model has a large number of elements, you may want to consider organizing the use cases into &lt;a&#xD;
+    class=&quot;elementLinkWithUserText&quot; href=&quot;./../../core.base_rup/workproducts/rup_usecase_package_A96DDE65.html&quot;&#xD;
+    guid=&quot;{102E424E-98DE-4F54-B1A0-8F8FD54D6BEE}&quot;>use-case packages&lt;/a>. See &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../core.base_rup/guidances/guidelines/use-case_package_1EFD6458.html&quot; guid=&quot;9.871865834975133E-306&quot;>Guideline:&#xD;
+    Use-Case Package&lt;/a> for more information on when to consider this option.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_OAQCxdnnEdmO6L4XMImrsA" name="Evaluate Your Results" guid="_OAQCxdnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;Evaluate Your Results&quot; name=&quot;Evaluate Your Results&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    You should continuously discuss the incorporation of include-, extend-, and generalization-relationships with the&#xD;
+    customer and the users, and see that they have a clear understanding of the resulting use cases and actors, and that&#xD;
+    they agree on their descriptions.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Check the use-case model at this stage to verify that your work is on track, but do not review the model in detail. You&#xD;
+    should review and discuss the newly incorporated use cases and relationships with the customer and users so that they&#xD;
+    have a clear understanding of the use cases and agree on their descriptions.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    For specific recommendations on what to look for during this review, see &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../core.base_rup/guidances/checklists/use-case_model_7737BEDD.html&quot; guid=&quot;2.490702647892324E-305&quot;>Checklist: Use-Case&#xD;
+    Model&lt;/a>.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <purpose>&lt;a id=&quot;Top&quot; name=&quot;Top&quot;>&lt;/a>&lt;a id=&quot;XE_use-case_model__structuring_of&quot; name=&quot;XE_use-case_model__structuring_of&quot;>&lt;/a>&lt;a&#xD;
+id=&quot;XE_structuring___of_use-case_models&quot; name=&quot;XE_structuring___of_use-case_models&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    The purpose of this task is to:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Extract behavior in use cases that need to be considered as abstract use cases. Examples of such behavior includes&#xD;
+        common behavior, optional behavior, exceptional behavior, and behavior that is to be developed in later iterations.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Find new abstract actors that define roles that are shared by several actors.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></purpose>
+</org.eclipse.epf.uma:TaskDescription>

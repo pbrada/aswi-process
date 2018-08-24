@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ArtifactDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="-YNVfeformwm47uWhA0PC2g" name="rup_bm_operation_realization,_acjxkBpVEdqUwb9RAn2tTA" guid="-YNVfeformwm47uWhA0PC2g" changeDate="2005-10-10T16:58:36.848-0700" version="7.1.0">
+  <mainDescription>&lt;p>&#xD;
+    An operation realization has the following outline:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Operation Name&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        List of business subsystem operations realizing the operation, organized by elements specific to each chosen&#xD;
+        viewpoint: business subsystem (logical), distribution/geographical, worker/human resources, concurrency&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        A budgeted requirement for each [subsystem operation, associated non-functional requirement] pair&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>&#xD;
+    The realization is performed concurrently across the elements identified during Business Architectural Analysis and&#xD;
+    includes the realization of the non-functional requirements associated with the operation. The typical diagrams&#xD;
+    employed are communication and sequence diagrams which describe the behavioral aspects in terms of collaborating&#xD;
+    elements.&#xD;
+&lt;/p></mainDescription>
+  <keyConsiderations>&lt;p>&#xD;
+    The Business Designer is responsible for the integrity of the operation realization, and ensures that:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        The operation realization correctly realizes the behavior of its corresponding operation.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        All the chosen viewpoints are addressed and there is at least one realization per viewpoint.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        The associated non-functional requirements are correctly budgeted across the business subsystems operations.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        The operation realization is properly documented and the correspondent diagrams suit their purpose.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        The realization associations are correct.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></keyConsiderations>
+  <purpose>&lt;p>&#xD;
+    The purpose of the operation realization is to describe the &quot;white-box&quot; perspective of&#xD;
+    the&amp;nbsp;business&amp;nbsp;(sub)system under consideration, separating the concerns of the specifiers from the concerns of&#xD;
+    the designers.&#xD;
+&lt;/p></purpose>
+  <representationOptions>&lt;p>&#xD;
+    An Operation Realization is a multi-dimensional realization, one for each viewpoint. At the minimum there will be at&#xD;
+    least one Logical realization for each Operation.&lt;br />&#xD;
+&lt;/p></representationOptions>
+</org.eclipse.epf.uma:ArtifactDescription>

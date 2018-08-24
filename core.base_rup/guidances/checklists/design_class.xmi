@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_13IGoNnmEdmO6L4XMImrsA" name="design_class,1.1028389988231071E-306" guid="_13IGoNnmEdmO6L4XMImrsA" changeDate="2005-06-21T10:38:49.173-0700" version="7.1.0">
+  <mainDescription>&lt;a id=&quot;XE_checkpoints__for_design_classes&quot; name=&quot;XE_checkpoints__for_design_classes&quot;>&lt;/a>&lt;br />&#xD;
+&lt;br /></mainDescription>
+  <sections xmi:id="_HrPa4fM1Edmy-_OjcFOpJQ" name=" General " guid="_HrPa4fM1Edmy-_OjcFOpJQ">
+    <sectionName> General </sectionName>
+    <sectionDescription>&lt;div style=&quot;MARGIN-LEFT: 2em&quot;>&#xD;
+    &lt;ul>&#xD;
+        &lt;li class=&quot;ck&quot;>&#xD;
+            The name of the class clearly reflects the role it plays.&#xD;
+        &lt;/li>&#xD;
+        &lt;li class=&quot;ck&quot;>&#xD;
+            The description of the class clearly conveys the purpose of the class.&#xD;
+        &lt;/li>&#xD;
+        &lt;li class=&quot;ck&quot;>&#xD;
+            The class represents a single well-defined abstraction.&#xD;
+        &lt;/li>&#xD;
+        &lt;li class=&quot;ck&quot;>&#xD;
+            The class's attributes and operations are all essential to fulfilling the responsibilities of the class.&#xD;
+        &lt;/li>&#xD;
+        &lt;li class=&quot;ck&quot;>&#xD;
+            Each class represents a small, consistent and unique set of responsibilities.&#xD;
+        &lt;/li>&#xD;
+        &lt;li class=&quot;ck&quot;>&#xD;
+            The responsibilities of the class are well-defined, clearly stated, and clearly related to the purpose of the&#xD;
+            class.&#xD;
+        &lt;/li>&#xD;
+        &lt;li class=&quot;ck&quot;>&#xD;
+            Each class is relatively self-contained, and is loosely coupled to other classes.&#xD;
+        &lt;/li>&#xD;
+        &lt;li class=&quot;ck&quot;>&#xD;
+            The responsibilities of the class are at a consistent level of abstraction (i.e. high-level (application-level)&#xD;
+            and low-level (implementation-level) responsibilities are not mixed).&#xD;
+        &lt;/li>&#xD;
+        &lt;li class=&quot;ck&quot;>&#xD;
+            Classes in the same inheritance hierarchy possess unique class attributes, operations and relationships (i.e.&#xD;
+            they inherit all common attributes, operations and relationships).&#xD;
+        &lt;/li>&#xD;
+        &lt;li class=&quot;ck&quot;>&#xD;
+            The complete life-cycle of an instance of the class is accounted for. Each object is created, used, and removed&#xD;
+            by one or more use-case realizations.&#xD;
+        &lt;/li>&#xD;
+        &lt;li class=&quot;ck&quot;>&#xD;
+            The class satisfies the behavioral requirements established by the use-case realizations.&#xD;
+        &lt;/li>&#xD;
+        &lt;li class=&quot;ck&quot;>&#xD;
+            All requirements on the class in the requirement specification are addressed.&#xD;
+        &lt;/li>&#xD;
+        &lt;li class=&quot;ck&quot;>&#xD;
+            The demands on the class (as reflected in the class description and by the objects in sequence diagrams) are&#xD;
+            consistent with the class's state machine.&#xD;
+        &lt;/li>&#xD;
+        &lt;li class=&quot;ck&quot;>&#xD;
+            All responsibilities of the class are related, such that it is not possible for the class to exist in a system&#xD;
+            where some of its responsibilities are used, but not others.&#xD;
+        &lt;/li>&#xD;
+        &lt;li class=&quot;ck&quot;>&#xD;
+            No two classes have essentially the same purpose.&#xD;
+        &lt;/li>&#xD;
+    &lt;/ul>&#xD;
+&lt;/div></sectionDescription>
+  </sections>
+  <sections xmi:id="_HrPa4vM1Edmy-_OjcFOpJQ" name=" Generalization/Specialization " guid="_HrPa4vM1Edmy-_OjcFOpJQ">
+    <sectionName> Generalization/Specialization </sectionName>
+    <sectionDescription>&lt;div style=&quot;margin-left: 2em&quot;>&#xD;
+    &lt;ul>&#xD;
+        &lt;li class=&quot;ck&quot;>&#xD;
+            The generalization hierarchy is balanced, such that there are no classes for which the hierarchy is unusually&#xD;
+            flat or deep.&#xD;
+        &lt;/li>&#xD;
+        &lt;li class=&quot;ck&quot;>&#xD;
+            Obvious commonality has been reflected in the inheritance hierarchy.&#xD;
+        &lt;/li>&#xD;
+        &lt;li class=&quot;ck&quot;>&#xD;
+            There are no superclasses which appear to be merges of the attributes of the subclasses.&#xD;
+        &lt;/li>&#xD;
+        &lt;li class=&quot;ck&quot;>&#xD;
+            There are no intermediate abstract classes in the inheritance hierarchy with orthogonal properties, examples of&#xD;
+            which include duplicated subclasses on both sides of an inheritance tree.&#xD;
+        &lt;/li>&#xD;
+        &lt;li class=&quot;ck&quot;>&#xD;
+            Inheritance is used to capture common design abstractions, not primarily for implementation considerations,&#xD;
+            i.e. to reuse bits of code or class structure.&#xD;
+        &lt;/li>&#xD;
+    &lt;/ul>&#xD;
+&lt;/div></sectionDescription>
+  </sections>
+  <sections xmi:id="_HrPa4_M1Edmy-_OjcFOpJQ" name=" Naming Conventions " guid="_HrPa4_M1Edmy-_OjcFOpJQ">
+    <sectionName> Naming Conventions </sectionName>
+    <sectionDescription>&lt;div style=&quot;margin-left: 2em&quot;>&#xD;
+    &lt;ul>&#xD;
+        &lt;li class=&quot;ck&quot;>&#xD;
+            Class names indicate purpose.&#xD;
+        &lt;/li>&#xD;
+        &lt;li class=&quot;ck&quot;>&#xD;
+            Class names follow the naming conventions specified in project design guidelines.&#xD;
+        &lt;/li>&#xD;
+    &lt;/ul>&#xD;
+&lt;/div></sectionDescription>
+  </sections>
+  <sections xmi:id="_HrPa5PM1Edmy-_OjcFOpJQ" name=" Operations " guid="_HrPa5PM1Edmy-_OjcFOpJQ">
+    <sectionName> Operations </sectionName>
+    <sectionDescription>&lt;div style=&quot;margin-left: 2em&quot;>&#xD;
+    &lt;ul>&#xD;
+        &lt;li class=&quot;ck&quot;>&#xD;
+            The name of each operation is descriptive and understandable.&#xD;
+        &lt;/li>&#xD;
+        &lt;li class=&quot;ck&quot;>&#xD;
+            The state machine and the operations are consistent.&#xD;
+        &lt;/li>&#xD;
+        &lt;li class=&quot;ck&quot;>&#xD;
+            The state machine and operations completely describe the behavior of the class.&#xD;
+        &lt;/li>&#xD;
+        &lt;li class=&quot;ck&quot;>&#xD;
+            The parameters of each operation are correct in terms of both number, name and type.&#xD;
+        &lt;/li>&#xD;
+        &lt;li class=&quot;ck&quot;>&#xD;
+            Implementation specifications for each operation, where defined, are correct.&#xD;
+        &lt;/li>&#xD;
+        &lt;li class=&quot;ck&quot;>&#xD;
+            Operation signatures conform to the standards of the target programming language.&#xD;
+        &lt;/li>&#xD;
+        &lt;li class=&quot;ck&quot;>&#xD;
+            Each operation is used by at least one use-case realization.&#xD;
+        &lt;/li>&#xD;
+    &lt;/ul>&#xD;
+&lt;/div></sectionDescription>
+  </sections>
+  <sections xmi:id="_HrPa5fM1Edmy-_OjcFOpJQ" name=" Attributes " guid="_HrPa5fM1Edmy-_OjcFOpJQ">
+    <sectionName> Attributes </sectionName>
+    <sectionDescription>&lt;div style=&quot;margin-left: 2em&quot;>&#xD;
+    &lt;ul>&#xD;
+        &lt;li class=&quot;ck&quot;>&#xD;
+            All relationships of the class are required to support some operation of the class.&#xD;
+        &lt;/li>&#xD;
+        &lt;li class=&quot;ck&quot;>&#xD;
+            Each attribute represents a single conceptual thing.&#xD;
+        &lt;/li>&#xD;
+        &lt;li class=&quot;ck&quot;>&#xD;
+            The name of each attribute is descriptive, and correctly conveys the information it stores.&#xD;
+        &lt;/li>&#xD;
+    &lt;/ul>&#xD;
+&lt;/div></sectionDescription>
+  </sections>
+  <sections xmi:id="_HrPa5vM1Edmy-_OjcFOpJQ" name=" Relationships " guid="_HrPa5vM1Edmy-_OjcFOpJQ">
+    <sectionName> Relationships </sectionName>
+    <sectionDescription>&lt;div style=&quot;margin-left: 2em&quot;>&#xD;
+    &lt;ul>&#xD;
+        &lt;li class=&quot;ck&quot;>&#xD;
+            The role names of aggregations and associations describe the relationship between the associating and&#xD;
+            associated classes.&#xD;
+        &lt;/li>&#xD;
+        &lt;li class=&quot;ck&quot;>&#xD;
+            The multiplicities of the relationships are correct.&#xD;
+        &lt;/li>&#xD;
+    &lt;/ul>&#xD;
+&lt;/div></sectionDescription>
+  </sections>
+  <sections xmi:id="_HrVhgPM1Edmy-_OjcFOpJQ" name=" State Machines " guid="_HrVhgPM1Edmy-_OjcFOpJQ">
+    <sectionName> State Machines </sectionName>
+    <sectionDescription>&lt;div style=&quot;MARGIN-LEFT: 2em&quot;>&#xD;
+    &lt;ul>&#xD;
+        &lt;li class=&quot;ck&quot;>&#xD;
+            The state machine is as simple as possible while still expressing the required behavior.&#xD;
+        &lt;/li>&#xD;
+        &lt;li class=&quot;ck&quot;>&#xD;
+            The state machine does not contain any superfluous states or transitions.&#xD;
+        &lt;/li>&#xD;
+        &lt;li class=&quot;ck&quot;>&#xD;
+            The state machine has a clear context.&#xD;
+        &lt;/li>&#xD;
+        &lt;li class=&quot;ck&quot;>&#xD;
+            All referenced objects are visible to the enclosing object.&#xD;
+        &lt;/li>&#xD;
+        &lt;li class=&quot;ck&quot;>&#xD;
+            The state machine is efficient, and carries out its behavior with an optimal balance of time and resources as&#xD;
+            defined by the actions it dispatches.&#xD;
+        &lt;/li>&#xD;
+        &lt;li class=&quot;ck&quot;>&#xD;
+            The state machine is understandable.&#xD;
+        &lt;/li>&#xD;
+        &lt;li style=&quot;LIST-STYLE-TYPE: none&quot;>&#xD;
+            &lt;ul>&#xD;
+                &lt;li class=&quot;ck&quot;>&#xD;
+                    The state and transition names are understandable in the context of the domain of the system.&#xD;
+                &lt;/li>&#xD;
+                &lt;li class=&quot;ck&quot;>&#xD;
+                    The state names indicate what is being waited for or what is happening, rather than what has happened.&#xD;
+                &lt;/li>&#xD;
+                &lt;li class=&quot;ck&quot;>&#xD;
+                    The state and transition names are unique within the state machine (although not a strict requirements,&#xD;
+                    it aids in debugging to enforce unique names).&#xD;
+                &lt;/li>&#xD;
+                &lt;li class=&quot;ck&quot;>&#xD;
+                    Logical groupings of states are contained in composite states.&#xD;
+                &lt;/li>&#xD;
+                &lt;li class=&quot;ck&quot;>&#xD;
+                    Composite states have been used effectively to reduce complexity?&#xD;
+                &lt;/li>&#xD;
+                &lt;li class=&quot;ck&quot;>&#xD;
+                    Transition labels reflect the underlying cause of the transition.&#xD;
+                &lt;/li>&#xD;
+                &lt;li class=&quot;ck&quot;>&#xD;
+                    There are no code fragments on state transitions which are more than 25 lines of detail code; instead,&#xD;
+                    functions have been used effectively to reduce transition code complexity.&#xD;
+                &lt;/li>&#xD;
+                &lt;li class=&quot;ck&quot;>&#xD;
+                    State machine nesting has been examined to ensure that nesting depth is not too deep to be&#xD;
+                    understandable; one or two levels of substates are usually sufficient for most complex behaviors.&#xD;
+                &lt;/li>&#xD;
+            &lt;/ul>&#xD;
+        &lt;/li>&#xD;
+        &lt;li class=&quot;ck&quot;>&#xD;
+            Active classes have been used instead of concurrent substates; active classes are nearly always a better&#xD;
+            alternative and more understandable than concurrent substates.&#xD;
+        &lt;/li>&#xD;
+        &lt;li class=&quot;reactiveck&quot;>&#xD;
+            In real-time systems, capsules have been used to represent logical threads of control.&#xD;
+        &lt;/li>&#xD;
+        &lt;li class=&quot;ck&quot;>&#xD;
+            Error or maintenance states have been accounted for.&#xD;
+        &lt;/li>&#xD;
+        &lt;li class=&quot;ck&quot;>&#xD;
+            Substates have been used in lieu of extended state variables; there is no evidence of transition guard&#xD;
+            conditions testing several variables to determine which to state the transition should occur.&#xD;
+        &lt;/li>&#xD;
+        &lt;li class=&quot;ck&quot;>&#xD;
+            The state machine does not resemble a flow chart.&#xD;
+        &lt;/li>&#xD;
+        &lt;li class=&quot;ck&quot;>&#xD;
+            The state machine does not appear to have been overly de-composed, consisting of nested state machines with a&#xD;
+            single sub-state. In cases where the nested sub-state is a placeholder for future design work or subclassing,&#xD;
+            this may be temporarily acceptable providing that the choice has been a conscious one.&#xD;
+        &lt;/li>&#xD;
+    &lt;/ul>&#xD;
+&lt;/div></sectionDescription>
+  </sections>
+</org.eclipse.epf.uma:ContentDescription>

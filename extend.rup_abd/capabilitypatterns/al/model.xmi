@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:org.eclipse.epf.uma.resourcemanager="http:///org/eclipse/epf/uma/resourcemanager.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1">
+  <org.eclipse.epf.uma.resourcemanager:ResourceManager xmi:id="_4m5BYfQnEduo2_EF-XqXpA" guid="_4m5BYfQnEduo2_EF-XqXpA">
+    <resourceDescriptors xmi:id="_4m5BYvQnEduo2_EF-XqXpA" id="-Xtl4SUFvihfO0phxoGkWng" uri="content.xmi"/>
+  </org.eclipse.epf.uma.resourcemanager:ResourceManager>
+  <org.eclipse.epf.uma:ProcessComponent xmi:id="_4kzWsPQnEduo2_EF-XqXpA" name="al" guid="_4kzWsPQnEduo2_EF-XqXpA">
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="__vT1kPQnEduo2_EF-XqXpA" name="pra" guid="__vT1kPQnEduo2_EF-XqXpA">
+      <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="__vT1kfQnEduo2_EF-XqXpA" name="pra" guid="__vT1kfQnEduo2_EF-XqXpA" superActivities="_4kzWsfQnEduo2_EF-XqXpA" variabilityType="extends">
+        <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:CapabilityPattern" href="uma://_rx7PwOhjEduKxbbfe_QPcg#_rx7PwehjEduKxbbfe_QPcg"/>
+      </processElements>
+    </childPackages>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_A7mpkPQoEduo2_EF-XqXpA" name="cra" guid="_A7mpkPQoEduo2_EF-XqXpA">
+      <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_A7mpkfQoEduo2_EF-XqXpA" name="cra" guid="_A7mpkfQoEduo2_EF-XqXpA" superActivities="_4kzWsfQnEduo2_EF-XqXpA" linkToPredecessor="_WxL1wPQoEduo2_EF-XqXpA" variabilityType="extends">
+        <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:CapabilityPattern" href="uma://_1lc-UOhuEduKxbbfe_QPcg#_1lc-UehuEduKxbbfe_QPcg"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_WxL1wPQoEduo2_EF-XqXpA" guid="_WxL1wPQoEduo2_EF-XqXpA" pred="__vT1kfQnEduo2_EF-XqXpA"/>
+    </childPackages>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_CM-K0PQoEduo2_EF-XqXpA" name="mra" guid="_CM-K0PQoEduo2_EF-XqXpA">
+      <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_CM-K0fQoEduo2_EF-XqXpA" name="mra" guid="_CM-K0fQoEduo2_EF-XqXpA" superActivities="_4kzWsfQnEduo2_EF-XqXpA" variabilityType="extends">
+        <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:CapabilityPattern" href="uma://_7npukPQlEduo2_EF-XqXpA#_7npukfQlEduo2_EF-XqXpA"/>
+      </processElements>
+    </childPackages>
+    <process xsi:type="org.eclipse.epf.uma:CapabilityPattern" xmi:id="_4kzWsfQnEduo2_EF-XqXpA" name="al" guid="_4kzWsfQnEduo2_EF-XqXpA" presentationName="Asset Lifecyle" breakdownElements="__vT1kfQnEduo2_EF-XqXpA _A7mpkfQoEduo2_EF-XqXpA _CM-K0fQoEduo2_EF-XqXpA">
+      <presentation xmi:id="-Xtl4SUFvihfO0phxoGkWng" href="uma://-Xtl4SUFvihfO0phxoGkWng#-Xtl4SUFvihfO0phxoGkWng"/>
+      <defaultContext href="uma://_0q85QJySEd2xJNwbI6lxKA#_l3m7ELC4Edu_K5VwzSuYyA"/>
+      <validContext href="uma://_0q85QJySEd2xJNwbI6lxKA#_l3m7ELC4Edu_K5VwzSuYyA"/>
+    </process>
+  </org.eclipse.epf.uma:ProcessComponent>
+</xmi:XMI>

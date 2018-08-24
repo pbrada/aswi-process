@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ArtifactDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_2jYvtNnmEdmO6L4XMImrsA" name="rup_test_data,{5FFF9828-AB23-4C09-8293-42A90E90378B}" guid="_2jYvtNnmEdmO6L4XMImrsA" changeDate="2005-09-27T18:14:14.536-0700" version="7.1.0">
+  <keyConsiderations>&lt;p>&#xD;
+    &lt;!--StartFragment-->When managed separately from the procedural aspects of the test,&amp;nbsp;Test Data &amp;nbsp;enables the&#xD;
+    unique characteristics of the test to be modified independently. &lt;!--EndFragment-->&#xD;
+&lt;/p></keyConsiderations>
+  <purpose>&lt;a id=&quot;Top&quot; name=&quot;Top&quot;>&lt;/a>&lt;a id=&quot;XE_test_data__artifact_definition&quot; name=&quot;XE_test_data__artifact_definition&quot;>&lt;/a>&lt;a&#xD;
+id=&quot;Purpose&quot; name=&quot;Purpose&quot;>&lt;/a>&lt;a id=&quot;XE_test_data__purpose_of&quot; name=&quot;XE_test_data__purpose_of&quot;>&lt;/a> &#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        To provide both a layer of indirection and a central point of modification for the unique characteristics of a&#xD;
+        test.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></purpose>
+  <briefOutline>&lt;a id=&quot;BriefOutline&quot; name=&quot;BriefOutline&quot;>&lt;/a>&lt;a id=&quot;XE_test_data__brief_outline_of&quot;&#xD;
+name=&quot;XE_test_data__brief_outline_of&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    Each Test-Data set should consider various aspects including the following:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        The required preconditions of the Test Environment Configuration that are assumed to exist immediately prior to the&#xD;
+        Test Data being consumed.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        The unique characteristics of the Test Data. These data may range in form; from standard alphanumeric textual&#xD;
+        values to sensory data such as auditory or visual information. Test Data may be specified as a valid range-rather&#xD;
+        than a single value-that should be used during a test.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Any dependencies between the Test-Data elements.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        A descriptive explanation of the condition being tested, often defined in terms of what the failure is if the&#xD;
+        condition being tested is found to be false.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></briefOutline>
+  <representationOptions>&lt;a id=&quot;Tailoring&quot; name=&quot;Tailoring&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    Both the contents and format of Test Data may require modification to meet the needs of each specific organization and&#xD;
+    project.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    When Test Data are managed independently of procedural test concerns, there are a few different styles of storage used:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        A simple form of ASCII Text file, either special character delimited or fixed-width columns.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        A basic form of spreadsheet or database system, such as Microsoft&amp;reg; Excel&amp;reg; or Microsoft&amp;reg; Access&amp;reg;.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Some form of program generated calculation of the Test Data.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Some form of capture, extraction or conversion of the Test Data from an original source.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        A complex relational (RDBMS) or object (ODBMS) database management system. Many test teams make use of the same&#xD;
+        database to manage Test Data as that used by the software being developed. This often proves advantageous in having&#xD;
+        ready access to skilled Database Administrators and Designers who can provide advice and support to the test team.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>&#xD;
+    As mentioned, it is typical for multiple Test Data elements to be specified in a single storage container, usually&#xD;
+    grouped by the general purpose or objective of the tests.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    In some cases the Test Data can be enclosed within the &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../core.base_rup/workproducts/rup_test_script_2140080.html&quot; guid=&quot;{293A9F23-BB20-4993-AABE-76C1E8E1A589}&quot;>Test&#xD;
+    Script&lt;/a> or the &lt;a class=&quot;elementLink&quot; href=&quot;./../../core.base_rup/workproducts/rup_test_suite_DA8938D2.html&quot;&#xD;
+    guid=&quot;{33DE37A2-ECFE-483B-934B-629F5802F87C}&quot;>Test Suite&lt;/a> work products.&amp;nbsp;&#xD;
+&lt;/p>&lt;br />&#xD;
+&lt;br /></representationOptions>
+</org.eclipse.epf.uma:ArtifactDescription>

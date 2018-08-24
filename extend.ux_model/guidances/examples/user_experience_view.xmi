@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:GuidanceDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="-yVJLRjFn1R8k0Txo0qe9ng" name="software_architecture_document_with_a_user-experience_view,1.681192361594181E-305" guid="-yVJLRjFn1R8k0Txo0qe9ng" changeDate="2005-11-21T18:16:18.799-0800" version="7.1.0">
+  <mainDescription>&lt;p>
+    This is an example of a User-Experience View section of a &lt;a class=&quot;elementLink&quot;
+    href=&quot;./../../../core.base_rup/workproducts/rup_software_architecture_document,{6F49641A-ED10-47B5-9E5D-3F90A6BF3006}.html&quot;
+    guid=&quot;{6F49641A-ED10-47B5-9E5D-3F90A6BF3006}&quot;>Software Architecture Document&lt;/a>&amp;nbsp;(SAD).&amp;nbsp;
+&lt;/p>
+&lt;h3>
+    Table of Contents
+&lt;/h3>
+&lt;ul>
+    &lt;li>
+        &lt;a href=&quot;#User-Experience View&quot;>User-Experience View&lt;/a>
+    &lt;/li>
+    &lt;li style=&quot;LIST-STYLE-TYPE: none&quot;>
+        &lt;ul>
+            &lt;li>
+                &lt;a href=&quot;#Overview&quot;>Overview&lt;/a>
+            &lt;/li>
+            &lt;li>
+                &lt;a href=&quot;#Navigation Map&quot;>Navigation Map&lt;/a>
+            &lt;/li>
+            &lt;li>
+                &lt;a href=&quot;#Architecturally Significant Storyboards&quot;>Architecturally Significant Storyboards&lt;/a>
+            &lt;/li>
+        &lt;/ul>
+    &lt;/li>
+&lt;/ul>
+&lt;h3>
+    &lt;a id=&quot;User-Experience View&quot; name=&quot;User-Experience View&quot;>User-Experience View&lt;/a>
+&lt;/h3>
+&lt;p>
+    This section describes the architecturally significant elements of the User-Experience Model.
+&lt;/p>
+&lt;h4>
+    &lt;a id=&quot;Overview&quot; name=&quot;Overview&quot;>Overview&lt;/a>
+&lt;/h4>
+&lt;p>
+    The User-Experience Model captures a very important part of the PearlCircle specification. It captures the screens
+    presented to the user and the transitions between screens resulting from user-generated events such as clicking on a
+    link or a button on a form. Screen descriptions also contain descriptions of the dynamic content that the system must
+    produce and display to the user.
+&lt;/p>
+&lt;p>
+    The User-Experience Model consists of:
+&lt;/p>
+&lt;ul>
+    &lt;li>
+        User-Experience Elements (e.g., screens and input forms), organized by business packages, as well as a Common
+        package that contains those elements that are common to all User-Experience Storyboards (e.g., the home screen).
+    &lt;/li>
+    &lt;li>
+        User-Experience Model Storyboards that describe navigation between the User-Experience Elements that participate in
+        the individual Use-Cases, organized by business area.
+    &lt;/li>
+    &lt;li>
+        Navigation Maps that describe the navigation amongst the application User-Experience Elements (one navigation map
+        per business package).
+    &lt;/li>
+&lt;/ul>
+&lt;p>
+    The structure of the PearlCircle User-Experience Model is shown below:
+&lt;/p>
+&lt;p>
+    &lt;img height=&quot;162&quot; src=&quot;resources/uxmodelexplorer.gif&quot; alt=&quot;digram showing nested folders&quot; width=&quot;271&quot; border=&quot;0&quot; />
+&lt;/p>
+&lt;h4>
+    &lt;a id=&quot;Navigation Map&quot; name=&quot;Navigation Map&quot;>Navigation Map&lt;/a>
+&lt;/h4>
+&lt;p>
+    A Navigation Map is a class diagram showing the navigation paths between selected User-Experience Elements (e.g.,
+    screens and input forms).
+&lt;/p>
+&lt;p>
+    The following diagram shows the User-Experience Elements and the navigation paths for the key User Account Management
+    use-cases (the diagram can be found in User-Experience Model::Ux Model Elements::User Account Management package).
+&lt;/p>
+&lt;p>
+    &lt;img height=&quot;798&quot; src=&quot;resources/user_acct_mgmt_navmap.gif&quot; alt=&quot;digram described in accompanying text&quot; width=&quot;1336&quot;
+    border=&quot;0&quot; />
+&lt;/p>
+&lt;p>
+    There can be multiple Navigation Map diagrams. In fact, for PearlCircle, a Navigation Map is defined for each of the
+    business packages.
+&lt;/p>
+&lt;p>
+    The classes on the diagram represent (1) screens (stereotyped &amp;lt;&amp;lt;screen&amp;gt;&amp;gt;), (2) input forms (stereotyped
+    &amp;lt;&amp;lt;input form&amp;gt;&amp;gt;) or (3) dynamic content bundles, whose content is displayed on the screens or in the input
+    forms (no stereotype).
+&lt;/p>
+&lt;p>
+    The relationships between the &amp;lt;&amp;lt;screen&amp;gt;&amp;gt; classes represent navigation paths between the screens that are
+    initiated by the user's actions. The user actions are represented by the operations on the screens. The dynamic content
+    displayed on the screens is represented by the attributes on the screens.
+&lt;/p>
+&lt;h4>
+    &lt;a id=&quot;Architecturally Significant Storyboards&quot; name=&quot;Architecturally Significant Storyboards&quot;>Architecturally
+    Significant Storyboards&lt;/a>
+&lt;/h4>
+&lt;p>
+    Each Use Case has its own &quot;storyboard&quot;. A User-Experience Storyboard is a synthesis of the User-Experience Elements
+    that participate in the realization of a Use Case. In other words, a User-Experience Storyboard shows system behavior
+    from the User-Experience Model perspective. As an example, the following diagrams show the participants and the basic
+    flow of the Create Auction User-Experience Storyboard (the User-Experience Storyboards for the remaining
+    architecturally-significant Use Cases can be found in the User-Experience Model).
+&lt;/p>
+&lt;p>
+    &lt;img height=&quot;787&quot; src=&quot;resources/create_auction_participants.gif&quot; alt=&quot;digram described in accompanying text&quot;
+    width=&quot;1217&quot; border=&quot;0&quot; />
+&lt;/p>
+&lt;br />
+&lt;p>
+    Note: User-Experience Storyboard participants diagrams can be considered &quot;mini Navigation Maps&quot; for the Use Case.
+&lt;/p>
+&lt;p>
+    &lt;img height=&quot;777&quot; src=&quot;resources/create_auction_basic_flow.gif&quot; alt=&quot;digram described in accompanying text&quot;
+    width=&quot;1693&quot; border=&quot;0&quot; />
+&lt;/p>
+&lt;p>
+    The basic flow of the above User-Experience Storyboard can be summarized as follows:
+&lt;/p>
+&lt;ul>
+    &lt;li>
+        The system presents the Seller with the &lt;b>account home&lt;/b> screen, which contains a URL to create a new auction.
+    &lt;/li>
+    &lt;li>
+        The Seller inputs auction information into the &lt;b>auction info form&lt;/b> input form.
+    &lt;/li>
+    &lt;li>
+        The system displays the entered auction information for the Seller to confirm (in the &lt;b>auction info
+        confirmation&lt;/b> screen).
+    &lt;/li>
+    &lt;li>
+        The Seller confirms the auction information.
+    &lt;/li>
+    &lt;li>
+        The system displays the credit information on file (in the &lt;b>auction payment info&lt;/b> screen) and asks the Seller
+        if he/she want to use the card &quot;on file&quot; to pay for the auction.
+    &lt;/li>
+    &lt;li>
+        The Seller has the option to accept the on file credit card information or input new credit card information (in
+        the &lt;b>auction payment&lt;/b> form).
+    &lt;/li>
+    &lt;li>
+        The system verifies entered credit information and displays the &lt;b>account creation success&lt;/b> screen
+    &lt;/li>
+&lt;/ul></mainDescription>
+</org.eclipse.epf.uma:GuidanceDescription>

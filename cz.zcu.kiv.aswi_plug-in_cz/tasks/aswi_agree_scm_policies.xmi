@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-sDGx8g4OfIRblL1r_8Mt_g" name=",_-OHKMCkiEeKoH7tlsUAjEg" guid="-sDGx8g4OfIRblL1r_8Mt_g" changeDate="2013-01-20T12:38:18.781+0100" version="7.5.1">
+  <mainDescription>&lt;p>&#xD;
+    Po prvním prozkoumání a pochopení funkcí nástrojů pro změnové a konfigurační řízení (k čemuž je vymezen čas na&#xD;
+    cvičeních ASWI) by se tým měl dohodnout na konvencích jejich používání.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    U konfiguračního řízení je nutné domluvit především update/commit politiku, pravidla komentování a označování verzí&#xD;
+    (tagování), popř. práci na paralelních větvích vývoje (branches), jejich následního sjednocování (merge) a řešení&#xD;
+    konfliktů.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    U změnového řízení je vhodné domluvit tvar názvu ticketů (např. úprava / upravit), podrobnost jejich popisů a&#xD;
+    komentování pokroku, využívání různých stavů (kdo má právo vytvářet/schvalovat/uzavírat) a&amp;nbsp;přidělování priorit a&#xD;
+    časových odhadů.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Také je vhodné nastudovat a dohodnout pravidla propojení ticketů a verzí systému.&#xD;
+&lt;/p></mainDescription>
+  <keyConsiderations>sada nástrojů (Redmine + SVN, RTC, popř. jiné), zkušenosti jednotlivých členů týmu s podobnými nástroji</keyConsiderations>
+  <sections xmi:id="_bSDagCkjEeKoH7tlsUAjEg" name="Prostudovat bugtracker" guid="_bSDagCkjEeKoH7tlsUAjEg">
+    <sectionDescription>Naučit se základy používání Redmine/RTC (probíhá hlavně na cvičeních ASWI v začátku semestru).</sectionDescription>
+  </sections>
+  <sections xmi:id="_lksvACkjEeKoH7tlsUAjEg" name="Prostudovat nástroj pro správu konfigurací" guid="_lksvACkjEeKoH7tlsUAjEg">
+    <sectionDescription>Naučit se základy používání SVN/RTC&amp;nbsp;(probíhá hlavně na cvičeních ASWI v začátku semestru).</sectionDescription>
+  </sections>
+  <sections xmi:id="_soXmECkjEeKoH7tlsUAjEg" name="Stanovit konvence používání nástrojů" guid="_soXmECkjEeKoH7tlsUAjEg">
+    <sectionDescription>&lt;p>&#xD;
+    Dohodnout se na politice užívání SVN+Redmine/RTC. Například:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        kdo může vytvářet tickety,&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        kdo je schvaluje,&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        úroveň komentování,&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        používat větné struktury nebo jen heslovitě,&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        kdy commitovat a updatovat,&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        jak řešit konflikty,&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        atd.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></sectionDescription>
+  </sections>
+  <purpose>Usnadňuje orientaci v ticketech a uložených verzích pro mentora i samotný vývojový tým.</purpose>
+  <alternatives>V případě, že zákazník vyžaduje využití vlastních konfiguračních nástrojů nebo úložiště, nebo jiných nástrojů pro řízení&#xD;
+změn (např. těch využívaných interně v podniku zákazníka - Jirra, Flyspray a další) je žádoucí konzultovat konvence&#xD;
+používání těchto nástrojů přímo se zákazníkem.</alternatives>
+</org.eclipse.epf.uma:TaskDescription>

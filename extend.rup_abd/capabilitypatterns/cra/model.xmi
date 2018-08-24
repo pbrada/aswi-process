@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:org.eclipse.epf.uma.resourcemanager="http:///org/eclipse/epf/uma/resourcemanager.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1">
+  <org.eclipse.epf.uma.resourcemanager:ResourceManager xmi:id="_2fRiQehuEduKxbbfe_QPcg" guid="_2fRiQehuEduKxbbfe_QPcg">
+    <resourceDescriptors xmi:id="_2fRiQuhuEduKxbbfe_QPcg" id="-SdTiiDoekUu2x1SL8RRuIA" uri="content.xmi"/>
+  </org.eclipse.epf.uma.resourcemanager:ResourceManager>
+  <org.eclipse.epf.uma:ProcessComponent xmi:id="_1lc-UOhuEduKxbbfe_QPcg" name="cra" guid="_1lc-UOhuEduKxbbfe_QPcg">
+    <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="_VmNlEOhvEduKxbbfe_QPcg" name="search_asset" guid="_VmNlEOhvEduKxbbfe_QPcg" presentationName="Search Asset" superActivities="_1lc-UehuEduKxbbfe_QPcg" mandatoryInput="_VmXWEOhvEduKxbbfe_QPcg" optionalInput="_VmXWEehvEduKxbbfe_QPcg" output="_VmXWEuhvEduKxbbfe_QPcg" performedPrimarilyBy="_VmNlEehvEduKxbbfe_QPcg">
+      <Task href="uma://{AA38D0B3-05CF-49D4-B858-CAFC6819F2F7}#{81DC995B-5930-4F2B-B574-9805136CE94A}"/>
+      <selectedSteps href="uma://_GJY1QN36EdmAuujzfxByGA#_G1VVQN36EdmAuujzfxByGA"/>
+      <selectedSteps href="uma://_GJY1QN36EdmAuujzfxByGA#_G1bb4N36EdmAuujzfxByGA"/>
+      <selectedSteps href="uma://_GJY1QN36EdmAuujzfxByGA#_G1bb4d36EdmAuujzfxByGA"/>
+      <selectedSteps href="uma://_GJY1QN36EdmAuujzfxByGA#_G1bb4t36EdmAuujzfxByGA"/>
+    </processElements>
+    <processElements xsi:type="org.eclipse.epf.uma:RoleDescriptor" xmi:id="_VmNlEehvEduKxbbfe_QPcg" name="asset_consumer" guid="_VmNlEehvEduKxbbfe_QPcg" presentationName="Asset Consumer" superActivities="_1lc-UehuEduKxbbfe_QPcg" modifies="_WnxvwehvEduKxbbfe_QPcg _VrjVgO9pEdukXP2nij9wtQ _VmXWEuhvEduKxbbfe_QPcg" responsibleFor="_VrjVgO9pEdukXP2nij9wtQ _WnxvwehvEduKxbbfe_QPcg _VmXWEuhvEduKxbbfe_QPcg _VmXWEehvEduKxbbfe_QPcg">
+      <Role href="uma://{AA38D0B3-05CF-49D4-B858-CAFC6819F2F7}#_Ev4m0OHkEdq3CP4DTSI-pw"/>
+    </processElements>
+    <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_VmXWEOhvEduKxbbfe_QPcg" name="repository" guid="_VmXWEOhvEduKxbbfe_QPcg" presentationName="Asset Repository" superActivities="_1lc-UehuEduKxbbfe_QPcg">
+      <WorkProduct href="uma://{AA38D0B3-05CF-49D4-B858-CAFC6819F2F7}#{634E94FE-A1C0-4B66-94C0-4D91B3CADB90}"/>
+    </processElements>
+    <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_VmXWEehvEduKxbbfe_QPcg" name="asset_report" guid="_VmXWEehvEduKxbbfe_QPcg" presentationName="Asset Report" superActivities="_1lc-UehuEduKxbbfe_QPcg">
+      <WorkProduct href="uma://{AA38D0B3-05CF-49D4-B858-CAFC6819F2F7}#_tnbe8KwBEduE2IXlWKAGdA"/>
+    </processElements>
+    <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_VmXWEuhvEduKxbbfe_QPcg" name="reusable_asset" guid="_VmXWEuhvEduKxbbfe_QPcg" presentationName="Reusable Asset" superActivities="_1lc-UehuEduKxbbfe_QPcg">
+      <WorkProduct href="uma://{AA38D0B3-05CF-49D4-B858-CAFC6819F2F7}#{B40F6CE7-C2CF-49DB-A805-2FBDC885102D}"/>
+    </processElements>
+    <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="_WnxvwOhvEduKxbbfe_QPcg" name="use_asset" guid="_WnxvwOhvEduKxbbfe_QPcg" presentationName="Use Asset" superActivities="_1lc-UehuEduKxbbfe_QPcg" mandatoryInput="_VmXWEuhvEduKxbbfe_QPcg" output="_WnxvwehvEduKxbbfe_QPcg" performedPrimarilyBy="_VmNlEehvEduKxbbfe_QPcg">
+      <Task href="uma://{AA38D0B3-05CF-49D4-B858-CAFC6819F2F7}#{7E587465-5AF6-4E91-8869-1193C7577C25}"/>
+      <selectedSteps href="uma://_GKiEwN36EdmAuujzfxByGA#_G0RlUN36EdmAuujzfxByGA"/>
+      <selectedSteps href="uma://_GKiEwN36EdmAuujzfxByGA#_G0Xr8N36EdmAuujzfxByGA"/>
+    </processElements>
+    <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_WnxvwehvEduKxbbfe_QPcg" name="reuse_feedback" guid="_WnxvwehvEduKxbbfe_QPcg" presentationName="Reuse Feedback" superActivities="_1lc-UehuEduKxbbfe_QPcg">
+      <WorkProduct href="uma://{AA38D0B3-05CF-49D4-B858-CAFC6819F2F7}#{17055D74-3590-4749-A1B4-F65E19239DBD}"/>
+    </processElements>
+    <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="_XYNHIOhvEduKxbbfe_QPcg" name="provide_asset_feedback" guid="_XYNHIOhvEduKxbbfe_QPcg" presentationName="Provide Asset Feedback" superActivities="_1lc-UehuEduKxbbfe_QPcg" linkToPredecessor="_AM0DMPQjEduo2_EF-XqXpA _0gds0AVlEdyJlaiJ7G71ig" mandatoryInput="_VmXWEOhvEduKxbbfe_QPcg" optionalInput="_VmXWEuhvEduKxbbfe_QPcg" output="_WnxvwehvEduKxbbfe_QPcg" performedPrimarilyBy="_VmNlEehvEduKxbbfe_QPcg">
+      <Task href="uma://{AA38D0B3-05CF-49D4-B858-CAFC6819F2F7}#{E642B808-1646-45AD-AEFA-D4595C8D0FEB}"/>
+      <selectedSteps href="uma://_GLl0sN36EdmAuujzfxByGA#_PrusAKZ2EduHC6cE2S3HNg"/>
+      <selectedSteps href="uma://_GLl0sN36EdmAuujzfxByGA#_G1npIN36EdmAuujzfxByGA"/>
+    </processElements>
+    <processElements xsi:type="org.eclipse.epf.uma:RoleDescriptor" xmi:id="_VrZkgO9pEdukXP2nij9wtQ" name="asset_producer" guid="_VrZkgO9pEdukXP2nij9wtQ" presentationName="Asset Producer" superActivities="_1lc-UehuEduKxbbfe_QPcg" responsibleFor="_VrjVgO9pEdukXP2nij9wtQ _VmXWEuhvEduKxbbfe_QPcg">
+      <Role href="uma://{AA38D0B3-05CF-49D4-B858-CAFC6819F2F7}#_HFo9QOHkEdq3CP4DTSI-pw"/>
+    </processElements>
+    <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_VrjVgO9pEdukXP2nij9wtQ" name="asset_specification" guid="_VrjVgO9pEdukXP2nij9wtQ" presentationName="Asset Specification" superActivities="_1lc-UehuEduKxbbfe_QPcg">
+      <WorkProduct href="uma://{AA38D0B3-05CF-49D4-B858-CAFC6819F2F7}#_FTHVkKZ6EduHC6cE2S3HNg"/>
+    </processElements>
+    <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_AM0DMPQjEduo2_EF-XqXpA" guid="_AM0DMPQjEduo2_EF-XqXpA" pred="_WnxvwOhvEduKxbbfe_QPcg"/>
+    <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="_fQIiwAVlEdyJlaiJ7G71ig" name="create_asset_specification" guid="_fQIiwAVlEdyJlaiJ7G71ig" presentationName="Develop Asset Specification" superActivities="_1lc-UehuEduKxbbfe_QPcg" additionallyPerformedBy="_fQSTwAVlEdyJlaiJ7G71ig _VrZkgO9pEdukXP2nij9wtQ _fQSTwQVlEdyJlaiJ7G71ig" optionalInput="_VrjVgO9pEdukXP2nij9wtQ" output="_VrjVgO9pEdukXP2nij9wtQ" performedPrimarilyBy="_VmNlEehvEduKxbbfe_QPcg">
+      <Task href="uma://{AA38D0B3-05CF-49D4-B858-CAFC6819F2F7}#_mwidsGSGEduvcawjKPPc2g"/>
+      <selectedSteps href="uma://-70_FkP1wz_BCnBKVXkeFuw#_nIwV4KwCEduE2IXlWKAGdA"/>
+      <selectedSteps href="uma://-70_FkP1wz_BCnBKVXkeFuw#_7XqhwKd5Edu3IsnteZnoTw"/>
+    </processElements>
+    <processElements xsi:type="org.eclipse.epf.uma:RoleDescriptor" xmi:id="_fQSTwAVlEdyJlaiJ7G71ig" name="asset_owner" guid="_fQSTwAVlEdyJlaiJ7G71ig" presentationName="Asset Owner" superActivities="_1lc-UehuEduKxbbfe_QPcg" responsibleFor="_VmXWEuhvEduKxbbfe_QPcg">
+      <Role href="uma://{AA38D0B3-05CF-49D4-B858-CAFC6819F2F7}#_Vp9JcGLUEdu966JQULqj8A"/>
+    </processElements>
+    <processElements xsi:type="org.eclipse.epf.uma:RoleDescriptor" xmi:id="_fQSTwQVlEdyJlaiJ7G71ig" name="asset_manufacturing_team" guid="_fQSTwQVlEdyJlaiJ7G71ig" presentationName="Asset Manufacturing Team" superActivities="_1lc-UehuEduKxbbfe_QPcg" responsibleFor="_VrjVgO9pEdukXP2nij9wtQ _WnxvwehvEduKxbbfe_QPcg _VmXWEuhvEduKxbbfe_QPcg">
+      <Role href="uma://{AA38D0B3-05CF-49D4-B858-CAFC6819F2F7}#_oIVN4PdAEduDzcy_Q4rRjA"/>
+    </processElements>
+    <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_0gds0AVlEdyJlaiJ7G71ig" guid="_0gds0AVlEdyJlaiJ7G71ig" pred="_fQIiwAVlEdyJlaiJ7G71ig"/>
+    <process xsi:type="org.eclipse.epf.uma:CapabilityPattern" xmi:id="_1lc-UehuEduKxbbfe_QPcg" name="cra" guid="_1lc-UehuEduKxbbfe_QPcg" presentationName="Consume Reusable Asset" briefDescription="This capability pattern describes how to consume a Reusable Asset, which includes locating, evaluating, applying the asset and providing feedback." breakdownElements="_VmNlEOhvEduKxbbfe_QPcg _VmNlEehvEduKxbbfe_QPcg _VmXWEOhvEduKxbbfe_QPcg _VmXWEehvEduKxbbfe_QPcg _VmXWEuhvEduKxbbfe_QPcg _WnxvwOhvEduKxbbfe_QPcg _WnxvwehvEduKxbbfe_QPcg _XYNHIOhvEduKxbbfe_QPcg _VrZkgO9pEdukXP2nij9wtQ _VrjVgO9pEdukXP2nij9wtQ _fQIiwAVlEdyJlaiJ7G71ig _fQSTwAVlEdyJlaiJ7G71ig _fQSTwQVlEdyJlaiJ7G71ig">
+      <presentation xmi:id="-SdTiiDoekUu2x1SL8RRuIA" href="uma://-SdTiiDoekUu2x1SL8RRuIA#-SdTiiDoekUu2x1SL8RRuIA"/>
+      <concepts href="uma://{AA38D0B3-05CF-49D4-B858-CAFC6819F2F7}#_Y7Gf8PCrEdquxKT1X5kJ4g"/>
+      <concepts href="uma://{AA38D0B3-05CF-49D4-B858-CAFC6819F2F7}#_aG8A8PCrEdquxKT1X5kJ4g"/>
+      <concepts href="uma://{AA38D0B3-05CF-49D4-B858-CAFC6819F2F7}#_TmvzwPzHEdq8muNGvRDzug"/>
+      <concepts href="uma://{AA38D0B3-05CF-49D4-B858-CAFC6819F2F7}#_lm7SUPCrEdquxKT1X5kJ4g"/>
+      <concepts href="uma://{AA38D0B3-05CF-49D4-B858-CAFC6819F2F7}#_hRWEcPDzEdq7ls4zEErftg"/>
+      <concepts href="uma://{AA38D0B3-05CF-49D4-B858-CAFC6819F2F7}#_n_dP8PCrEdquxKT1X5kJ4g"/>
+      <guidelines href="uma://{AA38D0B3-05CF-49D4-B858-CAFC6819F2F7}#5.6805114277317263E-306"/>
+      <guidelines href="uma://{AA38D0B3-05CF-49D4-B858-CAFC6819F2F7}#1.4223162826316652E-305"/>
+      <guidelines href="uma://{AA38D0B3-05CF-49D4-B858-CAFC6819F2F7}#_UFTHYO0OEdu4L_vmpSve3w"/>
+      <defaultContext href="uma://_0q85QJySEd2xJNwbI6lxKA#_l3m7ELC4Edu_K5VwzSuYyA"/>
+      <validContext href="uma://_0q85QJySEd2xJNwbI6lxKA#_l3m7ELC4Edu_K5VwzSuYyA"/>
+    </process>
+  </org.eclipse.epf.uma:ProcessComponent>
+</xmi:XMI>

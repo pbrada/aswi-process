@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_0jYm0NnmEdmO6L4XMImrsA" name="actor-generalization_in_the_business_use-case_model,1.5325179132148465E-305" guid="_0jYm0NnmEdmO6L4XMImrsA" changeDate="2005-06-20T18:38:55.717-0700" version="7.1.0">
+  <mainDescription>&lt;a id=&quot;XE_actor-generalization_in_business_modeling__guidelines_for&quot;&#xD;
+name=&quot;XE_actor-generalization_in_business_modeling__guidelines_for&quot;>&lt;/a>&lt;a id=&quot;Top&quot; name=&quot;Top&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    Several business actors can play the same role in a particular business use case. Thus, both a Business Traveler and a&#xD;
+    Tourist are seen as the same external entity by the business use case that handles the check-in. The shared role is&#xD;
+    modeled as a business actor, Passenger, inherited by the two original business actors. We show these relationships with&#xD;
+    generalizations.&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;center&quot;>&#xD;
+    &lt;img height=&quot;169&quot; alt=&quot;Diagram described in accompanying text.&quot; src=&quot;resources/bacgen1.gif&quot; width=&quot;175&quot; />&#xD;
+&lt;/p>&#xD;
+&lt;p class=&quot;picturetext&quot;>&#xD;
+    The actors Business Traveler and Tourist inherit all the attributes of a Passenger. Thus, both these actors can act as&#xD;
+    Passengers.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    On the other hand, one business user can play several different roles in relation to the business, which means that the&#xD;
+    user can correspond to several business actors. If this is the general behavior of this kind of user, the model may&#xD;
+    become clearer if the user is represented by one business actor who inherits several business actors. Each inherited&#xD;
+    business actor represents one of the user?s roles relative to the business.&#xD;
+&lt;/p>&lt;br />&#xD;
+&lt;br /></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

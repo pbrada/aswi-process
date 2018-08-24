@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="-vv-9vpMKW7LFyIXpRXAwTQ" name=",_DdZsUEyBEdugTvBtC2ApIg" guid="-vv-9vpMKW7LFyIXpRXAwTQ" changeDate="2006-09-25T22:33:13.944-0700" version="7.1.0">
+  <mainDescription>&lt;p>&#xD;
+    Functional area analysis can begin with a component business model (see &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../extend.bus_model/guidances/concepts/business_component_modeling_527F8FC0.html&quot;&#xD;
+    guid=&quot;_uKecsC7xEdu14aFGpEDchg&quot;>Concept: Component Business Modeling&lt;/a>) and use the identified &lt;em>CBM&#xD;
+    competencies&lt;/em> as a starting point for the set of &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../extend.bus_model/workproducts/rup_business_domain_FAAADFBF.html&quot; guid=&quot;__IIS0ExMEduGSMz-5zscXg&quot;>Artifact: Business&#xD;
+    Domain&lt;/a>s. The business modeling effort is scoped by the business domain(s) under study, so functional area analysis&#xD;
+    may select from the initial set of business domains and further decompose these into sub-domains, and ultimately into&#xD;
+    functional areas -- &lt;em>CBM components&lt;/em> from the initial model should give good guidance here.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Functional area analysis begins by creating summary descriptions that identify the major high level functional&#xD;
+    responsibilities of each domain.&amp;nbsp; Next, each domain is decomposed into smaller, more discrete, functional areas.&#xD;
+    Each functional area is described in terms of the specific functions it is responsible for, as well as functions it&#xD;
+    depends on during collaborations with other functional areas. See &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../extend.bus_model/guidances/concepts/functional_area_analysis_567CE669.html&quot; guid=&quot;_sQzD0EoEEdulkMoCrqQK_Q&quot;>Concept:&#xD;
+    Functional Area Analysis&lt;/a>.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    If functional area analysis is being carried out using input from a CBM effort,&amp;nbsp;a business domain will typically&#xD;
+    map to a CBM competency, CBM business components are a good starting point for the identification of functional areas,&#xD;
+    and CBM component services and activities are a good way to identify functions.&amp;nbsp; CBM components often&#xD;
+    map&amp;nbsp;one-to-one to functional areas, although in some cases a CBM component may be too coarse grained, encompassing&#xD;
+    too many types of functions. In that case it would need to be further decomposed into multiple functional areas.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    The functional areas will be assigned to &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../extend.bus_model/workproducts/rup_business_system_BB28EEB.html&quot;&#xD;
+    guid=&quot;{4064F184-314B-4965-9F08-6AE5DBF6205A}&quot;>Artifact: Business System&lt;/a>s, which will support services to deliver&#xD;
+    these functions - the functions themselves may also suggest automation -- the IT subsystems within the Business Systems&#xD;
+    that will realize some or all of the services.&#xD;
+&lt;/p></mainDescription>
+  <sections xmi:id="_X_TbIE0mEduKGe6eVHEKjQ" name="Decomposing Domains into Functional Areas" guid="_X_TbIE0mEduKGe6eVHEKjQ">
+    <sectionDescription>&lt;p>&#xD;
+    Functional area analysis begins by creating summary descriptions that identify the major high level functional&#xD;
+    responsibilities of each domain.&amp;nbsp; Next, each domain is decomposed into smaller, more discrete, functional areas.&#xD;
+    Each functional area is described in terms of the specific functions it is responsible for, as well as functions it&#xD;
+    depends on during collaborations with other functional areas. See &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../extend.bus_model/guidances/concepts/functional_area_analysis_567CE669.html&quot; guid=&quot;_sQzD0EoEEdulkMoCrqQK_Q&quot;>Concept:&#xD;
+    Functional Area Analysis&lt;/a>. If functional area analysis is being carried out using input from a CBM effort,&amp;nbsp;a&#xD;
+    business domain will typically map to a CBM competency, CBM business components are a good starting point for the&#xD;
+    identification of functional areas, and CBM component services and activities are a good way to identify&#xD;
+    functions.&amp;nbsp; CBM components often map&amp;nbsp;one-to-one to functional areas, although in some cases a CBM component&#xD;
+    may be too coarse grained, encompassing too many types of functions. In that case it would need to be further&#xD;
+    decomposed into multiple functional areas. The functional areas will be assigned to &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../extend.bus_model/workproducts/rup_business_system_BB28EEB.html&quot;&#xD;
+    guid=&quot;{4064F184-314B-4965-9F08-6AE5DBF6205A}&quot;>Artifact: Business System&lt;/a>s, which will support services to deliver&#xD;
+    these functions.&lt;br />&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    As each functional area is being analyzed and described in terms of its functions, it is also analyzed in the larger&#xD;
+    context of its relationships to other functional areas (that is, the interactions and collaborations among functional&#xD;
+    areas) are identified.&amp;nbsp; This will help determine how the Business Systems owning the functional areas will&#xD;
+    collaborate.&lt;br />&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_atgt0E0mEduKGe6eVHEKjQ" name="Mapping Functional Areas to (IT) Subsystems" guid="_atgt0E0mEduKGe6eVHEKjQ">
+    <sectionDescription>&lt;p>&#xD;
+    The partitioning of the business domain results in a set of functional areas.&amp;nbsp; These functional areas&amp;nbsp;should&#xD;
+    suggest aggregates of cohesive functionality that can be assigned to subsystems, which will deliver that&#xD;
+    capability.&amp;nbsp; Each subsystem is a conceptual mechanism to help define the encapsulation of services to deliver that&#xD;
+    capability -- and which may ultimately be automated by IT systems within the Business System. Subsystems collaborate to&#xD;
+    deliver the services provided by the Business System that owns the functional area.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    The identification of subsystems as a result of functional area analysis allows the seamless transition from business&#xD;
+    identification of functional areas,&amp;nbsp;their mapping to Business Systems&amp;nbsp;to the determination of which&#xD;
+    subsystems are actually involved in the implementation of a given functional area.&amp;nbsp;The subsystems become a&#xD;
+    blueprint for reuse.&amp;nbsp;This approach provides us not only with an abstract&amp;nbsp;specification of behavior&amp;nbsp;of a&#xD;
+    subsystem, but also contracts by which subsystems collaborate and depend upon one another.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    It may not be necessary to further refine the functionality assigned to a Business System, in which case there is a&#xD;
+    one-to-one mapping between the functional area and a subsystem, that is the Business System supporting the functional&#xD;
+    area has a single IT subsystem analog which yields its behavior. A proliferation of subsystems, on the other hand, may&#xD;
+    be an indication that the functional area is too coarse-grained to be assigned to a single Business System, and needs&#xD;
+    to be further divided.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Note, additional details on Subsystem Identification are available in the &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../core.base_rup/guidances/guidelines/design_subsystem_B26FD609.html&quot; guid=&quot;1.2314266786534317E-305&quot;>Guideline: Design&#xD;
+    Subsystem&lt;/a>.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <purpose>&lt;p>&#xD;
+    The purpose of functional area analysis is to validate initial ideas about the partitioning of the business, firstly&#xD;
+    into business domains (which will logically enclose a set of business systems that are of interest for the business&#xD;
+    modeling effort) -- noting that this may require an intermediate step of identifying sub-domains to delineate the part&#xD;
+    of the business to be studied -- and then by discovering functional areas, that is, aggregates of functionality that&#xD;
+    can be assigned to &lt;a class=&quot;elementLinkWithUserText&quot;&#xD;
+    href=&quot;./../../extend.bus_model/workproducts/rup_business_system_BB28EEB.html&quot;&#xD;
+    guid=&quot;{4064F184-314B-4965-9F08-6AE5DBF6205A}&quot;>&lt;em>business systems&lt;/em>&lt;/a>. It is a complementary approach to &lt;a&#xD;
+    class=&quot;elementLinkWithUserText&quot; href=&quot;./../../extend.bus_model/tasks/bm_architectural_analysis_630ADB6.html&quot;&#xD;
+    guid=&quot;_xfhhcBpWEdqUwb9RAn2tTA&quot;>&lt;em>Business Architectural Analysis&lt;/em>&lt;/a> and can be used in concert with that task.&#xD;
+&lt;/p></purpose>
+</org.eclipse.epf.uma:TaskDescription>

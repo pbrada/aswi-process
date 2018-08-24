@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_0njVIdnmEdmO6L4XMImrsA" name="detail_a_business_entity,{06A9A8AA-171C-4A9C-8CD8-A366F32AA77F}" guid="_0njVIdnmEdmO6L4XMImrsA" changeDate="2005-10-12T11:09:48.952-0700" version="7.1.0">
+  <copyrightStatement href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#_NH1FoPTFEdmkpYARNN468A"/>
+  <sections xmi:id="_McjbYNnnEdmO6L4XMImrsA" name=" Determine Areas of Responsibility " guid="_McjbYNnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;Determine Areas of Responsibility&quot; name=&quot;Determine Areas of Responsibility&quot;>&lt;/a>&#xD;
+&lt;p>&#xD;
+    Collect all business use-case realizations in which the business entity participates. Make sure you have access to&#xD;
+    descriptions of business workers that access the business entity, as well as to descriptions of other business entities&#xD;
+    that have some relationship to it. The Responsibility Description of the business entity must include the entity's role&#xD;
+    in the business, as well as its lifecycle from creation to deletion. You can document the lifecycle with a statechart&#xD;
+    diagram (see &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../extend.bus_model/guidances/guidelines/diagrams_in_the_business_analysis_model_F0F7B759.html#StatechartDiagrams&quot;&#xD;
+    guid=&quot;2.967860873569252E-305&quot;>Guideline: Diagrams in the Business Analysis Model&lt;/a>).&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_McjbYdnnEdmO6L4XMImrsA" name=" Define Operations " guid="_McjbYdnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;Define Operations&quot; name=&quot;Define Operations&quot;>&lt;/a>&#xD;
+&lt;p>&#xD;
+    Decide what operations the business entity should have. Base your decisions on the operations of the business entity&#xD;
+    within each business use-case realization in which it participates. These operations provide tools for the business&#xD;
+    workers to access the business entity. Briefly describe each operation.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Finalize the Responsibility Description, and explain how all operations are related, including the business entity's&#xD;
+    lifecycle.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    See also &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../extend.bus_model/guidances/guidelines/business_entity_734D1170.html&quot;&#xD;
+    guid=&quot;1.0295540980844903E-304&quot;>Guideline: Business Entity&lt;/a>, the discussion on operations.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_McjbYtnnEdmO6L4XMImrsA" name=" Define Attributes " guid="_McjbYtnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;Define Attributes&quot; name=&quot;Define Attributes&quot;>&lt;/a>&#xD;
+&lt;p>&#xD;
+    Identify and briefly describe the attributes of the business entity. Attributes are either properties of the business&#xD;
+    entity or any information that it requires to perform its responsibilities that is not another business entity. An item&#xD;
+    of information that needs to be determined or calculated (on-demand) must be presented in the form of an operation,&#xD;
+    rather than as an attribute of the business entity. Attributes represent persistent properties of the business entity.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    See also &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../extend.bus_model/guidances/guidelines/business_entity_734D1170.html&quot;&#xD;
+    guid=&quot;1.0295540980844903E-304&quot;>Guideline: Business Entity&lt;/a>, the discussion of attributes.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_McjbY9nnEdmO6L4XMImrsA" name=" Identify Business Events " guid="_McjbY9nnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;Identify Business Events&quot; name=&quot;Identify Business Events&quot;>&lt;/a>&#xD;
+&lt;p>&#xD;
+    Inspect the business entity's operations. Candidate business events include significant changes of state (for example,&#xD;
+    a target that changes&amp;nbsp; from tracking to locked, or a proposal that changes from proposed to accepted). Operations&#xD;
+    that trigger these changes of state might send these business events. Also consider what business actors, business&#xD;
+    workers, or other business entities should be notified of the business event. Inspect the business entity's&#xD;
+    relationships with other business entities. Are there any important changes in these related entities of which the&#xD;
+    business entity should be notified?&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_McjbZNnnEdmO6L4XMImrsA" name=" Analyze Relationships " guid="_McjbZNnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;Analyze Relationships&quot; name=&quot;Analyze Relationships&quot;>&lt;/a>&#xD;
+&lt;p>&#xD;
+    Review all relationships (association, dependency, generalization) in which the business entity participates. Are the&#xD;
+    purposes and semantics of these relationships clear? Be wary of many generalization relationships among business&#xD;
+    entities. Determine whether these relationships are really necessary to the performance of the business entity's&#xD;
+    responsibilities. Also confirm that the business entity does indeed have all the necessary relationships.&amp;nbsp;&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_McjbZdnnEdmO6L4XMImrsA" name=" Evaluate Your Results " guid="_McjbZdnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;Evaluate Your Results&quot; name=&quot;Evaluate Your Results&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    Review and discuss the business entity with other members of the team and appropriate stakeholders, so that they have a&#xD;
+    clear understanding of the business entity and agree on its description.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    See also &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../extend.bus_model/guidances/guidelines/business_entity_734D1170.html&quot;&#xD;
+    guid=&quot;1.0295540980844903E-304&quot;>Guideline: Business Entity&lt;/a> and checklist for business entities in &lt;a&#xD;
+    class=&quot;elementLinkWithType&quot; href=&quot;./../../extend.bus_model/tasks/review_the_business_object_model_1A938836.html&quot;&#xD;
+    guid=&quot;{6B6B459B-A5EA-43B4-BE8E-ED8DC9A9E2C6}&quot;>Task: Review the Business Analysis Model&lt;/a>.&#xD;
+&lt;/p>&lt;br />&#xD;
+&lt;br /></sectionDescription>
+  </sections>
+  <purpose>&lt;a id=&quot;Top&quot; name=&quot;Top&quot;>&lt;/a>&lt;a id=&quot;XE_business_entity__detailing_and_reviewing&quot;&#xD;
+name=&quot;XE_business_entity__detailing_and_reviewing&quot;>&lt;/a> &#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        To ensure the business entity is able to provide the required behavior.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        To identify the business events triggered by the business entity.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        To evaluate the business entity's structural relationships.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></purpose>
+</org.eclipse.epf.uma:TaskDescription>

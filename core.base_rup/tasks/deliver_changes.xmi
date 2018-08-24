@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_3kWdcNnmEdmO6L4XMImrsA" name="deliver_changes,{B1FB20EA-CDF6-4F7B-BF65-22CFBF38CDC6}" guid="_3kWdcNnmEdmO6L4XMImrsA" changeDate="2005-07-25T21:12:47.155-0700" version="7.1.0">
+  <sections xmi:id="_Zu-TsNnnEdmO6L4XMImrsA" name=" Prepare for Delivery " guid="_Zu-TsNnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;Prepare for Delivery&quot; name=&quot;Prepare for Delivery&quot;>&lt;/a>&#xD;
+&lt;p>&#xD;
+    Delivery addresses the notion of integration of work from streams of implementers. As such, delivery is an important&#xD;
+    step and a 'quality gate' of reviews and approvals need to be passed before work can be accepted into a higher level&#xD;
+    'staging area'.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    A good project policy is to require developers to rebase their development workspaces to the project's current&#xD;
+    recommended baseline before accepting their work into the project's integration workspace. The goal of this policy is&#xD;
+    to have developers build and test their work in their development areas against the work included in the most recent&#xD;
+    stable baselines before they deliver to the integration workspace. This practice minimizes the amount of merging that&#xD;
+    developers must do when they perform deliver operations.&amp;nbsp;&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Another good project policy is to ensure that all files are checked-in prior to delivery. This avoids the situation of&#xD;
+    having orphaned files that are not included in a build and might be needed for subsequent updates.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Delivery is an important step that implies that a developer considers his work to be of sufficiently high quality to be&#xD;
+    incorporated into the overall product.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    It should be part of the Project Policy on who is to review given work products, and what level of quality they are to&#xD;
+    have achieved before being acceptable for usage by the rest of the project team members. Some guidance on reviews in&#xD;
+    provided in the &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../core.base_rup/guidances/guidelines/reviews_9FA4EDE.html&quot;&#xD;
+    guid=&quot;2.981757544469536E-306&quot;>Guideline: Reviews&lt;/a>. Many of the work products in the Rational Unified Process have an&#xD;
+    associated '&lt;i>checklist&lt;/i>' that can be used to assess the quality of that work product. For instance, if an work&#xD;
+    product is found to be deficient on more than a given number of checkpoints it is submitted for re-work, and thereby&#xD;
+    not eligible for 'promotion'.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_Zu-TsdnnEdmO6L4XMImrsA" name=" Deliver Changes " guid="_Zu-TsdnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;DeliverChanges&quot; name=&quot;DeliverChanges&quot;>&lt;/a>&#xD;
+&lt;p>&#xD;
+    A common project policy is to require the developer to merge his/her changes with those made by other developers. This&#xD;
+    is typically done in a private integration workspace, so that the merged changes may be tested prior to final delivery&#xD;
+    to the project integration workspace. The delivery is complete when all merge changes have been checked-in and&#xD;
+    delivered.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_Zu-TstnnEdmO6L4XMImrsA" name=" Update Work Order Status " guid="_Zu-TstnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;UpdateWorkOrderStatus&quot; name=&quot;UpdateWorkOrderStatus&quot;>&lt;/a>&#xD;
+&lt;p>&#xD;
+    Update the status of the &lt;a class=&quot;elementLink&quot; href=&quot;./../../core.base_rup/workproducts/rup_work_order_CFBC805B.html&quot;&#xD;
+    guid=&quot;{18DB40A1-6272-467A-AC68-B2C4BE1DCD6C}&quot;>Work Order&lt;/a> (for example, set to &quot;Completed&quot; if all the work has been&#xD;
+    done) as defined by your project's &lt;a class=&quot;elementLink&quot; href=&quot;./../../core.base_rup/workproducts/rup_cm_plan_EDA7C715.html&quot;&#xD;
+    guid=&quot;{71138CAE-59CA-41DE-8DD1-BE11799566FD}&quot;>Configuration Management Plan&lt;/a>.&#xD;
+&lt;/p>&lt;br />&#xD;
+&lt;br /></sectionDescription>
+  </sections>
+  <purpose>&lt;a id=&quot;Top&quot; name=&quot;Top&quot;>&lt;/a>&lt;a id=&quot;XE_configuration_item__promoting&quot; name=&quot;XE_configuration_item__promoting&quot;>&lt;/a> &#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        The purpose of delivering changes from a development workspace to the integration workspace is to make the changed&#xD;
+        set of work products, in a private work area, available to the project for integration.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></purpose>
+</org.eclipse.epf.uma:TaskDescription>

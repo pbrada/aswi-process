@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ArtifactDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_rJw3INoJEdm5N8vZEEaxbg" name="database_migration_specification,{24309CAC-2A58-4011-B0F0-0A7D2FD58AEA}" guid="_rJw3INoJEdm5N8vZEEaxbg" changeDate="2005-08-17T18:32:35.067-0700" version="7.1.0">
+  <purpose>&lt;a id=&quot;Top&quot; name=&quot;Top&quot;>&lt;/a>&lt;a id=&quot;Purpose&quot; name=&quot;Purpose&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    The main purpose of this artifact is to describe data sources to be migrated and to specify the mapping between the&#xD;
+    source data and the target data. It will be used by the &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../core.base_rup/roles/rup_designer_BA8DE74E.html&quot; guid=&quot;{DB21F5EF-810B-4994-B120-79FA8774FA9D}&quot;>Designer&lt;/a> to&#xD;
+    design any automated data migration software components.&#xD;
+&lt;/p></purpose>
+  <briefOutline>&lt;a id=&quot;BriefOutline&quot; name=&quot;BriefOutline&quot;>&lt;/a> &#xD;
+&lt;h4>&#xD;
+    1. Introduction&#xD;
+&lt;/h4>&#xD;
+&lt;div style=&quot;margin-left: 2em&quot;>&#xD;
+    &lt;ul>&#xD;
+        &lt;li>&#xD;
+            &lt;p>&#xD;
+                Scope of the migration&#xD;
+            &lt;/p>&#xD;
+        &lt;/li>&#xD;
+    &lt;/ul>&#xD;
+&lt;/div>&#xD;
+&lt;h4>&#xD;
+    2. Data Profile&#xD;
+&lt;/h4>&#xD;
+&lt;div style=&quot;margin-left: 2em&quot;>&#xD;
+    &lt;ul>&#xD;
+        &lt;li>&#xD;
+            &lt;p>&#xD;
+                Data Systems&#xD;
+            &lt;/p>&#xD;
+        &lt;/li>&#xD;
+        &lt;li>&#xD;
+            &lt;p>&#xD;
+                Data Attributes Profile&#xD;
+            &lt;/p>&#xD;
+        &lt;/li>&#xD;
+        &lt;li>&#xD;
+            &lt;p>&#xD;
+                Data Attribute Dependencies&#xD;
+            &lt;/p>&#xD;
+        &lt;/li>&#xD;
+    &lt;/ul>&#xD;
+&lt;/div>&#xD;
+&lt;h4>&#xD;
+    3. Data Mapping Table&#xD;
+&lt;/h4></briefOutline>
+  <representationOptions>UML Representation: Not Applicable. &#xD;
+&lt;p>&#xD;
+    &lt;a id=&quot;Tailoring&quot; name=&quot;Tailoring&quot;>&lt;/a>&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    The Data Profile can include or reference a &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../core.base_rup/workproducts/rup_data_model_65B46980.html&quot; guid=&quot;{9DCF1723-1A21-4F48-BEDE-DBC543489682}&quot;>Data&#xD;
+    Model&lt;/a>, if a Data Model exists. Manually created/maintained data models may need to be updated to correctly reflect&#xD;
+    the current data. It may also be helpful to create a data model by reverse engineering. For more information&lt;font&#xD;
+    color=&quot;#ff0000&quot;>,&lt;/font> see &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../core.base_rup/guidances/guidelines/reverse-engineering_relational_databases_902803B8.html&quot;&#xD;
+    guid=&quot;1.338740134620651E-305&quot;>Guideline: Reverse-engineering Relational Databases&lt;/a>.&lt;br />&#xD;
+&lt;/p></representationOptions>
+</org.eclipse.epf.uma:ArtifactDescription>

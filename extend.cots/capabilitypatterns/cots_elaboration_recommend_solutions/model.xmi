@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:org.eclipse.epf.uma.resourcemanager="http:///org/eclipse/epf/uma/resourcemanager.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1">
+  <org.eclipse.epf.uma.resourcemanager:ResourceManager xmi:id="_x6TQ0BTjEdqsDYPowBCnuA" guid="_x6TQ0BTjEdqsDYPowBCnuA">
+    <resourceDescriptors xmi:id="_x6ZXcBTjEdqsDYPowBCnuA" id="-M3YoGLVicj1Ae9SNe1OZcQ" uri="content.xmi"/>
+  </org.eclipse.epf.uma.resourcemanager:ResourceManager>
+  <org.eclipse.epf.uma:ProcessComponent xmi:id="_oySjcBTjEdqsDYPowBCnuA" name="cots_elaboration_recommend_solutions" guid="_oySjcBTjEdqsDYPowBCnuA">
+    <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="_IE6uUBTjEdqO_t18Ye750g" name="cots_recommend_solution" guid="_IE6uUBTjEdqO_t18Ye750g" presentationName="Recommend Solution" superActivities="_oySjcRTjEdqsDYPowBCnuA" optionalInput="_IOF4cBTjEdqO_t18Ye750g" output="_IOkZkBTjEdqO_t18Ye750g _IO80EBTjEdqO_t18Ye750g" performedPrimarilyBy="_IGQLEBTjEdqO_t18Ye750g">
+      <Task href="uma://{D4626EC0-06BC-4592-A8A6-C8DE7E821952}#{74E63EE3-FA99-4409-A00D-CD863B1D6868}"/>
+      <selectedSteps href="uma://_smpgUNoTEdmCj7Yn9Ev4rg#_tkKRcNoTEdmCj7Yn9Ev4rg"/>
+      <selectedSteps href="uma://_smpgUNoTEdmCj7Yn9Ev4rg#_tkQYENoTEdmCj7Yn9Ev4rg"/>
+    </processElements>
+    <processElements xsi:type="org.eclipse.epf.uma:RoleDescriptor" xmi:id="_IGQLEBTjEdqO_t18Ye750g" name="cots_acquirer" guid="_IGQLEBTjEdqO_t18Ye750g" presentationName="Acquirer" superActivities="_oySjcRTjEdqsDYPowBCnuA" modifies="_IOkZkBTjEdqO_t18Ye750g _IO80EBTjEdqO_t18Ye750g" responsibleFor="_IO80EBTjEdqO_t18Ye750g _IOkZkBTjEdqO_t18Ye750g">
+      <Role href="uma://{D4626EC0-06BC-4592-A8A6-C8DE7E821952}#{E929498F-3E9B-4BD5-8FD3-FAF7337E36AE}"/>
+    </processElements>
+    <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_IOF4cBTjEdqO_t18Ye750g" name="rup_vision" guid="_IOF4cBTjEdqO_t18Ye750g" presentationName="Vision" superActivities="_oySjcRTjEdqsDYPowBCnuA">
+      <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{417F089F-6636-451A-A8AB-AB4EAC7AC4F1}"/>
+    </processElements>
+    <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_IOkZkBTjEdqO_t18Ye750g" name="cots_cumulative_solution_eval_summary" guid="_IOkZkBTjEdqO_t18Ye750g" presentationName="Cumulative Candidate Solution Evaluation Summary" superActivities="_oySjcRTjEdqsDYPowBCnuA">
+      <WorkProduct href="uma://{D4626EC0-06BC-4592-A8A6-C8DE7E821952}#{E29F5020-BF6D-4D40-8BC9-52D25F9DD183}"/>
+    </processElements>
+    <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_IO80EBTjEdqO_t18Ye750g" name="cots_solution_recommendation" guid="_IO80EBTjEdqO_t18Ye750g" presentationName="Solution Recommendation" superActivities="_oySjcRTjEdqsDYPowBCnuA">
+      <WorkProduct href="uma://{D4626EC0-06BC-4592-A8A6-C8DE7E821952}#{A4C2C8B3-4905-4C89-86E4-D3FBDAE512BF}"/>
+    </processElements>
+    <process xsi:type="org.eclipse.epf.uma:CapabilityPattern" xmi:id="_oySjcRTjEdqsDYPowBCnuA" name="cots_elaboration_recommend_solutions" guid="_oySjcRTjEdqsDYPowBCnuA" presentationName="Recommend Solutions" briefDescription="This covers essential tasks aiming at recommending solutions in the elaboration phase." breakdownElements="_IE6uUBTjEdqO_t18Ye750g _IGQLEBTjEdqO_t18Ye750g _IOF4cBTjEdqO_t18Ye750g _IOkZkBTjEdqO_t18Ye750g _IO80EBTjEdqO_t18Ye750g">
+      <presentation xmi:id="-M3YoGLVicj1Ae9SNe1OZcQ" href="uma://-M3YoGLVicj1Ae9SNe1OZcQ#-M3YoGLVicj1Ae9SNe1OZcQ"/>
+      <defaultContext href="uma://_0q85QJySEd2xJNwbI6lxKA#_sU4a4NoTEdmCj7Yn9Ev4rg"/>
+      <validContext href="uma://_0q85QJySEd2xJNwbI6lxKA#_sU4a4NoTEdmCj7Yn9Ev4rg"/>
+    </process>
+  </org.eclipse.epf.uma:ProcessComponent>
+</xmi:XMI>

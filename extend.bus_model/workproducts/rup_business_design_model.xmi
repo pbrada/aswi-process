@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ArtifactDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="-BjU_wo1gGPR15gFbDb0WVw" name="rup_business_design_model,_Yi4dsBpWEdqUwb9RAn2tTA" guid="-BjU_wo1gGPR15gFbDb0WVw" changeDate="2005-11-15T14:10:56.239-0800" version="7.1.0">
+  <purpose>&lt;p>&#xD;
+    The purpose of the Business Design Model is to describe how the business use cases are realized. The Business Design&#xD;
+    Model defines the services offered by the business in terms of interfaces and operations, the information that is&#xD;
+    passed around (business entities), the internal organization into business systems and&amp;nbsp;business workers and how&#xD;
+    they collaborate to realize the external behavior described in the business use cases.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    This is the place where all the design decisions are captured.&amp;nbsp;The &quot;more abstract&quot; elements from the Business&#xD;
+    Analysis Model are realized by &quot;more concrete&quot; ones. For example, the initial Business Workers are mapped or realized&#xD;
+    into human workers or automated systems. In most of the cases the Business Analysis Model evolves into a Business&#xD;
+    Design Model, as more design decisions are taken.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    The Business&amp;nbsp;Design Model is used by stakeholders, business-process analysts and business architects&amp;nbsp;to&#xD;
+    understand how the business currently works (in as-is form), and to analyze the effect of changes to the business (in&#xD;
+    to-be form). The business architect&amp;nbsp;is responsible for the structure and integrity of the model, while business&#xD;
+    designers are responsible for detailing elements within the model. The model is also used by systems analysts for&#xD;
+    deriving system requirements based on how automated systems - that is, automated business workers (usually&#xD;
+    software-intensive)&amp;nbsp;- will be used as part of business processes. Software architects use the model to define a&#xD;
+    software architecture that fits the organization seamlessly and to identify classes in software analysis and design&#xD;
+    models.&#xD;
+&lt;/p></purpose>
+  <impactOfNotHaving>&lt;p>&#xD;
+    As in the business analysis model case, the business&amp;nbsp;design model describes &lt;em>how&lt;/em> the business works&#xD;
+    internally to perform business functions, so the model is essential when considering changes to the business processes&#xD;
+    or the organization (structure, roles and responsibilities) - you will be unable to reason about such changes without&#xD;
+    this model.&#xD;
+&lt;/p></impactOfNotHaving>
+  <reasonsForNotNeeding>&lt;p>&#xD;
+    Reference: &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../extend.bus_model/workproducts/rup_business_analysis_model_9449F63A.html&quot;&#xD;
+    guid=&quot;{CF53445C-3351-46C6-810E-8251830029A7}&quot;>Artifact: Business Analysis Model&lt;/a>.&#xD;
+&lt;/p></reasonsForNotNeeding>
+  <representationOptions>&lt;p>&#xD;
+    UML Representation:&amp;nbsp; Model, stereotyped as &amp;lt;&amp;lt;business design&amp;gt;&amp;gt;.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    The &lt;strong>business&amp;nbsp;design model&lt;/strong> may have the following &lt;strong>properties&lt;/strong>, similar to the&#xD;
+    Business Analysis Model:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        &lt;strong>Introduction:&lt;/strong> A textual description that serves as a brief introduction to the model.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;strong>Business Systems:&lt;/strong>&amp;nbsp;Components in the model, representing a hierarchy*.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;strong>Business Workers:&amp;nbsp;&lt;/strong>The Business Worker classes in the model, owned by the Business Systems.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;strong>Business Entities:&lt;/strong> The Business Entity classes in the model, owned by the Business Systems.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;strong>Business Events:&lt;/strong> The Business Event classes in the model, owned by the Business Systems.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;strong>Business Rules:&lt;/strong> The Business Rules captured in the model. These are not the Business Rules that&#xD;
+        are captured in document form in a separate artifact.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;strong>Relationships:&lt;/strong> The relationships in the model, owned by the Business Systems.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;strong>Business Use-Case Realizations:&lt;/strong> The Business Use-Case Realizations in the model, owned by the&#xD;
+        Business Systems.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;strong>Business Context Collaboration:&lt;/strong> The external realization of the interactions between the business&#xD;
+        and the business actors, showing the &lt;em>services&lt;/em> provided by the top-level Business System (that is, the&#xD;
+        business itself), the interfaces for these services, the connections to the business actors, and the Business&#xD;
+        Entities input and output.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;strong>Diagrams:&lt;/strong> The diagrams in the model, owned by the Business Systems.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>&#xD;
+    *Note that the business itself is the top-level component (Business System), and may directly encapsulate business&#xD;
+    workers, business entities etc.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    For&amp;nbsp;a more detailed description of different flavors of Business Design Model see &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../extend.bus_model/workproducts/rup_business_analysis_model_9449F63A.html&quot;&#xD;
+    guid=&quot;{CF53445C-3351-46C6-810E-8251830029A7}&quot;>Artifact: Business Analysis Model&lt;/a>.&#xD;
+&lt;/p></representationOptions>
+</org.eclipse.epf.uma:ArtifactDescription>

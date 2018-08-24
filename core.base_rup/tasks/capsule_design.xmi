@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_1pt8wNnmEdmO6L4XMImrsA" name="capsule_design,{F13C1161-7F17-45E3-A8B7-03944A1FA6E4}" guid="_1pt8wNnmEdmO6L4XMImrsA" changeDate="2005-08-23T17:18:36.279-0700" version="7.1.0">
+  <mainDescription>&lt;p class=&quot;reactive&quot;>&#xD;
+    Capsules are used to define concurrent threads of execution in the system. Capsules may be nested to an arbitrary&#xD;
+    depth, as well as having associations to design (passive) classes. This activity is performed once for each capsule,&#xD;
+    including new capsules identified within the scope of this task.&#xD;
+&lt;/p>&#xD;
+&lt;h4>&#xD;
+    &amp;nbsp;UML 2.0 Representation&#xD;
+&lt;/h4>&#xD;
+&lt;p>&#xD;
+    Note that the current RUP representation for Capsules is based on UML 1.5 notation. Much of this can be represented in&#xD;
+    UML 2.0 using the &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../core.base_rup/guidances/concepts/structured_class_FF8DB16F.html&quot;&#xD;
+    guid=&quot;1.1994826813129747E-304&quot;>Concept: Structured Class&lt;/a>.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Refer to &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../core.base_rup/guidances/supportingmaterials/differences_between_uml_1_x_and_uml_2_0_CA70F2E6.html&quot;&#xD;
+    guid=&quot;4.792914878943572E-306&quot;>Differences Between UML 1.x and UML 2.0&lt;/a> for more information.&lt;br />&#xD;
+&lt;/p></mainDescription>
+  <sections xmi:id="_dA-sEBQ0Edqpt64AByHLjg" name="Create Ports and Bind to Protocols" guid="_dA-sEBQ0Edqpt64AByHLjg">
+    <sectionDescription>&lt;p class=&quot;reactive&quot;>&#xD;
+    Consider the responsibilities of the capsule, creating an initial set of port classes. These port classes represent the&#xD;
+    'interfaces' to the capsule. Port classes represent the realization of a &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../core.base_rup/workproducts/rup_protocol_BEB5FBE1.html&quot; guid=&quot;{6E4F4D6F-2934-432C-9335-5537B795F67F}&quot;>Artifact:&#xD;
+    Protocol&lt;/a>, which in turn represents a set of &lt;b>in&lt;/b> and &lt;b>out&lt;/b> signals used to communicate with capsules.&#xD;
+&lt;/p>&#xD;
+&lt;p class=&quot;reactive&quot;>&#xD;
+    In creating ports, consider the &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../core.base_rup/guidances/checklists/protocol_F7AE51B1.html&quot; guid=&quot;1.5025405217477615E-306&quot;>Checklist:&#xD;
+    Protocol&lt;/a>&amp;nbsp;to determine whether the Protocol is appropriate. The port should reflect a singular set of related&#xD;
+    responsibilities; having a similarly scoped protocol enables its re-use across a number of capsules. Once the&#xD;
+    appropriate protocol is selected, bind the port to the appropriate protocol.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_QyVIcBQ1Edqpt64AByHLjg" name="Validate Capsule Interactions " guid="_QyVIcBQ1Edqpt64AByHLjg">
+    <sectionDescription>&lt;p class=&quot;reactive&quot;>&#xD;
+    Once the ports are bound to protocols, the external behavior of the capsule must be evaluated and validated. Using&#xD;
+    either manual walk-through techniques or automated simulation tools, test the behavior of the capsule by simulating the&#xD;
+    events that will exercise the capsule behavior. Validation will also consider the capsules which interact with the&#xD;
+    capsule under design. Using automated tools, write stub code within the capsule to allow the ports to be tested. When&#xD;
+    errors in protocol or port definition, or in capsule responsibilities are detected, make appropriate changes to&#xD;
+    capsule, port and protocol definitions.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_XhQekBQ1Edqpt64AByHLjg" name="Define Capsule State Machine" guid="_XhQekBQ1Edqpt64AByHLjg">
+    <sectionDescription>&lt;p class=&quot;reactive&quot;>&#xD;
+    Once the capsule ports and protocols have been validated, define the internal behavior of the capsule. The behavior of&#xD;
+    the capsule is defined using a statechart diagram. Reference: &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../core.base_rup/guidances/guidelines/statechart_diagram_640B5D0B.html&quot; guid=&quot;1.4528459404144188E-304&quot;>Guideline:&#xD;
+    Statechart Diagram&lt;/a> . Other general capsule information can be obtained from the &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../core.base_rup/guidances/guidelines/capsule_7077C999.html&quot; guid=&quot;7.026940817483919E-306&quot;>Guideline: Capsule&lt;/a> , &lt;a&#xD;
+    class=&quot;elementLinkWithType&quot; href=&quot;./../../core.base_rup/guidances/checklists/capsule_7BF31788.html&quot;&#xD;
+    guid=&quot;1.2115414799051158E-305&quot;>Checklist: Capsule&lt;/a>.&#xD;
+&lt;/p>&#xD;
+&lt;h4 class=&quot;reactive&quot;>&#xD;
+    &lt;a id=&quot;Define States&quot; name=&quot;Define States&quot;>Define States&lt;/a>&#xD;
+&lt;/h4>&#xD;
+&lt;p class=&quot;reactive&quot;>&#xD;
+    First, identify the states in which the capsule can exist. The states must be unique (a capsule cannot be in two states&#xD;
+    simultaneously) and descriptive. See the appropriate guidelines and checkpoints for more information.&#xD;
+&lt;/p>&#xD;
+&lt;h4 class=&quot;reactive&quot;>&#xD;
+    &lt;a id=&quot;Define State Transitions&quot; name=&quot;Define State Transitions&quot;>Define State Transitions&lt;/a>&#xD;
+&lt;/h4>&#xD;
+&lt;p class=&quot;reactive&quot;>&#xD;
+    Once states are defined, consider the transitions between states. Transition code should read like high level&#xD;
+    application pseudo-code, it should consist primarily of real-time operating system service calls e.g., frame services,&#xD;
+    time services, port operations, capsule operations and passive class operations.&#xD;
+&lt;/p>&#xD;
+&lt;p class=&quot;reactive&quot;>&#xD;
+    When adding detail code to a Capsule transition:&#xD;
+&lt;/p>&#xD;
+&lt;ul class=&quot;reactive&quot;>&#xD;
+    &lt;li>&#xD;
+        If the code would be useful in other transitions consider delegating it to a Capsule operation.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Consider if the code implements capabilities which conform to the Capsule's responsibility.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p class=&quot;reactive&quot;>&#xD;
+    When defining a Capsule operation:&#xD;
+&lt;/p>&#xD;
+&lt;ul class=&quot;reactive&quot;>&#xD;
+    &lt;li>&#xD;
+        Consider if the function would be useable at any time from any transition in the Capsule, and if whether any of the&#xD;
+        work being done would ever be useful elsewhere in the system. If it is consider delegating it to a passive class&#xD;
+        function.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        If the code is too application-specific to be stored in a particular Data class, consider creating an additional&#xD;
+        Data class as an abstraction for that code.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        If the code handles data structure manipulation (e.g., maintaining lists), or performs complex (more than 1 line)&#xD;
+        computations then it should be pushed into a data class.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></sectionDescription>
+  </sections>
+  <sections xmi:id="_yrxvIBQ1Edqpt64AByHLjg" name="Define Requirements on Passive Classes" guid="_yrxvIBQ1Edqpt64AByHLjg">
+    <sectionDescription>&lt;p class=&quot;reactive&quot;>&#xD;
+    Based on the capsule state machines, examine the passive classes referenced by the capsule. If there are new&#xD;
+    requirements on these classes, change requests need to be generated to effect the required changes. If new classes have&#xD;
+    been identified, the requirements on these classes (most specifically the required operations on them) should be&#xD;
+    gathered together and the classes should be created. These classes will be further described in the &lt;a&#xD;
+    class=&quot;elementLinkWithType&quot; href=&quot;./../../core.base_rup/tasks/class_design_98F20FF9.html&quot;&#xD;
+    guid=&quot;{27AE0601-2E95-4A6A-8EB3-0A4BA8E5626B}&quot;>Task: Class Design&lt;/a>.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_-H8QcBQ1Edqpt64AByHLjg" name="Introduce Capsule Inheritance" guid="_-H8QcBQ1Edqpt64AByHLjg">
+    <sectionDescription>&lt;p class=&quot;reactive&quot;>&#xD;
+    Capsule inheritance is used to implement generalization-specialization, to make use of polymorphism, to reuse&#xD;
+    implementation. The key word here is 'implementation' - it is a technique that is used primarily to re-use the internal&#xD;
+    structure of capsules, not the external behavior of capsules.&#xD;
+&lt;/p>&#xD;
+&lt;p class=&quot;reactive&quot;>&#xD;
+    Inheritance is often misapplied to achieve something that could more easily have been achieved using simpler design&#xD;
+    techniques.&#xD;
+&lt;/p>&#xD;
+&lt;h4 class=&quot;reactive&quot;>&#xD;
+    &lt;b>Using inheritance for generalization-specialization&lt;/b>&#xD;
+&lt;/h4>&#xD;
+&lt;p class=&quot;reactive&quot;>&#xD;
+    There are three kinds of inheritance. Listed from lowest complexity (most desirable) to most complex (least desirable),&#xD;
+    they are:&#xD;
+&lt;/p>&#xD;
+&lt;ul class=&quot;reactive&quot;>&#xD;
+    &lt;li>&#xD;
+        &lt;b>Interface inheritance&lt;/b> - just inherits ports and protocols, this is the type of inheritance that is most&#xD;
+        desirable&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;b>Structural inheritance&lt;/b> - inherits interface plus structural containment hierarchies (useful for frameworks)&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;b>Behavioral inheritance&lt;/b> - in addition to interface and structural inheritance, also reuses behavioral code&#xD;
+        and state machines&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p class=&quot;reactive&quot;>&#xD;
+    Structural and behavioral inheritance pose some problems:&#xD;
+&lt;/p>&#xD;
+&lt;ul class=&quot;reactive&quot;>&#xD;
+    &lt;li>&#xD;
+        The very strong degree of coupling provided by inheritance causes changes to cascade to subclasses when changes are&#xD;
+        made to superclasses.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        The need to override and delete superclass behavior and structure in subclasses indicates inappropriate use of&#xD;
+        inheritance (usually for tactical code re-use). Re-factoring classes and capsules and appropriate use of delegation&#xD;
+        is a more appropriate strategy.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Inheritance means moving design decisions up the class hierarchy, causing undesirable design and compilation&#xD;
+        dependencies.&amp;nbsp;&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p class=&quot;reactive&quot;>&#xD;
+    Other problems include:&#xD;
+&lt;/p>&#xD;
+&lt;ul class=&quot;reactive&quot;>&#xD;
+    &lt;li>&#xD;
+        Decisions may not be appropriate in all usage situations.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Introducing inheritance actually makes reuse more difficult, since design elements are more tightly coupled.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        The design becomes more fragile because any new requirement that invalidates the decision causes large problems.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        The design has to be made extremely flexible to compensate, which is often difficult. This is what makes designing&#xD;
+        reusable frameworks such an effort!&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p class=&quot;reactive&quot;>&#xD;
+    All designs containing structure/behavior have decisions and assumptions built in (either explicit or implicit). The&#xD;
+    critical question to ask is: are you absolutely sure that decision/assumption will always be valid? If not, what can&#xD;
+    you do to remove it or make it possible to change?&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_JpjScBQ2Edqpt64AByHLjg" name="Validate Capsule Behavior" guid="_JpjScBQ2Edqpt64AByHLjg">
+    <sectionDescription>&lt;p class=&quot;reactive&quot;>&#xD;
+    As a final step, the behavior of the capsule must be evaluated and validated. Using either manual walk-through&#xD;
+    techniques or automated simulation tools, the behavior of the capsule should be tested by simulating the events that&#xD;
+    will exercise the capsule behavior. In addition, the internal structure of the capsule should be validated, ensuring&#xD;
+    that not only the external behavior but also the internal implementation of that behavior is validated. Using automated&#xD;
+    tools, stub code may need to be written to simulate the implementation of passive data classes and external capsules&#xD;
+    with which the capsule interacts. Defects detected should be documented and appropriate changes to capsule definitions&#xD;
+    should be made.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <purpose>&lt;a id=&quot;Top&quot; name=&quot;Top&quot;>&lt;/a>&lt;a id=&quot;XE_capsule__elaborating_the_definition_of&quot;&#xD;
+name=&quot;XE_capsule__elaborating_the_definition_of&quot;>&lt;/a> &#xD;
+&lt;ul class=&quot;reactive&quot;>&#xD;
+    &lt;li>&#xD;
+        To elaborate and refine the descriptions of a capsule.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></purpose>
+</org.eclipse.epf.uma:TaskDescription>

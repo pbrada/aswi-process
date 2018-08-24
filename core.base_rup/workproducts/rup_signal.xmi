@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ArtifactDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_18V90NnmEdmO6L4XMImrsA" name="rup_signal,{8CA124DA-A80C-45D7-BC65-BA6B4247FF11}" guid="_18V90NnmEdmO6L4XMImrsA" changeDate="2005-08-23T20:47:09.054-0700" version="7.1.0">
+  <purpose>&lt;a id=&quot;XE_signal__as_artifact&quot; name=&quot;XE_signal__as_artifact&quot;>&lt;/a>&lt;a id=&quot;Top&quot; name=&quot;Top&quot;>&lt;/a>&lt;a id=&quot;XE_signal__purpose_of&quot;&#xD;
+name=&quot;XE_signal__purpose_of&quot;>&lt;/a>&lt;a id=&quot;Purpose&quot; name=&quot;Purpose&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    The purpose of a signal is to provide one-way asynchronous communication from one object or instance to another.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Signals are a specialization of &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../core.base_rup/workproducts/rup_event_741355DE.html&quot;&#xD;
+    guid=&quot;{53AF0AB8-E1A1-45E7-8E4F-AFE2427633C6}&quot;>Artifact: Event&lt;/a> that can have operations, attributes, and&#xD;
+    relationships.&#xD;
+&lt;/p></purpose>
+  <representationOptions>UML Representation: Signal. Also commonly represented as a class stereotyped &amp;lt;&amp;lt;signal&amp;gt;&amp;gt;.&amp;nbsp; &#xD;
+&lt;p>&#xD;
+    &lt;a id=&quot;Tailoring&quot; name=&quot;Tailoring&quot;>&lt;/a>&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Signals are used to define entities for asynchronous messaging. They are suitable for communication in distributed and&#xD;
+    concurrent systems. Avoid naming signals in a 'receiver-specific' manner - this limits their generality and usefulness,&#xD;
+    bearing in mind that signals may be broadcasted to a set of objects. The important thing is to communicate the&#xD;
+    interesting occurrence the sender has detected (which prompted it to send the signal). A signal may also have a list of&#xD;
+    parameters which are represented as its attributes. Operations may be provided on a signal to access these&#xD;
+    attributes.&lt;br />&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Since Signals are a specialization of Work product: Event, signal tailoring is dependent on the tailoring for Work&#xD;
+    product: Event. For example, the Work product: Event information can be captured in textual form (such as a table in&#xD;
+    the Software Architecture Document), while the Signal-specific properties are captured in a visual model.&lt;br />&#xD;
+&lt;/p></representationOptions>
+</org.eclipse.epf.uma:ArtifactDescription>

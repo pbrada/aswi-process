@@ -1,0 +1,970 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<uml:Profile xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.ibm.com/xtools/1.5.0/Notation" xmlns:uml="http://www.eclipse.org/uml2/1.0.0/UML" xmi:id="_IsVzgOvjEdqZdqkrfatWog" name="Software Services Profile" appliedProfile="_IsiAwevjEdqZdqkrfatWog" metamodelReference="_IsiAwOvjEdqZdqkrfatWog">
+  <eAnnotations xmi:id="_IsiAxOvjEdqZdqkrfatWog" source="attributes">
+    <details xmi:id="_IsiAxevjEdqZdqkrfatWog" key="version" value="5"/>
+  </eAnnotations>
+  <eAnnotations xmi:id="_IsiAxuvjEdqZdqkrfatWog" source="ePackages">
+    <contents xmi:type="ecore:EPackage" xmi:id="_pCo8sev0EdqZdqkrfatWog" name="SoftwareServicesProfile_5" nsURI="http:///_pCo8sOv0EdqZdqkrfatWog.profile.uml2" nsPrefix="SoftwareServicesProfile_5">
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_pCo8suv0EdqZdqkrfatWog" name="SoftwareServicesProfile__servicePartition">
+        <eAnnotations xmi:id="_pCo8s-v0EdqZdqkrfatWog" source="stereotype" references="_9-WfcOvlEdqZdqkrfatWog"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_pCo8tOv0EdqZdqkrfatWog" name="classifier" unique="false" lowerBound="1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_pCo8tev0EdqZdqkrfatWog" name="SoftwareServicesProfile__message">
+        <eAnnotations xmi:id="_pCo8tuv0EdqZdqkrfatWog" source="stereotype" references="_3mdJQOvlEdqZdqkrfatWog"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_pCo8t-v0EdqZdqkrfatWog" name="encoding" lowerBound="1" defaultValueLiteral="document-literal">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_pCo8uOv0EdqZdqkrfatWog" name="SoftwareServicesProfile__serviceConsumer">
+        <eAnnotations xmi:id="_pCo8uev0EdqZdqkrfatWog" source="stereotype" references="_9-QY5evlEdqZdqkrfatWog"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_pCo8uuv0EdqZdqkrfatWog" name="SoftwareServicesProfile__service">
+        <eAnnotations xmi:id="_pCo8u-v0EdqZdqkrfatWog" source="stereotype" references="_9-KSP-vlEdqZdqkrfatWog"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_pCo8vOv0EdqZdqkrfatWog" name="allowedBindings" upperBound="-1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_pCo8vev0EdqZdqkrfatWog" name="SoftwareServicesProfile__serviceProvider">
+        <eAnnotations xmi:id="_pCo8vuv0EdqZdqkrfatWog" source="stereotype" references="_9-WffOvlEdqZdqkrfatWog"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_pCo8v-v0EdqZdqkrfatWog" name="allowedBindings" upperBound="-1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_pCo8wOv0EdqZdqkrfatWog" name="SoftwareServicesProfile__serviceChannel">
+        <eAnnotations xmi:id="_pCo8wev0EdqZdqkrfatWog" source="stereotype" references="_9-KSTuvlEdqZdqkrfatWog"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_pCo8wuv0EdqZdqkrfatWog" name="binding" lowerBound="1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_pCo8w-v0EdqZdqkrfatWog" name="SoftwareServicesProfile__serviceModel">
+        <eAnnotations xmi:id="_pCo8xOv0EdqZdqkrfatWog" source="stereotype" references="_9-cmEOvlEdqZdqkrfatWog"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_pCo8xev0EdqZdqkrfatWog" name="SoftwareServicesProfile__policyStatement">
+        <eAnnotations xmi:id="_pCo8xuv0EdqZdqkrfatWog" source="stereotype" references="_aYImMOvrEdqZdqkrfatWog"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_pCo8x-v0EdqZdqkrfatWog" name="domain" lowerBound="1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_pCo8yOv0EdqZdqkrfatWog" name="strict" lowerBound="1" defaultValueLiteral="true">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_pCo8yev0EdqZdqkrfatWog" name="SoftwareServicesProfile__serviceContract">
+        <eAnnotations xmi:id="_pCo8yuv0EdqZdqkrfatWog" source="stereotype" references="_9-QY0OvlEdqZdqkrfatWog"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_pCo8y-v0EdqZdqkrfatWog" name="strict" lowerBound="1" defaultValueLiteral="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EEnum" xmi:id="_pCo8zOv0EdqZdqkrfatWog" name="SoftwareServicesProfile__SpecificationStatus">
+        <eLiterals xmi:id="_pCo8zev0EdqZdqkrfatWog" name="candidate">
+          <eAnnotations xmi:id="_pCo8zuv0EdqZdqkrfatWog" source="enumerationLiteral" references="_LfCRsOvwEdqZdqkrfatWog"/>
+        </eLiterals>
+        <eLiterals xmi:id="_pCo8z-v0EdqZdqkrfatWog" name="accepted" value="1">
+          <eAnnotations xmi:id="_pCo80Ov0EdqZdqkrfatWog" source="enumerationLiteral" references="_MgXL0OvwEdqZdqkrfatWog"/>
+        </eLiterals>
+        <eLiterals xmi:id="_pCo80ev0EdqZdqkrfatWog" name="exposed" value="2">
+          <eAnnotations xmi:id="_pCo80uv0EdqZdqkrfatWog" source="enumerationLiteral" references="_N6zwkOvwEdqZdqkrfatWog"/>
+        </eLiterals>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_pCo80-v0EdqZdqkrfatWog" name="SoftwareServicesProfile__attachment">
+        <eAnnotations xmi:id="_pCo81Ov0EdqZdqkrfatWog" source="stereotype" references="_9-KSMOvlEdqZdqkrfatWog"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_pCo81ev0EdqZdqkrfatWog" name="encoding" lowerBound="1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_pCo81uv0EdqZdqkrfatWog" name="SoftwareServicesProfile__serviceSpecification">
+        <eAnnotations xmi:id="_pCo81-v0EdqZdqkrfatWog" source="stereotype" references="_9-WfjuvlEdqZdqkrfatWog"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_pCo82Ov0EdqZdqkrfatWog" name="status" lowerBound="1" eType="_pCo8zOv0EdqZdqkrfatWog" defaultValueLiteral="candidate"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_pCo82ev0EdqZdqkrfatWog" name="source" lowerBound="1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_pCo82uv0EdqZdqkrfatWog" name="SoftwareServicesProfile__serviceGateway">
+        <eAnnotations xmi:id="_pCo82-v0EdqZdqkrfatWog" source="stereotype" references="_9-QY7uvlEdqZdqkrfatWog"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_pCo83Ov0EdqZdqkrfatWog" name="allowedBindings" upperBound="-1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_A8HQEOvxEdqZdqkrfatWog" name="SoftwareServices_4" nsURI="http:///_A708MOvxEdqZdqkrfatWog.profile.uml2" nsPrefix="SoftwareServices_4">
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_A8HQEevxEdqZdqkrfatWog" name="SoftwareServices__servicePartition">
+        <eAnnotations xmi:id="_A8HQEuvxEdqZdqkrfatWog" source="stereotype" references="_9-WfcOvlEdqZdqkrfatWog"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_A8HQE-vxEdqZdqkrfatWog" name="classifier" unique="false" lowerBound="1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_A8HQFOvxEdqZdqkrfatWog" name="SoftwareServices__message">
+        <eAnnotations xmi:id="_A8HQFevxEdqZdqkrfatWog" source="stereotype" references="_3mdJQOvlEdqZdqkrfatWog"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_A8HQFuvxEdqZdqkrfatWog" name="encoding" lowerBound="1" defaultValueLiteral="document-literal">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_A8HQF-vxEdqZdqkrfatWog" name="SoftwareServices__serviceConsumer">
+        <eAnnotations xmi:id="_A8HQGOvxEdqZdqkrfatWog" source="stereotype" references="_9-QY5evlEdqZdqkrfatWog"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_A8HQGevxEdqZdqkrfatWog" name="SoftwareServices__service">
+        <eAnnotations xmi:id="_A8HQGuvxEdqZdqkrfatWog" source="stereotype" references="_9-KSP-vlEdqZdqkrfatWog"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_A8HQG-vxEdqZdqkrfatWog" name="allowedBindings" upperBound="-1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_A8HQHOvxEdqZdqkrfatWog" name="SoftwareServices__serviceProvider">
+        <eAnnotations xmi:id="_A8HQHevxEdqZdqkrfatWog" source="stereotype" references="_9-WffOvlEdqZdqkrfatWog"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_A8HQHuvxEdqZdqkrfatWog" name="allowedBindings" upperBound="-1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_A8HQH-vxEdqZdqkrfatWog" name="SoftwareServices__serviceChannel">
+        <eAnnotations xmi:id="_A8HQIOvxEdqZdqkrfatWog" source="stereotype" references="_9-KSTuvlEdqZdqkrfatWog"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_A8HQIevxEdqZdqkrfatWog" name="binding" lowerBound="1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_A8HQIuvxEdqZdqkrfatWog" name="SoftwareServices__serviceModel">
+        <eAnnotations xmi:id="_A8HQI-vxEdqZdqkrfatWog" source="stereotype" references="_9-cmEOvlEdqZdqkrfatWog"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_A8HQJOvxEdqZdqkrfatWog" name="SoftwareServices__policyStatement">
+        <eAnnotations xmi:id="_A8HQJevxEdqZdqkrfatWog" source="stereotype" references="_aYImMOvrEdqZdqkrfatWog"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_A8HQJuvxEdqZdqkrfatWog" name="domain" lowerBound="1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_A8HQJ-vxEdqZdqkrfatWog" name="strict" lowerBound="1" defaultValueLiteral="true">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_A8HQKOvxEdqZdqkrfatWog" name="SoftwareServices__serviceContract">
+        <eAnnotations xmi:id="_A8HQKevxEdqZdqkrfatWog" source="stereotype" references="_9-QY0OvlEdqZdqkrfatWog"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_A8HQKuvxEdqZdqkrfatWog" name="strict" lowerBound="1" defaultValueLiteral="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EEnum" xmi:id="_A8HQK-vxEdqZdqkrfatWog" name="SoftwareServices__SpecificationStatus">
+        <eLiterals xmi:id="_A8HQLOvxEdqZdqkrfatWog" name="candidate">
+          <eAnnotations xmi:id="_A8HQLevxEdqZdqkrfatWog" source="enumerationLiteral" references="_LfCRsOvwEdqZdqkrfatWog"/>
+        </eLiterals>
+        <eLiterals xmi:id="_A8HQLuvxEdqZdqkrfatWog" name="accepted" value="1">
+          <eAnnotations xmi:id="_A8HQL-vxEdqZdqkrfatWog" source="enumerationLiteral" references="_MgXL0OvwEdqZdqkrfatWog"/>
+        </eLiterals>
+        <eLiterals xmi:id="_A8HQMOvxEdqZdqkrfatWog" name="exposed" value="2">
+          <eAnnotations xmi:id="_A8HQMevxEdqZdqkrfatWog" source="enumerationLiteral" references="_N6zwkOvwEdqZdqkrfatWog"/>
+        </eLiterals>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_A8HQMuvxEdqZdqkrfatWog" name="SoftwareServices__attachment">
+        <eAnnotations xmi:id="_A8HQM-vxEdqZdqkrfatWog" source="stereotype" references="_9-KSMOvlEdqZdqkrfatWog"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_A8HQNOvxEdqZdqkrfatWog" name="encoding" lowerBound="1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_A8HQNevxEdqZdqkrfatWog" name="SoftwareServices__serviceSpecification">
+        <eAnnotations xmi:id="_A8HQNuvxEdqZdqkrfatWog" source="stereotype" references="_9-WfjuvlEdqZdqkrfatWog"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_A8HQN-vxEdqZdqkrfatWog" name="status" lowerBound="1" eType="_A8HQK-vxEdqZdqkrfatWog" defaultValueLiteral="candidate"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_A8HQOOvxEdqZdqkrfatWog" name="source" lowerBound="1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_A8HQOevxEdqZdqkrfatWog" name="SoftwareServices__serviceGateway">
+        <eAnnotations xmi:id="_A8HQOuvxEdqZdqkrfatWog" source="stereotype" references="_9-QY7uvlEdqZdqkrfatWog"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_A8HQO-vxEdqZdqkrfatWog" name="allowedBindings" upperBound="-1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_Sl5uEevtEdqZdqkrfatWog" name="SoftwareServices_3" nsURI="http:///_Sl5uEOvtEdqZdqkrfatWog.profile.uml2" nsPrefix="SoftwareServices_3">
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_Sl5uEuvtEdqZdqkrfatWog" name="SoftwareServices__servicePartition">
+        <eAnnotations xmi:id="_Sl5uE-vtEdqZdqkrfatWog" source="stereotype" references="_9-WfcOvlEdqZdqkrfatWog"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_Sl5uFOvtEdqZdqkrfatWog" name="classifier" unique="false" lowerBound="1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_Sl5uFevtEdqZdqkrfatWog" name="SoftwareServices__message">
+        <eAnnotations xmi:id="_Sl5uFuvtEdqZdqkrfatWog" source="stereotype" references="_3mdJQOvlEdqZdqkrfatWog"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_Sl5uF-vtEdqZdqkrfatWog" name="encoding" lowerBound="1" defaultValueLiteral="document-literal">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_Sl5uGOvtEdqZdqkrfatWog" name="SoftwareServices__serviceConsumer">
+        <eAnnotations xmi:id="_Sl5uGevtEdqZdqkrfatWog" source="stereotype" references="_9-QY5evlEdqZdqkrfatWog"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_Sl5uGuvtEdqZdqkrfatWog" name="SoftwareServices__service">
+        <eAnnotations xmi:id="_Sl5uG-vtEdqZdqkrfatWog" source="stereotype" references="_9-KSP-vlEdqZdqkrfatWog"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_Sl5uHOvtEdqZdqkrfatWog" name="allowedBindings" upperBound="-1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_Sl5uHevtEdqZdqkrfatWog" name="SoftwareServices__serviceProvider">
+        <eAnnotations xmi:id="_Sl5uHuvtEdqZdqkrfatWog" source="stereotype" references="_9-WffOvlEdqZdqkrfatWog"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_Sl5uH-vtEdqZdqkrfatWog" name="allowedBindings" upperBound="-1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_Sl5uIOvtEdqZdqkrfatWog" name="SoftwareServices__serviceChannel">
+        <eAnnotations xmi:id="_Sl5uIevtEdqZdqkrfatWog" source="stereotype" references="_9-KSTuvlEdqZdqkrfatWog"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_Sl5uIuvtEdqZdqkrfatWog" name="binding" lowerBound="1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_Sl5uI-vtEdqZdqkrfatWog" name="SoftwareServices__serviceModel">
+        <eAnnotations xmi:id="_Sl5uJOvtEdqZdqkrfatWog" source="stereotype" references="_9-cmEOvlEdqZdqkrfatWog"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_Sl5uJevtEdqZdqkrfatWog" name="SoftwareServices__policyStatement">
+        <eAnnotations xmi:id="_Sl5uJuvtEdqZdqkrfatWog" source="stereotype" references="_aYImMOvrEdqZdqkrfatWog"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_Sl5uJ-vtEdqZdqkrfatWog" name="domain" lowerBound="1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_Sl5uKOvtEdqZdqkrfatWog" name="strict" lowerBound="1" defaultValueLiteral="true">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_Sl5uKevtEdqZdqkrfatWog" name="SoftwareServices__serviceContract">
+        <eAnnotations xmi:id="_Sl5uKuvtEdqZdqkrfatWog" source="stereotype" references="_9-QY0OvlEdqZdqkrfatWog"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_Sl5uK-vtEdqZdqkrfatWog" name="strict" lowerBound="1" defaultValueLiteral="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_Sl5uLOvtEdqZdqkrfatWog" name="SoftwareServices__attachment">
+        <eAnnotations xmi:id="_Sl5uLevtEdqZdqkrfatWog" source="stereotype" references="_9-KSMOvlEdqZdqkrfatWog"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_Sl5uLuvtEdqZdqkrfatWog" name="encoding" lowerBound="1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_Sl5uL-vtEdqZdqkrfatWog" name="SoftwareServices__serviceSpecification">
+        <eAnnotations xmi:id="_Sl5uMOvtEdqZdqkrfatWog" source="stereotype" references="_9-WfjuvlEdqZdqkrfatWog"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_Sl5uMevtEdqZdqkrfatWog" name="published" lowerBound="1" defaultValueLiteral="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_Sl5uMuvtEdqZdqkrfatWog" name="candidate" lowerBound="1" defaultValueLiteral="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_Sl5uM-vtEdqZdqkrfatWog" name="source" lowerBound="1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_Sl5uNOvtEdqZdqkrfatWog" name="SoftwareServices__serviceGateway">
+        <eAnnotations xmi:id="_Sl5uNevtEdqZdqkrfatWog" source="stereotype" references="_9-QY7uvlEdqZdqkrfatWog"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_Sl5uNuvtEdqZdqkrfatWog" name="allowedBindings" upperBound="-1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_6b8BQOvoEdqZdqkrfatWog" name="SoftwareServices_2" nsURI="http:///_6b16oOvoEdqZdqkrfatWog.profile.uml2" nsPrefix="SoftwareServices_2">
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_6b8BQevoEdqZdqkrfatWog" name="SoftwareServices__serviceModel">
+        <eAnnotations xmi:id="_6b8BQuvoEdqZdqkrfatWog" source="stereotype" references="_9-cmEOvlEdqZdqkrfatWog"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_6b8BQ-voEdqZdqkrfatWog" name="SoftwareServices__servicePartition">
+        <eAnnotations xmi:id="_6b8BROvoEdqZdqkrfatWog" source="stereotype" references="_9-WfcOvlEdqZdqkrfatWog"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_6b8BRevoEdqZdqkrfatWog" name="classifier" unique="false" lowerBound="1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_6b8BRuvoEdqZdqkrfatWog" name="SoftwareServices__message">
+        <eAnnotations xmi:id="_6b8BR-voEdqZdqkrfatWog" source="stereotype" references="_3mdJQOvlEdqZdqkrfatWog"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_6b8BSOvoEdqZdqkrfatWog" name="encoding" lowerBound="1" defaultValueLiteral="document-literal">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_6b8BSevoEdqZdqkrfatWog" name="SoftwareServices__serviceConsumer">
+        <eAnnotations xmi:id="_6b8BSuvoEdqZdqkrfatWog" source="stereotype" references="_9-QY5evlEdqZdqkrfatWog"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_6b8BS-voEdqZdqkrfatWog" name="SoftwareServices__serviceContract">
+        <eAnnotations xmi:id="_6b8BTOvoEdqZdqkrfatWog" source="stereotype" references="_9-QY0OvlEdqZdqkrfatWog"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_6b8BTevoEdqZdqkrfatWog" name="strict" lowerBound="1" defaultValueLiteral="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_6b8BTuvoEdqZdqkrfatWog" name="SoftwareServices__service">
+        <eAnnotations xmi:id="_6b8BT-voEdqZdqkrfatWog" source="stereotype" references="_9-KSP-vlEdqZdqkrfatWog"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_6b8BUOvoEdqZdqkrfatWog" name="allowedBindings" upperBound="-1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_6b8BUevoEdqZdqkrfatWog" name="SoftwareServices__serviceProvider">
+        <eAnnotations xmi:id="_6b8BUuvoEdqZdqkrfatWog" source="stereotype" references="_9-WffOvlEdqZdqkrfatWog"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_6b8BU-voEdqZdqkrfatWog" name="allowedBindings" upperBound="-1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_6b8BVOvoEdqZdqkrfatWog" name="SoftwareServices__serviceChannel">
+        <eAnnotations xmi:id="_6b8BVevoEdqZdqkrfatWog" source="stereotype" references="_9-KSTuvlEdqZdqkrfatWog"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_6b8BVuvoEdqZdqkrfatWog" name="binding" lowerBound="1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_6b8BV-voEdqZdqkrfatWog" name="SoftwareServices__attachment">
+        <eAnnotations xmi:id="_6b8BWOvoEdqZdqkrfatWog" source="stereotype" references="_9-KSMOvlEdqZdqkrfatWog"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_6b8BWevoEdqZdqkrfatWog" name="encoding" lowerBound="1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_6b8BWuvoEdqZdqkrfatWog" name="SoftwareServices__serviceSpecification">
+        <eAnnotations xmi:id="_6b8BW-voEdqZdqkrfatWog" source="stereotype" references="_9-WfjuvlEdqZdqkrfatWog"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_6b8BXOvoEdqZdqkrfatWog" name="published" lowerBound="1" defaultValueLiteral="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_6b8BXevoEdqZdqkrfatWog" name="candidate" lowerBound="1" defaultValueLiteral="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_6b8BXuvoEdqZdqkrfatWog" name="source" lowerBound="1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_6b8BX-voEdqZdqkrfatWog" name="SoftwareServices__serviceGateway">
+        <eAnnotations xmi:id="_6b8BYOvoEdqZdqkrfatWog" source="stereotype" references="_9-QY7uvlEdqZdqkrfatWog"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_6b8BYevoEdqZdqkrfatWog" name="allowedBindings" upperBound="-1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_qy86MOvoEdqZdqkrfatWog" name="SoftwareServices_1" nsURI="http:///_qyqmUOvoEdqZdqkrfatWog.profile.uml2" nsPrefix="SoftwareServices_1">
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_qy86MevoEdqZdqkrfatWog" name="SoftwareServices__serviceModel">
+        <eAnnotations xmi:id="_qy86MuvoEdqZdqkrfatWog" source="stereotype" references="_9-cmEOvlEdqZdqkrfatWog"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_qy86M-voEdqZdqkrfatWog" name="SoftwareServices__servicePartition">
+        <eAnnotations xmi:id="_qy86NOvoEdqZdqkrfatWog" source="stereotype" references="_9-WfcOvlEdqZdqkrfatWog"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_qy86NevoEdqZdqkrfatWog" name="classifier" unique="false" lowerBound="1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_qy86NuvoEdqZdqkrfatWog" name="SoftwareServices__message">
+        <eAnnotations xmi:id="_qy86N-voEdqZdqkrfatWog" source="stereotype" references="_3mdJQOvlEdqZdqkrfatWog"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_qy86OOvoEdqZdqkrfatWog" name="encoding" lowerBound="1" defaultValueLiteral="document-literal">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_qy86OevoEdqZdqkrfatWog" name="SoftwareServices__serviceConsumer">
+        <eAnnotations xmi:id="_qy86OuvoEdqZdqkrfatWog" source="stereotype" references="_9-QY5evlEdqZdqkrfatWog"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_qy86O-voEdqZdqkrfatWog" name="SoftwareServices__serviceContract">
+        <eAnnotations xmi:id="_qy86POvoEdqZdqkrfatWog" source="stereotype" references="_9-QY0OvlEdqZdqkrfatWog"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_qy86PevoEdqZdqkrfatWog" name="SoftwareServices__service">
+        <eAnnotations xmi:id="_qy86PuvoEdqZdqkrfatWog" source="stereotype" references="_9-KSP-vlEdqZdqkrfatWog"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_qy86P-voEdqZdqkrfatWog" name="allowedBindings" upperBound="-1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_qy86QOvoEdqZdqkrfatWog" name="SoftwareServices__serviceProvider">
+        <eAnnotations xmi:id="_qy86QevoEdqZdqkrfatWog" source="stereotype" references="_9-WffOvlEdqZdqkrfatWog"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_qy86QuvoEdqZdqkrfatWog" name="allowedBindings" upperBound="-1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_qy86Q-voEdqZdqkrfatWog" name="SoftwareServices__serviceChannel">
+        <eAnnotations xmi:id="_qy86ROvoEdqZdqkrfatWog" source="stereotype" references="_9-KSTuvlEdqZdqkrfatWog"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_qy86RevoEdqZdqkrfatWog" name="binding" lowerBound="1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_qy86RuvoEdqZdqkrfatWog" name="SoftwareServices__attachment">
+        <eAnnotations xmi:id="_qy86R-voEdqZdqkrfatWog" source="stereotype" references="_9-KSMOvlEdqZdqkrfatWog"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_qy86SOvoEdqZdqkrfatWog" name="encoding" lowerBound="1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_qy86SevoEdqZdqkrfatWog" name="SoftwareServices__serviceSpecification">
+        <eAnnotations xmi:id="_qy86SuvoEdqZdqkrfatWog" source="stereotype" references="_9-WfjuvlEdqZdqkrfatWog"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_qy86S-voEdqZdqkrfatWog" name="published" lowerBound="1" defaultValueLiteral="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_qy86TOvoEdqZdqkrfatWog" name="candidate" lowerBound="1" defaultValueLiteral="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_qy86TevoEdqZdqkrfatWog" name="source" lowerBound="1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_qy86TuvoEdqZdqkrfatWog" name="SoftwareServices__serviceGateway">
+        <eAnnotations xmi:id="_qy86T-voEdqZdqkrfatWog" source="stereotype" references="_9-QY7uvlEdqZdqkrfatWog"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_qy86UOvoEdqZdqkrfatWog" name="allowedBindings" upperBound="-1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_IsiAyOvjEdqZdqkrfatWog" name="SoftwareServices_0" nsURI="http:///_IsiAx-vjEdqZdqkrfatWog.profile.uml2" nsPrefix="SoftwareServices_0"/>
+  </eAnnotations>
+  <ownedComment xmi:id="_mBDbAOv0EdqZdqkrfatWog" body="Used  to create a new Software Service Design Model following Rational Software Modeler/Architect Model Structure Guidelines and supporting the proposed RUP/SOMA method." annotatedElement="_IsVzgOvjEdqZdqkrfatWog">
+    <eAnnotations xmi:id="_pCvDUOv0EdqZdqkrfatWog" source="uml2.extensions">
+      <details xmi:id="_pCvDUev0EdqZdqkrfatWog" key="addedInVersion" value="5"/>
+    </eAnnotations>
+  </ownedComment>
+  <packageImport xmi:id="_Isb6IOvjEdqZdqkrfatWog">
+    <eAnnotations xmi:id="_qy86UevoEdqZdqkrfatWog" source="uml2.extensions">
+      <details xmi:id="_qy86UuvoEdqZdqkrfatWog" key="addedInVersion" value="1"/>
+    </eAnnotations>
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML2_LIBRARIES/UML2PrimitiveTypes.library.uml2#_EfRZoK86EdieaYgxtVWN8Q"/>
+  </packageImport>
+  <packageImport xmi:id="_IsiAwOvjEdqZdqkrfatWog" visibility="private">
+    <eAnnotations xmi:id="_qy86U-voEdqZdqkrfatWog" source="uml2.extensions">
+      <details xmi:id="_qzDA0OvoEdqZdqkrfatWog" key="addedInVersion" value="1"/>
+    </eAnnotations>
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML2_METAMODELS/UML2.metamodel.uml2#_m8qbA686EdiEh75YJ_3n8g"/>
+  </packageImport>
+  <packageImport xmi:type="uml:ProfileApplication" xmi:id="_IsiAwevjEdqZdqkrfatWog">
+    <eAnnotations xmi:id="_IsiAwuvjEdqZdqkrfatWog" source="attributes">
+      <details xmi:id="_IsiAw-vjEdqZdqkrfatWog" key="version" value="0"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_qzDA0evoEdqZdqkrfatWog" source="uml2.extensions">
+      <details xmi:id="_qzDA0uvoEdqZdqkrfatWog" key="addedInVersion" value="1"/>
+    </eAnnotations>
+    <importedPackage xmi:type="uml:Profile" href="pathmap://UML2_MSL_PROFILES/ProfileBase.epx#_bFUAMdWLEdiy4IqP8whjFA?ProfileBase"/>
+    <importedProfile href="pathmap://UML2_MSL_PROFILES/ProfileBase.epx#_bFUAMdWLEdiy4IqP8whjFA?ProfileBase"/>
+  </packageImport>
+  <ownedMember xmi:type="uml:Stereotype" xmi:id="_3mdJQOvlEdqZdqkrfatWog" name="message">
+    <eAnnotations xmi:id="_3mdJQevlEdqZdqkrfatWog" source="uml2.extensions">
+      <details xmi:id="_3mdJQuvlEdqZdqkrfatWog" key="categoryName" value="SOA"/>
+      <details xmi:id="_3mdJQ-vlEdqZdqkrfatWog" key="addedInVersion" value="2"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_3mdJROvlEdqZdqkrfatWog" source="uml2.explorerImage">
+      <contents xmi:type="notation:Image" xmi:id="_3mdJRevlEdqZdqkrfatWog" data="47494638396110001000870000E7F3FFE0EAF2E4F2FF7DA9CA8EB4D1ADCCE47CA8CA3B7DB083AFD1B4CFE47FACD1BAD2E45F94BD73A4CAB6D0E45791BD72A3CABCD3E45991BD548FBDABCAE479A7CAB8D1E47AA7CA78A6CAAEC9E0729EC2FBFDFFF8FBFFA9CAE4F3F9FFBED4E4F0F7FFF5FAFF77A6CAAFCDE4C0D5E580AACBFFFFFF000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001013B65001048FFFF00000001FFE1FF126C3CFFFF000000014DC094127A24127A404DC06C00000100003B000000464947106139D50010F3E700F2EAE07DFFF2B48ECA000003000018AF83B0E4CFB4BAD1AC00000300001847AFA8C7000012692001BD91C70000126A94F51C78126B88FA88F0F51C88FFFFFFF59037C2AB2EC70000000000C2AB33DA9828DA97A016B13C000000127A34C33EB0C12048126B64C2AC19127A34C33EB0C1203003CA2F16BB3801CD2516BB3847AFB400000047AFA8DA9B28F59BAAF59BB3126F00020024FDEC004DC094000002F5B2A0FDF000126BBC000068126C78FA88F0F59BF9FC49E0F5A323F5A32B000000000208A30038126D60000000000000000068000010126C4000000EA300300000200000081503A01503A0440124000003000000000000000000FDEC68000002080068000000000045000068000034FDEC006A0068FDEC00126BF8A30038126F24FA88F0000000000008126F34F5D760A30040126CF8F59BF9FC49E0F5D90EF5D8E2000000FDEC00000001000000F5C244E7F021001048126CF8126D0000000800000E1274DCD9CDD0000009F511080000680000000000020000000000000000000000000001000000001274DC03C8B7001048000000000000000001013B65001048000000000001013BCE1274DC000000000001596F961274DC1274DCD9CDD000010000000911CFD01AB1A1616700CEC154005385F9A1000000000000004DC0980001004DC05800000000000000000000000000000000000000000000000000000000000021F90403000026002C000000001000100000087D004D081C48B0A0C18308130E0C50A2A1C3870F499098D0A1A2C58B151594200161C2041020438254A080C2460C2002781449920488022743AA9CD0326482982019A47449C0E6C60B214230084A340481A016361AE0C08083D3A74E097058B07100830D58B36A25106123830F60C38A054BA0044388681B9250C8966D40003B"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_3mdJRuvlEdqZdqkrfatWog" body="Constraints:&#xD;&#xA;- must have no operations&#xD;&#xA;- all properties shall be public" annotatedElement="_3mdJQOvlEdqZdqkrfatWog">
+      <eAnnotations xmi:id="_3mdJR-vlEdqZdqkrfatWog" source="uml2.extensions">
+        <details xmi:id="_3mdJSOvlEdqZdqkrfatWog" key="addedInVersion" value="14"/>
+      </eAnnotations>
+    </ownedComment>
+    <ownedAttribute xmi:id="_3mdJSevlEdqZdqkrfatWog" name="base$Class" association="_3m1jwOvlEdqZdqkrfatWog">
+      <eAnnotations xmi:id="_3mdJSuvlEdqZdqkrfatWog" source="uml2.extensions">
+        <details xmi:id="_3mdJS-vlEdqZdqkrfatWog" key="addedInVersion" value="3"/>
+      </eAnnotations>
+      <type xmi:type="uml:Class" href="pathmap://UML2_METAMODELS/UML2.metamodel.uml2#_m88uxq86EdiEh75YJ_3n8g"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_3mdJTOvlEdqZdqkrfatWog" name="encoding">
+      <eAnnotations xmi:id="_3mdJTevlEdqZdqkrfatWog" source="uml2.extensions">
+        <details xmi:id="_3mdJTuvlEdqZdqkrfatWog" key="addedInVersion" value="8"/>
+      </eAnnotations>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML2_LIBRARIES/UML2PrimitiveTypes.library.uml2#_IXlH8a86EdieaYgxtVWN8Q"/>
+      <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_3mdJT-vlEdqZdqkrfatWog" body="document-literal">
+        <eAnnotations xmi:id="_3mdJUOvlEdqZdqkrfatWog" source="uml2.extensions">
+          <details xmi:id="_3mdJUevlEdqZdqkrfatWog" key="addedInVersion" value="8"/>
+        </eAnnotations>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML2_LIBRARIES/UML2PrimitiveTypes.library.uml2#_IXlH8a86EdieaYgxtVWN8Q"/>
+      </defaultValue>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Extension" xmi:id="_3m1jwOvlEdqZdqkrfatWog" name="Class_Entity" memberEnd="_3m1jw-vlEdqZdqkrfatWog _3mdJSevlEdqZdqkrfatWog">
+    <eAnnotations xmi:id="_3m1jwevlEdqZdqkrfatWog" source="uml2.extensions">
+      <details xmi:id="_3m1jwuvlEdqZdqkrfatWog" key="addedInVersion" value="3"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_3m1jw-vlEdqZdqkrfatWog" name="extension$Entity" type="_3mdJQOvlEdqZdqkrfatWog" association="_3m1jwOvlEdqZdqkrfatWog" aggregation="composite">
+      <eAnnotations xmi:id="_3m1jxOvlEdqZdqkrfatWog" source="uml2.extensions">
+        <details xmi:id="_3m1jxevlEdqZdqkrfatWog" key="addedInVersion" value="3"/>
+      </eAnnotations>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3m1jxuvlEdqZdqkrfatWog">
+        <eAnnotations xmi:id="_3m1jx-vlEdqZdqkrfatWog" source="uml2.extensions">
+          <details xmi:id="_3m1jyOvlEdqZdqkrfatWog" key="addedInVersion" value="3"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedEnd>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Stereotype" xmi:id="_9-KSMOvlEdqZdqkrfatWog" name="attachment">
+    <eAnnotations xmi:id="_9-KSMevlEdqZdqkrfatWog" source="uml2.extensions">
+      <details xmi:id="_9-KSMuvlEdqZdqkrfatWog" key="categoryName" value="SOA"/>
+      <details xmi:id="_9-KSM-vlEdqZdqkrfatWog" key="addedInVersion" value="15"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_9-KSNOvlEdqZdqkrfatWog" source="uml2.explorerImage">
+      <contents xmi:type="notation:Image" xmi:id="_9-KSNevlEdqZdqkrfatWog" data="47494638396110001000870000304860404860405060405070405870506070506080506880607080607090607890707890548FBD5F94BD7080907080A07088A072A3CA78A6CA7AA7CA7CA8CA7DA9CA7FACD180AACB8EB4D1ABB2C0B7C0C9A9CAE4BAD2E4BCD3E4BED4E4C3C8D2C3CAD2C9CFD5C9D2DBCFD5DBC0D5E5DBDEE1DBDEE4DBDFE4E7EAEDE0EAF2F0F7FFF5FAFFF8FBFFFBFDFFFFFFFF00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000021F904000000FF002C00000000100010000008AA005D081C48B0A0C1822220407010E2204108225C8470E022C5858B182F3CB8E0E042820B08489060B0A1A4C9071B166C48B0E1C00512111830504153850215085418B040E0A504152964D23CA0A28085012A04F8AC19940181A31902A800B0946603A0044E7C1050C20455121356AC682076058801235CA018F0E12505160D58C865E1620400000234707859A1418BBF800363E8F0B28187C388131FC670C162C6C71949389C4CB96040003B"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_9-KSNuvlEdqZdqkrfatWog" body="Constraints:&#xD;&#xA;- shall only be applied to properties on a Class stereotyped &lt;&lt;Message>>" annotatedElement="_9-KSMOvlEdqZdqkrfatWog">
+      <eAnnotations xmi:id="_9-KSN-vlEdqZdqkrfatWog" source="uml2.extensions">
+        <details xmi:id="_9-KSOOvlEdqZdqkrfatWog" key="addedInVersion" value="17"/>
+      </eAnnotations>
+    </ownedComment>
+    <ownedAttribute xmi:id="_9-KSOevlEdqZdqkrfatWog" name="base$Property" association="_9-cmGevlEdqZdqkrfatWog">
+      <eAnnotations xmi:id="_9-KSOuvlEdqZdqkrfatWog" source="uml2.extensions">
+        <details xmi:id="_9-KSO-vlEdqZdqkrfatWog" key="addedInVersion" value="15"/>
+      </eAnnotations>
+      <type xmi:type="uml:Class" href="pathmap://UML2_METAMODELS/UML2.metamodel.uml2#_m9C1la86EdiEh75YJ_3n8g"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_9-KSPOvlEdqZdqkrfatWog" name="encoding">
+      <eAnnotations xmi:id="_9-KSPevlEdqZdqkrfatWog" source="uml2.extensions">
+        <details xmi:id="_9-KSPuvlEdqZdqkrfatWog" key="addedInVersion" value="15"/>
+      </eAnnotations>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML2_LIBRARIES/UML2PrimitiveTypes.library.uml2#_IXlH8a86EdieaYgxtVWN8Q"/>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Stereotype" xmi:id="_9-KSP-vlEdqZdqkrfatWog" name="service">
+    <eAnnotations xmi:id="_9-KSQOvlEdqZdqkrfatWog" source="uml2.extensions">
+      <details xmi:id="_9-KSQevlEdqZdqkrfatWog" key="categoryName" value="SOA"/>
+      <details xmi:id="_9-KSQuvlEdqZdqkrfatWog" key="addedInVersion" value="1"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_9-KSQ-vlEdqZdqkrfatWog" source="uml2.explorerImage">
+      <contents xmi:type="notation:Image" xmi:id="_9-KSROvlEdqZdqkrfatWog" data="47494638396110001000D500003E3E5F3F3F5FDFDF60BEBE5EBFBF5FC0C060BEBE5FDFDF7FBFBF7FC0A03FBFA03FBE9F3FDEBF5FBE9E3EC09F3FBF9E3FBF9F3FBE9E3FC0A040DFBE5EDFBE5FDFBF5F9F7F3E9E7F3E9F7F3F9E7F3F9F7F40BF9F5EBE9E5EBF9F5FBF9F60BFA060BE9E5FBE9F5FDFBF7FDEBE7EDFC080DFBE7FC07F3FBF7F3FBE7F3FDE9E5EE0A060DF9F5FC07F409E5F3E9F5F3FA05F40C060406060605F5F5F000000FFFFFF00000000000000000000000000000000000000000000000000000000000000000021F90401000034002C000000001000100000068C409A70482C1A69B1D94C76142A6933D26406A51203A2C3ACC2E05066838FD529AA082A043468D3193B472BC4A433E128DCB219664278295D1F1B194B4E25681556330B0D10278915062A05898D188E427905041C2E4A2D27289D4C4333291E2109102C1A9744330420120F0E27172C18186E001D11332F261A7E16300145005433B5C8004D347984CDD14241003B"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_9-KSRevlEdqZdqkrfatWog" body="Constraints:&#xD;&#xA;- owner shall be a &lt;&lt;ServiceProvider>>&#xD;&#xA;- type shall be a &lt;&lt;ServiceSpecification>>" annotatedElement="_9-KSP-vlEdqZdqkrfatWog">
+      <eAnnotations xmi:id="_9-KSRuvlEdqZdqkrfatWog" source="uml2.extensions">
+        <details xmi:id="_9-KSR-vlEdqZdqkrfatWog" key="addedInVersion" value="17"/>
+      </eAnnotations>
+    </ownedComment>
+    <ownedAttribute xmi:id="_9-KSSOvlEdqZdqkrfatWog" name="base$Port" association="_9-cmIuvlEdqZdqkrfatWog">
+      <eAnnotations xmi:id="_9-KSSevlEdqZdqkrfatWog" source="uml2.extensions">
+        <details xmi:id="_9-KSSuvlEdqZdqkrfatWog" key="addedInVersion" value="5"/>
+      </eAnnotations>
+      <type xmi:type="uml:Class" href="pathmap://UML2_METAMODELS/UML2.metamodel.uml2#_m9VKQa86EdiEh75YJ_3n8g"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_QGESwOvmEdqZdqkrfatWog" name="allowedBindings">
+      <eAnnotations xmi:id="_QGESwevmEdqZdqkrfatWog" source="uml2.extensions">
+        <details xmi:id="_QGESwuvmEdqZdqkrfatWog" key="addedInVersion" value="1"/>
+      </eAnnotations>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML2_LIBRARIES/UML2PrimitiveTypes.library.uml2#_IXlH8a86EdieaYgxtVWN8Q"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QGESw-vmEdqZdqkrfatWog" value="-1">
+        <eAnnotations xmi:id="_qzDA0-voEdqZdqkrfatWog" source="uml2.extensions">
+          <details xmi:id="_qzDA1OvoEdqZdqkrfatWog" key="addedInVersion" value="1"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QGESxOvmEdqZdqkrfatWog">
+        <eAnnotations xmi:id="_qzDA1evoEdqZdqkrfatWog" source="uml2.extensions">
+          <details xmi:id="_qzDA1uvoEdqZdqkrfatWog" key="addedInVersion" value="1"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Stereotype" xmi:id="_9-KSTuvlEdqZdqkrfatWog" name="serviceChannel">
+    <eAnnotations xmi:id="_9-KST-vlEdqZdqkrfatWog" source="uml2.extensions">
+      <details xmi:id="_9-KSUOvlEdqZdqkrfatWog" key="addedInVersion" value="4"/>
+      <details xmi:id="_9-KSUevlEdqZdqkrfatWog" key="categoryName" value="SOA"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_9-KSUuvlEdqZdqkrfatWog" source="uml2.explorerImage">
+      <contents xmi:type="notation:Image" xmi:id="_9-KSU-vlEdqZdqkrfatWog" data="474946383961100010008700005940335F443D654431674B3E69514471574572584B7B5E407B5F41745D577C64467F6A5D7F6A644078A48975518976529E7B4794837EA28551A58E5ABB9651CEA757C3AD69C9AC62CAAE64B5A8A5A0BCD2FFFFFF00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000021F904000000FF002C00000000100010000008630037087C20B0A0418304000470B0E0A0C30013145848E0D020020C073248B8504043838F1F0D26A000A102C5830D440E60602082C394070554DC0073264A9B0E35E03C4870E786840B1BE28428F1E4CC8B193716C039B2A4D1990956B6F4B941A6C080003B"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_9-KSVOvlEdqZdqkrfatWog" body="Constraints:&#xD;&#xA;- ends shall be &lt;&lt;Service>> or &lt;&lt;ServiceGateway>> Ports" annotatedElement="_9-KSTuvlEdqZdqkrfatWog">
+      <eAnnotations xmi:id="_9-KSVevlEdqZdqkrfatWog" source="uml2.extensions">
+        <details xmi:id="_9-KSVuvlEdqZdqkrfatWog" key="addedInVersion" value="17"/>
+      </eAnnotations>
+    </ownedComment>
+    <ownedAttribute xmi:id="_9-KSV-vlEdqZdqkrfatWog" name="binding">
+      <eAnnotations xmi:id="_9-KSWOvlEdqZdqkrfatWog" source="uml2.extensions">
+        <details xmi:id="_9-KSWevlEdqZdqkrfatWog" key="addedInVersion" value="8"/>
+      </eAnnotations>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML2_LIBRARIES/UML2PrimitiveTypes.library.uml2#_IXlH8a86EdieaYgxtVWN8Q"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_9-KSWuvlEdqZdqkrfatWog" name="base$Connector" association="_9-cmK-vlEdqZdqkrfatWog">
+      <eAnnotations xmi:id="_9-KSW-vlEdqZdqkrfatWog" source="uml2.extensions">
+        <details xmi:id="_9-KSXOvlEdqZdqkrfatWog" key="addedInVersion" value="10"/>
+      </eAnnotations>
+      <type xmi:type="uml:Class" href="pathmap://UML2_METAMODELS/UML2.metamodel.uml2#_m9bRH686EdiEh75YJ_3n8g"/>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Stereotype" xmi:id="_9-QY0OvlEdqZdqkrfatWog" name="serviceContract">
+    <eAnnotations xmi:id="_9-QY0evlEdqZdqkrfatWog" source="uml2.extensions">
+      <details xmi:id="_9-QY0uvlEdqZdqkrfatWog" key="addedInVersion" value="6"/>
+      <details xmi:id="_9-QY0-vlEdqZdqkrfatWog" key="categoryName" value="SOA"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_9-QY1OvlEdqZdqkrfatWog" source="uml2.explorerImage">
+      <contents xmi:type="notation:Image" xmi:id="_9-QY1evlEdqZdqkrfatWog" data="4749463839611000100087000049312A5940335F443D6646336951446F5954715745735C437B5F41745D577C64467F6A5D7F6A642F75AB3A7DB04080B0508AB7568FBC699DC570A0C475A5CB7EAACD83623F866C4989765294837EA28551A48D59A6935FB19E65BCAC6DC3AD69CAAE64D3B666D1C379E6CA6FB5A8A5BFB5B280AACB81ADD085B0D18FB5D38DB5D49BBDD798BDDBA5C5DFADCBE2B3CDE1B0CDE5BCD6EBD4CC82CAC1BFE5DA85D5CECCDFDAD9C4DBEECDE0F0D2E2F0DAE8F2EAE7E6E0EAF2EAF2F9F5F3F3F0F5F9FFFFFF00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000021F904000000FF002C00000000100010000008920081081C48B0A0C1823E6C1C2C682343010C256AF858B88340000032046058B0D0C601111C6874F0C0606106011B3628F8702141868308408C4040424308100604F298900247840615704098F0C3428219407AA03801238653A7304EB8D031008809164FB366A53001C803AD609D3E00B222AC56095D933A60AA15068B1B2F08F23091A345830638543C48BBB0AFDF830101003B"/>
+    </eAnnotations>
+    <ownedAttribute xmi:id="_9-QY3OvlEdqZdqkrfatWog" name="base$Collaboration" association="_9-cmNOvlEdqZdqkrfatWog">
+      <eAnnotations xmi:id="_9-QY3evlEdqZdqkrfatWog" source="uml2.extensions">
+        <details xmi:id="_9-QY3uvlEdqZdqkrfatWog" key="addedInVersion" value="6"/>
+      </eAnnotations>
+      <type xmi:type="uml:Class" href="pathmap://UML2_METAMODELS/UML2.metamodel.uml2#_m9bQ-a86EdiEh75YJ_3n8g"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_24Dq0OvoEdqZdqkrfatWog" name="strict">
+      <eAnnotations xmi:id="_6b8BYuvoEdqZdqkrfatWog" source="uml2.extensions">
+        <details xmi:id="_6b8BY-voEdqZdqkrfatWog" key="addedInVersion" value="2"/>
+      </eAnnotations>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML2_LIBRARIES/UML2PrimitiveTypes.library.uml2#_IXfBUK86EdieaYgxtVWN8Q"/>
+      <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_38uz4OvoEdqZdqkrfatWog">
+        <eAnnotations xmi:id="_6b8BZOvoEdqZdqkrfatWog" source="uml2.extensions">
+          <details xmi:id="_6b8BZevoEdqZdqkrfatWog" key="addedInVersion" value="2"/>
+        </eAnnotations>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML2_LIBRARIES/UML2PrimitiveTypes.library.uml2#_IXfBUK86EdieaYgxtVWN8Q"/>
+      </defaultValue>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Stereotype" xmi:id="_9-QY5evlEdqZdqkrfatWog" name="serviceConsumer">
+    <eAnnotations xmi:id="_9-QY5uvlEdqZdqkrfatWog" source="uml2.extensions">
+      <details xmi:id="_9-QY5-vlEdqZdqkrfatWog" key="addedInVersion" value="1"/>
+      <details xmi:id="_9-QY6OvlEdqZdqkrfatWog" key="categoryName" value="SOA"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_9-QY6evlEdqZdqkrfatWog" source="uml2.explorerImage">
+      <contents xmi:type="notation:Image" xmi:id="_9-QY6uvlEdqZdqkrfatWog" data="47494638396110001000870000745D57F5F3F3AA9C987F6A645F443D94837ED0D0D0303030D4CD83D5CECCDFDAD9EAE7E6E9E691DED98A8080804F3F35B19E659A8B6FE5DA85909090D1C379BEB47572584BCAC1BFA28551CEA7575940336F59547157459F8F85C1944ACAAE648A7B78674B3EBFB5B2BCAC6DA6935F654431BB96519F8F8B7F6A5DE6CA6F7B5F418976523A36366F50379E7B4785838394837849312A948259C3AD69695B3FC1954B9675466646336F4E35D3B666D4CC82735C437C644670707083623F9F8F7FA48D59D0CAC9BD883ED3A44F866C4979583AAA9B8069514469514A7B5E40A58E5A897551E5E3E3C9AC62B5A8A5543830FFFFFF000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000EC6060DA9B28F59BAAF59BB3126F00020024FDEC00FDD43C000002020024FDF000126BBC000070126C78FA88F0F59BF9FC49E0F5A323F5A32B000000000208233B48126D68000000000000000070FFA94E00001800000E233B400000200000081503A01503A044BB38000003000000000000000000FDEC70000002080070000000000045000070000038FDEC00720070FDEC00126BF8233B48126F24FA88F0000000000008126F34F5D760233B50126CF8F59BF9FC49E0F5D90EF5D8E2000000FDEC00000001000000F5C244E7F0210010A8126CF8126D0000000800000E1274DCD9CDD0000009F511080000700000000000020000000000000000000000000001000000001274DC03C8B70010A8000000000000000001013B650010A8000000000001013BCE1274DC000000000001596F961274DC1274DCD9CDD000010000000911CFD01AB1A1616700CEC154005385F9A100000000000000FDD440000100FDD40000000000000000000000000000000000000000000000000000000000000021F90403000050002C000000001000100000089200A1081C48B0A0C18308132A1C184081410A0B082A28B061858804010642C01011CA82231A62E820B00205140A105C30E00845C10E0A2424401831000A84000B16AC5C50800010203C66100150E0664E5F3A20A8F8904285130C393E7030AA93A30000364CB8C8E003C005942A592EC051A3C89016356E6864092500801048840CB050602044834E6E3859C8B7AF5F280101003B"/>
+    </eAnnotations>
+    <ownedAttribute xmi:id="_9-QY6-vlEdqZdqkrfatWog" name="base$Classifier" association="_9-cmPevlEdqZdqkrfatWog">
+      <eAnnotations xmi:id="_9-QY7OvlEdqZdqkrfatWog" source="uml2.extensions">
+        <details xmi:id="_9-QY7evlEdqZdqkrfatWog" key="addedInVersion" value="1"/>
+      </eAnnotations>
+      <type xmi:type="uml:Class" href="pathmap://UML2_METAMODELS/UML2.metamodel.uml2#_m88vAa86EdiEh75YJ_3n8g"/>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Stereotype" xmi:id="_9-QY7uvlEdqZdqkrfatWog" name="serviceGateway">
+    <eAnnotations xmi:id="_9-QY7-vlEdqZdqkrfatWog" source="uml2.extensions">
+      <details xmi:id="_9-QY8OvlEdqZdqkrfatWog" key="addedInVersion" value="16"/>
+      <details xmi:id="_9-QY8evlEdqZdqkrfatWog" key="categoryName" value="SOA"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_9-QY8uvlEdqZdqkrfatWog" source="uml2.explorerImage">
+      <contents xmi:type="notation:Image" xmi:id="_9-QY8-vlEdqZdqkrfatWog" data="474946383961100010008700003072A5467FAB548FBD5E90B85F94BD6392B66E9BBD72A3CA73A4CA7DA9CA80AACB8DB3D1A9CAE4BED4E4BCD6EBC0D3E1C0D5E5D0DEE9E0EAF2E4F2FFF0F7FFF3F9FFF5FAFFF8FBFFFBFDFFFFFFFF00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000021F904000000FF002C00000000100010000008680033081C48B0A0418212142898A0F0E0400802184C60C0C0A140080726689C6031C3C68D1D2120F86831C203000F1E50A060B1C0829701565A34E0A0E6800A155ABE5C10C082859227535EB8D071A851A2162124C0C0144348020D1A6068D031A1420C0A3A1E0C08003B"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_9-QY9OvlEdqZdqkrfatWog" body="Constraints:&#xD;&#xA;- owner shall be &lt;&lt;ServicePartition>>" annotatedElement="_9-QY7uvlEdqZdqkrfatWog">
+      <eAnnotations xmi:id="_9-QY9evlEdqZdqkrfatWog" source="uml2.extensions">
+        <details xmi:id="_9-QY9uvlEdqZdqkrfatWog" key="addedInVersion" value="17"/>
+      </eAnnotations>
+    </ownedComment>
+    <ownedAttribute xmi:id="_9-QY9-vlEdqZdqkrfatWog" name="base$Port" association="_9-cmRuvlEdqZdqkrfatWog">
+      <eAnnotations xmi:id="_9-QY-OvlEdqZdqkrfatWog" source="uml2.extensions">
+        <details xmi:id="_9-QY-evlEdqZdqkrfatWog" key="addedInVersion" value="16"/>
+      </eAnnotations>
+      <type xmi:type="uml:Class" href="pathmap://UML2_METAMODELS/UML2.metamodel.uml2#_m9VKQa86EdiEh75YJ_3n8g"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_fAQaIOvmEdqZdqkrfatWog" name="allowedBindings">
+      <eAnnotations xmi:id="_fAQaIevmEdqZdqkrfatWog" source="uml2.extensions">
+        <details xmi:id="_fAQaIuvmEdqZdqkrfatWog" key="addedInVersion" value="1"/>
+      </eAnnotations>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML2_LIBRARIES/UML2PrimitiveTypes.library.uml2#_IXlH8a86EdieaYgxtVWN8Q"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fAQaI-vmEdqZdqkrfatWog" value="-1">
+        <eAnnotations xmi:id="_qzDA1-voEdqZdqkrfatWog" source="uml2.extensions">
+          <details xmi:id="_qzDA2OvoEdqZdqkrfatWog" key="addedInVersion" value="1"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fAQaJOvmEdqZdqkrfatWog">
+        <eAnnotations xmi:id="_qzDA2evoEdqZdqkrfatWog" source="uml2.extensions">
+          <details xmi:id="_qzDA2uvoEdqZdqkrfatWog" key="addedInVersion" value="1"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Stereotype" xmi:id="_9-WfcOvlEdqZdqkrfatWog" name="servicePartition">
+    <eAnnotations xmi:id="_9-WfcevlEdqZdqkrfatWog" source="uml2.extensions">
+      <details xmi:id="_9-WfcuvlEdqZdqkrfatWog" key="addedInVersion" value="1"/>
+      <details xmi:id="_9-Wfc-vlEdqZdqkrfatWog" key="categoryName" value="SOA"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_9-WfdOvlEdqZdqkrfatWog" source="uml2.explorerImage">
+      <contents xmi:type="notation:Image" xmi:id="_9-WfdevlEdqZdqkrfatWog" data="47494638396110001000870000E7F3FFE0EAF2E4F2FF7DA9CA8EB4D1ADCCE47CA8CA3B7DB083AFD1B4CFE47FACD1BAD2E45F94BD73A4CAB6D0E45791BD72A3CABCD3E45991BD548FBDABCAE479A7CAB8D1E47AA7CA78A6CAAEC9E0729EC2FBFDFFF8FBFFA9CAE4F3F9FFBED4E4F0F7FFF5FAFF77A6CAAFCDE4C0D5E580AACBFFFFFF000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001013B6500117CFFFF00000001FFE1FF126C3CFFFF0000000160128C127A24127A4060126400000100003B000000464947106139D50010F3E700F2EAE07DFFF2B48ECA000003000018AF83B0E4CFB4BAD1AC0000030000184215E0C7000012692001BD91C70000126A94F51C78126B88FA88F0F51C88FFFFFFF59037C2AB2EC70000000000C2AB33DA9828DA97A016B13C000000127A34C33EB0C12048126B64C2AC19127A34C33EB0C1203003CA2F16BB3801CD2516BB384215EC0000004215E0DA9B28F59BAAF59BB3126F00020024FDEC0060128C000002020024FDF000126BBC000074126C78FA88F0F59BF9FC49E0F5A323F5A32B000000000208A00EB8126D6C00000000000000007400000000000000000EA00EB0000000000000233B481503A0440000000003000000000000000000FDEC7400000208007400000000004500007400003AFDEC00760074FDEC00126BF8A00EB8126F24FA88F0000000000008126F34F5D760A00EC0126CF8F59BF9FC49E0F5D90EF5D8E2000000FDEC00000001000000F5C244E7F02100117C126CF8126D0000000800000E1274DCD9CDD0000009F511080000740000000000020000000000000000000000000001000000001274DC03C8B700117C000000000000000001013B6500117C000000000001013BCE1274DC000000000001596F961274DC1274DCD9CDD000010000000911CFD01AB1A1616700CEC154005385F9A10000000000000060129000010060125000000000000000000000000000000000000000000000000000000000000021F90403000026002C000000001000100000087C004D081C48B0A0C000254A0848B85061C21224049298D04140878A172D7650504222040120438AA4D0D184C8932725364029B24049120D40C89C49D3A5409A38678294582184879F40813A78792184D1A3482D94E4C0B4A953A712076C984AB56A84970C3E7CD8A095EBD60F044A224CB881AC598806D3AA5D3B3020003B"/>
+    </eAnnotations>
+    <ownedAttribute xmi:id="_9-WfduvlEdqZdqkrfatWog" name="base$Class" association="_9-issOvlEdqZdqkrfatWog">
+      <eAnnotations xmi:id="_9-Wfd-vlEdqZdqkrfatWog" source="uml2.extensions">
+        <details xmi:id="_9-WfeOvlEdqZdqkrfatWog" key="addedInVersion" value="1"/>
+      </eAnnotations>
+      <type xmi:type="uml:Class" href="pathmap://UML2_METAMODELS/UML2.metamodel.uml2#_m88uxq86EdiEh75YJ_3n8g"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_9-WfeevlEdqZdqkrfatWog" name="classifier" isUnique="false">
+      <eAnnotations xmi:id="_9-WfeuvlEdqZdqkrfatWog" source="uml2.extensions">
+        <details xmi:id="_9-Wfe-vlEdqZdqkrfatWog" key="addedInVersion" value="23"/>
+      </eAnnotations>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML2_LIBRARIES/UML2PrimitiveTypes.library.uml2#_IXlH8a86EdieaYgxtVWN8Q"/>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Stereotype" xmi:id="_9-WffOvlEdqZdqkrfatWog" name="serviceProvider">
+    <eAnnotations xmi:id="_9-WffevlEdqZdqkrfatWog" source="uml2.extensions">
+      <details xmi:id="_9-WffuvlEdqZdqkrfatWog" key="addedInVersion" value="1"/>
+      <details xmi:id="_9-Wff-vlEdqZdqkrfatWog" key="categoryName" value="SOA"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_9-WfgOvlEdqZdqkrfatWog" source="uml2.explorerImage">
+      <contents xmi:type="notation:Image" xmi:id="_9-WfgevlEdqZdqkrfatWog" data="474946383961100010008700003F3F5F49312A5940335F443D654431664633674B3E6F4E356F503779583A69514469514A6F5954715745735C4372584B7B5E407B5F41745D577C64467F6A5D7F6A643F3F9F3F5F9F3F7FBF5F7FBF5F9FBF7FBFBF83623F866C498975518976529675469E7B47BD883E94837EA28551A48D59A58E5AA6935FBB9651B19E65BCAC6DC1944AC1954BCEA757D3A44FC3AD69C9AC62CAAE64D3B666D1C379E6CA6F9FBFBFAA9C98B5A8A5BFB5B2BFDFBFA6CAF0D4CC82CAC1BFE5DA85D5CECCDFDAD9EAE7E6F5F3F3FFFFFF00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000021F904000000FF002C00000000100010000008A70085081C4830C80F820807FE18C1E0030E1F41120A04A24040801D033C509028E4878319277AA4505181E38801254C4C78D141C208891162D0807083840C180D24DA9000024588161C24F09008E4008B042E10AC2820C482851C0525185820A2C28397163058907883C08D8159016418AB2103D48461756CD0914107008969CB02105B03AD56006BD796BD90E102DF1A4E73D4E89B21AFDAC31710D6D070C1C2DCB9162ED40808003B"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_9-WfguvlEdqZdqkrfatWog" body="Constraints:&#xD;&#xA;- shall have no properties or directly owned operations&#xD;&#xA;- shall not directly realize interfaces&#xD;&#xA;- may have Ports, stereotyped &lt;&lt;Service>>" annotatedElement="_9-WffOvlEdqZdqkrfatWog">
+      <eAnnotations xmi:id="_9-Wfg-vlEdqZdqkrfatWog" source="uml2.extensions">
+        <details xmi:id="_9-WfhOvlEdqZdqkrfatWog" key="addedInVersion" value="17"/>
+      </eAnnotations>
+    </ownedComment>
+    <ownedAttribute xmi:id="_9-WfhevlEdqZdqkrfatWog" name="base$Class" association="_9-isuevlEdqZdqkrfatWog">
+      <eAnnotations xmi:id="_9-WfhuvlEdqZdqkrfatWog" source="uml2.extensions">
+        <details xmi:id="_9-Wfh-vlEdqZdqkrfatWog" key="addedInVersion" value="1"/>
+      </eAnnotations>
+      <type xmi:type="uml:Class" href="pathmap://UML2_METAMODELS/UML2.metamodel.uml2#_m88uxq86EdiEh75YJ_3n8g"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_9-WfiOvlEdqZdqkrfatWog" name="allowedBindings">
+      <eAnnotations xmi:id="_9-WfievlEdqZdqkrfatWog" source="uml2.extensions">
+        <details xmi:id="_9-WfiuvlEdqZdqkrfatWog" key="addedInVersion" value="1"/>
+      </eAnnotations>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML2_LIBRARIES/UML2PrimitiveTypes.library.uml2#_IXlH8a86EdieaYgxtVWN8Q"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_J6AZIevmEdqZdqkrfatWog" value="-1">
+        <eAnnotations xmi:id="_qzDA2-voEdqZdqkrfatWog" source="uml2.extensions">
+          <details xmi:id="_qzDA3OvoEdqZdqkrfatWog" key="addedInVersion" value="1"/>
+        </eAnnotations>
+      </upperValue>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_J6AZIOvmEdqZdqkrfatWog">
+        <eAnnotations xmi:id="_qzDA3evoEdqZdqkrfatWog" source="uml2.extensions">
+          <details xmi:id="_qzDA3uvoEdqZdqkrfatWog" key="addedInVersion" value="1"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Stereotype" xmi:id="_9-WfjuvlEdqZdqkrfatWog" name="serviceSpecification">
+    <eAnnotations xmi:id="_9-Wfj-vlEdqZdqkrfatWog" source="uml2.extensions">
+      <details xmi:id="_9-WfkOvlEdqZdqkrfatWog" key="addedInVersion" value="10"/>
+      <details xmi:id="_9-WfkevlEdqZdqkrfatWog" key="categoryName" value="SOA"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_9-WfkuvlEdqZdqkrfatWog" source="uml2.explorerImage">
+      <contents xmi:type="notation:Image" xmi:id="_9-Wfk-vlEdqZdqkrfatWog" data="474946383961100010008700000000003E3E5F3F3F5F5F5F5F606060548FBD5F94BD72A3CA73A4CA79A7CA7AA7CA7DA9CA7FACD19E5F3E9F5F3F9E7F3E9E7F3F9F7F3E9F7F3FBE7F3FBF7F3F9F7F40A05F40C06040C07F40BE9E3EBE9F3FBF9F3FBFA03FBE9E5EBE9E5FBF9F5EBF9F5FBEBE5EBFBF5FBFA060BFBF7FDF9F5FDEBF5FDFBE5EDFBE5FDFBF5FDEBE7EDFBF7FDFDF60DFDF7F80AACB8EB4D1A9CAE4ABCAE4ADCCE4B6D0E4B8D1E4BCD3E4BED4E4DFC080C0D5E5E0EAF2E4F2FFF0F7FFF3F9FFF5FAFFFBFDFFFFFFFF00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000021F904000000FF002C00000000100010000008C1007F081CF88300000003082A3CF803C08D13001A46242860450B00294C74400120C488890201AC48C1228508931E3E8000195245091227409CE8C081E50000124E88B070D0C1880F1010E67041B428D1861A326CA0000047011850A332700160A904A6380EE8D8CA35868B06142638408803818E02670B1490E1024305A602CBEE984B97ED030C122444C491A047011E6A0BCC70C133C205013F7028E8C1B8310DAA0D03C45DE0A34065B5355C242488C3808DCFA05FB850F863A8D1A238480704003B"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_9-WflOvlEdqZdqkrfatWog" body="Constraints:&#xD;&#xA;- shall not have attributes&#xD;&#xA;- all features shall be public&#xD;&#xA;- shall not have owned behaviors" annotatedElement="_9-WfjuvlEdqZdqkrfatWog">
+      <eAnnotations xmi:id="_9-WflevlEdqZdqkrfatWog" source="uml2.extensions">
+        <details xmi:id="_9-WfluvlEdqZdqkrfatWog" key="addedInVersion" value="17"/>
+      </eAnnotations>
+    </ownedComment>
+    <ownedAttribute xmi:id="_9-Wfl-vlEdqZdqkrfatWog" name="base$Interface" association="_9-isy-vlEdqZdqkrfatWog">
+      <eAnnotations xmi:id="_9-WfmOvlEdqZdqkrfatWog" source="uml2.extensions">
+        <details xmi:id="_9-WfmevlEdqZdqkrfatWog" key="addedInVersion" value="10"/>
+      </eAnnotations>
+      <type xmi:type="uml:Class" href="pathmap://UML2_METAMODELS/UML2.metamodel.uml2#_m9VJoq86EdiEh75YJ_3n8g"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_9-WfoOvlEdqZdqkrfatWog" name="base$Class" association="_9-iswuvlEdqZdqkrfatWog">
+      <eAnnotations xmi:id="_9-WfoevlEdqZdqkrfatWog" source="uml2.extensions">
+        <details xmi:id="_9-WfouvlEdqZdqkrfatWog" key="addedInVersion" value="26"/>
+      </eAnnotations>
+      <type xmi:type="uml:Class" href="pathmap://UML2_METAMODELS/UML2.metamodel.uml2#_m88uxq86EdiEh75YJ_3n8g"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_m_TUUOvmEdqZdqkrfatWog" name="status" type="_KEmUAOvwEdqZdqkrfatWog">
+      <eAnnotations xmi:id="_qzDA3-voEdqZdqkrfatWog" source="uml2.extensions">
+        <details xmi:id="_qzDA4OvoEdqZdqkrfatWog" key="addedInVersion" value="1"/>
+      </eAnnotations>
+      <defaultValue xmi:type="uml:InstanceValue" xmi:id="_VD5TIOvwEdqZdqkrfatWog" type="_KEmUAOvwEdqZdqkrfatWog" instance="_LfCRsOvwEdqZdqkrfatWog">
+        <eAnnotations xmi:id="_A8HQPOvxEdqZdqkrfatWog" source="uml2.extensions">
+          <details xmi:id="_A8HQPevxEdqZdqkrfatWog" key="addedInVersion" value="4"/>
+        </eAnnotations>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_LpegwOvoEdqZdqkrfatWog" name="source">
+      <eAnnotations xmi:id="_qzDA4-voEdqZdqkrfatWog" source="uml2.extensions">
+        <details xmi:id="_qzDA5OvoEdqZdqkrfatWog" key="addedInVersion" value="1"/>
+      </eAnnotations>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML2_LIBRARIES/UML2PrimitiveTypes.library.uml2#_IXlH8a86EdieaYgxtVWN8Q"/>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Stereotype" xmi:id="_9-cmEOvlEdqZdqkrfatWog" name="serviceModel">
+    <eAnnotations xmi:id="_9-cmEevlEdqZdqkrfatWog" source="uml2.extensions">
+      <details xmi:id="_9-cmEuvlEdqZdqkrfatWog" key="categoryName" value="SOA"/>
+      <details xmi:id="_9-cmE-vlEdqZdqkrfatWog" key="addedInVersion" value="3"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_9-cmFOvlEdqZdqkrfatWog" source="uml2.explorerImage">
+      <contents xmi:type="notation:Image" xmi:id="_9-cmFevlEdqZdqkrfatWog" data="4749463839611000100087000049312A5940335F443D664633674B3E6F4E356F503779583A69514469514A6F5954794F40715745735C4372584B7B5F41745D577C64467F6A5D7F6A6483623FA05921A86636A86736A96837866C498976529675469E7B479B7B70BD883E94837EA28551A48D59A6935FBB9651B19E65BCAC6DC1954BCEA757D3A44FC3AD69CAAE64D3B666D1C379E6CA6FAA9C98B5A8A5BFB5B2D4CC82CAC1BFE5DA85EAD6A8D5CECCDFDAD9E8D6C8FAEFD6F5F3F3FFFFFF00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000021F904000000FF002C00000000100010000008A20075081C28B003C1830817201C58A1A1C3050E1BDE6048A3620E1B382A56C4305160051A363E28D000A346461A1C19E2401000400C011A2454BCD05147051B0D58889841A2C4848C16267658B0E08380102122A4C800E1030DA2066D3E50D1E2C10B102B54304059B3820B081B4670384101820CAE2A0B983880C280890133BBD28040208187090E9CD2084AB1E28B012F34D2A8D035620588116B265CC838EAC180003B"/>
+    </eAnnotations>
+    <ownedAttribute xmi:id="_9-cmFuvlEdqZdqkrfatWog" name="base$Model" association="_9-is1OvlEdqZdqkrfatWog">
+      <eAnnotations xmi:id="_9-cmF-vlEdqZdqkrfatWog" source="uml2.extensions">
+        <details xmi:id="_9-cmGOvlEdqZdqkrfatWog" key="addedInVersion" value="3"/>
+      </eAnnotations>
+      <type xmi:type="uml:Class" href="pathmap://UML2_METAMODELS/UML2.metamodel.uml2#_m9ndba86EdiEh75YJ_3n8g"/>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Extension" xmi:id="_9-cmGevlEdqZdqkrfatWog" name="Property_MessageAttachment" memberEnd="_9-cmHOvlEdqZdqkrfatWog _9-KSOevlEdqZdqkrfatWog">
+    <eAnnotations xmi:id="_9-cmGuvlEdqZdqkrfatWog" source="uml2.extensions">
+      <details xmi:id="_9-cmG-vlEdqZdqkrfatWog" key="addedInVersion" value="15"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_9-cmHOvlEdqZdqkrfatWog" name="extension$MessageAttachment" type="_9-KSMOvlEdqZdqkrfatWog" association="_9-cmGevlEdqZdqkrfatWog" aggregation="composite">
+      <eAnnotations xmi:id="_9-cmHevlEdqZdqkrfatWog" source="uml2.extensions">
+        <details xmi:id="_9-cmHuvlEdqZdqkrfatWog" key="addedInVersion" value="15"/>
+      </eAnnotations>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9-cmH-vlEdqZdqkrfatWog">
+        <eAnnotations xmi:id="_9-cmIOvlEdqZdqkrfatWog" source="uml2.extensions">
+          <details xmi:id="_9-cmIevlEdqZdqkrfatWog" key="addedInVersion" value="15"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedEnd>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Extension" xmi:id="_9-cmIuvlEdqZdqkrfatWog" name="Port_Service" memberEnd="_9-cmJevlEdqZdqkrfatWog _9-KSSOvlEdqZdqkrfatWog">
+    <eAnnotations xmi:id="_9-cmI-vlEdqZdqkrfatWog" source="uml2.extensions">
+      <details xmi:id="_9-cmJOvlEdqZdqkrfatWog" key="addedInVersion" value="5"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_9-cmJevlEdqZdqkrfatWog" name="extension$Service" type="_9-KSP-vlEdqZdqkrfatWog" association="_9-cmIuvlEdqZdqkrfatWog" aggregation="composite">
+      <eAnnotations xmi:id="_9-cmJuvlEdqZdqkrfatWog" source="uml2.extensions">
+        <details xmi:id="_9-cmJ-vlEdqZdqkrfatWog" key="addedInVersion" value="5"/>
+      </eAnnotations>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9-cmKOvlEdqZdqkrfatWog">
+        <eAnnotations xmi:id="_9-cmKevlEdqZdqkrfatWog" source="uml2.extensions">
+          <details xmi:id="_9-cmKuvlEdqZdqkrfatWog" key="addedInVersion" value="5"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedEnd>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Extension" xmi:id="_9-cmK-vlEdqZdqkrfatWog" name="Connector_ServiceChannel" memberEnd="_9-cmLuvlEdqZdqkrfatWog _9-KSWuvlEdqZdqkrfatWog">
+    <eAnnotations xmi:id="_9-cmLOvlEdqZdqkrfatWog" source="uml2.extensions">
+      <details xmi:id="_9-cmLevlEdqZdqkrfatWog" key="addedInVersion" value="10"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_9-cmLuvlEdqZdqkrfatWog" name="extension$ServiceChannel" type="_9-KSTuvlEdqZdqkrfatWog" association="_9-cmK-vlEdqZdqkrfatWog" aggregation="composite">
+      <eAnnotations xmi:id="_9-cmL-vlEdqZdqkrfatWog" source="uml2.extensions">
+        <details xmi:id="_9-cmMOvlEdqZdqkrfatWog" key="addedInVersion" value="10"/>
+      </eAnnotations>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9-cmMevlEdqZdqkrfatWog">
+        <eAnnotations xmi:id="_9-cmMuvlEdqZdqkrfatWog" source="uml2.extensions">
+          <details xmi:id="_9-cmM-vlEdqZdqkrfatWog" key="addedInVersion" value="10"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedEnd>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Extension" xmi:id="_9-cmNOvlEdqZdqkrfatWog" name="Collaboration_ServiceCollaboration" memberEnd="_9-cmN-vlEdqZdqkrfatWog _9-QY3OvlEdqZdqkrfatWog">
+    <eAnnotations xmi:id="_9-cmNevlEdqZdqkrfatWog" source="uml2.extensions">
+      <details xmi:id="_9-cmNuvlEdqZdqkrfatWog" key="addedInVersion" value="6"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_9-cmN-vlEdqZdqkrfatWog" name="extension$ServiceCollaboration" type="_9-QY0OvlEdqZdqkrfatWog" association="_9-cmNOvlEdqZdqkrfatWog" aggregation="composite">
+      <eAnnotations xmi:id="_9-cmOOvlEdqZdqkrfatWog" source="uml2.extensions">
+        <details xmi:id="_9-cmOevlEdqZdqkrfatWog" key="addedInVersion" value="6"/>
+      </eAnnotations>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9-cmOuvlEdqZdqkrfatWog">
+        <eAnnotations xmi:id="_9-cmO-vlEdqZdqkrfatWog" source="uml2.extensions">
+          <details xmi:id="_9-cmPOvlEdqZdqkrfatWog" key="addedInVersion" value="6"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedEnd>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Extension" xmi:id="_9-cmPevlEdqZdqkrfatWog" name="Classifier_ServiceConsumer" memberEnd="_9-cmQOvlEdqZdqkrfatWog _9-QY6-vlEdqZdqkrfatWog">
+    <eAnnotations xmi:id="_9-cmPuvlEdqZdqkrfatWog" source="uml2.extensions">
+      <details xmi:id="_9-cmP-vlEdqZdqkrfatWog" key="addedInVersion" value="1"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_9-cmQOvlEdqZdqkrfatWog" name="extension$ServiceConsumer" type="_9-QY5evlEdqZdqkrfatWog" association="_9-cmPevlEdqZdqkrfatWog" aggregation="composite">
+      <eAnnotations xmi:id="_9-cmQevlEdqZdqkrfatWog" source="uml2.extensions">
+        <details xmi:id="_9-cmQuvlEdqZdqkrfatWog" key="addedInVersion" value="1"/>
+      </eAnnotations>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9-cmQ-vlEdqZdqkrfatWog">
+        <eAnnotations xmi:id="_9-cmROvlEdqZdqkrfatWog" source="uml2.extensions">
+          <details xmi:id="_9-cmRevlEdqZdqkrfatWog" key="addedInVersion" value="1"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedEnd>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Extension" xmi:id="_9-cmRuvlEdqZdqkrfatWog" name="Port_ServiceGateway" memberEnd="_9-cmSevlEdqZdqkrfatWog _9-QY9-vlEdqZdqkrfatWog">
+    <eAnnotations xmi:id="_9-cmR-vlEdqZdqkrfatWog" source="uml2.extensions">
+      <details xmi:id="_9-cmSOvlEdqZdqkrfatWog" key="addedInVersion" value="16"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_9-cmSevlEdqZdqkrfatWog" name="extension$ServiceGateway" type="_9-QY7uvlEdqZdqkrfatWog" association="_9-cmRuvlEdqZdqkrfatWog" aggregation="composite">
+      <eAnnotations xmi:id="_9-cmSuvlEdqZdqkrfatWog" source="uml2.extensions">
+        <details xmi:id="_9-cmS-vlEdqZdqkrfatWog" key="addedInVersion" value="16"/>
+      </eAnnotations>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9-cmTOvlEdqZdqkrfatWog">
+        <eAnnotations xmi:id="_9-cmTevlEdqZdqkrfatWog" source="uml2.extensions">
+          <details xmi:id="_9-cmTuvlEdqZdqkrfatWog" key="addedInVersion" value="16"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedEnd>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Extension" xmi:id="_9-issOvlEdqZdqkrfatWog" name="Class_ServicePartition" memberEnd="_9-iss-vlEdqZdqkrfatWog _9-WfduvlEdqZdqkrfatWog">
+    <eAnnotations xmi:id="_9-issevlEdqZdqkrfatWog" source="uml2.extensions">
+      <details xmi:id="_9-issuvlEdqZdqkrfatWog" key="addedInVersion" value="1"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_9-iss-vlEdqZdqkrfatWog" name="extension$ServicePartition" type="_9-WfcOvlEdqZdqkrfatWog" association="_9-issOvlEdqZdqkrfatWog" aggregation="composite">
+      <eAnnotations xmi:id="_9-istOvlEdqZdqkrfatWog" source="uml2.extensions">
+        <details xmi:id="_9-istevlEdqZdqkrfatWog" key="addedInVersion" value="1"/>
+      </eAnnotations>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9-istuvlEdqZdqkrfatWog">
+        <eAnnotations xmi:id="_9-ist-vlEdqZdqkrfatWog" source="uml2.extensions">
+          <details xmi:id="_9-isuOvlEdqZdqkrfatWog" key="addedInVersion" value="1"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedEnd>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Extension" xmi:id="_9-isuevlEdqZdqkrfatWog" name="Class_ServiceProvider" memberEnd="_9-isvOvlEdqZdqkrfatWog _9-WfhevlEdqZdqkrfatWog">
+    <eAnnotations xmi:id="_9-isuuvlEdqZdqkrfatWog" source="uml2.extensions">
+      <details xmi:id="_9-isu-vlEdqZdqkrfatWog" key="addedInVersion" value="1"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_9-isvOvlEdqZdqkrfatWog" name="extension$ServiceProvider" type="_9-WffOvlEdqZdqkrfatWog" association="_9-isuevlEdqZdqkrfatWog" aggregation="composite">
+      <eAnnotations xmi:id="_9-isvevlEdqZdqkrfatWog" source="uml2.extensions">
+        <details xmi:id="_9-isvuvlEdqZdqkrfatWog" key="addedInVersion" value="1"/>
+      </eAnnotations>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9-isv-vlEdqZdqkrfatWog">
+        <eAnnotations xmi:id="_9-iswOvlEdqZdqkrfatWog" source="uml2.extensions">
+          <details xmi:id="_9-iswevlEdqZdqkrfatWog" key="addedInVersion" value="1"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedEnd>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Extension" xmi:id="_9-iswuvlEdqZdqkrfatWog" name="Class_ServiceSpecification" memberEnd="_9-isxevlEdqZdqkrfatWog _9-WfoOvlEdqZdqkrfatWog">
+    <eAnnotations xmi:id="_9-isw-vlEdqZdqkrfatWog" source="uml2.extensions">
+      <details xmi:id="_9-isxOvlEdqZdqkrfatWog" key="addedInVersion" value="26"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_9-isxevlEdqZdqkrfatWog" name="extension$ServiceSpecification" type="_9-WfjuvlEdqZdqkrfatWog" association="_9-iswuvlEdqZdqkrfatWog" aggregation="composite">
+      <eAnnotations xmi:id="_9-isxuvlEdqZdqkrfatWog" source="uml2.extensions">
+        <details xmi:id="_9-isx-vlEdqZdqkrfatWog" key="addedInVersion" value="26"/>
+      </eAnnotations>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9-isyOvlEdqZdqkrfatWog">
+        <eAnnotations xmi:id="_9-isyevlEdqZdqkrfatWog" source="uml2.extensions">
+          <details xmi:id="_9-isyuvlEdqZdqkrfatWog" key="addedInVersion" value="26"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedEnd>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Extension" xmi:id="_9-isy-vlEdqZdqkrfatWog" name="Interface_ServiceSpecification" memberEnd="_9-iszuvlEdqZdqkrfatWog _9-Wfl-vlEdqZdqkrfatWog">
+    <eAnnotations xmi:id="_9-iszOvlEdqZdqkrfatWog" source="uml2.extensions">
+      <details xmi:id="_9-iszevlEdqZdqkrfatWog" key="addedInVersion" value="10"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_9-iszuvlEdqZdqkrfatWog" name="extension$ServiceSpecification" type="_9-WfjuvlEdqZdqkrfatWog" association="_9-isy-vlEdqZdqkrfatWog" aggregation="composite">
+      <eAnnotations xmi:id="_9-isz-vlEdqZdqkrfatWog" source="uml2.extensions">
+        <details xmi:id="_9-is0OvlEdqZdqkrfatWog" key="addedInVersion" value="10"/>
+      </eAnnotations>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9-is0evlEdqZdqkrfatWog">
+        <eAnnotations xmi:id="_9-is0uvlEdqZdqkrfatWog" source="uml2.extensions">
+          <details xmi:id="_9-is0-vlEdqZdqkrfatWog" key="addedInVersion" value="10"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedEnd>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Extension" xmi:id="_9-is1OvlEdqZdqkrfatWog" name="Model_ServiceModel" memberEnd="_9-is1-vlEdqZdqkrfatWog _9-cmFuvlEdqZdqkrfatWog">
+    <eAnnotations xmi:id="_9-is1evlEdqZdqkrfatWog" source="uml2.extensions">
+      <details xmi:id="_9-is1uvlEdqZdqkrfatWog" key="addedInVersion" value="3"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_9-is1-vlEdqZdqkrfatWog" name="extension$ServiceModel" type="_9-cmEOvlEdqZdqkrfatWog" association="_9-is1OvlEdqZdqkrfatWog" aggregation="composite">
+      <eAnnotations xmi:id="_9-is2OvlEdqZdqkrfatWog" source="uml2.extensions">
+        <details xmi:id="_9-is2evlEdqZdqkrfatWog" key="addedInVersion" value="3"/>
+      </eAnnotations>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9-is2uvlEdqZdqkrfatWog">
+        <eAnnotations xmi:id="_9-is2-vlEdqZdqkrfatWog" source="uml2.extensions">
+          <details xmi:id="_9-is3OvlEdqZdqkrfatWog" key="addedInVersion" value="3"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedEnd>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Stereotype" xmi:id="_aYImMOvrEdqZdqkrfatWog" name="policyStatement">
+    <eAnnotations xmi:id="_qBaBIOvrEdqZdqkrfatWog" source="uml2.extensions">
+      <details xmi:id="_qBaBIevrEdqZdqkrfatWog" key="categoryName" value="SOA"/>
+      <details xmi:id="_Sl_0sOvtEdqZdqkrfatWog" key="addedInVersion" value="3"/>
+    </eAnnotations>
+    <ownedAttribute xmi:id="_caT5UOvrEdqZdqkrfatWog" name="domain">
+      <eAnnotations xmi:id="_Sl_0sevtEdqZdqkrfatWog" source="uml2.extensions">
+        <details xmi:id="_Sl_0suvtEdqZdqkrfatWog" key="addedInVersion" value="3"/>
+      </eAnnotations>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML2_LIBRARIES/UML2PrimitiveTypes.library.uml2#_IXlH8a86EdieaYgxtVWN8Q"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_ghOrYOvrEdqZdqkrfatWog" name="strict">
+      <eAnnotations xmi:id="_Sl_0s-vtEdqZdqkrfatWog" source="uml2.extensions">
+        <details xmi:id="_SmF7UOvtEdqZdqkrfatWog" key="addedInVersion" value="3"/>
+      </eAnnotations>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML2_LIBRARIES/UML2PrimitiveTypes.library.uml2#_IXfBUK86EdieaYgxtVWN8Q"/>
+      <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_iJJEYOvrEdqZdqkrfatWog" value="true">
+        <eAnnotations xmi:id="_SmF7UevtEdqZdqkrfatWog" source="uml2.extensions">
+          <details xmi:id="_SmF7UuvtEdqZdqkrfatWog" key="addedInVersion" value="3"/>
+        </eAnnotations>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML2_LIBRARIES/UML2PrimitiveTypes.library.uml2#_IXfBUK86EdieaYgxtVWN8Q"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_uo5wsevrEdqZdqkrfatWog" name="base$Constraint" association="_uozqEOvrEdqZdqkrfatWog">
+      <eAnnotations xmi:id="_SmF7U-vtEdqZdqkrfatWog" source="uml2.extensions">
+        <details xmi:id="_SmF7VOvtEdqZdqkrfatWog" key="addedInVersion" value="3"/>
+      </eAnnotations>
+      <type xmi:type="uml:Class" href="pathmap://UML2_METAMODELS/UML2.metamodel.uml2#_m8whsa86EdiEh75YJ_3n8g"/>
+    </ownedAttribute>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Extension" xmi:id="_uozqEOvrEdqZdqkrfatWog" name="Constraint_policyStatement" memberEnd="_uozqEevrEdqZdqkrfatWog _uo5wsevrEdqZdqkrfatWog">
+    <eAnnotations xmi:id="_SmF7VevtEdqZdqkrfatWog" source="uml2.extensions">
+      <details xmi:id="_SmF7VuvtEdqZdqkrfatWog" key="addedInVersion" value="3"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_uozqEevrEdqZdqkrfatWog" name="extension$policyStatement" type="_aYImMOvrEdqZdqkrfatWog" association="_uozqEOvrEdqZdqkrfatWog" aggregation="composite">
+      <eAnnotations xmi:id="_SmF7V-vtEdqZdqkrfatWog" source="uml2.extensions">
+        <details xmi:id="_SmF7WOvtEdqZdqkrfatWog" key="addedInVersion" value="3"/>
+      </eAnnotations>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uo5wsOvrEdqZdqkrfatWog">
+        <eAnnotations xmi:id="_SmF7WevtEdqZdqkrfatWog" source="uml2.extensions">
+          <details xmi:id="_SmF7WuvtEdqZdqkrfatWog" key="addedInVersion" value="3"/>
+        </eAnnotations>
+      </lowerValue>
+    </ownedEnd>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Enumeration" xmi:id="_KEmUAOvwEdqZdqkrfatWog" name="SpecificationStatus">
+    <eAnnotations xmi:id="_A8HQPuvxEdqZdqkrfatWog" source="uml2.extensions">
+      <details xmi:id="_A8HQP-vxEdqZdqkrfatWog" key="addedInVersion" value="4"/>
+    </eAnnotations>
+    <ownedLiteral xmi:id="_LfCRsOvwEdqZdqkrfatWog" name="candidate">
+      <eAnnotations xmi:id="_A8HQQOvxEdqZdqkrfatWog" source="uml2.extensions">
+        <details xmi:id="_A8HQQevxEdqZdqkrfatWog" key="addedInVersion" value="4"/>
+      </eAnnotations>
+    </ownedLiteral>
+    <ownedLiteral xmi:id="_MgXL0OvwEdqZdqkrfatWog" name="accepted">
+      <eAnnotations xmi:id="_A8NWsOvxEdqZdqkrfatWog" source="uml2.extensions">
+        <details xmi:id="_A8NWsevxEdqZdqkrfatWog" key="addedInVersion" value="4"/>
+      </eAnnotations>
+    </ownedLiteral>
+    <ownedLiteral xmi:id="_N6zwkOvwEdqZdqkrfatWog" name="exposed">
+      <eAnnotations xmi:id="_A8NWsuvxEdqZdqkrfatWog" source="uml2.extensions">
+        <details xmi:id="_A8NWs-vxEdqZdqkrfatWog" key="addedInVersion" value="4"/>
+      </eAnnotations>
+    </ownedLiteral>
+  </ownedMember>
+</uml:Profile>

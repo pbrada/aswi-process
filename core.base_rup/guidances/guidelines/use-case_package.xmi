@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_1FDwgNnmEdmO6L4XMImrsA" name="use-case_package,9.871865834975133E-306" guid="_1FDwgNnmEdmO6L4XMImrsA" changeDate="2005-06-22T18:44:43.361-0700" version="7.1.0">
+  <mainDescription>&lt;a id=&quot;Top&quot; name=&quot;Top&quot;>&lt;/a>&lt;a id=&quot;XE_use-case_package__guidelines_for&quot; name=&quot;XE_use-case_package__guidelines_for&quot;>&lt;/a> &#xD;
+&lt;h3>&#xD;
+    &lt;a id=&quot;Explanation&quot; name=&quot;Explanation&quot;>Explanation&lt;/a>&#xD;
+&lt;/h3>&#xD;
+&lt;p>&#xD;
+    A model structured into smaller units is easier to understand. It is easier to show relationships among the model's&#xD;
+    main parts if you can express them in terms of packages. A package is either the top-level package of the model, or&#xD;
+    stereotyped as a &lt;b>use-case package&lt;/b>. You can also let the customer decide how to structure the main parts of the&#xD;
+    model.&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        If there are many use cases or actors, you can use use-case packages to further structure the use-case model. A&#xD;
+        use-case package contains a number of actors, use cases, their relationships, and other packages; thus, you can&#xD;
+        have multiple levels of use-case packages (packages within packages).&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        The top-level package contains all top-level use-case packages, all top-level actors, and all top-level use cases.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;h3>&#xD;
+    &lt;a id=&quot;Use&quot; name=&quot;Use&quot;>Use&lt;/a>&#xD;
+&lt;/h3>&#xD;
+&lt;p>&#xD;
+    You can partition a use-case model into use-case packages for many reasons:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        You can use use-case packages to reflect order, configuration, or delivery units in the finished system.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Allocation of resources and the competence of different development teams may require that the project be divided&#xD;
+        among different groups at different sites. Some use-case packages are suitable for a group, and some for one&#xD;
+        person, which makes packages a naturally efficient way to proceed with development. You must be sure, however, to&#xD;
+        define distinct responsibilities for each package so that development can be performed in parallel.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        You can use use-case packages to structure the use-case model in a way that reflects the user types. Many change&#xD;
+        requirements originate from users. Use-case packages ensure that changes from a particular user type will affect&#xD;
+        only the parts of the system that correspond to that user type.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        In some applications, certain information should be accessible to only a few people. Use-case packages let you&#xD;
+        preserve secrecy in areas where it is needed.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&lt;br />&#xD;
+&lt;br /></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

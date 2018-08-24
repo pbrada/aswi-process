@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_1CYP8tnmEdmO6L4XMImrsA" name="use_case,3.488415767855714E-305" guid="_1CYP8tnmEdmO6L4XMImrsA" changeDate="2005-06-20T20:42:46.933-0700" version="7.1.0">
+  <mainDescription>&lt;a id=&quot;XE_checkpoints__for_use_cases&quot; name=&quot;XE_checkpoints__for_use_cases&quot;>&lt;/a>&lt;br />&#xD;
+&lt;br /></mainDescription>
+  <sections xmi:id="_EsRvYfM1Edmy-_OjcFOpJQ" name=" Is each concrete use case involved with at least one actor" guid="_EsRvYfM1Edmy-_OjcFOpJQ">
+    <sectionName> Is each concrete use case involved with at least one actor</sectionName>
+    <sectionDescription>If not, something is wrong; a use case that does not interact with an actor is superfluous, and you should remove it. For&#xD;
+more information, see &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../../core.base_rup/guidances/guidelines/use_case_CC89870D.html&quot;&#xD;
+guid=&quot;4.1983217662266927E-305&quot;>Guideline: Use Case&lt;/a>&lt;i>.&lt;/i></sectionDescription>
+  </sections>
+  <sections xmi:id="_EsRvYvM1Edmy-_OjcFOpJQ" name=" Is each use case independent of the others" guid="_EsRvYvM1Edmy-_OjcFOpJQ">
+    <sectionName> Is each use case independent of the others</sectionName>
+    <sectionDescription>If two use cases are always activated in the same sequence, you should probably merge them into one use case.</sectionDescription>
+  </sections>
+  <sections xmi:id="_EsRvY_M1Edmy-_OjcFOpJQ" name=" For an included use case" guid="_EsRvY_M1Edmy-_OjcFOpJQ">
+    <sectionName> For an included use case</sectionName>
+    <sectionDescription>does it make assumptions about the use cases that include it? Such assumptions should be avoided, so that the included use&#xD;
+case is not affected by changes to the including use cases.</sectionDescription>
+  </sections>
+  <sections xmi:id="_EsRvZPM1Edmy-_OjcFOpJQ" name=" Do any use cases have very similar behaviors or flows of events" guid="_EsRvZPM1Edmy-_OjcFOpJQ">
+    <sectionName> Do any use cases have very similar behaviors or flows of events</sectionName>
+    <sectionDescription>If so - and if you wish their behavior to be similar in the future - you should merge them into a single use case. This&#xD;
+makes it easier to introduce future changes. Note: you must involve the users if you decide to merge use cases, because the&#xD;
+users, who interact with the new, merged use case will probably be affected.</sectionDescription>
+  </sections>
+  <sections xmi:id="_EsRvZfM1Edmy-_OjcFOpJQ" name=" Has part of the flow of events already been modeled as another use case" guid="_EsRvZfM1Edmy-_OjcFOpJQ">
+    <sectionName> Has part of the flow of events already been modeled as another use case</sectionName>
+    <sectionDescription>If so, you can have the new use case use the old one.</sectionDescription>
+  </sections>
+  <sections xmi:id="_EsRvZvM1Edmy-_OjcFOpJQ" name=" Is some part of the flow of events already part of another use case" guid="_EsRvZvM1Edmy-_OjcFOpJQ">
+    <sectionName> Is some part of the flow of events already part of another use case</sectionName>
+    <sectionDescription>If so, you should extract this subflow and have it be used by the use cases in question. Note: you must involve the users&#xD;
+if you decide to &quot;reuse&quot; the subflow, because the users of the existing use case will probably be affected.</sectionDescription>
+  </sections>
+  <sections xmi:id="_EsYdEPM1Edmy-_OjcFOpJQ" name=" Should the flow of events of one use case be inserted into the flow of events of another" guid="_EsYdEPM1Edmy-_OjcFOpJQ">
+    <sectionName> Should the flow of events of one use case be inserted into the flow of events of another</sectionName>
+    <sectionDescription>If so, you model this with an extend-relationship to the other use case.</sectionDescription>
+  </sections>
+  <sections xmi:id="_EsYdEfM1Edmy-_OjcFOpJQ" name=" Do the use cases have unique, intuitive, and explanatory names so that they cannot be mixed up at a later stage" guid="_EsYdEfM1Edmy-_OjcFOpJQ">
+    <sectionName> Do the use cases have unique, intuitive, and explanatory names so that they cannot be mixed up at a later stage</sectionName>
+    <sectionDescription>If not, you change their names.</sectionDescription>
+  </sections>
+  <sections xmi:id="_EsYdEvM1Edmy-_OjcFOpJQ" name=" Do customers and users alike understand the names and descriptions of the use cases" guid="_EsYdEvM1Edmy-_OjcFOpJQ">
+    <sectionName> Do customers and users alike understand the names and descriptions of the use cases</sectionName>
+    <sectionDescription>Each use-case name must describe the behavior the use case supports.</sectionDescription>
+  </sections>
+  <sections xmi:id="_EsYdE_M1Edmy-_OjcFOpJQ" name=" Does the use case meet all the requirements that obviously govern its performance" guid="_EsYdE_M1Edmy-_OjcFOpJQ">
+    <sectionName> Does the use case meet all the requirements that obviously govern its performance</sectionName>
+    <sectionDescription>You must include any (nonfunctional) requirements to be handled in the object models in the use-case &lt;i>Special&#xD;
+Requirements.&lt;/i></sectionDescription>
+  </sections>
+  <sections xmi:id="_EsYdFPM1Edmy-_OjcFOpJQ" name=" Does the communication sequence between actor and use case conform to the user's expectations" guid="_EsYdFPM1Edmy-_OjcFOpJQ">
+    <sectionName> Does the communication sequence between actor and use case conform to the user's expectations</sectionName>
+  </sections>
+  <sections xmi:id="_EsYdFfM1Edmy-_OjcFOpJQ" name=" Is it clear how and when the use case's flow of events starts and ends" guid="_EsYdFfM1Edmy-_OjcFOpJQ">
+    <sectionName> Is it clear how and when the use case's flow of events starts and ends</sectionName>
+  </sections>
+  <sections xmi:id="_EsYdFvM1Edmy-_OjcFOpJQ" name=" Behavior might exist that is activated only when a certain condition is not met" guid="_EsYdFvM1Edmy-_OjcFOpJQ">
+    <sectionName> Behavior might exist that is activated only when a certain condition is not met</sectionName>
+    <sectionDescription>Is there a description of what will happen if a given condition is not met?</sectionDescription>
+  </sections>
+  <sections xmi:id="_EsYdF_M1Edmy-_OjcFOpJQ" name=" Are any use cases overly complex" guid="_EsYdF_M1Edmy-_OjcFOpJQ">
+    <sectionName> Are any use cases overly complex</sectionName>
+    <sectionDescription>If you want your use-case model to be easy to understand, you might have to split up complex use cases.</sectionDescription>
+  </sections>
+  <sections xmi:id="_EsYdGPM1Edmy-_OjcFOpJQ" name=" Does a use case contain disparate flows of events" guid="_EsYdGPM1Edmy-_OjcFOpJQ">
+    <sectionName> Does a use case contain disparate flows of events</sectionName>
+    <sectionDescription>If so, it is best to divide it into two or more separate use cases. A use case that contains disparate flows of events will&#xD;
+be very difficult to understand and to maintain.</sectionDescription>
+  </sections>
+  <sections xmi:id="_EsYdGfM1Edmy-_OjcFOpJQ" name=" Is the subflow in a use case modeled accurately" guid="_EsYdGfM1Edmy-_OjcFOpJQ">
+    <sectionName> Is the subflow in a use case modeled accurately</sectionName>
+  </sections>
+  <sections xmi:id="_EsYdGvM1Edmy-_OjcFOpJQ" name=" Is it clear who wishes to perform a use case" guid="_EsYdGvM1Edmy-_OjcFOpJQ">
+    <sectionName> Is it clear who wishes to perform a use case</sectionName>
+    <sectionDescription>Is the purpose of the use case also clear?</sectionDescription>
+  </sections>
+  <sections xmi:id="_EsYdG_M1Edmy-_OjcFOpJQ" name=" Are the actor interactions and exchanged information clear" guid="_EsYdG_M1Edmy-_OjcFOpJQ">
+    <sectionName> Are the actor interactions and exchanged information clear</sectionName>
+  </sections>
+  <sections xmi:id="_EsYdHPM1Edmy-_OjcFOpJQ" name=" Does the brief description give a true picture of the use case" guid="_EsYdHPM1Edmy-_OjcFOpJQ">
+    <sectionName> Does the brief description give a true picture of the use case</sectionName>
+  </sections>
+</org.eclipse.epf.uma:ContentDescription>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_1C0U09nmEdmO6L4XMImrsA" name="prioritize_use_cases,{6E23D919-D149-43C2-9D37-8AF77B667CA8}" guid="_1C0U09nmEdmO6L4XMImrsA" changeDate="2005-10-07T05:36:02.275-0700" version="7.1.0">
+  <mainDescription>&lt;p>&#xD;
+    Some of the factors that are used to determine the priority of the use cases may be captured as &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../core.base_rup/workproducts/rup_software_requirement_32CECE14.html&quot;&#xD;
+    guid=&quot;{BB502500-EEEC-4BDE-8697-186666D6D5B3}&quot;>Software Requirement&lt;/a>&amp;nbsp;attributes.&amp;nbsp; The resulting use-case&#xD;
+    priorities may also be captured as requirements attributes, so that they can be managed effectively.&#xD;
+&lt;/p></mainDescription>
+  <sections xmi:id="_OA14oNnnEdmO6L4XMImrsA" name="Prioritize Use Cases and Scenarios " guid="_OA14oNnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;Prioritize Use Cases and Scenarios&quot; name=&quot;Prioritize Use Cases and Scenarios&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    A &lt;b>software architect&lt;/b> proposes the technical contents and the order of successive iterations by selecting a&#xD;
+    certain number of scenarios and use cases to be analyzed and designed. This technical proposal is completed and refined&#xD;
+    by the various development teams, based on personnel availability, customer requirements in terms of deliverables,&#xD;
+    availability of tools and COTS products, and the needs of other projects.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    The selection of scenarios and use cases that are considered &quot;architecturally significant&quot; (e.g., constitute the&#xD;
+    use-case view of the architecture) is driven by some key driving factors, summarized below.&amp;nbsp;&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        The benefit of the scenario to stakeholders: critical, important, useful.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        The architectural impact of the scenario: none, extends, modifies. There may be critical use cases that have little&#xD;
+        or no impact on the architecture, and low benefit use cases that have a big impact. Low benefit use cases with big&#xD;
+        architectural impacts should be reviewed by the project manager for possible de-scoping.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        The risks to be mitigated (performance, availability of a product, and suitability of a component).&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        The completion of the coverage of the architecture (making sure that at the end of the Elaboration phase, every&#xD;
+        piece of software to be developed has found a home in the Implementation View).&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Other tactical objectives or constraints: demonstration to the user, and so on.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>&#xD;
+    There may be two scenarios that hit the same components and address similar risks. If you implement A first, then B is&#xD;
+    not architecturally significant. If you implement B first, then A is not architecturally significant. So these&#xD;
+    attributes can depend on the iteration order, and should be re-evaluated when the ordering changes, as well as when the&#xD;
+    requirements themselves change.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Architecturally significant use cases that are poorly understood or likely to change should be prioritized for&#xD;
+    clarification and stabilization. In some cases, this means further requirements analysis should be done before&#xD;
+    implementing the requirement. In other cases, some form of prototyping may be best.&lt;br />&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_OA_poNnnEdmO6L4XMImrsA" name="Document the Use-Case View " guid="_OA_poNnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;Document Use Cases and Scenarios in the Use-Case View&quot;&#xD;
+name=&quot;Document Use Cases and Scenarios in the Use-Case View&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    The use-case view is documented in the use-case view section of the &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../core.base_rup/workproducts/rup_software_architecture_document_C367485C.html&quot;&#xD;
+    guid=&quot;{6F49641A-ED10-47B5-9E5D-3F90A6BF3006}&quot;>Software Architecture Document&lt;/a>. This section contains a listing of&#xD;
+    the significant use cases and scenarios within each package in the use-case model, together with significant properties&#xD;
+    such as descriptions of the flow of events, relationships, use-case diagrams, and special requirements related to each&#xD;
+    use case. Note that if the use-case view is developed early in the iteration, some of these properties may not yet&#xD;
+    exist.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_OBcVkNnnEdmO6L4XMImrsA" name="Evaluate Your Results " guid="_OBcVkNnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;Evaluate Your Results&quot; name=&quot;Evaluate Your Results&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    The use-case view should be checked at this stage to verify that the work is on track, but not to review the use-case&#xD;
+    view in detail. For specific recommendations on what to look for during the review, see &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../core.base_rup/guidances/checklists/software_architecture_document_D261D8F3.html&quot;&#xD;
+    guid=&quot;7.634303669338443E-306&quot;>Checklist: Software Architecture Document&lt;/a>.&lt;br />&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <purpose>&lt;a id=&quot;Top&quot; name=&quot;Top&quot;>&lt;/a>&lt;a id=&quot;XE_use_case__prioritizing&quot; name=&quot;XE_use_case__prioritizing&quot;>&lt;/a>&lt;a&#xD;
+id=&quot;XE_prioritizing__use_cases&quot; name=&quot;XE_prioritizing__use_cases&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    The purpose of this activity is to:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Define input to the selection of the set of scenarios and use cases that are to be analyzed in the current&#xD;
+        iteration.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Define the set of scenarios and use cases that represent some significant, central functionality.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Define the set of scenarios and use cases that have a substantial architectural coverage (that exercise many&#xD;
+        architectural elements) or that stress or illustrate a specific, delicate point of the architecture.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&amp;nbsp;</purpose>
+</org.eclipse.epf.uma:TaskDescription>

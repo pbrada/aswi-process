@@ -1,0 +1,1793 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1">
+  <org.eclipse.epf.uma:DeliveryProcessDescription xmi:id="-GvzG9PK1tYxjztA3tSoDaw" name="se_dp,_97oR0VVnEdq-S-2DETo4XA" guid="-GvzG9PK1tYxjztA3tSoDaw">
+    <mainDescription>The overall system lifecycle, is, as any other RUP project, divided into inception, elaboration, construction and&#xD;
+transition phases, which have the same meaning as usual. The iterations within these phases also are comprised of&#xD;
+invocations of the same disciplines - requirements, analysis and design, implementation and so on. However, at this&#xD;
+'outermost' planning level, the some activities and artifacts are added, and some specialized for systems engineering, and&#xD;
+there are some additional roles that do not appear in pure software development.&amp;nbsp; &#xD;
+&lt;p>&#xD;
+    At this level the activities are concerned with the specification of things to be built (subsystems), their behavior,&#xD;
+    interfaces and other characteristics, and their subsequent integration and test, rather than the detail of their design&#xD;
+    or their implementation (in code, hardware or manual process). So how do the subsystems come into being? They arise&#xD;
+    from separate, parallel instance(s) of the RUP lifecycle, fed by and feeding back to the system (outermost)&#xD;
+    lifecycle.&amp;nbsp;&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    We can in fact describe the construction of systems of systems in this way (because in RUP systems are defined in the&#xD;
+    context of an enterprise, with the expectation they will potentially interact with other systems) by recursively&#xD;
+    invoking cycles like the outermost one until reaching the software (or hardware) construction level, which would use&#xD;
+    the default set of RUP activities etc.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    So at the outmost level, we specify, for example, a subsystem vision artifact, that becomes the vision artifact for the&#xD;
+    subordinate RUP lifecycle. While it is not necessary to do so, this gives the project manager the freedom to contract&#xD;
+    out the development of subsystems in a formal way.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    The outermost cycle takes what is produced by the subordinate cycles and integrates it to validate the system level&#xD;
+    architectural decisions, so the elaboration phase at the outermost level still has the goal of producing a stable,&#xD;
+    executable architecture - with the ability to respond to issues discovered in the subordinate cycles.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;img height=&quot;469&quot; alt=&quot;A system with three subsystems, showing lifecycle relationships&quot; src=&quot;resources/se_iterplan.gif&quot;&#xD;
+    width=&quot;678&quot; border=&quot;0&quot; />&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Let's look at the way the lifecycles relate to one another: the figure above shows a system development with three&#xD;
+    subsystems. The overall system lifecycle is shown at the top and this is the 'outermost' planning level, which both&#xD;
+    subsumes (is an abstraction of) the subsystem lifecycles under it, and also contains activities of its own (System&#xD;
+    Architectural Analysis, for example). The relationship in time of the cycles is predicated on our expectations of what&#xD;
+    is required to begin and to exit the RUP phases.&amp;nbsp;&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    To begin inception, an initial Vision (perhaps arising from Business Modeling work) is needed to bootstrap the project&#xD;
+    into life. At the end of inception, the expectation is that the Vision is mature, the Business Case is acceptable,&#xD;
+    critical risks are identified, the System (or Software) Development Plan is established and perhaps a few significant&#xD;
+    use cases (and associated descriptions of flow of events) have been developed. Some system architecture&#xD;
+    proof-of-concept modeling may also have been done. Therefore, none of the subsystem inception phases can start until&#xD;
+    some initial (set of) Vision(s) has been created - i.e. the subsystems (at least some of them) have been identified and&#xD;
+    some notion of what they should do has been established - at the earliest, in some modeling or prototyping activity in&#xD;
+    system inception.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    The structure of the system in terms of subsystems will not be finally determined until some way into system&#xD;
+    elaboration, so subsystem inception also does not complete (with a mature subsystem Vision available) until some time&#xD;
+    into system elaboration.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Work done at the system level in system elaboration generates the subsystem use-case model and subsystem supplementary&#xD;
+    requirements (which are then refined in subsystem elaboration) and work done at the subsystem level generates&#xD;
+    executable architecture builds, which are fed back to system elaboration. When subsystem elaboration finishes,&#xD;
+    subsystem architecture is stable and the subsystem use-case model and subsystem supplementary requirements are&#xD;
+    essentially complete. System elaboration does not complete until system architecture is stable, i.e. not until all&#xD;
+    subsystem architecture contributions have been integrated and all subsystem elaboration phases are complete. If there&#xD;
+    is tolerable attached risk, some subsystems may finish elaboration and proceed into construction before the completion&#xD;
+    of system elaboration.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    At least one iteration in the subsystem transition phase completes before the end of system construction, and then each&#xD;
+    subsystem enters an extended transition, which continues until the end of system transition.&#xD;
+&lt;/p></mainDescription>
+  </org.eclipse.epf.uma:DeliveryProcessDescription>
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="-PHd8KXz0zZbl9NSIhR316Q" name="Construction Iteration[n],_WDQX0VbWEdq3dao9IIkinA" guid="-PHd8KXz0zZbl9NSIhR316Q">
+    <mainDescription>For an example of a software-focused Construction Iteration see &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+href=&quot;./../../core.base_rup/capabilitypatterns/construction_iteration_770E29E0.html&quot; guid=&quot;_gM9X0CGFEdqMcovRzkCQow&quot;>Capability&#xD;
+Pattern: Construction Iteration&lt;/a>.</mainDescription>
+  </org.eclipse.epf.uma:ActivityDescription>
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="-0ECVeRv8Vgsbpatf3DHh3Q" name="Transition Iteration[n],_dnygQVbWEdq3dao9IIkinA" guid="-0ECVeRv8Vgsbpatf3DHh3Q">
+    <mainDescription>For an example of a software-focused&amp;nbsp;Transition Iteration see &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+href=&quot;./../../core.base_rup/capabilitypatterns/transition_iteration_55519BD6.html&quot; guid=&quot;_zUDkgSGFEdqMcovRzkCQow&quot;>Capability Pattern:&#xD;
+Transition Iteration&lt;/a>.</mainDescription>
+  </org.eclipse.epf.uma:ActivityDescription>
+  <org.eclipse.epf.uma:BreakdownElementDescription xmi:id="-Fx_07UdGHTj6qd01uT8kQg" name="Transition Milestone,_iTJcIFbWEdq3dao9IIkinA" guid="-Fx_07UdGHTj6qd01uT8kQg">
+    <mainDescription>&lt;p>&#xD;
+    For more details about&amp;nbsp;a software-focused Transition&amp;nbsp;milestone, see:&amp;nbsp;&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../core.base_rup/guidances/concepts/product_release_8BCA935E.html&quot;&#xD;
+        guid=&quot;_Pwn0ACVxEdqSZ9OimJ-AzA&quot;>Concept: Product Release Milestone&lt;/a>&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../core.base_rup/tasks/lifecycle_milestone_review_B4D90641.html&quot;&#xD;
+        guid=&quot;{E611CCFD-E4C5-408E-9B0E-46B2A3D01290}&quot;>Task: Lifecycle Milestone Review&lt;/a>&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../core.base_rup/tasks/project_acceptance_review_6DB7AB7C.html&quot;&#xD;
+        guid=&quot;{9BA5BD55-B134-4623-BAE1-542121869849}&quot;>Task: Project Acceptance Review&lt;/a>&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></mainDescription>
+  </org.eclipse.epf.uma:BreakdownElementDescription>
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="-nmkQPzvh4fOkbQk1uKPy9Q" name="conceive_new_project,{76FD7B68-FC91-488D-BBF1-6FE58DBACB87}" guid="-nmkQPzvh4fOkbQk1uKPy9Q">
+    <mainDescription>&lt;a id=&quot;Description&quot; name=&quot;Description&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    On the basis of the initial &lt;a class=&quot;elementLink&quot; href=&quot;./../../core.base_rup/workproducts/rup_vision_2D6D6F1.html&quot;&#xD;
+    guid=&quot;{417F089F-6636-451A-A8AB-AB4EAC7AC4F1}&quot;>Vision&lt;/a>, risks are assessed and an economic analysis, the &lt;a&#xD;
+    class=&quot;elementLink&quot; href=&quot;./../../core.base_rup/workproducts/rup_business_case_56F408EB.html&quot;&#xD;
+    guid=&quot;{9B13F235-E8E9-4CDC-9ACE-216124C8C5EC}&quot;>Business Case&lt;/a>, is produced. If the &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../core.base_rup/tasks/project_approval_review_E465DDFD.html&quot; guid=&quot;{6B921AB1-23B3-4922-80EB-7C3C5F68C403}&quot;>Project&#xD;
+    Approval Review&lt;/a> finds these satisfactory, the project is formally set up (in &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../core.base_rup/tasks/initiate_project_987939A6.html&quot; guid=&quot;{7E33D69A-6388-4782-998B-30A01E665531}&quot;>Task: Initiate&#xD;
+    Project&lt;/a>), and given limited sanction (and budget) to begin a complete planning effort. Note that, by definition,&#xD;
+    this initial Vision is created outside the project (perhaps by a separate business modeling or systems engineering&#xD;
+    activity), not by the subsequent &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../core.base_rup/tasks/develop_vision_D9584F04.html&quot;&#xD;
+    guid=&quot;{7069CFB7-77C3-4B44-B8A2-9CCA752BDDDA}&quot;>Task: Develop Vision&lt;/a> within the project. This latter activity adds&#xD;
+    substance to the initial Vision, validates and refines it. The project begins with this activity, so any artifacts that&#xD;
+    are input must already exist - i.e. the project must have some organizational and business context.&#xD;
+&lt;/p></mainDescription>
+    <usageGuidance>&lt;p>&#xD;
+    This activity should be performed, since it is important to know whether or not to invest in the project.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    In the &lt;a class=&quot;elementLink&quot; href=&quot;./../../core.base_rup/workproducts/rup_business_case_56F408EB.html&quot;&#xD;
+    guid=&quot;{9B13F235-E8E9-4CDC-9ACE-216124C8C5EC}&quot;>Business Case&lt;/a>, the Project Manager should describe at least two&#xD;
+    approaches to realizing the &lt;a class=&quot;elementLink&quot; href=&quot;./../../core.base_rup/workproducts/rup_vision_2D6D6F1.html&quot;&#xD;
+    guid=&quot;{417F089F-6636-451A-A8AB-AB4EAC7AC4F1}&quot;>Vision&lt;/a>, and analyze these in terms of risk impact, and economic&#xD;
+    outcomes. During the &lt;a class=&quot;elementLink&quot; href=&quot;./../../core.base_rup/tasks/project_approval_review_E465DDFD.html&quot;&#xD;
+    guid=&quot;{6B921AB1-23B3-4922-80EB-7C3C5F68C403}&quot;>Project Approval Review&lt;/a>, one of the offered choices will be selected,&#xD;
+    if the project is to continue. There is a considerable body of management knowledge and theory to assist the Project&#xD;
+    Manager and the Project Reviewer in risk and decision analysis, and it is valuable to have a few of the project&#xD;
+    management and review staff well versed in these techniques - especially if the project is large, unprecedented,&#xD;
+    complex or otherwise risky. See, for example, [&lt;a class=&quot;elementLinkWithUserText&quot;&#xD;
+    href=&quot;./../../core.base_rup/customcategories/references_56F06DFD.html&quot; guid=&quot;7.755968586980351E-308&quot;>CLE96&lt;/a>], [&lt;a&#xD;
+    class=&quot;elementLinkWithUserText&quot; href=&quot;./../../core.base_rup/customcategories/references_56F06DFD.html&quot;&#xD;
+    guid=&quot;7.755968586980351E-308&quot;>EVA98&lt;/a>] and [&lt;a class=&quot;elementLinkWithUserText&quot;&#xD;
+    href=&quot;./../../core.base_rup/customcategories/references_56F06DFD.html&quot; guid=&quot;7.755968586980351E-308&quot;>VOS96&lt;/a>].&#xD;
+&lt;/p>&lt;br /></usageGuidance>
+    <howtoStaff>&lt;a id=&quot;HowToStaff&quot; name=&quot;HowToStaff&quot;>&lt;/a> 
+&lt;p>
+    The person(s) acting as &lt;a class=&quot;elementLink&quot;
+    href=&quot;resources/rup_project_manager,{EE97A8CD-66CA-4A9B-9871-E3B94CCED528}.html&quot;
+    guid=&quot;{EE97A8CD-66CA-4A9B-9871-E3B94CCED528}&quot;>Project Manager&lt;/a> for these early activities may not be the one(s) to
+    carry the project forward, because the emphasis at this stage is on risk discovery and establishing the potential
+    return-on-investment. The Project Manager's ability to make sound business and technical risk judgments is valuable,
+    the ability to manage teams of people less so, in these early activities. Equally, the &lt;a class=&quot;elementLink&quot;
+    href=&quot;resources/rup_management_reviewer,{435E36E7-98E5-4A4C-B61A-3B29459DB7B8}.html&quot;
+    guid=&quot;{435E36E7-98E5-4A4C-B61A-3B29459DB7B8}&quot;>Management Reviewer&lt;/a> should have extensive business and domain
+    experience.
+&lt;/p></howtoStaff>
+  </org.eclipse.epf.uma:ActivityDescription>
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="-oL33jKKA3ROCoas-YxOSGQ" name="prepare_environment_for_project,{37A50EF5-CC73-4E38-B851-997879548110}" guid="-oL33jKKA3ROCoas-YxOSGQ">
+    <mainDescription>&lt;a id=&quot;Description&quot; name=&quot;Description&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    Preparing the development environment involves:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Defining how the project is going to use the configured &lt;a class=&quot;elementLink&quot;&#xD;
+        href=&quot;./../../core.base_rup/workproducts/rup_development_process_A6449790.html&quot;&#xD;
+        guid=&quot;{345D1811-317B-47EC-AC9D-10E1072A7D68}&quot;>Development Process&lt;/a>.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Qualifying work product selections with timing and formality requirements.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Preparing project-specific assets, like guidelines and templates.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Producing a list of candidate tools to use for development.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></mainDescription>
+    <keyConsiderations>&lt;a id=&quot;Timing&quot; name=&quot;Timing&quot;>&lt;/a>&lt;a id=&quot;Optionality&quot; name=&quot;Optionality&quot;>&lt;/a>&lt;a id=&quot;WorkGuidelines&quot;&#xD;
+name=&quot;WorkGuidelines&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    It is recommended to always spend some time preparing your development environment based on the specific needs of the&#xD;
+    project.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Background information about the state of the development organization is often collected prior to project startup and&#xD;
+    documented in &lt;a class=&quot;elementLinkWithUserText&quot;&#xD;
+    href=&quot;./../../core.base_rup/workproducts/rup_development_organization_assessment_A0186DDE.html&quot;&#xD;
+    guid=&quot;{FA77EBA9-75C7-4AA2-934A-B88BED853CBE}&quot;>Work Product: Development Organization Assessment&lt;/a>.&#xD;
+&lt;/p></keyConsiderations>
+    <usageGuidance>&lt;p>&#xD;
+    Preparing the environment for the project is done during the Inception phase. Any subsequent work done to improve and&#xD;
+    complete the prepared environment is described in the activity: Prepare Environment for an Iteration.&#xD;
+&lt;/p></usageGuidance>
+    <purpose>The purpose of this activity is to turn the underlying &lt;a class=&quot;elementLink&quot;&#xD;
+href=&quot;./../../core.base_rup/workproducts/rup_development_process_A6449790.html&quot;&#xD;
+guid=&quot;{345D1811-317B-47EC-AC9D-10E1072A7D68}&quot;>Development Process&lt;/a>&amp;nbsp;into a project-specific process, and to make the&#xD;
+&lt;a class=&quot;elementLink&quot; href=&quot;./../../core.base_rup/workproducts/rup_development_infrastructure_21BD206E.html&quot;&#xD;
+guid=&quot;{A40A3A6E-A090-46B4-B2FE-5F1AC36F010B}&quot;>Development Infrastructure&lt;/a>&amp;nbsp;ready for the project.</purpose>
+    <howtoStaff>&lt;a id=&quot;HowToStaff&quot; name=&quot;HowToStaff&quot;>&lt;/a> 
+&lt;p>
+    The tasks in this activity are best carried out by a small team, staffed by individuals with a good general knowledge
+    of the &lt;a class=&quot;elementLink&quot;
+    href=&quot;resources/rup_development_process,{345D1811-317B-47EC-AC9D-10E1072A7D68}.html&quot;
+    guid=&quot;{345D1811-317B-47EC-AC9D-10E1072A7D68}&quot;>Development Process&lt;/a>. If the organization has a dedicated process
+    group focusing on process and development environment, the &lt;a class=&quot;elementLinkWithType&quot;
+    href=&quot;resources/rup_process_engineer,{ADDC62A7-8E36-4DCE-9E5C-211B0950EBB5}.html&quot;
+    guid=&quot;{ADDC62A7-8E36-4DCE-9E5C-211B0950EBB5}&quot;>Role: Process Engineer&lt;/a>is often staffed from this group.
+&lt;/p></howtoStaff>
+  </org.eclipse.epf.uma:ActivityDescription>
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="-yZEKlqMNqpxcpBsNeOZRIw" name="create_project_configuration_management_cm_environments,{C241B2F9-AA48-45E6-89F0-F0A3DC2496DA}" guid="-yZEKlqMNqpxcpBsNeOZRIw">
+    <mainDescription>&lt;a id=&quot;Description&quot; name=&quot;Description&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    This work is done by making sure the essential artifacts are available to developers and integrators in the various&#xD;
+    private and public workspaces as they need them, and then are adequately baselined and stored for subsequent use.&#xD;
+    Setting up the CM environment involves creating the &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../core.base_rup/guidances/concepts/product_directory_structure_293B0B00.html&quot; guid=&quot;3.654568680407835E-305&quot;>Product&#xD;
+    Directory Structure&lt;/a>, repositories, &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../core.base_rup/guidances/concepts/workspaces_3B55A225.html&quot; guid=&quot;3.4400958589714374E-305&quot;>Workspaces&lt;/a> (developer&#xD;
+    and integration) and allocating machine resources (servers and disk space).&#xD;
+&lt;/p></mainDescription>
+    <usageGuidance>&lt;p>&#xD;
+    Typically this work starts in Inception and continues throughout the lifecycle. Generally this work is most prevalent&#xD;
+    in iterations at the very beginning of each phase (or at the end of each preceding phase) to prepare a suitable CM&#xD;
+    environment for the forthcoming phase. Note that the requirements for a CM environment often change from phase-to-phase&#xD;
+    as the team size expands and contracts: a smaller development team in early phases normally requires a less formal&#xD;
+    environment than is required in later phases.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    This work is not considered optional, although project culture will mean this work will vary from being a small&#xD;
+    consideration to a large endeavor. Note that where an existing CM environment is in place, this work may be more&#xD;
+    focused on tailoring that environment to suit the project or lifecycle phase.&#xD;
+&lt;/p></usageGuidance>
+    <howtoStaff>&lt;a id=&quot;HowToStaff&quot; name=&quot;HowToStaff&quot;>&lt;/a> 
+&lt;p>
+    To set up an appropriate environment, a person playing the Configuration Manager role needs to have a good
+    understanding of the component structures of the overall product, and will need to work closely with the &lt;a
+    class=&quot;elementLink&quot; href=&quot;resources/rup_software_architect,{4AC346F0-E6FC-4D2C-8410-2EDF8DDDC91D}.html&quot;
+    guid=&quot;{4AC346F0-E6FC-4D2C-8410-2EDF8DDDC91D}&quot;>Software Architect&lt;/a> to ensure that adequate &quot;place holder&quot; CM items
+    are established.
+&lt;/p>
+&lt;p>
+    A person playing the Integrator role in this work needs to ensure that artifacts delivered from the developer
+    workspaces are sufficiently tested such that they can be incorporated into a testable build. The Integrator role needs
+    to be familiar with Project CM Policies, Build and Test Practices.
+&lt;/p></howtoStaff>
+  </org.eclipse.epf.uma:ActivityDescription>
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="-eZBAgsI_oawztUW11kbTOg" name="prepare_environment_for_an_iteration,{A550E1F1-D779-4B1A-9E2C-A364E521A091}" guid="-eZBAgsI_oawztUW11kbTOg">
+    <mainDescription>&lt;a id=&quot;Description&quot; name=&quot;Description&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    For each iteration, this activity&amp;nbsp;is focused mainly on:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Completing the Development Case to get ready for the iteration.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Preparing and, if necessary, customizing the&amp;nbsp;tools to be used within the iteration.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Verifying that the tools have been correctly configured and installed.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Preparing a set of project-specific templates and guidelines to support the development of project artifacts in the&#xD;
+        iteration.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Make sure that all the changes made to the project environment are properly communicated to the project members.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></mainDescription>
+    <keyConsiderations>&lt;p>&#xD;
+    This activity is recommended for any project, although the described tasks may be performed somewhat informally in some&#xD;
+    types of projects and may be considered part of the on-going support of the project environment. For more information&#xD;
+    in this ongoing support, see &lt;a class=&quot;elementLinkWithUserText&quot;&#xD;
+    href=&quot;./../../core.base_rup/capabilitypatterns/support_environment_during_an_iteration_17F0693E.html&quot;&#xD;
+    guid=&quot;{250BC41A-650E-4E26-A26C-54F74C71552D}&quot;>Activity: Support the Environment During an Iteration&lt;/a>.&#xD;
+&lt;/p></keyConsiderations>
+    <usageGuidance>As the name implies, this activity&amp;nbsp;is performed at the beginning of every iteration.</usageGuidance>
+    <purpose>The purpose of this activity is to ensure that the project environment is ready for the upcoming iteration. This includes&#xD;
+process and tools.</purpose>
+    <howtoStaff>&lt;p>
+    A Process Engineer is responsible for completing the Development Case. It's unusual that one individual can master all
+    disciplines of software development, therefore, it's important that the process engineer consults experts, both within
+    and outside of the development organization.
+&lt;/p>
+&lt;p>
+    The development of project-specific templates and guidelines can be done by several people. There is no need for
+    detailed knowledge of the process to develop these project-specific artifacts.
+&lt;/p>
+&lt;p>
+    There are normally several individuals who act as Tool Specialists. Each individual is then responsible for one tool or
+    a group of related tools.
+&lt;/p></howtoStaff>
+  </org.eclipse.epf.uma:ActivityDescription>
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="-2W4Il67kfd4nqXPSI6rRZA" name="plan_the_project,{823EF41B-2BD1-464B-84DB-C7BD432636E2}" guid="-2W4Il67kfd4nqXPSI6rRZA">
+    <mainDescription>&lt;p>&#xD;
+    After developing the components and enclosures of the Software Development Plan, the entire plan is formally reviewed,&#xD;
+    for feasibility and acceptability to stakeholders.&amp;nbsp; It becomes the basis for the fine-grained plan for the next&#xD;
+    iteration (the Iteration Plan ).&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    The major effort in creating these artifacts comes early in the inception phase.&amp;nbsp;The Project Manager also collates&#xD;
+    all other contributions to the Software Development Plan and assembles them in &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../core.base_rup/tasks/compile_software_development_plan_FADDE6C8.html&quot;&#xD;
+    guid=&quot;{7B3D4BD7-93D5-4240-A449-47742FBB40A7}&quot;>Task: Compile Software Development Plan&lt;/a>.&#xD;
+&lt;/p></mainDescription>
+    <usageGuidance>&lt;p>&#xD;
+    The major effort occurs early in the inception phase; thereafter, at the beginning of each iteration (see&#xD;
+    Activity:&amp;nbsp; Refine the Development Plan).&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Estimation should ideally be based in the organization's own experience, which is then used to calibrate an estimation&#xD;
+    model, such as COCOMO. (See [&lt;a class=&quot;elementLinkWithUserText&quot;&#xD;
+    href=&quot;./../../core.base_rup/customcategories/references_56F06DFD.html&quot; guid=&quot;7.755968586980351E-308&quot;>BOE81&lt;/a>] for a description&#xD;
+    of the original model, or go to &lt;a href=&quot;http://sunset.usc.edu/research/cocomosuite/index.html&quot;&#xD;
+    target=&quot;_blank&quot;>http://sunset.usc.edu/research/cocomosuite/index.html&lt;/a> for the latest work.) If the Project Manager&#xD;
+    is starting from scratch, using default values for model coefficients, it will be important to use other methods to&#xD;
+    validate the estimates. Just as important is to obtain staff and other stakeholder agreement that the estimates are&#xD;
+    realistic and achievable. However, the Project Manager has to take into account the experience of staff giving feedback&#xD;
+    about estimates. More junior staff may be just guessing numbers and then adding large margins for error; conversely,&#xD;
+    their effort estimates may be naively low. The Project Manager must be circumspect when dealing with estimates from&#xD;
+    junior staff, and be prepared to counsel them when necessary, and offer the assistance of a more experienced peer. See&#xD;
+    &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../core.base_rup/tasks/plan_phases_and_iterations_2AB1A5C9.html&quot;&#xD;
+    guid=&quot;{43005DA9-D75E-464D-8AFC-AB9CACD92626}&quot;>Task: Plan Phases and Iterations&lt;/a> for more information about&#xD;
+    estimation.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    All enclosed plans and sections of the Software Development Plan should be evaluated through internal walkthroughs and&#xD;
+    reviews before the &lt;a class=&quot;elementLink&quot; href=&quot;./../../core.base_rup/tasks/project_planning_review_DE46897A.html&quot;&#xD;
+    guid=&quot;{EF4BAC6D-0474-4A48-96B6-CAD6FD2CE561}&quot;>Project Planning Review&lt;/a> occurs.&#xD;
+&lt;/p></usageGuidance>
+    <howtoStaff>&lt;a id=&quot;HowToStaff&quot; name=&quot;HowToStaff&quot;>&lt;/a> 
+&lt;p>
+    This activity will obviously stress the Project Manager's estimation, planning and writing skills. Also, the Project
+    Manager must ensure buy-in from affected stakeholders during the construction of these plans, so presentation and
+    communication skills will also be important. The Management Reviewer will need to be experienced in the estimation of
+    projects in the relevant business or technical domain and should be able to make judgments about the validity of
+    assumptions made by the Project Manager. The Management Reviewer should also have enough understanding of the Rational
+    Unified Process to judge whether the &lt;a class=&quot;elementLink&quot;
+    href=&quot;resources/rup_development_case,{F071C3D3-7054-457F-8A81-EFA6678CCDE1}.html&quot;
+    guid=&quot;{F071C3D3-7054-457F-8A81-EFA6678CCDE1}&quot;>Development Case&lt;/a> is accurately represented in the Software
+    Development Plan.
+&lt;/p></howtoStaff>
+  </org.eclipse.epf.uma:ActivityDescription>
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="-SP8hkj3xmKkgCCBOSLa7Pw" name="monitor_control_project,{F40E3BFA-9909-4D3D-8AEB-E08E3C0DC8F0}" guid="-SP8hkj3xmKkgCCBOSLa7Pw">
+    <mainDescription>&lt;a id=&quot;Description&quot; name=&quot;Description&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    This&amp;nbsp;activity captures the daily, continuing, work of the Project Manager, covering:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        dealing with change requests that have been sanctioned by the &lt;a class=&quot;elementLink&quot;&#xD;
+        href=&quot;./../../core.base_rup/roles/rup_change_manager_51E43456.html&quot; guid=&quot;{C1D3C2C0-15A0-49AD-9788-8C163E53CB96}&quot;>Change&#xD;
+        Control Manager&lt;/a>, and scheduling these for the current or future iterations;&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        continuously monitoring the project in terms of active risks and objective measurements of progress and quality;&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        regular reporting of project status, in the &lt;a class=&quot;elementLink&quot;&#xD;
+        href=&quot;./../../core.base_rup/workproducts/rup_status_assessment_A990B5EF.html&quot;&#xD;
+        guid=&quot;{F6D674A6-D71A-4D36-A195-4C888C1D0E70}&quot;>Status Assessment&lt;/a>, to the Project Review Authority (PRA), which&#xD;
+        is the organizational entity to which the Project Manager is accountable;&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        dealing with issues and problems through the &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+        href=&quot;./../../core.base_rup/tasks/monitor_project_status_1A73CCB1.html&quot; guid=&quot;{A7E3EAB8-8E5A-408C-B1EF-3CD3D3B0DEDD}&quot;>Task:&#xD;
+        Monitor Project Status&lt;/a> and driving these to closure according to the &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+        href=&quot;./../../core.base_rup/workproducts/rup_problem_resolution_plan_516F6214.html&quot;&#xD;
+        guid=&quot;{5F77F969-3117-4924-AE01-E82CB60287D4}&quot;>Artifact: Problem Resolution Plan&lt;/a>. This may require that Change&#xD;
+        Requests be issued for work that cannot be authorized by the Project Manager alone.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></mainDescription>
+    <usageGuidance>&lt;p>&#xD;
+    This activity occurs in every iteration of every phase. Issues can come up at any time. The timing of other activities&#xD;
+    is tailored to suit the project. For example, the project manager could decide to produce weekly metrics reports, and&#xD;
+    report to the PRA monthly.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    The Project Manager should put in place mechanisms to automate, as far as possible, the collection and reduction of&#xD;
+    information (metrics, for example) about the project. Time should be spent in analyzing trends, not in collection and&#xD;
+    calculation. The responsibility for solution of problems that arise on a project obviously ultimately rests with the&#xD;
+    Project Manager. However, there is a class of technical problems that should be delegated to the Software Architect,&#xD;
+    for example, for solution. The Project Manager's role is then to implement the suggested solution - which may give rise&#xD;
+    to a secondary problem, say, lack of resources, which does have to be solved by the Project Manager. This demonstrates&#xD;
+    the kind of trust that must exist between the Project Manager and the technical staff - the Project Manager expects the&#xD;
+    Software Architect to devise sound technical solutions, and the Software Architect expects the Project Manager to put&#xD;
+    in place the infrastructure and resources to implement them, contractual and financial constraints permitting.&#xD;
+&lt;/p>&lt;br />&#xD;
+&lt;br /></usageGuidance>
+    <howtoStaff>&lt;a id=&quot;HowToStaff&quot; name=&quot;HowToStaff&quot;>&lt;/a> 
+&lt;p>
+    The Project Manager needs a mix of organizational, planning, communication, time management, triage, and analytic
+    skills for this part of the discipline. The Management Reviewer will need a strong background in project management,
+    will have a deep understanding of the organization's business policies and practices, and be able to make judgments
+    about the project's financial performance and performance against contractual obligations.
+&lt;/p></howtoStaff>
+  </org.eclipse.epf.uma:ActivityDescription>
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="-kK-OdVunSFpeiEku9mF2SA" name="manage_the_scope_of_the_system,{CA9197A9-051E-4845-A7FC-2A8750BD8C02}" guid="-kK-OdVunSFpeiEku9mF2SA">
+    <mainDescription>&lt;a id=&quot;Description&quot; name=&quot;Description&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    This&amp;nbsp;activity addresses:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Prioritizing and refining the input to the selection of &lt;a class=&quot;elementLinkWithUserText&quot;&#xD;
+        href=&quot;./../../core.base_rup/guidances/concepts/types_of_requirements_528C097C.html&quot;&#xD;
+        guid=&quot;5.360970653483052E-305&quot;>features&lt;/a> and &lt;a class=&quot;elementLink&quot;&#xD;
+        href=&quot;./../../core.base_rup/guidances/concepts/requirements_62E28784.html&quot; guid=&quot;4.582668643506599E-305&quot;>Requirements&lt;/a>&#xD;
+        that are to be included in the current iteration (see &lt;a class=&quot;elementLink&quot;&#xD;
+        href=&quot;./../../core.base_rup/tasks/prioritize_use_cases_E6E4D9A0.html&quot;&#xD;
+        guid=&quot;{6E23D919-D149-43C2-9D37-8AF77B667CA8}&quot;>Prioritize Use Cases&lt;/a>).&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Defining the set of behavioral scenarios, for one or more &lt;a class=&quot;elementLinkWithUserText&quot;&#xD;
+        href=&quot;./../../core.base_rup/workproducts/rup_usecase_A5D30E62.html&quot; guid=&quot;{B1526BC5-E346-42CB-A08A-3C0D7F382407}&quot;>use&#xD;
+        cases&lt;/a>, that represent some significant central functionality (see &lt;a class=&quot;elementLink&quot;&#xD;
+        href=&quot;./../../core.base_rup/tasks/prioritize_use_cases_E6E4D9A0.html&quot;&#xD;
+        guid=&quot;{6E23D919-D149-43C2-9D37-8AF77B667CA8}&quot;>Prioritize Use Cases&lt;/a>).&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Defining how traceability will be maintained, including which &lt;a class=&quot;elementLinkWithUserText&quot;&#xD;
+        href=&quot;./../../core.base_rup/workproducts/rup_requirements_attributes_EFE5ABAC.html&quot;&#xD;
+        guid=&quot;{D0E2E7A1-4179-470E-AA18-419D5FEA275D}&quot;>requirement attributes&lt;/a> and &lt;a class=&quot;elementLinkWithUserText&quot;&#xD;
+        href=&quot;./../../core.base_rup/guidances/concepts/traceability_8F6B898D.html&quot; guid=&quot;1.4005695544042474E-306&quot;>traceability&#xD;
+        relationships&lt;/a> to maintain (see &lt;a class=&quot;elementLink&quot;&#xD;
+        href=&quot;./../../core.base_rup/tasks/manage_dependencies_4F6CEFAA.html&quot; guid=&quot;{7F42C4D6-584F-4B19-9B0B-FDE86BD85FBB}&quot;>Manage&#xD;
+        Dependencies&lt;/a>).&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Refining the &lt;a class=&quot;elementLink&quot; href=&quot;./../../core.base_rup/workproducts/rup_vision_2D6D6F1.html&quot;&#xD;
+        guid=&quot;{417F089F-6636-451A-A8AB-AB4EAC7AC4F1}&quot;>Vision&lt;/a> to document the scope of the solution (see &lt;a&#xD;
+        class=&quot;elementLink&quot; href=&quot;./../../core.base_rup/tasks/develop_vision_D9584F04.html&quot;&#xD;
+        guid=&quot;{7069CFB7-77C3-4B44-B8A2-9CCA752BDDDA}&quot;>Develop Vision&lt;/a>).&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>&#xD;
+    The scope of a project is defined by the set of requirements allocated to it. Managing project scope to fit the&#xD;
+    available resources (time, people, and money) is key to managing successful projects.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    The &lt;a class=&quot;elementLink&quot; href=&quot;./../../core.base_rup/roles/rup_system_analyst_C3C9C9AC.html&quot;&#xD;
+    guid=&quot;{F1F206DF-3AA0-4AC0-92EF-8E4A01B6C5B5}&quot;>System Analyst&lt;/a> role is responsible for determining requirements&#xD;
+    attribute values of priority, effort, cost, risk values etc., from the appropriate stakeholders, which are collected in&#xD;
+    the repository of requirements attributes. These will be used by the &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../core.base_rup/roles/rup_project_manager_363CE680.html&quot; guid=&quot;{EE97A8CD-66CA-4A9B-9871-E3B94CCED528}&quot;>Project&#xD;
+    Manager&lt;/a> role when &lt;a class=&quot;elementLinkWithUserText&quot;&#xD;
+    href=&quot;./../../core.base_rup/capabilitypatterns/plan_for_next_iteration_55840038.html&quot;&#xD;
+    guid=&quot;{8040B743-6467-4067-8C0F-E62C3DE99414}&quot;>planning each iteration&lt;/a> and will enable the &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../core.base_rup/roles/rup_software_architect_DB0BF177.html&quot; guid=&quot;{4AC346F0-E6FC-4D2C-8410-2EDF8DDDC91D}&quot;>Software&#xD;
+    Architect&lt;/a> role to identify the architecturally significant scenario's or complete use cases, which will help define&#xD;
+    the &lt;a class=&quot;elementLink&quot; href=&quot;./../../core.base_rup/guidances/concepts/use-case_view_11F15731.html&quot;&#xD;
+    guid=&quot;6.820983346069146E-305&quot;>Use-Case View&lt;/a>&amp;nbsp;of the architecture (see &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../core.base_rup/tasks/prioritize_use_cases_E6E4D9A0.html&quot; guid=&quot;{6E23D919-D149-43C2-9D37-8AF77B667CA8}&quot;>Prioritize&#xD;
+    Use Cases&lt;/a>).&#xD;
+&lt;/p></mainDescription>
+    <keyConsiderations>&lt;a id=&quot;Timing&quot; name=&quot;Timing&quot;>&lt;/a>&lt;a id=&quot;Optionality&quot; name=&quot;Optionality&quot;>&lt;/a>&lt;a id=&quot;WorkGuidelines&quot;&#xD;
+name=&quot;WorkGuidelines&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    Using &lt;a class=&quot;elementLink&quot; href=&quot;./../../core.base_rup/workproducts/rup_requirements_attributes_EFE5ABAC.html&quot;&#xD;
+    guid=&quot;{D0E2E7A1-4179-470E-AA18-419D5FEA275D}&quot;>Requirements Attributes&lt;/a>, such as priority, effort, and risk, as the&#xD;
+    basis for negotiating the inclusion of a requirement is a particularly useful technique for managing scope. Focusing on&#xD;
+    the attributes rather than the requirements themselves helps desensitize negotiations that are otherwise contentious.&#xD;
+&lt;/p></keyConsiderations>
+    <usageGuidance>&lt;p>&#xD;
+    This activity should be performed continuously throughout the project.&#xD;
+&lt;/p></usageGuidance>
+    <purpose>The purpose of this activity is to make the scope of the system being developed as explicit as possible, and focus on a&#xD;
+manageable body of requirements work for a development cycle.</purpose>
+    <howtoStaff>&lt;a id=&quot;HowToStaff&quot; name=&quot;HowToStaff&quot;>&lt;/a> 
+&lt;p>
+    The people involved in this activity should all be members of the architecture team.&amp;nbsp; The architecture team will
+    facilitate a session for various team members to discuss how to best prioritize the requirements.&amp;nbsp;
+&lt;/p>
+&lt;p>
+    It is also helpful for team leaders to be trained in negotiation skills and for the project to have a champion in the
+    organization, as well as on the customer side. Product/project champions should have the organizational power to refuse
+    scope changes beyond the available resources or to expand resources to accommodate additional scope.
+&lt;/p></howtoStaff>
+  </org.eclipse.epf.uma:ActivityDescription>
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="-EjeS0d3czKtkmzhupaPiDQ" name="define_the_system,{20E30ECF-7359-45EC-AA5F-8A7BFA21C472}" guid="-EjeS0d3czKtkmzhupaPiDQ">
+    <mainDescription>&lt;a id=&quot;Description&quot; name=&quot;Description&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    This activity addresses:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Aligning the project team in their understanding of the system.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Performing a high-level analysis on the results of collected &lt;a class=&quot;elementLink&quot;&#xD;
+        href=&quot;./../../core.base_rup/workproducts/rup_stakeholder_requests_A89D2BF9.html&quot;&#xD;
+        guid=&quot;{75F38765-E25B-4459-907E-77F429652C0F}&quot;>Stakeholder Requests&lt;/a>.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Refining the &lt;a class=&quot;elementLink&quot; href=&quot;./../../core.base_rup/workproducts/rup_vision_2D6D6F1.html&quot;&#xD;
+        guid=&quot;{417F089F-6636-451A-A8AB-AB4EAC7AC4F1}&quot;>Vision&lt;/a>&amp;nbsp;to capture the key features that characterize the&#xD;
+        system (see &lt;a class=&quot;elementLink&quot; href=&quot;./../../core.base_rup/tasks/develop_vision_D9584F04.html&quot;&#xD;
+        guid=&quot;{7069CFB7-77C3-4B44-B8A2-9CCA752BDDDA}&quot;>Develop Vision&lt;/a>).&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Refining the &lt;a class=&quot;elementLink&quot; href=&quot;./../../core.base_rup/workproducts/rup_usecase_model_EF15E534.html&quot;&#xD;
+        guid=&quot;{9C66F2EC-EDEB-4369-9AFB-04B9E7CBCB8E}&quot;>Use-Case Model&lt;/a> to include outlined &lt;a&#xD;
+        class=&quot;elementLinkWithUserText&quot; href=&quot;./../../core.base_rup/workproducts/rup_usecase_A5D30E62.html&quot;&#xD;
+        guid=&quot;{B1526BC5-E346-42CB-A08A-3C0D7F382407}&quot;>use cases&lt;/a>&amp;nbsp;(see &lt;a class=&quot;elementLink&quot;&#xD;
+        href=&quot;./../../core.base_rup/tasks/find_actors_and_use_cases_1ACB35F0.html&quot; guid=&quot;{3CD5FA7E-160C-4A39-9DEB-C6D162D8AECD}&quot;>Find&#xD;
+        Actors and Use Cases&lt;/a>).&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Outlining the non-use-case-specific requirements in the &lt;a class=&quot;elementLink&quot;&#xD;
+        href=&quot;./../../core.base_rup/workproducts/rup_supplementary_specification_F5ACAA22.html&quot;&#xD;
+        guid=&quot;{B16C2941-791C-44E6-B353-354109B5C9DE}&quot;>Supplementary Specifications&lt;/a>&amp;nbsp;(see &lt;a class=&quot;elementLink&quot;&#xD;
+        href=&quot;./../../core.base_rup/tasks/develop_supplementary_specification_52FC4CAE.html&quot; guid=&quot;_I5vM8DJwEdqLGaxX1Cc4eA&quot;>Develop&#xD;
+        Supplementary Specifications&lt;/a>).&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Beginning to capture the results of the requirements elicitation activities in a more structured manner.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>&#xD;
+    The activities that focus on problem analysis and understanding stakeholder needs create early iterations of key system&#xD;
+    definitions including the features defined in the vision and a first outline of the detailed requirements. This&#xD;
+    activity, defining the system, focuses on identifying &lt;a class=&quot;elementLinkWithUserText&quot;&#xD;
+    href=&quot;./../../core.base_rup/workproducts/rup_actor_1F9CE9.html&quot; guid=&quot;{0EEBBA43-F5C6-4594-9F06-65D99F7556DF}&quot;>actors&lt;/a> and &lt;a&#xD;
+    class=&quot;elementLinkWithUserText&quot; href=&quot;./../../core.base_rup/workproducts/rup_usecase_A5D30E62.html&quot;&#xD;
+    guid=&quot;{B1526BC5-E346-42CB-A08A-3C0D7F382407}&quot;>use cases&lt;/a> more completely by outlining their content&amp;nbsp;(see &lt;a&#xD;
+    class=&quot;elementLink&quot; href=&quot;./../../core.base_rup/tasks/find_actors_and_use_cases_1ACB35F0.html&quot;&#xD;
+    guid=&quot;{3CD5FA7E-160C-4A39-9DEB-C6D162D8AECD}&quot;>Find Actors and Use Cases&lt;/a>), as well as outlining the&#xD;
+    non-use-case-specific requirements in the &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../core.base_rup/workproducts/rup_supplementary_specification_F5ACAA22.html&quot;&#xD;
+    guid=&quot;{B16C2941-791C-44E6-B353-354109B5C9DE}&quot;>Supplementary Specifications&lt;/a>&amp;nbsp;(see &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../core.base_rup/tasks/develop_supplementary_specification_52FC4CAE.html&quot; guid=&quot;_I5vM8DJwEdqLGaxX1Cc4eA&quot;>Develop&#xD;
+    Supplementary Specifications&lt;/a>).&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    The &lt;a class=&quot;elementLink&quot; href=&quot;./../../core.base_rup/workproducts/rup_glossary_A5D79A0C.html&quot;&#xD;
+    guid=&quot;{3BF8CC04-9101-47A4-9473-C8205EA588B6}&quot;>Glossary&lt;/a>&amp;nbsp;is also refined as additional common terms are&#xD;
+    identified (see &lt;a class=&quot;elementLink&quot; href=&quot;./../../core.base_rup/tasks/capture_common_vocabulary_9BA76DA7.html&quot;&#xD;
+    guid=&quot;{962AC6BA-4ACA-4D7D-B56F-24558A026854}&quot;>Capture a Common Vocabulary&lt;/a>).&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    As you define new requirements, it is important to document any dependencies (e.g., &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../core.base_rup/guidances/concepts/traceability_8F6B898D.html&quot; guid=&quot;1.4005695544042474E-306&quot;>Traceability&lt;/a>)&#xD;
+    between these requirements (see &lt;a class=&quot;elementLink&quot; href=&quot;./../../core.base_rup/tasks/manage_dependencies_4F6CEFAA.html&quot;&#xD;
+    guid=&quot;{7F42C4D6-584F-4B19-9B0B-FDE86BD85FBB}&quot;>Manage Dependencies&lt;/a>).&#xD;
+&lt;/p></mainDescription>
+    <keyConsiderations>&lt;a id=&quot;Timing&quot; name=&quot;Timing&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    It should be noted that activities being performed in this capability pattern are not performed in sequence.&amp;nbsp; In&#xD;
+    fact, it is more-often the case that these activities are performed concurrently. For example, while identifying actors&#xD;
+    and use cases (&lt;a class=&quot;elementLink&quot; href=&quot;./../../core.base_rup/tasks/find_actors_and_use_cases_1ACB35F0.html&quot;&#xD;
+    guid=&quot;{3CD5FA7E-160C-4A39-9DEB-C6D162D8AECD}&quot;>Find Actors and Use Cases&lt;/a>), we may encounter requirements that do not&#xD;
+    naturally align with a particular use case, in which case the requirement may be defined in the Supplementary&#xD;
+    Specifications (&lt;a class=&quot;elementLink&quot; href=&quot;./../../core.base_rup/tasks/develop_supplementary_specification_52FC4CAE.html&quot;&#xD;
+    guid=&quot;_I5vM8DJwEdqLGaxX1Cc4eA&quot;>Develop Supplementary Specifications&lt;/a>). Conversely, while identifying&#xD;
+    non-use-case-specific requirements (e.g., system-wide requirements), we may encounter requirements that only apply to a&#xD;
+    particular use case, in which case the requirement is associated with the use case.&#xD;
+&lt;/p></keyConsiderations>
+    <usageGuidance>&lt;p>&#xD;
+    This activity is primarily performed in iterations during the Inception and Elaboration phases, however it may be&#xD;
+    revisited as needed when &lt;a class=&quot;elementLinkWithUserText&quot;&#xD;
+    href=&quot;./../../core.base_rup/capabilitypatterns/manage_the_scope_of_the_system_7E0B34E5.html&quot;&#xD;
+    guid=&quot;{CA9197A9-051E-4845-A7FC-2A8750BD8C02}&quot;>managing scope&lt;/a> and responding to &lt;a class=&quot;elementLinkWithUserText&quot;&#xD;
+    href=&quot;./../../core.base_rup/capabilitypatterns/manage_changing_requirements_FF6AC18D.html&quot;&#xD;
+    guid=&quot;{28B39D62-9D73-4254-9CB8-26CFA737D45E}&quot;>changing requirements&lt;/a>, as well as other changes in the project&#xD;
+    conditions.&#xD;
+&lt;/p></usageGuidance>
+    <purpose>The purpose of this activity is to begin converging on the scope of the high-level requirements by outlining the breadth of&#xD;
+the detailed requirements for the system.</purpose>
+    <howtoStaff>&lt;a id=&quot;HowToStaff&quot; name=&quot;HowToStaff&quot;>&lt;/a> 
+&lt;p>
+    While it encourages team ownership and commitment to have all members of the project team participate in defining the
+    system, this work is primarily coordinated and conducted by staff playing the &lt;a class=&quot;elementLink&quot;
+    href=&quot;resources/rup_system_analyst,{F1F206DF-3AA0-4AC0-92EF-8E4A01B6C5B5}.html&quot;
+    guid=&quot;{F1F206DF-3AA0-4AC0-92EF-8E4A01B6C5B5}&quot;>System Analyst&lt;/a> role. Because this work often requires making
+    tradeoff's between multiple requirements to make best use of the finite development resources, diplomacy, negotiation
+    and mediation are important skills for the system analyst conducting this work.
+&lt;/p></howtoStaff>
+  </org.eclipse.epf.uma:ActivityDescription>
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="-ftfmI7qiOj-rJIgp0nobZQ" name="synthesize_system_architecture,_f-muUVVwEdqgIdhbAiG50A" guid="-ftfmI7qiOj-rJIgp0nobZQ">
+    <usageGuidance>This work takes place during Inception, and so should be limited to one or two iterations. The purpose is to gain knowledge&#xD;
+and determine feasibility, not to construct the system during this activity. &lt;br /></usageGuidance>
+    <howtoStaff>This activity is best carried out by a small team (playing the role of &lt;a class=&quot;elementLinkWithUserText&quot; href=&quot;./../../systems.rup_se/roles/rup_system_architect,{A83E9C0E-3BBD-4D5A-902F-3B82F21975E3}.html&quot; guid=&quot;{A83E9C0E-3BBD-4D5A-902F-3B82F21975E3}&quot;>System Architect&lt;/a>, and usually guided by one or two individuals who have
+deep experience in architecting systems in the relevant domain) staffed by cross-functional team members. Issues that are
+typically architecturally important include performance, scaling, distribution, or other specialty engineering
+requirements. Significant architectural constraints might also flow from physical and environmental requirements. The team
+should also include members with domain experience who can identify key abstractions. The team should also have experience
+with model organization and layering. From these inputs, the team must be able to synthesize a model, or even a prototype,
+of a solution.</howtoStaff>
+  </org.eclipse.epf.uma:ActivityDescription>
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="-717Aw_8SZ7hrwqq3DgLi3g" name="define_evaluation_mission,{10C2C34C-BF5E-4825-A7DC-5E106EFAA4C5}" guid="-717Aw_8SZ7hrwqq3DgLi3g">
+    <mainDescription>&lt;a id=&quot;Description&quot; name=&quot;Description&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    For each iteration, this work is focused mainly on:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Identifying the objectives for, and deliverables of, the testing effort&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Identifying a good resource utilization strategy&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Defining the appropriate scope and boundary for the test effort&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Outlining the approach that will be used&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Defining how progress will be monitored and assessed.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></mainDescription>
+    <usageGuidance>&lt;p>&#xD;
+    Typically addressed toward the beginning of each iteration before other test-related work commences.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Note that this work is performed in each iteration. We recommend that you don't spend a lot of time on the detailed&#xD;
+    planning of testing tasks too far in advance of the iteration in which they are performed-as a general rule, don't plan&#xD;
+    detailed testing work further than one iteration ahead.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    The main value in performing this work is to think through the various concerns and issues that will impact testing&#xD;
+    over the course of the iteration, and consider the appropriate actions you should take. As a general rule, don't spend&#xD;
+    excessive amounts of time on the presentation of the documentation for these aspects of the test effort.&#xD;
+&lt;/p></usageGuidance>
+    <howtoStaff>&lt;a id=&quot;HowToStaff&quot; name=&quot;HowToStaff&quot;>&lt;/a> 
+&lt;p>
+    Although most of the roles involved in the Test discipline play a part in performing this work, the effort is primarily
+    centered around the &lt;a class=&quot;elementLink&quot;
+    href=&quot;resources/rup_test_manager,{E0633E7D-9A93-40BA-9B8D-E27AD2C5D401}.html&quot;
+    guid=&quot;{E0633E7D-9A93-40BA-9B8D-E27AD2C5D401}&quot;>Test Manager&lt;/a> and &lt;a class=&quot;elementLink&quot;
+    href=&quot;resources/rup_test_analyst,{8728060F-9DAD-42AD-B0B6-668C9AEA531D}.html&quot;
+    guid=&quot;{8728060F-9DAD-42AD-B0B6-668C9AEA531D}&quot;>Test Analyst&lt;/a> roles. The most important skills required for this work
+    include negotiation, elicitation, strategy and planning.
+&lt;/p>
+&lt;p>
+    While most of the resource for this work will be expended in Construction, significant resources will need to be
+    allocated to this work from Inception to Transition.&amp;nbsp; As a relative indication of test resource use for this
+    activity by phase, typical percentages are: Inception - 50%, Elaboration - 25%, Construction - 10% and Transition -
+    10%.&lt;br />
+&lt;/p></howtoStaff>
+  </org.eclipse.epf.uma:ActivityDescription>
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="-huyq9R4EIkTtNLc0WODGyQ" name="manage_iteration,{D2D59931-DBA1-4624-B5E6-161DE57451D1}" guid="-huyq9R4EIkTtNLc0WODGyQ">
+    <mainDescription>This activity&amp;nbsp;acquires the necessary resources to perform the iteration (in &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+href=&quot;./../../core.base_rup/tasks/acquire_staff_1B59DBA8.html&quot; guid=&quot;{D6A30168-ECF2-40C0-AA8B-68462B3F193B}&quot;>Task: Acquire&#xD;
+Staff&lt;/a>&amp;nbsp;and &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../core.base_rup/tasks/initiate_iteration_E2241E8B.html&quot;&#xD;
+guid=&quot;{50A77708-4FD4-42F5-B6D1-4DC751C7EBBE}&quot;>Task: Initiate Iteration&lt;/a> ), allocates the work to be done (in &lt;a&#xD;
+class=&quot;elementLinkWithType&quot; href=&quot;./../../core.base_rup/tasks/initiate_iteration_E2241E8B.html&quot;&#xD;
+guid=&quot;{50A77708-4FD4-42F5-B6D1-4DC751C7EBBE}&quot;>Task: Initiate Iteration&lt;/a>), and finally, to assesses the results of the&#xD;
+iteration in &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../core.base_rup/tasks/assess_iteration_342C29D1.html&quot;&#xD;
+guid=&quot;{DBD235AB-EEEF-4C9E-A83E-5B87DAD70E33}&quot;>Task: Assess Iteration&lt;/a>. An iteration concludes with a &lt;a&#xD;
+class=&quot;elementLinkWithType&quot; href=&quot;./../../core.base_rup/tasks/iteration_acceptance_review_2F196C3B.html&quot;&#xD;
+guid=&quot;{D3706FBF-E3EA-42E7-8D2E-7C9112506703}&quot;>Task: Iteration Acceptance Review&lt;/a> which determines, from the Iteration&#xD;
+Assessment, whether the objectives of the iteration were met. &#xD;
+&lt;p>&#xD;
+    Optionally, in a lengthy iteration, the Project Manager may think it prudent to resynchronize the expectations of&#xD;
+    management, technical staff, customer and other stakeholders, by holding an &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../core.base_rup/tasks/iteration_evaluation_criteria_review_552BE363.html&quot;&#xD;
+    guid=&quot;{4C2F0277-EA66-4C98-8351-17E32D3C9BAA}&quot;>Iteration Evaluation Criteria Review&lt;/a>&amp;nbsp;mid-way through the&#xD;
+    iteration. At this review, which is based mainly around the &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../core.base_rup/workproducts/rup_test_plan_53712941.html&quot; guid=&quot;{B95CA9FA-A00E-4C6C-AA16-133297812CC0}&quot;>Test&#xD;
+    Plan&lt;/a>,&amp;nbsp;the project reveals the planned contents of the iteration in a very concrete way. This gives an&#xD;
+    opportunity for a 'mid-course correction', should misunderstandings have arisen over the intent of the &lt;a&#xD;
+    class=&quot;elementLink&quot; href=&quot;./../../core.base_rup/workproducts/rup_iteration_plan_623AFF7F.html&quot;&#xD;
+    guid=&quot;{97269E0F-CDF3-448D-A732-DF39D099BDDD}&quot;>Iteration Plan&lt;/a>.&#xD;
+&lt;/p></mainDescription>
+    <howtoStaff>&lt;p>
+    A mix of skills is needed for the activities in this activity: although the Project Manager may rely on a human
+    resources function to provide candidate project members, in the end the responsibility for selection is his or hers.
+    Interviewing skills are valuable, as is a history of selecting good people. The Project Manager will need to show
+    planning, leadership and team building capabilities to initiate the iteration - to allocate the work appropriately, and
+    realize the abstract Iteration Plan in effective teams of people.
+&lt;/p>
+&lt;p>
+    The evaluation criteria for an iteration should have been set objectively and clearly, so the assessment of an
+    iteration requires the Project Manager to be analytic and equally objective.
+&lt;/p>
+&lt;p>
+    The Management Reviewer for these reviews needs to be very experienced in the domain of the application, and able to
+    sift out what is important and what can be ignored or relaxed. While none should be in any doubt about what worked and
+    what failed in the iteration, all requirements are not of equal importance, nor are they immutable. Knowledge is gained
+    over the course of an iteration and circumstances may change. For example, at the beginning of the iteration, one of
+    the evaluation criteria might have said that the response time for a certain function had to be 0.25 seconds or less.
+    Let us say that this proved very difficult, and by the time of the Iteration Acceptance Review, the project could only
+    demonstrate 0.5 seconds. It is thought that the lower figure can be achieved, but only with the expenditure of
+    excessive resources. However, the customer, having seen the function demonstrated in an operational context, finds that
+    0.5 seconds is perfectly acceptable.
+&lt;/p>
+&lt;p>
+    Failing the iteration on this count alone would not be sensible. Far better for the Project Manager and Management
+    Reviewer to agree to relax this requirement, and as compensation, to add capability elsewhere. The Management Reviewer
+    (and Project Manager) need the experience and confidence to make these kinds of trades, which do not compromise the
+    project vision.
+&lt;/p></howtoStaff>
+  </org.eclipse.epf.uma:ActivityDescription>
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="-p2HGTfFECduvK8ZNoeRMvQ" name="plan_for_next_iteration,{8040B743-6467-4067-8C0F-E62C3DE99414}" guid="-p2HGTfFECduvK8ZNoeRMvQ">
+    <mainDescription>&lt;a id=&quot;Description&quot; name=&quot;Description&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    The Iteration Plan should be reviewed by the customer and other stakeholders and, if satisfactory, should be approved&#xD;
+    through the &lt;a class=&quot;elementLink&quot; href=&quot;./../../core.base_rup/tasks/iteration_plan_review_6D20D94.html&quot;&#xD;
+    guid=&quot;{6E82748E-E207-4D75-B38A-EDB9A53CDBAD}&quot;>Iteration Plan Review&lt;/a>. This review also gives the customer visibility&#xD;
+    of the project's expectations of customer participation and resources, particularly if the iteration is intended to&#xD;
+    deliver artifacts or deploy software, so the customer can make appropriate plans. In the Rational Unified Process, it&#xD;
+    is strongly recommended that the scope and resources of an iteration are actively managed to meet the planned end date,&#xD;
+    that is, a &lt;a class=&quot;elementLink&quot; href=&quot;./../../core.base_rup/guidances/termdefinitions/timeboxing_109B588A.html&quot;&#xD;
+    guid=&quot;_yYy-k9nmEdmO6L4XMImrsA&quot;>timeboxing&lt;/a> approach is used. This means that the Iteration Plan may be changed&#xD;
+    during an iteration, as schedule problems arise and are rectified.&#xD;
+&lt;/p></mainDescription>
+    <keyConsiderations>&lt;a id=&quot;Timing&quot; name=&quot;Timing&quot;>&lt;/a>&lt;a id=&quot;Optionality&quot; name=&quot;Optionality&quot;>&lt;/a>&lt;a id=&quot;WorkGuidelines&quot;&#xD;
+name=&quot;WorkGuidelines&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    The Project Manager should work closely with the Software Architect to define the iteration's contents. The Iteration&#xD;
+    Plan should be evaluated internally, through walkthrough and review, before being included in the Iteration Plan.&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        assess the clarity of expression of the evaluation criteria for the iteration&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        reach agreement internally that the planned artifacts can be built with the effort and time available&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        ensure that the results of the iteration will be testable or otherwise demonstrable; that is, the iteration will&#xD;
+        have a tangible outcome&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&lt;br />&#xD;
+&lt;br /></keyConsiderations>
+    <usageGuidance>&lt;p>&#xD;
+    This activity occurs in every iteration of every phase, excepting the final project iteration.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    This&amp;nbsp;activity is strongly recommended, as a means of managing the scope and resources of an iteration to keep the&#xD;
+    iteration, and the project, on track.&#xD;
+&lt;/p></usageGuidance>
+    <purpose>The primary purpose of this activity is to create an Iteration Plan. After creating the plan, adjustments may be needed to&#xD;
+the Business Case (for example, if costs change, or the return-on-investment calculation is affected by changes to the&#xD;
+availability dates of important features in the software).</purpose>
+    <howtoStaff>&lt;a id=&quot;HowToStaff&quot; name=&quot;HowToStaff&quot;>&lt;/a> 
+&lt;p>
+    The Project Manager needs a combination of planning, risk management and estimation skills, and an appreciation for the
+    technical content of the iteration, because the iteration's contents will be decided based on considerations of risk,
+    the need to demonstrate or deliver certain artifacts and capability, and the natural order imposed by integration. The
+    Project Manager will work closely with the &lt;a class=&quot;elementLink&quot;
+    href=&quot;rup/roles/rup_software_architect,{4AC346F0-E6FC-4D2C-8410-2EDF8DDDC91D}.html&quot;
+    guid=&quot;{4AC346F0-E6FC-4D2C-8410-2EDF8DDDC91D}&quot;>Software Architect&lt;/a> in the preparation of the Iteration Plan. The
+    Management Reviewer should have similar skills to the Project Manager, and also needs good domain understanding.
+&lt;/p></howtoStaff>
+  </org.eclipse.epf.uma:ActivityDescription>
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="-QLIjtyV8t-AHuY2vnZJ4Xg" name="prepare_environment_for_an_iteration,{A550E1F1-D779-4B1A-9E2C-A364E521A091}" guid="-QLIjtyV8t-AHuY2vnZJ4Xg">
+    <mainDescription>&lt;a id=&quot;Description&quot; name=&quot;Description&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    For each iteration, this activity&amp;nbsp;is focused mainly on:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Completing the Development Case to get ready for the iteration.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Preparing and, if necessary, customizing the&amp;nbsp;tools to be used within the iteration.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Verifying that the tools have been correctly configured and installed.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Preparing a set of project-specific templates and guidelines to support the development of project artifacts in the&#xD;
+        iteration.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Make sure that all the changes made to the project environment are properly communicated to the project members.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></mainDescription>
+    <keyConsiderations>&lt;p>&#xD;
+    This activity is recommended for any project, although the described tasks may be performed somewhat informally in some&#xD;
+    types of projects and may be considered part of the on-going support of the project environment. For more information&#xD;
+    in this ongoing support, see &lt;a class=&quot;elementLinkWithUserText&quot;&#xD;
+    href=&quot;./../../core.base_rup/capabilitypatterns/support_environment_during_an_iteration_17F0693E.html&quot;&#xD;
+    guid=&quot;{250BC41A-650E-4E26-A26C-54F74C71552D}&quot;>Activity: Support the Environment During an Iteration&lt;/a>.&#xD;
+&lt;/p></keyConsiderations>
+    <usageGuidance>As the name implies, this activity&amp;nbsp;is performed at the beginning of every iteration.</usageGuidance>
+    <purpose>The purpose of this activity is to ensure that the project environment is ready for the upcoming iteration. This includes&#xD;
+process and tools.</purpose>
+    <howtoStaff>&lt;p>
+    A Process Engineer is responsible for completing the Development Case. It's unusual that one individual can master all
+    disciplines of software development, therefore, it's important that the process engineer consults experts, both within
+    and outside of the development organization.
+&lt;/p>
+&lt;p>
+    The development of project-specific templates and guidelines can be done by several people. There is no need for
+    detailed knowledge of the process to develop these project-specific artifacts.
+&lt;/p>
+&lt;p>
+    There are normally several individuals who act as Tool Specialists. Each individual is then responsible for one tool or
+    a group of related tools.
+&lt;/p></howtoStaff>
+  </org.eclipse.epf.uma:ActivityDescription>
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="-5vI1UTjuxFdT68DcBB21Hg" name="plan_the_project,{823EF41B-2BD1-464B-84DB-C7BD432636E2}" guid="-5vI1UTjuxFdT68DcBB21Hg">
+    <mainDescription>&lt;p>&#xD;
+    After developing the components and enclosures of the Software Development Plan, the entire plan is formally reviewed,&#xD;
+    for feasibility and acceptability to stakeholders.&amp;nbsp; It becomes the basis for the fine-grained plan for the next&#xD;
+    iteration (the Iteration Plan ).&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    The major effort in creating these artifacts comes early in the inception phase.&amp;nbsp;The Project Manager also collates&#xD;
+    all other contributions to the Software Development Plan and assembles them in &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../core.base_rup/tasks/compile_software_development_plan_FADDE6C8.html&quot;&#xD;
+    guid=&quot;{7B3D4BD7-93D5-4240-A449-47742FBB40A7}&quot;>Task: Compile Software Development Plan&lt;/a>.&#xD;
+&lt;/p></mainDescription>
+    <usageGuidance>&lt;p>&#xD;
+    The major effort occurs early in the inception phase; thereafter, at the beginning of each iteration (see&#xD;
+    Activity:&amp;nbsp; Refine the Development Plan).&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Estimation should ideally be based in the organization's own experience, which is then used to calibrate an estimation&#xD;
+    model, such as COCOMO. (See [&lt;a class=&quot;elementLinkWithUserText&quot;&#xD;
+    href=&quot;./../../core.base_rup/customcategories/references_56F06DFD.html&quot; guid=&quot;7.755968586980351E-308&quot;>BOE81&lt;/a>] for a description&#xD;
+    of the original model, or go to &lt;a href=&quot;http://sunset.usc.edu/research/cocomosuite/index.html&quot;&#xD;
+    target=&quot;_blank&quot;>http://sunset.usc.edu/research/cocomosuite/index.html&lt;/a> for the latest work.) If the Project Manager&#xD;
+    is starting from scratch, using default values for model coefficients, it will be important to use other methods to&#xD;
+    validate the estimates. Just as important is to obtain staff and other stakeholder agreement that the estimates are&#xD;
+    realistic and achievable. However, the Project Manager has to take into account the experience of staff giving feedback&#xD;
+    about estimates. More junior staff may be just guessing numbers and then adding large margins for error; conversely,&#xD;
+    their effort estimates may be naively low. The Project Manager must be circumspect when dealing with estimates from&#xD;
+    junior staff, and be prepared to counsel them when necessary, and offer the assistance of a more experienced peer. See&#xD;
+    &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../core.base_rup/tasks/plan_phases_and_iterations_2AB1A5C9.html&quot;&#xD;
+    guid=&quot;{43005DA9-D75E-464D-8AFC-AB9CACD92626}&quot;>Task: Plan Phases and Iterations&lt;/a> for more information about&#xD;
+    estimation.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    All enclosed plans and sections of the Software Development Plan should be evaluated through internal walkthroughs and&#xD;
+    reviews before the &lt;a class=&quot;elementLink&quot; href=&quot;./../../core.base_rup/tasks/project_planning_review_DE46897A.html&quot;&#xD;
+    guid=&quot;{EF4BAC6D-0474-4A48-96B6-CAD6FD2CE561}&quot;>Project Planning Review&lt;/a> occurs.&#xD;
+&lt;/p></usageGuidance>
+    <howtoStaff>&lt;a id=&quot;HowToStaff&quot; name=&quot;HowToStaff&quot;>&lt;/a> 
+&lt;p>
+    This activity will obviously stress the Project Manager's estimation, planning and writing skills. Also, the Project
+    Manager must ensure buy-in from affected stakeholders during the construction of these plans, so presentation and
+    communication skills will also be important. The Management Reviewer will need to be experienced in the estimation of
+    projects in the relevant business or technical domain and should be able to make judgments about the validity of
+    assumptions made by the Project Manager. The Management Reviewer should also have enough understanding of the Rational
+    Unified Process to judge whether the &lt;a class=&quot;elementLink&quot;
+    href=&quot;resources/rup_development_case,{F071C3D3-7054-457F-8A81-EFA6678CCDE1}.html&quot;
+    guid=&quot;{F071C3D3-7054-457F-8A81-EFA6678CCDE1}&quot;>Development Case&lt;/a> is accurately represented in the Software
+    Development Plan.
+&lt;/p></howtoStaff>
+  </org.eclipse.epf.uma:ActivityDescription>
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="-WUzLx-aTqd9jQ7nnW9f1BA" name="plan_project_configuration_change_control,{043594BF-28ED-41EF-8C55-FBD65551D0CA}" guid="-WUzLx-aTqd9jQ7nnW9f1BA">
+    <mainDescription>&lt;a id=&quot;Description&quot; name=&quot;Description&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    The activity focuses on:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Establishing project configuration management policies&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Establishing policies and processes for controlling product change&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Documenting this information in the Configuration Management Plan (included in Software Development Plan)&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>&#xD;
+    CM policies refer to the ability to identify, safeguard and report on the artifacts that have been approved for use in&#xD;
+    a project. Identification is simplified and enabled through the use of proper tools to control project artifacts, and&#xD;
+    the systematic labeling of those artifacts over time to identify their relative maturity and their relationships with&#xD;
+    each other at given points in time. Systematic identification practices are a key enabler for the safeguarding of&#xD;
+    project artifacts through archiving and baselining techniques.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Standard, documented change control processes help to ensure that changes are made within a project in a consistent&#xD;
+    manner, and the appropriate stakeholders are informed of the current state of the product, requested changes to it and&#xD;
+    the impact of these changes on cost, schedule and so forth.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    The CM Plan documents how product related CM activities are to be planned, implemented controlled and organized.&#xD;
+&lt;/p></mainDescription>
+    <keyConsiderations>&lt;a id=&quot;Timing&quot; name=&quot;Timing&quot;>&lt;/a>&lt;a id=&quot;Optionality&quot; name=&quot;Optionality&quot;>&lt;/a>&lt;a id=&quot;WorkGuidelines&quot;&#xD;
+name=&quot;WorkGuidelines&quot;>&lt;/a></keyConsiderations>
+    <usageGuidance>&lt;p>&#xD;
+    This work is primarily performed in the first iterations in each phase. While most important in the Construction and&#xD;
+    Transition phases, this work may be important in the Elaboration and even Inception phase, depending on project&#xD;
+    culture.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    This work is not considered optional, although it will differ in format, style and level of ceremony to suit the&#xD;
+    project context. Note also that the rigidity and formality of the change process tend to change increase over the life&#xD;
+    of the project, typically becoming most formal and rigid in the Transition phase.&lt;br />&#xD;
+&lt;/p></usageGuidance>
+    <howtoStaff>&lt;a id=&quot;HowToStaff&quot; name=&quot;HowToStaff&quot;>&lt;/a> 
+&lt;p>
+    A person playing the Configuration Manager role needs to be organized by nature, yet flexible enough to plan
+    configuration and change control to suit the needs of the project team. The Configuration Manager role supports the
+    team by ensuring that the project change policies are reflected within the projects change management tools, enabling
+    software developers to easily transition artifacts through state changes in accordance with the defined development and
+    approval practices. The Configuration Manager role is required to put measures in place to monitor that the CM Plan is
+    being followed as intended, that audit reporting is occurring on a regular basis, and to work with the System
+    Administrator role to ensure that backups of CM assets are in safekeeping (e.g. fireproof safe for backup sets on-site,
+    weekly backup sets stored off-site).
+&lt;/p>
+&lt;p>
+    The Change Control Manager is a key arbitration role. In this capacity, the decision for the inclusion of any given
+    change in a software build is ultimately made by the Change Control Manager on a project. In practice, only those
+    changes of significant potential impact typically warrant monitoring, and any potential impact on the inclusion-or
+    exclusion-of changes to the product should be carefully considered with regard to project factors such as the political
+    climate, the need to establish trust between developer and customer and so forth.
+&lt;/p></howtoStaff>
+  </org.eclipse.epf.uma:ActivityDescription>
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="-gK-uhp5l-VI_cCzzC4mZ6Q" name="plan_the_integration,{3CBDBBD0-6482-4FA2-820B-F6711E0BD84B}" guid="-gK-uhp5l-VI_cCzzC4mZ6Q">
+    <mainDescription>&lt;a id=&quot;Description&quot; name=&quot;Description&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    Planning the integration is focused on which implementation subsystems should be implemented, and the order in which&#xD;
+    the implementation subsystems should be integrated in the current iteration.&#xD;
+&lt;/p></mainDescription>
+    <usageGuidance>&lt;p>&#xD;
+    Planning the integration process should be done early, at least in rough form, when the architecture is baselined. As&#xD;
+    the architecture and design evolve, the integration plan should be examined and updated to ensure that the build plan&#xD;
+    does not become obsolete by changes in the architecture or the design.&#xD;
+&lt;/p></usageGuidance>
+    <howtoStaff>&lt;a id=&quot;HowToStaff&quot; name=&quot;HowToStaff&quot;>&lt;/a> 
+&lt;p>
+    Integration is typically carried out by a single person (for a small project on which the build process in simple) or a
+    small team (for a large project on which the build process is complex). The integrators need experience in software
+    build management, configuration management, and experience in the programming language in which the components to be
+    integrated are written. Because integration often involves a high degree of automation, expertise in operating system
+    shell or scripting languages and tools like 'make' (on Unix) or 'ant' (for Java) is also essential.
+&lt;/p></howtoStaff>
+  </org.eclipse.epf.uma:ActivityDescription>
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="-12APEtovC5ry3IG2CwVpLw" name="plan_deployment,{9B5E6B08-625F-40DF-AA4E-0BD056C0553A}" guid="-12APEtovC5ry3IG2CwVpLw">
+    <mainDescription>&lt;a id=&quot;Description&quot; name=&quot;Description&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    Deployment planning requires a high degree of customer collaboration and preparation. A successful conclusion to a&#xD;
+    software project can be severely impacted by factors &lt;i>outside the scope of software development&lt;/i> such as the&#xD;
+    building, hardware infrastructure not being in place, and the staff being ill-prepared for changing to the new system.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    To ensure successful deployment and transition to the new system and ways of doing business, the Deployment Plan needs&#xD;
+    to address not only the deliverable software, but also the development of training material and system support material&#xD;
+    to ensure that end users can successfully use the delivered software product.&#xD;
+&lt;/p></mainDescription>
+    <usageGuidance>&lt;p>&#xD;
+    This work is performed early in each iteration, generally starting late in the construction phase and continuing&#xD;
+    through transition. It can begin as soon as iteration planning is reasonably complete for the iteration.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    This task is recommended whenever an executable release will be externally deployed outside the primary development&#xD;
+    team, either for the purposes of delivering the software to the end user, or for testing purposes.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    See the &lt;a href=&quot;#RelatedInformation&quot;>Related Information&lt;/a> section for additional guidance that will help you in&#xD;
+    performing this work.&lt;br />&#xD;
+&lt;/p></usageGuidance>
+    <howtoStaff>&lt;a id=&quot;HowToStaff&quot; name=&quot;HowToStaff&quot;>&lt;/a> 
+&lt;p>
+    A deployment manager needs to be someone who is aware of the operational needs of the end user and capable of pulling
+    together all the items that go into making the product. The deployment manager runs the beta test and, in the case of
+    &quot;shrink wrap&quot; products, deals with the manufacturers to ensure that adequate quality is achieved in the product.
+&lt;/p>
+&lt;p>
+    The deployment manager &quot;gets the product delivered&quot; and, therefore, needs to be well versed in the required
+    infrastructure and user needs to ensure that the product is available for the users.
+&lt;/p></howtoStaff>
+  </org.eclipse.epf.uma:ActivityDescription>
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="-Syqku_6iUgizqOOSo6__Yg" name="manage_iteration,{D2D59931-DBA1-4624-B5E6-161DE57451D1}" guid="-Syqku_6iUgizqOOSo6__Yg">
+    <mainDescription>This activity&amp;nbsp;acquires the necessary resources to perform the iteration (in &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+href=&quot;./../../core.base_rup/tasks/acquire_staff_1B59DBA8.html&quot; guid=&quot;{D6A30168-ECF2-40C0-AA8B-68462B3F193B}&quot;>Task: Acquire&#xD;
+Staff&lt;/a>&amp;nbsp;and &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../core.base_rup/tasks/initiate_iteration_E2241E8B.html&quot;&#xD;
+guid=&quot;{50A77708-4FD4-42F5-B6D1-4DC751C7EBBE}&quot;>Task: Initiate Iteration&lt;/a> ), allocates the work to be done (in &lt;a&#xD;
+class=&quot;elementLinkWithType&quot; href=&quot;./../../core.base_rup/tasks/initiate_iteration_E2241E8B.html&quot;&#xD;
+guid=&quot;{50A77708-4FD4-42F5-B6D1-4DC751C7EBBE}&quot;>Task: Initiate Iteration&lt;/a>), and finally, to assesses the results of the&#xD;
+iteration in &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../core.base_rup/tasks/assess_iteration_342C29D1.html&quot;&#xD;
+guid=&quot;{DBD235AB-EEEF-4C9E-A83E-5B87DAD70E33}&quot;>Task: Assess Iteration&lt;/a>. An iteration concludes with a &lt;a&#xD;
+class=&quot;elementLinkWithType&quot; href=&quot;./../../core.base_rup/tasks/iteration_acceptance_review_2F196C3B.html&quot;&#xD;
+guid=&quot;{D3706FBF-E3EA-42E7-8D2E-7C9112506703}&quot;>Task: Iteration Acceptance Review&lt;/a> which determines, from the Iteration&#xD;
+Assessment, whether the objectives of the iteration were met. &#xD;
+&lt;p>&#xD;
+    Optionally, in a lengthy iteration, the Project Manager may think it prudent to resynchronize the expectations of&#xD;
+    management, technical staff, customer and other stakeholders, by holding an &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../core.base_rup/tasks/iteration_evaluation_criteria_review_552BE363.html&quot;&#xD;
+    guid=&quot;{4C2F0277-EA66-4C98-8351-17E32D3C9BAA}&quot;>Iteration Evaluation Criteria Review&lt;/a>&amp;nbsp;mid-way through the&#xD;
+    iteration. At this review, which is based mainly around the &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../core.base_rup/workproducts/rup_test_plan_53712941.html&quot; guid=&quot;{B95CA9FA-A00E-4C6C-AA16-133297812CC0}&quot;>Test&#xD;
+    Plan&lt;/a>,&amp;nbsp;the project reveals the planned contents of the iteration in a very concrete way. This gives an&#xD;
+    opportunity for a 'mid-course correction', should misunderstandings have arisen over the intent of the &lt;a&#xD;
+    class=&quot;elementLink&quot; href=&quot;./../../core.base_rup/workproducts/rup_iteration_plan_623AFF7F.html&quot;&#xD;
+    guid=&quot;{97269E0F-CDF3-448D-A732-DF39D099BDDD}&quot;>Iteration Plan&lt;/a>.&#xD;
+&lt;/p></mainDescription>
+    <howtoStaff>&lt;p>
+    A mix of skills is needed for the activities in this activity: although the Project Manager may rely on a human
+    resources function to provide candidate project members, in the end the responsibility for selection is his or hers.
+    Interviewing skills are valuable, as is a history of selecting good people. The Project Manager will need to show
+    planning, leadership and team building capabilities to initiate the iteration - to allocate the work appropriately, and
+    realize the abstract Iteration Plan in effective teams of people.
+&lt;/p>
+&lt;p>
+    The evaluation criteria for an iteration should have been set objectively and clearly, so the assessment of an
+    iteration requires the Project Manager to be analytic and equally objective.
+&lt;/p>
+&lt;p>
+    The Management Reviewer for these reviews needs to be very experienced in the domain of the application, and able to
+    sift out what is important and what can be ignored or relaxed. While none should be in any doubt about what worked and
+    what failed in the iteration, all requirements are not of equal importance, nor are they immutable. Knowledge is gained
+    over the course of an iteration and circumstances may change. For example, at the beginning of the iteration, one of
+    the evaluation criteria might have said that the response time for a certain function had to be 0.25 seconds or less.
+    Let us say that this proved very difficult, and by the time of the Iteration Acceptance Review, the project could only
+    demonstrate 0.5 seconds. It is thought that the lower figure can be achieved, but only with the expenditure of
+    excessive resources. However, the customer, having seen the function demonstrated in an operational context, finds that
+    0.5 seconds is perfectly acceptable.
+&lt;/p>
+&lt;p>
+    Failing the iteration on this count alone would not be sensible. Far better for the Project Manager and Management
+    Reviewer to agree to relax this requirement, and as compensation, to add capability elsewhere. The Management Reviewer
+    (and Project Manager) need the experience and confidence to make these kinds of trades, which do not compromise the
+    project vision.
+&lt;/p></howtoStaff>
+  </org.eclipse.epf.uma:ActivityDescription>
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="-IJ7Mxdzs68dUzVddrNx0Bg" name="monitor_control_project,{F40E3BFA-9909-4D3D-8AEB-E08E3C0DC8F0}" guid="-IJ7Mxdzs68dUzVddrNx0Bg">
+    <mainDescription>&lt;a id=&quot;Description&quot; name=&quot;Description&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    This&amp;nbsp;activity captures the daily, continuing, work of the Project Manager, covering:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        dealing with change requests that have been sanctioned by the &lt;a class=&quot;elementLink&quot;&#xD;
+        href=&quot;./../../core.base_rup/roles/rup_change_manager_51E43456.html&quot; guid=&quot;{C1D3C2C0-15A0-49AD-9788-8C163E53CB96}&quot;>Change&#xD;
+        Control Manager&lt;/a>, and scheduling these for the current or future iterations;&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        continuously monitoring the project in terms of active risks and objective measurements of progress and quality;&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        regular reporting of project status, in the &lt;a class=&quot;elementLink&quot;&#xD;
+        href=&quot;./../../core.base_rup/workproducts/rup_status_assessment_A990B5EF.html&quot;&#xD;
+        guid=&quot;{F6D674A6-D71A-4D36-A195-4C888C1D0E70}&quot;>Status Assessment&lt;/a>, to the Project Review Authority (PRA), which&#xD;
+        is the organizational entity to which the Project Manager is accountable;&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        dealing with issues and problems through the &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+        href=&quot;./../../core.base_rup/tasks/monitor_project_status_1A73CCB1.html&quot; guid=&quot;{A7E3EAB8-8E5A-408C-B1EF-3CD3D3B0DEDD}&quot;>Task:&#xD;
+        Monitor Project Status&lt;/a> and driving these to closure according to the &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+        href=&quot;./../../core.base_rup/workproducts/rup_problem_resolution_plan_516F6214.html&quot;&#xD;
+        guid=&quot;{5F77F969-3117-4924-AE01-E82CB60287D4}&quot;>Artifact: Problem Resolution Plan&lt;/a>. This may require that Change&#xD;
+        Requests be issued for work that cannot be authorized by the Project Manager alone.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></mainDescription>
+    <usageGuidance>&lt;p>&#xD;
+    This activity occurs in every iteration of every phase. Issues can come up at any time. The timing of other activities&#xD;
+    is tailored to suit the project. For example, the project manager could decide to produce weekly metrics reports, and&#xD;
+    report to the PRA monthly.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    The Project Manager should put in place mechanisms to automate, as far as possible, the collection and reduction of&#xD;
+    information (metrics, for example) about the project. Time should be spent in analyzing trends, not in collection and&#xD;
+    calculation. The responsibility for solution of problems that arise on a project obviously ultimately rests with the&#xD;
+    Project Manager. However, there is a class of technical problems that should be delegated to the Software Architect,&#xD;
+    for example, for solution. The Project Manager's role is then to implement the suggested solution - which may give rise&#xD;
+    to a secondary problem, say, lack of resources, which does have to be solved by the Project Manager. This demonstrates&#xD;
+    the kind of trust that must exist between the Project Manager and the technical staff - the Project Manager expects the&#xD;
+    Software Architect to devise sound technical solutions, and the Software Architect expects the Project Manager to put&#xD;
+    in place the infrastructure and resources to implement them, contractual and financial constraints permitting.&#xD;
+&lt;/p>&lt;br />&#xD;
+&lt;br /></usageGuidance>
+    <howtoStaff>&lt;a id=&quot;HowToStaff&quot; name=&quot;HowToStaff&quot;>&lt;/a> 
+&lt;p>
+    The Project Manager needs a mix of organizational, planning, communication, time management, triage, and analytic
+    skills for this part of the discipline. The Management Reviewer will need a strong background in project management,
+    will have a deep understanding of the organization's business policies and practices, and be able to make judgments
+    about the project's financial performance and performance against contractual obligations.
+&lt;/p></howtoStaff>
+  </org.eclipse.epf.uma:ActivityDescription>
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="-i5EwW_AvYWWbs55q8lJcIw" name="manage_changing_requirements,{28B39D62-9D73-4254-9CB8-26CFA737D45E}" guid="-i5EwW_AvYWWbs55q8lJcIw">
+    <mainDescription>&lt;a id=&quot;Description&quot; name=&quot;Description&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    This activity addresses:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Evaluating requested changes and determining their impact on the existing &lt;a class=&quot;elementLink&quot;&#xD;
+        href=&quot;./../../core.base_rup/workproducts/rup_software_requirement_32CECE14.html&quot;&#xD;
+        guid=&quot;{BB502500-EEEC-4BDE-8697-186666D6D5B3}&quot;>Software Requirement&lt;/a>s.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Structuring the &lt;a class=&quot;elementLink&quot; href=&quot;./../../core.base_rup/workproducts/rup_usecase_model_EF15E534.html&quot;&#xD;
+        guid=&quot;{9C66F2EC-EDEB-4369-9AFB-04B9E7CBCB8E}&quot;>Use-Case Model&lt;/a>&amp;nbsp;to improve the overall management of the&#xD;
+        requirements documented in the &lt;a class=&quot;elementLink&quot; href=&quot;./../../core.base_rup/workproducts/rup_usecase_A5D30E62.html&quot;&#xD;
+        guid=&quot;{B1526BC5-E346-42CB-A08A-3C0D7F382407}&quot;>Use Case&lt;/a>.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Managing changes to the&amp;nbsp;&lt;a class=&quot;elementLink&quot;&#xD;
+        href=&quot;./../../core.base_rup/workproducts/rup_requirements_attributes_EFE5ABAC.html&quot;&#xD;
+        guid=&quot;{D0E2E7A1-4179-470E-AA18-419D5FEA275D}&quot;>Requirements Attributes&lt;/a> and &lt;a class=&quot;elementLinkWithUserText&quot;&#xD;
+        href=&quot;./../../core.base_rup/guidances/concepts/traceability_8F6B898D.html&quot; guid=&quot;1.4005695544042474E-306&quot;>traceability&#xD;
+        relationships&lt;/a>.&amp;nbsp;&amp;nbsp;&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Once the changes have been implemented, verifying that the results of the requirements work conform to the&#xD;
+        customer's view of the system.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>&#xD;
+    Changes to requirements naturally impact downstream artifacts (e.g., analysis and design work products, test work&#xD;
+    products, deployment artifacts, etc.) The &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../core.base_rup/guidances/concepts/traceability_8F6B898D.html&quot; guid=&quot;1.4005695544042474E-306&quot;>Traceability&lt;/a>&#xD;
+    relationships identified and documented during &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../core.base_rup/tasks/manage_dependencies_4F6CEFAA.html&quot; guid=&quot;{7F42C4D6-584F-4B19-9B0B-FDE86BD85FBB}&quot;>Manage&#xD;
+    Dependencies&lt;/a>&amp;nbsp;explicitly define the relationships between the requirements and the other work products. These&#xD;
+    relationships are the key to understanding the impact of requirements change.&#xD;
+&lt;/p></mainDescription>
+    <keyConsiderations>&lt;p>&#xD;
+    The core development team should conduct a few rounds of internal reviews: walk-throughs to clean up unnecessary&#xD;
+    inconsistencies before their work is more formally inspected and reviewed by the extended team.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    You should divide the material up so that the team does not review everything at once. A review meeting shouldn't take&#xD;
+    more than a day. For example, you might conduct separate reviews of the user interface and the behavioral scenarios, or&#xD;
+    you might review all of the requirements artifacts related to a given subsystem.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Another important consideration is the tracking of requirement history. By capturing the nature and rationale of&#xD;
+    requirements changes, &lt;a class=&quot;elementLinkWithUserText&quot; href=&quot;./../../core.base_rup/roles/rup_reviewer_19930772.html&quot;&#xD;
+    guid=&quot;{638E0897-F63B-444C-8178-D05224689DE7}&quot;>reviewers&lt;/a> receive the information needed to respond to the change&#xD;
+    properly.&#xD;
+&lt;/p></keyConsiderations>
+    <usageGuidance>&lt;p>&#xD;
+    This activity should be performed in whenever requirements are refined.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Regular reviews, along with updates to the requirement attributes and dependencies, should be done whenever the&#xD;
+    requirements are updated.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    It is recommended that you arrange one review of the &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../core.base_rup/workproducts/rup_usecase_model_EF15E534.html&quot; guid=&quot;{9C66F2EC-EDEB-4369-9AFB-04B9E7CBCB8E}&quot;>Use-Case&#xD;
+    Model&lt;/a>&amp;nbsp;per iteration in the Inception and Elaboration phases, where you review the work in progress; this is&#xD;
+    initially done and signed off by the users prior to developing any of the &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../core.base_rup/workproducts/rup_usecase_A5D30E62.html&quot; guid=&quot;{B1526BC5-E346-42CB-A08A-3C0D7F382407}&quot;>Use Case&lt;/a>s&#xD;
+    in detail, and is a very important milestone so that resources are not spent on developing incorrect use cases. Then,&#xD;
+    at the end of the Elaboration phase, you should arrange a detailed review of the use-case model. Remember that at the&#xD;
+    end of the Elaboration phase, you should have a use-case model, and possibly a domain model representing the &lt;a&#xD;
+    class=&quot;elementLink&quot; href=&quot;./../../core.base_rup/workproducts/rup_glossary_A5D79A0C.html&quot;&#xD;
+    guid=&quot;{3BF8CC04-9101-47A4-9473-C8205EA588B6}&quot;>Glossary&lt;/a>, that is 80% complete. You should also arrange one review of&#xD;
+    the use-case model per iteration in the Construction and Transition phases when the use-case model is refined. The&#xD;
+    review should concentrate on the part of the use case model being developed for the iteration.&#xD;
+&lt;/p></usageGuidance>
+    <purpose>The purpose of this activity is to assess the impact of requested changes to the requirements, and manage the downstream&#xD;
+impact of the changes approved to be actioned.</purpose>
+    <howtoStaff>&lt;a id=&quot;HowToStaff&quot; name=&quot;HowToStaff&quot;>&lt;/a> 
+&lt;p>
+    Involve the extended team (&lt;a class=&quot;elementLinkWithUserText&quot;
+    href=&quot;resources/rup_stakeholder,{7A4262EA-AB5B-431E-BB4A-3822FBF7F239}.html&quot;
+    guid=&quot;{7A4262EA-AB5B-431E-BB4A-3822FBF7F239}&quot;>stakeholders&lt;/a>: customer representatives, domain experts, and others).
+    Include as a &lt;a class=&quot;elementLink&quot; href=&quot;resources/rup_technical_reviewer,{0319C70C-35C9-4190-94F0-E7E5E9216CA0}.html&quot;
+    guid=&quot;{0319C70C-35C9-4190-94F0-E7E5E9216CA0}&quot;>Technical Reviewer&lt;/a>&amp;nbsp;anyone on the software project team whose
+    work is affected by the change).&amp;nbsp; Be careful to manage your reviewing resources effectively.&amp;nbsp; Do not include
+    the entire extended team unless you can ensure it adds value to the project.
+&lt;/p>
+&lt;p>
+    The extended team should incorporate good knowledge of the problem domain, the technical difficulties of the project,
+    as well as skills in requirements management and &lt;a class=&quot;elementLinkWithUserText&quot;
+    href=&quot;resources/use-case_model,1.7617672560167394E-305.html&quot; guid=&quot;1.7617672560167394E-305&quot;>use-case
+    modeling&lt;/a>.
+&lt;/p></howtoStaff>
+  </org.eclipse.epf.uma:ActivityDescription>
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="-jCSWZ_4rPVvmTJjYBdJmpQ" name="manage_change_requests,{BFBA9E6A-CB4B-45A7-9A25-FF7CA1A1153D}" guid="-jCSWZ_4rPVvmTJjYBdJmpQ">
+    <mainDescription>&lt;a id=&quot;Description&quot; name=&quot;Description&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    Having a standard, documented change control process ensures that changes are made within a project in a consistent&#xD;
+    manner and that the appropriate stakeholders are informed of the state of the product, changes to it and the cost and&#xD;
+    schedule impact of these changes.&#xD;
+&lt;/p></mainDescription>
+    <usageGuidance>&lt;p>&#xD;
+    While this work starts in Inception and continues throughout the lifecycle, it tends to gain importance as the&#xD;
+    lifecycle progresses. It is often much more formally managed in Transition than it starts out being managed in&#xD;
+    Inception.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    This work is not considered optional, although project culture will mean this work will vary from being a small&#xD;
+    informal consideration to a larger more formal endeavor. Note that some CM environments may enable the Change (or&#xD;
+    Configuration) Control Board (CCB) function to be supported through process automation where rules can be established&#xD;
+    within a tool. This is particularly valuable where the CCB function must be managed across distributed teams.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Further explanation of these concepts, suggested tasks, and states of &lt;a class=&quot;elementLinkWithUserText&quot;&#xD;
+    href=&quot;./../../core.base_rup/workproducts/rup_change_request_F2E6419.html&quot; guid=&quot;{694A7BC8-3D20-4172-BC56-6C7BD4590BA5}&quot;>Change&#xD;
+    Requests&lt;/a> are found in &lt;a class=&quot;elementLinkWithUserText&quot;&#xD;
+    href=&quot;./../../core.base_rup/guidances/concepts/change_request_management_119F2E47.html&quot; guid=&quot;5.975934904188119E-305&quot;>Concept:&#xD;
+    Change Request Management.&lt;/a>&#xD;
+&lt;/p>&lt;br />&#xD;
+&lt;br /></usageGuidance>
+    <howtoStaff>&lt;a id=&quot;HowToStaff&quot; name=&quot;HowToStaff&quot;>&lt;/a> 
+&lt;p>
+    The Change (or Configuration) Control Board (CCB) oversees the change process, and consists of representatives playing
+    various roles in RUP. Typically this includes managers, stakeholders (customers, end-users), developers, and testers.
+    In a small project, a single person, such as the project manager or software architect, may be the only representative
+    on the CCB. In the Rational Unified Process, this primary CCB role is the &lt;a class=&quot;elementLink&quot;
+    href=&quot;resources/rup_change_manager,{C1D3C2C0-15A0-49AD-9788-8C163E53CB96}.html&quot;
+    guid=&quot;{C1D3C2C0-15A0-49AD-9788-8C163E53CB96}&quot;>Change Control Manager&lt;/a>.
+&lt;/p></howtoStaff>
+  </org.eclipse.epf.uma:ActivityDescription>
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="-Wiltc7gz6S_AnZuBgqYM0w" name="support_environment_during_an_iteration,{250BC41A-650E-4E26-A26C-54F74C71552D}" guid="-Wiltc7gz6S_AnZuBgqYM0w">
+    <mainDescription>&lt;a id=&quot;Description&quot; name=&quot;Description&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    Supporting the project environment is an ongoing task to allow the project members to do their job efficiently without&#xD;
+    being slowed down due to issues with the development environment. This includes installation of required software,&#xD;
+    ensuring that the hardware is functioning properly and that potential network issues are resolved without delays.&#xD;
+&lt;/p></mainDescription>
+    <usageGuidance>&lt;p>&#xD;
+    The project environment needs continuous attention. This means that tasks related to supporting the environment are&#xD;
+    performed in every iteration throughout the project, with a peak in late elaboration and early construction, when the&#xD;
+    whole project machinery is up and running.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    This activity is required in most project settings.&#xD;
+&lt;/p></usageGuidance>
+    <purpose>The purpose of this activity is to support the developers in their use of tools and process during an iteration.</purpose>
+    <howtoStaff>&lt;p>
+    Support of the environment is carried out by one person or a small team of several people. In large organizations,
+    these people are often part of the company's IT department or members of its process group.
+&lt;/p></howtoStaff>
+  </org.eclipse.epf.uma:ActivityDescription>
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="-Wbn1jTpwKawoo3w3W5uugQ" name="refine_the_system_definition,{0FEE5795-6090-4D82-9BDB-925E5F0D9985}" guid="-Wbn1jTpwKawoo3w3W5uugQ">
+    <mainDescription>&lt;a id=&quot;Description&quot; name=&quot;Description&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    This activity addresses detailing the requirements.&amp;nbsp; It&amp;nbsp;furthers the understanding of project scope reflected&#xD;
+    in the set of prioritized product features (often described in the &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../core.base_rup/workproducts/rup_vision_2D6D6F1.html&quot; guid=&quot;{417F089F-6636-451A-A8AB-AB4EAC7AC4F1}&quot;>Vision&lt;/a>) that&#xD;
+    it is believed can be achieved by fairly firm budgets and dates. The output is a more in-depth understanding of system&#xD;
+    functionality expressed in refined, detailed requirements in specification artifacts and outlined behavioral&#xD;
+    prototypes. The specification artifacts can take the form of detailed &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../core.base_rup/workproducts/rup_usecase_A5D30E62.html&quot; guid=&quot;{B1526BC5-E346-42CB-A08A-3C0D7F382407}&quot;>Use Case&lt;/a>s&#xD;
+    (see &lt;a class=&quot;elementLink&quot; href=&quot;./../../core.base_rup/tasks/detail_a_use_case_D9BECBF4.html&quot;&#xD;
+    guid=&quot;{536BC669-A8FB-426D-88FF-CBEA806A9066}&quot;>Detail a Use Case&lt;/a>) and &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../core.base_rup/workproducts/rup_supplementary_specification_F5ACAA22.html&quot;&#xD;
+    guid=&quot;{B16C2941-791C-44E6-B353-354109B5C9DE}&quot;>Supplementary Specifications&lt;/a>&amp;nbsp;(see &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../core.base_rup/tasks/develop_supplementary_specification_52FC4CAE.html&quot; guid=&quot;_I5vM8DJwEdqLGaxX1Cc4eA&quot;>Develop&#xD;
+    Supplementary Specifications&lt;/a>),&amp;nbsp;and in some cases a formal &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../core.base_rup/workproducts/rup_software_requirements_specification_934E66F.html&quot;&#xD;
+    guid=&quot;{BE8165DC-BAF2-4237-B27D-F2A037023364}&quot;>Software Requirements Specification&lt;/a>&amp;nbsp;may be developed (see &lt;a&#xD;
+    class=&quot;elementLink&quot; href=&quot;./../../core.base_rup/tasks/detail_software_requirements_A7F0A215.html&quot;&#xD;
+    guid=&quot;{A1FA1E95-8028-42EB-9B92-0DA77380F3E1}&quot;>Detail the Software Requirements&lt;/a>). This work typically starts by&#xD;
+    reviewing the existing actor definitions and if necessary least briefly describing the actors, then continues with&#xD;
+    detailing the use cases that have been previously outlined for each actor.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Whenever requirements are changed, regular reviews and updates to the associated requirements attributes should be done&#xD;
+    as described in the &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../core.base_rup/capabilitypatterns/manage_changing_requirements_FF6AC18D.html&quot;&#xD;
+    guid=&quot;{28B39D62-9D73-4254-9CB8-26CFA737D45E}&quot;>Manage Changing Requirements&lt;/a> activity.&#xD;
+&lt;/p></mainDescription>
+    <keyConsiderations>&lt;a id=&quot;Timing&quot; name=&quot;Timing&quot;>&lt;/a>&lt;a id=&quot;Optionality&quot; name=&quot;Optionality&quot;>&lt;/a>&lt;a id=&quot;WorkGuidelines&quot;&#xD;
+name=&quot;WorkGuidelines&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    It should be noted that activities being performed in this capability pattern are not performed in sequence.&amp;nbsp; In&#xD;
+    fact, it is more-often the case that these activities are performed concurrently. For example, while identifying actors&#xD;
+    and use cases (&lt;a class=&quot;elementLink&quot; href=&quot;./../../core.base_rup/tasks/find_actors_and_use_cases_1ACB35F0.html&quot;&#xD;
+    guid=&quot;{3CD5FA7E-160C-4A39-9DEB-C6D162D8AECD}&quot;>Find Actors and Use Cases&lt;/a>), we may encounter requirements that do not&#xD;
+    naturally align with a particular use case, in which case the requirement may be defined in the Supplementary&#xD;
+    Specifications (&lt;a class=&quot;elementLink&quot; href=&quot;./../../core.base_rup/tasks/develop_supplementary_specification_52FC4CAE.html&quot;&#xD;
+    guid=&quot;_I5vM8DJwEdqLGaxX1Cc4eA&quot;>Develop Supplementary Specifications&lt;/a>). Conversely, while identifying&#xD;
+    non-use-case-specific requirements (e.g., system-wide requirements), we may encounter requirements that only apply to a&#xD;
+    particular use case, in which case the requirement is associated with the use case.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Although much of the work is done individually, frequent reviews (i.e. walk-throughs) should be performed to calibrate&#xD;
+    work products across team members and ensure the team is in sync.&amp;nbsp;&amp;nbsp;&#xD;
+&lt;/p></keyConsiderations>
+    <usageGuidance>&lt;p>&#xD;
+    This activity is primarily performed during Elaboration, though may be performed in some capacity from late Inception&#xD;
+    through Construction.&#xD;
+&lt;/p></usageGuidance>
+    <purpose>The purpose of this activity is to further refine the requirements in order to capture the consensus understanding of the&#xD;
+system definition.</purpose>
+    <howtoStaff>&lt;a id=&quot;HowToStaff&quot; name=&quot;HowToStaff&quot;>&lt;/a> 
+&lt;p>
+    The &lt;a class=&quot;elementLink&quot; href=&quot;resources/rup_requirement_specifier,{7264A534-7509-4B4B-AF73-CAECC0178898}.html&quot;
+    guid=&quot;{7264A534-7509-4B4B-AF73-CAECC0178898}&quot;>Requirements Specifier&lt;/a> role is primarily involved in performing this
+    work. The most important skills required to conduct this work include information elicitation &amp;amp; communication.
+    Staff responsible for specifying requirements should be skilled in expressing themselves in writing, and need to
+    develop a good understanding of the problem domain.
+&lt;/p></howtoStaff>
+  </org.eclipse.epf.uma:ActivityDescription>
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="-7qeq4YQ3wSGbthSAOu3lMQ" name="verify_test_approach,{7BD514AF-19F9-408F-8279-309BD153C157}" guid="-7qeq4YQ3wSGbthSAOu3lMQ">
+    <mainDescription>&lt;a id=&quot;Description&quot; name=&quot;Description&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    The objective is to gain an understanding of the constraints and limitations of each technique as it will be applied in&#xD;
+    the given project context, and to either:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        find an appropriate implementation solution for each technique&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        find alternative techniques that can be used.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>&#xD;
+    This helps to mitigate the risk of discovering too late in the project lifecycle that the test approach is&#xD;
+    unworkable.&lt;br />&#xD;
+     For each iteration, this work is focused mainly on:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Early verification that the intended test strategy will work and produces results of value&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Establishing the basic infrastructure to enable and support the test strategy&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Obtaining commitment from the development team to develop the software to meet testability requirements necessary&#xD;
+        to achieve the test strategy, and to provide continued support for those testability requirements.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Identifying the scope, boundaries, limitations and constraints of each technique&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></mainDescription>
+    <usageGuidance>&lt;p>&#xD;
+    This activity starts early in each iteration, as soon as sufficient agreement is reached on the mission for the&#xD;
+    iteration, and continues as needed throughout the iteration. More frequently addressed in the earlier phases of&#xD;
+    Inception, Elaboration and early Construction, typically tapering off in late Construction and Transition.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    This activity is considered optional when the test approach is well known, and its applicability in the current context&#xD;
+    is well established.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    This work is somewhat independent of the test cycles, often involving the verification of techniques that will not be&#xD;
+    used until subsequent Iterations. This work normally begins after the evaluation mission has been defined for the&#xD;
+    current Iteration, although it can begin earlier. In some cases, finding the best implementation approach to a&#xD;
+    technique may take multiple Iterations.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    The test implementation and execution activities that form a part of this work are performed for the purpose of&#xD;
+    obtaining demonstrable proof that the techniques being verified can actually work. As such, you should limit your&#xD;
+    selection of tests to a small, representative subset; typically focusing on areas with substantial quality risk. You&#xD;
+    should try to include a selection of tests that you expect to fail to confirm that the technique will successfully&#xD;
+    detect these failures.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    While failures with the target test items will be identified and these incidents logged accordingly, this focus of this&#xD;
+    work is not directly on attempting to identify failures in the target test items as it's main objective. Again, the&#xD;
+    objective is to verify that the approach is appropriate (it produces results that complement the Iteration objectives),&#xD;
+    is achievable (it can be implemented with given resource constraints), and that it will work.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    For this work to produce timely results, it is often necessary to make use of incomplete, &quot;unofficial&quot; Builds, or to&#xD;
+    perform this work outside of a recognized Test Environment Configuration. Although these are appropriate compromises,&#xD;
+    be aware of the constraints, assumptions and risks involved in verifying your approach in under these conditions.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    As the lifecycle progresses through its Phases, the focus of the test effort typically changes. Potentially this&#xD;
+    requires new or additional approaches, often requiring the introduction of new types of tests or new techniques to&#xD;
+    support the test effort.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    In situations where the combination of domain, the test environment and other critical aspects of the strategy are&#xD;
+    unprecedented, you should allow more time and effort to complete this work. In some cases-especially where automation&#xD;
+    is a requirement-it may be more economic to obtain the use of resources with specialized skills that have proven&#xD;
+    experience in the unprecedented aspects of the strategy for a limited period of time (such as on contract) to define&#xD;
+    and verify the key technical needs of the test strategy.&lt;br />&#xD;
+&lt;/p></usageGuidance>
+    <howtoStaff>&lt;a id=&quot;HowToStaff&quot; name=&quot;HowToStaff&quot;>&lt;/a> 
+&lt;p>
+    Although most of the roles involved in the Test discipline play a part in performing this work, the effort is primarily
+    centered around the &lt;a class=&quot;elementLink&quot;
+    href=&quot;resources/rup_test_designer,{84F723B5-288F-4AC4-B6C1-C75A07BFEEED}.html&quot;
+    guid=&quot;{84F723B5-288F-4AC4-B6C1-C75A07BFEEED}&quot;>Test Designer&lt;/a> and &lt;a class=&quot;elementLink&quot;
+    href=&quot;resources/rup_tester,{A719CEAE-35FB-42F6-A076-F501B83E5B85}.html&quot;
+    guid=&quot;{A719CEAE-35FB-42F6-A076-F501B83E5B85}&quot;>Tester&lt;/a> roles. The most important skill areas required for this work
+    include software architecture, software design and problem solving.
+&lt;/p>
+&lt;p>
+    It is typical for this work to require more resource in iterations from the late Inception to early Construction
+    phases, often requiring minimal resource late in the Construction and in the Transition phases. However, be aware that
+    as the project progresses, new objectives or deliverables may be identified that require new test strategies to be
+    defined and verified.
+&lt;/p>
+&lt;p>
+    As a heuristic for relative resource allocation by phase, typical percentages of test resource use for
+    this&amp;nbsp;activity are: Inception - 30%, Elaboration - 20%, Construction - 10% and Transition - 05%.
+&lt;/p></howtoStaff>
+  </org.eclipse.epf.uma:ActivityDescription>
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="-_RCzHroiW5xuuY9WePEhAw" name="integrate_each_subsystem,{26723872-54F2-48C0-8384-0F595BD86EAD}" guid="-_RCzHroiW5xuuY9WePEhAw">
+    <mainDescription>&lt;a id=&quot;Description&quot; name=&quot;Description&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    If several implementers work (as a team) on the same Implementation Subsystem, the changes from the individual&#xD;
+    implementers need to be integrated to create a new consistent version of the Implementation Subsystem. The integration&#xD;
+    results in series of builds in a subsystem integration workspace. Each build is then integration tested by a tester or&#xD;
+    an implementer executing the developer tests. Following testing, the Implementation Subsystem is delivered into the&#xD;
+    system integration workspace.&#xD;
+&lt;/p></mainDescription>
+    <usageGuidance>&lt;p>&#xD;
+    Integration work is typically automated to a large degree, with manual effort required when the build breaks. A&#xD;
+    frequent strategy is to perform automated nightly builds and some automated testing (usually at the unit level),&#xD;
+    allowing for frequent feedback from the build process.&lt;br />&#xD;
+&lt;/p></usageGuidance>
+    <howtoStaff>&lt;a id=&quot;HowToStaff&quot; name=&quot;HowToStaff&quot;>&lt;/a> 
+&lt;p>
+    Integration is typically carried out by a single person (for a small project on which the build process in simple) or a
+    small team (for a large project on which the build process is complex). The integrators need experience in software
+    build management, configuration management, and experience in the programming language in which the components to be
+    integrated are written. Because integration often involves a high degree of automation, expertise in operating system
+    shell or scripting languages and tools like 'make' (on Unix) or 'ant' (for Java) is also essential.
+&lt;/p></howtoStaff>
+  </org.eclipse.epf.uma:ActivityDescription>
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="-UsFs_S5QOk35dgIYlJIqrA" name="integrate_the_system,{1EBA0F67-240A-4402-B830-4DB0FDFEEB9D}" guid="-UsFs_S5QOk35dgIYlJIqrA">
+    <mainDescription>&lt;a id=&quot;Description&quot; name=&quot;Description&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    The integrator integrates the system, in accordance with the integration build plan, by adding the delivered&#xD;
+    implementation subsystems into the system integration workspace and creating builds. Each build is then integration&#xD;
+    tested by a tester. After the last increment, the build can be completely system tested by a tester.&#xD;
+&lt;/p></mainDescription>
+    <usageGuidance>&lt;p>&#xD;
+    Integration work is typically automated to a large degree, with manual effort required when the build breaks. A&#xD;
+    frequent strategy is to perform automated nightly builds and some automated testing (usually at the unit level),&#xD;
+    allowing for frequent feedback from the build process.&#xD;
+&lt;/p></usageGuidance>
+    <howtoStaff>&lt;a id=&quot;HowToStaff&quot; name=&quot;HowToStaff&quot;>&lt;/a> 
+&lt;p>
+    Integration is typically carried out by a single person (for a small project on which the build process in simple) or a
+    small team (for a large project on which the build process is complex). The integrators need experience in software
+    build management, configuration management, and experience in the programming language in which the components to be
+    integrated are written. Because integration often involves a high degree of automation, expertise in operating system
+    shell or scripting languages and tools like 'make' (on Unix) or 'ant' (for Java) is also essential.
+&lt;/p></howtoStaff>
+  </org.eclipse.epf.uma:ActivityDescription>
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="-m3bhCl4K9uUI0kwc-_5Ucw" name="test_and_evaluate,{93B7D625-C83A-4EFB-9772-B88F2EB02CE2}" guid="-m3bhCl4K9uUI0kwc-_5Ucw">
+    <mainDescription>&lt;a id=&quot;Description&quot; name=&quot;Description&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    Typically performed once per test cycle, this work involves performing the core tactical work of the test and&#xD;
+    evaluation effort: namely the implementation, execution and evaluation of specific tests and the corresponding&#xD;
+    reporting of incidents that are encountered.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    For each test cycle, this work is focused mainly on:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Providing ongoing evaluation and assessment of the Target Test Items&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Recording the appropriate information necessary to diagnose and resolve any identified Issues&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Achieving suitable breadth and depth in the test and evaluation work&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Providing feedback on the most likely areas of potential quality risk&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></mainDescription>
+    <usageGuidance>&lt;p>&#xD;
+    Starting typically in Elaboration, this work is generally performed multiple times during an iteration, once per test&#xD;
+    cycle based on the availability of a series of Builds that warrant independent testing.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    As noted, this work is typically performed multiple times during an iteration; the actual number of times often&#xD;
+    equating to once per Build. Note however that it's typical not to test every Build. Note also that the Build schedule&#xD;
+    will often result in this work increasing in frequency during the course of the iteration. The need for additional&#xD;
+    cycles is governed by assessing when appropriate breadth and depth of testing is achieved within a test cycle, which is&#xD;
+    the focus of the &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../core.base_rup/capabilitypatterns/achieve_acceptable_mission_18DE9944.html&quot;&#xD;
+    guid=&quot;{5DA9C9E9-1538-4433-8B57-B28667D67514}&quot;>Activity: Achieve Acceptable Mission&lt;/a>.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    For iterations prior to and including those early in the Construction phase, additional effort is usually required to&#xD;
+    address tactical problems encountered for the first time during test implementation and execution. These issues often&#xD;
+    detract from the number of actual tests successfully implemented and executed and limit either the breadth or depth of&#xD;
+    the testing.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    The sophistication and availability of test automation tools and the necessary prerequisite skills to use them&#xD;
+    effectively will have an impact on the resourcing of this work. It may be appropriate to strategically deploy&#xD;
+    specialized contract resource for some part of this work to improve the likelihood of success. It may also be more&#xD;
+    economical to lease the automation tools and contract appropriately skilled people to use the tools, especially to help&#xD;
+    mitigate the risks in getting started. You need to balance the benefits of this approach with the necessity to develop&#xD;
+    in-house skills to maintain automation assets into the future.&#xD;
+&lt;/p></usageGuidance>
+    <howtoStaff>&lt;a id=&quot;HowToStaff&quot; name=&quot;HowToStaff&quot;>&lt;/a> 
+&lt;p>
+    The work is primarily centered around the &lt;a class=&quot;elementLink&quot;
+    href=&quot;resources/rup_tester,{A719CEAE-35FB-42F6-A076-F501B83E5B85}.html&quot;
+    guid=&quot;{A719CEAE-35FB-42F6-A076-F501B83E5B85}&quot;>Tester&lt;/a> and &lt;a class=&quot;elementLink&quot;
+    href=&quot;resources/rup_test_analyst,{8728060F-9DAD-42AD-B0B6-668C9AEA531D}.html&quot;
+    guid=&quot;{8728060F-9DAD-42AD-B0B6-668C9AEA531D}&quot;>Test Analyst&lt;/a> roles. The most important skills required for this work
+    include investigative and analytical skills, tenacity, thoroughness, good technical knowledge and good verbal and
+    written communication skills (documentation of incidents, change requests and so on).
+&lt;/p>
+&lt;p>
+    As a heuristic for relative resource allocation by phase, typical percentages of test resource use for
+    this&amp;nbsp;activity are: Inception - 05%, Elaboration - 25%, Construction - 40% and Transition - 35%.
+&lt;/p>
+&lt;p>
+    Where the requirement for test automation is particularly important, it may be useful to assign the creation and
+    maintenance of automation assets to a separate sub-team, allowing them to specialize on automation concerns. This
+    allows the other team members to focus on the improvement of non-automation test assets.
+&lt;/p></howtoStaff>
+  </org.eclipse.epf.uma:ActivityDescription>
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="-g3GY28JdsUXl6zpbrxzZpg" name="plan_for_next_iteration,{8040B743-6467-4067-8C0F-E62C3DE99414}" guid="-g3GY28JdsUXl6zpbrxzZpg">
+    <mainDescription>&lt;a id=&quot;Description&quot; name=&quot;Description&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    The Iteration Plan should be reviewed by the customer and other stakeholders and, if satisfactory, should be approved&#xD;
+    through the &lt;a class=&quot;elementLink&quot; href=&quot;./../../core.base_rup/tasks/iteration_plan_review_6D20D94.html&quot;&#xD;
+    guid=&quot;{6E82748E-E207-4D75-B38A-EDB9A53CDBAD}&quot;>Iteration Plan Review&lt;/a>. This review also gives the customer visibility&#xD;
+    of the project's expectations of customer participation and resources, particularly if the iteration is intended to&#xD;
+    deliver artifacts or deploy software, so the customer can make appropriate plans. In the Rational Unified Process, it&#xD;
+    is strongly recommended that the scope and resources of an iteration are actively managed to meet the planned end date,&#xD;
+    that is, a &lt;a class=&quot;elementLink&quot; href=&quot;./../../core.base_rup/guidances/termdefinitions/timeboxing_109B588A.html&quot;&#xD;
+    guid=&quot;_yYy-k9nmEdmO6L4XMImrsA&quot;>timeboxing&lt;/a> approach is used. This means that the Iteration Plan may be changed&#xD;
+    during an iteration, as schedule problems arise and are rectified.&#xD;
+&lt;/p></mainDescription>
+    <keyConsiderations>&lt;a id=&quot;Timing&quot; name=&quot;Timing&quot;>&lt;/a>&lt;a id=&quot;Optionality&quot; name=&quot;Optionality&quot;>&lt;/a>&lt;a id=&quot;WorkGuidelines&quot;&#xD;
+name=&quot;WorkGuidelines&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    The Project Manager should work closely with the Software Architect to define the iteration's contents. The Iteration&#xD;
+    Plan should be evaluated internally, through walkthrough and review, before being included in the Iteration Plan.&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        assess the clarity of expression of the evaluation criteria for the iteration&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        reach agreement internally that the planned artifacts can be built with the effort and time available&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        ensure that the results of the iteration will be testable or otherwise demonstrable; that is, the iteration will&#xD;
+        have a tangible outcome&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&lt;br />&#xD;
+&lt;br /></keyConsiderations>
+    <usageGuidance>&lt;p>&#xD;
+    This activity occurs in every iteration of every phase, excepting the final project iteration.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    This&amp;nbsp;activity is strongly recommended, as a means of managing the scope and resources of an iteration to keep the&#xD;
+    iteration, and the project, on track.&#xD;
+&lt;/p></usageGuidance>
+    <purpose>The primary purpose of this activity is to create an Iteration Plan. After creating the plan, adjustments may be needed to&#xD;
+the Business Case (for example, if costs change, or the return-on-investment calculation is affected by changes to the&#xD;
+availability dates of important features in the software).</purpose>
+    <howtoStaff>&lt;a id=&quot;HowToStaff&quot; name=&quot;HowToStaff&quot;>&lt;/a> 
+&lt;p>
+    The Project Manager needs a combination of planning, risk management and estimation skills, and an appreciation for the
+    technical content of the iteration, because the iteration's contents will be decided based on considerations of risk,
+    the need to demonstrate or deliver certain artifacts and capability, and the natural order imposed by integration. The
+    Project Manager will work closely with the &lt;a class=&quot;elementLink&quot;
+    href=&quot;rup/roles/rup_software_architect,{4AC346F0-E6FC-4D2C-8410-2EDF8DDDC91D}.html&quot;
+    guid=&quot;{4AC346F0-E6FC-4D2C-8410-2EDF8DDDC91D}&quot;>Software Architect&lt;/a> in the preparation of the Iteration Plan. The
+    Management Reviewer should have similar skills to the Project Manager, and also needs good domain understanding.
+&lt;/p></howtoStaff>
+  </org.eclipse.epf.uma:ActivityDescription>
+  <org.eclipse.epf.uma:BreakdownElementDescription xmi:id="-ebsRdcnTOX9s7LdnMZSTQA" name="Inception Milestone,_L0ujwFbVEdq3dao9IIkinA" guid="-ebsRdcnTOX9s7LdnMZSTQA">
+    <mainDescription>&lt;p>&#xD;
+    For more details about this milestone, see:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../systems.rup_se/guidances/concepts/se_lifecycle_objectives_860E509A.html&quot;&#xD;
+        guid=&quot;_yF_EAFYsEdqJs_Kh__XXYA&quot;>Concept: Systems Engineering - Lifecycle Objectives Milestone&lt;/a>&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../core.base_rup/tasks/lifecycle_milestone_review_B4D90641.html&quot;&#xD;
+        guid=&quot;{E611CCFD-E4C5-408E-9B0E-46B2A3D01290}&quot;>Task: Lifecycle Milestone Review&lt;/a>&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></mainDescription>
+  </org.eclipse.epf.uma:BreakdownElementDescription>
+  <org.eclipse.epf.uma:BreakdownElementDescription xmi:id="-ocwKgZVNGzOrc-W3uEKeDg" name="Elaboration Milestone,_dLKEEFbVEdq3dao9IIkinA" guid="-ocwKgZVNGzOrc-W3uEKeDg">
+    <mainDescription>&lt;p>&#xD;
+    For more details about this milestone, see:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../systems.rup_se/guidances/concepts/se_lifecycle_architecture_E97D6882.html&quot;&#xD;
+        guid=&quot;_2GYagFYwEdqJs_Kh__XXYA&quot;>Concept: Systems Engineering - Lifecycle Architecture Milestone&lt;/a>&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../core.base_rup/tasks/lifecycle_milestone_review_B4D90641.html&quot;&#xD;
+        guid=&quot;{E611CCFD-E4C5-408E-9B0E-46B2A3D01290}&quot;>Task: Lifecycle Milestone Review&lt;/a>&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></mainDescription>
+  </org.eclipse.epf.uma:BreakdownElementDescription>
+  <org.eclipse.epf.uma:BreakdownElementDescription xmi:id="-vOxNAd98kMA3bodqQagNQw" name="Construction Milestone,_Zk-LEFbWEdq3dao9IIkinA" guid="-vOxNAd98kMA3bodqQagNQw">
+    <mainDescription>&lt;p>&#xD;
+    For more details about this milestone, see:&amp;nbsp;&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+        href=&quot;./../../systems.rup_se/guidances/concepts/se_initial_operational_capability_C6E8F771.html&quot;&#xD;
+        guid=&quot;_TUXa0FY1Edq0zb5lDiAPnw&quot;>Concept: Systems Engineering - Initial Operational Capability Milestone&lt;/a>&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../core.base_rup/tasks/lifecycle_milestone_review_B4D90641.html&quot;&#xD;
+        guid=&quot;{E611CCFD-E4C5-408E-9B0E-46B2A3D01290}&quot;>Task: Lifecycle Milestone Review&lt;/a>&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></mainDescription>
+  </org.eclipse.epf.uma:BreakdownElementDescription>
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="-8Xe4nYb_avEr6z2JNrJJjw" name="analyze_the_problem,{554ECC71-6D6C-4ABD-B7CE-357973C63B9F}" guid="-8Xe4nYb_avEr6z2JNrJJjw">
+    <mainDescription>&lt;a id=&quot;Description&quot; name=&quot;Description&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    The first step in any problem analysis is to make sure that all parties involved agree on what the problem is that&#xD;
+    needs to be solved—or opportunity that will be realized—by the system.&amp;nbsp; In order to help avoid misunderstandings,&#xD;
+    it is important to agree on common terminology which will be used throughout the project. Starting early in the&#xD;
+    lifecycle, you should define your project terms in a &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../core.base_rup/workproducts/rup_glossary_A5D79A0C.html&quot;&#xD;
+    guid=&quot;{3BF8CC04-9101-47A4-9473-C8205EA588B6}&quot;>Glossary&lt;/a>&amp;nbsp;which will be maintained throughout the life of the&#xD;
+    project (see &lt;a class=&quot;elementLink&quot; href=&quot;./../../core.base_rup/tasks/capture_common_vocabulary_9BA76DA7.html&quot;&#xD;
+    guid=&quot;{962AC6BA-4ACA-4D7D-B56F-24558A026854}&quot;>Capture a Common Vocabulary&lt;/a>).&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    In order to fully understand the problem(s) that need to be addressed, it is very important to know who the&#xD;
+    stakeholders are in the conceptual vision for the project. These key stakeholders should be involved in gathering the&#xD;
+    set of features to be considered, which might be gathered in a &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../core.base_rup/guidances/guidelines/requirements_workshop_EEF2B469.html&quot; guid=&quot;4.234130639739827E-305&quot;>Requirements&#xD;
+    Workshop&lt;/a>. The features can then be assigned attributes such as rationale, relative value or priority, source of&#xD;
+    request and so on, so that dependencies and work plans can begin to be managed.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    The primary artifact in which you capture the information gained from your problem analysis is the &lt;a&#xD;
+    class=&quot;elementLink&quot; href=&quot;./../../core.base_rup/workproducts/rup_vision_2D6D6F1.html&quot;&#xD;
+    guid=&quot;{417F089F-6636-451A-A8AB-AB4EAC7AC4F1}&quot;>Vision&lt;/a>, which identifies the high-level user or customer view of the&#xD;
+    system to be built (see &lt;a class=&quot;elementLink&quot; href=&quot;./../../core.base_rup/tasks/develop_vision_D9584F04.html&quot;&#xD;
+    guid=&quot;{7069CFB7-77C3-4B44-B8A2-9CCA752BDDDA}&quot;>Develop Vision&lt;/a>). In the vision, initial high-level requirements&#xD;
+    identify the key &lt;a class=&quot;elementLink&quot; href=&quot;./../../core.base_rup/guidances/termdefinitions/feature_51388BDD.html&quot;&#xD;
+    guid=&quot;_yJTKANnmEdmO6L4XMImrsA&quot;>feature&lt;/a>s&amp;nbsp;it is desired that the appropriate solution will provide. These are&#xD;
+    typically expressed as a set of high-level features the system might possess in order to solve the most critical&#xD;
+    problems.&amp;nbsp;&amp;nbsp;&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    To determine the initial scope for your project, the boundaries of the system must be agreed upon.&amp;nbsp; The &lt;a&#xD;
+    class=&quot;elementLink&quot; href=&quot;./../../core.base_rup/roles/rup_system_analyst_C3C9C9AC.html&quot;&#xD;
+    guid=&quot;{F1F206DF-3AA0-4AC0-92EF-8E4A01B6C5B5}&quot;>System Analyst&lt;/a>&amp;nbsp;identifies users and systems which will interact&#xD;
+    with the system being developed.&amp;nbsp; The users of the system can be represented by &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../core.base_rup/workproducts/rup_actor_1F9CE9.html&quot; guid=&quot;{0EEBBA43-F5C6-4594-9F06-65D99F7556DF}&quot;>Actor&lt;/a>s in the&#xD;
+    &lt;a class=&quot;elementLink&quot; href=&quot;./../../core.base_rup/workproducts/rup_usecase_model_EF15E534.html&quot;&#xD;
+    guid=&quot;{9C66F2EC-EDEB-4369-9AFB-04B9E7CBCB8E}&quot;>Use-Case Model&lt;/a>&amp;nbsp;(see &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../core.base_rup/tasks/find_actors_and_use_cases_1ACB35F0.html&quot; guid=&quot;{3CD5FA7E-160C-4A39-9DEB-C6D162D8AECD}&quot;>Find&#xD;
+    Actors and Use Cases&lt;/a>).&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    The &lt;a class=&quot;elementLink&quot; href=&quot;./../../core.base_rup/workproducts/rup_requirements_management_plan_1CA2ED11.html&quot;&#xD;
+    guid=&quot;{53CFF11F-D0DB-4C92-B4D8-90D46B0EE3DF}&quot;>Requirements Management Plan&lt;/a>&amp;nbsp;is used to provide guidance on the&#xD;
+    requirements artifacts that you should develop, the&amp;nbsp;&lt;a class=&quot;elementLinkWithUserText&quot;&#xD;
+    href=&quot;./../../core.base_rup/guidances/concepts/types_of_requirements_528C097C.html&quot; guid=&quot;5.360970653483052E-305&quot;>types of&#xD;
+    requirements&lt;/a>&amp;nbsp;that should be managed for the project, the &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../core.base_rup/workproducts/rup_requirements_attributes_EFE5ABAC.html&quot;&#xD;
+    guid=&quot;{D0E2E7A1-4179-470E-AA18-419D5FEA275D}&quot;>Requirements Attributes&lt;/a>&amp;nbsp;that should be collected and the&#xD;
+    approach to requirements &lt;a class=&quot;elementLinkWithUserText&quot;&#xD;
+    href=&quot;./../../core.base_rup/guidances/concepts/traceability_8F6B898D.html&quot;&#xD;
+    guid=&quot;1.4005695544042474E-306&quot;>traceability&lt;/a>&amp;nbsp;that will be used in managing the product requirements.&amp;nbsp; It&#xD;
+    is important to develop this plan up front (see &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../core.base_rup/tasks/develop_rm_plan_89FFEB9A.html&quot; guid=&quot;{97E25B86-33D4-4378-A3C8-D6DCFEF35A77}&quot;>Develop&#xD;
+    Requirements Management Plan&lt;/a>).&#xD;
+&lt;/p></mainDescription>
+    <usageGuidance>&lt;p>&#xD;
+    This activity is performed primarily in early iterations of the project where the problem being addressed needs to be&#xD;
+    understood.&amp;nbsp;It should be revisited several times during Inception and early Elaboration.&amp;nbsp;&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Then, throughout the lifecycle of the project, it should be revisited as necessary while &lt;a&#xD;
+    class=&quot;elementLinkWithUserText&quot; href=&quot;./../../core.base_rup/capabilitypatterns/manage_changing_requirements_FF6AC18D.html&quot;&#xD;
+    guid=&quot;{28B39D62-9D73-4254-9CB8-26CFA737D45E}&quot;>managing the inevitable changes&lt;/a> that will occur in your project, in&#xD;
+    order to ensure that you continue to address the correct problem(s).&#xD;
+&lt;/p></usageGuidance>
+    <purpose>The purpose of this activity is to gain agreement on the problem being solved. Analysis of the problem involves identifying&#xD;
+the stakeholders, defining the boundary of, and identifying the constraints imposed on the system.</purpose>
+    <howtoStaff>&lt;a id=&quot;HowToStaff&quot; name=&quot;HowToStaff&quot;>&lt;/a> 
+&lt;p>
+    The project members involved in analyzing the problem should be efficient facilitators and have experience in
+    techniques for finding the problem behind the problem. Of course, familiarity with the targeted technology is
+    desirable, but it is not essential. Active involvement from various &lt;a class=&quot;elementLinkWithUserText&quot;
+    href=&quot;resources/rup_stakeholder,{7A4262EA-AB5B-431E-BB4A-3822FBF7F239}.html&quot;
+    guid=&quot;{7A4262EA-AB5B-431E-BB4A-3822FBF7F239}&quot;>stakeholders&lt;/a> in the project is required.
+&lt;/p></howtoStaff>
+  </org.eclipse.epf.uma:ActivityDescription>
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="-gZ3ey0YlZso-ZWsp_jxeBg" name="understand_stakeholder_needs,{F9E2B414-29F4-48F9-B263-35570D64314B}" guid="-gZ3ey0YlZso-ZWsp_jxeBg">
+    <mainDescription>&lt;a id=&quot;Description&quot; name=&quot;Description&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    This activity addresses collecting and eliciting information from the &lt;a class=&quot;elementLinkWithUserText&quot;&#xD;
+    href=&quot;./../../core.base_rup/roles/rup_stakeholder_1011D446.html&quot; guid=&quot;{7A4262EA-AB5B-431E-BB4A-3822FBF7F239}&quot;>stakeholders&lt;/a>&#xD;
+    in the project in order to understand what their needs really are (see &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../core.base_rup/tasks/elicit_stakeholder_requests_97BE5D6E.html&quot; guid=&quot;{EAEF65F0-E9CA-45B2-A875-47E66B3FDBC6}&quot;>Elicit&#xD;
+    Stakeholder Requests&lt;/a>). The collected &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../core.base_rup/workproducts/rup_stakeholder_requests_A89D2BF9.html&quot;&#xD;
+    guid=&quot;{75F38765-E25B-4459-907E-77F429652C0F}&quot;>Stakeholder Requests&lt;/a>&amp;nbsp;can be regarded as a &quot;wish list&quot; that will&#xD;
+    be used as primary input to defining the high-level features of your system, as described in the &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../core.base_rup/workproducts/rup_vision_2D6D6F1.html&quot;&#xD;
+    guid=&quot;{417F089F-6636-451A-A8AB-AB4EAC7AC4F1}&quot;>Vision&lt;/a>&amp;nbsp;(see &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../core.base_rup/tasks/develop_vision_D9584F04.html&quot; guid=&quot;{7069CFB7-77C3-4B44-B8A2-9CCA752BDDDA}&quot;>Develop&#xD;
+    Vision&lt;/a>), which drive the specification of the &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../core.base_rup/workproducts/rup_software_requirement_32CECE14.html&quot;&#xD;
+    guid=&quot;{BB502500-EEEC-4BDE-8697-186666D6D5B3}&quot;>Software Requirement&lt;/a>s, as described in the &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../core.base_rup/workproducts/rup_software_requirements_specification_934E66F.html&quot;&#xD;
+    guid=&quot;{BE8165DC-BAF2-4237-B27D-F2A037023364}&quot;>Software Requirements Specification&lt;/a>&amp;nbsp;(which may reference the &lt;a&#xD;
+    class=&quot;elementLink&quot; href=&quot;./../../core.base_rup/workproducts/rup_usecase_model_EF15E534.html&quot;&#xD;
+    guid=&quot;{9C66F2EC-EDEB-4369-9AFB-04B9E7CBCB8E}&quot;>Use-Case Model&lt;/a>,&amp;nbsp;&lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../core.base_rup/workproducts/rup_usecase_A5D30E62.html&quot; guid=&quot;{B1526BC5-E346-42CB-A08A-3C0D7F382407}&quot;>Use Case&lt;/a>s&#xD;
+    and &lt;a class=&quot;elementLink&quot; href=&quot;./../../core.base_rup/workproducts/rup_supplementary_specification_F5ACAA22.html&quot;&#xD;
+    guid=&quot;{B16C2941-791C-44E6-B353-354109B5C9DE}&quot;>Supplementary Specifications&lt;/a>).&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    The main objective is to elicit stakeholder requests using such input as interviews, &lt;a class=&quot;elementLinkWithUserText&quot;&#xD;
+    href=&quot;./../../core.base_rup/workproducts/rup_change_request_F2E6419.html&quot;&#xD;
+    guid=&quot;{694A7BC8-3D20-4172-BC56-6C7BD4590BA5}&quot;>enhancement requests&lt;/a>, and &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../core.base_rup/guidances/guidelines/requirements_workshop_EEF2B469.html&quot; guid=&quot;4.234130639739827E-305&quot;>Requirements&#xD;
+    Workshop&lt;/a>s. The primary outputs are collection(s) of prioritized features and their critical attributes, which will&#xD;
+    be used in defining the system and managing the scope of the system (see&amp;nbsp;&lt;a class=&quot;elementLinkWithUserText&quot;&#xD;
+    href=&quot;./../../core.base_rup/capabilitypatterns/define_the_system_ED861056.html&quot;&#xD;
+    guid=&quot;{20E30ECF-7359-45EC-AA5F-8A7BFA21C472}&quot;>defining the system&lt;/a>, &lt;a class=&quot;elementLinkWithUserText&quot;&#xD;
+    href=&quot;./../../core.base_rup/capabilitypatterns/manage_the_scope_of_the_system_7E0B34E5.html&quot;&#xD;
+    guid=&quot;{CA9197A9-051E-4845-A7FC-2A8750BD8C02}&quot;>managing system scope&lt;/a>).&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    This information results in a refinement of the vision, as well as a better understanding of the &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../core.base_rup/workproducts/rup_requirements_attributes_EFE5ABAC.html&quot;&#xD;
+    guid=&quot;{D0E2E7A1-4179-470E-AA18-419D5FEA275D}&quot;>Requirements Attributes&lt;/a>. Also, during the enactment of this activity&#xD;
+    you may start discussing the functional requirements of the system in terms of its &lt;a class=&quot;elementLinkWithUserText&quot;&#xD;
+    href=&quot;./../../core.base_rup/workproducts/rup_usecase_A5D30E62.html&quot; guid=&quot;{B1526BC5-E346-42CB-A08A-3C0D7F382407}&quot;>use cases&lt;/a>&#xD;
+    and &lt;a class=&quot;elementLinkWithUserText&quot; href=&quot;./../../core.base_rup/workproducts/rup_actor_1F9CE9.html&quot;&#xD;
+    guid=&quot;{0EEBBA43-F5C6-4594-9F06-65D99F7556DF}&quot;>actors&lt;/a>&amp;nbsp;(see &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../core.base_rup/tasks/find_actors_and_use_cases_1ACB35F0.html&quot; guid=&quot;{3CD5FA7E-160C-4A39-9DEB-C6D162D8AECD}&quot;>Find&#xD;
+    Actors and Use Cases&lt;/a>).&amp;nbsp; Those requirements which do not fit appropriately within the use cases should be&#xD;
+    documented in &lt;a class=&quot;elementLink&quot; href=&quot;./../../core.base_rup/workproducts/rup_supplementary_specification_F5ACAA22.html&quot;&#xD;
+    guid=&quot;{B16C2941-791C-44E6-B353-354109B5C9DE}&quot;>Supplementary Specifications&lt;/a>&amp;nbsp;(see &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../core.base_rup/tasks/develop_supplementary_specification_52FC4CAE.html&quot; guid=&quot;_I5vM8DJwEdqLGaxX1Cc4eA&quot;>Develop&#xD;
+    Supplementary Specifications&lt;/a>).&amp;nbsp;&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    As you define new requirements, it is important to document any dependencies (e.g., &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../core.base_rup/guidances/concepts/traceability_8F6B898D.html&quot; guid=&quot;1.4005695544042474E-306&quot;>Traceability&lt;/a>)&#xD;
+    between these requirements (see &lt;a class=&quot;elementLink&quot; href=&quot;./../../core.base_rup/tasks/manage_dependencies_4F6CEFAA.html&quot;&#xD;
+    guid=&quot;{7F42C4D6-584F-4B19-9B0B-FDE86BD85FBB}&quot;>Manage Dependencies&lt;/a>).&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Another important output is an updated &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../core.base_rup/workproducts/rup_glossary_A5D79A0C.html&quot; guid=&quot;{3BF8CC04-9101-47A4-9473-C8205EA588B6}&quot;>Glossary&lt;/a>&#xD;
+    of terms to facilitate communication through the use of a common vocabulary among team members (see &lt;a&#xD;
+    class=&quot;elementLink&quot; href=&quot;./../../core.base_rup/tasks/capture_common_vocabulary_9BA76DA7.html&quot;&#xD;
+    guid=&quot;{962AC6BA-4ACA-4D7D-B56F-24558A026854}&quot;>Capture a Common Vocabulary&lt;/a>).&#xD;
+&lt;/p></mainDescription>
+    <keyConsiderations>&lt;a id=&quot;Timing&quot; name=&quot;Timing&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    It should be noted that activities being performed in this capability pattern are not performed in sequence.&amp;nbsp; In&#xD;
+    fact, it is more-often the case that these activities are performed concurrently. For example, while identifying actors&#xD;
+    and use cases (&lt;a class=&quot;elementLink&quot; href=&quot;./../../core.base_rup/tasks/find_actors_and_use_cases_1ACB35F0.html&quot;&#xD;
+    guid=&quot;{3CD5FA7E-160C-4A39-9DEB-C6D162D8AECD}&quot;>Find Actors and Use Cases&lt;/a>), we may encounter requirements that do not&#xD;
+    naturally align with a particular use case, in which case the requirement may be defined in the Supplementary&#xD;
+    Specifications (&lt;a class=&quot;elementLink&quot; href=&quot;./../../core.base_rup/tasks/develop_supplementary_specification_52FC4CAE.html&quot;&#xD;
+    guid=&quot;_I5vM8DJwEdqLGaxX1Cc4eA&quot;>Develop Supplementary Specifications&lt;/a>). Conversely, while identifying&#xD;
+    non-use-case-specific requirements (e.g., system-wide requirements), we may encounter requirements that only apply to a&#xD;
+    particular use case, in which case the requirement is associated with the use case.&#xD;
+&lt;/p></keyConsiderations>
+    <usageGuidance>&lt;p>&#xD;
+    This activity is primarily performed in iterations during the Inception and Elaboration phases, however it may be&#xD;
+    revisited as needed when &lt;a class=&quot;elementLinkWithUserText&quot;&#xD;
+    href=&quot;./../../core.base_rup/capabilitypatterns/manage_the_scope_of_the_system_7E0B34E5.html&quot;&#xD;
+    guid=&quot;{CA9197A9-051E-4845-A7FC-2A8750BD8C02}&quot;>managing scope&lt;/a> and responding to &lt;a class=&quot;elementLinkWithUserText&quot;&#xD;
+    href=&quot;./../../core.base_rup/capabilitypatterns/manage_changing_requirements_FF6AC18D.html&quot;&#xD;
+    guid=&quot;{28B39D62-9D73-4254-9CB8-26CFA737D45E}&quot;>changing requirements&lt;/a>, as well as other changes in the project&#xD;
+    conditions.&#xD;
+&lt;/p></usageGuidance>
+    <purpose>The purpose of this activity is to understand the needs of the primary project stakeholders by gathering information about&#xD;
+the desired or envisaged product.</purpose>
+    <howtoStaff>&lt;a id=&quot;HowToStaff&quot; name=&quot;HowToStaff&quot;>&lt;/a> 
+&lt;p>
+    The project members involved in understanding stakeholder needs should be efficient facilitators and have experience in
+    eliciting information. Of course, familiarity with the targeted technology is desirable, but it is not essential.
+&lt;/p></howtoStaff>
+  </org.eclipse.epf.uma:ActivityDescription>
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="-AFt_O7-cMp_gj4KdI2tAFg" name="Elaboration Iteration [],_lUvlQVcgEdqg_O_Vo_o_VA" guid="-AFt_O7-cMp_gj4KdI2tAFg">
+    <mainDescription>&lt;p>&#xD;
+    In this depiction of a system development Elaboration iteration, the Analysis and Design workflow differs from the&#xD;
+    software development plan in the&amp;nbsp;activities that are invoked - Define Candidate System Architecture, Analyze&#xD;
+    System Behavior and Refine System Architecture in which the system architecture (structure, process and locality) is&#xD;
+    refined, along with the Subsystem Vision, Subsystem Use-Case Model and Subsystem Supplementary Requirements.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Subsystem development is shown as a summary&amp;nbsp;activity which runs in parallel with the system-level iteration: this&#xD;
+    should expand into a set of subactivities which replicate those under Software Development if the subproject is&#xD;
+    substantially software, or a set similar to those in the top-level Systems Engineering plan, if the the subsystem is&#xD;
+    itself a composite of hardware, software, and people.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Note that Implementation has been reduced to system integration, given that all construction takes place at the&#xD;
+    subsystem level. Details of Implementation, Test and Deployment, as they are affected for system development, are out&#xD;
+    of scope for this release of RUP for Systems Engineering.&#xD;
+&lt;/p></mainDescription>
+  </org.eclipse.epf.uma:ActivityDescription>
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="-BHrr3icio-nKt191mm7iuQ" name="Inception Iteration [],_FkmRkVcZEdqg_O_Vo_o_VA" guid="-BHrr3icio-nKt191mm7iuQ">
+    <mainDescription>&lt;p>&#xD;
+    In this depiction of a system development Inception iteration, the business modeling workflow as it impacts this system&#xD;
+    is assumed to have occurred essentially before development begins, as part of a separately planned project at the&#xD;
+    enterprise level, which might identify several systems (including this one) for development.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    The Analysis and Design workflow differs from the software development plan in the activities that are invoked -&#xD;
+    Synthesize System Architecture and&amp;nbsp;Define Subsystem Operations&amp;nbsp;- which are performed with the intention of&#xD;
+    establishing the feasibility of the development, and generating enough information (an embryonic Subsystem Vision and&#xD;
+    perhaps some preliminary subsystem Use-Cases and preliminary Subsystem Supplementary Requirements) to begin subsystem&#xD;
+    development.&#xD;
+&lt;/p></mainDescription>
+  </org.eclipse.epf.uma:ActivityDescription>
+</xmi:XMI>

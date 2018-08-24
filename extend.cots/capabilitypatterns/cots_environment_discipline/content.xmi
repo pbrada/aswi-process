@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1">
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="-OqpEZNS8lBt4BWce5jVYlw" name="prepare_environment_for_an_iteration,{A550E1F1-D779-4B1A-9E2C-A364E521A091}" guid="-OqpEZNS8lBt4BWce5jVYlw">
+    <mainDescription>&lt;a id=&quot;Description&quot; name=&quot;Description&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    For each iteration, this activity&amp;nbsp;is focused mainly on:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Completing the Development Case to get ready for the iteration.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Preparing and, if necessary, customizing the&amp;nbsp;tools to be used within the iteration.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Verifying that the tools have been correctly configured and installed.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Preparing a set of project-specific templates and guidelines to support the development of project artifacts in the&#xD;
+        iteration.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Make sure that all the changes made to the project environment are properly communicated to the project members.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></mainDescription>
+    <keyConsiderations>&lt;p>&#xD;
+    This activity is recommended for any project, although the described tasks may be performed somewhat informally in some&#xD;
+    types of projects and may be considered part of the on-going support of the project environment. For more information&#xD;
+    in this ongoing support, see &lt;a class=&quot;elementLinkWithUserText&quot;&#xD;
+    href=&quot;./../../core.base_rup/capabilitypatterns/support_environment_during_an_iteration_17F0693E.html&quot;&#xD;
+    guid=&quot;{250BC41A-650E-4E26-A26C-54F74C71552D}&quot;>Activity: Support the Environment During an Iteration&lt;/a>.&#xD;
+&lt;/p></keyConsiderations>
+    <usageGuidance>As the name implies, this activity&amp;nbsp;is performed at the beginning of every iteration.</usageGuidance>
+    <purpose>The purpose of this activity is to ensure that the project environment is ready for the upcoming iteration. This includes&#xD;
+process and tools.</purpose>
+    <howtoStaff>&lt;p>
+    A Process Engineer is responsible for completing the Development Case. It's unusual that one individual can master all
+    disciplines of software development, therefore, it's important that the process engineer consults experts, both within
+    and outside of the development organization.
+&lt;/p>
+&lt;p>
+    The development of project-specific templates and guidelines can be done by several people. There is no need for
+    detailed knowledge of the process to develop these project-specific artifacts.
+&lt;/p>
+&lt;p>
+    There are normally several individuals who act as Tool Specialists. Each individual is then responsible for one tool or
+    a group of related tools.
+&lt;/p></howtoStaff>
+  </org.eclipse.epf.uma:ActivityDescription>
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="-ygXUiMqclU8qBjAtakqm8g" name="prepare_environment_for_project,{37A50EF5-CC73-4E38-B851-997879548110}" guid="-ygXUiMqclU8qBjAtakqm8g">
+    <mainDescription>&lt;a id=&quot;Description&quot; name=&quot;Description&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    Preparing the development environment involves:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Defining how the project is going to use the configured &lt;a class=&quot;elementLink&quot;&#xD;
+        href=&quot;./../../core.base_rup/workproducts/rup_development_process_A6449790.html&quot;&#xD;
+        guid=&quot;{345D1811-317B-47EC-AC9D-10E1072A7D68}&quot;>Development Process&lt;/a>.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Qualifying work product selections with timing and formality requirements.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Preparing project-specific assets, like guidelines and templates.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Producing a list of candidate tools to use for development.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></mainDescription>
+    <keyConsiderations>&lt;a id=&quot;Timing&quot; name=&quot;Timing&quot;>&lt;/a>&lt;a id=&quot;Optionality&quot; name=&quot;Optionality&quot;>&lt;/a>&lt;a id=&quot;WorkGuidelines&quot;&#xD;
+name=&quot;WorkGuidelines&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    It is recommended to always spend some time preparing your development environment based on the specific needs of the&#xD;
+    project.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Background information about the state of the development organization is often collected prior to project startup and&#xD;
+    documented in &lt;a class=&quot;elementLinkWithUserText&quot;&#xD;
+    href=&quot;./../../core.base_rup/workproducts/rup_development_organization_assessment_A0186DDE.html&quot;&#xD;
+    guid=&quot;{FA77EBA9-75C7-4AA2-934A-B88BED853CBE}&quot;>Work Product: Development Organization Assessment&lt;/a>.&#xD;
+&lt;/p></keyConsiderations>
+    <usageGuidance>&lt;p>&#xD;
+    Preparing the environment for the project is done during the Inception phase. Any subsequent work done to improve and&#xD;
+    complete the prepared environment is described in the activity: Prepare Environment for an Iteration.&#xD;
+&lt;/p></usageGuidance>
+    <purpose>The purpose of this activity is to turn the underlying &lt;a class=&quot;elementLink&quot;&#xD;
+href=&quot;./../../core.base_rup/workproducts/rup_development_process_A6449790.html&quot;&#xD;
+guid=&quot;{345D1811-317B-47EC-AC9D-10E1072A7D68}&quot;>Development Process&lt;/a>&amp;nbsp;into a project-specific process, and to make the&#xD;
+&lt;a class=&quot;elementLink&quot; href=&quot;./../../core.base_rup/workproducts/rup_development_infrastructure_21BD206E.html&quot;&#xD;
+guid=&quot;{A40A3A6E-A090-46B4-B2FE-5F1AC36F010B}&quot;>Development Infrastructure&lt;/a>&amp;nbsp;ready for the project.</purpose>
+    <howtoStaff>&lt;a id=&quot;HowToStaff&quot; name=&quot;HowToStaff&quot;>&lt;/a> 
+&lt;p>
+    The tasks in this activity are best carried out by a small team, staffed by individuals with a good general knowledge
+    of the &lt;a class=&quot;elementLink&quot;
+    href=&quot;resources/rup_development_process,{345D1811-317B-47EC-AC9D-10E1072A7D68}.html&quot;
+    guid=&quot;{345D1811-317B-47EC-AC9D-10E1072A7D68}&quot;>Development Process&lt;/a>. If the organization has a dedicated process
+    group focusing on process and development environment, the &lt;a class=&quot;elementLinkWithType&quot;
+    href=&quot;resources/rup_process_engineer,{ADDC62A7-8E36-4DCE-9E5C-211B0950EBB5}.html&quot;
+    guid=&quot;{ADDC62A7-8E36-4DCE-9E5C-211B0950EBB5}&quot;>Role: Process Engineer&lt;/a>is often staffed from this group.
+&lt;/p></howtoStaff>
+  </org.eclipse.epf.uma:ActivityDescription>
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="-jQBpWs1oEwKWIb1aXXhdSw" name="support_environment_during_an_iteration,{250BC41A-650E-4E26-A26C-54F74C71552D}" guid="-jQBpWs1oEwKWIb1aXXhdSw">
+    <mainDescription>&lt;a id=&quot;Description&quot; name=&quot;Description&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    Supporting the project environment is an ongoing task to allow the project members to do their job efficiently without&#xD;
+    being slowed down due to issues with the development environment. This includes installation of required software,&#xD;
+    ensuring that the hardware is functioning properly and that potential network issues are resolved without delays.&#xD;
+&lt;/p></mainDescription>
+    <usageGuidance>&lt;p>&#xD;
+    The project environment needs continuous attention. This means that tasks related to supporting the environment are&#xD;
+    performed in every iteration throughout the project, with a peak in late elaboration and early construction, when the&#xD;
+    whole project machinery is up and running.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    This activity is required in most project settings.&#xD;
+&lt;/p></usageGuidance>
+    <purpose>The purpose of this activity is to support the developers in their use of tools and process during an iteration.</purpose>
+    <howtoStaff>&lt;p>
+    Support of the environment is carried out by one person or a small team of several people. In large organizations,
+    these people are often part of the company's IT department or members of its process group.
+&lt;/p></howtoStaff>
+  </org.eclipse.epf.uma:ActivityDescription>
+  <org.eclipse.epf.uma:ProcessDescription xmi:id="-YHRoHx5Xq-TeoKKNs5hCLA" name="environment,{659D51DD-DF1F-465E-9F3A-2FC6F9BC7C34}" guid="-YHRoHx5Xq-TeoKKNs5hCLA">
+    <mainDescription>During the early&amp;nbsp;iterations of the project, the project-specific environment is prepared. The project-specific&#xD;
+environment is then refined during each iteration, as needed.</mainDescription>
+    <purpose>The purpose of the environment activities is to provide the software development organization with the software development&#xD;
+environment, both processes and tools, that support the development team.</purpose>
+    <usageNotes>&lt;h4>&#xD;
+    Decide How to Perform the Workflow&#xD;
+&lt;/h4>&#xD;
+&lt;p>&#xD;
+    The following decisions should be made regarding the Environment discipline's workflow:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Decide how to perform the workflow by looking at the activities in this workflow. Study the diagram with its &lt;a&#xD;
+        class=&quot;elementLink&quot; href=&quot;./../../core.base_rup/guidances/termdefinitions/guard_condition_E3068D2.html&quot;&#xD;
+        guid=&quot;_yJ5m89nmEdmO6L4XMImrsA&quot;>guard condition&lt;/a>s and the guidelines. Decide which activities to perform and in&#xD;
+        which order.&amp;nbsp;&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Decide what parts of the Environment activities to perform. In general, the artifacts in the Environment discipline&#xD;
+        are introduced as they are needed. For example, a&amp;nbsp;&lt;a class=&quot;elementLink&quot;&#xD;
+        href=&quot;./../../core.base_rup/workproducts/rup_manual_styleguide_2E6E0412.html&quot;&#xD;
+        guid=&quot;{07A138D6-9C3B-438D-B7EC-D029998A91E4}&quot;>Manual Styleguide&lt;/a> is developed only if the project will develop&#xD;
+        &lt;a class=&quot;elementLink&quot; href=&quot;./../../core.base_rup/workproducts/rup_support_material_F6EEF661.html&quot;&#xD;
+        guid=&quot;{84C28309-4BB7-4243-8760-1B40C537A175}&quot;>User Support Material&lt;/a>.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Decide when, during the project lifecycle, to introduce each part of the workflow. The&amp;nbsp;&lt;a class=&quot;elementLink&quot;&#xD;
+        href=&quot;./../../core.base_rup/workproducts/rup_development_process_A6449790.html&quot;&#xD;
+        guid=&quot;{345D1811-317B-47EC-AC9D-10E1072A7D68}&quot;>Development Process&lt;/a> is always introduced in the beginning of a&#xD;
+        project.&amp;nbsp; Optionally, the&amp;nbsp;&lt;a class=&quot;elementLink&quot;&#xD;
+        href=&quot;./../../core.base_rup/workproducts/rup_development_case_F4260B3A.html&quot;&#xD;
+        guid=&quot;{F071C3D3-7054-457F-8A81-EFA6678CCDE1}&quot;>Development Case&lt;/a> may be used to document the detailed,&#xD;
+        project-specific tailoring decisions. A customized &lt;a class=&quot;elementLink&quot;&#xD;
+        href=&quot;./../../core.base_concepts/guidances/concepts/delivery_process_CFEBBC78.html&quot;&#xD;
+        guid=&quot;_EhgqwO8MEdmKSqa_gSYthg&quot;>Delivery Process&lt;/a>&amp;nbsp;may be imported into Rational Portfolio Manager to aid in&#xD;
+        assigning work and tracking progress of the project. The other artifacts are introduced when they are needed.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></usageNotes>
+  </org.eclipse.epf.uma:ProcessDescription>
+</xmi:XMI>

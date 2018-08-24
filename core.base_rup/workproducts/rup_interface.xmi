@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ArtifactDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_14xFYNnmEdmO6L4XMImrsA" name="rup_interface,{C6938487-1DAA-4F6A-B3BC-CB99165F0680}" guid="_14xFYNnmEdmO6L4XMImrsA" changeDate="2005-08-23T20:30:53.359-0700" version="7.1.0">
+  <mainDescription>An Interface is&amp;nbsp;model element which defines a set of behaviors (a set of operations) offered by a classifier model&#xD;
+element (specifically, a class, subsystem or component). A classifier may realize one or more interfaces. An interface may&#xD;
+be realized by one or more classifiers. Any classifiers which realize the same interfaces may be substituted for one&#xD;
+another in the system. Each interface should provide an unique and well-defined set of operations.</mainDescription>
+  <purpose>&lt;a id=&quot;Top&quot; name=&quot;Top&quot;>&lt;/a>&lt;a id=&quot;XE_interface__as_artifact&quot; name=&quot;XE_interface__as_artifact&quot;>&lt;/a>&lt;a&#xD;
+id=&quot;XE_interface__purpose_of&quot; name=&quot;XE_interface__purpose_of&quot;>&lt;/a>&lt;a id=&quot;Purpose&quot; name=&quot;Purpose&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    An interface declares a set of operations, including their signatures and parameters, that are use to specify the&#xD;
+    services offered by a classifier model element (e.g. a class, component or subsystem).&#xD;
+&lt;/p></purpose>
+  <representationOptions>UML Representation: Interface&amp;nbsp; &#xD;
+&lt;p>&#xD;
+    &lt;a id=&quot;Tailoring&quot; name=&quot;Tailoring&quot;>&lt;/a>&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Interfaces are typically used in conjunction with &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../core.base_rup/workproducts/rup_design_subsystem_1A8D169B.html&quot;&#xD;
+    guid=&quot;{A3C60B25-9780-4BFA-81AF-C1AD40D8A833}&quot;>Artifact: Design Subsystem&lt;/a>; it is usually not necessary or desirable&#xD;
+    to use interfaces in conjunction with &lt;a class=&quot;elementLinkWithUserText&quot;&#xD;
+    href=&quot;./../../core.base_rup/workproducts/rup_design_class_B33BD5E5.html&quot; guid=&quot;{952A9CE9-D5A3-43AC-980D-0B9298F3872E}&quot;>Work&#xD;
+    Product: Design Classes&lt;/a>, where using public operations is usually sufficient. Interfaces are typically used in&#xD;
+    cases where there is a need to define the behavior (in the form of operation signatures) independently from the&#xD;
+    elements that realize those operations. This implies the existence of larger-grained abstractions of behavior or&#xD;
+    replaceability, modeled as design subsystems. For projects that do not have these attributes, interfaces can be&#xD;
+    omitted.&#xD;
+&lt;/p>&lt;br />&#xD;
+&lt;br /></representationOptions>
+</org.eclipse.epf.uma:ArtifactDescription>

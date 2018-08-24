@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.uma:ProcessComponent xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.ibm.uma="http://www.ibm.com/uma/1.0.2/uma.ecore" xmi:id="_rWcoQdoJEdm5N8vZEEaxbg" name="rup_analysis_design_discipline" guid="_rWcoQdoJEdm5N8vZEEaxbg">
+  <childPackages xsi:type="com.ibm.uma:ProcessPackage" xmi:id="_rdnAMNoJEdm5N8vZEEaxbg" name="design_database" guid="_rdnAMNoJEdm5N8vZEEaxbg">
+    <processElements xsi:type="com.ibm.uma:Activity" xmi:id="_rWWhodoJEdm5N8vZEEaxbg" name="design_database" guid="_rWWhodoJEdm5N8vZEEaxbg" presentationName="design_database" superActivities="_rWcoQNoJEdm5N8vZEEaxbg" variabilityType="contributes" breakdownElements="_rdnAMdoJEdm5N8vZEEaxbg _rdnAMtoJEdm5N8vZEEaxbg _rdnAM9oJEdm5N8vZEEaxbg _rdnANNoJEdm5N8vZEEaxbg _rdnANdoJEdm5N8vZEEaxbg _rdnANtoJEdm5N8vZEEaxbg"/>
+    <processElements xsi:type="com.ibm.uma:TaskDescriptor" xmi:id="_rdnAMdoJEdm5N8vZEEaxbg" name="Specify Data Migration" guid="_rdnAMdoJEdm5N8vZEEaxbg" presentationName="Specify Data Migration" superActivities="_rWWhodoJEdm5N8vZEEaxbg" mandatoryInput="_rdnAM9oJEdm5N8vZEEaxbg" optionalInput="_rdnANNoJEdm5N8vZEEaxbg _rdnANdoJEdm5N8vZEEaxbg" output="_rdnANtoJEdm5N8vZEEaxbg" performedPrimarilyBy="_rdnAMtoJEdm5N8vZEEaxbg">
+      <Task href="uma://{C4943D13-2422-40B6-9441-E94D598AE477}#{AFE73E86-AD34-4A5C-8DF3-FCD28DBE2F22}"/>
+    </processElements>
+    <processElements xsi:type="com.ibm.uma:RoleDescriptor" xmi:id="_rdnAMtoJEdm5N8vZEEaxbg" name="rup_database_designer_legacy" guid="_rdnAMtoJEdm5N8vZEEaxbg" presentationName="rup_database_designer_legacy" superActivities="_rWWhodoJEdm5N8vZEEaxbg" performsAsOwner="_rdnAMdoJEdm5N8vZEEaxbg">
+      <Role href="uma://{C4943D13-2422-40B6-9441-E94D598AE477}#{666E7C27-1247-4B2F-BE80-9EDC17696770}"/>
+    </processElements>
+    <processElements xsi:type="com.ibm.uma:WorkProductDescriptor" xmi:id="_rdnAM9oJEdm5N8vZEEaxbg" name="Software Requirement" guid="_rdnAM9oJEdm5N8vZEEaxbg" presentationName="Software Requirement" superActivities="_rWWhodoJEdm5N8vZEEaxbg" mandatoryInputTo="_rdnAMdoJEdm5N8vZEEaxbg">
+      <WorkProduct xsi:type="com.ibm.uma:Artifact" href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{BB502500-EEEC-4BDE-8697-186666D6D5B3}"/>
+    </processElements>
+    <processElements xsi:type="com.ibm.uma:WorkProductDescriptor" xmi:id="_rdnANNoJEdm5N8vZEEaxbg" name="Data Model" guid="_rdnANNoJEdm5N8vZEEaxbg" presentationName="Data Model" superActivities="_rWWhodoJEdm5N8vZEEaxbg" OptionalInputTo="_rdnAMdoJEdm5N8vZEEaxbg">
+      <WorkProduct xsi:type="com.ibm.uma:Artifact" href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{9DCF1723-1A21-4F48-BEDE-DBC543489682}"/>
+    </processElements>
+    <processElements xsi:type="com.ibm.uma:WorkProductDescriptor" xmi:id="_rdnANdoJEdm5N8vZEEaxbg" name="Design Use-Case Realization" guid="_rdnANdoJEdm5N8vZEEaxbg" presentationName="Design Use-Case Realization" superActivities="_rWWhodoJEdm5N8vZEEaxbg" OptionalInputTo="_rdnAMdoJEdm5N8vZEEaxbg">
+      <WorkProduct xsi:type="com.ibm.uma:Artifact" href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{87EB094F-095B-4981-ACC3-319B3B298641}"/>
+    </processElements>
+    <processElements xsi:type="com.ibm.uma:WorkProductDescriptor" xmi:id="_rdnANtoJEdm5N8vZEEaxbg" name="Data Migration Specification" guid="_rdnANtoJEdm5N8vZEEaxbg" presentationName="Data Migration Specification" superActivities="_rWWhodoJEdm5N8vZEEaxbg" outputFrom="_rdnAMdoJEdm5N8vZEEaxbg">
+      <WorkProduct xsi:type="com.ibm.uma:Artifact" href="uma://{C4943D13-2422-40B6-9441-E94D598AE477}#{24309CAC-2A58-4011-B0F0-0A7D2FD58AEA}"/>
+    </processElements>
+  </childPackages>
+  <process xsi:type="com.ibm.uma:ProcessContribution" xmi:id="_rWcoQNoJEdm5N8vZEEaxbg" name="rup_analysis_design_discipline" guid="_rWcoQNoJEdm5N8vZEEaxbg" briefDescription="TBD" presentationName="rup_analysis_design_discipline" breakdownElements="_rWWhodoJEdm5N8vZEEaxbg"/>
+</com.ibm.uma:ProcessComponent>

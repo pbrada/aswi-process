@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_2MboQtnmEdmO6L4XMImrsA" name="implement_component,{3293F4F7-EFCD-4476-BFF1-81AC3812B512}" guid="_2MboQtnmEdmO6L4XMImrsA" changeDate="2005-10-10T08:55:15.630-0700" version="7.1.0">
+  <sections xmi:id="_VRnXkNnnEdmO6L4XMImrsA" name=" Prepare for Implementation " guid="_VRnXkNnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;prepare&quot; name=&quot;prepare&quot;>&lt;/a> &#xD;
+&lt;h5>&#xD;
+    Understand the Task/Problem&#xD;
+&lt;/h5>&#xD;
+&lt;p>&#xD;
+    Before starting with an implementation task, the implementer must be clear on the scope, as specified in work&#xD;
+    assignments and iteration plans. An implementation task can be focused on achieving some specific functionality (such&#xD;
+    as implementing a design use-case realization or fixing a defect) that involves implementing several design elements&#xD;
+    that contribute to that functionality. Alternatively, an implementation task can be focussed on a particular design&#xD;
+    element, such as a Design Subsystem or a Design Class, implementing it to the extent required for the current&#xD;
+    iteration.&#xD;
+&lt;/p>&#xD;
+&lt;h5>&#xD;
+    Configure Development Environment&#xD;
+&lt;/h5>&#xD;
+&lt;p>&#xD;
+    This task results in creating or updating one or more files (Implementation Elements). As part of preparing for&#xD;
+    implementation, the implementer must ensure that his or her development environment is correctly configured so that the&#xD;
+    right element versions are available, both the elements to be updated, and any other elements required for compilation&#xD;
+    and unit testing. The implementer must be aware of, and follow the project's configuration and change management&#xD;
+    procedures, which describe how changes are controlled and versioned, and how they are delivered for integration.&#xD;
+&lt;/p>&#xD;
+&lt;h5>&#xD;
+    Analyze Existing Implementation&#xD;
+&lt;/h5>&#xD;
+&lt;p>&#xD;
+    Before you implement a class from scratch, consider whether there is existing code that can be reused or adapted.&#xD;
+    Understanding where the implementation fits in to the architecture and design of the rest of the system can help the&#xD;
+    implementer identify such reuse opportunities, as well as ensuring that the implementation fits with the rest of the&#xD;
+    system.&#xD;
+&lt;/p>&#xD;
+&lt;h5>&#xD;
+    Implement Incrementally&#xD;
+&lt;/h5>&#xD;
+&lt;p>&#xD;
+    It is recommended that you implement incrementally; compile, link and run some regression tests a couple of times a&#xD;
+    day. It is important be aware that not all public operations, attributes and associations are defined during design.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    When dealing with defects, ensure that you have fixed the problem, not the symptom; the focus should be on fixing the&#xD;
+    underlying problem in the code. Make one change at a time; because fixing faults is in itself an error-prone task, it&#xD;
+    is important to implement the fixes incrementally, to make it easy to locate where any new faults are occurring from.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    The implementer must be aware of, and follow any project-specific implementation guidelines, including programming&#xD;
+    guidelines for the specific programming languages.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_VRxIkNnnEdmO6L4XMImrsA" name=" Transform design to implementation " guid="_VRxIkNnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;transform&quot; name=&quot;transform&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    There are various techniques for transforming design to implementation. Here are some examples:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Platform-specific visual models can be used to generate an initial code framework. This code framework can then be&#xD;
+        further elaborated with additional code not specified in the design.&lt;br />&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Models can be detailed, and used to generate executable prototypes. Both structure (class and package diagrams) and&#xD;
+        behavior diagrams (such as state and activity diagram) can be used to generate executable code. These prototypes&#xD;
+        can be further refined as needed.&lt;br />&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Models can also be detailed to the point where the model completely represents the implementation. In this case,&#xD;
+        rather than transform an abstract design to a code implementation, one takes the design and adds implementation&#xD;
+        details directly to the model.&lt;br />&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        The design may be platform independent to varying degrees. Platform specific design models or even code can be&#xD;
+        generated via transformations that apply various rules to map high level abstractions platform specific elements.&#xD;
+        This is the focus of the Object Management Group (OMG) Model Driven Architecture (MDA) &lt;a href=&quot;http://www.omg.org&quot;&#xD;
+        target=&quot;_blank&quot;>(http://www.omg.org&lt;/a>) initiative.&lt;br />&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Standard patterns can also be applied to generate design and code elements from related design and implementation.&#xD;
+        For example, a standard transformation pattern can be applied to a data table to create java classes to access the&#xD;
+        data table. Another example is using an Eclipse Modeling Framework (&lt;a href=&quot;http://www.eclipse.org/emf/&quot;&#xD;
+        target=&quot;_blank&quot;>http://www.eclipse.org/emf/&lt;/a>) model to generate code for storing data that matches the model and&#xD;
+        to generate a user interface implementation for populating data.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>&#xD;
+    In all cases, however, some design abstraction is detailed to become the implementation, either manually or through the&#xD;
+    application of some automated transformation.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_VRxIkdnnEdmO6L4XMImrsA" name=" Complete the implementation " guid="_VRxIkdnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;complete&quot; name=&quot;complete&quot;>&lt;/a>&#xD;
+&lt;p>&#xD;
+    As described in the previous step, transformation of design to implementation can result in varying degrees of&#xD;
+    completeness of implementation. It may be a complete and acceptable implementation. Typically, however, there is&#xD;
+    substantial effort to complete the implementation, for example:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Tuning the results of transformation (for example, to improve performance, or to improve the user interface)&lt;br />&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Adding missing details, such as: &#xD;
+        &lt;ul>&#xD;
+            &lt;li>&#xD;
+                completing operations described in the design - choosing algorithms and writing the code.&#xD;
+            &lt;/li>&#xD;
+            &lt;li>&#xD;
+                adding additional supporting classes, operations, and data structure&#xD;
+            &lt;/li>&#xD;
+        &lt;/ul>&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></sectionDescription>
+  </sections>
+  <sections xmi:id="_VRxIktnnEdmO6L4XMImrsA" name=" Evaluate the implementation " guid="_VRxIktnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;evaluate&quot; name=&quot;evaluate&quot;>&lt;/a>&#xD;
+&lt;p>&#xD;
+    This is where you verify that the implementation is fit for purpose.&amp;nbsp; In addition to testing (described in other&#xD;
+    tasks), some additional checks are often useful:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Mentally read through the code. Consider keeping a checklist of common mistakes that you personally make in your&#xD;
+        implementations, and look for those mistakes.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Use tools to check the code for errors. For example, a static code rule checker, or compiler set to detailed&#xD;
+        warning level.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Use tools that can visualize the code. Code visualization can help an implementer identify patterns such as&#xD;
+        excessive coupling, circular dependencies, and so forth.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></sectionDescription>
+  </sections>
+  <sections xmi:id="_VRxIk9nnEdmO6L4XMImrsA" name=" Provide Feedback to Design " guid="_VRxIk9nnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;feedback&quot; name=&quot;feedback&quot;>&lt;/a>&#xD;
+&lt;p>&#xD;
+    As designs are implemented and tested, inevitably errors are discovered, often errors that affect the design. If a&#xD;
+    design abstraction is maintained for future maintenance efforts, or for contractual or communication reasons, then the&#xD;
+    design has to be updated.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    How this is done depends on the project's configuration and change management process. Generally, if the required&#xD;
+    change is small, and the same individual is designing and implementing the class, then there is no need for a formal&#xD;
+    change request. The individual can do the change in the design.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    If the required change has a broad impact, for example a change in a public operation, then it may be necessary to&#xD;
+    submit a formal change request.&#xD;
+&lt;/p>&lt;br />&#xD;
+&lt;br /></sectionDescription>
+  </sections>
+</org.eclipse.epf.uma:TaskDescription>

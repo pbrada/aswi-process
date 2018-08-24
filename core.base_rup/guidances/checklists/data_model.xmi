@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_1vhp0tnmEdmO6L4XMImrsA" name="data_model,2.800761632096845E-305" guid="_1vhp0tnmEdmO6L4XMImrsA" changeDate="2005-06-21T09:53:20.045-0700" version="7.1.0">
+  <mainDescription>&lt;a id=&quot;XE_data_model__checkpoints&quot; name=&quot;XE_data_model__checkpoints&quot;>&lt;/a>&lt;br />&#xD;
+&lt;br /></mainDescription>
+  <sections xmi:id="_GsEc4fM1Edmy-_OjcFOpJQ" name=" All persistent classes that use the database for persistency have been mapped to database structures" guid="_GsEc4fM1Edmy-_OjcFOpJQ">
+    <sectionName> All persistent classes that use the database for persistency have been mapped to database structures</sectionName>
+  </sections>
+  <sections xmi:id="_GsEc4vM1Edmy-_OjcFOpJQ" name=" Many-to-many relationships have an intersecting table" guid="_GsEc4vM1Edmy-_OjcFOpJQ">
+    <sectionName> Many-to-many relationships have an intersecting table</sectionName>
+  </sections>
+  <sections xmi:id="_GsKjgPM1Edmy-_OjcFOpJQ" name=" Primary keys have been defined for each table, unless there is a performance reason not to define a primary key" guid="_GsKjgPM1Edmy-_OjcFOpJQ">
+    <sectionName> Primary keys have been defined for each table, unless there is a performance reason not to define a primary key</sectionName>
+  </sections>
+  <sections xmi:id="_GsKjgfM1Edmy-_OjcFOpJQ" name=" The storage and retrieval of data has been optimized" guid="_GsKjgfM1Edmy-_OjcFOpJQ">
+    <sectionName> The storage and retrieval of data has been optimized</sectionName>
+    <sectionDescription>&lt;div style=&quot;MARGIN-LEFT: 2em&quot;>&#xD;
+    If a relational database is used, tables have been denormalized (where necessary) to improve performance.&#xD;
+&lt;/div>&#xD;
+&lt;div style=&quot;MARGIN-LEFT: 2em&quot;>&#xD;
+    Where denormalization has been used, all update, insert and delete scenarios have been considered to ensure the&#xD;
+    denormalization does not degrade performance for those operations.&#xD;
+&lt;/div></sectionDescription>
+  </sections>
+  <sections xmi:id="_GsKjgvM1Edmy-_OjcFOpJQ" name=" Indexes have been defined to optimize access" guid="_GsKjgvM1Edmy-_OjcFOpJQ">
+    <sectionName> Indexes have been defined to optimize access</sectionName>
+  </sections>
+  <sections xmi:id="_GsKjg_M1Edmy-_OjcFOpJQ" name=" The impact of index updates has been considered in the other table operations" guid="_GsKjg_M1Edmy-_OjcFOpJQ">
+    <sectionName> The impact of index updates has been considered in the other table operations</sectionName>
+  </sections>
+  <sections xmi:id="_GsKjhPM1Edmy-_OjcFOpJQ" name=" The distribution of data has been planned" guid="_GsKjhPM1Edmy-_OjcFOpJQ">
+    <sectionName> The distribution of data has been planned</sectionName>
+  </sections>
+  <sections xmi:id="_GsKjhfM1Edmy-_OjcFOpJQ" name=" Data and referential integrity constraints have been defined" guid="_GsKjhfM1Edmy-_OjcFOpJQ">
+    <sectionName> Data and referential integrity constraints have been defined</sectionName>
+  </sections>
+  <sections xmi:id="_GsKjhvM1Edmy-_OjcFOpJQ" name=" A plan exists for maintaining validation constraints when the data rules change" guid="_GsKjhvM1Edmy-_OjcFOpJQ">
+    <sectionName> A plan exists for maintaining validation constraints when the data rules change</sectionName>
+  </sections>
+  <sections xmi:id="_GsKjh_M1Edmy-_OjcFOpJQ" name=" Stored procedures and triggers have been defined" guid="_GsKjh_M1Edmy-_OjcFOpJQ">
+    <sectionName> Stored procedures and triggers have been defined</sectionName>
+  </sections>
+  <sections xmi:id="_GsKjiPM1Edmy-_OjcFOpJQ" name=" The persistence mechanism uses stored procedures and database triggers consistently" guid="_GsKjiPM1Edmy-_OjcFOpJQ">
+    <sectionName> The persistence mechanism uses stored procedures and database triggers consistently</sectionName>
+  </sections>
+</org.eclipse.epf.uma:ContentDescription>

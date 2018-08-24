@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_92K-kN0MEdmhp5PapAYf4w" name="architectural_analysis,{B7FABC7A-42FA-4DC7-A1F4-C4F5DB6F673F}" guid="_92K-kN0MEdmhp5PapAYf4w" changeDate="2005-11-14T13:25:45.428-0800" version="7.1.0">
+  <mainDescription>&lt;p>&#xD;
+    System Architectural Analysis is about the determination of the coarse-grained logical, physical, and process structure&#xD;
+    of the system, the identification of those elements (in collaborations) that realize architecturally significant use&#xD;
+    cases, and the creation of the vision documents for these subordinate elements. The System Architect might also use&#xD;
+    existing architectural assets, if these are available, such as architectural patterns or reference architectures.&#xD;
+&lt;/p></mainDescription>
+  <sections xmi:id="_AWwsAN0NEdmhp5PapAYf4w" name=" Develop System Architecture Overview " guid="_AWwsAN0NEdmhp5PapAYf4w">
+    <sectionDescription>&lt;a id=&quot;Develop System Architecture Overview&quot; name=&quot;Develop System Architecture Overview&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    The System Architecture Overview is created early in the lifecycle of a project, possibly as early as the inception&#xD;
+    phase (in &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../systems.rup_se/capabilitypatterns/synthesize_system_architecture_B65AF7C1.html&quot;&#xD;
+    guid=&quot;_f-muUVVwEdqgIdhbAiG50A&quot;>Activity: Synthesize System Architecture&lt;/a>). It reflects early decisions and working&#xD;
+    assumptions on implementing the Vision, as well as decisions concerning the physical, logical and process architecture&#xD;
+    and non-functional requirements of the system. It is produced by the System Architect, usually in the form of an&#xD;
+    informal sketch. Conceptually, it illustrates the essential nature of the proposed solution, conveying the governing&#xD;
+    ideas and including the major building blocks. The level of formality of the System Architectural Overview is&#xD;
+    project-dependent. For example, in a large, high-ceremony project, it might be necessary to capture the System&#xD;
+    Architecture Overview in the appropriate sections of the System Architecture Document, so that it can be formally&#xD;
+    reviewed. In this case the System Architect has to use a formal (UML) illustration of the tentative solution.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Many systems are constrained to be developed and deployed in an existing environment of hardware, software, and people;&#xD;
+    for these, the Software Architect gathers information about the current environment and captures it in the System&#xD;
+    Deployment Model.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_AWwsAd0NEdmhp5PapAYf4w" name=" Survey available assets " guid="_AWwsAd0NEdmhp5PapAYf4w">
+    <sectionDescription>&lt;a id=&quot;Survey Available Assets&quot; name=&quot;Survey Available Assets&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    Understand the requirements of the environment for which assets are being considered. Understand the system scope and&#xD;
+    the general functionality required. Search through organizational asset bases, and industry literature to identify&#xD;
+    assets or similar projects. Consider several types of assets, such as, but not limited to, industry models, frameworks,&#xD;
+    classes, and experience. Assess whether available assets could contribute to solving the key challenges of the current&#xD;
+    project, and are compatible with its constraints.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Analyze the extent of fit between asset and customer requirements. Consider whether any of the requirements are&#xD;
+    negotiable (to enable use of the asset).&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Assess whether the asset could be modified or extended to satisfy requirements. Assess the trade-offs in cost, risk,&#xD;
+    and functionality from adopting the asset.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Decide in principle whether to use one or more assets, and document the rationale for this decision.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_AWwsAt0NEdmhp5PapAYf4w" name=" Determine the initial logical decomposition into subsystems " guid="_AWwsAt0NEdmhp5PapAYf4w">
+    <sectionDescription>&lt;a id=&quot;Determine the Initial Logical Decomposition into Subsystems&quot;&#xD;
+name=&quot;Determine the Initial Logical Decomposition into Subsystems&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    In this step, the System Architect has the task of partitioning the system into subsystems (which themselves can be&#xD;
+    further decomposed if sufficiently large or complex). The subsystems collaborate to deliver the behavior described in&#xD;
+    the Use-Case Model, and, in particular, collaborate to realize the operations defined in &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../systems.rup_se/tasks/se_define_system_context_1233657D.html&quot; guid=&quot;{C66A11BC-B869-4702-AE8D-C8347BD0AA96}&quot;>Task:&#xD;
+    Define the System Context&lt;/a>. The System Architect strives to create a set of subsystems that are:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Functionally cohesive (have a well-defined and limited set of related capabilities and responsibilities).&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Minimally coupled one to the other (the communication between subsystems that is required in the realization of&#xD;
+        system operations is kept to a minimum).&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>&#xD;
+    Requirements work and Business Modeling work highlight abstractions that are candidates to become subsystems: the&#xD;
+    expression of requirements in domain-appropriate language yield terms for entities that might become subsystems. The&#xD;
+    domain itself, independent of the specific requirements for this system, might also guide the System Architect, because&#xD;
+    there are concepts in the domain that are naturally (and historically) treated as subsystems. Rarely are a system and&#xD;
+    its associated domain so completely unprecedented that there is not some guidance from previous implementations. Indeed&#xD;
+    the domain might be so well explored that the System Architect can say with confidence that certain capabilities are to&#xD;
+    be implemented in mechanical/electrical subsystems, others in software subsystems, and others as manual&#xD;
+    (people/procedural) subsystems.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Depending on the domain, and the novelty of the system, &lt;a class=&quot;elementLinkWithUserText&quot;&#xD;
+    href=&quot;./../../core.base_rup/guidances/termdefinitions/analysis_pattern_86D515F0.html&quot; guid=&quot;_x613Q9nmEdmO6L4XMImrsA&quot;>analysis&#xD;
+    patterns&lt;/a>, which capture many of the key abstractions required to model the system, might already exist. The Object&#xD;
+    Management Group is also attempting to define interfaces and protocols for many domains, through the work of its Domain&#xD;
+    Technology Committee and associated task forces. Inevitably, this work leads to the identification of important&#xD;
+    abstractions in the domain.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Approached in this way, the System Architect can avoid a purely ad-hoc functional decomposition (and allocation of&#xD;
+    requirements to subsystems), which often results in a sub-optimal architecture (see &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../core.base_rup/guidances/concepts/derived_requirements_736A0AC0.html&quot; guid=&quot;_khKN4OM9EdmaZcY4PeqVxA&quot;>Concept:&#xD;
+    Derived Requirements&lt;/a>).&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_AWwsA90NEdmhp5PapAYf4w" name=" Determine the system-level processes " guid="_AWwsA90NEdmhp5PapAYf4w">
+    <sectionDescription>&lt;a id=&quot;Determine the System-level Processes&quot; name=&quot;Determine the System-level Processes&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    By default, the System Architect might treat each subsystem as an entity capable of carrying out its responsibilities&#xD;
+    autonomously and concurrently with other subsystems, communicating asynchronously with other subsystems as needed; that&#xD;
+    is, the subsystems can be regarded as active, having their own loci of control. From this basic model, other forms of&#xD;
+    computation and communication can be constructed if required. For example, in a software system, if the System&#xD;
+    Architect see fit, a subsystem can be designed to be passive, that is, its operations are executed by processes&#xD;
+    &lt;i>external&lt;/i> to the subsystem (including invocations by other subsystems). This might bring some efficiencies in&#xD;
+    execution (by reducing the process context switching overhead), at the expense of perhaps having to protect the passive&#xD;
+    subsystem (or have it protect itself) from corruption caused by multiple simultaneous (and uncoordinated) invocations&#xD;
+    of its operations.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Any processes external to the subsystems are represented as stereotyped active classes, and the drivers for their&#xD;
+    identification are the same as for standard RUP-based software development (see &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../core.base_rup/guidances/concepts/concurrency_EE2E011A.html&quot; guid=&quot;3.5787175388799096E-305&quot;>Concept:&#xD;
+    Concurrency&lt;/a>), for example, as proxies and interfaces for external systems or hardware (for example, acting in an&#xD;
+    analogous way to a boundary class), or as control or sequencing agents (like a control class), in the end, together&#xD;
+    with the active subsystems, representing internal system activities that need to run (at least logically, and perhaps&#xD;
+    even physically) concurrently.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_AXC_4N0NEdmhp5PapAYf4w" name=" Develop Locality Model " guid="_AXC_4N0NEdmhp5PapAYf4w">
+    <sectionDescription>&lt;a id=&quot;Develop Locality Model&quot; name=&quot;Develop Locality Model&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    Using the System Architecture Overview developed previously, the conceptual level of the &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../systems.rup_se/workproducts/rup_system_deployment_model_C12856E8.html&quot;&#xD;
+    guid=&quot;{F3EF5651-065C-478F-81CC-D55D90FF0CBC}&quot;>Artifact: System Deployment Model&lt;/a> is now developed. The System&#xD;
+    Deployment Model is concerned with determination of elements which host the computational work defined by the&#xD;
+    subsystems and their interactions. The System Deployment Model evolves through three levels: Locality (the most&#xD;
+    abstract), Descriptor (where computational nodes are identified, along with their required characteristics), and&#xD;
+    Implementation (at which actual hardware selections are made).&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    The primary business drivers of the System Deployment Model are:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        users (at locations), defined in User Profiles (in the Vision) and use cases and the Use-Case Model&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        business data (in the Business&amp;nbsp;Analysis Model), if a business modeling approach has been employed&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        operation level requirements (in the Supplementary Specifications)&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        constraints (in the Supplementary Specifications)&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>&#xD;
+    At this level of analysis, the concern is with the Locality Model (see &lt;a&#xD;
+    href=&quot;./../../systems.rup_se/tasks/resources/md_se_sysdeplmod.htm&quot;>Guidelines: System Deployment Model&lt;/a>). The System&#xD;
+    Architect partitions the computational resources into groups in support of &lt;i>kinds&lt;/i> of processing, without, at this&#xD;
+    stage, constraining the geographic location. The Locality Model represents the initial, abstract, physical partitioning&#xD;
+    and distribution of the system, and is concerned with the physical resources of the system (nodes, devices, sensors and&#xD;
+    their physical connections and interfaces, and the physical characteristics of these, for example weight, heat&#xD;
+    generation, power consumption, vibration, and so forth.). The individual localities express notionally where processing&#xD;
+    occurs (the semantics of locality implies a tighter grouping of resources) without defining exact geographic location&#xD;
+    or how the processing capability is to be realized.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    The System Architect prepares the locality diagram(s), consisting of the localities and their connections. Like the&#xD;
+    localities, the connections are abstract at this level and simply represent pathways for information, mass, energy, or&#xD;
+    discrete physical items to be exchanged between localities.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    For each locality in the System Deployment Model, the System Architect prepares and attaches a description of derived&#xD;
+    supplementary requirements (derived from system supplementary specifications) which specify quality (reliability,&#xD;
+    maintainability, safety, and so on), physical and environmental requirements, and development constraints (cost,&#xD;
+    technical risk, and so forth). From these requirements, the actual characteristics (of each locality) are determined&#xD;
+    (tentatively in this task, more detail is added in &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../systems.rup_se/tasks/refine_system_deployment_model_AAD44C73.html&quot;&#xD;
+    guid=&quot;{B8F36D9E-D010-4D38-8E2F-57B28CC16D1A}&quot;>Task: Refine System Deployment Model&lt;/a>); obviously, these are chosen to&#xD;
+    meet the explicit requirements at least, but can exceed the requirements if sound engineering practice dictates this,&#xD;
+    for example, to cope with unexpected capacity demands.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Localities and connections are tagged (with UML tagged values) with their characteristics:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Localities, characterized with&amp;nbsp; &#xD;
+        &lt;ul>&#xD;
+            &lt;li>&#xD;
+                Quality tags, such as reliability, availability, performance, capacity, and so forth&#xD;
+            &lt;/li>&#xD;
+            &lt;li>&#xD;
+                Management tags, such as cost and technical risk&#xD;
+            &lt;/li>&#xD;
+        &lt;/ul>&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Connections, characterized with &#xD;
+        &lt;ul>&#xD;
+            &lt;li>&#xD;
+                Link parameters, such as data rate, supported protocols, and flow rate&#xD;
+            &lt;/li>&#xD;
+            &lt;li>&#xD;
+                Management tags, such as cost and technical risk.&#xD;
+            &lt;/li>&#xD;
+        &lt;/ul>&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>&#xD;
+    When there are no explicitly imposed requirements and constraints, the System Architect has to make judgments about the&#xD;
+    implicit needs (confirming these with the stakeholders) and derive these characteristics accordingly.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Each locality hosts some set of subsystem operations, and the System Architect must ensure that the locality and&#xD;
+    connection characteristics support the putative set of subsystem operations.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Detailed specification of localities and connections is deferred, except where this is important for estimation or&#xD;
+    viability assessment.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Although this is the most abstract System Deployment Model produced in the project, and is produced quickly and at a&#xD;
+    high level, it &lt;i>might&lt;/i> identify actual hardware and software products if these are known (or required), or if it&#xD;
+    is important to make these selection decisions at this time.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_AXVTwN0NEdmhp5PapAYf4w" name=" Outline significant collaborations " guid="_AXVTwN0NEdmhp5PapAYf4w">
+    <sectionDescription>&lt;a id=&quot;Outline Significant Collaborations&quot; name=&quot;Outline Significant Collaborations&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    Based on the set of architecturally significant use cases (see &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../systems.rup_se/tasks/prioritize_system_use_cases_F44F2481.html&quot;&#xD;
+    guid=&quot;{91F959E0-63F6-4FB0-9255-3634E92E7537}&quot;>Task: Prioritize System Use Cases&lt;/a>), the System Architect outlines the&#xD;
+    collaborations of subsystems that realize them, and captures these embryonic &lt;a class=&quot;elementLinkWithUserText&quot;&#xD;
+    href=&quot;./../../systems.rup_se/workproducts/rup_sytem_use_case_realization_A42D6675.html&quot;&#xD;
+    guid=&quot;{07429BA9-425C-43A4-9D33-8319FF1EEEC8}&quot;>System Use-Case Realizations&lt;/a> in the System Analysis Model. At this&#xD;
+    stage, the System Architect need only identify the set of subsystems which realizes the use case; the links and&#xD;
+    messages between them are added later.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_AXbaYN0NEdmhp5PapAYf4w" name=" Create/update Subsystem Vision(s) " guid="_AXbaYN0NEdmhp5PapAYf4w">
+    <sectionDescription>&lt;a id=&quot;Create/Update Subsystem Vision(s)&quot; name=&quot;Create/Update Subsystem Vision(s)&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    Based on work in this task, the subsystems that need to be constructed have started to emerge. For each of these, the&#xD;
+    System Architect produces an initial Subsystem Vision and includes a preliminary description of the desired&#xD;
+    capabilities, responsibilities, qualities and interface requirements.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_AXbaYd0NEdmhp5PapAYf4w" name=" Review the results " guid="_AXbaYd0NEdmhp5PapAYf4w">
+    <sectionDescription>&lt;a id=&quot;Review the Results&quot; name=&quot;Review the Results&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    The System Architect evaluates the results with the stakeholders, validating the choice of subsystems (with respect to&#xD;
+    the domain and the architecturally significant use cases) and validating the assumptions and rationale behind the&#xD;
+    choices made in the Locality Model.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;br />&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <purpose>&lt;a id=&quot;Top&quot; name=&quot;Top&quot;>&lt;/a> &#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        To determine the subsystems that compose the system, and system-level processes that animate them.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        To determine the conceptual level of the system deployment model.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        To identify collaborations (of subsystems) that realize architecturally significant use cases and capture these (in&#xD;
+        outline) in the System Analysis Model.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        To create preliminary Subsystem Vision(s).&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        To capture significant decisions and rationale in the System Architecture Document.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></purpose>
+</org.eclipse.epf.uma:TaskDescription>

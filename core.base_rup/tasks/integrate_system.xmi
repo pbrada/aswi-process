@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_2OXh9NnmEdmO6L4XMImrsA" name="integrate_system,{3233A207-6271-4492-A8BF-64E1D89D6C5E}" guid="_2OXh9NnmEdmO6L4XMImrsA" changeDate="2005-11-04T07:38:42.773-0800" version="7.1.0">
+  <sections xmi:id="_Vaj4MNnnEdmO6L4XMImrsA" name=" Accept Subsystems and Produce Intermediate Builds " guid="_Vaj4MNnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;Accept Subsystems and Produce Intermediate Builds&quot; name=&quot;Accept Subsystems and Produce Intermediate Builds&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    When this task begins, implementation subsystems have been delivered to satisfy the requirements of the next (the&#xD;
+    'target') build described in the &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../core.base_rup/workproducts/rup_integration_build_plan_31CE4B79.html&quot;&#xD;
+    guid=&quot;{FA56B557-857D-4122-8E60-7A4A84418EB1}&quot;>Artifact: Integration Build Plan&lt;/a>, recalling that the Integration&#xD;
+    Build Plan may define the need for several builds in an iteration. Depending on the complexity and number of subsystems&#xD;
+    to be integrated, it is often more efficient to produce the target build in a number of steps, adding more subsystems&#xD;
+    with each step, and producing a series of intermediate 'mini' builds - thus, each build planned for an iteration may,&#xD;
+    in turn, have its own sequence of transient intermediate builds. These are subjected to a minimal integration test&#xD;
+    (usually a subset of the tests described in the Integration Build Plan for this target build) to ensure that what is&#xD;
+    added is compatible with what already exists in the system integration workspace. It should be easier to isolate and&#xD;
+    diagnose problems using this approach.&amp;nbsp;&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    The integrator accepts delivered subsystems incrementally into the system integration workspace, in the process&#xD;
+    resolving any merge conflicts.&amp;nbsp;It is recommended that this be done bottom-up with respect to the layered&#xD;
+    structure, making sure that the versions of the subsystems are consistent, taking imports into consideration. The&#xD;
+    increment of subsystems is compiled and linked into an intermediate build, which is then provided to the tester to&#xD;
+    execute a minimal system integration test.&#xD;
+&lt;/p>&#xD;
+&lt;p class=&quot;picturelarge&quot; align=&quot;center&quot;>&#xD;
+    &lt;img height=&quot;172&quot; alt=&quot;Diagram described in accompanying text.&quot; src=&quot;resources/ac_intsy.gif&quot; width=&quot;501&quot; />&#xD;
+&lt;/p>&#xD;
+&lt;p class=&quot;picturetext&quot; align=&quot;left&quot;>&#xD;
+    This diagram shows a build produced in three increments. Some subsystems are only needed as stubs, to make it possible&#xD;
+    to compile and link the other subsystems, and provide the essential minimal run-time behavior.&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    The final increment of a sequence produces the target build, as planned in the Integration Build Plan. When this has&#xD;
+    been minimally tested, an initial or provisional baseline is created for this build - invoking the &lt;a&#xD;
+    class=&quot;elementLinkWithType&quot; href=&quot;./../../core.base_rup/tasks/create_baseline_30FA138.html&quot;&#xD;
+    guid=&quot;{F8256B31-5CE3-49C0-9DC2-ECB57DD48867}&quot;>Task: Create Baselines&lt;/a> in the Configuration Management discipline.&#xD;
+    The build is now made available to the tester for complete system testing. The nature and depth of this testing will be&#xD;
+    as planned in the Integration Build Plan, with the final build of an iteration being subjected to all the tests defined&#xD;
+    in the Iteration Test Plan.&lt;br />&#xD;
+    &lt;br />&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_bLwhgEz4EdqvZ80lhu0DBw" name="Promote Baselines " guid="_bLwhgEz4EdqvZ80lhu0DBw">
+    <sectionDescription>As a build passes various levels of test, the associated baselines are promoted accordingly. This is done by invoking the&#xD;
+&lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../core.base_rup/tasks/promote_baseline_623F1B0E.html&quot;&#xD;
+guid=&quot;{9139A97B-D458-490D-A9D5-CDBB86968475}&quot;>Task: Promote Baselines&lt;/a> in the Configuration Management discipline.&#xD;
+Promotion is a means of marking baselines as having passed or failed a certain level of testing. The names of the promotion&#xD;
+levels are defined by the &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../core.base_rup/roles/rup_configuration_manager_9B799A15.html&quot;&#xD;
+guid=&quot;{8939FDEF-EC44-4009-9F16-FAD4CFAA0B2D}&quot;>Role: Configuration Manager&lt;/a> as part of defining project configuration&#xD;
+policies. The promotion levels are important to consumers of the baseline: for example, an implementer will want to know&#xD;
+that a baseline is stable and tested before updating (or 'rebaselining') a private development workspace to be consistent&#xD;
+with a baseline in the system integration workspace.</sectionDescription>
+  </sections>
+</org.eclipse.epf.uma:TaskDescription>

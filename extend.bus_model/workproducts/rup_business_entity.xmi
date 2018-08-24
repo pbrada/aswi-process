@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ArtifactDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_0ruqgNnmEdmO6L4XMImrsA" name="rup_business_entity,{9A14ED32-2AC5-457E-93B8-474642D33A50}" guid="_0ruqgNnmEdmO6L4XMImrsA" changeDate="2005-09-21T21:51:30.076-0700" version="7.1.0">
+  <copyrightStatement href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#_NH1FoPTFEdmkpYARNN468A"/>
+  <purpose>&lt;a id=&quot;Top&quot; name=&quot;Top&quot;>&lt;/a>&lt;a id=&quot;XE_business_entity__as_artifact&quot; name=&quot;XE_business_entity__as_artifact&quot;>&lt;/a>&lt;a&#xD;
+id=&quot;XE_business_entity__purpose_of&quot; name=&quot;XE_business_entity__purpose_of&quot;>&lt;/a>&lt;a id=&quot;Purpose&quot; name=&quot;Purpose&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    Business Entities represent an abstraction of important persistent information within the business. Any piece of&#xD;
+    information that is a property of something else is probably not a Business Entity in itself.&amp;nbsp; For example,&#xD;
+    ContactDetails is a property of Customer and therefore not a Business Entity in itself. Information that is not stored&#xD;
+    but is created or determined on-demand (when necessary) is also probably not a Business Entity. For example, product&#xD;
+    inventory is certainly significant information, but this is not persistent information. Anytime somebody needs to know&#xD;
+    how many instances of a particular bar code are currently on the shelves (or in the warehouse), this information will&#xD;
+    be calculated and then discarded.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Stakeholders use Business Entities to ensure that the information created and required by the organization is present&#xD;
+    in the Business Analysis Model. A business designer is responsible for identifying and describing Business Entities, as&#xD;
+    well as for assessing the impact of organizational changes on the information created and required by the business.&#xD;
+    Business Entities are also used by systems analysts and designers when describing system use cases and identifying&#xD;
+    software entities, respectively.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Note that we say that Business Entities are manipulated by Business Workers, and in Business Use Case Realizations we&#xD;
+    show this through invocations of operations on the Business Entity by Business Workers. This depiction is itself a&#xD;
+    convenience - in reality the operation invoked on the Business Entity may be through the application of a tool by the&#xD;
+    Business Worker.&#xD;
+&lt;/p></purpose>
+  <representationOptions>UML Representation: Class, stereotyped as &amp;lt;&amp;lt;business entity&amp;gt;&amp;gt;. &#xD;
+&lt;p>&#xD;
+    &lt;a id=&quot;Tailoring&quot; name=&quot;Tailoring&quot;>&lt;/a>&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    If you are doing domain modeling, meaning that you identify Business Entities only, you can use the stereotype&#xD;
+    &amp;lt;&amp;lt;domain class&amp;gt;&amp;gt; instead of &amp;lt;&amp;lt;business entity&amp;gt;&amp;gt;.&#xD;
+&lt;/p></representationOptions>
+</org.eclipse.epf.uma:ArtifactDescription>

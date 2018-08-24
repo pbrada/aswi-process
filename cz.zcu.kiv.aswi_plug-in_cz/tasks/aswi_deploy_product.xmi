@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-UTyH7NBsOex0-vuPS1yUrw" name=",_Hjc1wCxAEeK9G72Y0pXoVw" guid="-UTyH7NBsOex0-vuPS1yUrw" changeDate="2013-03-26T01:51:37.012+0100" version="7.5.1">
+  <mainDescription>&lt;p>&#xD;
+    Podle plánu nasazení provést odstávku,&amp;nbsp;nahrát výslednou verzi systému do produkčního prostředí, provést případné&#xD;
+    zálohování a rozšíření databáze, uvést systém do chodu, případně ještě vhodně otestovat a ujistit se, zda vše funguje,&#xD;
+    jak má, a systém opětovně zpřístupnit uživatelům. Pokud se při nasazení objeví neodstranitelný problém,&amp;nbsp;postupovat&#xD;
+    podle havarijního plánu.&#xD;
+&lt;/p></mainDescription>
+  <keyConsiderations>plán nasazení, havarijní plán, produkční prostředí, kompletní systém, databázový skript</keyConsiderations>
+  <sections xmi:id="_DEjEsCxEEeK9G72Y0pXoVw" name="Odstavit systém" guid="_DEjEsCxEEeK9G72Y0pXoVw">
+    <sectionDescription>Zastavit provoz systému za účelem nasazení nové verze.</sectionDescription>
+  </sections>
+  <sections xmi:id="_eDy2MCxAEeK9G72Y0pXoVw" name="Předat/nasadit systém do produkčního prostředí" guid="_eDy2MCxAEeK9G72Y0pXoVw"/>
+  <sections xmi:id="_ghXkgCxDEeK9G72Y0pXoVw" name="Zálohovat databázi" guid="_ghXkgCxDEeK9G72Y0pXoVw">
+    <sectionDescription>Jedná-li se o brown-field projekt a navíc systém není stadalone aplikace, ale například webový portál, který obsahuje&#xD;
+databázi, zálohovat současnou verzi databáze pro případ problémů nebo neúspěšného nasazení.</sectionDescription>
+  </sections>
+  <sections xmi:id="_wPMIQCxDEeK9G72Y0pXoVw" name="Rozšířit databázi" guid="_wPMIQCxDEeK9G72Y0pXoVw">
+    <sectionDescription>&lt;p>&#xD;
+    Jedná-li se o brown-field projekt s databází, do jejíž struktury projekt zasáhl, rozšířit současnou databázi o nová&#xD;
+    tabulky/řádky/data např. pomocí připraveného skriptu.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_hkNB4CxAEeK9G72Y0pXoVw" name="Spustit a otestovat ostrou verzi systému" guid="_hkNB4CxAEeK9G72Y0pXoVw"/>
+  <sections xmi:id="_KkqnMCxEEeK9G72Y0pXoVw" name="Novou verzi systému zpřístupnit uživatelům" guid="_KkqnMCxEEeK9G72Y0pXoVw"/>
+  <purpose>Uvést systém do funkčního (např. online) stavu v produkčním prostředí.</purpose>
+  <alternatives>Pokud má být systém podle požadavků zákazníka předán pouze na paměťovém mediu, pak tento úkol odpadá a předání proběhne na&#xD;
+uzavírací schůzce projektu se zákazníkem.</alternatives>
+</org.eclipse.epf.uma:TaskDescription>

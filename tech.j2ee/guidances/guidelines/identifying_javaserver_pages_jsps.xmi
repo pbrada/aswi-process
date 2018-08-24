@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_C-RVIdwuEdmRU7lXzo6lKQ" name="identifying_javaserver_pages_jsps,1.5318932051119773E-305" guid="_C-RVIdwuEdmRU7lXzo6lKQ" version="7.1.0">
+  <mainDescription>&lt;h3>&#xD;
+    &lt;a id=&quot;Introduction&quot; name=&quot;Introduction&quot;>&lt;/a>Introduction&#xD;
+&lt;/h3>&#xD;
+&lt;p>&#xD;
+    This guideline focuses on identifying JSPs. Additional guidance on JSPs is provided in &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../../tech.j2ee/guidances/guidelines/javaserver_page_jsp_C204C841.html&quot;&#xD;
+    guid=&quot;2.5833499297818664E-306&quot;>Guideline: JavaServer Page (JSP)&lt;/a>&#xD;
+&lt;/p>&#xD;
+&lt;h3>&#xD;
+    &lt;a id=&quot;Guidelines&quot; name=&quot;Guidelines&quot;>&lt;/a>Identifying JSPs&#xD;
+&lt;/h3>&#xD;
+&lt;p>&#xD;
+    JSPs are similar to servlets in that they interact with web-based clients. However, while servlets are Java classes,&#xD;
+    JSPs use a syntax close to HTML. JSPs are ideal for creating dynamic web pages. They are primarily identified from&#xD;
+    boundary classes (see &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../../core.base_rup/guidances/guidelines/analysis_class_7E97273E.html&quot; guid=&quot;2.2738948033145062E-306&quot;>Guideline:&#xD;
+    Analysis Class&lt;/a>) in web architectures. They may also contain some control logic, but in general such logic is better&#xD;
+    factored out to servlets or other java classes (see &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../../tech.j2ee/guidances/guidelines/servlet_FB1EC186.html&quot; guid=&quot;7.265155609265114E-306&quot;>Guideline:&#xD;
+    Servlet&lt;/a>).&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Consider using presentation &quot;template&quot; JSPs to provide a common look and feel to the application's user interface. See&#xD;
+    &lt;i>Core J2EE Patterns - Composite View&lt;/i> ([&lt;a class=&quot;elementLinkWithUserText&quot;&#xD;
+    href=&quot;./../../../tech.j2ee/guidances/supportingmaterials/java_references_110189E3.html&quot;&#xD;
+    guid=&quot;1.4494927535802764E-304&quot;>ALU01&lt;/a>].&#xD;
+&lt;/p>&#xD;
+&lt;h3>&#xD;
+    &lt;a id=&quot;Modeling&quot; name=&quot;Modeling&quot;>&lt;/a>Modeling JSPs&#xD;
+&lt;/h3>&#xD;
+&lt;p>&#xD;
+    JSPs are represented in RUP by &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../../core.base_rup/workproducts/rup_design_class_B33BD5E5.html&quot;&#xD;
+    guid=&quot;{952A9CE9-D5A3-43AC-980D-0B9298F3872E}&quot;>Artifact: Design Class&lt;/a>, and so are modeled as classes (stereotyped as&#xD;
+    &amp;lt;&amp;lt;ServerPage&amp;gt;&amp;gt;).&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    General guidance related to modeling of server pages and client pages is provided by &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../../core.base_rup/guidances/whitepapers/modeling_web_application_architectures_with_uml_54011136.html&quot;&#xD;
+    guid=&quot;_TACPgEWgEdqT6eCCQuiftQ&quot;>Whitepaper: Modeling Web Application Architectures with UML&lt;/a>and Modeling Web&#xD;
+    Application Design with UML at &lt;a href=&quot;http://www.rational.com/products/whitepapers/100462.jsp&quot;&#xD;
+    target=&quot;_blank&quot;>http://www.rational.com/products/whitepapers/100462.jsp&lt;/a>.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    JSPs are translated into servlets. As with servlets, the JSP designer doesn't define operations to be called by&#xD;
+    clients, but rather the JSP designer focuses on defining the JSP's responsibilities and how it interacts with other&#xD;
+    design elements, such as servlets, other JSPs, JavaBean classes, and the characteristics of the client page that it&#xD;
+    produces.&#xD;
+&lt;/p>&lt;br />&#xD;
+&lt;br /></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

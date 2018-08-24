@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_0nQaMNnmEdmO6L4XMImrsA" name="aggregation_in_the_business_analysis_model,5.888288202551755E-305" guid="_0nQaMNnmEdmO6L4XMImrsA" changeDate="2005-11-15T15:55:17.994-0800" version="7.1.0">
+  <mainDescription>&lt;a id=&quot;XE_aggregation_in_business-object_model__guidelines_for&quot;&#xD;
+name=&quot;XE_aggregation_in_business-object_model__guidelines_for&quot;>&lt;/a>&lt;a id=&quot;Top&quot; name=&quot;Top&quot;>&lt;/a> &#xD;
+&lt;h3>&#xD;
+    &lt;a id=&quot;Explanation&quot; name=&quot;Explanation&quot;>Explanation&lt;/a>&#xD;
+&lt;/h3>&#xD;
+&lt;p>&#xD;
+    Sometimes a group of people act as a single unit in a use case, or, more generally, a phenomenon is composed of other&#xD;
+    independent phenomena. For example, School Class consists of Students. Such a phenomenon is called an aggregate.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Aggregates are modeled with a separate class for the composite phenomenon. Such classes have aggregations to the&#xD;
+    classes that represent its constituents. This construction makes it possible to both refer to the components&#xD;
+    individually and handle them as a single unit. The uniting class does not necessarily have many properties of its own.&#xD;
+    Its essential characteristic may very well be the aggregations of the different components.&#xD;
+&lt;/p>&#xD;
+&lt;p class=&quot;exampleheading&quot;>&#xD;
+    Example:&#xD;
+&lt;/p>&#xD;
+&lt;blockquote>&#xD;
+    &lt;p>&#xD;
+        A company's board of directors consists of the chairman, the chief executive officer, and several owner&#xD;
+        representatives.&#xD;
+    &lt;/p>&#xD;
+&lt;/blockquote>&#xD;
+&lt;p align=&quot;center&quot;>&#xD;
+    &lt;img height=&quot;137&quot; alt=&quot;Diagram described in accompanying text.&quot; src=&quot;resources/baggr1.gif&quot; width=&quot;208&quot; />&#xD;
+&lt;/p>&#xD;
+&lt;p class=&quot;picturetext&quot; align=&quot;center&quot;>&#xD;
+    An aggregate class holds other classes together.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    See also &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../../core.base_rup/guidances/guidelines/aggregation_A53E33AB.html&quot;&#xD;
+    guid=&quot;1.1538495077622037E-304&quot;>Guideline: Aggregation&lt;/a> for more general information.&#xD;
+&lt;/p>&#xD;
+&lt;h3>&#xD;
+    &lt;a id=&quot;Use&quot; name=&quot;Use&quot;>Use&lt;/a>&#xD;
+&lt;/h3>&#xD;
+&lt;p>&#xD;
+    You should use aggregates only if they are necessary; that is, if both the aggregate and any of its constituents are&#xD;
+    supposed to act or be useful on their own. A good aggregate is a natural, coherent part of a business analysis&#xD;
+    model-its meaning should be easy to understand from the context.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Aggregations should only be used with classes representing the same kind of phenomenon. For example, it does not make&#xD;
+    sense for a business entity to be an aggregate of business workers.&#xD;
+&lt;/p>&lt;br />&#xD;
+&lt;br /></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

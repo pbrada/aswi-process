@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_1sinQNnmEdmO6L4XMImrsA" name="protocol,1.5025405217477615E-306" guid="_1sinQNnmEdmO6L4XMImrsA" changeDate="2005-06-21T09:40:35.780-0700" version="7.1.0">
+  <mainDescription>&lt;a id=&quot;XE_protocol__checkpoints&quot; name=&quot;XE_protocol__checkpoints&quot;>&lt;/a>&lt;br />&#xD;
+&lt;br /></mainDescription>
+  <sections xmi:id="_GBDxAfM1Edmy-_OjcFOpJQ" name=" The protocol class name is unique" guid="_GBDxAfM1Edmy-_OjcFOpJQ">
+    <sectionName> The protocol class name is unique</sectionName>
+  </sections>
+  <sections xmi:id="_PpYygPwPEdm4KJKs0l-LJQ" name="The protocol is used in at least one collaboration" guid="_PpYygPwPEdm4KJKs0l-LJQ"/>
+  <sections xmi:id="_Tux6kPwPEdm4KJKs0l-LJQ" name="The protocol's brief description captures the purpose of the protocol and briefly summarizes the role it plays in the system" guid="_Tux6kPwPEdm4KJKs0l-LJQ"/>
+  <sections xmi:id="_WgOugPwPEdm4KJKs0l-LJQ" name="The protocol represents a single set of cohesive responsibilities" guid="_WgOugPwPEdm4KJKs0l-LJQ"/>
+  <sections xmi:id="_a7yT0PwPEdm4KJKs0l-LJQ" name="The signals in the protocol are all directly related to fulfilling the protocol's role in the system" guid="_a7yT0PwPEdm4KJKs0l-LJQ">
+    <sectionDescription>They are not simply the signals used for communication between two capsules</sectionDescription>
+  </sections>
+  <sections xmi:id="_eJ4ngPwPEdm4KJKs0l-LJQ" name="The signals have been chosen in the most general way possible while still retaining clarity" guid="_eJ4ngPwPEdm4KJKs0l-LJQ">
+    <sectionDescription>&amp;nbsp;For example,&amp;nbsp;in the case where several 'Out' signals all require acknowledgement, a single 'Ack' signal has been&#xD;
+used as the response.</sectionDescription>
+  </sections>
+  <sections xmi:id="_sxWnMPwPEdm4KJKs0l-LJQ" name="The protocol reflects a singular purpose in the system" guid="_sxWnMPwPEdm4KJKs0l-LJQ">
+    <sectionDescription>&amp;nbsp;Where a protocol has a mixture of concerns (e.g. call processing and administration signals), it has been divided&#xD;
+into several independent protocol classes.</sectionDescription>
+  </sections>
+  <sections xmi:id="_595hAPwPEdm4KJKs0l-LJQ" name="Protocols have been defined in terms of what the use wants or needs to know instead of what the provider knows" guid="_595hAPwPEdm4KJKs0l-LJQ"/>
+  <sections xmi:id="_BjQv4PwQEdm4KJKs0l-LJQ" name="The guideline which determine the side of the interface to be conjugated is applied consistently." guid="_BjQv4PwQEdm4KJKs0l-LJQ">
+    <sectionDescription>Asymmetric protocols are defined from the client (user) perspective to reduce the need to conjugate interfaces.</sectionDescription>
+  </sections>
+  <sections xmi:id="_Ua6yYPwQEdm4KJKs0l-LJQ" name="Asymmetric protocol classes are named to clearly indicate their directionality" guid="_Ua6yYPwQEdm4KJKs0l-LJQ">
+    <sectionDescription>A good example for name is 'ClientResourceInterface'</sectionDescription>
+  </sections>
+</org.eclipse.epf.uma:ContentDescription>

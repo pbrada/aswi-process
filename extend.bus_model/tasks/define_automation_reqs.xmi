@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_0w76otnmEdmO6L4XMImrsA" name="define_automation_reqs,{E7491E4A-26FE-4CF1-8646-353DDBA3B9A5}" guid="_0w76otnmEdmO6L4XMImrsA" changeDate="2005-10-12T11:08:10.960-0700" version="7.1.0">
+  <mainDescription>&lt;p>&#xD;
+    The team must make a rough estimate of what kinds of support the changed business use cases will require. It is&#xD;
+    important to indicate, at an early stage, which techniques are available for implementing the business. Are your free&#xD;
+    to support the business use case with new custom business tools? Must you use existing business tools? Or can you&#xD;
+    purchase off-the-shelf products? Can you find the necessary resources, internally or externally, for the business tools&#xD;
+    that must be developed? Is the existing configuration of computer systems, terminals, workstations, and networks&#xD;
+    important? Is compatibility with the existing business tools required?&#xD;
+&lt;/p></mainDescription>
+  <sections xmi:id="_Nbl2gNnnEdmO6L4XMImrsA" name=" Explore New Technologies " guid="_Nbl2gNnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;Explore New Technologies&quot; name=&quot;Explore New Technologies&quot;>&lt;/a>&#xD;
+&lt;p>&#xD;
+    Many technologies are developing very fast. You must build up a good understanding of available state-of-the-art&#xD;
+    solutions, generally solutions as well as those specific to your own business domain.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Common to all organizations is the dependence on information technology. For a long time, information technology has&#xD;
+    been used to improve the performance of the business. However, modern solutions can totally change the way business is&#xD;
+    done. Before deciding on any new process designs it is important that you understand the potentials of modern&#xD;
+    information technologies. The following list (see [&lt;a class=&quot;elementLinkWithUserText&quot;&#xD;
+    href=&quot;./../../core.base_rup/customcategories/references_56F06DFD.html#JAC94&quot; guid=&quot;7.755968586980351E-308&quot;>JAC94&lt;/a>]) gives you&#xD;
+    an idea as to what you can do with technology to improve, or totally revolutionize, the way a business operates.&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Automate work to eliminate human labor.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Analyze data in a way that cannot practically be done by hand.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Parallelize work or change the sequencing of activities by using databases and networks.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Distribute the organization by making it possible to access information from geographically different places,&#xD;
+        ultimately to the front line where the customer is. Consider developing dedicated hardware solutions to withstand&#xD;
+        rain and so forth, if required.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Move parts of the use cases outside the organization by giving your customers or suppliers access to your&#xD;
+        information system.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Help coordinate tasks by supporting information exchange within the organization.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Use expert systems to make it possible for non-experts to do specialized work.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Collect information from different sources and present it in a way that humans can understand.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Keep track of work. Measure the business to find where improvements need to be made and where problems have&#xD;
+        occurred.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Purchase customer databases to improve sales and marketing.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Sell and market electronically. More and more, companies and consumers are moving into the electronic world of&#xD;
+        business.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Follow standards for electronic communication so that you can communicate with other businesses easily.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></sectionDescription>
+  </sections>
+  <sections xmi:id="_Nbl2gdnnEdmO6L4XMImrsA" name=" Identify System Actors and Use Cases " guid="_Nbl2gdnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;XE_business_models__actors_to_the_system,_relationship_to&quot;&#xD;
+name=&quot;XE_business_models__actors_to_the_system,_relationship_to&quot;>&lt;/a>&lt;a id=&quot;XE_actor__business_models,_relationships_to&quot;&#xD;
+name=&quot;XE_actor__business_models,_relationships_to&quot;>&lt;/a>&lt;a id=&quot;Identify System Actors and Use Cases&quot;&#xD;
+name=&quot;Identify System Actors and Use Cases&quot;>&lt;/a>&#xD;
+&lt;p>&#xD;
+    To identify information-system use cases, begin with the business workers in the business analysis model. For each&#xD;
+    business worker, perform the following steps:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Decide if the business worker will use the information system.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        If so, identify an actor for the information system in the information system's use-case model. Give the actor the&#xD;
+        same name as the business worker.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        For each business use case the business worker participates in, create a system use case and give it a brief&#xD;
+        description.&amp;nbsp;&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Consider performance goals or additional information about the business worker that should be noted as a Special&#xD;
+        Requirement for the system use case, or be entered in the Supplementary Specifications for the system.&amp;nbsp;&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Repeat these steps for all business workers.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>&#xD;
+    See also &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../extend.bus_model/guidances/guidelines/going_from_business_models_to_systems_3B55D8F4.html&quot;&#xD;
+    guid=&quot;1.3212739617274792E-306&quot;>Guideline: Going from Business Models to Systems&lt;/a>, the section on business models and&#xD;
+    actors to the system.&amp;nbsp;&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    If a business worker is to be completely automated by the system, the corresponding system actor can be removed. The&#xD;
+    system use case corresponding to the business worker still needs a system actor that initiates it. Search for that&#xD;
+    system actor among the business actors and business workers supported by the to-be-automated business worker. See also&#xD;
+    &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../extend.bus_model/guidances/guidelines/going_from_business_models_to_systems_3B55D8F4.html&quot;&#xD;
+    guid=&quot;1.3212739617274792E-306&quot;>Guideline: Going from Business Models to Systems&lt;/a>, the section on automated business&#xD;
+    workers.&amp;nbsp;&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_Nbl2gtnnEdmO6L4XMImrsA" name=" Identify Entities in the Analysis Model " guid="_Nbl2gtnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;Identify Entities in the Analysis Model&quot; name=&quot;Identify Entities in the Analysis Model&quot;>&lt;/a>&#xD;
+&lt;p>&#xD;
+    For each business entity, consider the following:&amp;nbsp;&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        If it is to be managed by the information system, identify a corresponding entity in the analysis model of that&#xD;
+        system.&amp;nbsp;&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        For each attribute of the business entity, determine if it should be modeled as an entity in the analysis model,&#xD;
+        rather than an attribute. See also &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+        href=&quot;./../../core.base_rup/guidances/guidelines/design_class_E98280BF.html&quot; guid=&quot;2.914882084937444E-305&quot;>Guideline: Design&#xD;
+        Class&lt;/a>, the section on attributes.&amp;nbsp;&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>&#xD;
+    See also &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../extend.bus_model/guidances/guidelines/going_from_business_models_to_systems_3B55D8F4.html&quot;&#xD;
+    guid=&quot;1.3212739617274792E-306&quot;>Guideline: Going from Business Models to Systems&lt;/a>, the section on business models and&#xD;
+    entity classes in the analysis model.&amp;nbsp;&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_Nbl2g9nnEdmO6L4XMImrsA" name=" Identify Other Sources to Requirements on Systems " guid="_Nbl2g9nnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;Other Sources of Requirements on Systems&quot; name=&quot;Other Sources of Requirements on Systems&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    There are many sources of knowledge about-and requirements for-the information system outside the business model.&#xD;
+    Examples of sources are:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Users of the information systems that you have not modeled in the business model. For example, the system&#xD;
+        administrator is a user of the information system that is (usually) not represented in the business model.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Strategies that the business as whole has decided on. For example, regarding IT, reuse, compatibility and quality.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Corporate databases that must be used.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Other information systems with which the new system(s) must work (legacy considerations).&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Timing and coordination with other projects.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Trends within the business's own industry and within the IT industry.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>&#xD;
+    See the Requirements Discipline for more details.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_Nbl2hNnnEdmO6L4XMImrsA" name=" Review the Results " guid="_Nbl2hNnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;Review the Results&quot; name=&quot;Review the Results&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    As the task concludes, review the system work products that have been sketched, to ensure that they are consistent. As&#xD;
+    the results of this task are preliminary and relatively informal, reviews should be informal as well.&#xD;
+&lt;/p>&lt;br />&#xD;
+&lt;br /></sectionDescription>
+  </sections>
+  <purpose>&lt;a id=&quot;Top&quot; name=&quot;Top&quot;>&lt;/a> &#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        To understand how new technologies can be used to make the target organization more effective.&amp;nbsp;&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        To determine level of automation in the target organization.&amp;nbsp;&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        To derive system requirements from the business modeling work products.&amp;nbsp;&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></purpose>
+</org.eclipse.epf.uma:TaskDescription>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="-TrvgShI-MUs0YbGxsNtY8g" name="soa_service_identification_rules,_6zx0ECwTEduKcvYAyaKSaA" guid="-TrvgShI-MUs0YbGxsNtY8g" changeDate="2006-11-01T09:20:38.000-0800" version="1.0.0">
+  <mainDescription>&lt;p>&#xD;
+    This task uses Business Process Models as input and identifies a set of candidate services which are included in the&#xD;
+    project service portfolio. These candidate services may yet require additional refinement; however, the steps included&#xD;
+    here provide an effective manner in which to produce an initial set of Service Specifications.&#xD;
+&lt;/p></mainDescription>
+  <sections xmi:id="_UL7CMC0_EduMFMCuL1mFMw" name="Identify Candidate Services from Business Rules" guid="_UL7CMC0_EduMFMCuL1mFMw">
+    <sectionDescription>&lt;a id=&quot;Rule_Driven&quot; name=&quot;Rule_Driven&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    Certain classes of solutions tend to rely heavily on the use of &lt;i>Business Rules&lt;/i> to extract the variability from&#xD;
+    the solution and externalize such that the rules can evolve outside of the main application logic. From a Business&#xD;
+    Analysis Model including Business Entities and Business Rules, it is possible to define services that encapsulate the&#xD;
+    business rules, externalizing them from the rest of the logic of the solution. The following diagram demonstrates a&#xD;
+    small, sample business-analysis model showing two business rules attached to the business entity named Order. These&#xD;
+    rules, as they are attached to a business entity, are most likely to correspond to invariants on the entity and so will&#xD;
+    be evaluated on any change in state of the entity. Rules may also be attached to actions or processes and are more&#xD;
+    often evaluated as pre-conditions or post-conditions for the action.&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;center&quot;>&#xD;
+    &lt;img height=&quot;194&quot; alt=&quot;Diagram is described in the textual content.&quot; src=&quot;resources/soa_svce_identification-06.gif&quot;&#xD;
+    width=&quot;481&quot; border=&quot;0&quot; />&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    In modeling the example above, it is assumed that there is a traceable relationship between the service specifications&#xD;
+    derived from the business rules and between the message(s) derived from the business entity.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    In many cases complex rules are aggregated into Rule Sets, these are much more of a match for the granularity of&#xD;
+    service, allowing, for example, a document to be passed to the validation service where the set of rules are evaluated&#xD;
+    and the results returned. From the example above, we can easily imagine that the validation services actually embody&#xD;
+    quite a complex set of rules for validating the compatibility of items ordered, quantities, and so on.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <purpose>&lt;ul>&#xD;
+    &lt;li>&#xD;
+        To identify the design elements of a service-oriented solution in terms of services and partitions.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        To document the initial specification of services.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        To determine the initial dependencies and the communication between services.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></purpose>
+</org.eclipse.epf.uma:TaskDescription>

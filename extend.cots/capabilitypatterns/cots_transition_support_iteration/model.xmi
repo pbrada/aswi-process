@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:org.eclipse.epf.uma.resourcemanager="http:///org/eclipse/epf/uma/resourcemanager.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1">
+  <org.eclipse.epf.uma.resourcemanager:ResourceManager xmi:id="_6tlrYBTjEdqlM54Vi2D7eA" guid="_6tlrYBTjEdqlM54Vi2D7eA">
+    <resourceDescriptors xmi:id="_hlqscffeEdmriJhf4djjLA" id="-KkpL0esMrRNcYPzizv2-gA" uri="content.xmi"/>
+  </org.eclipse.epf.uma.resourcemanager:ResourceManager>
+  <org.eclipse.epf.uma:ProcessComponent xmi:id="_YtChsBTkEdqsDYPowBCnuA" name="cots_transition_support_iteration" guid="_YtChsBTkEdqsDYPowBCnuA">
+    <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_idNTuuz9EdqNQM4riIm-Mw" name="cots_contracting_vehicules" guid="_idNTuuz9EdqNQM4riIm-Mw" presentationName="Contracting Vehicle" superActivities="_YtChsRTkEdqsDYPowBCnuA">
+      <WorkProduct href="uma://{D4626EC0-06BC-4592-A8A6-C8DE7E821952}#{8034FFDD-E172-4F15-BBA1-92EDF97A0E60}"/>
+    </processElements>
+    <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="_idTaL-z9EdqNQM4riIm-Mw" name="cots_manage_vendor_relations" guid="_idTaL-z9EdqNQM4riIm-Mw" presentationName="Manage Vendor Relationship" superActivities="_YtChsRTkEdqsDYPowBCnuA" optionalInput="_idNTuuz9EdqNQM4riIm-Mw _ic045-z9EdqNQM4riIm-Mw _ic045ez9EdqNQM4riIm-Mw _ic048uz9EdqNQM4riIm-Mw _idTaQez9EdqNQM4riIm-Mw _idTaIuz9EdqNQM4riIm-Mw _ic6_jez9EdqNQM4riIm-Mw" output="_idHM5-z9EdqNQM4riIm-Mw _idTaIuz9EdqNQM4riIm-Mw _ic6_jez9EdqNQM4riIm-Mw" performedPrimarilyBy="_ic6_h-z9EdqNQM4riIm-Mw">
+      <Task href="uma://{D4626EC0-06BC-4592-A8A6-C8DE7E821952}#{DA2AAC2E-D59F-4E1C-9DF5-213470529B27}"/>
+      <selectedSteps href="uma://_smvm8NoTEdmCj7Yn9Ev4rg#_tkQYEdoTEdmCj7Yn9Ev4rg"/>
+      <selectedSteps href="uma://_smvm8NoTEdmCj7Yn9Ev4rg#_tkQYEtoTEdmCj7Yn9Ev4rg"/>
+      <selectedSteps href="uma://_smvm8NoTEdmCj7Yn9Ev4rg#_tkQYE9oTEdmCj7Yn9Ev4rg"/>
+      <selectedSteps href="uma://_smvm8NoTEdmCj7Yn9Ev4rg#_tkQYFNoTEdmCj7Yn9Ev4rg"/>
+      <selectedSteps href="uma://_smvm8NoTEdmCj7Yn9Ev4rg#_tkWesNoTEdmCj7Yn9Ev4rg"/>
+    </processElements>
+    <processElements xsi:type="org.eclipse.epf.uma:RoleDescriptor" xmi:id="_ic6_h-z9EdqNQM4riIm-Mw" name="cots_acquirer" guid="_ic6_h-z9EdqNQM4riIm-Mw" presentationName="Acquirer" superActivities="_YtChsRTkEdqsDYPowBCnuA" modifies="_idHM5-z9EdqNQM4riIm-Mw _idTaIuz9EdqNQM4riIm-Mw _ic6_jez9EdqNQM4riIm-Mw" responsibleFor="_idTaIuz9EdqNQM4riIm-Mw _ic048uz9EdqNQM4riIm-Mw _ic045ez9EdqNQM4riIm-Mw _ic045-z9EdqNQM4riIm-Mw">
+      <Role href="uma://{D4626EC0-06BC-4592-A8A6-C8DE7E821952}#{E929498F-3E9B-4BD5-8FD3-FAF7337E36AE}"/>
+    </processElements>
+    <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_ic045-z9EdqNQM4riIm-Mw" name="cots_cumulative_solution_eval_summary" guid="_ic045-z9EdqNQM4riIm-Mw" presentationName="Cumulative Candidate Solution Evaluation Summary" superActivities="_YtChsRTkEdqsDYPowBCnuA">
+      <WorkProduct href="uma://{D4626EC0-06BC-4592-A8A6-C8DE7E821952}#{E29F5020-BF6D-4D40-8BC9-52D25F9DD183}"/>
+    </processElements>
+    <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_ic045ez9EdqNQM4riIm-Mw" name="cots_market_segment_information" guid="_ic045ez9EdqNQM4riIm-Mw" presentationName="Market Segment Information" superActivities="_YtChsRTkEdqsDYPowBCnuA">
+      <WorkProduct href="uma://{D4626EC0-06BC-4592-A8A6-C8DE7E821952}#{65F8D95F-79FA-4685-B18F-9636298D81D0}"/>
+    </processElements>
+    <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_ic048uz9EdqNQM4riIm-Mw" name="cots_package_dossier" guid="_ic048uz9EdqNQM4riIm-Mw" presentationName="COTS Package Dossier" superActivities="_YtChsRTkEdqsDYPowBCnuA">
+      <WorkProduct href="uma://{D4626EC0-06BC-4592-A8A6-C8DE7E821952}#{B8F591A5-DA8E-4CC6-A41E-DD522B6C1102}"/>
+    </processElements>
+    <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_idTaQez9EdqNQM4riIm-Mw" name="cots_solution_dossier" guid="_idTaQez9EdqNQM4riIm-Mw" presentationName="Solution Dossier" superActivities="_YtChsRTkEdqsDYPowBCnuA">
+      <WorkProduct href="uma://{D4626EC0-06BC-4592-A8A6-C8DE7E821952}#{4F2452F1-8664-4198-A228-72A12745079D}"/>
+    </processElements>
+    <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_idTaIuz9EdqNQM4riIm-Mw" name="cots_vendor_dossier" guid="_idTaIuz9EdqNQM4riIm-Mw" presentationName="Vendor Dossier" superActivities="_YtChsRTkEdqsDYPowBCnuA">
+      <WorkProduct href="uma://{D4626EC0-06BC-4592-A8A6-C8DE7E821952}#{E6CEF5C2-2915-48D6-8607-D83489CC101E}"/>
+    </processElements>
+    <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_ic6_jez9EdqNQM4riIm-Mw" name="cots_vendor_management_plan" guid="_ic6_jez9EdqNQM4riIm-Mw" presentationName="Vendor Management Plan" superActivities="_YtChsRTkEdqsDYPowBCnuA">
+      <WorkProduct href="uma://{D4626EC0-06BC-4592-A8A6-C8DE7E821952}#{74F39360-5B26-4133-935F-16124D246454}"/>
+    </processElements>
+    <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_idHM5-z9EdqNQM4riIm-Mw" name="rup_project_plan" guid="_idHM5-z9EdqNQM4riIm-Mw" presentationName="Software Development Plan" superActivities="_YtChsRTkEdqsDYPowBCnuA">
+      <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{D77D6716-B167-4643-A4B6-6F76C7769A80}"/>
+    </processElements>
+    <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="_izoAcFctEdqYJN4qdJOeOw" name="cots_manage_contracting_vehicules" guid="_izoAcFctEdqYJN4qdJOeOw" presentationName="Manage Contracting Vehicle" superActivities="_YtChsRTkEdqsDYPowBCnuA" optionalInput="_idNTuuz9EdqNQM4riIm-Mw" output="_idNTuuz9EdqNQM4riIm-Mw" performedPrimarilyBy="_i0N2UFctEdqYJN4qdJOeOw">
+      <Task href="uma://{D4626EC0-06BC-4592-A8A6-C8DE7E821952}#{88105E5B-0088-4475-AD9E-7C30F7A44C2F}"/>
+      <selectedSteps href="uma://_svJVANoTEdmCj7Yn9Ev4rg#_tl-PUNoTEdmCj7Yn9Ev4rg"/>
+      <selectedSteps href="uma://_svJVANoTEdmCj7Yn9Ev4rg#_tl-PUdoTEdmCj7Yn9Ev4rg"/>
+      <selectedSteps href="uma://_svJVANoTEdmCj7Yn9Ev4rg#_tl-PUtoTEdmCj7Yn9Ev4rg"/>
+      <selectedSteps href="uma://_svJVANoTEdmCj7Yn9Ev4rg#_tmEV8NoTEdmCj7Yn9Ev4rg"/>
+    </processElements>
+    <processElements xsi:type="org.eclipse.epf.uma:RoleDescriptor" xmi:id="_i0N2UFctEdqYJN4qdJOeOw" name="rup_project_manager" guid="_i0N2UFctEdqYJN4qdJOeOw" presentationName="Project Manager" superActivities="_YtChsRTkEdqsDYPowBCnuA" modifies="_idNTuuz9EdqNQM4riIm-Mw" responsibleFor="_idHM5-z9EdqNQM4riIm-Mw _ic6_jez9EdqNQM4riIm-Mw _idNTuuz9EdqNQM4riIm-Mw">
+      <Role href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{EE97A8CD-66CA-4A9B-9871-E3B94CCED528}"/>
+    </processElements>
+    <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="_jry-kFctEdqYJN4qdJOeOw" name="cots_setup_maintain_exp_facility" guid="_jry-kFctEdqYJN4qdJOeOw" presentationName="Set Up and Maintain Experimentation Facility" superActivities="_YtChsRTkEdqsDYPowBCnuA" optionalInput="_jtK3kFctEdqYJN4qdJOeOw" output="_jtK3kFctEdqYJN4qdJOeOw" performedPrimarilyBy="_jslBsFctEdqYJN4qdJOeOw">
+      <Task href="uma://{D4626EC0-06BC-4592-A8A6-C8DE7E821952}#{6FF9DA14-F747-45DB-99B0-BEB5ECEA5655}"/>
+      <selectedSteps href="uma://_sxQN0NoTEdmCj7Yn9Ev4rg#_tnf5UdoTEdmCj7Yn9Ev4rg"/>
+      <selectedSteps href="uma://_sxQN0NoTEdmCj7Yn9Ev4rg#_tnl_8NoTEdmCj7Yn9Ev4rg"/>
+      <selectedSteps href="uma://_sxQN0NoTEdmCj7Yn9Ev4rg#_tnl_8doTEdmCj7Yn9Ev4rg"/>
+    </processElements>
+    <processElements xsi:type="org.eclipse.epf.uma:RoleDescriptor" xmi:id="_jslBsFctEdqYJN4qdJOeOw" name="rup_system_administrator" guid="_jslBsFctEdqYJN4qdJOeOw" presentationName="System Administrator" superActivities="_YtChsRTkEdqsDYPowBCnuA" modifies="_jtK3kFctEdqYJN4qdJOeOw" responsibleFor="_jtK3kFctEdqYJN4qdJOeOw">
+      <Role href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{57519B77-801E-4C38-AC0A-0032A0BDB2B6}"/>
+    </processElements>
+    <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_jtK3kFctEdqYJN4qdJOeOw" name="cots_exp_facility" guid="_jtK3kFctEdqYJN4qdJOeOw" presentationName="Experimentation Facility" superActivities="_YtChsRTkEdqsDYPowBCnuA">
+      <WorkProduct href="uma://{D4626EC0-06BC-4592-A8A6-C8DE7E821952}#{C40FDC5E-ABB2-4E63-8598-0EC5371011A1}"/>
+    </processElements>
+    <process xsi:type="org.eclipse.epf.uma:CapabilityPattern" xmi:id="_YtChsRTkEdqsDYPowBCnuA" name="cots_transition_support_iteration" guid="_YtChsRTkEdqsDYPowBCnuA" presentationName="Support Iteration" briefDescription="This covers essential tasks aimed at supporting an iteration in the transition phase." breakdownElements="_idNTuuz9EdqNQM4riIm-Mw _idTaL-z9EdqNQM4riIm-Mw _ic6_h-z9EdqNQM4riIm-Mw _ic045-z9EdqNQM4riIm-Mw _ic045ez9EdqNQM4riIm-Mw _ic048uz9EdqNQM4riIm-Mw _idTaQez9EdqNQM4riIm-Mw _idTaIuz9EdqNQM4riIm-Mw _ic6_jez9EdqNQM4riIm-Mw _idHM5-z9EdqNQM4riIm-Mw _izoAcFctEdqYJN4qdJOeOw _i0N2UFctEdqYJN4qdJOeOw _jry-kFctEdqYJN4qdJOeOw _jslBsFctEdqYJN4qdJOeOw _jtK3kFctEdqYJN4qdJOeOw">
+      <presentation xmi:id="-KkpL0esMrRNcYPzizv2-gA" href="uma://-KkpL0esMrRNcYPzizv2-gA#-KkpL0esMrRNcYPzizv2-gA"/>
+      <defaultContext href="uma://_0q85QJySEd2xJNwbI6lxKA#_sU4a4NoTEdmCj7Yn9Ev4rg"/>
+      <validContext href="uma://_0q85QJySEd2xJNwbI6lxKA#_sU4a4NoTEdmCj7Yn9Ev4rg"/>
+    </process>
+  </org.eclipse.epf.uma:ProcessComponent>
+</xmi:XMI>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_1l_TUtnmEdmO6L4XMImrsA" name="representing_graphical_user-interfaces,1.9267995424810726E-305" guid="_1l_TUtnmEdmO6L4XMImrsA" changeDate="2005-06-21T09:36:14.594-0700" version="7.1.0">
+  <mainDescription>&lt;a id=&quot;XE_user-interface__representing_in_design_model&quot; name=&quot;XE_user-interface__representing_in_design_model&quot;>&lt;/a>&lt;a&#xD;
+id=&quot;XE_class__representing_graphical_interfaces&quot; name=&quot;XE_class__representing_graphical_interfaces&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    In systems in which there is a great deal of user interaction, it is often desirable to represent the entire user&#xD;
+    interface as a single analysis class during &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../../core.base_rup/tasks/use_case_analysis_A6990185.html&quot; guid=&quot;{28014615-A62F-452D-B821-30C7CAB0EC44}&quot;>Use-Case&#xD;
+    Analysis&lt;/a>. These classes are, in reality, composed of many different kinds of other classes: buttons, windows,&#xD;
+    menus, sub-panes, controls, etc. Using a single class to represent this complex collaboration is sometimes too great an&#xD;
+    over-simplification. While a single class could be used, refining it as we go along, it is often easier to represent&#xD;
+    this with a more encompassing concept, the &lt;b>subsystem&lt;/b>.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    In this case, a single class (or subsystem) was used to represent complex collaborations such as GUI interfaces due to&#xD;
+    our limited design vocabulary. This class was regarded, in a sense, as the &lt;b>entry point&lt;/b> to complex&#xD;
+    collaborations, but it really was not a class in the real sense (it did not have a single well-defined set of&#xD;
+    responsibilities, except in a very loose sense) and it often disappeared in the design process. In the end, one&#xD;
+    discovers the &lt;b>real&lt;/b> classes and collaborations, and distributes the behavior of each &lt;b>place-holder class&lt;/b> to&#xD;
+    them. Some of the work performed in &lt;a class=&quot;elementLinkWithUserText&quot;&#xD;
+    href=&quot;./../../../core.base_rup/tasks/prototype_user_interface_C495CB55.html&quot;&#xD;
+    guid=&quot;{76F14467-3F63-4B22-B672-6EA69D0E6C46}&quot;>Prototype the User Interface&lt;/a> by the &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../../core.base_rup/roles/rup_user_interface_designer_5C1ECFC9.html&quot;&#xD;
+    guid=&quot;{0F994CCE-2B28-414A-9D31-DA23C13B95D4}&quot;>Role: User-Interface Designer&lt;/a> when producing the &lt;a&#xD;
+    class=&quot;elementLinkWithType&quot; href=&quot;./../../../core.base_rup/workproducts/rup_user_interface_prototype_7237E5AA.html&quot;&#xD;
+    guid=&quot;{3DF10D00-8C80-4429-92B8-C6A221F0F90C}&quot;>Artifact: User-Interface Prototype&lt;/a> may be able to be carried forward&#xD;
+    and reused, depending on the nature of that prototype.&#xD;
+&lt;/p>&lt;br />&#xD;
+&lt;br /></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

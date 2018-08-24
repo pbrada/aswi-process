@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_3flSMtnmEdmO6L4XMImrsA" name="setup_tools,{78C58888-2969-4A74-BF76-5F77AFA36F9C}" guid="_3flSMtnmEdmO6L4XMImrsA" changeDate="2005-09-05T12:21:27.968-0700" version="7.1.0">
+  <mainDescription>&lt;p>&#xD;
+    Many software-development tools support teams of people, with several users working with information stored in a shared&#xD;
+    repository. Each user uses the tool on their personal computer (client) and the shared repository is stored on a&#xD;
+    central server.&amp;nbsp;In this case the tool must be installed on the server and on the clients. Customizing the tool is&#xD;
+    done both on the server and on the client.&amp;nbsp;&amp;nbsp;&amp;nbsp;&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    There are tools that do not use a shared repository, such as compilers, debuggers, editors, graphic tools, etc. These&#xD;
+    tools can simply be installed on the users' computers. It may still be needed to customize the tools so that all&#xD;
+    members of the project use the tool in the same way.&amp;nbsp;&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    The approach should be to automate as much as possible of the installation and customization procedures.&#xD;
+&lt;/p></mainDescription>
+  <sections xmi:id="_ZUv10NnnEdmO6L4XMImrsA" name=" Install the Tool on the Server " guid="_ZUv10NnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;Install the Tool on the Server&quot; name=&quot;Install the Tool on the Server&quot;>&lt;/a>&#xD;
+&lt;p>&#xD;
+    Identify what other software is required for the specific tool to work, and install this software.&amp;nbsp;For example, a&#xD;
+    tool may require a database management system (DBMS) be installed first.&amp;nbsp;&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    When you have installed the support software, you can install the tool on the server.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_ZUv10dnnEdmO6L4XMImrsA" name=" Customize the Tool (on the Server) " guid="_ZUv10dnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;Customize the Tool (on the Server)&quot; name=&quot;Customize the Tool (on the Server)&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    Decide how to customize the tool so that it supports the &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../core.base_rup/workproducts/rup_development_process_A6449790.html&quot;&#xD;
+    guid=&quot;{345D1811-317B-47EC-AC9D-10E1072A7D68}&quot;>Development Process&lt;/a>&amp;nbsp;in the best way.&amp;nbsp; The following are&#xD;
+    some brief examples of how you can customize Rational tools:&amp;nbsp;&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        &lt;b>Rational Rose&lt;/b>. You can create a template model that defines the structure of models. The template model will&#xD;
+        be used when creating a new model in Rose. You can create a file in which you define what stereotypes to use, and&#xD;
+        their icons. Then this file can be installed on all users' computers, so that they use the same set of&#xD;
+        stereotypes.&amp;nbsp;&amp;nbsp;&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;b>Rational RequisitePro&lt;/b>. You can create a RequisitePro project template, in which you define the requirements&#xD;
+        attribute types to use. You can start with the provided &quot;RequisitePro Project Template&quot;, and customize it according&#xD;
+        to your needs.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;b>Rational ClearCase&lt;/b>. You can define 'events' that make the tool behave in a certain way. For example, you can&#xD;
+        customize the tool so that when a user checks-in an item, a script is automatically executed that does some&#xD;
+        checking on the item.&amp;nbsp;&amp;nbsp;&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;b>Rational ClearQuest&lt;/b>. You can create and modify forms to support the way the project wishes to collect&#xD;
+        information about change requests. You can also create and modify schemas to make the tool manage the change&#xD;
+        requests in a certain way.&amp;nbsp;&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>&#xD;
+    In addition to customizing the tools, you should set up user groups and access rights on the server.&amp;nbsp; In some&#xD;
+    cases, a tool may provide its own mechanisms for this.&amp;nbsp; In other cases, user groups and access rights are defined&#xD;
+    using the operating system.&amp;nbsp; The configuration of user groups and access rights affects how the tools can be used.&#xD;
+    For example, you can set constraints on what parts of a repository certain users will have access to.&amp;nbsp;&amp;nbsp;&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Document the customizations in &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../core.base_rup/workproducts/rup_project_specific_guidelines_8DC8DA32.html&quot;&#xD;
+    guid=&quot;{E5501201-7EE6-4243-AE91-73880FF76FC1}&quot;>Project-Specific Guidelines&lt;/a>.&amp;nbsp;&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_ZUv10tnnEdmO6L4XMImrsA" name=" Set Up Multisite Support " guid="_ZUv10tnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;Set Up Multisite Support&quot; name=&quot;Set Up Multisite Support&quot;>&lt;/a>&#xD;
+&lt;p>&#xD;
+    If the team is geographically distributed it may be necessary to divide the repository on several sites, or to&#xD;
+    duplicate the repository. To divide or duplicate a repository requires that the repositories on the different sites&#xD;
+    must be synchronized, information must be transferred between the sites.&amp;nbsp;&amp;nbsp;&amp;nbsp;&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_ZUv109nnEdmO6L4XMImrsA" name=" Integrate with Other Tools " guid="_ZUv109nnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;Integrate With Other Tools&quot; name=&quot;Integrate With Other Tools&quot;>&lt;/a>&#xD;
+&lt;p>&#xD;
+    Integrate the tool with other tools to make it easier to use. An integration between tools is in most cases in the form&#xD;
+    of an extension to one or several tools. An 'integration extension' to a tool typically:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Synchronize data between the different tools. It automates the creation and maintenance of related items in&#xD;
+        development projects&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Automatically adds traceability between related items in different tools.&amp;nbsp;&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Allow the user to add traceability between items in different tools.&amp;nbsp;&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Allow the user to navigate between tools. For example, access an item in a test tool from a requirements management&#xD;
+        tool.&amp;nbsp;&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Allow the user to run certain functionality from one tool. For example, the possibility to create items in another&#xD;
+        tool.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Allow the user to version a tool's items in a configuration management tool. For example, the possibility to&#xD;
+        version control requirements (from RequisitePro) using ClearCase.&amp;nbsp;&amp;nbsp;&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>&#xD;
+    Most tools offer ready-to-use extensions to integrate tools with each other.&amp;nbsp;&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Describe how the tools are integrated with each other in the &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../core.base_rup/workproducts/rup_project_specific_guidelines_8DC8DA32.html&quot;&#xD;
+    guid=&quot;{E5501201-7EE6-4243-AE91-73880FF76FC1}&quot;>Project-Specific Guidelines&lt;/a>.&amp;nbsp;&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_ZUv11NnnEdmO6L4XMImrsA" name=" Install and Customize Tools on Clients " guid="_ZUv11NnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;Install Tools on Clients&quot; name=&quot;Install Tools on Clients&quot;>&lt;/a>&#xD;
+&lt;p>&#xD;
+    Install the tool on each client. The least that is needed to do when installing a tool on the client side, is to set up&#xD;
+    the connection to the repository on the server.&amp;nbsp;&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Customize the tool on the clients, just as you customized the tool on the server:&amp;nbsp;&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        In some cases you do not have to do anything with the client. For example, if the client is a web-interface it is&#xD;
+        enough that the clients get the address to the application on the server. Some tools allow you to do all&#xD;
+        customization on the server side. When the users access the repository on the server, they automatically get the&#xD;
+        correct settings.&amp;nbsp;&amp;nbsp;&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        In other cases you customize the tool on the client by installing software that customizes the tool, or installing&#xD;
+        files with customization information.&amp;nbsp;&amp;nbsp;&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>&#xD;
+    It may be necessary to install 'integration software' on the client. Place the 'integration software' on a server and&#xD;
+    allow the users to download and install it on their computers.&amp;nbsp;&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    If it possible you should automate the tool installation, and the tool customization for the users. The benefit of&#xD;
+    creating installation programs is that it allows you to set up the tools so that the clients get all the right&#xD;
+    settings, extensions, and connections to the repository.&amp;nbsp; You create installation (and customization) programs,&#xD;
+    and place them on a server. Then the users download these programs and run them to install and customize the tool in&#xD;
+    their computer.&amp;nbsp;&#xD;
+&lt;/p>&lt;br />&#xD;
+&lt;br /></sectionDescription>
+  </sections>
+  <purpose>&lt;a id=&quot;Top&quot; name=&quot;Top&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    The purpose of this task is to:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Install the tools&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Customize the tools.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Make the tools available to the end users.&amp;nbsp;&amp;nbsp;&amp;nbsp;&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></purpose>
+</org.eclipse.epf.uma:TaskDescription>

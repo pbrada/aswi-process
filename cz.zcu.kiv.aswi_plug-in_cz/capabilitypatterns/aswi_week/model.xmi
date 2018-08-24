@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:org.eclipse.epf.uma.resourcemanager="http:///org/eclipse/epf/uma/resourcemanager.ecore" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1">
+  <org.eclipse.epf.uma.resourcemanager:ResourceManager xmi:id="_MUwlEC5jEeKVavM_dEXkKA" guid="_MUwlEC5jEeKVavM_dEXkKA">
+    <resourceDescriptors xmi:id="_MUwlES5jEeKVavM_dEXkKA" id="-6H1giFPh32OyQW14dSHPXg" uri="content.xmi"/>
+  </org.eclipse.epf.uma.resourcemanager:ResourceManager>
+  <org.eclipse.epf.uma:ProcessComponent xmi:id="_MTeLoC5jEeKVavM_dEXkKA" name="aswi_week" guid="_MTeLoC5jEeKVavM_dEXkKA">
+    <methodElementProperty xmi:id="_54q1gBMyEeiuHtBa8rFbkA" name="me_edited" value="true"/>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_VtvvEC6iEeKexfcpBXL2Tw" name="aswi_perform_weekly_tasks" guid="_VtvvEC6iEeKexfcpBXL2Tw">
+      <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_VtvvES6iEeKexfcpBXL2Tw" name="aswi_perform_weekly_tasks" guid="_VtvvES6iEeKexfcpBXL2Tw" presentationName="Provést každotýdenní úkoly" superActivities="_MTeLoS5jEeKVavM_dEXkKA" breakdownElements="_auGqkC6iEeKexfcpBXL2Tw _deVFcDAhEeKlGeKA-dTFIA _deVsgDAhEeKlGeKA-dTFIA _deVsgTAhEeKlGeKA-dTFIA _deVsgjAhEeKlGeKA-dTFIA _deVsgzAhEeKlGeKA-dTFIA"/>
+      <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="_auGqkC6iEeKexfcpBXL2Tw" name="aswi_perform_weekly_standup" guid="_auGqkC6iEeKexfcpBXL2Tw" presentationName="Provést weekly standup" isPlanned="true" superActivities="_VtvvES6iEeKexfcpBXL2Tw" mandatoryInput="_deVsgDAhEeKlGeKA-dTFIA" output="_deVsgTAhEeKlGeKA-dTFIA _deVsgjAhEeKlGeKA-dTFIA _deVsgzAhEeKlGeKA-dTFIA" performedPrimarilyBy="_deVFcDAhEeKlGeKA-dTFIA">
+        <ownedRules xmi:id="_auGqkS6iEeKexfcpBXL2Tw" name="wpStates" guid="_auGqkS6iEeKexfcpBXL2Tw" body="_p5sCkS5jEeKVavM_dEXkKA">
+          <methodElementProperty xmi:id="_a48ooC6iEeKexfcpBXL2Tw" name="constraint_wpStates" value="_54Ha8C2vEeKtT515Esx8Vg/output"/>
+        </ownedRules>
+        <ownedRules xmi:id="_auGqki6iEeKexfcpBXL2Tw" name="wpStates" guid="_auGqki6iEeKexfcpBXL2Tw" body="_p5sCki5jEeKVavM_dEXkKA">
+          <methodElementProperty xmi:id="_a48ooS6iEeKexfcpBXL2Tw" name="constraint_wpStates" value="_Ali8QC2wEeKtT515Esx8Vg/output"/>
+        </ownedRules>
+        <Task href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_muJwwCkrEeKoH7tlsUAjEg"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:RoleDescriptor" xmi:id="_deVFcDAhEeKlGeKA-dTFIA" name="aswi_team" guid="_deVFcDAhEeKlGeKA-dTFIA" presentationName="Vývojový tým" isPlanned="false" superActivities="_VtvvES6iEeKexfcpBXL2Tw" modifies="_deVsgTAhEeKlGeKA-dTFIA _deVsgjAhEeKlGeKA-dTFIA _deVsgzAhEeKlGeKA-dTFIA" responsibleFor="_deVsgzAhEeKlGeKA-dTFIA _deVsgjAhEeKlGeKA-dTFIA _deVsgTAhEeKlGeKA-dTFIA">
+        <Role href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_6An5MCnqEeKEKJTuEqpfrw"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_deVsgDAhEeKlGeKA-dTFIA" name="aswi_iteration_plan" guid="_deVsgDAhEeKlGeKA-dTFIA" presentationName="Plán iterace" isPlanned="false" superActivities="_VtvvES6iEeKexfcpBXL2Tw">
+        <WorkProduct href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_XiDKECkXEeK0bd3bdEdbgQ"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_deVsgTAhEeKlGeKA-dTFIA" name="aswi_bug_list" guid="_deVsgTAhEeKlGeKA-dTFIA" presentationName="Seznam závad" isPlanned="false" superActivities="_VtvvES6iEeKexfcpBXL2Tw">
+        <WorkProduct href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_B_N6wCkXEeK0bd3bdEdbgQ"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_deVsgjAhEeKlGeKA-dTFIA" name="aswi_change_request_list" guid="_deVsgjAhEeKlGeKA-dTFIA" presentationName="Seznam požadavků na změny" isPlanned="false" superActivities="_VtvvES6iEeKexfcpBXL2Tw">
+        <WorkProduct href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_yc3AICkWEeK0bd3bdEdbgQ"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_deVsgzAhEeKlGeKA-dTFIA" name="aswi_weekly_standup_report" guid="_deVsgzAhEeKlGeKA-dTFIA" presentationName="Záznam weekly standupu" isPlanned="false" superActivities="_VtvvES6iEeKexfcpBXL2Tw">
+        <WorkProduct href="uma://_jk5eQCjSEeKUV4oljX-9JQ#_l8VOwC9sEeKH54VgI3aDow"/>
+      </processElements>
+    </childPackages>
+    <process xsi:type="org.eclipse.epf.uma:CapabilityPattern" xmi:id="_MTeLoS5jEeKVavM_dEXkKA" name="aswi_week" guid="_MTeLoS5jEeKVavM_dEXkKA" presentationName="Týden" briefDescription="Iterace nemá stanovenou a někdy ani v průběhu projektu pevnou délku. To ilustruje tato položka, která stanovuje, že bez ohledu na počet týdnů v iteraci by se tým měl jednou týdně sejít a provést tzv. weekly standup." isRepeatable="true" isOngoing="true" breakdownElements="_VtvvES6iEeKexfcpBXL2Tw">
+      <presentation xmi:id="-6H1giFPh32OyQW14dSHPXg" href="uma://-6H1giFPh32OyQW14dSHPXg#-6H1giFPh32OyQW14dSHPXg"/>
+      <defaultContext href="uma://_0q85QJySEd2xJNwbI6lxKA#_Pht1ECjYEeKUV4oljX-9JQ"/>
+      <validContext href="uma://_0q85QJySEd2xJNwbI6lxKA#_Pht1ECjYEeKUV4oljX-9JQ"/>
+    </process>
+  </org.eclipse.epf.uma:ProcessComponent>
+</xmi:XMI>

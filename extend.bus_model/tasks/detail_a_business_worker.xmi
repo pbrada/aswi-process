@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_0nZkJNnmEdmO6L4XMImrsA" name="detail_a_business_worker,{DCFC0362-DBB6-4858-A9E4-AF907780FD99}" guid="_0nZkJNnmEdmO6L4XMImrsA" changeDate="2005-10-12T11:10:53.125-0700" version="7.1.0">
+  <copyrightStatement href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#_NH1FoPTFEdmkpYARNN468A"/>
+  <sections xmi:id="_MbN-oNnnEdmO6L4XMImrsA" name=" Determine Areas of Responsibility " guid="_MbN-oNnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;Determine Areas of Responsibility&quot; name=&quot;Determine Areas of Responsibility&quot;>&lt;/a>&#xD;
+&lt;p>&#xD;
+    Make sure you have access to descriptions of all workflows in which the business worker participates. Also, you may&#xD;
+    need descriptions of the business workers with which this business worker communicates, as well as business entities&#xD;
+    accessed.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Decide the business worker's areas of responsibilities within each business use-case realization. Briefly describe each&#xD;
+    responsibility in the business worker's responsibility section.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Write step-by-step instructions for each operation that describe what the person acting as the business worker must do.&#xD;
+    These detailed work instructions could be used either as guidelines or as a prescriptive recipe for performing the&#xD;
+    work. The choice depends on the culture and type of business.&amp;nbsp; Highly skilled and motivated knowledge workers&#xD;
+    prefer ad-hoc work processes so that they have the freedom to optimally perform the process for a particular situation.&#xD;
+    However, environments in which there are potentially disastrous consequences (such as an operator in a nuclear plant)&#xD;
+    require strictly drilled routines and procedures. It may also be necessary to prescribe work processes for&#xD;
+    under-skilled or unmotivated staff in order to guarantee minimum performance of business use cases.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_MbN-odnnEdmO6L4XMImrsA" name=" Define Operations " guid="_MbN-odnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;Define Operations&quot; name=&quot;Define Operations&quot;>&lt;/a>&#xD;
+&lt;p>&#xD;
+    On the basis of what the business worker does in each business use-case realization, decide what operations the&#xD;
+    business worker should perform. A business worker can have one or more operations for each area of responsibility.&#xD;
+    Briefly describe each operation.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Finalize the responsibility description and explain how all operations are related, including the business worker's&#xD;
+    lifecycle. Also, describe how the business worker should prioritize among the operations.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    See also &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../extend.bus_model/guidances/guidelines/business_worker_A7C3AF61.html&quot;&#xD;
+    guid=&quot;2.0515380886761288E-306&quot;>Guideline: Business Worker&lt;/a>.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_MbN-otnnEdmO6L4XMImrsA" name=" Define Attributes " guid="_MbN-otnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;Define Attributes&quot; name=&quot;Define Attributes&quot;>&lt;/a>&#xD;
+&lt;p>&#xD;
+    Identify and describe the attributes of the business worker based on the business worker's operations. These attributes&#xD;
+    consist of the information that the business worker requires or manages while performing its responsibilities.&#xD;
+    Attributes must not be the same as the business entities with which the business worker interacts.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    See also &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../extend.bus_model/guidances/guidelines/business_worker_A7C3AF61.html&quot;&#xD;
+    guid=&quot;2.0515380886761288E-306&quot;>Guideline: Business Worker&lt;/a>.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_MbN-o9nnEdmO6L4XMImrsA" name=" Describe Competence Requirements " guid="_MbN-o9nnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;Describe Competence Requirements&quot; name=&quot;Describe Competence Requirements&quot;>&lt;/a>&#xD;
+&lt;p>&#xD;
+    Describe the levels of competence that are required of the business worker (or the collection of people acting as the&#xD;
+    business worker). Competence requirements are described as skill types and indicate the required (or desired) levels of&#xD;
+    proficiency for performing the business worker's responsibilities effectively. These skill types can be compared with&#xD;
+    the actual available competencies to determine the effect on the performance of business use cases. This comparison is&#xD;
+    also important to consider when improving or redesigning business use cases. Is the difference between available and&#xD;
+    desired competencies realistic?&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_MbXIkNnnEdmO6L4XMImrsA" name=" Analyze Relationships " guid="_MbXIkNnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;Analyze Relationships&quot; name=&quot;Analyze Relationships&quot;>&lt;/a>&#xD;
+&lt;p>&#xD;
+    Review the relationships (association, dependency, generalization) that the business worker has with other business&#xD;
+    workers, business entities, and business events. Determine whether the relationships are described properly and whether&#xD;
+    they are all really necessary to the performance of the business worker's responsibilities. Also confirm that the&#xD;
+    business worker does indeed have all the required relationships necessary to perform its responsibilities.&amp;nbsp;&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_MbXIkdnnEdmO6L4XMImrsA" name=" Evaluate Your Results " guid="_MbXIkdnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;Evaluate Your Results&quot; name=&quot;Evaluate Your Results&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    Review and discuss the business worker with other members of the team and appropriate stakeholders. Make sure that they&#xD;
+    have a clear understanding of the business worker and agree on its description.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    See &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../extend.bus_model/guidances/guidelines/business_worker_A7C3AF61.html&quot;&#xD;
+    guid=&quot;2.0515380886761288E-306&quot;>Guideline: Business Worker&lt;/a> and checklist for business workers in &lt;a&#xD;
+    class=&quot;elementLinkWithType&quot; href=&quot;./../../extend.bus_model/tasks/review_the_business_object_model_1A938836.html&quot;&#xD;
+    guid=&quot;{6B6B459B-A5EA-43B4-BE8E-ED8DC9A9E2C6}&quot;>Task: Review the Business Analysis Model&lt;/a>.&#xD;
+&lt;/p>&lt;br />&#xD;
+&lt;br /></sectionDescription>
+  </sections>
+  <purpose>&lt;a id=&quot;Top&quot; name=&quot;Top&quot;>&lt;/a>&lt;a id=&quot;XE_business_worker__detailing_and_reviewing&quot;&#xD;
+name=&quot;XE_business_worker__detailing_and_reviewing&quot;>&lt;/a> &#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Describe the responsibilities of a business worker.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Identify the competence requirements of a business worker.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Ensure that the business worker is able to perform its responsibilities.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></purpose>
+</org.eclipse.epf.uma:TaskDescription>

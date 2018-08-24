@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1">
+  <org.eclipse.epf.uma:ProcessDescription xmi:id="-O256FrgrTLaCNuFolYQwbw" name="rup_phases,_dRfjADYPEdqQ8Lb12XU1pw" guid="-O256FrgrTLaCNuFolYQwbw">
+    <mainDescription>&lt;p>&#xD;
+    SEE the USAGE NOTES for details on how to use this capability pattern to create your own delivery process.&#xD;
+&lt;/p></mainDescription>
+    <usageNotes>&lt;p>&#xD;
+    To create a delivery process that includes all of the RUP Phases:&#xD;
+&lt;/p>&#xD;
+&lt;ol>&#xD;
+    &lt;li>&#xD;
+        Create a new delivery process&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Copy (do not extend)&amp;nbsp;each phase from this&amp;nbsp;capability pattern&amp;nbsp;to your new delivery process.&amp;nbsp; You&#xD;
+        can select all of the phases and copy them all at the same time. (Note:&amp;nbsp; This is a quick way to get the&#xD;
+        structure of the RUP phases, along with documentation and activity diagram skeletons.&amp;nbsp;&amp;nbsp;You are making a&#xD;
+        copy of the pattern because you will need to delete some elements from this pattern as you define your iterations.)&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Create your iterations&amp;nbsp;for each phase.&amp;nbsp; Do the following for &lt;b>each&lt;/b> phase:&amp;nbsp; &#xD;
+        &lt;ul>&#xD;
+            &lt;li>&#xD;
+                Copy (or extend) the appropriate Classic RUP iteration template capability pattern to the appropriate phase&#xD;
+                in your delivery process.&amp;nbsp; Be sure to copy the entire capability pattern, not just the activities&#xD;
+                within the capability pattern, so that you retain the activity diagram of the iteration.&amp;nbsp; If you plan&#xD;
+                to modify the standard RUP iteration in your delivery process, you will have more flexibility to do this if&#xD;
+                you copy, rather&amp;nbsp;than extend, the phase iteration template you chose.&#xD;
+            &lt;/li>&#xD;
+            &lt;li>&#xD;
+                Delete the iteration that was copied from&amp;nbsp;this capability pattern. The phase iteration template you&#xD;
+                just brought over has duplicated the iteration heading.&#xD;
+            &lt;/li>&#xD;
+            &lt;li>&#xD;
+                Rename the iteration appropriately, if you plan to have more than one iteration in the phase.&#xD;
+            &lt;/li>&#xD;
+            &lt;li>&#xD;
+                Repeat these steps until you you have the appropriate number of iterations created for your phase.&#xD;
+            &lt;/li>&#xD;
+            &lt;li>&#xD;
+                Move the milestone down to the end of the phase.&#xD;
+            &lt;/li>&#xD;
+        &lt;/ul>&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Update the Activity Diagrams appropriately for:&#xD;
+    &lt;/li>&#xD;
+    &lt;li style=&quot;list-style: none&quot;>&#xD;
+        &lt;ul>&#xD;
+            &lt;li>&#xD;
+                Your Delivery Process&#xD;
+            &lt;/li>&#xD;
+            &lt;li>&#xD;
+                Each phase: Inception, Elaboration, Construction and Transition&#xD;
+            &lt;/li>&#xD;
+            &lt;li>&#xD;
+                Each iteration within each phase.&#xD;
+            &lt;/li>&#xD;
+            &lt;li>&#xD;
+                Each extended capability pattern that you have modified in your delivery process.&#xD;
+            &lt;/li>&#xD;
+            &lt;li>&#xD;
+                Each activity you have created from scratch in your delivery process that has child activities.&#xD;
+            &lt;/li>&#xD;
+            &lt;li>&#xD;
+                NOTE: When you publish, if you notice that any activity diagrams are not showing up or they show up, but&#xD;
+                are not correct, it means that the activity diagrams have not been created or that they may need&#xD;
+                refreshing.&amp;nbsp;&amp;nbsp; To fix this, open your delivery process in Rational Method Composer. If you copied&#xD;
+                another capability pattern, or created your own activity that has child activities, then you need to create&#xD;
+                your activity diagram yourself.&amp;nbsp; If you extended another capability pattern, you should be able to&#xD;
+                refresh the diagram from the base capability pattern as follows:&#xD;
+            &lt;/li>&#xD;
+            &lt;li style=&quot;list-style: none&quot;>&#xD;
+                &lt;ul>&#xD;
+                    &lt;li>&#xD;
+                        open the activity diagram&#xD;
+                    &lt;/li>&#xD;
+                    &lt;li>&#xD;
+                        open the context menu on the diagram and choose 'refresh from base'&#xD;
+                    &lt;/li>&#xD;
+                    &lt;li>&#xD;
+                        save and close the diagram&amp;nbsp;&#xD;
+                    &lt;/li>&#xD;
+                &lt;/ul>&#xD;
+            &lt;/li>&#xD;
+        &lt;/ul>&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Your delivery process has now been primed with the classic RUP delivery process that includes the appropriate&#xD;
+        number of iterations for your project.&amp;nbsp; You can now customize the delivery process further to suit your&#xD;
+        project's needs.&amp;nbsp;&amp;nbsp;Be sure to review the documentation that you inherited from the Templates for Delivery&#xD;
+        Processes capability patterns, making updates as needed for your delivery process.&#xD;
+    &lt;/li>&#xD;
+&lt;/ol>&#xD;
+&lt;p>&#xD;
+    The &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../core.base_rup/deliveryprocesses/classic_rup_A10352C7.html&quot;&#xD;
+    guid=&quot;_Jd38oTYREdqQ8Lb12XU1pw&quot;>Delivery Process: Classic RUP Lifecycle&lt;/a> delivery process was created in this same&#xD;
+    manner.&#xD;
+&lt;/p></usageNotes>
+  </org.eclipse.epf.uma:ProcessDescription>
+  <org.eclipse.epf.uma:BreakdownElementDescription xmi:id="-atcJstHMcCbtnmzHUciTfw" name="Inception Milestone,_la9IADYQEdqQ8Lb12XU1pw" guid="-atcJstHMcCbtnmzHUciTfw">
+    <mainDescription>&lt;p>&#xD;
+    For more details about this milestone, see:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../core.base_rup/guidances/concepts/lifecycle_objectives_9E53DCF8.html&quot;&#xD;
+        guid=&quot;_piIfsCVwEdqSZ9OimJ-AzA&quot;>Concept: Lifecycle Objectives Milestone&lt;/a>&amp;nbsp;&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../core.base_rup/tasks/lifecycle_milestone_review_B4D90641.html&quot;&#xD;
+        guid=&quot;{E611CCFD-E4C5-408E-9B0E-46B2A3D01290}&quot;>Task: Lifecycle Milestone Review&lt;/a>&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></mainDescription>
+  </org.eclipse.epf.uma:BreakdownElementDescription>
+  <org.eclipse.epf.uma:BreakdownElementDescription xmi:id="-TmV0dB41rlnY16hhh1z1Jw" name="Elaboration Milestone,_swjckDYQEdqQ8Lb12XU1pw" guid="-TmV0dB41rlnY16hhh1z1Jw">
+    <mainDescription>&lt;p>&#xD;
+    For more details about this milestone, see:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../core.base_rup/guidances/concepts/lifecycle_architecture_34313398.html&quot;&#xD;
+        guid=&quot;_7z-fYCVwEdqSZ9OimJ-AzA&quot;>Concept: Lifecycle Architecture Milestone&lt;/a>&amp;nbsp;&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../core.base_rup/tasks/lifecycle_milestone_review_B4D90641.html&quot;&#xD;
+        guid=&quot;{E611CCFD-E4C5-408E-9B0E-46B2A3D01290}&quot;>Task: Lifecycle Milestone Review&lt;/a>&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></mainDescription>
+  </org.eclipse.epf.uma:BreakdownElementDescription>
+  <org.eclipse.epf.uma:BreakdownElementDescription xmi:id="-c_VdQ23gvzw2usc6Rn3MjA" name="Construction Milestone,_0J96IDYQEdqQ8Lb12XU1pw" guid="-c_VdQ23gvzw2usc6Rn3MjA">
+    <mainDescription>&lt;p>&#xD;
+    For more details about this milestone, see:&amp;nbsp;&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../core.base_rup/guidances/concepts/initial_operational_capability_8DF28633.html&quot;&#xD;
+        guid=&quot;_DEwlYCVxEdqSZ9OimJ-AzA&quot;>Concept: Initial Operational Capability Milestone&lt;/a>&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../core.base_rup/tasks/lifecycle_milestone_review_B4D90641.html&quot;&#xD;
+        guid=&quot;{E611CCFD-E4C5-408E-9B0E-46B2A3D01290}&quot;>Task: Lifecycle Milestone Review&lt;/a>&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></mainDescription>
+  </org.eclipse.epf.uma:BreakdownElementDescription>
+  <org.eclipse.epf.uma:BreakdownElementDescription xmi:id="-zDFeERShX7Q4yRtPturZkw" name="Transition Milestone,_54s-kDYQEdqQ8Lb12XU1pw" guid="-zDFeERShX7Q4yRtPturZkw">
+    <mainDescription>&lt;p>&#xD;
+    For more details about this milestone, see:&amp;nbsp;&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../core.base_rup/guidances/concepts/product_release_8BCA935E.html&quot;&#xD;
+        guid=&quot;_Pwn0ACVxEdqSZ9OimJ-AzA&quot;>Concept: Product Release Milestone&lt;/a>&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../core.base_rup/tasks/lifecycle_milestone_review_B4D90641.html&quot;&#xD;
+        guid=&quot;{E611CCFD-E4C5-408E-9B0E-46B2A3D01290}&quot;>Task: Lifecycle Milestone Review&lt;/a>&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../core.base_rup/tasks/project_acceptance_review_6DB7AB7C.html&quot;&#xD;
+        guid=&quot;{9BA5BD55-B134-4623-BAE1-542121869849}&quot;>Task: Project Acceptance Review&lt;/a>&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></mainDescription>
+    <usageGuidance>In some cases this milestone may coincide with the end of the inception phase for the next cycle.</usageGuidance>
+  </org.eclipse.epf.uma:BreakdownElementDescription>
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="-r8qk09B6PbPb3COMluOsPg" name="Inception,_ZvoJUDYQEdqQ8Lb12XU1pw" guid="-r8qk09B6PbPb3COMluOsPg"/>
+</xmi:XMI>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_GKiEwN36EdmAuujzfxByGA" name="use_asset,{7E587465-5AF6-4E91-8869-1193C7577C25}" guid="_GKiEwN36EdmAuujzfxByGA" changeDate="2007-05-28T15:38:10.171-0700" version="1.0.0">
+  <mainDescription>&lt;p>&#xD;
+    Using an asset is the main purpose of creating an asset. There is reuse costs associated with using an asset. There are&#xD;
+    several factors affecting the costs of reusing an asset, such as:&#xD;
+&lt;/p>&#xD;
+&lt;ol>&#xD;
+    &lt;li>&#xD;
+        Time and effort to search, browse and evaluate an asset.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        The complexity of the asset, which can affect the effort to evaluate the asset, as well as the effort to reuse the&#xD;
+        asset.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Nature and quality of asset packaging material which affects effort to comprehend.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        The level or degree of customization of an asset.&#xD;
+    &lt;/li>&#xD;
+&lt;/ol>&#xD;
+&lt;p>&#xD;
+    Mitigating these factors with well-organized, well-designed, and well-packaged assets directly affects the breakeven&#xD;
+    point, or rather, payoff threshold. See Asset Production tasks to address guidance on well-formed assets to benefit&#xD;
+    Asset Consumers.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Black box and white box reuse, or, reusing an asset “as-is” and reusing an asset making internal modifications impacts&#xD;
+    the usage strategy for an asset.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Black box style reuse implies the asset internals are not open to the Asset Consumer and it is manipulated only by&#xD;
+    formal controls. Services are a great example of black box reuse, providing a formal interface that exposes some level&#xD;
+    of control through parameters and messages.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Design models may be white box reuse if the Asset Producer permits access to manipulate the model. White box reuse&#xD;
+    implies a requirement to maintain the consumed asset.&#xD;
+&lt;/p></mainDescription>
+  <sections xmi:id="_G0RlUN36EdmAuujzfxByGA" name=" Retrieve Asset " guid="_G0RlUN36EdmAuujzfxByGA">
+    <sectionDescription>&lt;p>&#xD;
+    Asset Consumer uses the documentation or other guidance to bring the asset into Asset Consumer’s environment. Typically&#xD;
+    Repositories will store metrics that an asset has been downloaded.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    A challenge is to understand when to count that the asset has been reused. Some Repositories provide feedback&#xD;
+    mechanisms to register when reuse occurs. Certainly not all downloads can be mapped to reuse as someone may be&#xD;
+    evaluating an asset.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    For the purpose of impact analysis, it is very useful for Repositories to provide mechanisms to track who has&#xD;
+    downloaded the asset and for what projects. A sample list of asset usage information to track is found below:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        What user downloaded the asset&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Where the asset is being used, summarized by:&#xD;
+    &lt;/li>&#xD;
+    &lt;li style=&quot;LIST-STYLE-TYPE: none&quot;>&#xD;
+        &lt;ul>&#xD;
+            &lt;li>&#xD;
+                Project&#xD;
+            &lt;/li>&#xD;
+            &lt;li>&#xD;
+                Engagement&#xD;
+            &lt;/li>&#xD;
+            &lt;li>&#xD;
+                Application&#xD;
+            &lt;/li>&#xD;
+            &lt;li>&#xD;
+                Build&#xD;
+            &lt;/li>&#xD;
+        &lt;/ul>&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>&#xD;
+    Registering this information in the Repository provides a means for the appropriate parties to be notified of key&#xD;
+    events such as critical problems reported, new asset versions, asset reviews, and so forth.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_G0Xr8N36EdmAuujzfxByGA" name=" Extend Asset " guid="_G0Xr8N36EdmAuujzfxByGA">
+    <sectionDescription>Some assets can be extended through variability points, a location in an asset or a contained artifact to be customized or&#xD;
+extended. See &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+href=&quot;./../../extend.rup_abd/guidances/concepts/variability_point_6A7826FF.html&quot;&#xD;
+guid=&quot;_M3GiMKd8Edu3IsnteZnoTw&quot;>Concept: Variability Point&lt;/a>.</sectionDescription>
+  </sections>
+  <purpose>&lt;a id=&quot;Top&quot; name=&quot;Top&quot;>&lt;/a>&lt;a id=&quot;XE_asset__applying&quot; name=&quot;XE_asset__applying&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    To incorporate or instantiate a located &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../extend.rup_abd/workproducts/reusable_asset_A38D118D.html&quot;&#xD;
+    guid=&quot;{B40F6CE7-C2CF-49DB-A805-2FBDC885102D}&quot;>Reusable Asset&lt;/a> into the project or your workspace. The time it takes&#xD;
+    to search, browse, evaluate, and reuse an asset impacts the value of the asset.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    For more information on locating an asset, see &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../extend.rup_abd/tasks/search_asset_C29C6178.html&quot;&#xD;
+    guid=&quot;{81DC995B-5930-4F2B-B574-9805136CE94A}&quot;>Task: Search Asset&lt;/a>.&#xD;
+&lt;/p></purpose>
+</org.eclipse.epf.uma:TaskDescription>

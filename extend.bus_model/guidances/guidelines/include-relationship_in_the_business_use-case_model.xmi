@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_0iMUBNnmEdmO6L4XMImrsA" name="include-relationship_in_the_business_use-case_model,8.096716256124967E-305" guid="_0iMUBNnmEdmO6L4XMImrsA" changeDate="2005-06-15T19:00:09.454-0700" version="7.1.0">
+  <mainDescription>&lt;a id=&quot;Top&quot; name=&quot;Top&quot;>&lt;/a>&lt;a id=&quot;XE_include-relationship_in_business_use-case_model__guidelines_for&quot;&#xD;
+name=&quot;XE_include-relationship_in_business_use-case_model__guidelines_for&quot;>&lt;/a> &#xD;
+&lt;h3>&#xD;
+    &lt;a id=&quot;Explanation&quot; name=&quot;Explanation&quot;>Explanation&lt;/a>&#xD;
+&lt;/h3>&#xD;
+&lt;p>&#xD;
+    Include-relationships are used to partition out parts of a workflow for which the base use case only depends on the&#xD;
+    result, not the method for reaching the result. You can do this partitioning if it simplifies the understanding of the&#xD;
+    base use case (detailed behavior is &quot;hidden&quot;) or if the partitioned behavior can be reused in other base use cases.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    For comparison, see also &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../../core.base_rup/guidances/guidelines/include-relationship_5AE2718.html&quot; guid=&quot;7.259881398615376E-305&quot;>Guideline:&#xD;
+    Include-Relationship&lt;/a> in the system use-case model.&#xD;
+&lt;/p>&#xD;
+&lt;h3>&#xD;
+    &lt;a id=&quot;Use&quot; name=&quot;Use&quot;>Use&lt;/a>&#xD;
+&lt;/h3>&#xD;
+&lt;p>&#xD;
+    Once you have outlined the workflow of your business use cases, you can look for behavior that is in common for several&#xD;
+    workflows or that is not necessary to see in detail to understand the primary purpose of a business use case.&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;center&quot;>&#xD;
+    &lt;img height=&quot;159&quot; alt=&quot;Diagram described in accompanying text.&quot; src=&quot;resources/bincl1.gif&quot; width=&quot;201&quot; />&#xD;
+&lt;/p>&#xD;
+&lt;p class=&quot;picturetext&quot;>&#xD;
+    The Individual Check-in and Group Check-in business use cases both include the Baggage-Handling business use case.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    A business use-case instance that follows the description of a base use case will also follow the description of the&#xD;
+    inclusion use case. The whole workflow described in the included business use case is incorporated. An inclusion&#xD;
+    business use case of this kind is always abstract, and need not have a relationship with a business actor.&#xD;
+&lt;/p>&#xD;
+&lt;h3>&#xD;
+    &lt;a id=&quot;Recommended Restrictions in Use&quot; name=&quot;Recommended Restrictions in Use&quot;>Recommended Restrictions in Use&lt;/a>&#xD;
+&lt;/h3>&#xD;
+&lt;p>&#xD;
+    You should reconsider models that have more than one level of include-relationships. Layers of this kind make models&#xD;
+    hard to understand, even if they are correct in all other aspects.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    You might even consider hiding inclusion use cases and include-relationships when discussing the model with people who&#xD;
+    have little or no previous exposure to the use-case modeling technique.&#xD;
+&lt;/p>&lt;br />&#xD;
+&lt;br /></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

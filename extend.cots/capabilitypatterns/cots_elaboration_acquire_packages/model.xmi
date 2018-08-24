@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:org.eclipse.epf.uma.resourcemanager="http:///org/eclipse/epf/uma/resourcemanager.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1">
+  <org.eclipse.epf.uma.resourcemanager:ResourceManager xmi:id="_9oNCYBTjEdqsDYPowBCnuA" guid="_9oNCYBTjEdqsDYPowBCnuA">
+    <resourceDescriptors xmi:id="_9oTJABTjEdqsDYPowBCnuA" id="_9nJ5gBTjEdqsDYPowBCnuA" uri="content.xmi"/>
+  </org.eclipse.epf.uma.resourcemanager:ResourceManager>
+  <org.eclipse.epf.uma:ProcessComponent xmi:id="_9fzUUBTjEdqsDYPowBCnuA" name="cots_elaboration_acquire_packages" guid="_9fzUUBTjEdqsDYPowBCnuA">
+    <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="_SdQlsBTkEdqsDYPowBCnuA" name="cost_arrange_procurement_of_package" guid="_SdQlsBTkEdqsDYPowBCnuA" presentationName="Arrange Procurement of Package" superActivities="_9fzUURTjEdqsDYPowBCnuA" optionalInput="_SdpAMBTkEdqsDYPowBCnuA _SdpAMRTkEdqsDYPowBCnuA _Sd1NcBTkEdqsDYPowBCnuA _Sd1NcRTkEdqsDYPowBCnuA _Sd7UEBTkEdqsDYPowBCnuA" output="_SdpAMBTkEdqsDYPowBCnuA" performedPrimarilyBy="_Sdcy8BTkEdqsDYPowBCnuA">
+      <Task href="uma://{D4626EC0-06BC-4592-A8A6-C8DE7E821952}#{0474C0CE-2413-4E2E-88AD-56C8DA7E9F4C}"/>
+      <selectedSteps href="uma://_slaKMNoTEdmCj7Yn9Ev4rg#_th9SANoTEdmCj7Yn9Ev4rg"/>
+      <selectedSteps href="uma://_slaKMNoTEdmCj7Yn9Ev4rg#_tiDYoNoTEdmCj7Yn9Ev4rg"/>
+      <selectedSteps href="uma://_slaKMNoTEdmCj7Yn9Ev4rg#_tiDYodoTEdmCj7Yn9Ev4rg"/>
+    </processElements>
+    <processElements xsi:type="org.eclipse.epf.uma:RoleDescriptor" xmi:id="_Sdcy8BTkEdqsDYPowBCnuA" name="cots_acquirer" guid="_Sdcy8BTkEdqsDYPowBCnuA" presentationName="Acquirer" superActivities="_9fzUURTjEdqsDYPowBCnuA" modifies="_SdpAMBTkEdqsDYPowBCnuA" responsibleFor="_Sd7UEBTkEdqsDYPowBCnuA _Sd1NcRTkEdqsDYPowBCnuA _SdpAMRTkEdqsDYPowBCnuA">
+      <Role href="uma://{D4626EC0-06BC-4592-A8A6-C8DE7E821952}#{E929498F-3E9B-4BD5-8FD3-FAF7337E36AE}"/>
+    </processElements>
+    <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_SdpAMBTkEdqsDYPowBCnuA" name="cots_contracting_vehicules" guid="_SdpAMBTkEdqsDYPowBCnuA" presentationName="Contracting Vehicle" superActivities="_9fzUURTjEdqsDYPowBCnuA">
+      <WorkProduct href="uma://{D4626EC0-06BC-4592-A8A6-C8DE7E821952}#{8034FFDD-E172-4F15-BBA1-92EDF97A0E60}"/>
+    </processElements>
+    <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_SdpAMRTkEdqsDYPowBCnuA" name="cots_package_dossier" guid="_SdpAMRTkEdqsDYPowBCnuA" presentationName="COTS Package Dossier" superActivities="_9fzUURTjEdqsDYPowBCnuA">
+      <WorkProduct href="uma://{D4626EC0-06BC-4592-A8A6-C8DE7E821952}#{B8F591A5-DA8E-4CC6-A41E-DD522B6C1102}"/>
+    </processElements>
+    <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_Sd1NcBTkEdqsDYPowBCnuA" name="cots_solution_dossier" guid="_Sd1NcBTkEdqsDYPowBCnuA" presentationName="Solution Dossier" superActivities="_9fzUURTjEdqsDYPowBCnuA">
+      <WorkProduct href="uma://{D4626EC0-06BC-4592-A8A6-C8DE7E821952}#{4F2452F1-8664-4198-A228-72A12745079D}"/>
+    </processElements>
+    <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_Sd1NcRTkEdqsDYPowBCnuA" name="cots_solution_recommendation" guid="_Sd1NcRTkEdqsDYPowBCnuA" presentationName="Solution Recommendation" superActivities="_9fzUURTjEdqsDYPowBCnuA">
+      <WorkProduct href="uma://{D4626EC0-06BC-4592-A8A6-C8DE7E821952}#{A4C2C8B3-4905-4C89-86E4-D3FBDAE512BF}"/>
+    </processElements>
+    <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_Sd7UEBTkEdqsDYPowBCnuA" name="cots_vendor_dossier" guid="_Sd7UEBTkEdqsDYPowBCnuA" presentationName="Vendor Dossier" superActivities="_9fzUURTjEdqsDYPowBCnuA">
+      <WorkProduct href="uma://{D4626EC0-06BC-4592-A8A6-C8DE7E821952}#{E6CEF5C2-2915-48D6-8607-D83489CC101E}"/>
+    </processElements>
+    <process xsi:type="org.eclipse.epf.uma:CapabilityPattern" xmi:id="_9fzUURTjEdqsDYPowBCnuA" name="cots_elaboration_acquire_packages" guid="_9fzUURTjEdqsDYPowBCnuA" presentationName="Acquire COTS Packages" briefDescription="This covers essential tasks aiming at acquiring COTS packages in the elaboration phase." breakdownElements="_SdQlsBTkEdqsDYPowBCnuA _Sdcy8BTkEdqsDYPowBCnuA _SdpAMBTkEdqsDYPowBCnuA _SdpAMRTkEdqsDYPowBCnuA _Sd1NcBTkEdqsDYPowBCnuA _Sd1NcRTkEdqsDYPowBCnuA _Sd7UEBTkEdqsDYPowBCnuA">
+      <presentation xmi:id="_9nJ5gBTjEdqsDYPowBCnuA" href="uma://_9nJ5gBTjEdqsDYPowBCnuA#_9nJ5gBTjEdqsDYPowBCnuA"/>
+      <defaultContext href="uma://_0q85QJySEd2xJNwbI6lxKA#_sU4a4NoTEdmCj7Yn9Ev4rg"/>
+      <validContext href="uma://_0q85QJySEd2xJNwbI6lxKA#_sU4a4NoTEdmCj7Yn9Ev4rg"/>
+    </process>
+  </org.eclipse.epf.uma:ProcessComponent>
+</xmi:XMI>

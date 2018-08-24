@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ArtifactDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_24F0YNnmEdmO6L4XMImrsA" name="rup_test_log,{528F34BA-0118-40F3-8D29-DE60EF4183A6}" guid="_24F0YNnmEdmO6L4XMImrsA" changeDate="2005-09-27T20:00:26.228-0700" version="7.1.0">
+  <mainDescription>&lt;p>&#xD;
+    &lt;!--StartFragment-->The Test Log provides a detailed, typically time-based record that serves both as verification that&#xD;
+    a set of tests were executed, and provides information relating to the success of those tests. The focus is typically&#xD;
+    on the provision of an accurate audit trail, enabling post-execution diagnosis of failures to be undertaken. This raw&#xD;
+    data will subsequently be analyzed to help determine the results of some aspect of the test effort.&lt;!--EndFragment-->&#xD;
+&lt;/p>A test Log usually representing the output resulting from the execution of a Test Suite for a single test cycle run.</mainDescription>
+  <purpose>&lt;a id=&quot;Top&quot; name=&quot;Top&quot;>&lt;/a>&lt;a id=&quot;XE_test_log__artifact_definition&quot; name=&quot;XE_test_log__artifact_definition&quot;>&lt;/a>&lt;a&#xD;
+id=&quot;Purpose&quot; name=&quot;Purpose&quot;>&lt;/a>&lt;a id=&quot;XE_test_log__purpose_of&quot; name=&quot;XE_test_log__purpose_of&quot;>&lt;/a> &#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        To provide verification that a set of tests was executed, and&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        To provide information relating to the success of those tests.&lt;!--EndFragment-->&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></purpose>
+  <briefOutline>&lt;a id=&quot;BriefOutline&quot; name=&quot;BriefOutline&quot;>&lt;/a>&lt;a id=&quot;XE_test_log__brief_outline_of&quot;&#xD;
+name=&quot;XE_test_log__brief_outline_of&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    Each Test Log should be made up of a series of entries that present an audit trail for various aspects of the test&#xD;
+    execution including, but not limited to, the following:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        the date and time stamp of when the event occurred&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        a description (usually brief) of the event logged&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        some indication of the observed status&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        additional contextual information where relevant&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        additional details relating to any anomalous or erroneous condition detected&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></briefOutline>
+  <representationOptions>&lt;a id=&quot;Tailoring&quot; name=&quot;Tailoring&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    Automation tools often provide their own Test Log facilities, which can be extended or supplemented with additional&#xD;
+    logging provided both through custom user-routines and the use of additional tools.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    The output may take one single or many different forms. Typically, Test Logs have a tabular or spreadsheet-like&#xD;
+    appearance, with each entry comprising some form of date and time stamp, a description of the event logged, some&#xD;
+    indication the observed status, and possibly some additional contextual information.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    If you are using automated test tools, such as those found in the Rational Suite family of products, much of the above&#xD;
+    functionality is provided by default with the tool. These Test Log facilities typically provide the ability for the&#xD;
+    capture, filtering and sorting and the analysis of the information contained in the log. This allows the Test Log to be&#xD;
+    expanded in detail or collapsed to a summary view as required. The tools also offer the ability to customize and retain&#xD;
+    views of the Test Log for reporting purposes.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Where the logic that produces an automated Test Log simply appends new information to an existing log file, it will be&#xD;
+    necessary to provide sufficient storage to retain the Test Log file. An alternative solution to this approach is to use&#xD;
+    a &lt;i>ring buffer&lt;/i>. A good explanation of &lt;a href=&quot;http://visibleworkings.com/trace/Documentation/ring-buffer.pdf&quot;&#xD;
+    target=&quot;_blank&quot;>using Ring Buffer Logging to help find Bugs&lt;/a> is presented in a pattern catalog by Brian Marick. (Get&#xD;
+    &lt;a href=&quot;http://www.adobe.com/products/acrobat/alternate.html&quot; target=&quot;_blank&quot;>Adobe reader&lt;/a>.) This catalog provides&#xD;
+    an overview of other classic problems with using automated Test Logs.&#xD;
+&lt;/p>&lt;br />&#xD;
+&lt;br /></representationOptions>
+</org.eclipse.epf.uma:ArtifactDescription>

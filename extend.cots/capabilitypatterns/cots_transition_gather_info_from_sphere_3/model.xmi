@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:org.eclipse.epf.uma.resourcemanager="http:///org/eclipse/epf/uma/resourcemanager.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1">
+  <org.eclipse.epf.uma.resourcemanager:ResourceManager xmi:id="_k3i-cRTeEdqsDYPowBCnuA" guid="_k3i-cRTeEdqsDYPowBCnuA">
+    <resourceDescriptors xmi:id="_k3i-chTeEdqsDYPowBCnuA" id="-RUl3OBTObuxcqijzW4amtg" uri="content.xmi"/>
+  </org.eclipse.epf.uma.resourcemanager:ResourceManager>
+  <org.eclipse.epf.uma:ProcessComponent xmi:id="_bF_k0BTeEdqsDYPowBCnuA" name="cots_transition_gather_info_from_sphere_3" guid="_bF_k0BTeEdqsDYPowBCnuA">
+    <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="_JDcI4BTfEdqsDYPowBCnuA" name="cots_monitor_packages_vendors" guid="_JDcI4BTfEdqsDYPowBCnuA" presentationName="Monitor COTS Packages and Vendors" superActivities="_bF_k0RTeEdqsDYPowBCnuA" optionalInput="_JEAwoBTfEdqsDYPowBCnuA _JEM94BTfEdqsDYPowBCnuA _JEZLIBTfEdqsDYPowBCnuA" output="_JEAwoBTfEdqsDYPowBCnuA _JEM94BTfEdqsDYPowBCnuA _JEZLIBTfEdqsDYPowBCnuA" performedPrimarilyBy="_JDucwBTfEdqsDYPowBCnuA">
+      <Task href="uma://{D4626EC0-06BC-4592-A8A6-C8DE7E821952}#{897F94D3-C3C3-4AFC-A75A-C99EAEA9B6F6}"/>
+      <selectedSteps href="uma://_smXMcNoTEdmCj7Yn9Ev4rg#_tioAYNoTEdmCj7Yn9Ev4rg"/>
+      <selectedSteps href="uma://_smXMcNoTEdmCj7Yn9Ev4rg#_tj39kNoTEdmCj7Yn9Ev4rg"/>
+    </processElements>
+    <processElements xsi:type="org.eclipse.epf.uma:RoleDescriptor" xmi:id="_JDucwBTfEdqsDYPowBCnuA" name="cots_acquirer" guid="_JDucwBTfEdqsDYPowBCnuA" presentationName="Acquirer" superActivities="_bF_k0RTeEdqsDYPowBCnuA" modifies="_JEAwoBTfEdqsDYPowBCnuA _JEM94BTfEdqsDYPowBCnuA _JEZLIBTfEdqsDYPowBCnuA" responsibleFor="_JEZLIBTfEdqsDYPowBCnuA _JEM94BTfEdqsDYPowBCnuA _JEAwoBTfEdqsDYPowBCnuA">
+      <Role href="uma://{D4626EC0-06BC-4592-A8A6-C8DE7E821952}#{E929498F-3E9B-4BD5-8FD3-FAF7337E36AE}"/>
+    </processElements>
+    <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_JEAwoBTfEdqsDYPowBCnuA" name="cots_market_segment_information" guid="_JEAwoBTfEdqsDYPowBCnuA" presentationName="Market Segment Information" superActivities="_bF_k0RTeEdqsDYPowBCnuA">
+      <WorkProduct href="uma://{D4626EC0-06BC-4592-A8A6-C8DE7E821952}#{65F8D95F-79FA-4685-B18F-9636298D81D0}"/>
+    </processElements>
+    <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_JEM94BTfEdqsDYPowBCnuA" name="cots_package_dossier" guid="_JEM94BTfEdqsDYPowBCnuA" presentationName="COTS Package Dossier" superActivities="_bF_k0RTeEdqsDYPowBCnuA">
+      <WorkProduct href="uma://{D4626EC0-06BC-4592-A8A6-C8DE7E821952}#{B8F591A5-DA8E-4CC6-A41E-DD522B6C1102}"/>
+    </processElements>
+    <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_JEZLIBTfEdqsDYPowBCnuA" name="cots_vendor_dossier" guid="_JEZLIBTfEdqsDYPowBCnuA" presentationName="Vendor Dossier" superActivities="_bF_k0RTeEdqsDYPowBCnuA">
+      <WorkProduct href="uma://{D4626EC0-06BC-4592-A8A6-C8DE7E821952}#{E6CEF5C2-2915-48D6-8607-D83489CC101E}"/>
+    </processElements>
+    <process xsi:type="org.eclipse.epf.uma:CapabilityPattern" xmi:id="_bF_k0RTeEdqsDYPowBCnuA" name="cots_transition_gather_info_from_sphere_3" guid="_bF_k0RTeEdqsDYPowBCnuA" presentationName="Gather Info from Sphere 3" briefDescription="This covers essential tasks aiming at gathering information from the Marketplace sphere in the transition phase. " breakdownElements="_JDcI4BTfEdqsDYPowBCnuA _JDucwBTfEdqsDYPowBCnuA _JEAwoBTfEdqsDYPowBCnuA _JEM94BTfEdqsDYPowBCnuA _JEZLIBTfEdqsDYPowBCnuA">
+      <presentation xmi:id="-RUl3OBTObuxcqijzW4amtg" href="uma://-RUl3OBTObuxcqijzW4amtg#-RUl3OBTObuxcqijzW4amtg"/>
+      <defaultContext href="uma://_0q85QJySEd2xJNwbI6lxKA#_sU4a4NoTEdmCj7Yn9Ev4rg"/>
+      <validContext href="uma://_0q85QJySEd2xJNwbI6lxKA#_sU4a4NoTEdmCj7Yn9Ev4rg"/>
+    </process>
+  </org.eclipse.epf.uma:ProcessComponent>
+</xmi:XMI>

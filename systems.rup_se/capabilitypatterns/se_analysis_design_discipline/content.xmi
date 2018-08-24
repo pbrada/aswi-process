@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1">
+  <org.eclipse.epf.uma:ProcessDescription xmi:id="-pAHeZaP9CLqIpxrDIYoRKA" name="se_analysis_design_discipline,_9MQf0VVmEdq-S-2DETo4XA" guid="-pAHeZaP9CLqIpxrDIYoRKA">
+    <mainDescription>&lt;p>&#xD;
+    In Inception, the concern is to establish feasibility and explore alternatives if necessary in &lt;a&#xD;
+    class=&quot;elementLinkWithType&quot; href=&quot;./../../systems.rup_se/capabilitypatterns/synthesize_system_architecture_B65AF7C1.html&quot;&#xD;
+    guid=&quot;_f-muUVVwEdqgIdhbAiG50A&quot;>Activity: Synthesize System Architecture&lt;/a>. Given the nature of the systems under&#xD;
+    development with this approach—often large, complex and with a mix of hardware, software, and people—it is unlikely&#xD;
+    that this&amp;nbsp;activity will be omitted. The behavior of the tentative architecture is examined in &lt;a&#xD;
+    class=&quot;elementLinkWithType&quot; href=&quot;./../../systems.rup_se/capabilitypatterns/analyze_system_behavior_38A5919C.html&quot;&#xD;
+    guid=&quot;_5tCbYFVwEdqgIdhbAiG50A&quot;>Activity: Analyze System Behavior&lt;/a>, and the required behavior of the constituent&#xD;
+    subsystems begins to emerge.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    During Elaboration, the System Architecture is established, over one or more iterations, in &lt;a&#xD;
+    class=&quot;elementLinkWithType&quot; href=&quot;./../../systems.rup_se/capabilitypatterns/define_candidate_system_architecture_38D95EDC.html&quot;&#xD;
+    guid=&quot;_tWbEAFVwEdqgIdhbAiG50A&quot;>Activity: Define Candidate System Architecture&lt;/a>, and the required behavior of the&#xD;
+    constituent subsystems is established. As discoveries are made or changes required, in any phase, the system&#xD;
+    architecture is refined in &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../systems.rup_se/capabilitypatterns/refine_system_architecture_ED478575.html&quot;&#xD;
+    guid=&quot;_1ln6EFVwEdqgIdhbAiG50A&quot;>Activity: Refine System Architecture&lt;/a>.&#xD;
+&lt;/p></mainDescription>
+  </org.eclipse.epf.uma:ProcessDescription>
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="-GBw8fDUWkl0Xwd-5F_5xNQ" name="synthesize_system_architecture,_f-muUVVwEdqgIdhbAiG50A" guid="-GBw8fDUWkl0Xwd-5F_5xNQ">
+    <usageGuidance>This work takes place during Inception, and so should be limited to one or two iterations. The purpose is to gain knowledge&#xD;
+and determine feasibility, not to construct the system during this activity. &lt;br /></usageGuidance>
+    <howtoStaff>This activity is best carried out by a small team (playing the role of &lt;a class=&quot;elementLinkWithUserText&quot; href=&quot;./../../systems.rup_se/roles/rup_system_architect,{A83E9C0E-3BBD-4D5A-902F-3B82F21975E3}.html&quot; guid=&quot;{A83E9C0E-3BBD-4D5A-902F-3B82F21975E3}&quot;>System Architect&lt;/a>, and usually guided by one or two individuals who have
+deep experience in architecting systems in the relevant domain) staffed by cross-functional team members. Issues that are
+typically architecturally important include performance, scaling, distribution, or other specialty engineering
+requirements. Significant architectural constraints might also flow from physical and environmental requirements. The team
+should also include members with domain experience who can identify key abstractions. The team should also have experience
+with model organization and layering. From these inputs, the team must be able to synthesize a model, or even a prototype,
+of a solution.</howtoStaff>
+  </org.eclipse.epf.uma:ActivityDescription>
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="-v9EhsBNGLdz5E8RKFelw2w" name="define_candidate_system_architecture,_tWbEAFVwEdqgIdhbAiG50A" guid="-v9EhsBNGLdz5E8RKFelw2w">
+    <usageGuidance>&lt;p>&#xD;
+    The work is best done in several sessions, perhaps performed over a few days (or weeks and months for very large&#xD;
+    systems), with iteration over &lt;a class=&quot;elementLinkWithUserText&quot;&#xD;
+    href=&quot;./../../systems.rup_se/tasks/architectural_analysis_30D2538.html&quot; guid=&quot;{B7FABC7A-42FA-4DC7-A1F4-C4F5DB6F673F}&quot;>System&#xD;
+    Architectural Analysis&lt;/a> and&amp;nbsp;&lt;a class=&quot;elementLinkWithUserText&quot;&#xD;
+    href=&quot;./../../systems.rup_se/tasks/se_operation_analysis_6C6BED14.html&quot; guid=&quot;_GMjFYOQ5Edm1mN374l9mbg&quot;>System Operation&#xD;
+    Analysis&lt;/a>. Perform an initial pass at the architecture in System Architectural Analysis, then choose architecturally&#xD;
+    significant system use cases, performing System&amp;nbsp;Operation Analysis on each one. After (or as) each use case is&#xD;
+    analyzed, update the architecture as needed to reflect adaptations required to accommodate new behavior of the system&#xD;
+    and to address potential architectural problems which are identified.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Where the architecture already exists (either from a prior project or iteration), change requests might need to be&#xD;
+    created to change the architecture to account for the new behavior the system must support. These changes can be to any&#xD;
+    artifact in the process, depending on the scope of the change.&#xD;
+&lt;/p></usageGuidance>
+    <purpose>The purpose of this&amp;nbsp;activity is to: &#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Create the outlines of the architecture of the system: &#xD;
+        &lt;ul>&#xD;
+            &lt;li>&#xD;
+                Define an initial set of architecturally significant elements (subsystems, processes and localities), for&#xD;
+                analysis.&#xD;
+            &lt;/li>&#xD;
+            &lt;li>&#xD;
+                Identify collaborations (of subsystems) that will realize architecturally significant system use cases,&#xD;
+                capture these (in outline) in the System Analysis Model, and decide the System Use-Case Realizations and/or&#xD;
+                System Operation Realizations&amp;nbsp;to be further detailed in the current iteration.&#xD;
+            &lt;/li>&#xD;
+            &lt;li>&#xD;
+                Produce preliminary Subsystem Vision artifacts.&#xD;
+            &lt;/li>&#xD;
+            &lt;li>&#xD;
+                Capture significant decisions and rationale in System Architecture Document.&#xD;
+            &lt;/li>&#xD;
+        &lt;/ul>&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Update the System Use-Case Realizations and/or System Operation Realizations&amp;nbsp;with subsystem interactions.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Produce preliminary Subsystem Supplementary Requirements artifacts.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></purpose>
+    <howtoStaff>&lt;p>
+    As with the early architectural synthesis work, this activity&amp;nbsp;is best carried out by a small team (playing the
+    roles of &lt;a class=&quot;elementLinkWithUserText&quot; href=&quot;./../../systems.rup_se/roles/rup_system_architect,{A83E9C0E-3BBD-4D5A-902F-3B82F21975E3}.html&quot; guid=&quot;{A83E9C0E-3BBD-4D5A-902F-3B82F21975E3}&quot;>System Architect&lt;/a> and &lt;a class=&quot;elementLinkWithUserText&quot; href=&quot;./../../systems.rup_se/roles/rup_system_designer,{17D1CF2F-DA3E-4EC0-AB76-C8B47343183B}.html&quot; guid=&quot;{17D1CF2F-DA3E-4EC0-AB76-C8B47343183B}&quot;>System Designer&lt;/a>, and usually guided by one or two individuals who
+    have deep experience in architecting systems in the relevant domain) staffed by cross-functional team members. Issues
+    that are typically architecturally important include performance, scaling, distribution or other specialty engineering
+    requirements. Significant architectural constraints might also flow from physical and environmental requirements. The
+    team should also include members with domain experience who can identify key abstractions. The team should also have
+    experience with model organization and layering.
+&lt;/p></howtoStaff>
+  </org.eclipse.epf.uma:ActivityDescription>
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="-7iejRD6AFQnh0hMX6Kisug" name="refine_system_architecture,_1ln6EFVwEdqgIdhbAiG50A" guid="-7iejRD6AFQnh0hMX6Kisug">
+    <usageGuidance>&lt;p>&#xD;
+    This&amp;nbsp;activity allows the System Architect to revisit the structural, dynamic, and physical aspects of the system&#xD;
+    architecture and rework and refine them as needed to accommodate change.&#xD;
+&lt;/p></usageGuidance>
+    <purpose>The purpose of this activity is to: &#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Maintain the consistency and integrity of the system architecture, ensuring that: &#xD;
+        &lt;ul>&#xD;
+            &lt;li>&#xD;
+                New design elements identified for the current iteration are integrated with pre-existing design elements.&#xD;
+            &lt;/li>&#xD;
+            &lt;li>&#xD;
+                Maximal re-use of available components and design elements is achieved as early as possible in the design&#xD;
+                effort.&#xD;
+            &lt;/li>&#xD;
+        &lt;/ul>&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Accommodate changes arising from new or changed requirements or discoveries made during design work.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></purpose>
+    <howtoStaff>&lt;p>
+    As with earlier architectural work, this activity is&amp;nbsp;best carried out by a small team (playing the role of&amp;nbsp;&lt;a class=&quot;elementLinkWithUserText&quot; href=&quot;./../../systems.rup_se/roles/rup_system_architect,{A83E9C0E-3BBD-4D5A-902F-3B82F21975E3}.html&quot; guid=&quot;{A83E9C0E-3BBD-4D5A-902F-3B82F21975E3}&quot;>System Architect&lt;/a>, usually guided by one or two individuals who have
+    deep experience in architecting systems in the relevant domain) staffed by cross-functional team members. Issues that
+    are typically architecturally important include performance, scaling, distribution, or other specialty engineering
+    requirements. Significant architectural constraints might also flow from physical and environmental requirements. The
+    team should also include members with domain experience who can identify key abstractions. The team should also have
+    experience with model organization and layering.
+&lt;/p></howtoStaff>
+  </org.eclipse.epf.uma:ActivityDescription>
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="-Q0391meCthh5id2eGVgXgw" name="analyze_system_behavior,_5tCbYFVwEdqgIdhbAiG50A" guid="-Q0391meCthh5id2eGVgXgw">
+    <usageGuidance>&lt;p>&#xD;
+    The driving&amp;nbsp;task in this&amp;nbsp;activity is&amp;nbsp;System Operation&amp;nbsp;Design, with the System Architect ensuring&#xD;
+    the design maintains the architectural vision, while still accommodating change and feedback as design discoveries are&#xD;
+    made. The System Designer delivers updated artifacts to the System Architect to allow for sanctioned Structural,&#xD;
+    Process and Deployment model changes, and the System Architect refines these as necessary. Pragmatically, the way this&#xD;
+    might work is that the team does system&amp;nbsp;operation design, reviews the results from an Architectural viewpoint,&#xD;
+    then iterates back through system&amp;nbsp;operation design, until comfortable with the result (that is, the result meets&#xD;
+    functional and non-functional requirements and satisfies architectural constraints).&#xD;
+&lt;/p></usageGuidance>
+    <purpose>&lt;p>&#xD;
+    The purpose of this&amp;nbsp;activity is to:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Refine the preliminary subsystem interactions into &lt;a class=&quot;elementLinkWithUserText&quot;&#xD;
+        href=&quot;./../../systems.rup_se/workproducts/rup_system_operation_realization_C5CAA59A.html&quot;&#xD;
+        guid=&quot;_4F_bcFFGEdqQ1bHkhNnYIg&quot;>System Operation Realizations&lt;/a>&amp;nbsp;and /or &lt;a class=&quot;elementLinkWithUserText&quot;&#xD;
+        href=&quot;./../../systems.rup_se/workproducts/rup_sytem_use_case_realization_A42D6675.html&quot;&#xD;
+        guid=&quot;{07429BA9-425C-43A4-9D33-8319FF1EEEC8}&quot;>System Use-Case Realizations&lt;/a> in the &lt;a&#xD;
+        class=&quot;elementLinkWithUserText&quot; href=&quot;./../../systems.rup_se/workproducts/rup_system_design_model_FF4023F1.html&quot;&#xD;
+        guid=&quot;{96746B25-06FC-4780-847E-B538C06162DB}&quot;>System Design Model&lt;/a>.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Aggregate similar subsystem interactions into subsystem use cases and construct the &lt;a class=&quot;elementLink&quot;&#xD;
+        href=&quot;./../../systems.rup_se/workproducts/rup_subsystem_usecase_model_9C336055.html&quot;&#xD;
+        guid=&quot;{124F1EA8-21EC-45C2-A25B-A8DCF1309FE4}&quot;>Subsystem Use-Case Model&lt;/a>.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Refine the &lt;a class=&quot;elementLink&quot; href=&quot;./../../systems.rup_se/workproducts/rup_system_analysis_model_D73BECB2.html&quot;&#xD;
+        guid=&quot;{CB35D940-20DA-446A-B262-C614C7753D12}&quot;>System Analysis Model&lt;/a> and &lt;a class=&quot;elementLink&quot;&#xD;
+        href=&quot;./../../systems.rup_se/workproducts/rup_system_design_model_FF4023F1.html&quot;&#xD;
+        guid=&quot;{96746B25-06FC-4780-847E-B538C06162DB}&quot;>System Design Model&lt;/a> (in terms of subsystems and their&#xD;
+        relationships) and update the &lt;a class=&quot;elementLink&quot;&#xD;
+        href=&quot;./../../systems.rup_se/workproducts/rup_subsystem_vision_AE7C87FE.html&quot;&#xD;
+        guid=&quot;{892CEA8C-66C5-468C-8188-F739B3954B90}&quot;>Subsystem Vision&lt;/a> and the &lt;a class=&quot;elementLink&quot;&#xD;
+        href=&quot;./../../systems.rup_se/workproducts/rup_subsystem_supplementary_specification_911D5D8E.html&quot;&#xD;
+        guid=&quot;{C9B8F699-A008-4A3E-8B4D-CE829D595E5D}&quot;>Subsystem Supplementary Requirements&lt;/a> artifacts, based on work&#xD;
+        done on subsystem interactions, and changes in environment, subsystem non-functional requirements, and the&#xD;
+        subsystem vision.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Refine the Process Model at the system level, based on changes to the system structure (decomposition into&#xD;
+        subsystems) and the system's environment.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Create locality interactions in the form of sequence or collaboration diagrams (in the &lt;a class=&quot;elementLink&quot;&#xD;
+        href=&quot;./../../systems.rup_se/workproducts/rup_system_deployment_model_C12856E8.html&quot;&#xD;
+        guid=&quot;{F3EF5651-065C-478F-81CC-D55D90FF0CBC}&quot;>System Deployment Model&lt;/a>) using the Locality Model (Conceptual&#xD;
+        level of System Deployment Model), and the sorted set of subsystem services.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Refine the Locality Model into a Descriptor Level Model and then to an implementation level, through analysis of&#xD;
+        the localities, their characteristics and hosted subsystem services.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Update the appropriate viewpoints in the &lt;a class=&quot;elementLink&quot;&#xD;
+        href=&quot;./../../systems.rup_se/guidances/templates/system_architecture_document_5B807A1F.html&quot;&#xD;
+        guid=&quot;1.3184560012908812E-305&quot;>System Architecture Document&lt;/a> with any architecturally significant changes.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></purpose>
+    <howtoStaff>&lt;p>
+    The &lt;a class=&quot;elementLink&quot; href=&quot;./../../systems.rup_se/tasks/se_operation_design,_Gb4P8OQ7Edm1mN374l9mbg.html&quot; guid=&quot;_Gb4P8OQ7Edm1mN374l9mbg&quot;>System Operation Design&lt;/a>&amp;nbsp;task is performed by the &lt;a class=&quot;elementLink&quot; href=&quot;./../../systems.rup_se/roles/rup_system_designer,{17D1CF2F-DA3E-4EC0-AB76-C8B47343183B}.html&quot; guid=&quot;{17D1CF2F-DA3E-4EC0-AB76-C8B47343183B}&quot;>System Designer&lt;/a> role, which in this&amp;nbsp;activity requires a
+    combination of analysis and synthesis skills, in first describing subsystem interactions in detail and then
+    synthesizing these interactions into descriptions of required subsystem behavior in use cases. The results of this work
+    are reviewed by the &lt;a class=&quot;elementLink&quot; href=&quot;./../../systems.rup_se/roles/rup_system_architect,{A83E9C0E-3BBD-4D5A-902F-3B82F21975E3}.html&quot; guid=&quot;{A83E9C0E-3BBD-4D5A-902F-3B82F21975E3}&quot;>System Architect&lt;/a> and any needed adjustments and refinements are made
+    with the broad system architectural picture and issues in mind. This work is a continuation of that begun in &lt;a class=&quot;elementLink&quot; href=&quot;./../../systems.rup_se/capabilitypatterns/define_candidate_system_architecture,_tWbEAFVwEdqgIdhbAiG50A.html&quot; guid=&quot;_tWbEAFVwEdqgIdhbAiG50A&quot;>Define Candidate System Architecture&lt;/a>, and the same cross-functional team can be
+    used, augmented as necessary with specific skills and knowledge relating to the domains of the emerging subsystems.
+&lt;/p></howtoStaff>
+  </org.eclipse.epf.uma:ActivityDescription>
+</xmi:XMI>

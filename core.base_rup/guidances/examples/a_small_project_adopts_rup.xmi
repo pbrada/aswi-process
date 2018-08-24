@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:GuidanceDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_38DLw9nmEdmO6L4XMImrsA" name="a_small_project_adopts_rup,1.5898235987322268E-305" guid="_38DLw9nmEdmO6L4XMImrsA" changeDate="2005-10-27T10:39:01.906-0700" version="7.1.0">
+  <mainDescription>&lt;h3 class=&quot;banner&quot;>
+    &lt;big>Topics&lt;/big>
+&lt;/h3>
+&lt;div align=&quot;left&quot;>
+    &lt;ul>
+        &lt;li>
+            &lt;a href=&quot;#Project Overview&quot;>&lt;font color=&quot;#800080&quot;>Project Overview&lt;/font>&lt;/a>
+        &lt;/li>
+        &lt;li>
+            &lt;a href=&quot;#General Tailoring&quot;>&lt;font color=&quot;#800080&quot;>General Tailoring&lt;/font>&lt;/a>
+        &lt;/li>
+        &lt;li>
+            &lt;a href=&quot;#roles&quot;>&lt;font color=&quot;#800080&quot;>Roles and Lifecycle&lt;/font>&lt;/a>
+        &lt;/li>
+        &lt;li>
+            &lt;a href=&quot;#review&quot;>&lt;font color=&quot;#800080&quot;>Review&lt;/font>&lt;/a>
+        &lt;/li>
+    &lt;/ul>
+&lt;/div>
+&lt;p>
+    For more information on how to tailor RUP for a small project, see &lt;a class=&quot;elementLinkWithType&quot;
+    href=&quot;./../../../core.base_rup/guidances/concepts/tailoring_a_process_for_a_small_project,2.721222001330515E-305.html&quot;
+    guid=&quot;2.721222001330515E-305&quot;>Concept: Tailoring a Process for a Small Project&lt;/a>.&amp;nbsp; For more information on
+    tailoring RUP, in general, see &lt;a class=&quot;elementLinkWithType&quot;
+    href=&quot;./../../../core.base_rup/guidances/concepts/tailoring_rup,6.991505672198195E-305.html&quot;
+    guid=&quot;6.991505672198195E-305&quot;>Concept: Tailoring RUP&lt;/a>
+&lt;/p>
+&lt;h3>
+    &lt;a id=&quot;Project Overview&quot; name=&quot;Project Overview&quot;>Project Overview&lt;/a>
+&lt;/h3>
+&lt;p>
+    The following scenario describes a project of ABC Company, called Project X.&amp;nbsp;Project X is a team consisting of a
+    project manager, Jill, and four programmers, Angus, David, Susan, and Philip.&amp;nbsp; The duration of the project is four
+    months.&amp;nbsp;
+&lt;/p>
+&lt;p>
+    Jill is considering using the RUP as the basis for her project's software development process. She installs the RUP,
+    which by default installs the &quot;Classic RUP&quot; process configuration. She reviews the parts of Classic RUP relevant to
+    tailoring a process for a project.
+&lt;/p>
+&lt;p>
+    She begins by evaluating the process needs for the project, in consultation with the team. Her conclusions are as
+    follows.
+&lt;/p>
+&lt;ul>
+    &lt;li>
+        The existing process and tools for configuration management are working well, so this aspect of the process can
+        remain unchanged.
+    &lt;/li>
+    &lt;li>
+        The team has some experience with use cases and component architectures, but could use more guidance in these
+        areas.
+    &lt;/li>
+    &lt;li>
+        The project would benefit from an iterative development approach, as a means of quickly driving down key project
+        risks.
+    &lt;/li>
+    &lt;li>
+        The stakeholders have good informal working relationships with the development team, and there is no need for
+        formal contracts or reviews. The stakeholders have ongoing visibility during development.&amp;nbsp; The team is highly
+        skilled and disciplined, and has shown in the past to produce quality products without much formal process.
+    &lt;/li>
+    &lt;li>
+        Given the short time-frame of the project, only minor changes will be made to the toolset.
+    &lt;/li>
+    &lt;li>
+        A separate parallel activity will be initiated to investigate tool benefits, re-use opportunities, and to further
+        refine the process for future projects.
+    &lt;/li>
+&lt;/ul>
+&lt;p>
+    Jill then takes on the task of tailoring an appropriate process for the team to follow.&lt;br />
+&lt;/p>
+&lt;h3>
+    &lt;a id=&quot;General Tailoring&quot; name=&quot;General Tailoring&quot;>General Tailoring&lt;/a>
+&lt;/h3>
+&lt;h4>
+    Packaging Project-Specific Assets in a Plug-In
+&lt;/h4>
+&lt;p>
+    The existing RUP process is reasonably close to what the project needs, but not quite. Jill refines the process further
+    by creating a project-specific plug-in that contains applicable project-specific assets.
+&lt;/p>
+&lt;p>
+    Specifically, Jill launches &lt;a class=&quot;elementLink&quot;
+    href=&quot;./../../../core.base_rup/tools/rup_rational_method_composer,_hAfB8COzEdq41POk0CQYwA.html&quot;
+    guid=&quot;_hAfB8COzEdq41POk0CQYwA&quot;>Rational Method Composer&lt;/a>&amp;nbsp;(RMC) and creates a new method plug-in that contains:
+&lt;/p>
+&lt;ul>
+    &lt;li>
+        guidelines for the tools to be used on the project
+    &lt;/li>
+    &lt;li>
+        guidelines re-used from a previous similar project, including Design Guidelines and Configuration and Change
+        Management Guidelines
+    &lt;/li>
+    &lt;li>
+        guidelines for review and assessment.
+    &lt;/li>
+&lt;/ul>
+&lt;p>
+    In addition to associating this guidance to the appropriate RUP method elements, she also refines existing RUP process
+    views to include this guidance.
+&lt;/p>
+&lt;p>
+    She also adds an &quot;Introduction to the Project&amp;nbsp;X Process&quot; page to the RUP Getting Started view, where she describes
+    the basic philosophy of the configured process. For example, she states that the included templates are intended to
+    guide content, but the format is optional. She also indicates where current versions of key project work products will
+    be located.
+&lt;/p>
+&lt;p>
+    For information on how to create a method plug-in using RMC, see &lt;a class=&quot;elementLinkWithType&quot;
+    href=&quot;./../../../core.base_rup/guidances/toolmentors/creating_method_plugin_rmc,_geA_AEJoEdq3aK0GjVqTbg.html&quot;
+    guid=&quot;_geA_AEJoEdq3aK0GjVqTbg&quot;>Tool Mentor: Creating a Method Plug-In Using Rational Method Composer&lt;/a>.&amp;nbsp; For
+    information on how to populate the plug-in, see &lt;a class=&quot;elementLinkWithType&quot;
+    href=&quot;./../../../core.base_rup/guidances/toolmentors/developing_method_content_rmc,_4Hw3gEJoEdq3aK0GjVqTbg.html&quot;
+    guid=&quot;_4Hw3gEJoEdq3aK0GjVqTbg&quot;>Tool Mentor: Developing Method Content Using Rational Method Composer&lt;/a>.
+&lt;/p>
+&lt;h4>
+    Defining a Process-Specific Configuration and Publishing
+&lt;/h4>
+&lt;p>
+    Now that Jill has packaged the project-specific assets into a plug-in, she can develop a RUP configuration that
+    includes the project-specific plug-in.
+&lt;/p>
+&lt;p>
+    Jill launches &lt;a class=&quot;elementLink&quot;
+    href=&quot;./../../../core.base_rup/tools/rup_rational_method_composer,_hAfB8COzEdq41POk0CQYwA.html&quot;
+    guid=&quot;_hAfB8COzEdq41POk0CQYwA&quot;>Rational Method Composer&lt;/a>&amp;nbsp;(RMC) and selects the Small Project configuration as a
+    starting point. She copies the Small Project configuration to a new configuration she names &quot;ABC Project X&quot;.&amp;nbsp;
+&lt;/p>
+&lt;p>
+    Jill opens the new configuration and selects and de-selects some method packages and plug-ins to perform a coarse
+    configuration of the desired configuration.&amp;nbsp; For example, she de-selects the method package &quot;Database Design&quot;, as
+    the team does not intend to do any data modeling on this project, and she selects the project-specific plug-in created
+    in the previous section.
+&lt;/p>
+&lt;p>
+    Jill then creates a new delivery process in her method plug-in by using the delivery process provided in the Small
+    Project Configuration as a starting point.&amp;nbsp; She edits the new delivery process, adding some tasks to each phase,
+    and suppressing others. She then publishes the results.
+&lt;/p>
+&lt;p>
+    For information on how to develop&amp;nbsp;processes using RMC, see &lt;a class=&quot;elementLinkWithType&quot;
+    href=&quot;./../../../core.base_rup/guidances/toolmentors/developing_processes_rmc,_A1_M4EJeEdqc6pVfdXQ8AQ.html&quot;
+    guid=&quot;_A1_M4EJeEdqc6pVfdXQ8AQ&quot;>Tool Mentor: Developing Processes Using Rational Method Composer&lt;/a>.&amp;nbsp; For
+    information on how to publish processes using RMC, see&amp;nbsp;&lt;a class=&quot;elementLinkWithType&quot;
+    href=&quot;./../../../core.base_rup/guidances/toolmentors/publishing_method_configuration_rmc,_6KxnAEccEdqWhJpIxgco7Q.html&quot;
+    guid=&quot;_6KxnAEccEdqWhJpIxgco7Q&quot;>Tool Mentor: Publishing a Method Configuration Using Rational Method Composer&lt;/a>.
+&lt;/p>
+&lt;h3>
+    &lt;a id=&quot;roles&quot; name=&quot;roles&quot;>Roles and Lifecycle&lt;/a>
+&lt;/h3>
+&lt;p>
+    Project X has a small team, so each person is responsible for a variety of RUP roles. Jill describes each person's
+    responsibilities in the Software Development Plan. For example, on Project X, Jill is responsible for the Project
+    Manager and Process Engineer roles.
+&lt;/p>
+&lt;h3>
+    &lt;a id=&quot;review&quot; name=&quot;review&quot;>Review&lt;/a>
+&lt;/h3>
+&lt;p>
+    Jill provides a draft of the configured RUP, and the Software Development Plan to the team and other stakeholders for
+    review. The team begins to follow the process. Some mistakes are made, and the process is refined. In the end, the
+    project is successful, and the team has an appropriately tuned process that can be applied on future projects.
+&lt;/p></mainDescription>
+</org.eclipse.epf.uma:GuidanceDescription>

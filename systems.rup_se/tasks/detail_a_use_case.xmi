@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_BbBlYN0NEdmhp5PapAYf4w" name="detail_a_use_case,_9afIId0MEdmhp5PapAYf4w" guid="_BbBlYN0NEdmhp5PapAYf4w" version="7.1.0">
+  <sections xmi:id="_RUgr0FFnEdqaVKCjUUesWA" name="Detail the Flow of Events - Systems Engineering Note" guid="_RUgr0FFnEdqaVKCjUUesWA">
+    <sectionDescription>From a systems engineering perspective, it is better that the use-case description be kept 'black box' at this stage, and&#xD;
+constructed around the view of actor action, system input, black-box step (what the system does) and system output (which&#xD;
+might flow to other actors). &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../core.base_rup/guidances/guidelines/use_case_CC89870D.html&quot;&#xD;
+guid=&quot;4.1983217662266927E-305&quot;>Guideline: Use Case&lt;/a> for more information. Description of what the system &lt;i>might&lt;/i> do&#xD;
+internally (to produce the response) might be necessary, but in no way constrains the system design. When such descriptions&#xD;
+are written, they typically use terminology well-understood in the domain. They might refer to the &lt;i>state&lt;/i> of the&#xD;
+system (for example, when the response is conditional upon that state) and &lt;i>stores&lt;/i> that the system notionally&#xD;
+contains. This, however, reveals nothing about how the system maintains such state or stores internally, only requiring&#xD;
+that it behaves (in its history of interactions) as if it did. &#xD;
+&lt;!--Author: The last sentence in this paragraph does not make sense, and it is not grammatically correct. To what does the pronoun &quot;This&quot; refer? Also, the words &quot;only requiring that it behaves (in its history of interactions) as if it did&quot; consitute a dangling participle. As a result, the reader doesn't know exactly what these words are modifying. --></sectionDescription>
+  </sections>
+  <sections xmi:id="_V3VWwFFnEdqaVKCjUUesWA" name="Describe any Special Requirements - Systems Engineering Note" guid="_V3VWwFFnEdqaVKCjUUesWA">
+    <sectionDescription>&lt;p class=&quot;systemsengineering&quot;>&#xD;
+    This step has particular significance in systems engineering: because you intend to flow down non-functional&#xD;
+    requirements to subsystems, the tracking and allocation of such requirements must be done with some rigor. In &lt;a&#xD;
+    class=&quot;elementLinkWithType&quot; href=&quot;./../../core.base_rup/tasks/find_actors_and_use_cases_1ACB35F0.html&quot;&#xD;
+    guid=&quot;{3CD5FA7E-160C-4A39-9DEB-C6D162D8AECD}&quot;>Task: Find Actors and Use Cases&lt;/a>, you did a preliminary allocation to&#xD;
+    use cases and to steps within a use case. In this activity, you review the Supplementary Specifications and the&#xD;
+    use-case description to refine this allocation, possibly updating the use-case Special Requirements and the black-box&#xD;
+    step budgeted requirements.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_Y8FhMFFnEdqaVKCjUUesWA" name="Describe Communication Protocols - Systems Engineering Note" guid="_Y8FhMFFnEdqaVKCjUUesWA">
+    <sectionDescription>&lt;p class=&quot;systemsengineering&quot;>&#xD;
+    This step has special significance in systems engineering, because it is likely that the system will interact with&#xD;
+    several external systems or pieces of hardware. &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../core.base_rup/tasks/find_actors_and_use_cases_1ACB35F0.html&quot; guid=&quot;{3CD5FA7E-160C-4A39-9DEB-C6D162D8AECD}&quot;>Task:&#xD;
+    Find Actors and Use Cases&lt;/a> produced a broad description of what is exchanged in the actor-system use-case&#xD;
+    association (with each association). Now you elaborate that description by selecting a protocol for it. These interface&#xD;
+    descriptions are further elaborated in &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../systems.rup_se/tasks/se_define_system_context_1233657D.html&quot; guid=&quot;{C66A11BC-B869-4702-AE8D-C8347BD0AA96}&quot;>Task:&#xD;
+    Define the System Context&lt;/a>. Make sure that interface requirements described in &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../core.base_rup/workproducts/rup_supplementary_specification_F5ACAA22.html&quot;&#xD;
+    guid=&quot;{B16C2941-791C-44E6-B353-354109B5C9DE}&quot;>Artifact: Supplementary Specifications&lt;/a> are kept up to date.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+</org.eclipse.epf.uma:TaskDescription>

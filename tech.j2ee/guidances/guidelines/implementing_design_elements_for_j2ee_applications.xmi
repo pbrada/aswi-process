@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_DAFTA9wuEdmRU7lXzo6lKQ" name="implementing_design_elements_for_j2ee_applications,2.693634112172613E-305" guid="_DAFTA9wuEdmRU7lXzo6lKQ" changeDate="2005-10-25T14:45:31.860-0700" version="7.1.0">
+  <mainDescription>&lt;h2>&#xD;
+    &lt;a id=&quot;Introduction&quot; name=&quot;Introduction&quot;>&lt;/a>Introduction&#xD;
+&lt;/h2>&#xD;
+&lt;p>&#xD;
+    These guidelines focus on &lt;a href=&quot;#DevelopingJ2EESourceCode&quot;>developing source code&lt;/a> for any of the J2EE components&#xD;
+    (including applets, application clients, web components, and EJBs).&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    The resulting J2EE components will be packaged in J2EE Modules during integration. For more information, see &lt;a&#xD;
+    class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../../tech.j2ee/guidances/guidelines/assembling_j2ee_modules_17925A58.html&quot;&#xD;
+    guid=&quot;3.7932077950837037E-305&quot;>Guideline: Assembling J2EE Modules&lt;/a>.&#xD;
+&lt;/p>&#xD;
+&lt;h2>&#xD;
+    &lt;a id=&quot;DevelopingJ2EESourceCode&quot; name=&quot;DevelopingJ2EESourceCode&quot;>&lt;/a>Developing J2EE Source Code&#xD;
+&lt;/h2>&#xD;
+&lt;p>&#xD;
+    J2EE source code includes the source code for any of the J2EE components (including applets, application clients, web&#xD;
+    components, and EJBs), as well as the source code for standard Java classes and Java Beans. Specifically, for J2EE&#xD;
+    applications, the following &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../../core.base_rup/workproducts/rup_implementation_element_49BB163E.html&quot;&#xD;
+    guid=&quot;{E1E0DDA3-914F-4CC1-9D0A-ED4B8E8BBA89}&quot;>Artifact: Implementation Element&lt;/a>s may be produced:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Source files (such as JSPs, static HTML files, image files, Java files)&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Compiled files (Java bytecode files)&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>&#xD;
+    Implementing a J2EE component involves fleshing out the design, including interfaces, type definitions, and helper&#xD;
+    classes. Guidance for this is essentially the same as for design, but the results must be completed to the level where&#xD;
+    operations are completed, allowing the component to be executed and tested.&#xD;
+&lt;/p>&#xD;
+&lt;h2>&#xD;
+    &lt;a id=&quot;ModelingGuidelines&quot; name=&quot;ModelingGuidelines&quot;>&lt;/a>Modeling Guidelines&#xD;
+&lt;/h2>&#xD;
+&lt;p>&#xD;
+    J2EE implementation modeling can use all the same constructs as in the Design Model, but can also include diagrams that&#xD;
+    show the implementation of in terms of &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../../core.base_rup/workproducts/rup_implementation_element_49BB163E.html&quot;&#xD;
+    guid=&quot;{E1E0DDA3-914F-4CC1-9D0A-ED4B8E8BBA89}&quot;>Artifact: Implementation Element&lt;/a>s (e.g., source .java files, and&#xD;
+    compiled .class files).&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    In general, however, most files are not modeled, unless some support is provided by a round-trip engineering tool or&#xD;
+    some not-so-obvious relationships need to be shown. This is because file relationships are often obvious. There is&#xD;
+    typically one .java file for each Java interface or class, and one compiled .class file for each .java file. So,&#xD;
+    modeling these files is not of much interest.&#xD;
+&lt;/p>&lt;br />&#xD;
+&lt;br /></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

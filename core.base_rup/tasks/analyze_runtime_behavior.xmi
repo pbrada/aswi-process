@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_2GxsNdnmEdmO6L4XMImrsA" name="analyze_runtime_behavior,{5131A5BB-5B95-499E-A68B-788A2F0957C3}" guid="_2GxsNdnmEdmO6L4XMImrsA" changeDate="2005-10-10T08:36:28.850-0700" version="7.1.0">
+  <sections xmi:id="_U15r8NnnEdmO6L4XMImrsA" name=" Determine Required Execution Scenario " guid="_U15r8NnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;DetermineScenario&quot; name=&quot;DetermineScenario&quot;>&lt;/a> &#xD;
+&lt;div align=&quot;left&quot;>&#xD;
+    &lt;table&#xD;
+    style=&quot;BORDER-RIGHT: rgb(128,128,128) 1px solid; BORDER-TOP: rgb(128,128,128) 1px solid; BORDER-LEFT: rgb(128,128,128) 1px solid; BORDER-BOTTOM: rgb(128,128,128) 1px solid&quot;&#xD;
+     bordercolor=&quot;#808080&quot; cellspacing=&quot;0&quot; bordercolordark=&quot;#808080&quot; cellpadding=&quot;4&quot; width=&quot;100%&quot;&#xD;
+    bordercolorlight=&quot;#808080&quot; border=&quot;1&quot;>&#xD;
+        &lt;tbody>&#xD;
+            &lt;tr>&#xD;
+                &lt;td width=&quot;5%&quot; colspan=&quot;2&quot;>&#xD;
+                    &lt;b>Purpose:&amp;#160;&lt;/b>&#xD;
+                &lt;/td>&#xD;
+                &lt;td width=&quot;95%&quot; colspan=&quot;2&quot;>&#xD;
+                    To identify the execution path that will stimulate the desired runtime behavior&#xD;
+                &lt;/td>&#xD;
+            &lt;/tr>&#xD;
+        &lt;/tbody>&#xD;
+    &lt;/table>&lt;br />&#xD;
+&lt;/div>&#xD;
+&lt;p>&#xD;
+    If the observation and analysis of runtime behavior is to provide the desired insight into the behavior of the&#xD;
+    software, you will need to give consideration to which execution paths through the application will be of importance to&#xD;
+    explore and of those, which will offer the most opportunity in understanding the runtime behavior of the software.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    In general, the most useful scenarios to explore tend to reflect all or part of those that the user will typically use.&#xD;
+    As such, it is useful wherever possible to identify scenarios by questioning or otherwise consulting with a domain&#xD;
+    expert such as a representative user of the software being developed.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Use cases offer a valuable set of artifacts from which useful scenarios can be identified and explored. As a developer,&#xD;
+    the most familiar of these will likely be the use-case realizations which you should begin with if available. In the&#xD;
+    absence of use-case realizations, identify any available use-case scenarios that offer a textual explanation of the&#xD;
+    path the user will navigate through the various flows of events in the use case. Finally, the use-case flows of events&#xD;
+    can be consulted to provide information from which likely candidate scenarios can be identified. The success of this&#xD;
+    last approach is improved by consultation with a representative for the uses cases actor or other domain expert.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Testers are another useful resource to consult when attempting to identify useful scenarios for runtime analysis.&#xD;
+    Testers often have insight into and experience with the domain through their testing efforts that evolves them into&#xD;
+    pseudo-domain experts. In many cases, the stimulus for observing the software's runtime behavior will come from the&#xD;
+    results of the testing effort itself.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    If this task is driven by a reported defect, the main focus will be to reproduce it in a controlled environment. Based&#xD;
+    on the information which has been logged when the problem happened, a number of test case have to be identified as&#xD;
+    potential candidates for making the defect occur reliably. You might need to tweak some of the tests or write new ones,&#xD;
+    but keep in mind that reproducing the defect is an essential step and for the most difficult cases it will take more&#xD;
+    time to stabilize the defect than to fix it.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_U15r8dnnEdmO6L4XMImrsA" name=" Prepare Implementation Component for Runtime Observation " guid="_U15r8dnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;PrepareComponent&quot; name=&quot;PrepareComponent&quot;>&lt;/a> &#xD;
+&lt;div align=&quot;left&quot;>&#xD;
+    &lt;table&#xD;
+    style=&quot;BORDER-RIGHT: rgb(128,128,128) 1px solid; BORDER-TOP: rgb(128,128,128) 1px solid; BORDER-LEFT: rgb(128,128,128) 1px solid; BORDER-BOTTOM: rgb(128,128,128) 1px solid&quot;&#xD;
+     bordercolor=&quot;#808080&quot; cellspacing=&quot;0&quot; bordercolordark=&quot;#808080&quot; cellpadding=&quot;4&quot; width=&quot;100%&quot;&#xD;
+    bordercolorlight=&quot;#808080&quot; border=&quot;1&quot;>&#xD;
+        &lt;tbody>&#xD;
+            &lt;tr>&#xD;
+                &lt;td width=&quot;5%&quot; colspan=&quot;2&quot;>&#xD;
+                    &lt;b>Purpose:&lt;/b>&#xD;
+                &lt;/td>&#xD;
+                &lt;td width=&quot;95%&quot; colspan=&quot;2&quot;>&#xD;
+                    To ensure the component is ready in an appropriate state to enable runtime execution&#xD;
+                &lt;/td>&#xD;
+            &lt;/tr>&#xD;
+        &lt;/tbody>&#xD;
+    &lt;/table>&lt;br />&#xD;
+&lt;/div>&#xD;
+&lt;p>&#xD;
+    For runtime execution of the component to yield accurate results, care should be taken to prepare the component&#xD;
+    satisfactorily so that no anomalous results occur as a by-product of errors in implementation, compilation or linking.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    It is often necessary to make use of &lt;i>&lt;a class=&quot;elementLinkWithUserText&quot;&#xD;
+    href=&quot;./../../core.base_rup/guidances/termdefinitions/stub_A0899BD4.html&quot; target=&quot;_blank&quot; guid=&quot;_yWtT6dnmEdmO6L4XMImrsA&quot;>stubbed&#xD;
+    components&lt;/a>&lt;/i> so that the runtime observation can be completed in a timely manner, or so that it can actually be&#xD;
+    conducted in situations where the component is reliant on other components that have not yet been implemented.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    You will also need to prepare any framework or supporting tools required to execute the component. In some cases this&#xD;
+    may mean creating driver or harness code to support execution of the component; in other cases it may mean&#xD;
+    instrumenting the component so that external support tools can observe and possibly control the components behavior.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_U15r8tnnEdmO6L4XMImrsA" name=" Prepare Environment for Execution " guid="_U15r8tnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;PrepareEnvironment&quot; name=&quot;PrepareEnvironment&quot;>&lt;/a>&#xD;
+&lt;div align=&quot;left&quot;>&#xD;
+    &lt;table border=&quot;1&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;4&quot; style=&quot;border: 1px solid rgb(128,128,128)&quot;&#xD;
+    bordercolor=&quot;#808080&quot; bordercolorlight=&quot;#808080&quot; bordercolordark=&quot;#808080&quot;>&#xD;
+        &lt;tr>&#xD;
+            &lt;td colspan=&quot;2&quot; width=&quot;5%&quot;>&#xD;
+                &lt;b>Purpose:&lt;/b>&#xD;
+            &lt;/td>&#xD;
+            &lt;td colspan=&quot;2&quot; width=&quot;95%&quot;>&#xD;
+                To ensure the prerequisite setup of the target environment has been completed satisfactorily.&#xD;
+            &lt;/td>&#xD;
+        &lt;/tr>&#xD;
+    &lt;/table>&lt;br />&#xD;
+&lt;/div>&#xD;
+&lt;p>&#xD;
+    It is important to consider any requirements and constraints that must be addressed for the target environment in which&#xD;
+    the runtime analysis will occur. In some cases it will be necessary to simulate one or more of the intended deployment&#xD;
+    environments in which the component will ultimately be required to run. In other cases, it will be sufficient to&#xD;
+    perform the observe the runtime behavior on the developers machine.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    In any case, it is important to setup the target environment for the runtime observation satisfactorily so that the&#xD;
+    exercise is not wasted by the inclusion of &quot;contaminants&quot; that will potentially invalidate the subsequent analysis.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Another consideration is the use of tools that generate environmental constraints or exception conditions that are&#xD;
+    otherwise difficult to reproduce. Such tools are invaluable in isolating failures or anomalies that occur in runtime&#xD;
+    behavior under these conditions.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_U15r89nnEdmO6L4XMImrsA" name=" Execute the Component and Capture Behavioral Observations " guid="_U15r89nnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;ObserveBehavior&quot; name=&quot;ObserveBehavior&quot;>&lt;/a>&#xD;
+&lt;div align=&quot;left&quot;>&#xD;
+    &lt;table border=&quot;1&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;4&quot; style=&quot;border: 1px solid rgb(128,128,128)&quot;&#xD;
+    bordercolor=&quot;#808080&quot; bordercolorlight=&quot;#808080&quot; bordercolordark=&quot;#808080&quot;>&#xD;
+        &lt;tr>&#xD;
+            &lt;td colspan=&quot;2&quot; width=&quot;5%&quot;>&#xD;
+                &lt;b>Purpose:&lt;/b>&#xD;
+            &lt;/td>&#xD;
+            &lt;td colspan=&quot;2&quot; width=&quot;95%&quot;>&#xD;
+                To observe and capture the runtime behavior of the component.&#xD;
+            &lt;/td>&#xD;
+        &lt;/tr>&#xD;
+    &lt;/table>&lt;br />&#xD;
+&lt;/div>&#xD;
+&lt;p>&#xD;
+    Having prepared both the component and the environment it will be observed in, you can now begin to execute the&#xD;
+    component through the chosen scenario. Dependent on the techniques and tools employed, this step may be performed&#xD;
+    largely unattended or may offer (or even require) ongoing attention as the scenario progresses.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_U2C14NnnEdmO6L4XMImrsA" name=" Review Behavioral Observations and Isolate Initial Findings " guid="_U2C14NnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;ReviewObservations&quot; name=&quot;ReviewObservations&quot;>&lt;/a>&#xD;
+&lt;div align=&quot;left&quot;>&#xD;
+    &lt;table border=&quot;1&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;4&quot; style=&quot;border: 1px solid rgb(128,128,128)&quot;&#xD;
+    bordercolor=&quot;#808080&quot; bordercolorlight=&quot;#808080&quot; bordercolordark=&quot;#808080&quot;>&#xD;
+        &lt;tr>&#xD;
+            &lt;td colspan=&quot;2&quot; width=&quot;5%&quot;>&#xD;
+                &lt;b>Purpose:&lt;/b>&#xD;
+            &lt;/td>&#xD;
+            &lt;td colspan=&quot;2&quot; width=&quot;95%&quot;>&#xD;
+                To identify failures and anomalies in the components runtime behavior&#xD;
+            &lt;/td>&#xD;
+        &lt;/tr>&#xD;
+    &lt;/table>&lt;br />&#xD;
+&lt;/div>&#xD;
+&lt;p>&#xD;
+    Either during each step in or at the conclusion of the scenario you are observing, look for failures or anomalies in&#xD;
+    the expected behavior. Note any observations you make or impressions you have that you think might relate to the&#xD;
+    anomalous behavior.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_U2C14dnnEdmO6L4XMImrsA" name=" Analyze Findings to Understand Root Causes " guid="_U2C14dnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;AnalyzeFindings&quot; name=&quot;AnalyzeFindings&quot;>&lt;/a>&#xD;
+&lt;div align=&quot;left&quot;>&#xD;
+    &lt;table border=&quot;1&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;4&quot; style=&quot;border: 1px solid rgb(128,128,128)&quot;&#xD;
+    bordercolor=&quot;#808080&quot; bordercolorlight=&quot;#808080&quot; bordercolordark=&quot;#808080&quot;>&#xD;
+        &lt;tr>&#xD;
+            &lt;td colspan=&quot;2&quot; width=&quot;5%&quot;>&#xD;
+                &lt;b>Purpose:&lt;/b>&#xD;
+            &lt;/td>&#xD;
+            &lt;td colspan=&quot;2&quot; width=&quot;95%&quot;>&#xD;
+                To understand the root cause of any failure and anomaly&#xD;
+            &lt;/td>&#xD;
+        &lt;/tr>&#xD;
+    &lt;/table>&lt;br />&#xD;
+&lt;/div>&#xD;
+&lt;p>&#xD;
+    Take your findings and begin to investigate the underlying fault or root cause of each failure.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_U2C14tnnEdmO6L4XMImrsA" name=" Identify and Communicate Follow-up Actions " guid="_U2C14tnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;CommunicateActions&quot; name=&quot;CommunicateActions&quot;>&lt;/a>&#xD;
+&lt;div align=&quot;left&quot;>&#xD;
+    &lt;table border=&quot;1&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;4&quot; style=&quot;border: 1px solid rgb(128,128,128)&quot;&#xD;
+    bordercolor=&quot;#808080&quot; bordercolorlight=&quot;#808080&quot; bordercolordark=&quot;#808080&quot;>&#xD;
+        &lt;tr>&#xD;
+            &lt;td colspan=&quot;2&quot; width=&quot;5%&quot;>&#xD;
+                &lt;b>Purpose:&lt;/b>&#xD;
+            &lt;/td>&#xD;
+            &lt;td colspan=&quot;2&quot; width=&quot;95%&quot;>&#xD;
+                To suggest further investigative or corrective actions&#xD;
+            &lt;/td>&#xD;
+        &lt;/tr>&#xD;
+    &lt;/table>&lt;br />&#xD;
+&lt;/div>&#xD;
+&lt;p>&#xD;
+    Once you've reviewed all of your findings, you'll likely have a list of thoughts or hunches that will require further&#xD;
+    investigation, and possibly specific corrective actions that you propose. If you will not be taking immediate action on&#xD;
+    these items yourself, record your proposals in an appropriate format and communicate them to the members of your team&#xD;
+    who can approve or otherwise undertake your proposals.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_U2C149nnEdmO6L4XMImrsA" name=" Evaluate Your Results " guid="_U2C149nnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;EvaluateResults&quot; name=&quot;EvaluateResults&quot;>&lt;/a> &#xD;
+&lt;div align=&quot;left&quot;>&#xD;
+    &lt;table&#xD;
+    style=&quot;BORDER-RIGHT: rgb(128,128,128) 1px solid; BORDER-TOP: rgb(128,128,128) 1px solid; BORDER-LEFT: rgb(128,128,128) 1px solid; BORDER-BOTTOM: rgb(128,128,128) 1px solid&quot;&#xD;
+     bordercolor=&quot;#808080&quot; cellspacing=&quot;0&quot; bordercolordark=&quot;#808080&quot; cellpadding=&quot;4&quot; width=&quot;100%&quot;&#xD;
+    bordercolorlight=&quot;#808080&quot; border=&quot;1&quot;>&#xD;
+        &lt;tbody>&#xD;
+            &lt;tr>&#xD;
+                &lt;td width=&quot;5%&quot; colspan=&quot;2&quot;>&#xD;
+                    &lt;b>Purpose:&lt;/b>&#xD;
+                &lt;/td>&#xD;
+                &lt;td width=&quot;95%&quot; colspan=&quot;2&quot;>&#xD;
+                    To verify that the task has been completed appropriately and that the resulting work products are&#xD;
+                    acceptable.&#xD;
+                &lt;/td>&#xD;
+            &lt;/tr>&#xD;
+        &lt;/tbody>&#xD;
+    &lt;/table>&lt;br />&#xD;
+&lt;/div>&#xD;
+&lt;p>&#xD;
+    Now that you have completed the work, it is a good practice to verify that the work was of sufficient value. You should&#xD;
+    evaluate whether your work is of appropriate quality, and that it is complete enough to be useful to those team members&#xD;
+    who will make subsequent use of it as input to their work. Where possible, use the checklists provided in RUP to verify&#xD;
+    that quality and completeness are &quot;good enough&quot;.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Have the people who will use your work as input in performing their downstream tasks take part in reviewing your&#xD;
+    interim work. Do this while you still have time available to take action to address their concerns. You should also&#xD;
+    evaluate your work against the key input work products to make sure you have represented or considered them&#xD;
+    sufficiently and accurately. It may be useful to have the author of the input work product review your work on this&#xD;
+    basis.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Try to remember that that RUP is an iterative delivery process and that in many cases work products evolve over time.&#xD;
+    As such, it is not usually necessary-and is in many cases counterproductive-to fully-form a work product that will only&#xD;
+    be partially used or will not be used at all in immediately subsequent downstream work. This is because there is a high&#xD;
+    probability that the situation surrounding the work product will change-and the assumptions made when the work product&#xD;
+    was created proven incorrect-before the work product is used, resulting in rework and therefore wasted effort.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Also avoid the trap of spending too many cycles on presentation to the detriment of the value of the content itself. In&#xD;
+    project environments where presentation has importance and economic value as a project deliverable, you might want to&#xD;
+    consider using an administrative or junior resource to perform work on a work product to improve its presentation.&#xD;
+&lt;/p>&lt;br />&#xD;
+&lt;br /></sectionDescription>
+  </sections>
+  <purpose>&lt;a id=&quot;Top&quot; name=&quot;Top&quot;>&lt;/a>&lt;a id=&quot;XE_developer_testing__runtime_analysis&quot;&#xD;
+name=&quot;XE_developer_testing__runtime_analysis&quot;>&lt;/a> &#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        To understand the behavior of a component during its execution.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        To identify anomalous behavior and any corrective actions required.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></purpose>
+</org.eclipse.epf.uma:TaskDescription>

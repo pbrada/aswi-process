@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ProcessDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="-Vjwow_nVKio6ShThvXv7_w" name="design_services,_6Jd70DtdEdqPaeZADstHAA" guid="-Vjwow_nVKio6ShThvXv7_w" version="7.1.0">
+  <mainDescription>&lt;p>&#xD;
+    This&amp;nbsp;capability pattern&amp;nbsp;has the following goals:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        To refine the definitions of service design elements by providing detailed specifications of service behavior and&#xD;
+        modeling the service portfolio in terms of service providers and partitions&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        To refine and update the use-case realizations, as design changes are made, or new service design elements are&#xD;
+        identified&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        To review the design as it evolves&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></mainDescription>
+  <purpose>The purpose of this&amp;nbsp;capability pattern&amp;nbsp;is to provide detailed specifications of service behavior and model the&#xD;
+service portfolio in terms of service providers and partitions.</purpose>
+  <howtoStaff>&lt;p>
+    Typically, one person or a small team is responsible for a set of service specifications, services and their
+    collaborations. This person/team is responsible for fleshing out the design details of the elements and completing all
+    operation definitions and behavioral models for the service specification as well as the definition of relationships to
+    other services and service specifications. This person/team may organize the model according to packages or subsystems
+    in a traditional UML way or may use service partitions to provide logical views of the organization of the model.
+&lt;/p>
+&lt;p>
+    Typically the designer responsible for the service collaboration or other models of the composition of services should
+    be familiar with the binding and encoding options for service channels and messages. These options have differing
+    performance and security characteristics and the trade-offs made when choosing one over another should be made with the
+    overall solution non-functional requirements in mind.
+&lt;/p>
+&lt;p>
+    While the individual service model elements are refined, the use-case realizations must be refined to reflect the
+    evolving responsibilities of the service model elements. Typically, one person or a small team is responsible for
+    refining one or more related use-case realizations. As service model elements are added or refined, the use-case
+    realizations need to be reconsidered and evolved as they become outdated, or as improvements in the service model allow
+    for simplifications in the use-case realizations. The individuals or teams responsible for use-case realizations need
+    to have broader understanding of the behavior required by the use cases and of the trade-offs of different approaches
+    to allocating this behavior amongst service model elements. In addition, since they are responsible for selecting the
+    elements that will perform the use cases, they need to have a deep understanding of specified behaviors of the service
+    model elements themselves.
+&lt;/p></howtoStaff>
+</org.eclipse.epf.uma:ProcessDescription>

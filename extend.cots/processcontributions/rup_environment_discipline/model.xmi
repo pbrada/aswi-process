@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.uma:ProcessComponent xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.ibm.uma="http://www.ibm.com/uma/1.0.2/uma.ecore" xmi:id="_s2y1JdoTEdmCj7Yn9Ev4rg" name="rup_environment_discipline" guid="_s2y1JdoTEdmCj7Yn9Ev4rg">
+  <childPackages xsi:type="com.ibm.uma:ProcessPackage" xmi:id="_twYvydoTEdmCj7Yn9Ev4rg" name="support_env_during_iteration" guid="_twYvydoTEdmCj7Yn9Ev4rg">
+    <processElements xsi:type="com.ibm.uma:Activity" xmi:id="_s2y1I9oTEdmCj7Yn9Ev4rg" name="support_env_during_iteration" guid="_s2y1I9oTEdmCj7Yn9Ev4rg" presentationName="support_env_during_iteration" superActivities="_s2y1JNoTEdmCj7Yn9Ev4rg" variabilityType="contributes" breakdownElements="_twYvytoTEdmCj7Yn9Ev4rg _twYvy9oTEdmCj7Yn9Ev4rg _twYvzNoTEdmCj7Yn9Ev4rg _twYvzdoTEdmCj7Yn9Ev4rg _twYvztoTEdmCj7Yn9Ev4rg _twYvz9oTEdmCj7Yn9Ev4rg"/>
+    <processElements xsi:type="com.ibm.uma:TaskDescriptor" xmi:id="_twYvytoTEdmCj7Yn9Ev4rg" name="Set Up and Maintain Experimentation Facility" guid="_twYvytoTEdmCj7Yn9Ev4rg" presentationName="Set Up and Maintain Experimentation Facility" superActivities="_s2y1I9oTEdmCj7Yn9Ev4rg" optionalInput="_twYvzNoTEdmCj7Yn9Ev4rg" performedPrimarilyBy="_twYvy9oTEdmCj7Yn9Ev4rg">
+      <Task href="uma://{D4626EC0-06BC-4592-A8A6-C8DE7E821952}#{6FF9DA14-F747-45DB-99B0-BEB5ECEA5655}"/>
+    </processElements>
+    <processElements xsi:type="com.ibm.uma:RoleDescriptor" xmi:id="_twYvy9oTEdmCj7Yn9Ev4rg" name="cots_system_administrator" guid="_twYvy9oTEdmCj7Yn9Ev4rg" presentationName="cots_system_administrator" superActivities="_s2y1I9oTEdmCj7Yn9Ev4rg" performsAsOwner="_twYvytoTEdmCj7Yn9Ev4rg _twYvzdoTEdmCj7Yn9Ev4rg">
+      <Role href="uma://{D4626EC0-06BC-4592-A8A6-C8DE7E821952}#{DC74569E-5EEF-4FC6-A7C6-C5B9EE6C4E77}"/>
+    </processElements>
+    <processElements xsi:type="com.ibm.uma:WorkProductDescriptor" xmi:id="_twYvzNoTEdmCj7Yn9Ev4rg" name="Experimentation Facility" guid="_twYvzNoTEdmCj7Yn9Ev4rg" presentationName="Experimentation Facility" superActivities="_s2y1I9oTEdmCj7Yn9Ev4rg" OptionalInputTo="_twYvytoTEdmCj7Yn9Ev4rg">
+      <WorkProduct xsi:type="com.ibm.uma:Artifact" href="uma://{D4626EC0-06BC-4592-A8A6-C8DE7E821952}#{C40FDC5E-ABB2-4E63-8598-0EC5371011A1}"/>
+    </processElements>
+    <processElements xsi:type="com.ibm.uma:TaskDescriptor" xmi:id="_twYvzdoTEdmCj7Yn9Ev4rg" name="Install System" guid="_twYvzdoTEdmCj7Yn9Ev4rg" presentationName="Install System" superActivities="_s2y1I9oTEdmCj7Yn9Ev4rg" optionalInput="_twYvztoTEdmCj7Yn9Ev4rg _twYvz9oTEdmCj7Yn9Ev4rg" performedPrimarilyBy="_twYvy9oTEdmCj7Yn9Ev4rg">
+      <Task href="uma://{D4626EC0-06BC-4592-A8A6-C8DE7E821952}#{4492E43E-5D7B-42A6-95F2-99DB0A498ED5}"/>
+    </processElements>
+    <processElements xsi:type="com.ibm.uma:WorkProductDescriptor" xmi:id="_twYvztoTEdmCj7Yn9Ev4rg" name="Deployment Unit" guid="_twYvztoTEdmCj7Yn9Ev4rg" presentationName="Deployment Unit" superActivities="_s2y1I9oTEdmCj7Yn9Ev4rg" OptionalInputTo="_twYvzdoTEdmCj7Yn9Ev4rg">
+      <WorkProduct xsi:type="com.ibm.uma:Artifact" href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{C5236E9F-6393-4CC8-992B-53BEBE651B9A}"/>
+    </processElements>
+    <processElements xsi:type="com.ibm.uma:WorkProductDescriptor" xmi:id="_twYvz9oTEdmCj7Yn9Ev4rg" name="Executing System" guid="_twYvz9oTEdmCj7Yn9Ev4rg" presentationName="Executing System" superActivities="_s2y1I9oTEdmCj7Yn9Ev4rg" OptionalInputTo="_twYvzdoTEdmCj7Yn9Ev4rg">
+      <WorkProduct xsi:type="com.ibm.uma:Artifact" href="uma://{D4626EC0-06BC-4592-A8A6-C8DE7E821952}#{2179F9CD-7406-4BDC-921D-D27384146E31}"/>
+    </processElements>
+  </childPackages>
+  <process xsi:type="com.ibm.uma:ProcessContribution" xmi:id="_s2y1JNoTEdmCj7Yn9Ev4rg" name="rup_environment_discipline" guid="_s2y1JNoTEdmCj7Yn9Ev4rg" briefDescription="TBD" presentationName="rup_environment_discipline" breakdownElements="_s2y1I9oTEdmCj7Yn9Ev4rg"/>
+</com.ibm.uma:ProcessComponent>

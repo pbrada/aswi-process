@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="-g1PMnCwSJz29-k6JZN6gVA" name="soa_service_qualification,_mHhK8CwUEduKcvYAyaKSaA" guid="-g1PMnCwSJz29-k6JZN6gVA" changeDate="2006-09-21T21:06:48.497-0700" version="1.0.0">
+  <mainDescription>&lt;p>&#xD;
+    Once candidate services have been selected and documented in the (categorized) Service Portfolio, we then need to&#xD;
+    determine which ones should be exposed as services. Although, in theory, any candidate service could be exposed by&#xD;
+    exporting its interface as a service description, not every candidate service &lt;i>should&lt;/i> be. It may not be&#xD;
+    economically and practically (non-functional requirements may be compromised) feasible to do so. In particular, the&#xD;
+    naive decision to expose &quot;all methods from all classes&quot; will result in an overwhelming and often unmanageable number of&#xD;
+    services leading to the &quot;Service Proliferation Syndrome&quot;. This creates huge performance and service management&#xD;
+    problems, not to mention the fact that we may be giving away the company's intellectual capital. Moreover, we must&#xD;
+    remember that &lt;i>there is a cost associated with every service we choose to expose&lt;/i>: the funding, governance and the&#xD;
+    underlying infrastructure (its security, performance, management) of the service and the components that will implement&#xD;
+    them must be taken into account.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Therefore, some criteria are needed to help decide whether to expose a service and most importantly, whether to fund&#xD;
+    the creation of the service component that will provide the functionality of the service as well as the maintenance,&#xD;
+    monitoring, security, performance and other service level agreements of the service.&amp;nbsp;&#xD;
+&lt;/p>&#xD;
+&lt;h4>&#xD;
+    Service Litmus Tests&#xD;
+&lt;/h4>&#xD;
+&lt;p>&#xD;
+    Project experiences indicate a set of criteria in the form of the &lt;i>Service Litmus Test&lt;/i> can and should be used to&#xD;
+    filter the collections of candidate services. This metaphor is used to denote a set of tests, that when applied, will&#xD;
+    determine if a given service should be eligible for exposure using a service description. These tests are employed&#xD;
+    together and help answer questions such as: From the list of candidate services, which ones should be exposed? And&#xD;
+    thus, which ones should we fund? Which ones have business value?&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    On the one extreme, every business use case might be considered to be a candidate service. On the other, only a few&#xD;
+    services are selected for exposure. Applying the Service Litmus Test usually gives something in the middle: a&#xD;
+    manageable set of services that the business wants to expose and that can later be used within compositions.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Candidate services that pass all of the Service Litmus Tests should then be exposed as services in the SOA. There may&#xD;
+    be candidate services that did not pass the Service Litmus Test but which are still implemented as services. Service&#xD;
+    Litmus Test is an aid to determine which services to expose; if a business chooses to expose candidate services that&#xD;
+    did not pass the Service Litmus Test, the implication is that benefits associated with a SOA will not be realized.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Candidate services that do not meet the Service Litmus Test will have to be implemented in some fashion as they are&#xD;
+    required to fulfill business needs. They may be implemented as methods on service components and will not require the&#xD;
+    generation of WSDL or other forms of service definitions; or they may be used as non-exposable entities.&#xD;
+&lt;/p>&#xD;
+&lt;h4>&#xD;
+    Considerations&#xD;
+&lt;/h4>&#xD;
+&lt;p>&#xD;
+    Application of Service Litmus Tests is an iterative process. For the first phase of elaboration, decisions should be&#xD;
+    made based on current knowledge. Service Litmus Tests should then be revisited as more information is obtained&#xD;
+    throughout the design process.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Service Litmus Tests for each candidate service should be applied and reviewed with the appropriate Subject Matter&#xD;
+    Experts or Stakeholders.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Reviewing results of the Service Litmus Tests are a useful way to track the appropriateness of the criteria and service&#xD;
+    granularity. For example, if too many candidate services are passing a particular test, that test definition may be too&#xD;
+    broad or the service level granularity may be appropriate.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    A service may fail one or more of the Service Litmus Tests but may still be exposed due to some project specific&#xD;
+    decision (business or IT). This is ok. There may be an architectural or business decision made to expose a service&#xD;
+    despite the Service Litmus Tests.&#xD;
+&lt;/p></mainDescription>
+  <sections xmi:id="_go5D0C7tEdu14aFGpEDchg" name="Ensure Service is Business Aligned" guid="_go5D0C7tEdu14aFGpEDchg">
+    <sectionDescription>&lt;p>&#xD;
+    The first test of a service is about its Business Alignment. If the service is not traceable back to a business task or&#xD;
+    goal, it may not yield benefits required for SOA implementation. The following questions, if all are answered&#xD;
+    positively, mean the service is aligned with the business.&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Does the service provide a required business functionality that supports business processes and goals? (see &lt;a&#xD;
+        class=&quot;elementLinkWithType&quot; href=&quot;./../../soa.rup_soma/tasks/soa_service_identification_bp_D5A863FB.html&quot;&#xD;
+        guid=&quot;_am-VYCwTEduKcvYAyaKSaA&quot;>Task: Business Process Analysis&lt;/a> )&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Is the business willing to fund the service through its lifecycle: provisioning, management, governance and&#xD;
+        maintenance?&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Is the business willing to share the service internally or externally with clients or business partners? For&#xD;
+        example, implications may be additional costs, business secrets, security, etc.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Are there existing or future opportunities within the enterprise to reuse the service?&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></sectionDescription>
+  </sections>
+  <sections xmi:id="_qcK7wC7tEdu14aFGpEDchg" name="Ensure Service is Composable" guid="_qcK7wC7tEdu14aFGpEDchg">
+    <sectionDescription>&lt;p>&#xD;
+    Composability is defined as an attribute that enables the service to participate in a service composition. Applications&#xD;
+    can be created using both types of composition. (The two kinds or composite services may be identified: 1. Hardwired&#xD;
+    composite services Hardwired composite services are characterized by low flexibility, owing to pre-defined flow and&#xD;
+    control of services where the flow and control is not externalized. These types of services have attractive Qualities&#xD;
+    of Service attributes such as performance . 2.Loosely wired composite services Loosely wired composite services - these&#xD;
+    are characterized by high flexibility where composing services into business processes is accomplished by externalizing&#xD;
+    flow and control. The flow description of the composition is externalized. This type of composition exploits modeling&#xD;
+    tools, dynamic variability through rules, and static variability through modeling. Composition using BPEL is an&#xD;
+    example).&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Does the service meet the required Quality of Service attributes as defined in the composition's Non-Functional&#xD;
+        Requirements?&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Is the service stateless? (see &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+        href=&quot;./../../soa.rup_soma/guidances/guidelines/state_management_for_services_E4156B50.html&quot;&#xD;
+        guid=&quot;4.2228409903513537E-306&quot;>Guideline: State Management for Services&lt;/a>)&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Is the service self-contained? Can the service be deployed independently to meet a business goal although it may&#xD;
+        cooperate with other services at run-time to perform business processes? There are no implicit dependencies of the&#xD;
+        service on other embedded functionality. All dependent services are either replaceable or self-contained.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Is the service's implementation technology neutral? Technology neutral means that the service does not impose&#xD;
+        support of non-standard (and unknown to the consumer) protocols or devices, for example, the constituent component&#xD;
+        requires intervention through a non-standard application interface.&lt;br />&#xD;
+         &lt;em>This test applies only when the service is deployed in the consumer's&lt;/em> &lt;em>environment. For example: A&#xD;
+        business provides an image retrieval service to its customers. It can provide this capability to its subscribed&#xD;
+        customers via a web service. Alternatively, the business can hand over to its customer the image retrieval&#xD;
+        capability exposed as a web service, and a collection of images. Here, the customer will be burdened by the&#xD;
+        implementation of the technology search.&lt;/em>&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></sectionDescription>
+  </sections>
+  <sections xmi:id="_wpXd0C7tEdu14aFGpEDchg" name="Ensure Service has External Description" guid="_wpXd0C7tEdu14aFGpEDchg">
+    <sectionDescription>&lt;p>&#xD;
+    The most basic property of a service is that it has an externalized service description. The externalized service&#xD;
+    description may either be that is either generated automatically via tools or manually&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Does the service have an externalized service description that is distinct and separate from the underlying&#xD;
+        physical implementation? A current example of this is WSDL.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Can the service be discovered and bound using the service description?&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Does the service description contain meta-data about itself? That is, the service description must be&#xD;
+        self-sufficient, containing or referencing all of the information necessary to understand the message exchange&#xD;
+        between consumer and provider of a service.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></sectionDescription>
+  </sections>
+  <sections xmi:id="_GTrOIC7uEdu14aFGpEDchg" name="Ensure Service is Reusable" guid="_GTrOIC7uEdu14aFGpEDchg">
+    <sectionDescription>&lt;p>&#xD;
+    Can this service be used by the business stakeholder within all processes where its function is required?&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_l3Gt8EnwEduC74V7YHXTOQ" name="Ensure Service is Technically Feasible" guid="_l3Gt8EnwEduC74V7YHXTOQ">
+    <sectionDescription>&lt;p>&#xD;
+    Technical Feasibility ensures that the service can actually be realized (implemented and deployed) according to&#xD;
+    functional and non-functional requirements using available technologies.&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Is the implementation and management effort for the service reasonable and readily achievable given either the&#xD;
+        requirements or infrastructure of the implementation?&lt;br />&#xD;
+         &lt;em>This is done after Realization's Technical Feasibility Exploration&lt;/em>&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></sectionDescription>
+  </sections>
+</org.eclipse.epf.uma:TaskDescription>

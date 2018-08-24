@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_3dzJgtnmEdmO6L4XMImrsA" name="develop_development_case,{F6999E01-701F-4D48-9E83-A063CB35912B}" guid="_3dzJgtnmEdmO6L4XMImrsA" changeDate="2005-11-04T07:51:24.078-0800" version="7.1.0">
+  <sections xmi:id="_ZM2eENnnEdmO6L4XMImrsA" name="Decide How to Perform Each Discipline " guid="_ZM2eENnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;PerformDisciplines&quot; name=&quot;PerformDisciplines&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    Part of tailoring the RUP framework for use on a specific project is to decide on which disciplines to introduce. As&#xD;
+    described in &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../core.base_rup/tasks/tailor_process_for_project_6CFD05E2.html&quot;&#xD;
+    guid=&quot;{1BA9AAA0-DA89-4C14-B45A-CE28A8A10894}&quot;>Task: Tailor the Development Process for the Project&lt;/a> , you should&#xD;
+    avoid using all of RUP in one single project. And if your project is fairly new to the practices described in the RUP,&#xD;
+    you should concentrate on limiting the number of unknown factors to a handful, to ease the transition of the teams onto&#xD;
+    a new process platform.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Once you have decided which disciplines you need to introduce, decide the following for each:&amp;nbsp;&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        How to perform the workflow.&amp;nbsp;&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Which parts of the workflow should be used.&amp;nbsp;&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        When, during the project's lifecycle, to introduce the workflows and their parts.&amp;nbsp;&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>&#xD;
+    To help you decide, guidelines have been developed for each discipline called &quot;Important Decisions in &amp;lt;Discipline&#xD;
+    X&amp;gt;. In these guidelines, there are is a section called &quot;Decide How to Perform the Workflow&quot;.&amp;nbsp; See the attached&#xD;
+    guidelines for the disciplines included in this configuration.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    When you consider introducing a particular discipline, or part of one, take the following into account:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        &lt;b>Applicability&lt;/b>. Is it applicable for the project? Does it really add value to introduce it?&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;b>Problems and root causes addressed&lt;/b>. Does it address any of the perceived problems and their root causes?&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;b>Tool support&lt;/b>. What tool support is needed?&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;b>Timing&lt;/b>. When during the project's lifecycle should it be introduced? See &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+        href=&quot;./../../core.base_rup/guidances/concepts/implementing_a_process_in_a_project_3656F98A.html&quot;&#xD;
+        guid=&quot;2.870714010568015E-306&quot;>Concept: Implementing a Process in a Project&lt;/a>, for more information.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;b>Cost of implementing&lt;/b>. What is the cost of implementing it in the project? This includes: &#xD;
+        &lt;ul>&#xD;
+            &lt;li>&#xD;
+                Cost to train project members.&amp;nbsp;&#xD;
+            &lt;/li>&#xD;
+            &lt;li>&#xD;
+                Cost to install the supporting tools.&#xD;
+            &lt;/li>&#xD;
+            &lt;li>&#xD;
+                Cost to develop guidelines and templates.&#xD;
+            &lt;/li>&#xD;
+        &lt;/ul>&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></sectionDescription>
+  </sections>
+  <sections xmi:id="_ZNAPENnnEdmO6L4XMImrsA" name="Tailor Artifacts per Discipline " guid="_ZNAPENnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;TailorArtifacts&quot; name=&quot;TailorArtifacts&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    Select the right set of work products for the project to produce.&amp;nbsp;If you cannot clearly articulate why the work&#xD;
+    product should be produced, for example if no external stakeholder has requested it, then consider excluding it.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    It is a good practice to use the development case to document any deviations from the underlying process, so exclusion&#xD;
+    of any work product should be justified and documented.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Perform the following steps:&#xD;
+&lt;/p>&#xD;
+&lt;ol>&#xD;
+    &lt;li>&#xD;
+        Decide how the work product (modeling element or document) should be used.&amp;nbsp; For information on&#xD;
+        a&amp;nbsp;classification scheme for documenting the importance of individual work products and whether or not they&#xD;
+        will be used, see &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+        href=&quot;./../../core.base_rup/guidances/guidelines/classifying_work_products_4250A298.html&quot;&#xD;
+        guid=&quot;7.27749388241665E-306&quot;>Guideline: Classifying Work Products&lt;/a>.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Decide the review level for each work product and capture it in the &quot;Review Details&quot;. For details see &lt;a&#xD;
+        class=&quot;elementLinkWithType&quot; href=&quot;./../../core.base_rup/guidances/guidelines/review_levels_72ACB304.html&quot;&#xD;
+        guid=&quot;8.546224914239529E-306&quot;>Guideline: Review Levels&lt;/a>. Decide how to review each work product; that is, which&#xD;
+        review procedures to use.&amp;nbsp;&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Decide how you should capture the final results of a discipline. Do you need to store the results on paper? If so,&#xD;
+        you have to decide on one or several reports that extract the results from the tools, and capture the results on&#xD;
+        paper.&amp;nbsp;&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Decide which tools to use to develop and maintain the work product.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Decide which properties to use and how to use them. See the Properties table for each work product and the section&#xD;
+        titled &quot;Tailoring&quot; of each work product.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        When relevant, decide which stereotypes to use. For each work product, see the section titled &quot;Tailoring.&quot;&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Decide on an outline for the document work products. For the respective work product, see the &quot;Brief Outline.&quot;&#xD;
+        portion of the main description.&#xD;
+    &lt;/li>&#xD;
+&lt;/ol>&#xD;
+&lt;p>&#xD;
+    In addition to these steps you should also:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Decide which reports to use. Decide if you need any work reports to extract information from models, then document&#xD;
+        the information on paper for reviews. These work reports are usually treated as casual since they are temporary and&#xD;
+        will be discarded as soon as the review is complete. You may need to tailor the outline.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>&#xD;
+    There are more things to decide for each discipline. See the &quot;important decisions in &amp;lt;discipline name&amp;gt;&quot;&#xD;
+    guidelines for each discipline for more details.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_ZNAPEdnnEdmO6L4XMImrsA" name="Tailor Tasks per Discipline" guid="_ZNAPEdnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;ModifyDisciplines&quot; name=&quot;ModifyDisciplines&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    Study the modified set of work products and the tasks that use, create and update these work products. Decide whether&#xD;
+    you should modify or simplify these tasks. Note that for each task input and output work products are indicated. Be&#xD;
+    sure to delete any unnecessary step or task. Consider the following:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Introduce new steps and possibly new tasks to reflects the work products, reports, and documents that you have had&#xD;
+        to add.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Examine how the tools used can facilitate, automate, or even suppress some of the steps.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Introduce into the tasks any specific guidelines and rules inherited from the organization's experience. They may&#xD;
+        be added as guidance points, checklists, review items, or left as separate documents that can be referenced.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Once the tasks are known, review the workflows associated with each discipline that show how tasks interplay,&#xD;
+        removing or adding tasks as necessary.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Whole disciplines can be omitted or created.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        You may have to introduce some additional roles to take care of special tasks requiring specific skills.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>&#xD;
+    Describe the changes in the Development Case.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_ZNAPEtnnEdmO6L4XMImrsA" name="Choose Lifecycle Model " guid="_ZNAPEtnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;ChooseLifecycleModel&quot; name=&quot;ChooseLifecycleModel&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    Choose the kind of lifecycle model the project should employ. Refine the RUP model and adjust milestones and the&#xD;
+    milestone evaluation criteria if necessary. You may even decide to omit one or several of the phases, or add or remove&#xD;
+    milestones. See &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../core.base_concepts/guidances/concepts/phase_85B003C3.html&quot;&#xD;
+    guid=&quot;__7xOEC7aEdqHMdmRzC0-2g&quot;>Concept: Phase&lt;/a>&amp;nbsp;and &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../core.base_concepts/guidances/concepts/iteration_441A13D7.html&quot; guid=&quot;3.379871268737602E-305&quot;>Concept:&#xD;
+    Iteration&lt;/a> for more information and ideas. Document the project's lifecycle model in section &quot;Overview of the&#xD;
+    Development Case&quot; of the Development Case.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    In addition to selecting the&amp;nbsp;overall lifecycle model, it is also important to decide &lt;em>how&lt;/em> to perform the&#xD;
+    discipline workflows (what activities to perform and in what order), as well as to decide &lt;em>when&lt;/em>, during that&#xD;
+    project lifecycle, to introduce each part of the disciplines' workflow.&amp;nbsp; For information on how to tailor the&#xD;
+    workflow for each of the RUP disciplines, see the usage notes for the reference workflows provided for each RUP&#xD;
+    discipline. Document the discipline workflow decisions in the Development Case.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_ZNAPE9nnEdmO6L4XMImrsA" name="Describe Sample Iterations " guid="_ZNAPE9nnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;DescribeIterationWorkflows&quot; name=&quot;DescribeIterationWorkflows&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    Describe at least one sample iteration (more likely you will describe several) for each phase. These iteration&#xD;
+    descriptions describe how the project will work in different iterations and phases of the project. See the different&#xD;
+    phase descriptions under the &lt;a class=&quot;elementLink&quot; href=&quot;./../../core.base_rup/customcategories/rup_lifecycle_100BF298.html&quot;&#xD;
+    guid=&quot;_PEpmMCVuEdqSZ9OimJ-AzA&quot;>RUP Lifecycle&lt;/a>&amp;nbsp;page for detailed examples.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    The purpose of describing sample iterations in the development case is to communicate to the project teams, which tasks&#xD;
+    your project will perform, and in which order. As such it can serve as a more detailed iteration plan. The description&#xD;
+    of the sample iterations should be brief. Do not include details that belong in the tasks, work products and&#xD;
+    guidelines. You can choose to describe the sample iterations in terms of tasks or activities. Activity-based&#xD;
+    descriptions can be easier to use for planning and control at the management level, but task-based descriptions are&#xD;
+    preferred when using them at the practitioner level.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    In most cases you should describe at least one sample iteration per phase. Describe the sample iterations as they are&#xD;
+    needed; there is no reason to describe how to work during the Transition phase at the beginning of a project. Start by&#xD;
+    defining how the project will work in the Inception phase.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_ZNAPFNnnEdmO6L4XMImrsA" name="Identify Stakeholders " guid="_ZNAPFNnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;IdentifyStakeholders&quot; name=&quot;IdentifyStakeholders&quot;>&lt;/a>&#xD;
+&lt;p>&#xD;
+    The role &lt;a class=&quot;elementLink&quot; href=&quot;./../../core.base_rup/roles/rup_stakeholder_1011D446.html&quot;&#xD;
+    guid=&quot;{7A4262EA-AB5B-431E-BB4A-3822FBF7F239}&quot;>Stakeholder&lt;/a> represents all possible stakeholders to a project. You&#xD;
+    need to identify and describe the different types of stakeholders, their needs and responsibilities. Examples of&#xD;
+    different stakeholders are customer representative, user representative, investor, production manager, and buyer.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Describe the different stakeholders and their needs in the development case, in the section &quot;Roles&quot;.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_ZNAPFdnnEdmO6L4XMImrsA" name="Map Roles to Job Positions " guid="_ZNAPFdnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;MapWorkersToJobPositions&quot; name=&quot;MapWorkersToJobPositions&quot;>&lt;/a>&#xD;
+&lt;p>&#xD;
+    In some development organizations there are job positions defined. If these job positions are commonly used and have a&#xD;
+    wide acceptance within the organization, it may be worth doing a mapping between the roles in the RUP, and the job&#xD;
+    positions in the organization. Mapping job positions to roles can make it easier to make people in the organization&#xD;
+    understand how to employ the RUP. The mapping can also help people understand that roles are not job positions, which&#xD;
+    is a common misconception. Document this mapping in the development case, section &quot;Roles&quot;.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_ZNAPFtnnEdmO6L4XMImrsA" name="Document the Development Case " guid="_ZNAPFtnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;DocumentDevelopmentCase&quot; name=&quot;DocumentDevelopmentCase&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    Describe the development case. See the &quot;Representation Options&quot; section, as well as any associated guidance (e.g.,&#xD;
+    templates and/or examples).&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_ZNAPF9nnEdmO6L4XMImrsA" name="Maintain the Development Case " guid="_ZNAPF9nnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;MaintainDevelopmentCase&quot; name=&quot;MaintainDevelopmentCase&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    Many of the decisions should be made before the project starts. After each iteration in the software-development&#xD;
+    project you should evaluate the process, and reconsider the decisions you have made. If a new version of the underlying&#xD;
+    configuration is released, you need to update the development case.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <keyConsiderations>&lt;p>&#xD;
+    &lt;br />&#xD;
+     &amp;nbsp;&#xD;
+&lt;/p></keyConsiderations>
+  <alternatives>&lt;p>&#xD;
+    &lt;a id=&quot;Top&quot; name=&quot;Top&quot;>&lt;/a>&#xD;
+&lt;/p></alternatives>
+</org.eclipse.epf.uma:TaskDescription>

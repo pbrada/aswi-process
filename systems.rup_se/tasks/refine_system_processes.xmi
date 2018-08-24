@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_-Qne4N0MEdmhp5PapAYf4w" name="refine_system_processes,{6A132C87-C82B-422D-BD56-B42E7E20131D}" guid="_-Qne4N0MEdmhp5PapAYf4w" changeDate="2005-11-11T17:36:58.436-0800" version="7.1.0">
+  <sections xmi:id="_AY29wN0NEdmhp5PapAYf4w" name=" Review changes " guid="_AY29wN0NEdmhp5PapAYf4w">
+    <sectionDescription>&lt;a id=&quot;Review Changes&quot; name=&quot;Review Changes&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    The System Architect is prompted to perform this&amp;nbsp;task by any significant change in the system's environment&#xD;
+    (reflected in the &lt;i>system context,&lt;/i> the top-level collaboration between the system and its actors), refactoring&#xD;
+    during &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../systems.rup_se/tasks/se_operation_design_FE6558AC.html&quot;&#xD;
+    guid=&quot;_Gb4P8OQ7Edm1mN374l9mbg&quot;>Task: System Operation Design&lt;/a>, or the System Architect's own refinements made in &lt;a&#xD;
+    class=&quot;elementLinkWithType&quot; href=&quot;./../../systems.rup_se/tasks/refine_system_deployment_model_AAD44C73.html&quot;&#xD;
+    guid=&quot;{B8F36D9E-D010-4D38-8E2F-57B28CC16D1A}&quot;>Task: Refine System Deployment Model&lt;/a> and &lt;a&#xD;
+    class=&quot;elementLinkWithType&quot; href=&quot;./../../systems.rup_se/tasks/refine_system_structure_1B8985E.html&quot;&#xD;
+    guid=&quot;{43DD441B-6B4C-4998-B5D9-2A15894C5D56}&quot;>Task: Refine System Structure&lt;/a>. The System Architect examines these&#xD;
+    changes to determine what effect, if any, they have on the system-level processes. For example, if additional&#xD;
+    interfaces to the system's environment are to be supported, perhaps additional active (boundary) classes are needed.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_AY9rcN0NEdmhp5PapAYf4w" name=" Refactor/augment processes " guid="_AY9rcN0NEdmhp5PapAYf4w">
+    <sectionDescription>&lt;a id=&quot;Refactor/Augment Processes&quot; name=&quot;Refactor/Augment Processes&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    The assumption is that subsystems, by default, can operate autonomously and concurrently with other subsystems (that&#xD;
+    is, they encapsulate one or more independent loci of control). Thus, it is a design decision whether additional&#xD;
+    processes (active classes) that are not encapsulated in subsystems are defined at this level. For example, whether&#xD;
+    active (boundary) classes are needed to drive and respond to external interfaces, or whether active control classes are&#xD;
+    needed to coordinate the actions of subsystems, or whether, at this level only subsystems appear. A rule of thumb is&#xD;
+    that there be at least one thread of control within the system, for each interface offered by a system (or subsystem),&#xD;
+    but these threads of control might themselves be encapsulated (within subsystems). Processes (and associated&#xD;
+    &lt;i>threads&lt;/i>) are rooted in active classes; and instances of these (as active objects), not encapsulated in&#xD;
+    subsystems, can appear in interaction diagrams with subsystem instances, as shown below.&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;center&quot;>&#xD;
+    &lt;img height=&quot;642&quot; alt=&quot;Interaction diagram showing subsystem instances&quot; src=&quot;resources/subinter.gif&quot; width=&quot;551&quot;&#xD;
+    border=&quot;0&quot; />&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;center&quot;>&#xD;
+    &lt;!--Add a caption for this figure? -->&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;!--Figure lacks a caption. -->&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Note that the active classes Operator Keyboard, Operator Display and Printer, Laser Scanner and Magnetic Stripe Reader&#xD;
+    could be encapsulated within the subsystem Point-of-Sale Control, exposing these at the system level could be driven,&#xD;
+    for example, by their perceived importance, deployment issues, or the need to use them in some other application (which&#xD;
+    would indicate that the active classes are not simply &quot;dumb&quot; device drivers).&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Just as interesting as the existence of an active object and whether particular subsystems are, for some interactions&#xD;
+    at least, passive, is the sequence or path of a process (or thread). An invoked operation can, in turn, invoke others&#xD;
+    (in other subsystems) using the same process, and possible delays (waiting for resources, for example) might be&#xD;
+    critically important to the System Architect, if processes have deadlines to meet. Repartitioning the subsystems might&#xD;
+    lead the System Architect to reconsider the process structure.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_AZ0nEN0NEdmhp5PapAYf4w" name=" Capture updated Process viewpoint in System Architecture Document " guid="_AZ0nEN0NEdmhp5PapAYf4w">
+    <sectionDescription>&lt;a id=&quot;Capture Updated Process View in System Architecture Document&quot;&#xD;
+name=&quot;Capture Updated Process View in System Architecture Document&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    Decisions made in this&amp;nbsp;task are captured in the System Analysis Model (if this is separately maintained) and&#xD;
+    System Design Model; those aspects which the System Architect considers to be significant are also recorded in the &lt;a&#xD;
+    class=&quot;elementLinkWithType&quot; href=&quot;./../../systems.rup_se/workproducts/rup_system_architecture_document_C5DEEFE5.html&quot;&#xD;
+    guid=&quot;{F411BB0B-C101-4D78-96B9-10749A72EAD8}&quot;>Artifact: System Architecture Document&lt;/a> (in this case, as part of the&#xD;
+    &lt;i>Process&lt;/i> viewpoint).&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_AZ0nEd0NEdmhp5PapAYf4w" name=" Evaluate the results " guid="_AZ0nEd0NEdmhp5PapAYf4w">
+    <sectionDescription>&lt;a id=&quot;Evaluate the Results&quot; name=&quot;Evaluate the Results&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    The effectiveness of proposed solutions need to be reviewed with the stakeholders and the development team to ensure&#xD;
+    that all concurrent processing requirements and constraints (meeting deadlines, responsiveness and throughput, for&#xD;
+    example) are satisfied. Techniques such as simulation and prototyping can be used to provide more objective&#xD;
+    demonstrations of the adequacy of the design(s).&#xD;
+&lt;/p>&lt;br /></sectionDescription>
+  </sections>
+  <purpose>&lt;a id=&quot;Top&quot; name=&quot;Top&quot;>&lt;/a> &#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        To refine the Process Model at the system level, based on changes to the system structure (decomposition into&#xD;
+        subsystems) and the system's environment.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        This&amp;nbsp;task updates the System Analysis Model and the System Design Model. The updated Process View for the&#xD;
+        System Architecture Document is extracted from these artifacts.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></purpose>
+</org.eclipse.epf.uma:TaskDescription>

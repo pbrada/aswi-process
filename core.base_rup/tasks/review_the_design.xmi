@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_12-VotnmEdmO6L4XMImrsA" name="review_the_design,{9574768B-7886-40C9-9938-A7E36E9B0739}" guid="_12-VotnmEdmO6L4XMImrsA" changeDate="2005-07-25T20:07:21.079-0700" version="7.1.0">
+  <sections xmi:id="_To3RENnnEdmO6L4XMImrsA" name=" General Recommendations " guid="_To3RENnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;GeneralRecommendations&quot; name=&quot;GeneralRecommendations&quot;>&lt;/a>&#xD;
+&lt;div align=&quot;left&quot;>&#xD;
+    &lt;table border=&quot;1&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;4&quot; style=&quot;border: 1px solid rgb(128,128,128)&quot;&#xD;
+    bordercolorlight=&quot;#808080&quot; bordercolordark=&quot;#808080&quot;>&#xD;
+        &lt;tr>&#xD;
+            &lt;td width=&quot;5%&quot;>&#xD;
+                &lt;b>Purpose&lt;/b>&#xD;
+            &lt;/td>&#xD;
+            &lt;td width=&quot;95%&quot;>&#xD;
+                General recommendations for each review.&#xD;
+            &lt;/td>&#xD;
+        &lt;/tr>&#xD;
+    &lt;/table>&lt;br />&#xD;
+&lt;/div>The &quot;peer&quot; reviewer has the same staffing profile as the Role: &lt;a class=&quot;elementLink&quot;&#xD;
+href=&quot;./../../core.base_rup/roles/rup_software_architect_DB0BF177.html&quot; guid=&quot;{4AC346F0-E6FC-4D2C-8410-2EDF8DDDC91D}&quot;>Software&#xD;
+Architect&lt;/a>, although with a more narrow focus on the technical issues. Leadership, maturity, pragmatism, and&#xD;
+result-orientation are important to lesser degrees, but still important: a reviewer may uncover design defects that are&#xD;
+likely to be unpopular if they threaten the schedule of the project. Still, it is better to raise critical issues early,&#xD;
+when they can be resolved rather than blindly following a schedule that leads the project team down the wrong path. The&#xD;
+design reviewer needs to balance risks against costs, remaining sensitive to the broader issues of project success. The&#xD;
+design reviewer also needs to be a persuasive communicator who can raise and discuss sensitive issues. From a technical&#xD;
+knowledge standpoint, the design reviewer needs to have experience as a Role: &lt;a class=&quot;elementLink&quot;&#xD;
+href=&quot;./../../core.base_rup/roles/rup_designer_BA8DE74E.html&quot; guid=&quot;{DB21F5EF-810B-4994-B120-79FA8774FA9D}&quot;>Designer&lt;/a>.</sectionDescription>
+  </sections>
+  <sections xmi:id="_To3REdnnEdmO6L4XMImrsA" name=" Review the Design Model as a Whole " guid="_To3REdnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;Review the Design Model as a Whole&quot; name=&quot;Review the Design Model as a Whole&quot;>&lt;/a>&#xD;
+&lt;div align=&quot;left&quot;>&#xD;
+    &lt;table border=&quot;1&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;4&quot; style=&quot;border: 1px solid rgb(128,128,128)&quot;&#xD;
+    bordercolorlight=&quot;#808080&quot; bordercolordark=&quot;#808080&quot;>&#xD;
+        &lt;tr>&#xD;
+            &lt;td width=&quot;5%&quot;>&#xD;
+                &lt;b>Purpose&amp;nbsp;&lt;/b>&#xD;
+            &lt;/td>&#xD;
+            &lt;td width=&quot;95%&quot;>&#xD;
+                To ensure that the overall structure for the Design Model is well-formed.&lt;br />&#xD;
+                 To detect large-scale quality problems not visible by looking at lower-level elements.&amp;nbsp;&#xD;
+            &lt;/td>&#xD;
+        &lt;/tr>&#xD;
+    &lt;/table>&lt;br />&#xD;
+&lt;/div>&#xD;
+&lt;p>&#xD;
+    &lt;br />&#xD;
+     The &lt;a class=&quot;elementLink&quot; href=&quot;./../../core.base_rup/workproducts/rup_design_model_2830034D.html&quot;&#xD;
+    guid=&quot;{8CDAEAD4-5E84-4F50-87FD-3240ED047DE7}&quot;>Design Model&lt;/a> as a whole must be reviewed to detect glaring problems&#xD;
+    with layering and responsibility partitioning. The purpose of reviewing the model as a whole is to detect large-scale&#xD;
+    problems that a more detailed review would miss.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    In the Inception phase and early in the Elaboration phase, this review will be focused on the overall structure of the&#xD;
+    model, with special emphasis on layering and on interfaces. Package and Subsystem dependencies should be examined to&#xD;
+    ensure loose coupling between packaging elements. The contents of packages and subsystems should be examined to ensure&#xD;
+    high cohesion within packaging elements. In general, all elements should be examine to ensure that they have clear and&#xD;
+    appropriate responsibilities, and that their names reflect these responsibilities.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Once at least architectural prototypes have been developed, a more comprehensive review of the design should be&#xD;
+    conducted. The model should first be reviewed for overall completeness, and then more carefully to discover defects.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_TpAbANnnEdmO6L4XMImrsA" name=" Review Each Design Use-Case Realization" guid="_TpAbANnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;Review Each Design Use-Case Realization&quot; name=&quot;Review Each Design Use-Case Realization&quot;>&lt;/a>&#xD;
+&lt;div align=&quot;left&quot;>&#xD;
+    &lt;table border=&quot;1&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;4&quot; style=&quot;border: 1px solid rgb(128,128,128)&quot;&#xD;
+    bordercolorlight=&quot;#808080&quot; bordercolordark=&quot;#808080&quot;>&#xD;
+        &lt;tr>&#xD;
+            &lt;td width=&quot;5%&quot;>&#xD;
+                &lt;b>Purpose&lt;/b>&#xD;
+            &lt;/td>&#xD;
+            &lt;td width=&quot;95%&quot;>&#xD;
+                To ensure that the behavior of the system (as expressed in design use-case realizations) matches the&#xD;
+                required behavior of the system (as expressed in use cases), i.e. is it complete?&lt;br />&#xD;
+                 To ensure that the behavior is allocated appropriately among model elements, i.e. is it correct?&amp;nbsp;&#xD;
+            &lt;/td>&#xD;
+        &lt;/tr>&#xD;
+    &lt;/table>&lt;br />&#xD;
+&lt;/div>&#xD;
+&lt;p>&#xD;
+    &lt;br />&#xD;
+     Once the structure of the design model is reviewed, the behavior of the model needs to be reviewed. First, make sure&#xD;
+    that there is no missing behavior by checking to see that all scenarios for the current iteration have been completely&#xD;
+    covered by design use-case realizations. All of the behavior in the relevant use-case sub-flows must be described in&#xD;
+    the completed &lt;a class=&quot;elementLinkWithUserText&quot; href=&quot;./../../core.base_rup/workproducts/rup_use_case_realization_E4F713BD.html&quot;&#xD;
+    guid=&quot;{87EB094F-095B-4981-ACC3-319B3B298641}&quot;>design use-case realizations&lt;/a>.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    In cases where the behavior of the system is event-driven, you may have used statechart diagrams to describe the&#xD;
+    behavior of the use case. Where they exist, statechart diagrams need to be examined to ensure that they describe the&#xD;
+    correct behavior, see &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../core.base_rup/guidances/guidelines/statechart_diagram_640B5D0B.html&quot; guid=&quot;1.4528459404144188E-304&quot;>Guideline:&#xD;
+    Statechart Diagram&lt;/a> for more details.&amp;nbsp; In real-time systems, where &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../core.base_rup/workproducts/rup_protocol_BEB5FBE1.html&quot; guid=&quot;{6E4F4D6F-2934-432C-9335-5537B795F67F}&quot;>Artifact:&#xD;
+    Protocol&lt;/a>s are used to describe interacting &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../core.base_rup/workproducts/rup_capsule_FC4A34FD.html&quot; guid=&quot;{4423FCE1-FF59-4C8E-A6C4-AA4B13CB3250}&quot;>Artifact:&#xD;
+    Capsule&lt;/a>s, they should be checked to see that they offer the correct behavior.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Next, make sure the behavior of the design use-case realization is correctly distributed between model elements in the&#xD;
+    realizations: make sure the operations are used correctly, that all parameters are passed, and that return values are&#xD;
+    of the correct type.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_TpAbAdnnEdmO6L4XMImrsA" name=" Review Each Design Element " guid="_TpAbAdnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;Review Each Design Element&quot; name=&quot;Review Each Design Element&quot;>&lt;/a>&#xD;
+&lt;div align=&quot;left&quot;>&#xD;
+    &lt;table border=&quot;1&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;4&quot; style=&quot;border: 1px solid rgb(128,128,128)&quot;&#xD;
+    bordercolorlight=&quot;#808080&quot; bordercolordark=&quot;#808080&quot;>&#xD;
+        &lt;tr>&#xD;
+            &lt;td width=&quot;5%&quot;>&#xD;
+                &lt;b>Purpose&amp;nbsp;&lt;/b>&#xD;
+            &lt;/td>&#xD;
+            &lt;td width=&quot;95%&quot;>&#xD;
+                To ensure that the internal implementation of the design element performs the behavior required of&#xD;
+                it.&amp;nbsp;&#xD;
+            &lt;/td>&#xD;
+        &lt;/tr>&#xD;
+    &lt;/table>&lt;br />&#xD;
+&lt;/div>&#xD;
+&lt;p>&#xD;
+    For each design element&amp;nbsp; (e.g., design class or design subsystem) to which behavior is allocated, the internal&#xD;
+    design must be reviewed. For &lt;a class=&quot;elementLinkWithUserText&quot;&#xD;
+    href=&quot;./../../core.base_rup/workproducts/rup_design_subsystem_1A8D169B.html&quot; guid=&quot;{A3C60B25-9780-4BFA-81AF-C1AD40D8A833}&quot;>design&#xD;
+    subsystems&lt;/a> this means ensuring that the behavior specified in the exposed &lt;a class=&quot;elementLinkWithUserText&quot;&#xD;
+    href=&quot;./../../core.base_rup/workproducts/rup_interface_9816B54F.html&quot;&#xD;
+    guid=&quot;{C6938487-1DAA-4F6A-B3BC-CB99165F0680}&quot;>interfaces&lt;/a> has been allocated to one or more contained design&#xD;
+    elements.&amp;nbsp; For design classes, this means that the description of each operation is sufficient defined so that it&#xD;
+    may be implemented unambiguously.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_TpAbAtnnEdmO6L4XMImrsA" name=" Review Design Guidelines" guid="_TpAbAtnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;Review Design Guidelines&quot; name=&quot;Review Design Guidelines&quot;>&lt;/a>&#xD;
+&lt;div align=&quot;left&quot;>&#xD;
+    &lt;table border=&quot;1&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;4&quot; style=&quot;border: 1px solid rgb(128,128,128)&quot;&#xD;
+    bordercolorlight=&quot;#808080&quot; bordercolordark=&quot;#808080&quot;>&#xD;
+        &lt;tr>&#xD;
+            &lt;td width=&quot;5%&quot;>&#xD;
+                &lt;b>Purpose&lt;/b>&#xD;
+            &lt;/td>&#xD;
+            &lt;td width=&quot;95%&quot;>&#xD;
+                To ensure that design related project-specific guidelines remain current, and to correct defects in the&#xD;
+                guidelines where they exist.&amp;nbsp;&#xD;
+            &lt;/td>&#xD;
+        &lt;/tr>&#xD;
+    &lt;/table>&lt;br />&#xD;
+&lt;/div>&#xD;
+&lt;p>&#xD;
+    &lt;br />&#xD;
+     On the basis of the design review, look for defects in the design guidelines.&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Were the guidelines followed? If not, why?&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Are they correct? Were systematic defects detected that were introduced by erroneous guidelines?&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Are they complete? Would systematic defects have been reduced if the guidance was provided?&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></sectionDescription>
+  </sections>
+  <sections xmi:id="_TpAbA9nnEdmO6L4XMImrsA" name=" Prepare Review Record and Document Defects" guid="_TpAbA9nnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;Prepare Review Record and Document Defects&quot; name=&quot;Prepare Review Record and Document Defects&quot;>&lt;/a>&#xD;
+&lt;div align=&quot;left&quot;>&#xD;
+    &lt;table border=&quot;1&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;4&quot; style=&quot;border: 1px solid rgb(128,128,128)&quot;&#xD;
+    bordercolorlight=&quot;#808080&quot; bordercolordark=&quot;#808080&quot;>&#xD;
+        &lt;tr>&#xD;
+            &lt;td width=&quot;5%&quot;>&#xD;
+                &lt;b>Purpose&lt;/b>&#xD;
+            &lt;/td>&#xD;
+            &lt;td width=&quot;95%&quot;>&#xD;
+                To document the review results.&lt;br />&#xD;
+                 To ensure that identified defects are documented.&amp;nbsp;&#xD;
+            &lt;/td>&#xD;
+        &lt;/tr>&#xD;
+    &lt;/table>&lt;br />&#xD;
+&lt;/div>&#xD;
+&lt;p>&#xD;
+    &lt;br />&#xD;
+     Following each review meeting, the results of the meeting are documented in a &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../core.base_rup/workproducts/rup_review_record_CA816ECE.html&quot; guid=&quot;{4047B5B0-5FB7-4960-8A7E-451719D85DFF}&quot;>Review&#xD;
+    Record&lt;/a>. In addition, any defects are documented in accordance with the project's change management process.&#xD;
+&lt;/p>&lt;br />&#xD;
+&lt;br /></sectionDescription>
+  </sections>
+  <purpose>&lt;a id=&quot;Top&quot; name=&quot;Top&quot;>&lt;/a> &#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        To verify that the design model fulfills the requirements on the system, and that it serves as a good basis for its&#xD;
+        implementation.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        To ensure that the design model is consistent with respect to the general design guidelines.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        To ensure that the design guidelines fulfill their objectives.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></purpose>
+</org.eclipse.epf.uma:TaskDescription>

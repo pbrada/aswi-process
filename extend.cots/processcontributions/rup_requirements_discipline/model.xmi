@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.uma:ProcessComponent xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.ibm.uma="http://www.ibm.com/uma/1.0.2/uma.ecore" xmi:id="_s11L09oTEdmCj7Yn9Ev4rg" name="rup_requirements_discipline" guid="_s11L09oTEdmCj7Yn9Ev4rg">
+  <childPackages xsi:type="com.ibm.uma:ProcessPackage" xmi:id="_twYvptoTEdmCj7Yn9Ev4rg" name="define_system" guid="_twYvptoTEdmCj7Yn9Ev4rg">
+    <processElements xsi:type="com.ibm.uma:Activity" xmi:id="_s11L0doTEdmCj7Yn9Ev4rg" name="define_system" guid="_s11L0doTEdmCj7Yn9Ev4rg" presentationName="define_system" superActivities="_s11L0toTEdmCj7Yn9Ev4rg" variabilityType="contributes" breakdownElements="_twYvp9oTEdmCj7Yn9Ev4rg _twYvqNoTEdmCj7Yn9Ev4rg _twYvqdoTEdmCj7Yn9Ev4rg _twYvqtoTEdmCj7Yn9Ev4rg _twYvq9oTEdmCj7Yn9Ev4rg _twYvrNoTEdmCj7Yn9Ev4rg _twYvrdoTEdmCj7Yn9Ev4rg _twYvrtoTEdmCj7Yn9Ev4rg _twYvr9oTEdmCj7Yn9Ev4rg _twYvsNoTEdmCj7Yn9Ev4rg _twYvsdoTEdmCj7Yn9Ev4rg _twYvstoTEdmCj7Yn9Ev4rg _twYvs9oTEdmCj7Yn9Ev4rg _twYvtNoTEdmCj7Yn9Ev4rg _twYvtdoTEdmCj7Yn9Ev4rg _twYvttoTEdmCj7Yn9Ev4rg _twYvt9oTEdmCj7Yn9Ev4rg"/>
+    <processElements xsi:type="com.ibm.uma:TaskDescriptor" xmi:id="_twYvp9oTEdmCj7Yn9Ev4rg" name="Conduct Vendor/Package Evaluation Workshop" guid="_twYvp9oTEdmCj7Yn9Ev4rg" presentationName="Conduct Vendor/Package Evaluation Workshop" superActivities="_s11L0doTEdmCj7Yn9Ev4rg" optionalInput="_twYvqdoTEdmCj7Yn9Ev4rg _twYvqtoTEdmCj7Yn9Ev4rg" performedPrimarilyBy="_twYvqNoTEdmCj7Yn9Ev4rg">
+      <Task href="uma://{D4626EC0-06BC-4592-A8A6-C8DE7E821952}#{7131044D-5A31-4764-A95E-77B2CADF88D3}"/>
+    </processElements>
+    <processElements xsi:type="com.ibm.uma:RoleDescriptor" xmi:id="_twYvqNoTEdmCj7Yn9Ev4rg" name="Acquirer" guid="_twYvqNoTEdmCj7Yn9Ev4rg" presentationName="Acquirer" superActivities="_s11L0doTEdmCj7Yn9Ev4rg" performsAsOwner="_twYvp9oTEdmCj7Yn9Ev4rg _twYvq9oTEdmCj7Yn9Ev4rg _twYvtNoTEdmCj7Yn9Ev4rg _twYvt9oTEdmCj7Yn9Ev4rg">
+      <Role href="uma://{D4626EC0-06BC-4592-A8A6-C8DE7E821952}#{E929498F-3E9B-4BD5-8FD3-FAF7337E36AE}"/>
+    </processElements>
+    <processElements xsi:type="com.ibm.uma:WorkProductDescriptor" xmi:id="_twYvqdoTEdmCj7Yn9Ev4rg" name="Evaluation Score Sheet" guid="_twYvqdoTEdmCj7Yn9Ev4rg" presentationName="Evaluation Score Sheet" superActivities="_s11L0doTEdmCj7Yn9Ev4rg" OptionalInputTo="_twYvp9oTEdmCj7Yn9Ev4rg">
+      <WorkProduct xsi:type="com.ibm.uma:Artifact" href="uma://{D4626EC0-06BC-4592-A8A6-C8DE7E821952}#{2ACB9E5C-E76D-4415-970F-BA7966486C53}"/>
+    </processElements>
+    <processElements xsi:type="com.ibm.uma:WorkProductDescriptor" xmi:id="_twYvqtoTEdmCj7Yn9Ev4rg" name="Vendor and Package Evaluation Workshop Description" guid="_twYvqtoTEdmCj7Yn9Ev4rg" presentationName="Vendor and Package Evaluation Workshop Description" superActivities="_s11L0doTEdmCj7Yn9Ev4rg" OptionalInputTo="_twYvp9oTEdmCj7Yn9Ev4rg">
+      <WorkProduct xsi:type="com.ibm.uma:Artifact" href="uma://{D4626EC0-06BC-4592-A8A6-C8DE7E821952}#{27E37103-8C78-4FA0-8886-2DD1C59FAB80}"/>
+    </processElements>
+    <processElements xsi:type="com.ibm.uma:TaskDescriptor" xmi:id="_twYvq9oTEdmCj7Yn9Ev4rg" name="Identify Relevant COTS Packages and Vendors" guid="_twYvq9oTEdmCj7Yn9Ev4rg" presentationName="Identify Relevant COTS Packages and Vendors" superActivities="_s11L0doTEdmCj7Yn9Ev4rg" optionalInput="_twYvrNoTEdmCj7Yn9Ev4rg _twYvrdoTEdmCj7Yn9Ev4rg _twYvrtoTEdmCj7Yn9Ev4rg _twYvr9oTEdmCj7Yn9Ev4rg _twYvsNoTEdmCj7Yn9Ev4rg" output="_twYvsdoTEdmCj7Yn9Ev4rg _twYvstoTEdmCj7Yn9Ev4rg _twYvs9oTEdmCj7Yn9Ev4rg" performedPrimarilyBy="_twYvqNoTEdmCj7Yn9Ev4rg">
+      <Task href="uma://{D4626EC0-06BC-4592-A8A6-C8DE7E821952}#{BBA2AE1F-8B6A-42DD-8D90-CCEB50176972}"/>
+    </processElements>
+    <processElements xsi:type="com.ibm.uma:WorkProductDescriptor" xmi:id="_twYvrNoTEdmCj7Yn9Ev4rg" name="Vision" guid="_twYvrNoTEdmCj7Yn9Ev4rg" presentationName="Vision" superActivities="_s11L0doTEdmCj7Yn9Ev4rg" OptionalInputTo="_twYvq9oTEdmCj7Yn9Ev4rg">
+      <WorkProduct xsi:type="com.ibm.uma:Artifact" href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{417F089F-6636-451A-A8AB-AB4EAC7AC4F1}"/>
+    </processElements>
+    <processElements xsi:type="com.ibm.uma:WorkProductDescriptor" xmi:id="_twYvrdoTEdmCj7Yn9Ev4rg" name="Software Architecture Document" guid="_twYvrdoTEdmCj7Yn9Ev4rg" presentationName="Software Architecture Document" superActivities="_s11L0doTEdmCj7Yn9Ev4rg" OptionalInputTo="_twYvq9oTEdmCj7Yn9Ev4rg">
+      <WorkProduct xsi:type="com.ibm.uma:Artifact" href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{6F49641A-ED10-47B5-9E5D-3F90A6BF3006}"/>
+    </processElements>
+    <processElements xsi:type="com.ibm.uma:WorkProductDescriptor" xmi:id="_twYvrtoTEdmCj7Yn9Ev4rg" name="Market Segment Information" guid="_twYvrtoTEdmCj7Yn9Ev4rg" presentationName="Market Segment Information" superActivities="_s11L0doTEdmCj7Yn9Ev4rg" OptionalInputTo="_twYvq9oTEdmCj7Yn9Ev4rg">
+      <WorkProduct xsi:type="com.ibm.uma:Artifact" href="uma://{D4626EC0-06BC-4592-A8A6-C8DE7E821952}#{65F8D95F-79FA-4685-B18F-9636298D81D0}"/>
+    </processElements>
+    <processElements xsi:type="com.ibm.uma:WorkProductDescriptor" xmi:id="_twYvr9oTEdmCj7Yn9Ev4rg" name="Business Architecture Document" guid="_twYvr9oTEdmCj7Yn9Ev4rg" presentationName="Business Architecture Document" superActivities="_s11L0doTEdmCj7Yn9Ev4rg" OptionalInputTo="_twYvq9oTEdmCj7Yn9Ev4rg">
+      <WorkProduct xsi:type="com.ibm.uma:Artifact" href="uma://_875O8A6hEdqg5YAaNtnnCw#{D3A0CA96-30AD-4461-9386-A3EC9A7E879F}"/>
+    </processElements>
+    <processElements xsi:type="com.ibm.uma:WorkProductDescriptor" xmi:id="_twYvsNoTEdmCj7Yn9Ev4rg" name="Business Case" guid="_twYvsNoTEdmCj7Yn9Ev4rg" presentationName="Business Case" superActivities="_s11L0doTEdmCj7Yn9Ev4rg" OptionalInputTo="_twYvq9oTEdmCj7Yn9Ev4rg">
+      <WorkProduct xsi:type="com.ibm.uma:Artifact" href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{9B13F235-E8E9-4CDC-9ACE-216124C8C5EC}"/>
+    </processElements>
+    <processElements xsi:type="com.ibm.uma:WorkProductDescriptor" xmi:id="_twYvsdoTEdmCj7Yn9Ev4rg" name="COTS Package Dossier" guid="_twYvsdoTEdmCj7Yn9Ev4rg" presentationName="COTS Package Dossier" superActivities="_s11L0doTEdmCj7Yn9Ev4rg" outputFrom="_twYvq9oTEdmCj7Yn9Ev4rg">
+      <WorkProduct xsi:type="com.ibm.uma:Artifact" href="uma://{D4626EC0-06BC-4592-A8A6-C8DE7E821952}#{B8F591A5-DA8E-4CC6-A41E-DD522B6C1102}"/>
+    </processElements>
+    <processElements xsi:type="com.ibm.uma:WorkProductDescriptor" xmi:id="_twYvstoTEdmCj7Yn9Ev4rg" name="COTS Package Screening Criteria and Rationale" guid="_twYvstoTEdmCj7Yn9Ev4rg" presentationName="COTS Package Screening Criteria and Rationale" superActivities="_s11L0doTEdmCj7Yn9Ev4rg" outputFrom="_twYvq9oTEdmCj7Yn9Ev4rg">
+      <WorkProduct xsi:type="com.ibm.uma:Artifact" href="uma://{D4626EC0-06BC-4592-A8A6-C8DE7E821952}#{2F6C2F01-3F2A-43DD-8A5C-1020BC64384A}"/>
+    </processElements>
+    <processElements xsi:type="com.ibm.uma:WorkProductDescriptor" xmi:id="_twYvs9oTEdmCj7Yn9Ev4rg" name="Vendor Dossier" guid="_twYvs9oTEdmCj7Yn9Ev4rg" presentationName="Vendor Dossier" superActivities="_s11L0doTEdmCj7Yn9Ev4rg" outputFrom="_twYvq9oTEdmCj7Yn9Ev4rg">
+      <WorkProduct xsi:type="com.ibm.uma:Artifact" href="uma://{D4626EC0-06BC-4592-A8A6-C8DE7E821952}#{E6CEF5C2-2915-48D6-8607-D83489CC101E}"/>
+    </processElements>
+    <processElements xsi:type="com.ibm.uma:TaskDescriptor" xmi:id="_twYvtNoTEdmCj7Yn9Ev4rg" name="Prepare For Vendor/Package Evaluation Workshop" guid="_twYvtNoTEdmCj7Yn9Ev4rg" presentationName="Prepare For Vendor/Package Evaluation Workshop" superActivities="_s11L0doTEdmCj7Yn9Ev4rg" optionalInput="_twYvtdoTEdmCj7Yn9Ev4rg _twYvttoTEdmCj7Yn9Ev4rg" performedPrimarilyBy="_twYvqNoTEdmCj7Yn9Ev4rg">
+      <Task href="uma://{D4626EC0-06BC-4592-A8A6-C8DE7E821952}#{37B7A7A2-5368-4465-9202-1514FF30AB38}"/>
+    </processElements>
+    <processElements xsi:type="com.ibm.uma:WorkProductDescriptor" xmi:id="_twYvtdoTEdmCj7Yn9Ev4rg" name="Request For Information" guid="_twYvtdoTEdmCj7Yn9Ev4rg" presentationName="Request For Information" superActivities="_s11L0doTEdmCj7Yn9Ev4rg" OptionalInputTo="_twYvtNoTEdmCj7Yn9Ev4rg">
+      <WorkProduct xsi:type="com.ibm.uma:Artifact" href="uma://{D4626EC0-06BC-4592-A8A6-C8DE7E821952}#{5A422017-3ABA-4E8F-A564-D9A22F001FC7}"/>
+    </processElements>
+    <processElements xsi:type="com.ibm.uma:WorkProductDescriptor" xmi:id="_twYvttoTEdmCj7Yn9Ev4rg" name="Vendor Response" guid="_twYvttoTEdmCj7Yn9Ev4rg" presentationName="Vendor Response" superActivities="_s11L0doTEdmCj7Yn9Ev4rg" OptionalInputTo="_twYvtNoTEdmCj7Yn9Ev4rg">
+      <WorkProduct xsi:type="com.ibm.uma:Artifact" href="uma://{D4626EC0-06BC-4592-A8A6-C8DE7E821952}#{C488991F-6981-43E1-871B-C02900880170}"/>
+    </processElements>
+    <processElements xsi:type="com.ibm.uma:TaskDescriptor" xmi:id="_twYvt9oTEdmCj7Yn9Ev4rg" name="Produce Request For Information (RFI)" guid="_twYvt9oTEdmCj7Yn9Ev4rg" presentationName="Produce Request For Information (RFI)" superActivities="_s11L0doTEdmCj7Yn9Ev4rg" performedPrimarilyBy="_twYvqNoTEdmCj7Yn9Ev4rg">
+      <Task href="uma://{D4626EC0-06BC-4592-A8A6-C8DE7E821952}#{02A195EA-D052-4ABB-9196-B5E2316AFBC7}"/>
+    </processElements>
+  </childPackages>
+  <process xsi:type="com.ibm.uma:ProcessContribution" xmi:id="_s11L0toTEdmCj7Yn9Ev4rg" name="rup_requirements_discipline" guid="_s11L0toTEdmCj7Yn9Ev4rg" briefDescription="TBD" presentationName="rup_requirements_discipline" breakdownElements="_s11L0doTEdmCj7Yn9Ev4rg"/>
+</com.ibm.uma:ProcessComponent>

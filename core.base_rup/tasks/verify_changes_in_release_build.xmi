@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_3kzJYNnmEdmO6L4XMImrsA" name="verify_changes_in_release_build,{C6DE470A-C26B-41D7-9807-6D3DE566920E}" guid="_3kzJYNnmEdmO6L4XMImrsA" version="7.1.0">
+  <sections xmi:id="_Z0DA8NnnEdmO6L4XMImrsA" name=" Resolve Change Request " guid="_Z0DA8NnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;Resolve Change Request&quot; name=&quot;Resolve Change Request&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    The &lt;i>&lt;b>Assigned&lt;/b>&lt;/i> role performs the set of tasks defined within the appropriate section of the delivery&#xD;
+    process such as requirements, analysis &amp;amp; design, implementation, produce user-support materials, and design test.&#xD;
+    These tasks will include all normal review and unit test tasks as described within the normal delivery process. The CR&#xD;
+    will then be marked as &lt;i>&lt;b>Resolved&lt;/b>.&lt;/i> This signifies that the resolution of this CR is complete and is now&#xD;
+    ready for verification.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_Z0DA8dnnEdmO6L4XMImrsA" name=" Verify Changes in Test Build " guid="_Z0DA8dnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;Verify Changes in Test Build&quot; name=&quot;Verify Changes in Test Build&quot;>&lt;/a>&#xD;
+&lt;p>&#xD;
+    After the changes are &lt;b>&lt;i>Resolved&lt;/i>&lt;/b> by the assigned role (analyst, developer, tester, tech writer, and so on),&#xD;
+    the changes are placed into a test queue to be assigned to a tester and &lt;b>&lt;i>Verified&lt;/i>&lt;/b> in a test build of the&#xD;
+    product. A CR that has been &lt;b>&lt;i>Verified&lt;/i>&lt;/b> in a test build is ready to be included in a release. A CR that&#xD;
+    fails testing in either a test build or a release build will be placed in the &lt;b>&lt;i>Test Failed&lt;/i>&lt;/b> state. The&#xD;
+    owner automatically gets changed to the role who resolved the CR.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_Z0DA8tnnEdmO6L4XMImrsA" name=" Verify Changes in Release Build " guid="_Z0DA8tnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;Verify Changes in Release Build&quot; name=&quot;Verify Changes in Release Build&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    Once the resolved changes have been &lt;b>&lt;i>Verified&lt;/i>&lt;/b> in a test build of the product, the CR is placed into a&#xD;
+    release queue to be verified against a release build of the product, produce release notes, etc. and&#xD;
+    &lt;b>&lt;i>Close&lt;/i>&lt;/b> the CR.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    A &lt;i>&lt;b>Closed&lt;/b>&lt;/i> CR no longer requires attention. This is the final state a CR can be assigned. Only the CCB&#xD;
+    Review Admin has the authority to close a CR. When a CR is &lt;b>C&lt;i>losed&lt;/i>&lt;/b>, the submitter will receive an email&#xD;
+    notification with the final disposition of the CR. A CR may be &lt;b>&lt;i>Closed&lt;/i>&lt;/b>: 1) after its&#xD;
+    &lt;i>&lt;b>Verified&lt;/b>&lt;/i> resolution is validated in a release build, 2) when its &lt;b>&lt;i>Rejected&lt;/i>&lt;/b> state is&#xD;
+    confirmed, or 3) when it is confirmed as a &lt;b>&lt;i>Duplicate&lt;/i>&lt;/b> of an existing CR. In the latter case, the submitter&#xD;
+    will be informed of the duplicate CR and will be added to that CR for future notifications (see the definitions of&#xD;
+    states &quot;&lt;i>&lt;b>Rejected&lt;/b>&lt;/i>&quot; and &quot;&lt;i>&lt;b>Duplicate&lt;/b>&lt;/i>&quot; for more details). If the submitter wishes to contest a&#xD;
+    closing, the CR must be updated and re-&lt;b>&lt;i>Submitted&lt;/i>&lt;/b> for CCB review.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Typical states that a Change Request may pass through are shown in &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../core.base_rup/guidances/concepts/change_request_management_119F2E47.html&quot; guid=&quot;5.975934904188119E-305&quot;>Change&#xD;
+    Request Management&lt;/a>.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_Z0DA89nnEdmO6L4XMImrsA" name=" Evaluate and verify your results " guid="_Z0DA89nnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;EvaluateResults&quot; name=&quot;EvaluateResults&quot;>&lt;/a>&#xD;
+&lt;div align=&quot;left&quot;>&#xD;
+    &lt;table border=&quot;1&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;4&quot; style=&quot;border: 1px solid rgb(128,128,128)&quot;&#xD;
+    bordercolorlight=&quot;#808080&quot; bordercolordark=&quot;#808080&quot;>&#xD;
+        &lt;tr>&#xD;
+            &lt;td width=&quot;5%&quot;>&#xD;
+                &lt;b>Purpose:&lt;/b>&amp;nbsp;&#xD;
+            &lt;/td>&#xD;
+            &lt;td width=&quot;95%&quot;>&#xD;
+                To verify that the task has been completed appropriately and that the resulting work products are&#xD;
+                acceptable.&amp;nbsp;&#xD;
+            &lt;/td>&#xD;
+        &lt;/tr>&#xD;
+    &lt;/table>&lt;br />&#xD;
+&lt;/div>&#xD;
+&lt;p>&#xD;
+    Now that you have completed the work, it is beneficial to verify that the work was of sufficient value, and that you&#xD;
+    did not simply consume vast quantities of paper. You should evaluate whether your work is of appropriate quality, and&#xD;
+    that it is complete enough to be useful to those team members who will make subsequent use of it as input to their&#xD;
+    work. Where possible, use the checklists provided in RUP to verify that quality and completeness are &quot;good enough&quot;.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Have the people performing the downstream tasks that rely on your work as input take part in reviewing your interim&#xD;
+    work. Do this while you still have time available to take action to address their concerns. You should also evaluate&#xD;
+    your work against the key input work products to make sure you have represented them accurately and sufficiently. It&#xD;
+    may be useful to have the author of the input work product review your work on this basis.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Try to remember that that RUP is an iterative delivery process and that in many cases work products evolve over time.&#xD;
+    As such, it is not usually necessary-and is often counterproductive-to fully-form a work product that will only be&#xD;
+    partially used or will not be used at all in immediately subsequent work. This is because there is a high probability&#xD;
+    that the situation surrounding the work product will change-and the assumptions made when the work product was created&#xD;
+    proven incorrect-before the work product is used, resulting in wasted effort and costly rework. Also avoid the trap of&#xD;
+    spending too many cycles on presentation to the detriment of content value. In project environments where presentation&#xD;
+    has importance and economic value as a project deliverable, you might want to consider using an administrative resource&#xD;
+    to perform presentation tasks.&#xD;
+&lt;/p>&lt;br />&#xD;
+&lt;br /></sectionDescription>
+  </sections>
+  <purpose>&lt;a id=&quot;Top&quot; name=&quot;Top&quot;>&lt;/a>&lt;a id=&quot;XE_change_request_management__verifying_change_request_resolution&quot;&#xD;
+name=&quot;XE_change_request_management__verifying_change_request_resolution&quot;>&lt;/a> &#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        This task confirms that a Change Request has been completed, typically by conducting subset of tests on one or more&#xD;
+        builds.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></purpose>
+</org.eclipse.epf.uma:TaskDescription>

@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1">
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="-q6Ui2VIKM3MOEeCyEfRLUw" name="define_a_candidate_architecture,{71ADFE9A-34A0-41BD-8A17-BEA3210E2BBD}" guid="-q6Ui2VIKM3MOEeCyEfRLUw">
+    <mainDescription>&lt;a id=&quot;Description&quot; name=&quot;Description&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    This activity has the following goals:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Create an initial sketch of the architecture of the system &#xD;
+        &lt;ul>&#xD;
+            &lt;li>&#xD;
+                Define an initial set of architecturally significant elements to use as the basis for analysis&#xD;
+            &lt;/li>&#xD;
+            &lt;li>&#xD;
+                Define an initial set of analysis mechanisms&#xD;
+            &lt;/li>&#xD;
+            &lt;li>&#xD;
+                Define the initial layering and organization of the system&#xD;
+            &lt;/li>&#xD;
+            &lt;li>&#xD;
+                Define the use-case realizations to be addressed in the current iteration&#xD;
+            &lt;/li>&#xD;
+        &lt;/ul>&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Identify analysis classes from the architecturally significant use cases&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Update the use-case realizations with analysis class interactions&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></mainDescription>
+    <usageGuidance>&lt;p>&#xD;
+    The work is best done in several sessions, perhaps performed over a few days (or weeks and months for very large&#xD;
+    systems), with iteration between &lt;a class=&quot;elementLink&quot; href=&quot;./../../core.base_rup/tasks/architectural_analysis_2B9BE03.html&quot;&#xD;
+    guid=&quot;{8CB48402-D4C5-4E17-BB33-507315CB1BBF}&quot;>Architectural Analysis&lt;/a> and &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../core.base_rup/tasks/use_case_analysis_A6990185.html&quot; guid=&quot;{28014615-A62F-452D-B821-30C7CAB0EC44}&quot;>Use-Case&#xD;
+    Analysis&lt;/a>. Perform an initial pass at the architecture in &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../core.base_rup/tasks/architectural_analysis_2B9BE03.html&quot;&#xD;
+    guid=&quot;{8CB48402-D4C5-4E17-BB33-507315CB1BBF}&quot;>Architectural Analysis&lt;/a>, then choose architecturally significant use&#xD;
+    cases, performing &lt;a class=&quot;elementLink&quot; href=&quot;./../../core.base_rup/tasks/use_case_analysis_A6990185.html&quot;&#xD;
+    guid=&quot;{28014615-A62F-452D-B821-30C7CAB0EC44}&quot;>Use-Case Analysis&lt;/a> on each one. After (or as) each use case is&#xD;
+    analyzed, update the architecture as needed to reflect adaptations required to accommodate new behavior of the system&#xD;
+    and to address potential architectural problems which are identified.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Where the architecture already exists (either from a prior project or iteration), change requests may need to be&#xD;
+    created to change the architecture to account for the new behavior the system must support. These changes may be to any&#xD;
+    artifact in the process, depending on the scope of the change.&#xD;
+&lt;/p>&lt;br />&#xD;
+&lt;br /></usageGuidance>
+    <howtoStaff>&lt;a id=&quot;HowToStaff&quot; name=&quot;HowToStaff&quot;>&lt;/a> 
+&lt;p>
+    As with &lt;a class=&quot;elementLinkWithType&quot;
+    href=&quot;resources/define_a_candidate_architecture,{71ADFE9A-34A0-41BD-8A17-BEA3210E2BBD}.html&quot;
+    guid=&quot;{71ADFE9A-34A0-41BD-8A17-BEA3210E2BBD}&quot;>Activity: Define a Candidate Architecture&lt;/a>, these activities are best
+    carried out by a small team staffed by cross-functional team members. Issues that are typically architecturally
+    significant include performance, scaling, process and thread synchronization, and distribution. The team should also
+    include members with domain experience who can identify key abstractions. The team should also have experience with
+    model organization and layering. From these inputs, the team will need to be able to synthesize a model, or even a
+    prototype, of a solution.
+&lt;/p></howtoStaff>
+  </org.eclipse.epf.uma:ActivityDescription>
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="-ahpPkfA9UeRQAUXxfFOeOw" name="perform_architectural_synthesis,{C67C8E56-D9B6-499C-8171-C153FB28F1C3}" guid="-ahpPkfA9UeRQAUXxfFOeOw">
+    <mainDescription>&lt;a id=&quot;Description&quot; name=&quot;Description&quot;>&lt;/a> &lt;br />&#xD;
+&lt;br /></mainDescription>
+    <usageGuidance>&lt;p>&#xD;
+    This work takes place during inception, and so should be limited to one or two iterations. The purpose is to determine&#xD;
+    feasibility, not to construct the system during this workflow detail.&#xD;
+&lt;/p>&lt;br /></usageGuidance>
+    <howtoStaff>&lt;a id=&quot;HowToStaff&quot; name=&quot;HowToStaff&quot;>&lt;/a> 
+&lt;p>
+    As with &lt;a class=&quot;elementLinkWithType&quot;
+    href=&quot;resources/define_a_candidate_architecture,{71ADFE9A-34A0-41BD-8A17-BEA3210E2BBD}.html&quot;
+    guid=&quot;{71ADFE9A-34A0-41BD-8A17-BEA3210E2BBD}&quot;>Activity: Define a Candidate Architecture&lt;/a>, this activity is best
+    carried out by a small team staffed by cross-functional team members. Issues that are typically architecturally
+    significant include performance, scaling, process and thread synchronization, and distribution. The team should also
+    include members with domain experience who can identify key abstractions. The team should also have experience with
+    model organization and layering. From these inputs, the team will need to be able to synthesize a model, or even a
+    prototype, of a solution.
+&lt;/p></howtoStaff>
+  </org.eclipse.epf.uma:ActivityDescription>
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="-2wfvTA4Ng8qIRPmrvsiAYw" name="refine_the_architecture,{F2160C54-F666-4736-9982-FC7F58F15FAD}" guid="-2wfvTA4Ng8qIRPmrvsiAYw">
+    <mainDescription>&lt;a id=&quot;Description&quot; name=&quot;Description&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    This activity:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Provides the natural &lt;b>transition from analysis&lt;/b> activities &lt;b>to design&lt;/b> activities, identifying: &#xD;
+        &lt;ul>&#xD;
+            &lt;li>&#xD;
+                appropriate design elements from analysis elements&#xD;
+            &lt;/li>&#xD;
+            &lt;li>&#xD;
+                appropriate design mechanisms from related analysis mechanisms&#xD;
+            &lt;/li>&#xD;
+        &lt;/ul>&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;b>Describes&lt;/b> the organization of the system's &lt;b>run-time and deployment architecture&lt;/b>&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;b>Organizes the implementation model&lt;/b> so as to make the transition between design and implementation seamless&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;b>Maintains the consistency and integrity of the architecture&lt;/b>, ensuring that: &#xD;
+        &lt;ul>&#xD;
+            &lt;li>&#xD;
+                new design elements identified for the current iteration are integrated with pre-existing design elements.&#xD;
+            &lt;/li>&#xD;
+            &lt;li>&#xD;
+                maximal re-use of available components and design elements is achieved as early as possible in the design&#xD;
+                effort.&#xD;
+            &lt;/li>&#xD;
+        &lt;/ul>&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></mainDescription>
+    <usageGuidance>&lt;p>&#xD;
+    The work is best done in several sessions, perhaps performed over a few days (or weeks and months for very large&#xD;
+    systems). The initial focus will be on the activities &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../core.base_rup/tasks/identify_design_mechanisms_9A197FBC.html&quot;&#xD;
+    guid=&quot;{C7A26BD7-3820-48D9-830F-684C3AF155F9}&quot;>Identify Design Mechanisms&lt;/a> and&amp;nbsp;&lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../core.base_rup/tasks/identify_design_elements_E884AB82.html&quot; guid=&quot;{97D7343A-6993-4AB7-8F86-4DAC8C9075C8}&quot;>Identify&#xD;
+    Design Elements&lt;/a>, with a great deal of iteration with the &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../core.base_rup/tasks/incorporate_design_elements_D3C582B5.html&quot;&#xD;
+    guid=&quot;{5C647173-4E32-4594-96A9-2548B47722FA}&quot;>Incorporate Existing Design Elements&lt;/a> activity to make sure that new&#xD;
+    elements do not duplicate functionality of existing elements.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    As the design emerges, concurrency and distribution issues are introduced in the activities &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../core.base_rup/tasks/describe_runtime_architecture_2F8E190.html&quot;&#xD;
+    guid=&quot;{4D35C038-A2D0-48B8-9ECD-52717FEAE33A}&quot;>Describe the Run-time Architecture&lt;/a> and &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../core.base_rup/tasks/describe_distribution_9BA1477C.html&quot; guid=&quot;{6A112808-0A90-427A-BAB9-E14F3FBF72B5}&quot;>Describe&#xD;
+    Distribution&lt;/a>, respectively. As these issues are considered, changes to design elements may be required to split&#xD;
+    behavior across processes, threads or nodes.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    As the individual models are refined to incorporate the architectural decisions, the results are documented in&#xD;
+    respective view sections in the Software Architecture Document (e.g., as the Design Model is refined, the Logical View&#xD;
+    of the Software Architecture Document is refined, as well). The resulting architecture is reviewed.&#xD;
+&lt;/p>&lt;br />&#xD;
+&lt;br /></usageGuidance>
+    <howtoStaff>&lt;a id=&quot;HowToStaff&quot; name=&quot;HowToStaff&quot;>&lt;/a> 
+&lt;p>
+    These activities are best carried out by a small team staffed by cross-functional team members. Issues that are
+    typically architecturally significant include usability, performance, scaling, process and thread synchronization, and
+    distribution. The team should also include members with domain experience who can identify key abstractions. The team
+    should also have experience with model organization and layering. The team will need to be able to pull all these
+    disparate threads into a cohesive, coherent (albeit preliminary) architecture.
+&lt;/p>
+&lt;p>
+    Because the focus of the architecture effort is shifting toward implementation issues, greater attention needs to be
+    paid to specific technology issues. This will force the architecture team to shift members or expand to include people
+    with distribution and deployment expertise (if those issues are architecturally significant). In order to understand
+    the potential impact of the structure on the implementation model on the ease of integration, expertise in the software
+    build management process is useful to have.
+&lt;/p>
+&lt;p>
+    At the same time, it is essential that the architecture team not be composed of a large extended team. A strategy for
+    countering this trend is to retain a relatively small core team with a satellite group of extended team members that
+    are brought in as &quot;consultants&quot; on key issues&lt;b>.&lt;/b> This structure also works well for smaller projects where
+    specific expertise may be borrowed or contracted from other organizations; they can be brought in as specific issues
+    need to be addressed.
+&lt;/p></howtoStaff>
+  </org.eclipse.epf.uma:ActivityDescription>
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="-RgtCgN64VEy3XUuWhKPBxw" name="design_the_database,{FB3EB753-A979-4849-B57B-97F39271F82B}" guid="-RgtCgN64VEy3XUuWhKPBxw">
+    <mainDescription>&lt;a id=&quot;Description&quot; name=&quot;Description&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    This activity includes:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Identifying the persistent classes in the design&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Designing appropriate database structures to store the persistent classes&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Defining mechanisms and strategies for storing and retrieving persistent data in such a way that the performance&#xD;
+        criteria for the system are met&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>&#xD;
+    The database and persistent data storage and retrieval mechanisms, are implemented and tested as part of the overall&#xD;
+    implementation of the components and subsystems of the application.&#xD;
+&lt;/p></mainDescription>
+    <keyConsiderations>&lt;a id=&quot;Timing&quot; name=&quot;Timing&quot;>&lt;/a>&lt;a id=&quot;Optionality&quot; name=&quot;Optionality&quot;>&lt;/a>&lt;a id=&quot;WorkGuidelines&quot;&#xD;
+name=&quot;WorkGuidelines&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    Persistence must be treated as an integral part of the design effort, and close collaboration between designers and&#xD;
+    database designers is essential. Typically the database designer is a 'floating' resource, shared between several teams&#xD;
+    as a consulting resource to address persistence issues. The database designer is also typically responsible for the&#xD;
+    persistence mechanisms; if the persistence mechanism is built rather than bought, there will typically be a team of&#xD;
+    people working on this. Larger projects will typically require a small team of database designers who will need to&#xD;
+    coordinate work between both design teams and amongst themselves to ensure that persistence is consistently implemented&#xD;
+    across the project.&#xD;
+&lt;/p>&lt;br />&#xD;
+&lt;br /></keyConsiderations>
+    <usageGuidance>&lt;p>&#xD;
+    In the &lt;a class=&quot;elementLink&quot; href=&quot;./../../core.base_rup/customcategories/elaboration_6A203A50.html&quot;&#xD;
+    guid=&quot;_-kFhcCVuEdqSZ9OimJ-AzA&quot;>Elaboration&lt;/a>&amp;nbsp;Phase, this activity focuses on ensuring that the persistence&#xD;
+    strategy is scalable and that the database design and persistence mechanism will support the throughput requirements of&#xD;
+    the system. Persistent classes identified in &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../core.base_rup/tasks/class_design_98F20FF9.html&quot; guid=&quot;{27AE0601-2E95-4A6A-8EB3-0A4BA8E5626B}&quot;>Task: Class&#xD;
+    Design&lt;/a> are mapped to the persistence mechanism and data-intensive use cases are analyzed to ensure the mechanisms&#xD;
+    will be scalable. The persistence mechanism and database design is assessed and validated.&lt;br />&#xD;
+&lt;/p></usageGuidance>
+    <howtoStaff>&lt;a id=&quot;HowToStaff&quot; name=&quot;HowToStaff&quot;>&lt;/a> 
+&lt;p>
+    The Designers responsible for persistent classes need to have an understanding of the persistence in general and the
+    persistence mechanisms in specific. Their primary responsibility is to ensure that persistent classes are identified
+    and that these classes utilize the persistence mechanisms in an appropriate manner. The Database Designer needs to
+    understand the persistent classes in the design model and so must have a working understanding of object-oriented
+    design and implementation techniques. The Database Designer also needs a strong background in database concurrency and
+    distribution issues.
+&lt;/p></howtoStaff>
+  </org.eclipse.epf.uma:ActivityDescription>
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="-zD6Xi7SvcTj0yzANYHVBsw" name="analyze_behavior,{DAFB461E-9ADB-4849-8285-B7E3E72BDB43}" guid="-zD6Xi7SvcTj0yzANYHVBsw">
+    <mainDescription>&lt;a id=&quot;Description&quot; name=&quot;Description&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    This activity occurs in each iteration in which there are behavioral requirements to be analyzed and designed.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    The analysis of behavioral requirements includes the following:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        identifying analysis classes that satisfy the required behavior&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        determining how these analysis classes fit into the logical architecture (the major subsystems and classes) of the&#xD;
+        system. The analysis classes may be determined to belong to existing subsystems, require the creation of new&#xD;
+        subsystems, or cause existing subsystems and their interfaces to be redefined.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>&#xD;
+    This activity may also include modeling and prototyping of the user interface.&#xD;
+&lt;/p></mainDescription>
+    <usageGuidance>&lt;p>&#xD;
+    &lt;a class=&quot;elementLinkWithUserText&quot; href=&quot;./../../core.base_rup/tasks/design_user_interface_DAABE09F.html&quot;&#xD;
+    guid=&quot;{7414C358-6188-4E5C-8C35-F9D4DF3E0123}&quot;>Task: Design the User-Interface&lt;/a> and &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../core.base_rup/tasks/prototype_user_interface_C495CB55.html&quot; guid=&quot;{76F14467-3F63-4B22-B672-6EA69D0E6C46}&quot;>Task:&#xD;
+    Prototype the User-Interface&lt;/a> are performed iteratively throughout the Elaboration iterations. Early iterations&#xD;
+    focus on the initial user interface design, which includes the identification and design of the key user interface&#xD;
+    elements and the navigation paths between them. &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../core.base_rup/guidances/guidelines/storyboarding_AD2F0C54.html&quot; guid=&quot;8.377275022793495E-305&quot;>Storyboarding&lt;/a> is&#xD;
+    an effective technique that can be used during user-interface design to gain a better understanding of how the user&#xD;
+    interface should behave. Once consensus on the initial user-interface design has been reached, then the development of&#xD;
+    an executable user-interface prototype begins. Feedback on the prototype is fed back into the user-interface design&#xD;
+    (and possibly even the requirements). The initial prototype typically supports only a subset of the system's features.&#xD;
+    In subsequent iterations, the prototype is expanded, gradually adding broader coverage of the system's features. The&#xD;
+    main benefit of producing non-functional versions of the user-interface during user-interface design is to postpone the&#xD;
+    investment of more elaborate and costly functional user-interface prototypes until there is consensus on the overall&#xD;
+    user-interface design. It is important to work closely with users and potential users of the system when designing and&#xD;
+    prototyping the user-interface in order to confirm and validate the usability of the system.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    A number of use-case analysis workshops may be organized in parallel, limited only by the available resource pool and&#xD;
+    the skills of the participants. As soon as possible following each use-case analysis workshop, some members of the&#xD;
+    workshop and some members of the architecture team should work to merge the results of the workshop in the&amp;nbsp;&lt;a&#xD;
+    class=&quot;elementLink&quot; href=&quot;./../../core.base_rup/tasks/identify_design_elements_E884AB82.html&quot;&#xD;
+    guid=&quot;{97D7343A-6993-4AB7-8F86-4DAC8C9075C8}&quot;>Identify Design Elements&lt;/a>. Members of both teams are essential: the&#xD;
+    use-case analysis team members understand the context in which the analysis classes were identified, while the&#xD;
+    architecture team understands the greater context of the design as well as other use cases which have already been&#xD;
+    identified.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    As the design work matures and stabilizes, increasingly larger parts of it can and should be reviewed. Smaller, more&#xD;
+    focused reviews are better than large all-encompassing reviews; eight two-hour reviews focused on very specific aspects&#xD;
+    are significantly better than a single review spanning two days. In the focused reviews, define objectives to bound the&#xD;
+    focus of the review, and ensure that a small review team with the right skills for the review, given the objectives, is&#xD;
+    available for the review. Early reviews should focus primarily on the integrity of layering and packaging in the&#xD;
+    design, the stability and quality of the interfaces, and the completeness of coverage of the use case behavior. Later&#xD;
+    reviews should drill down into packages and subsystems to ensure that their contents completely and correctly realize&#xD;
+    their defined interfaces, and that the dependencies and associations between design elements are necessary, sufficient&#xD;
+    and correct. See the check-points on each design artifacts for specific review points.&#xD;
+&lt;/p>&lt;br />&#xD;
+&lt;br /></usageGuidance>
+    <howtoStaff>&lt;p>
+    Especially in larger projects, user-interface design and prototyping is performed by a separate group of people,
+    focused only on usability of the system and the user interface. However, this group should work closely with other
+    members of the development team, especially those responsible for the requirements and the business logic, to make sure
+    that the user interface is what the user expects, and that the business logic provides what the user interface requires
+    (in terms of content and user actions).
+&lt;/p>
+&lt;p>
+    The &lt;a class=&quot;elementLinkWithType&quot; href=&quot;resources/use_case_analysis,{28014615-A62F-452D-B821-30C7CAB0EC44}.html&quot;
+    guid=&quot;{28014615-A62F-452D-B821-30C7CAB0EC44}&quot;>Task: Use-Case Analysis&lt;/a> is best conducted by a small group with a
+    blend of skills; staffing guidelines are presented in &lt;a class=&quot;elementLinkWithUserText&quot;
+    href=&quot;resources/use-case-analysis_workshop,4.6416720607434916E-306.html&quot;
+    guid=&quot;4.6416720607434916E-306&quot;>Guideline: Use-Case Analysis Workshop&lt;/a>. The Activity: Identify Design Elements
+    requires a broader perspective of the architecture and the results of other use-case analysis workshops, and requires
+    some experience in the implementation technology and any frameworks being used on the project. Reviews should be
+    staffed with people who have both in-depth knowledge of the implementation technologies as well as an understanding of
+    the problem domain.
+&lt;/p></howtoStaff>
+  </org.eclipse.epf.uma:ActivityDescription>
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="-tXMwHDfis3k-gJu75FbECQ" name="design_components,{9C683674-97C1-4AEE-8DB0-9514AEFF698E}" guid="-tXMwHDfis3k-gJu75FbECQ">
+    <mainDescription>&lt;a id=&quot;Description&quot; name=&quot;Description&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    This activity has the following goals:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Refine the definitions of design elements by working out the 'details' of how the design elements realize the&#xD;
+        behavior required of them.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Refine and update the use-case realizations based on new design element identified (i.e. keeping the use-case&#xD;
+        realizations updated)&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Review the design&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></mainDescription>
+    <usageGuidance>&lt;p>&#xD;
+    Typically the work here is carried out individually or in small teams, with informal inter-group interactions where&#xD;
+    needed to communicate changes between the teams. As design elements are refined, responsibilities often shift between&#xD;
+    them, requiring simultaneous changes to a number of design elements and use-case realizations. Because of the interplay&#xD;
+    of responsibilities, it is almost impossible for design team members to work in complete isolation. To keep the design&#xD;
+    effort focused on the required behavior of the system (as expressed in use-case realizations), a typical pattern of&#xD;
+    interaction emerges:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        design elements are refined by the responsible persons or teams&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        a small group (perhaps 2-5 people) gathers informally to work out the impact of the new design elements on a set of&#xD;
+        existing use-case realizations&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        changes to both the use-case realization and the participating design elements are identified&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        the cycle repeats until all required behavior for the iteration is designed.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>&#xD;
+    Because the process itself is iterative, the criteria for 'all required behavior for the iteration' will depend on the&#xD;
+    position in the lifecycle.&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Focus on architecturally-significant behaviors in the elaboration phase. Ignore all other 'details'.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        In the construction phase there is a shift to completeness and consistency of the design, so that by the end of the&#xD;
+        construction phase there are no unresolved design issues.&lt;br />&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>&#xD;
+    Note that the design for an iteration does not need to be complete before beginning implementation and test activities.&#xD;
+    Partially implementing and testing a design as it evolves can be an effective means of validating and refining design,&#xD;
+    even within an iteration.&#xD;
+&lt;/p>&lt;br /></usageGuidance>
+    <howtoStaff>&lt;a id=&quot;HowToStaff&quot; name=&quot;HowToStaff&quot;>&lt;/a> 
+&lt;p>
+    Typically, one person or a small team is responsible for a set of design elements, usually one or more packages or
+    subsystems containing other design elements. This person/team is responsible for fleshing out the design details for
+    the elements contained in the package or subsystem: completing all operation definitions and the definition of
+    relationships to other design elements. The &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../core.base_rup/tasks/capsule_design,{F13C1161-7F17-45E3-A8B7-03944A1FA6E4}.html&quot; guid=&quot;{F13C1161-7F17-45E3-A8B7-03944A1FA6E4}&quot;>Task: Capsule Design&lt;/a> focuses on the recursive decomposition of
+    functionality in the system in terms of capsules and (passive or data) classes. The &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../core.base_rup/tasks/class_design,{27AE0601-2E95-4A6A-8EB3-0A4BA8E5626B}.html&quot; guid=&quot;{27AE0601-2E95-4A6A-8EB3-0A4BA8E5626B}&quot;>Task: Class Design&lt;/a> focuses on refining the design of
+    passive&amp;nbsp;class design elements, while the&amp;nbsp;&lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../core.base_rup/tasks/subsystem_design,{CAA385CA-2BA2-40F2-8FE3-E21089D02119}.html&quot; guid=&quot;{CAA385CA-2BA2-40F2-8FE3-E21089D02119}&quot;>Task: Subsystem Design&lt;/a>&amp;nbsp;focuses on the allocation of behavior
+    mapped to the subsystem itself to contained design elements (either contained capsules and classes or
+    subsystems).&amp;nbsp; Typically subsystems are used primarily as large-grained model organization structures, while
+    capsules being used for the bulk of the work and &quot;ordinary&quot; classes being relegated largely to passive stores of
+    information.
+&lt;/p>
+&lt;p>
+    The individuals or teams responsible for designing capsules should be knowledgeable in the implementation language as
+    well as possessing expertise in the concurrency issues in general. Individuals responsible for designing&amp;nbsp;passive
+    classes should also be knowledgeable in the implementation language as well as in algorithms or technologies to be
+    employed by the class. Individuals or teams responsible for subsystems should be more generalists, able to make
+    decisions on the proper partitioning of functionality between design elements, and able to understand the inherent
+    trade-offs involved in various design alternatives.
+&lt;/p>
+&lt;p>
+    While the individual design elements are refined, the use-case realizations must be refined to reflect the evolving
+    responsibilities of the design elements. Typically, one person or a small team is responsible for refining one or more
+    related use-case realizations. As design elements are added or refined, the use-case realizations need to be
+    reconsidered and evolved as they become outdated, or as improvements in the design model allow for simplifications in
+    the use-case realizations. The individuals or teams responsible for use-case realizations need to have broader
+    understanding of the behavior required by the use cases and of the trade-offs of different approaches to allocating
+    this behavior amongst design elements. In addition, since they are responsible for selecting the elements that will
+    perform the use cases, they need to have a deep understanding of external (public) behaviors of the design elements
+    themselves.
+&lt;/p></howtoStaff>
+  </org.eclipse.epf.uma:ActivityDescription>
+  <org.eclipse.epf.uma:ProcessDescription xmi:id="-HWeMmXCYJE_ru_wsGYnOeg" name="analysis_design,{002674F9-6511-4D15-8623-B761D8C48986}" guid="-HWeMmXCYJE_ru_wsGYnOeg">
+    <mainDescription>&lt;p>&#xD;
+    In the &lt;a class=&quot;elementLink&quot; href=&quot;./../../core.base_rup/customcategories/inception_D506BCB4.html&quot;&#xD;
+    guid=&quot;_vyZOwCVuEdqSZ9OimJ-AzA&quot;>Inception&lt;/a> Phase, analysis and design is concerned with establishing whether the&#xD;
+    system as envisioned is feasible, and with assessing potential technologies for the solution (in &lt;a&#xD;
+    class=&quot;elementLinkWithType&quot; href=&quot;./../../core.base_rup/capabilitypatterns/perform_architectural_synthesis_B63930B9.html&quot;&#xD;
+    guid=&quot;{C67C8E56-D9B6-499C-8171-C153FB28F1C3}&quot;>Activity: Perform Architectural Synthesis&lt;/a>). If it is felt that little&#xD;
+    risk attaches to the development (because, for example, the domain is well understood, the system is not novel, and so&#xD;
+    on) then this activity may be omitted.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    The early &lt;a class=&quot;elementLink&quot; href=&quot;./../../core.base_rup/customcategories/elaboration_6A203A50.html&quot;&#xD;
+    guid=&quot;_-kFhcCVuEdqSZ9OimJ-AzA&quot;>Elaboration&lt;/a> Phase focuses on creating an initial architecture for the system ( &lt;a&#xD;
+    class=&quot;elementLinkWithType&quot; href=&quot;./../../core.base_rup/capabilitypatterns/define_a_candidate_architecture_A3651DA3.html&quot;&#xD;
+    guid=&quot;{71ADFE9A-34A0-41BD-8A17-BEA3210E2BBD}&quot;>Activity: Define a Candidate Architecture&lt;/a>) to provide a starting&#xD;
+    point for the main analysis work. If the architecture already exists (either because it was produced in previous&#xD;
+    iterations, in previous projects, or is obtained from an application framework), the focus of the work changes to&#xD;
+    refining the architecture (&lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../core.base_rup/capabilitypatterns/refine_the_architecture_F40FA195.html&quot;&#xD;
+    guid=&quot;{F2160C54-F666-4736-9982-FC7F58F15FAD}&quot;>Activity: Refine the Architecture&lt;/a>. An initial set of elements is&#xD;
+    created which provide the appropriate behavior ( &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../core.base_rup/capabilitypatterns/analyze_behavior_59C89065.html&quot;&#xD;
+    guid=&quot;{DAFB461E-9ADB-4849-8285-B7E3E72BDB43}&quot;>Activity: Analyze Behavior&lt;/a>).&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    After the initial elements are identified, they are further refined. &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../core.base_rup/capabilitypatterns/design_components_13B33BFC.html&quot;&#xD;
+    guid=&quot;{9C683674-97C1-4AEE-8DB0-9514AEFF698E}&quot;>Activity: Design Components&lt;/a>&amp;nbsp;produce a set of components which&#xD;
+    provide the appropriate behavior to satisfy the requirements on the system. If the system includes a database, then &lt;a&#xD;
+    class=&quot;elementLinkWithType&quot; href=&quot;./../../core.base_rup/capabilitypatterns/design_the_database_2BE59DB0.html&quot;&#xD;
+    guid=&quot;{FB3EB753-A979-4849-B57B-97F39271F82B}&quot;>Activity: Design the Database&lt;/a> occurs in parallel. The result is an&#xD;
+    initial set of components which are further refined in &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../core.base_rup/capabilitypatterns/implementation_8FF0AAD4.html&quot;&#xD;
+    guid=&quot;{F2AD342D-0F3B-4E19-A351-75ECDCB806F5}&quot;>Capability Pattern: Implementation&lt;/a>&#xD;
+&lt;/p>&amp;nbsp;&lt;br />&#xD;
+&lt;br /></mainDescription>
+    <scope>&lt;a class=&quot;elementLinkWithType&quot;&#xD;
+href=&quot;./../../extend.cots/capabilitypatterns/cots_implementation_discipline_9346DF5B.html&quot;&#xD;
+guid=&quot;_ciIaredtEdqkJJQjpQmAcw&quot;>Capability Pattern: Implementation with COTS&lt;/a></scope>
+    <usageNotes>&lt;h4>&#xD;
+    Decide How to Perform the Workflow&#xD;
+&lt;/h4>&#xD;
+&lt;p>&#xD;
+    The following decisions should be made regarding the Analysis &amp;amp; Design discipline's workflow:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Decide how to perform the workflow by looking at the activities in this workflow. Study the diagram with its &lt;a&#xD;
+        class=&quot;elementLink&quot; href=&quot;./../../core.base_rup/guidances/termdefinitions/guard_condition_E3068D2.html&quot;&#xD;
+        guid=&quot;_yJ5m89nmEdmO6L4XMImrsA&quot;>guard condition&lt;/a>s, and the guidelines. Decide which activities to perform and in&#xD;
+        which order.&amp;nbsp;&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Decide what parts of the Analysis &amp;amp; Design activities to perform. The following parts can be introduced&#xD;
+        relatively independently from the rest.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;div align=&quot;center&quot;>&#xD;
+    &lt;table&#xD;
+    style=&quot;BORDER-RIGHT: rgb(128,128,128) 1px solid; BORDER-TOP: rgb(128,128,128) 1px solid; BORDER-LEFT: rgb(128,128,128) 1px solid; BORDER-BOTTOM: rgb(128,128,128) 1px solid&quot;&#xD;
+     cellspacing=&quot;0&quot; bordercolordark=&quot;#808080&quot; cellpadding=&quot;4&quot; width=&quot;85%&quot; bordercolorlight=&quot;#808080&quot; border=&quot;1&quot;>&#xD;
+        &lt;tbody>&#xD;
+            &lt;tr>&#xD;
+                &lt;th scope=&quot;col&quot; align=&quot;middle&quot; width=&quot;23%&quot;>&#xD;
+                    &lt;p class=&quot;tableheading&quot;>&#xD;
+                        Part of workflow&#xD;
+                    &lt;/p>&#xD;
+                &lt;/th>&#xD;
+                &lt;th scope=&quot;col&quot; align=&quot;middle&quot; width=&quot;77%&quot;>&#xD;
+                    &lt;p class=&quot;tableheading&quot;>&#xD;
+                        Comments&#xD;
+                    &lt;/p>&#xD;
+                &lt;/th>&#xD;
+            &lt;/tr>&#xD;
+            &lt;tr>&#xD;
+                &lt;td width=&quot;25%&quot;>&#xD;
+                    User interface design&#xD;
+                &lt;/td>&#xD;
+                &lt;td width=&quot;75%&quot;>&#xD;
+                    Some projects decide to not design the user interface. One reason could be that the user interface is&#xD;
+                    easy to develop. If you decide to not do user-interface design it means that you do not develop a&#xD;
+                    Navigation Map and a User-Interface Prototype.&amp;nbsp;&#xD;
+                &lt;/td>&#xD;
+            &lt;/tr>&#xD;
+            &lt;tr>&#xD;
+                &lt;td width=&quot;23%&quot;>&#xD;
+                    Database design&#xD;
+                &lt;/td>&#xD;
+                &lt;td width=&quot;77%&quot;>&#xD;
+                    Only used if the entities are going to be stored in a database. If you decide against doing database&#xD;
+                    design, it means that you do not develop any Data Model.&amp;nbsp;&#xD;
+                &lt;/td>&#xD;
+            &lt;/tr>&#xD;
+            &lt;tr class=&quot;reactive&quot;>&#xD;
+                &lt;td width=&quot;23%&quot;>&#xD;
+                    Real time, using Rational Rose RealTime&#xD;
+                &lt;/td>&#xD;
+                &lt;td width=&quot;77%&quot;>&#xD;
+                    If you decide to not do this, it means that you do not develop artifacts such as Capsule and Protocol.&#xD;
+                &lt;/td>&#xD;
+            &lt;/tr>&#xD;
+        &lt;/tbody>&#xD;
+    &lt;/table>&lt;br />&#xD;
+&lt;/div>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Decide when, during the project lifecycle, to introduce each part of the workflow. It is sometimes possible to wait&#xD;
+        until the Elaboration phase before introducing the Analysis &amp;amp; Design discipline. For example, if the&#xD;
+        development is in a well-understood domain, does not have demanding performance (or other non-functional)&#xD;
+        requirements, and will be based on a well-tried architecture, there is little need for prototyping during&#xD;
+        inception.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></usageNotes>
+  </org.eclipse.epf.uma:ProcessDescription>
+</xmi:XMI>

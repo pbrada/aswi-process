@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:org.eclipse.epf.uma.resourcemanager="http:///org/eclipse/epf/uma/resourcemanager.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1">
+  <org.eclipse.epf.uma.resourcemanager:ResourceManager xmi:id="_52XC0hpREdqFPPVWQscZ5A" guid="_52XC0hpREdqFPPVWQscZ5A">
+    <resourceDescriptors xmi:id="_duUU0Ri2Edq_uI8xTPML6g" id="-ZryvkL5odWOFg6jD_52dpg" uri="content.xmi"/>
+    <resourceDescriptors xmi:id="_4GAaUBpjEdqzB8RIDEHKhg" id="-hVRTgW1KdoWYwwmILNrrnA" uri="content.xmi"/>
+    <resourceDescriptors xmi:id="_4GAaURpjEdqzB8RIDEHKhg" id="-h2CWQVa_Subq_5drygE8pg" uri="content.xmi"/>
+    <resourceDescriptors xmi:id="_4GAaUhpjEdqzB8RIDEHKhg" id="-6zWpNxynBZwFtg3yoFTRIA" uri="content.xmi"/>
+    <resourceDescriptors xmi:id="_4GrIsBpjEdqzB8RIDEHKhg" id="-dMLJWgWix7KXgU6Y7b3ejg" uri="content.xmi"/>
+    <resourceDescriptors xmi:id="_4GrIsRpjEdqzB8RIDEHKhg" id="-QhMuihC6lxUD3MzfNIHNjQ" uri="content.xmi"/>
+    <resourceDescriptors xmi:id="_4HDjMBpjEdqzB8RIDEHKhg" id="-0VETBrCsr5obZan45HksuA" uri="content.xmi"/>
+  </org.eclipse.epf.uma.resourcemanager:ResourceManager>
+  <org.eclipse.epf.uma:ProcessComponent xmi:id="_5rYh4RpREdqFPPVWQscZ5A" name="requirements_discipline" guid="_5rYh4RpREdqFPPVWQscZ5A">
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_A8mc8Bi2Edq_uI8xTPML6g" name="analyze_the_problem" guid="_A8mc8Bi2Edq_uI8xTPML6g">
+      <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="{554ECC71-6D6C-4ABD-B7CE-357973C63B9F}" name="analyze_the_problem" guid="{554ECC71-6D6C-4ABD-B7CE-357973C63B9F}" presentationName="Analyze the Problem" briefDescription="This activity gains agreement on the problem being solved and proposes a high-level solution." isPlanned="false" superActivities="{38A9C609-9A59-4D03-B835-AA84A716E626}" breakdownElements="_CMQG8Ri2Edq_uI8xTPML6g _CMQG8hi2Edq_uI8xTPML6g _CMQG8xi2Edq_uI8xTPML6g _CMQG9Bi2Edq_uI8xTPML6g _CMQG9Ri2Edq_uI8xTPML6g _CMQG9hi2Edq_uI8xTPML6g _CMQG-hi2Edq_uI8xTPML6g _CMQG_Ri2Edq_uI8xTPML6g _CMWNkhi2Edq_uI8xTPML6g _ZaYV8zndEdqxANP9kNH4WA _ZaeckDndEdqxANP9kNH4WA _ha2zgjndEdqxANP9kNH4WA _ha2zgzndEdqxANP9kNH4WA _iteR8DndEdqxANP9kNH4WA _zH-v4EogEdqrjq4i3fchvA _zIE2gEogEdqrjq4i3fchvA _zIE2gUogEdqrjq4i3fchvA _zIE2gkogEdqrjq4i3fchvA _zIE2g0ogEdqrjq4i3fchvA _z6BQ0EogEdqrjq4i3fchvA _z6HXcEogEdqrjq4i3fchvA _0wK1sUogEdqrjq4i3fchvA _1rAGQEogEdqrjq4i3fchvA _1rMTgEogEdqrjq4i3fchvA _1rMTgUogEdqrjq4i3fchvA">
+        <presentation xmi:id="-ZryvkL5odWOFg6jD_52dpg" href="uma://-ZryvkL5odWOFg6jD_52dpg#-ZryvkL5odWOFg6jD_52dpg"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:RoleDescriptor" xmi:id="_CMQG8Ri2Edq_uI8xTPML6g" name="rup_system_analyst" guid="_CMQG8Ri2Edq_uI8xTPML6g" presentationName="System Analyst" superActivities="{554ECC71-6D6C-4ABD-B7CE-357973C63B9F}" modifies="_CMQG-hi2Edq_uI8xTPML6g _CMQG9Ri2Edq_uI8xTPML6g _CMQG9hi2Edq_uI8xTPML6g _CMWNkhi2Edq_uI8xTPML6g _iteR8DndEdqxANP9kNH4WA _CMQG8xi2Edq_uI8xTPML6g _1rMTgUogEdqrjq4i3fchvA" responsibleFor="_1rMTgUogEdqrjq4i3fchvA _zIE2g0ogEdqrjq4i3fchvA _zIE2gkogEdqrjq4i3fchvA _iteR8DndEdqxANP9kNH4WA _CMQG-hi2Edq_uI8xTPML6g _CMQG9Ri2Edq_uI8xTPML6g _CMQG9Bi2Edq_uI8xTPML6g _CMQG8xi2Edq_uI8xTPML6g">
+        <Role href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{F1F206DF-3AA0-4AC0-92EF-8E4A01B6C5B5}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_CMQG8hi2Edq_uI8xTPML6g" name="rup_business_case" guid="_CMQG8hi2Edq_uI8xTPML6g" presentationName="Business Case" superActivities="{554ECC71-6D6C-4ABD-B7CE-357973C63B9F}">
+        <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{9B13F235-E8E9-4CDC-9ACE-216124C8C5EC}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_CMQG8xi2Edq_uI8xTPML6g" name="rup_vision" guid="_CMQG8xi2Edq_uI8xTPML6g" presentationName="Vision" superActivities="{554ECC71-6D6C-4ABD-B7CE-357973C63B9F}">
+        <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{417F089F-6636-451A-A8AB-AB4EAC7AC4F1}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_CMQG9Bi2Edq_uI8xTPML6g" name="rup_stakeholder_requests" guid="_CMQG9Bi2Edq_uI8xTPML6g" presentationName="Stakeholder Requests" superActivities="{554ECC71-6D6C-4ABD-B7CE-357973C63B9F}">
+        <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{75F38765-E25B-4459-907E-77F429652C0F}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_CMQG9Ri2Edq_uI8xTPML6g" name="rup_usecase_model" guid="_CMQG9Ri2Edq_uI8xTPML6g" presentationName="Use-Case Model" superActivities="{554ECC71-6D6C-4ABD-B7CE-357973C63B9F}">
+        <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{9C66F2EC-EDEB-4369-9AFB-04B9E7CBCB8E}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_CMQG9hi2Edq_uI8xTPML6g" name="rup_usecase" guid="_CMQG9hi2Edq_uI8xTPML6g" presentationName="Use Case" superActivities="{554ECC71-6D6C-4ABD-B7CE-357973C63B9F}" activityEntryState="preliminary" activityExitState="preliminary">
+        <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{B1526BC5-E346-42CB-A08A-3C0D7F382407}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_CMQG-hi2Edq_uI8xTPML6g" name="rup_glossary" guid="_CMQG-hi2Edq_uI8xTPML6g" presentationName="Glossary" superActivities="{554ECC71-6D6C-4ABD-B7CE-357973C63B9F}">
+        <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{3BF8CC04-9101-47A4-9473-C8205EA588B6}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_CMQG_Ri2Edq_uI8xTPML6g" name="rup_iteration_plan" guid="_CMQG_Ri2Edq_uI8xTPML6g" presentationName="Iteration Plan" superActivities="{554ECC71-6D6C-4ABD-B7CE-357973C63B9F}">
+        <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{97269E0F-CDF3-448D-A732-DF39D099BDDD}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_CMWNkhi2Edq_uI8xTPML6g" name="rup_actor" guid="_CMWNkhi2Edq_uI8xTPML6g" presentationName="Actor" superActivities="{554ECC71-6D6C-4ABD-B7CE-357973C63B9F}" activityEntryState="preliminary" activityExitState="preliminary">
+        <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{0EEBBA43-F5C6-4594-9F06-65D99F7556DF}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_ZaYV8zndEdqxANP9kNH4WA" name="rup_business_use_case_model" guid="_ZaYV8zndEdqxANP9kNH4WA" presentationName="Business Use Case Model" superActivities="{554ECC71-6D6C-4ABD-B7CE-357973C63B9F}">
+        <WorkProduct href="uma://_875O8A6hEdqg5YAaNtnnCw#{89BEF367-5875-47E0-97D6-23E5BCCE52B8}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_ZaeckDndEdqxANP9kNH4WA" name="rup_business_analysis_model" guid="_ZaeckDndEdqxANP9kNH4WA" presentationName="Business Analysis Model" superActivities="{554ECC71-6D6C-4ABD-B7CE-357973C63B9F}">
+        <WorkProduct href="uma://_875O8A6hEdqg5YAaNtnnCw#{CF53445C-3351-46C6-810E-8251830029A7}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_ha2zgjndEdqxANP9kNH4WA" name="rup_business_rule" guid="_ha2zgjndEdqxANP9kNH4WA" presentationName="Business Rule" superActivities="{554ECC71-6D6C-4ABD-B7CE-357973C63B9F}">
+        <WorkProduct href="uma://_875O8A6hEdqg5YAaNtnnCw#{7F78B340-DD31-451A-9459-25F36E07401C}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_ha2zgzndEdqxANP9kNH4WA" name="rup_business_design_model" guid="_ha2zgzndEdqxANP9kNH4WA" presentationName="Business Design Model" superActivities="{554ECC71-6D6C-4ABD-B7CE-357973C63B9F}">
+        <WorkProduct href="uma://_875O8A6hEdqg5YAaNtnnCw#_Yi4dsBpWEdqUwb9RAn2tTA"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_iteR8DndEdqxANP9kNH4WA" name="rup_requirements_attributes" guid="_iteR8DndEdqxANP9kNH4WA" presentationName="Requirements Attributes" superActivities="{554ECC71-6D6C-4ABD-B7CE-357973C63B9F}">
+        <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{D0E2E7A1-4179-470E-AA18-419D5FEA275D}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="_zH-v4EogEdqrjq4i3fchvA" name="capture_common_vocabulary" guid="_zH-v4EogEdqrjq4i3fchvA" presentationName="Capture a Common Vocabulary" superActivities="{554ECC71-6D6C-4ABD-B7CE-357973C63B9F}" optionalInput="_zIE2gEogEdqrjq4i3fchvA _zIE2gUogEdqrjq4i3fchvA _CMQG9Bi2Edq_uI8xTPML6g _zIE2gkogEdqrjq4i3fchvA _CMQG8xi2Edq_uI8xTPML6g _zIE2g0ogEdqrjq4i3fchvA _CMQG9Ri2Edq_uI8xTPML6g _CMWNkhi2Edq_uI8xTPML6g _CMQG9hi2Edq_uI8xTPML6g _ha2zgjndEdqxANP9kNH4WA _ZaYV8zndEdqxANP9kNH4WA _ZaeckDndEdqxANP9kNH4WA _ha2zgzndEdqxANP9kNH4WA" output="_CMQG-hi2Edq_uI8xTPML6g" performedPrimarilyBy="_CMQG8Ri2Edq_uI8xTPML6g">
+        <Task href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{962AC6BA-4ACA-4D7D-B56F-24558A026854}"/>
+        <selectedSteps href="uma://_1NZ0MtnmEdmO6L4XMImrsA#_PT1xkNnnEdmO6L4XMImrsA"/>
+        <selectedSteps href="uma://_1NZ0MtnmEdmO6L4XMImrsA#_PT1xkdnnEdmO6L4XMImrsA"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_zIE2gEogEdqrjq4i3fchvA" name="rup_software_requirement" guid="_zIE2gEogEdqrjq4i3fchvA" presentationName="Software Requirement" superActivities="{554ECC71-6D6C-4ABD-B7CE-357973C63B9F}">
+        <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{BB502500-EEEC-4BDE-8697-186666D6D5B3}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_zIE2gUogEdqrjq4i3fchvA" name="rup_software_requirements_specification" guid="_zIE2gUogEdqrjq4i3fchvA" presentationName="Software Requirements Specification" superActivities="{554ECC71-6D6C-4ABD-B7CE-357973C63B9F}">
+        <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{BE8165DC-BAF2-4237-B27D-F2A037023364}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_zIE2gkogEdqrjq4i3fchvA" name="rup_storyboard" guid="_zIE2gkogEdqrjq4i3fchvA" presentationName="Storyboard" superActivities="{554ECC71-6D6C-4ABD-B7CE-357973C63B9F}">
+        <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{77F6A9E0-5650-40BA-BC60-3C53235CDEF5}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_zIE2g0ogEdqrjq4i3fchvA" name="rup_supplementary_specification" guid="_zIE2g0ogEdqrjq4i3fchvA" presentationName="Supplementary Specifications" superActivities="{554ECC71-6D6C-4ABD-B7CE-357973C63B9F}">
+        <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{B16C2941-791C-44E6-B353-354109B5C9DE}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="_z6BQ0EogEdqrjq4i3fchvA" name="find_actors_and_use_cases" guid="_z6BQ0EogEdqrjq4i3fchvA" presentationName="Find Actors and Use Cases" superActivities="{554ECC71-6D6C-4ABD-B7CE-357973C63B9F}" mandatoryInput="_CMQG9Bi2Edq_uI8xTPML6g _CMQG_Ri2Edq_uI8xTPML6g" optionalInput="_CMQG8xi2Edq_uI8xTPML6g _CMQG-hi2Edq_uI8xTPML6g _CMQG8hi2Edq_uI8xTPML6g _z6HXcEogEdqrjq4i3fchvA _ZaYV8zndEdqxANP9kNH4WA _ZaeckDndEdqxANP9kNH4WA _ha2zgzndEdqxANP9kNH4WA" output="_CMQG9Ri2Edq_uI8xTPML6g _CMQG9hi2Edq_uI8xTPML6g _CMWNkhi2Edq_uI8xTPML6g _iteR8DndEdqxANP9kNH4WA" performedPrimarilyBy="_CMQG8Ri2Edq_uI8xTPML6g">
+        <Task href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{3CD5FA7E-160C-4A39-9DEB-C6D162D8AECD}"/>
+        <selectedSteps href="uma://_1CrK5NnmEdmO6L4XMImrsA#_N_Wq4NnnEdmO6L4XMImrsA"/>
+        <selectedSteps href="uma://_1CrK5NnmEdmO6L4XMImrsA#_N_Wq4dnnEdmO6L4XMImrsA"/>
+        <selectedSteps href="uma://_1CrK5NnmEdmO6L4XMImrsA#_N_f00NnnEdmO6L4XMImrsA"/>
+        <selectedSteps href="uma://_1CrK5NnmEdmO6L4XMImrsA#_N_f00dnnEdmO6L4XMImrsA"/>
+        <selectedSteps href="uma://_1CrK5NnmEdmO6L4XMImrsA#_N_f00tnnEdmO6L4XMImrsA"/>
+        <selectedSteps href="uma://_1CrK5NnmEdmO6L4XMImrsA#_N_f009nnEdmO6L4XMImrsA"/>
+        <selectedSteps href="uma://_1CrK5NnmEdmO6L4XMImrsA#_N_f01NnnEdmO6L4XMImrsA"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_z6HXcEogEdqrjq4i3fchvA" name="rup_business_glossary" guid="_z6HXcEogEdqrjq4i3fchvA" presentationName="Business Glossary" superActivities="{554ECC71-6D6C-4ABD-B7CE-357973C63B9F}">
+        <WorkProduct href="uma://_875O8A6hEdqg5YAaNtnnCw#{81F1291A-0FF1-492B-AD0C-10329B75A52F}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="_0wK1sUogEdqrjq4i3fchvA" name="develop_vision" guid="_0wK1sUogEdqrjq4i3fchvA" presentationName="Develop Vision" superActivities="{554ECC71-6D6C-4ABD-B7CE-357973C63B9F}" mandatoryInput="_CMQG9Bi2Edq_uI8xTPML6g _CMQG8hi2Edq_uI8xTPML6g _CMQG_Ri2Edq_uI8xTPML6g" optionalInput="_CMQG8xi2Edq_uI8xTPML6g _ha2zgjndEdqxANP9kNH4WA _ZaYV8zndEdqxANP9kNH4WA _ZaeckDndEdqxANP9kNH4WA _ha2zgzndEdqxANP9kNH4WA" output="_CMQG8xi2Edq_uI8xTPML6g _iteR8DndEdqxANP9kNH4WA" performedPrimarilyBy="_CMQG8Ri2Edq_uI8xTPML6g">
+        <Task href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{7069CFB7-77C3-4B44-B8A2-9CCA752BDDDA}"/>
+        <selectedSteps href="uma://_1NQDMNnmEdmO6L4XMImrsA#_PRAgANnnEdmO6L4XMImrsA"/>
+        <selectedSteps href="uma://_1NQDMNnmEdmO6L4XMImrsA#_PRAgAdnnEdmO6L4XMImrsA"/>
+        <selectedSteps href="uma://_1NQDMNnmEdmO6L4XMImrsA#_PRAgAtnnEdmO6L4XMImrsA"/>
+        <selectedSteps href="uma://_1NQDMNnmEdmO6L4XMImrsA#_PRAgA9nnEdmO6L4XMImrsA"/>
+        <selectedSteps href="uma://_1NQDMNnmEdmO6L4XMImrsA#_PRAgBNnnEdmO6L4XMImrsA"/>
+        <selectedSteps href="uma://_1NQDMNnmEdmO6L4XMImrsA#_PRAgBdnnEdmO6L4XMImrsA"/>
+        <selectedSteps href="uma://_1NQDMNnmEdmO6L4XMImrsA#_PRAgBtnnEdmO6L4XMImrsA"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="_1rAGQEogEdqrjq4i3fchvA" name="develop_rm_plan" guid="_1rAGQEogEdqrjq4i3fchvA" presentationName="Develop Requirements Management Plan" superActivities="{554ECC71-6D6C-4ABD-B7CE-357973C63B9F}" mandatoryInput="_1rMTgEogEdqrjq4i3fchvA _CMQG_Ri2Edq_uI8xTPML6g" optionalInput="_1rMTgUogEdqrjq4i3fchvA" output="_1rMTgUogEdqrjq4i3fchvA" performedPrimarilyBy="_CMQG8Ri2Edq_uI8xTPML6g">
+        <Task href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{97E25B86-33D4-4378-A3C8-D6DCFEF35A77}"/>
+        <selectedSteps href="uma://_1IL9BNnmEdmO6L4XMImrsA#_PFFj4NnnEdmO6L4XMImrsA"/>
+        <selectedSteps href="uma://_1IL9BNnmEdmO6L4XMImrsA#_PFFj4dnnEdmO6L4XMImrsA"/>
+        <selectedSteps href="uma://_1IL9BNnmEdmO6L4XMImrsA#_PFFj4tnnEdmO6L4XMImrsA"/>
+        <selectedSteps href="uma://_1IL9BNnmEdmO6L4XMImrsA#_PFFj49nnEdmO6L4XMImrsA"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_1rMTgEogEdqrjq4i3fchvA" name="rup_project_plan" guid="_1rMTgEogEdqrjq4i3fchvA" presentationName="Software Development Plan" superActivities="{554ECC71-6D6C-4ABD-B7CE-357973C63B9F}">
+        <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{D77D6716-B167-4643-A4B6-6F76C7769A80}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_1rMTgUogEdqrjq4i3fchvA" name="rup_requirements_management_plan" guid="_1rMTgUogEdqrjq4i3fchvA" presentationName="Requirements Management Plan" superActivities="{554ECC71-6D6C-4ABD-B7CE-357973C63B9F}">
+        <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{53CFF11F-D0DB-4C92-B4D8-90D46B0EE3DF}"/>
+      </processElements>
+    </childPackages>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_A8mc8Ri2Edq_uI8xTPML6g" name="understand_stakeholder_needs" guid="_A8mc8Ri2Edq_uI8xTPML6g">
+      <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="{F9E2B414-29F4-48F9-B263-35570D64314B}" name="understand_stakeholder_needs" guid="{F9E2B414-29F4-48F9-B263-35570D64314B}" presentationName="Understand Stakeholder Needs" briefDescription="This activity seeks to understand what the stakeholders want from the proposed solution and defines the key features for the solution." isPlanned="false" superActivities="{38A9C609-9A59-4D03-B835-AA84A716E626}" linkToPredecessor="_qPsGkBpqEdqzB8RIDEHKhg" breakdownElements="_CMcUMRi2Edq_uI8xTPML6g _CMcUMhi2Edq_uI8xTPML6g _CMcUMxi2Edq_uI8xTPML6g _CMcUNBi2Edq_uI8xTPML6g _CMcUNRi2Edq_uI8xTPML6g _CMcUNhi2Edq_uI8xTPML6g _CMcUOhi2Edq_uI8xTPML6g _CMcUPBi2Edq_uI8xTPML6g _CMcUPRi2Edq_uI8xTPML6g _CMia0Ri2Edq_uI8xTPML6g _CMia1Ri2Edq_uI8xTPML6g _CMia1hi2Edq_uI8xTPML6g _tRvh8DndEdqxANP9kNH4WA _tRvh8TndEdqxANP9kNH4WA _tRvh8jndEdqxANP9kNH4WA _tRvh8zndEdqxANP9kNH4WA _tRvh9DndEdqxANP9kNH4WA _tRvh9TndEdqxANP9kNH4WA _tRvh9jndEdqxANP9kNH4WA _xa9aEDndEdqxANP9kNH4WA _xboIcDndEdqxANP9kNH4WA _2hoMQEogEdqrjq4i3fchvA _3bgakEogEdqrjq4i3fchvA _4N79EEogEdqrjq4i3fchvA _5Wzpr0ogEdqrjq4i3fchvA _5W_24EogEdqrjq4i3fchvA _6Ip9XEogEdqrjq4i3fchvA _7DfN4EogEdqrjq4i3fchvA">
+        <presentation xmi:id="-hVRTgW1KdoWYwwmILNrrnA" href="uma://-ZryvkL5odWOFg6jD_52dpg#-hVRTgW1KdoWYwwmILNrrnA"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:RoleDescriptor" xmi:id="_CMcUMRi2Edq_uI8xTPML6g" name="rup_system_analyst" guid="_CMcUMRi2Edq_uI8xTPML6g" presentationName="System Analyst" superActivities="{F9E2B414-29F4-48F9-B263-35570D64314B}" modifies="_CMcUOhi2Edq_uI8xTPML6g _CMcUNBi2Edq_uI8xTPML6g _tRvh8jndEdqxANP9kNH4WA _CMcUPRi2Edq_uI8xTPML6g _CMcUMxi2Edq_uI8xTPML6g _CMcUNRi2Edq_uI8xTPML6g _CMcUNhi2Edq_uI8xTPML6g _CMia1Ri2Edq_uI8xTPML6g _CMia1hi2Edq_uI8xTPML6g _xboIcDndEdqxANP9kNH4WA" responsibleFor="_xboIcDndEdqxANP9kNH4WA _tRvh8jndEdqxANP9kNH4WA _CMia1hi2Edq_uI8xTPML6g _CMcUPRi2Edq_uI8xTPML6g _CMcUOhi2Edq_uI8xTPML6g _CMcUNRi2Edq_uI8xTPML6g _CMcUNBi2Edq_uI8xTPML6g _CMcUMxi2Edq_uI8xTPML6g">
+        <Role href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{F1F206DF-3AA0-4AC0-92EF-8E4A01B6C5B5}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_CMcUMhi2Edq_uI8xTPML6g" name="rup_business_case" guid="_CMcUMhi2Edq_uI8xTPML6g" presentationName="Business Case" superActivities="{F9E2B414-29F4-48F9-B263-35570D64314B}">
+        <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{9B13F235-E8E9-4CDC-9ACE-216124C8C5EC}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_CMcUMxi2Edq_uI8xTPML6g" name="rup_vision" guid="_CMcUMxi2Edq_uI8xTPML6g" presentationName="Vision" superActivities="{F9E2B414-29F4-48F9-B263-35570D64314B}">
+        <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{417F089F-6636-451A-A8AB-AB4EAC7AC4F1}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_CMcUNBi2Edq_uI8xTPML6g" name="rup_stakeholder_requests" guid="_CMcUNBi2Edq_uI8xTPML6g" presentationName="Stakeholder Requests" superActivities="{F9E2B414-29F4-48F9-B263-35570D64314B}">
+        <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{75F38765-E25B-4459-907E-77F429652C0F}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_CMcUNRi2Edq_uI8xTPML6g" name="rup_usecase_model" guid="_CMcUNRi2Edq_uI8xTPML6g" presentationName="Use-Case Model" superActivities="{F9E2B414-29F4-48F9-B263-35570D64314B}">
+        <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{9C66F2EC-EDEB-4369-9AFB-04B9E7CBCB8E}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_CMcUNhi2Edq_uI8xTPML6g" name="rup_usecase" guid="_CMcUNhi2Edq_uI8xTPML6g" presentationName="Use Case" superActivities="{F9E2B414-29F4-48F9-B263-35570D64314B}">
+        <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{B1526BC5-E346-42CB-A08A-3C0D7F382407}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_CMcUOhi2Edq_uI8xTPML6g" name="rup_glossary" guid="_CMcUOhi2Edq_uI8xTPML6g" presentationName="Glossary" superActivities="{F9E2B414-29F4-48F9-B263-35570D64314B}">
+        <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{3BF8CC04-9101-47A4-9473-C8205EA588B6}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_CMcUPBi2Edq_uI8xTPML6g" name="rup_iteration_plan" guid="_CMcUPBi2Edq_uI8xTPML6g" presentationName="Iteration Plan" superActivities="{F9E2B414-29F4-48F9-B263-35570D64314B}">
+        <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{97269E0F-CDF3-448D-A732-DF39D099BDDD}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_CMcUPRi2Edq_uI8xTPML6g" name="rup_requirements_attributes" guid="_CMcUPRi2Edq_uI8xTPML6g" presentationName="Requirements Attributes" superActivities="{F9E2B414-29F4-48F9-B263-35570D64314B}">
+        <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{D0E2E7A1-4179-470E-AA18-419D5FEA275D}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_CMia0Ri2Edq_uI8xTPML6g" name="rup_change_request" guid="_CMia0Ri2Edq_uI8xTPML6g" presentationName="Change Request" superActivities="{F9E2B414-29F4-48F9-B263-35570D64314B}">
+        <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{694A7BC8-3D20-4172-BC56-6C7BD4590BA5}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_CMia1Ri2Edq_uI8xTPML6g" name="rup_actor" guid="_CMia1Ri2Edq_uI8xTPML6g" presentationName="Actor" superActivities="{F9E2B414-29F4-48F9-B263-35570D64314B}">
+        <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{0EEBBA43-F5C6-4594-9F06-65D99F7556DF}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_CMia1hi2Edq_uI8xTPML6g" name="rup_supplementary_specification" guid="_CMia1hi2Edq_uI8xTPML6g" presentationName="Supplementary Specifications" superActivities="{F9E2B414-29F4-48F9-B263-35570D64314B}">
+        <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{B16C2941-791C-44E6-B353-354109B5C9DE}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_qPsGkBpqEdqzB8RIDEHKhg" guid="_qPsGkBpqEdqzB8RIDEHKhg" pred="{554ECC71-6D6C-4ABD-B7CE-357973C63B9F}"/>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_tRvh8DndEdqxANP9kNH4WA" name="rup_software_requirement" guid="_tRvh8DndEdqxANP9kNH4WA" presentationName="Software Requirement" superActivities="{F9E2B414-29F4-48F9-B263-35570D64314B}">
+        <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{BB502500-EEEC-4BDE-8697-186666D6D5B3}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_tRvh8TndEdqxANP9kNH4WA" name="rup_software_requirements_specification" guid="_tRvh8TndEdqxANP9kNH4WA" presentationName="Software Requirements Specification" superActivities="{F9E2B414-29F4-48F9-B263-35570D64314B}">
+        <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{BE8165DC-BAF2-4237-B27D-F2A037023364}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_tRvh8jndEdqxANP9kNH4WA" name="rup_storyboard" guid="_tRvh8jndEdqxANP9kNH4WA" presentationName="Storyboard" superActivities="{F9E2B414-29F4-48F9-B263-35570D64314B}">
+        <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{77F6A9E0-5650-40BA-BC60-3C53235CDEF5}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_tRvh8zndEdqxANP9kNH4WA" name="rup_business_use_case_model" guid="_tRvh8zndEdqxANP9kNH4WA" presentationName="Business Use Case Model" superActivities="{F9E2B414-29F4-48F9-B263-35570D64314B}">
+        <WorkProduct href="uma://_875O8A6hEdqg5YAaNtnnCw#{89BEF367-5875-47E0-97D6-23E5BCCE52B8}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_tRvh9DndEdqxANP9kNH4WA" name="rup_business_rule" guid="_tRvh9DndEdqxANP9kNH4WA" presentationName="Business Rule" superActivities="{F9E2B414-29F4-48F9-B263-35570D64314B}">
+        <WorkProduct href="uma://_875O8A6hEdqg5YAaNtnnCw#{7F78B340-DD31-451A-9459-25F36E07401C}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_tRvh9TndEdqxANP9kNH4WA" name="rup_business_analysis_model" guid="_tRvh9TndEdqxANP9kNH4WA" presentationName="Business Analysis Model" superActivities="{F9E2B414-29F4-48F9-B263-35570D64314B}">
+        <WorkProduct href="uma://_875O8A6hEdqg5YAaNtnnCw#{CF53445C-3351-46C6-810E-8251830029A7}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_tRvh9jndEdqxANP9kNH4WA" name="rup_business_design_model" guid="_tRvh9jndEdqxANP9kNH4WA" presentationName="Business Design Model" superActivities="{F9E2B414-29F4-48F9-B263-35570D64314B}">
+        <WorkProduct href="uma://_875O8A6hEdqg5YAaNtnnCw#_Yi4dsBpWEdqUwb9RAn2tTA"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:RoleDescriptor" xmi:id="_xa9aEDndEdqxANP9kNH4WA" name="rup_requirement_specifier" guid="_xa9aEDndEdqxANP9kNH4WA" presentationName="Requirements Specifier" superActivities="{F9E2B414-29F4-48F9-B263-35570D64314B}" responsibleFor="_tRvh8TndEdqxANP9kNH4WA _tRvh8DndEdqxANP9kNH4WA _CMia1Ri2Edq_uI8xTPML6g _CMcUNhi2Edq_uI8xTPML6g">
+        <Role href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{7264A534-7509-4B4B-AF73-CAECC0178898}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_xboIcDndEdqxANP9kNH4WA" name="rup_requirements_management_plan" guid="_xboIcDndEdqxANP9kNH4WA" presentationName="Requirements Management Plan" superActivities="{F9E2B414-29F4-48F9-B263-35570D64314B}">
+        <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{53CFF11F-D0DB-4C92-B4D8-90D46B0EE3DF}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="_2hoMQEogEdqrjq4i3fchvA" name="capture_common_vocabulary" guid="_2hoMQEogEdqrjq4i3fchvA" presentationName="Capture a Common Vocabulary" superActivities="{F9E2B414-29F4-48F9-B263-35570D64314B}" optionalInput="_tRvh8DndEdqxANP9kNH4WA _tRvh8TndEdqxANP9kNH4WA _CMcUNBi2Edq_uI8xTPML6g _tRvh8jndEdqxANP9kNH4WA _CMcUMxi2Edq_uI8xTPML6g _CMia1hi2Edq_uI8xTPML6g _CMcUNRi2Edq_uI8xTPML6g _CMia1Ri2Edq_uI8xTPML6g _CMcUNhi2Edq_uI8xTPML6g _tRvh9DndEdqxANP9kNH4WA _tRvh8zndEdqxANP9kNH4WA _tRvh9TndEdqxANP9kNH4WA _tRvh9jndEdqxANP9kNH4WA" output="_CMcUOhi2Edq_uI8xTPML6g" performedPrimarilyBy="_CMcUMRi2Edq_uI8xTPML6g">
+        <Task href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{962AC6BA-4ACA-4D7D-B56F-24558A026854}"/>
+        <selectedSteps href="uma://_1NZ0MtnmEdmO6L4XMImrsA#_PT1xkNnnEdmO6L4XMImrsA"/>
+        <selectedSteps href="uma://_1NZ0MtnmEdmO6L4XMImrsA#_PT1xkdnnEdmO6L4XMImrsA"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="_3bgakEogEdqrjq4i3fchvA" name="elicit_stakeholder_requests" guid="_3bgakEogEdqrjq4i3fchvA" presentationName="Elicit Stakeholder Requests" superActivities="{F9E2B414-29F4-48F9-B263-35570D64314B}" mandatoryInput="_CMcUMhi2Edq_uI8xTPML6g _CMcUPBi2Edq_uI8xTPML6g" optionalInput="_CMia0Ri2Edq_uI8xTPML6g _CMcUMxi2Edq_uI8xTPML6g" output="_CMcUNBi2Edq_uI8xTPML6g _tRvh8jndEdqxANP9kNH4WA _CMcUPRi2Edq_uI8xTPML6g" performedPrimarilyBy="_CMcUMRi2Edq_uI8xTPML6g">
+        <Task href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{EAEF65F0-E9CA-45B2-A875-47E66B3FDBC6}"/>
+        <selectedSteps href="uma://_1NQDMtnmEdmO6L4XMImrsA#_PRwt8NnnEdmO6L4XMImrsA"/>
+        <selectedSteps href="uma://_1NQDMtnmEdmO6L4XMImrsA#_PRwt8dnnEdmO6L4XMImrsA"/>
+        <selectedSteps href="uma://_1NQDMtnmEdmO6L4XMImrsA#_PRwt8tnnEdmO6L4XMImrsA"/>
+        <selectedSteps href="uma://_1NQDMtnmEdmO6L4XMImrsA#_PRwt89nnEdmO6L4XMImrsA"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="_4N79EEogEdqrjq4i3fchvA" name="develop_vision" guid="_4N79EEogEdqrjq4i3fchvA" presentationName="Develop Vision" superActivities="{F9E2B414-29F4-48F9-B263-35570D64314B}" mandatoryInput="_CMcUNBi2Edq_uI8xTPML6g _CMcUMhi2Edq_uI8xTPML6g _CMcUPBi2Edq_uI8xTPML6g" optionalInput="_CMcUMxi2Edq_uI8xTPML6g _tRvh9DndEdqxANP9kNH4WA _tRvh8zndEdqxANP9kNH4WA _tRvh9TndEdqxANP9kNH4WA _tRvh9jndEdqxANP9kNH4WA" output="_CMcUMxi2Edq_uI8xTPML6g _CMcUPRi2Edq_uI8xTPML6g" performedPrimarilyBy="_CMcUMRi2Edq_uI8xTPML6g">
+        <Task href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{7069CFB7-77C3-4B44-B8A2-9CCA752BDDDA}"/>
+        <selectedSteps href="uma://_1NQDMNnmEdmO6L4XMImrsA#_PRAgANnnEdmO6L4XMImrsA"/>
+        <selectedSteps href="uma://_1NQDMNnmEdmO6L4XMImrsA#_PRAgAdnnEdmO6L4XMImrsA"/>
+        <selectedSteps href="uma://_1NQDMNnmEdmO6L4XMImrsA#_PRAgAtnnEdmO6L4XMImrsA"/>
+        <selectedSteps href="uma://_1NQDMNnmEdmO6L4XMImrsA#_PRAgA9nnEdmO6L4XMImrsA"/>
+        <selectedSteps href="uma://_1NQDMNnmEdmO6L4XMImrsA#_PRAgBNnnEdmO6L4XMImrsA"/>
+        <selectedSteps href="uma://_1NQDMNnmEdmO6L4XMImrsA#_PRAgBdnnEdmO6L4XMImrsA"/>
+        <selectedSteps href="uma://_1NQDMNnmEdmO6L4XMImrsA#_PRAgBtnnEdmO6L4XMImrsA"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="_5Wzpr0ogEdqrjq4i3fchvA" name="find_actors_and_use_cases" guid="_5Wzpr0ogEdqrjq4i3fchvA" presentationName="Find Actors and Use Cases" superActivities="{F9E2B414-29F4-48F9-B263-35570D64314B}" mandatoryInput="_CMcUNBi2Edq_uI8xTPML6g _CMcUPBi2Edq_uI8xTPML6g" optionalInput="_CMcUMxi2Edq_uI8xTPML6g _CMcUOhi2Edq_uI8xTPML6g _CMcUMhi2Edq_uI8xTPML6g _5W_24EogEdqrjq4i3fchvA _tRvh8zndEdqxANP9kNH4WA _tRvh9TndEdqxANP9kNH4WA _tRvh9jndEdqxANP9kNH4WA" output="_CMcUNRi2Edq_uI8xTPML6g _CMcUNhi2Edq_uI8xTPML6g _CMia1Ri2Edq_uI8xTPML6g _CMcUPRi2Edq_uI8xTPML6g" performedPrimarilyBy="_CMcUMRi2Edq_uI8xTPML6g">
+        <Task href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{3CD5FA7E-160C-4A39-9DEB-C6D162D8AECD}"/>
+        <selectedSteps href="uma://_1CrK5NnmEdmO6L4XMImrsA#_N_Wq4NnnEdmO6L4XMImrsA"/>
+        <selectedSteps href="uma://_1CrK5NnmEdmO6L4XMImrsA#_N_Wq4dnnEdmO6L4XMImrsA"/>
+        <selectedSteps href="uma://_1CrK5NnmEdmO6L4XMImrsA#_N_f00NnnEdmO6L4XMImrsA"/>
+        <selectedSteps href="uma://_1CrK5NnmEdmO6L4XMImrsA#_N_f00dnnEdmO6L4XMImrsA"/>
+        <selectedSteps href="uma://_1CrK5NnmEdmO6L4XMImrsA#_N_f00tnnEdmO6L4XMImrsA"/>
+        <selectedSteps href="uma://_1CrK5NnmEdmO6L4XMImrsA#_N_f009nnEdmO6L4XMImrsA"/>
+        <selectedSteps href="uma://_1CrK5NnmEdmO6L4XMImrsA#_N_f01NnnEdmO6L4XMImrsA"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_5W_24EogEdqrjq4i3fchvA" name="rup_business_glossary" guid="_5W_24EogEdqrjq4i3fchvA" presentationName="Business Glossary" superActivities="{F9E2B414-29F4-48F9-B263-35570D64314B}">
+        <WorkProduct href="uma://_875O8A6hEdqg5YAaNtnnCw#{81F1291A-0FF1-492B-AD0C-10329B75A52F}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="_6Ip9XEogEdqrjq4i3fchvA" name="develop_supplementary_specification" guid="_6Ip9XEogEdqrjq4i3fchvA" presentationName="Develop Supplementary Specifications" superActivities="{F9E2B414-29F4-48F9-B263-35570D64314B}" additionallyPerformedBy="_xa9aEDndEdqxANP9kNH4WA" mandatoryInput="_CMcUPBi2Edq_uI8xTPML6g _CMcUNBi2Edq_uI8xTPML6g" optionalInput="_CMcUMhi2Edq_uI8xTPML6g _CMcUMxi2Edq_uI8xTPML6g _CMcUOhi2Edq_uI8xTPML6g _xboIcDndEdqxANP9kNH4WA" output="_CMia1hi2Edq_uI8xTPML6g _CMcUPRi2Edq_uI8xTPML6g" performedPrimarilyBy="_CMcUMRi2Edq_uI8xTPML6g">
+        <Task href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#_I5vM8DJwEdqLGaxX1Cc4eA"/>
+        <selectedSteps href="uma://-N2e9fSsCqpKoMN6cIDttAw#_Nn6wYDavEdqp39qgkZWKSA"/>
+        <selectedSteps href="uma://-N2e9fSsCqpKoMN6cIDttAw#_bX77cDfzEdqeAunr9Ma_fQ"/>
+        <selectedSteps href="uma://-N2e9fSsCqpKoMN6cIDttAw#_Uo-_YDavEdqp39qgkZWKSA"/>
+        <selectedSteps href="uma://-N2e9fSsCqpKoMN6cIDttAw#_q0hIwDf0EdqeAunr9Ma_fQ"/>
+        <selectedSteps href="uma://-N2e9fSsCqpKoMN6cIDttAw#_T-t1sDf0EdqeAunr9Ma_fQ"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="_7DfN4EogEdqrjq4i3fchvA" name="manage_dependencies" guid="_7DfN4EogEdqrjq4i3fchvA" presentationName="Manage Dependencies" superActivities="{F9E2B414-29F4-48F9-B263-35570D64314B}" mandatoryInput="_xboIcDndEdqxANP9kNH4WA" optionalInput="_CMcUNBi2Edq_uI8xTPML6g _CMcUPRi2Edq_uI8xTPML6g _CMcUMxi2Edq_uI8xTPML6g _CMia0Ri2Edq_uI8xTPML6g" output="_xboIcDndEdqxANP9kNH4WA _CMcUPRi2Edq_uI8xTPML6g _CMcUMxi2Edq_uI8xTPML6g" performedPrimarilyBy="_CMcUMRi2Edq_uI8xTPML6g">
+        <Task href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{7F42C4D6-584F-4B19-9B0B-FDE86BD85FBB}"/>
+        <selectedSteps href="uma://_1IVuAtnmEdmO6L4XMImrsA#_PIEmcNnnEdmO6L4XMImrsA"/>
+        <selectedSteps href="uma://_1IVuAtnmEdmO6L4XMImrsA#_PIEmcdnnEdmO6L4XMImrsA"/>
+        <selectedSteps href="uma://_1IVuAtnmEdmO6L4XMImrsA#_PIEmctnnEdmO6L4XMImrsA"/>
+      </processElements>
+    </childPackages>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_A8mc8hi2Edq_uI8xTPML6g" name="define_the_system" guid="_A8mc8hi2Edq_uI8xTPML6g">
+      <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="{20E30ECF-7359-45EC-AA5F-8A7BFA21C472}" name="define_the_system" guid="{20E30ECF-7359-45EC-AA5F-8A7BFA21C472}" presentationName="Define the System" briefDescription="This activity gains agreement on the scope of the system and outlines the key requirements." superActivities="{38A9C609-9A59-4D03-B835-AA84A716E626}" breakdownElements="_CMohcRi2Edq_uI8xTPML6g _CMohchi2Edq_uI8xTPML6g _CMohcxi2Edq_uI8xTPML6g _CMohdBi2Edq_uI8xTPML6g _CMohdRi2Edq_uI8xTPML6g _CMohdhi2Edq_uI8xTPML6g _CMohehi2Edq_uI8xTPML6g _CMohfBi2Edq_uI8xTPML6g _CMohfRi2Edq_uI8xTPML6g _CMohgBi2Edq_uI8xTPML6g _CMohgRi2Edq_uI8xTPML6g _2sMDIDndEdqxANP9kNH4WA _2sMDITndEdqxANP9kNH4WA _2sMDIjndEdqxANP9kNH4WA _2sMDIzndEdqxANP9kNH4WA _3pTysDndEdqxANP9kNH4WA _3pTysTndEdqxANP9kNH4WA _5h1akDndEdqxANP9kNH4WA _5iT7sDndEdqxANP9kNH4WA _72fYIEogEdqrjq4i3fchvA _8_pYkEogEdqrjq4i3fchvA _8_vfMEogEdqrjq4i3fchvA _9mO3cEogEdqrjq4i3fchvA _9mbEsEogEdqrjq4i3fchvA __YvW7EogEdqrjq4i3fchvA _AMsjYEohEdqrjq4i3fchvA _AM4woEohEdqrjq4i3fchvA">
+        <presentation xmi:id="-h2CWQVa_Subq_5drygE8pg" href="uma://-ZryvkL5odWOFg6jD_52dpg#-h2CWQVa_Subq_5drygE8pg"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:RoleDescriptor" xmi:id="_CMohcRi2Edq_uI8xTPML6g" name="rup_system_analyst" guid="_CMohcRi2Edq_uI8xTPML6g" presentationName="System Analyst" superActivities="{20E30ECF-7359-45EC-AA5F-8A7BFA21C472}" modifies="_CMohcxi2Edq_uI8xTPML6g _CMohfRi2Edq_uI8xTPML6g _CMohehi2Edq_uI8xTPML6g _CMohdRi2Edq_uI8xTPML6g _CMohdhi2Edq_uI8xTPML6g _CMohgBi2Edq_uI8xTPML6g _CMohgRi2Edq_uI8xTPML6g _5iT7sDndEdqxANP9kNH4WA" responsibleFor="_8_vfMEogEdqrjq4i3fchvA _5iT7sDndEdqxANP9kNH4WA _CMohgRi2Edq_uI8xTPML6g _CMohfRi2Edq_uI8xTPML6g _CMohehi2Edq_uI8xTPML6g _CMohdRi2Edq_uI8xTPML6g _CMohdBi2Edq_uI8xTPML6g _CMohcxi2Edq_uI8xTPML6g">
+        <Role href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{F1F206DF-3AA0-4AC0-92EF-8E4A01B6C5B5}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_CMohchi2Edq_uI8xTPML6g" name="rup_business_case" guid="_CMohchi2Edq_uI8xTPML6g" presentationName="Business Case" superActivities="{20E30ECF-7359-45EC-AA5F-8A7BFA21C472}">
+        <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{9B13F235-E8E9-4CDC-9ACE-216124C8C5EC}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_CMohcxi2Edq_uI8xTPML6g" name="rup_vision" guid="_CMohcxi2Edq_uI8xTPML6g" presentationName="Vision" superActivities="{20E30ECF-7359-45EC-AA5F-8A7BFA21C472}">
+        <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{417F089F-6636-451A-A8AB-AB4EAC7AC4F1}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_CMohdBi2Edq_uI8xTPML6g" name="rup_stakeholder_requests" guid="_CMohdBi2Edq_uI8xTPML6g" presentationName="Stakeholder Requests" superActivities="{20E30ECF-7359-45EC-AA5F-8A7BFA21C472}">
+        <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{75F38765-E25B-4459-907E-77F429652C0F}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_CMohdRi2Edq_uI8xTPML6g" name="rup_usecase_model" guid="_CMohdRi2Edq_uI8xTPML6g" presentationName="Use-Case Model" superActivities="{20E30ECF-7359-45EC-AA5F-8A7BFA21C472}">
+        <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{9C66F2EC-EDEB-4369-9AFB-04B9E7CBCB8E}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_CMohdhi2Edq_uI8xTPML6g" name="rup_usecase" guid="_CMohdhi2Edq_uI8xTPML6g" presentationName="Use Case" superActivities="{20E30ECF-7359-45EC-AA5F-8A7BFA21C472}">
+        <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{B1526BC5-E346-42CB-A08A-3C0D7F382407}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_CMohehi2Edq_uI8xTPML6g" name="rup_glossary" guid="_CMohehi2Edq_uI8xTPML6g" presentationName="Glossary" superActivities="{20E30ECF-7359-45EC-AA5F-8A7BFA21C472}">
+        <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{3BF8CC04-9101-47A4-9473-C8205EA588B6}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_CMohfBi2Edq_uI8xTPML6g" name="rup_iteration_plan" guid="_CMohfBi2Edq_uI8xTPML6g" presentationName="Iteration Plan" superActivities="{20E30ECF-7359-45EC-AA5F-8A7BFA21C472}">
+        <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{97269E0F-CDF3-448D-A732-DF39D099BDDD}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_CMohfRi2Edq_uI8xTPML6g" name="rup_requirements_attributes" guid="_CMohfRi2Edq_uI8xTPML6g" presentationName="Requirements Attributes" superActivities="{20E30ECF-7359-45EC-AA5F-8A7BFA21C472}">
+        <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{D0E2E7A1-4179-470E-AA18-419D5FEA275D}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_CMohgBi2Edq_uI8xTPML6g" name="rup_actor" guid="_CMohgBi2Edq_uI8xTPML6g" presentationName="Actor" superActivities="{20E30ECF-7359-45EC-AA5F-8A7BFA21C472}">
+        <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{0EEBBA43-F5C6-4594-9F06-65D99F7556DF}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_CMohgRi2Edq_uI8xTPML6g" name="rup_supplementary_specification" guid="_CMohgRi2Edq_uI8xTPML6g" presentationName="Supplementary Specifications" superActivities="{20E30ECF-7359-45EC-AA5F-8A7BFA21C472}">
+        <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{B16C2941-791C-44E6-B353-354109B5C9DE}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_2sMDIDndEdqxANP9kNH4WA" name="rup_business_use_case_model" guid="_2sMDIDndEdqxANP9kNH4WA" presentationName="Business Use Case Model" superActivities="{20E30ECF-7359-45EC-AA5F-8A7BFA21C472}">
+        <WorkProduct href="uma://_875O8A6hEdqg5YAaNtnnCw#{89BEF367-5875-47E0-97D6-23E5BCCE52B8}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_2sMDITndEdqxANP9kNH4WA" name="rup_business_rule" guid="_2sMDITndEdqxANP9kNH4WA" presentationName="Business Rule" superActivities="{20E30ECF-7359-45EC-AA5F-8A7BFA21C472}">
+        <WorkProduct href="uma://_875O8A6hEdqg5YAaNtnnCw#{7F78B340-DD31-451A-9459-25F36E07401C}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_2sMDIjndEdqxANP9kNH4WA" name="rup_business_analysis_model" guid="_2sMDIjndEdqxANP9kNH4WA" presentationName="Business Analysis Model" superActivities="{20E30ECF-7359-45EC-AA5F-8A7BFA21C472}">
+        <WorkProduct href="uma://_875O8A6hEdqg5YAaNtnnCw#{CF53445C-3351-46C6-810E-8251830029A7}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_2sMDIzndEdqxANP9kNH4WA" name="rup_business_design_model" guid="_2sMDIzndEdqxANP9kNH4WA" presentationName="Business Design Model" superActivities="{20E30ECF-7359-45EC-AA5F-8A7BFA21C472}">
+        <WorkProduct href="uma://_875O8A6hEdqg5YAaNtnnCw#_Yi4dsBpWEdqUwb9RAn2tTA"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_3pTysDndEdqxANP9kNH4WA" name="rup_software_requirement" guid="_3pTysDndEdqxANP9kNH4WA" presentationName="Software Requirement" superActivities="{20E30ECF-7359-45EC-AA5F-8A7BFA21C472}">
+        <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{BB502500-EEEC-4BDE-8697-186666D6D5B3}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_3pTysTndEdqxANP9kNH4WA" name="rup_software_requirements_specification" guid="_3pTysTndEdqxANP9kNH4WA" presentationName="Software Requirements Specification" superActivities="{20E30ECF-7359-45EC-AA5F-8A7BFA21C472}">
+        <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{BE8165DC-BAF2-4237-B27D-F2A037023364}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:RoleDescriptor" xmi:id="_5h1akDndEdqxANP9kNH4WA" name="rup_requirement_specifier" guid="_5h1akDndEdqxANP9kNH4WA" presentationName="Requirements Specifier" superActivities="{20E30ECF-7359-45EC-AA5F-8A7BFA21C472}" responsibleFor="_3pTysTndEdqxANP9kNH4WA _3pTysDndEdqxANP9kNH4WA _CMohgBi2Edq_uI8xTPML6g _CMohdhi2Edq_uI8xTPML6g">
+        <Role href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{7264A534-7509-4B4B-AF73-CAECC0178898}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_5iT7sDndEdqxANP9kNH4WA" name="rup_requirements_management_plan" guid="_5iT7sDndEdqxANP9kNH4WA" presentationName="Requirements Management Plan" superActivities="{20E30ECF-7359-45EC-AA5F-8A7BFA21C472}">
+        <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{53CFF11F-D0DB-4C92-B4D8-90D46B0EE3DF}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="_72fYIEogEdqrjq4i3fchvA" name="develop_vision" guid="_72fYIEogEdqrjq4i3fchvA" presentationName="Develop Vision" superActivities="{20E30ECF-7359-45EC-AA5F-8A7BFA21C472}" mandatoryInput="_CMohdBi2Edq_uI8xTPML6g _CMohchi2Edq_uI8xTPML6g _CMohfBi2Edq_uI8xTPML6g" optionalInput="_CMohcxi2Edq_uI8xTPML6g _2sMDITndEdqxANP9kNH4WA _2sMDIDndEdqxANP9kNH4WA _2sMDIjndEdqxANP9kNH4WA _2sMDIzndEdqxANP9kNH4WA" output="_CMohcxi2Edq_uI8xTPML6g _CMohfRi2Edq_uI8xTPML6g" performedPrimarilyBy="_CMohcRi2Edq_uI8xTPML6g">
+        <Task href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{7069CFB7-77C3-4B44-B8A2-9CCA752BDDDA}"/>
+        <selectedSteps href="uma://_1NQDMNnmEdmO6L4XMImrsA#_PRAgANnnEdmO6L4XMImrsA"/>
+        <selectedSteps href="uma://_1NQDMNnmEdmO6L4XMImrsA#_PRAgAdnnEdmO6L4XMImrsA"/>
+        <selectedSteps href="uma://_1NQDMNnmEdmO6L4XMImrsA#_PRAgAtnnEdmO6L4XMImrsA"/>
+        <selectedSteps href="uma://_1NQDMNnmEdmO6L4XMImrsA#_PRAgA9nnEdmO6L4XMImrsA"/>
+        <selectedSteps href="uma://_1NQDMNnmEdmO6L4XMImrsA#_PRAgBNnnEdmO6L4XMImrsA"/>
+        <selectedSteps href="uma://_1NQDMNnmEdmO6L4XMImrsA#_PRAgBdnnEdmO6L4XMImrsA"/>
+        <selectedSteps href="uma://_1NQDMNnmEdmO6L4XMImrsA#_PRAgBtnnEdmO6L4XMImrsA"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="_8_pYkEogEdqrjq4i3fchvA" name="capture_common_vocabulary" guid="_8_pYkEogEdqrjq4i3fchvA" presentationName="Capture a Common Vocabulary" superActivities="{20E30ECF-7359-45EC-AA5F-8A7BFA21C472}" optionalInput="_3pTysDndEdqxANP9kNH4WA _3pTysTndEdqxANP9kNH4WA _CMohdBi2Edq_uI8xTPML6g _8_vfMEogEdqrjq4i3fchvA _CMohcxi2Edq_uI8xTPML6g _CMohgRi2Edq_uI8xTPML6g _CMohdRi2Edq_uI8xTPML6g _CMohgBi2Edq_uI8xTPML6g _CMohdhi2Edq_uI8xTPML6g _2sMDITndEdqxANP9kNH4WA _2sMDIDndEdqxANP9kNH4WA _2sMDIjndEdqxANP9kNH4WA _2sMDIzndEdqxANP9kNH4WA" output="_CMohehi2Edq_uI8xTPML6g" performedPrimarilyBy="_CMohcRi2Edq_uI8xTPML6g">
+        <Task href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{962AC6BA-4ACA-4D7D-B56F-24558A026854}"/>
+        <selectedSteps href="uma://_1NZ0MtnmEdmO6L4XMImrsA#_PT1xkNnnEdmO6L4XMImrsA"/>
+        <selectedSteps href="uma://_1NZ0MtnmEdmO6L4XMImrsA#_PT1xkdnnEdmO6L4XMImrsA"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_8_vfMEogEdqrjq4i3fchvA" name="rup_storyboard" guid="_8_vfMEogEdqrjq4i3fchvA" presentationName="Storyboard" superActivities="{20E30ECF-7359-45EC-AA5F-8A7BFA21C472}">
+        <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{77F6A9E0-5650-40BA-BC60-3C53235CDEF5}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="_9mO3cEogEdqrjq4i3fchvA" name="find_actors_and_use_cases" guid="_9mO3cEogEdqrjq4i3fchvA" presentationName="Find Actors and Use Cases" superActivities="{20E30ECF-7359-45EC-AA5F-8A7BFA21C472}" mandatoryInput="_CMohdBi2Edq_uI8xTPML6g _CMohfBi2Edq_uI8xTPML6g" optionalInput="_CMohcxi2Edq_uI8xTPML6g _CMohehi2Edq_uI8xTPML6g _CMohchi2Edq_uI8xTPML6g _9mbEsEogEdqrjq4i3fchvA _2sMDIDndEdqxANP9kNH4WA _2sMDIjndEdqxANP9kNH4WA _2sMDIzndEdqxANP9kNH4WA" output="_CMohdRi2Edq_uI8xTPML6g _CMohdhi2Edq_uI8xTPML6g _CMohgBi2Edq_uI8xTPML6g _CMohfRi2Edq_uI8xTPML6g" performedPrimarilyBy="_CMohcRi2Edq_uI8xTPML6g">
+        <Task href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{3CD5FA7E-160C-4A39-9DEB-C6D162D8AECD}"/>
+        <selectedSteps href="uma://_1CrK5NnmEdmO6L4XMImrsA#_N_Wq4NnnEdmO6L4XMImrsA"/>
+        <selectedSteps href="uma://_1CrK5NnmEdmO6L4XMImrsA#_N_Wq4dnnEdmO6L4XMImrsA"/>
+        <selectedSteps href="uma://_1CrK5NnmEdmO6L4XMImrsA#_N_f00NnnEdmO6L4XMImrsA"/>
+        <selectedSteps href="uma://_1CrK5NnmEdmO6L4XMImrsA#_N_f00dnnEdmO6L4XMImrsA"/>
+        <selectedSteps href="uma://_1CrK5NnmEdmO6L4XMImrsA#_N_f00tnnEdmO6L4XMImrsA"/>
+        <selectedSteps href="uma://_1CrK5NnmEdmO6L4XMImrsA#_N_f009nnEdmO6L4XMImrsA"/>
+        <selectedSteps href="uma://_1CrK5NnmEdmO6L4XMImrsA#_N_f01NnnEdmO6L4XMImrsA"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_9mbEsEogEdqrjq4i3fchvA" name="rup_business_glossary" guid="_9mbEsEogEdqrjq4i3fchvA" presentationName="Business Glossary" superActivities="{20E30ECF-7359-45EC-AA5F-8A7BFA21C472}">
+        <WorkProduct href="uma://_875O8A6hEdqg5YAaNtnnCw#{81F1291A-0FF1-492B-AD0C-10329B75A52F}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="__YvW7EogEdqrjq4i3fchvA" name="develop_supplementary_specification" guid="__YvW7EogEdqrjq4i3fchvA" presentationName="Develop Supplementary Specifications" superActivities="{20E30ECF-7359-45EC-AA5F-8A7BFA21C472}" additionallyPerformedBy="_5h1akDndEdqxANP9kNH4WA" mandatoryInput="_CMohfBi2Edq_uI8xTPML6g _CMohdBi2Edq_uI8xTPML6g" optionalInput="_CMohchi2Edq_uI8xTPML6g _CMohcxi2Edq_uI8xTPML6g _CMohehi2Edq_uI8xTPML6g _5iT7sDndEdqxANP9kNH4WA" output="_CMohgRi2Edq_uI8xTPML6g _CMohfRi2Edq_uI8xTPML6g" performedPrimarilyBy="_CMohcRi2Edq_uI8xTPML6g">
+        <Task href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#_I5vM8DJwEdqLGaxX1Cc4eA"/>
+        <selectedSteps href="uma://-N2e9fSsCqpKoMN6cIDttAw#_Nn6wYDavEdqp39qgkZWKSA"/>
+        <selectedSteps href="uma://-N2e9fSsCqpKoMN6cIDttAw#_bX77cDfzEdqeAunr9Ma_fQ"/>
+        <selectedSteps href="uma://-N2e9fSsCqpKoMN6cIDttAw#_Uo-_YDavEdqp39qgkZWKSA"/>
+        <selectedSteps href="uma://-N2e9fSsCqpKoMN6cIDttAw#_q0hIwDf0EdqeAunr9Ma_fQ"/>
+        <selectedSteps href="uma://-N2e9fSsCqpKoMN6cIDttAw#_T-t1sDf0EdqeAunr9Ma_fQ"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="_AMsjYEohEdqrjq4i3fchvA" name="manage_dependencies" guid="_AMsjYEohEdqrjq4i3fchvA" presentationName="Manage Dependencies" superActivities="{20E30ECF-7359-45EC-AA5F-8A7BFA21C472}" mandatoryInput="_5iT7sDndEdqxANP9kNH4WA" optionalInput="_CMohdBi2Edq_uI8xTPML6g _CMohfRi2Edq_uI8xTPML6g _CMohcxi2Edq_uI8xTPML6g _AM4woEohEdqrjq4i3fchvA" output="_5iT7sDndEdqxANP9kNH4WA _CMohfRi2Edq_uI8xTPML6g _CMohcxi2Edq_uI8xTPML6g" performedPrimarilyBy="_CMohcRi2Edq_uI8xTPML6g">
+        <Task href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{7F42C4D6-584F-4B19-9B0B-FDE86BD85FBB}"/>
+        <selectedSteps href="uma://_1IVuAtnmEdmO6L4XMImrsA#_PIEmcNnnEdmO6L4XMImrsA"/>
+        <selectedSteps href="uma://_1IVuAtnmEdmO6L4XMImrsA#_PIEmcdnnEdmO6L4XMImrsA"/>
+        <selectedSteps href="uma://_1IVuAtnmEdmO6L4XMImrsA#_PIEmctnnEdmO6L4XMImrsA"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_AM4woEohEdqrjq4i3fchvA" name="rup_change_request" guid="_AM4woEohEdqrjq4i3fchvA" presentationName="Change Request" superActivities="{20E30ECF-7359-45EC-AA5F-8A7BFA21C472}">
+        <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{694A7BC8-3D20-4172-BC56-6C7BD4590BA5}"/>
+      </processElements>
+    </childPackages>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_A8mc8xi2Edq_uI8xTPML6g" name="manage_the_scope_of_the_system" guid="_A8mc8xi2Edq_uI8xTPML6g">
+      <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="{CA9197A9-051E-4845-A7FC-2A8750BD8C02}" name="manage_the_scope_of_the_system" guid="{CA9197A9-051E-4845-A7FC-2A8750BD8C02}" presentationName="Manage the Scope of the System" briefDescription="This activity ensures that the requirements for the system are clear and establishes a manageable set of requirements work for the iteration." superActivities="{38A9C609-9A59-4D03-B835-AA84A716E626}" linkToPredecessor="_Z54HoCZQEdqdfr0-jOl3Fw" breakdownElements="_CMuoFhi2Edq_uI8xTPML6g _CMuoFxi2Edq_uI8xTPML6g _CMuoGRi2Edq_uI8xTPML6g _CMuoHRi2Edq_uI8xTPML6g _CMuoHhi2Edq_uI8xTPML6g _CM0usxi2Edq_uI8xTPML6g _-RoxkTndEdqxANP9kNH4WA _-RoxkzndEdqxANP9kNH4WA _BCa3IDneEdqxANP9kNH4WA _BCzRoDneEdqxANP9kNH4WA _BVkP8EohEdqrjq4i3fchvA _BVqWkEohEdqrjq4i3fchvA _BVqWkUohEdqrjq4i3fchvA _BVqWkkohEdqrjq4i3fchvA _DE0nEEohEdqrjq4i3fchvA _DE6tsEohEdqrjq4i3fchvA _DE6tsUohEdqrjq4i3fchvA _D03j8EohEdqrjq4i3fchvA _D09qkEohEdqrjq4i3fchvA _D09qkUohEdqrjq4i3fchvA">
+        <presentation xmi:id="-6zWpNxynBZwFtg3yoFTRIA" href="uma://-ZryvkL5odWOFg6jD_52dpg#-6zWpNxynBZwFtg3yoFTRIA"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:RoleDescriptor" xmi:id="_CMuoFhi2Edq_uI8xTPML6g" name="rup_system_analyst" guid="_CMuoFhi2Edq_uI8xTPML6g" presentationName="System Analyst" superActivities="{CA9197A9-051E-4845-A7FC-2A8750BD8C02}" modifies="_CMuoHRi2Edq_uI8xTPML6g _CMuoHhi2Edq_uI8xTPML6g _DE6tsEohEdqrjq4i3fchvA" responsibleFor="_DE6tsEohEdqrjq4i3fchvA _CM0usxi2Edq_uI8xTPML6g _CMuoHhi2Edq_uI8xTPML6g _CMuoHRi2Edq_uI8xTPML6g _CMuoFxi2Edq_uI8xTPML6g">
+        <Role href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{F1F206DF-3AA0-4AC0-92EF-8E4A01B6C5B5}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_CMuoFxi2Edq_uI8xTPML6g" name="rup_stakeholder_requests" guid="_CMuoFxi2Edq_uI8xTPML6g" presentationName="Stakeholder Requests" superActivities="{CA9197A9-051E-4845-A7FC-2A8750BD8C02}">
+        <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{75F38765-E25B-4459-907E-77F429652C0F}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_CMuoGRi2Edq_uI8xTPML6g" name="rup_iteration_plan" guid="_CMuoGRi2Edq_uI8xTPML6g" presentationName="Iteration Plan" superActivities="{CA9197A9-051E-4845-A7FC-2A8750BD8C02}">
+        <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{97269E0F-CDF3-448D-A732-DF39D099BDDD}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_CMuoHRi2Edq_uI8xTPML6g" name="rup_vision" guid="_CMuoHRi2Edq_uI8xTPML6g" presentationName="Vision" superActivities="{CA9197A9-051E-4845-A7FC-2A8750BD8C02}">
+        <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{417F089F-6636-451A-A8AB-AB4EAC7AC4F1}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_CMuoHhi2Edq_uI8xTPML6g" name="rup_requirements_attributes" guid="_CMuoHhi2Edq_uI8xTPML6g" presentationName="Requirements Attributes" superActivities="{CA9197A9-051E-4845-A7FC-2A8750BD8C02}">
+        <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{D0E2E7A1-4179-470E-AA18-419D5FEA275D}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_CM0usxi2Edq_uI8xTPML6g" name="rup_usecase_model" guid="_CM0usxi2Edq_uI8xTPML6g" presentationName="Use-Case Model" superActivities="{CA9197A9-051E-4845-A7FC-2A8750BD8C02}">
+        <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{9C66F2EC-EDEB-4369-9AFB-04B9E7CBCB8E}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_DQQBABprEdqAydkndz2adQ" guid="_DQQBABprEdqAydkndz2adQ" pred="{20E30ECF-7359-45EC-AA5F-8A7BFA21C472}"/>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_Z54HoCZQEdqdfr0-jOl3Fw" guid="_Z54HoCZQEdqdfr0-jOl3Fw" pred="{20E30ECF-7359-45EC-AA5F-8A7BFA21C472}"/>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_-RoxkTndEdqxANP9kNH4WA" name="rup_business_use_case_model" guid="_-RoxkTndEdqxANP9kNH4WA" presentationName="Business Use Case Model" superActivities="{CA9197A9-051E-4845-A7FC-2A8750BD8C02}">
+        <WorkProduct href="uma://_875O8A6hEdqg5YAaNtnnCw#{89BEF367-5875-47E0-97D6-23E5BCCE52B8}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_-RoxkzndEdqxANP9kNH4WA" name="rup_business_analysis_model" guid="_-RoxkzndEdqxANP9kNH4WA" presentationName="Business Analysis Model" superActivities="{CA9197A9-051E-4845-A7FC-2A8750BD8C02}">
+        <WorkProduct href="uma://_875O8A6hEdqg5YAaNtnnCw#{CF53445C-3351-46C6-810E-8251830029A7}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:RoleDescriptor" xmi:id="_BCa3IDneEdqxANP9kNH4WA" name="rup_software_architect" guid="_BCa3IDneEdqxANP9kNH4WA" presentationName="Software Architect" superActivities="{CA9197A9-051E-4845-A7FC-2A8750BD8C02}" modifies="_BCzRoDneEdqxANP9kNH4WA _D09qkUohEdqrjq4i3fchvA _CMuoHhi2Edq_uI8xTPML6g" responsibleFor="_BCzRoDneEdqxANP9kNH4WA">
+        <Role href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{4AC346F0-E6FC-4D2C-8410-2EDF8DDDC91D}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_BCzRoDneEdqxANP9kNH4WA" name="rup_software_architecture_document" guid="_BCzRoDneEdqxANP9kNH4WA" presentationName="Software Architecture Document" superActivities="{CA9197A9-051E-4845-A7FC-2A8750BD8C02}">
+        <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{6F49641A-ED10-47B5-9E5D-3F90A6BF3006}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="_BVkP8EohEdqrjq4i3fchvA" name="develop_vision" guid="_BVkP8EohEdqrjq4i3fchvA" presentationName="Develop Vision" superActivities="{CA9197A9-051E-4845-A7FC-2A8750BD8C02}" mandatoryInput="_CMuoFxi2Edq_uI8xTPML6g _BVqWkEohEdqrjq4i3fchvA _CMuoGRi2Edq_uI8xTPML6g" optionalInput="_CMuoHRi2Edq_uI8xTPML6g _BVqWkUohEdqrjq4i3fchvA _-RoxkTndEdqxANP9kNH4WA _-RoxkzndEdqxANP9kNH4WA _BVqWkkohEdqrjq4i3fchvA" output="_CMuoHRi2Edq_uI8xTPML6g _CMuoHhi2Edq_uI8xTPML6g" performedPrimarilyBy="_CMuoFhi2Edq_uI8xTPML6g">
+        <Task href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{7069CFB7-77C3-4B44-B8A2-9CCA752BDDDA}"/>
+        <selectedSteps href="uma://_1NQDMNnmEdmO6L4XMImrsA#_PRAgANnnEdmO6L4XMImrsA"/>
+        <selectedSteps href="uma://_1NQDMNnmEdmO6L4XMImrsA#_PRAgAdnnEdmO6L4XMImrsA"/>
+        <selectedSteps href="uma://_1NQDMNnmEdmO6L4XMImrsA#_PRAgAtnnEdmO6L4XMImrsA"/>
+        <selectedSteps href="uma://_1NQDMNnmEdmO6L4XMImrsA#_PRAgA9nnEdmO6L4XMImrsA"/>
+        <selectedSteps href="uma://_1NQDMNnmEdmO6L4XMImrsA#_PRAgBNnnEdmO6L4XMImrsA"/>
+        <selectedSteps href="uma://_1NQDMNnmEdmO6L4XMImrsA#_PRAgBdnnEdmO6L4XMImrsA"/>
+        <selectedSteps href="uma://_1NQDMNnmEdmO6L4XMImrsA#_PRAgBtnnEdmO6L4XMImrsA"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_BVqWkEohEdqrjq4i3fchvA" name="rup_business_case" guid="_BVqWkEohEdqrjq4i3fchvA" presentationName="Business Case" superActivities="{CA9197A9-051E-4845-A7FC-2A8750BD8C02}">
+        <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{9B13F235-E8E9-4CDC-9ACE-216124C8C5EC}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_BVqWkUohEdqrjq4i3fchvA" name="rup_business_rule" guid="_BVqWkUohEdqrjq4i3fchvA" presentationName="Business Rule" superActivities="{CA9197A9-051E-4845-A7FC-2A8750BD8C02}">
+        <WorkProduct href="uma://_875O8A6hEdqg5YAaNtnnCw#{7F78B340-DD31-451A-9459-25F36E07401C}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_BVqWkkohEdqrjq4i3fchvA" name="rup_business_design_model" guid="_BVqWkkohEdqrjq4i3fchvA" presentationName="Business Design Model" superActivities="{CA9197A9-051E-4845-A7FC-2A8750BD8C02}">
+        <WorkProduct href="uma://_875O8A6hEdqg5YAaNtnnCw#_Yi4dsBpWEdqUwb9RAn2tTA"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="_DE0nEEohEdqrjq4i3fchvA" name="manage_dependencies" guid="_DE0nEEohEdqrjq4i3fchvA" presentationName="Manage Dependencies" superActivities="{CA9197A9-051E-4845-A7FC-2A8750BD8C02}" mandatoryInput="_DE6tsEohEdqrjq4i3fchvA" optionalInput="_CMuoFxi2Edq_uI8xTPML6g _CMuoHhi2Edq_uI8xTPML6g _CMuoHRi2Edq_uI8xTPML6g _DE6tsUohEdqrjq4i3fchvA" output="_DE6tsEohEdqrjq4i3fchvA _CMuoHhi2Edq_uI8xTPML6g _CMuoHRi2Edq_uI8xTPML6g" performedPrimarilyBy="_CMuoFhi2Edq_uI8xTPML6g">
+        <Task href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{7F42C4D6-584F-4B19-9B0B-FDE86BD85FBB}"/>
+        <selectedSteps href="uma://_1IVuAtnmEdmO6L4XMImrsA#_PIEmcNnnEdmO6L4XMImrsA"/>
+        <selectedSteps href="uma://_1IVuAtnmEdmO6L4XMImrsA#_PIEmcdnnEdmO6L4XMImrsA"/>
+        <selectedSteps href="uma://_1IVuAtnmEdmO6L4XMImrsA#_PIEmctnnEdmO6L4XMImrsA"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_DE6tsEohEdqrjq4i3fchvA" name="rup_requirements_management_plan" guid="_DE6tsEohEdqrjq4i3fchvA" presentationName="Requirements Management Plan" superActivities="{CA9197A9-051E-4845-A7FC-2A8750BD8C02}">
+        <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{53CFF11F-D0DB-4C92-B4D8-90D46B0EE3DF}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_DE6tsUohEdqrjq4i3fchvA" name="rup_change_request" guid="_DE6tsUohEdqrjq4i3fchvA" presentationName="Change Request" superActivities="{CA9197A9-051E-4845-A7FC-2A8750BD8C02}">
+        <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{694A7BC8-3D20-4172-BC56-6C7BD4590BA5}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="_D03j8EohEdqrjq4i3fchvA" name="prioritize_use_cases" guid="_D03j8EohEdqrjq4i3fchvA" presentationName="Prioritize Use Cases" superActivities="{CA9197A9-051E-4845-A7FC-2A8750BD8C02}" mandatoryInput="_CMuoGRi2Edq_uI8xTPML6g _CM0usxi2Edq_uI8xTPML6g _D09qkEohEdqrjq4i3fchvA _BCzRoDneEdqxANP9kNH4WA" optionalInput="_CMuoHRi2Edq_uI8xTPML6g _D09qkUohEdqrjq4i3fchvA _CMuoHhi2Edq_uI8xTPML6g" output="_BCzRoDneEdqxANP9kNH4WA _D09qkUohEdqrjq4i3fchvA _CMuoHhi2Edq_uI8xTPML6g" performedPrimarilyBy="_BCa3IDneEdqxANP9kNH4WA">
+        <Task href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{6E23D919-D149-43C2-9D37-8AF77B667CA8}"/>
+        <selectedSteps href="uma://_1C0U09nmEdmO6L4XMImrsA#_OA14oNnnEdmO6L4XMImrsA"/>
+        <selectedSteps href="uma://_1C0U09nmEdmO6L4XMImrsA#_OA_poNnnEdmO6L4XMImrsA"/>
+        <selectedSteps href="uma://_1C0U09nmEdmO6L4XMImrsA#_OBcVkNnnEdmO6L4XMImrsA"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_D09qkEohEdqrjq4i3fchvA" name="rup_risk_list" guid="_D09qkEohEdqrjq4i3fchvA" presentationName="Risk List" superActivities="{CA9197A9-051E-4845-A7FC-2A8750BD8C02}">
+        <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{32D7C484-2FAF-4442-8DA0-6D474B91A9DD}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_D09qkUohEdqrjq4i3fchvA" name="rup_software_requirement" guid="_D09qkUohEdqrjq4i3fchvA" presentationName="Software Requirement" superActivities="{CA9197A9-051E-4845-A7FC-2A8750BD8C02}">
+        <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{BB502500-EEEC-4BDE-8697-186666D6D5B3}"/>
+      </processElements>
+    </childPackages>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_A8mc9Bi2Edq_uI8xTPML6g" name="refine_the_system_definition" guid="_A8mc9Bi2Edq_uI8xTPML6g">
+      <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="{0FEE5795-6090-4D82-9BDB-925E5F0D9985}" name="refine_the_system_definition" guid="{0FEE5795-6090-4D82-9BDB-925E5F0D9985}" presentationName="Refine the System Definition" briefDescription="This activity details the requirements to be developed in the current development cycle." superActivities="{38A9C609-9A59-4D03-B835-AA84A716E626}" breakdownElements="_CM61URi2Edq_uI8xTPML6g _CM61Uhi2Edq_uI8xTPML6g _CM61Uxi2Edq_uI8xTPML6g _CM61VBi2Edq_uI8xTPML6g _CM61VRi2Edq_uI8xTPML6g _CM61Vhi2Edq_uI8xTPML6g _CM61Vxi2Edq_uI8xTPML6g _CM61WBi2Edq_uI8xTPML6g _CM61WRi2Edq_uI8xTPML6g _CM61Whi2Edq_uI8xTPML6g _rh-NcTT7EdqNn71iifr4xw _ETqlcDneEdqxANP9kNH4WA _F1szQkohEdqrjq4i3fchvA _GmHjkEohEdqrjq4i3fchvA _GmNqMEohEdqrjq4i3fchvA _HVl4sEohEdqrjq4i3fchvA _HVr_UEohEdqrjq4i3fchvA _HVr_UUohEdqrjq4i3fchvA _HVr_UkohEdqrjq4i3fchvA">
+        <presentation xmi:id="-dMLJWgWix7KXgU6Y7b3ejg" href="uma://-ZryvkL5odWOFg6jD_52dpg#-dMLJWgWix7KXgU6Y7b3ejg"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:RoleDescriptor" xmi:id="_CM61URi2Edq_uI8xTPML6g" name="rup_requirement_specifier" guid="_CM61URi2Edq_uI8xTPML6g" presentationName="Requirements Specifier" superActivities="{0FEE5795-6090-4D82-9BDB-925E5F0D9985}" modifies="_CM61Uhi2Edq_uI8xTPML6g _ETqlcDneEdqxANP9kNH4WA _HVr_UUohEdqrjq4i3fchvA _HVr_UkohEdqrjq4i3fchvA" responsibleFor="_HVr_UkohEdqrjq4i3fchvA _HVr_UUohEdqrjq4i3fchvA _CM61Uhi2Edq_uI8xTPML6g">
+        <Role href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{7264A534-7509-4B4B-AF73-CAECC0178898}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_CM61Uhi2Edq_uI8xTPML6g" name="rup_usecase" guid="_CM61Uhi2Edq_uI8xTPML6g" presentationName="Use Case" superActivities="{0FEE5795-6090-4D82-9BDB-925E5F0D9985}">
+        <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{B1526BC5-E346-42CB-A08A-3C0D7F382407}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_CM61Uxi2Edq_uI8xTPML6g" name="rup_iteration_plan" guid="_CM61Uxi2Edq_uI8xTPML6g" presentationName="Iteration Plan" superActivities="{0FEE5795-6090-4D82-9BDB-925E5F0D9985}">
+        <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{97269E0F-CDF3-448D-A732-DF39D099BDDD}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_CM61VBi2Edq_uI8xTPML6g" name="rup_glossary" guid="_CM61VBi2Edq_uI8xTPML6g" presentationName="Glossary" superActivities="{0FEE5795-6090-4D82-9BDB-925E5F0D9985}">
+        <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{3BF8CC04-9101-47A4-9473-C8205EA588B6}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_CM61VRi2Edq_uI8xTPML6g" name="rup_stakeholder_requests" guid="_CM61VRi2Edq_uI8xTPML6g" presentationName="Stakeholder Requests" superActivities="{0FEE5795-6090-4D82-9BDB-925E5F0D9985}">
+        <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{75F38765-E25B-4459-907E-77F429652C0F}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_CM61Vhi2Edq_uI8xTPML6g" name="rup_usecase_model" guid="_CM61Vhi2Edq_uI8xTPML6g" presentationName="Use-Case Model" superActivities="{0FEE5795-6090-4D82-9BDB-925E5F0D9985}">
+        <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{9C66F2EC-EDEB-4369-9AFB-04B9E7CBCB8E}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_CM61Vxi2Edq_uI8xTPML6g" name="rup_supplementary_specification" guid="_CM61Vxi2Edq_uI8xTPML6g" presentationName="Supplementary Specifications" superActivities="{0FEE5795-6090-4D82-9BDB-925E5F0D9985}">
+        <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{B16C2941-791C-44E6-B353-354109B5C9DE}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_CM61WBi2Edq_uI8xTPML6g" name="rup_requirements_management_plan" guid="_CM61WBi2Edq_uI8xTPML6g" presentationName="Requirements Management Plan" superActivities="{0FEE5795-6090-4D82-9BDB-925E5F0D9985}">
+        <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{53CFF11F-D0DB-4C92-B4D8-90D46B0EE3DF}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_CM61WRi2Edq_uI8xTPML6g" name="rup_vision" guid="_CM61WRi2Edq_uI8xTPML6g" presentationName="Vision" superActivities="{0FEE5795-6090-4D82-9BDB-925E5F0D9985}">
+        <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{417F089F-6636-451A-A8AB-AB4EAC7AC4F1}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_CM61Whi2Edq_uI8xTPML6g" name="rup_storyboard" guid="_CM61Whi2Edq_uI8xTPML6g" presentationName="Storyboard" superActivities="{0FEE5795-6090-4D82-9BDB-925E5F0D9985}">
+        <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{77F6A9E0-5650-40BA-BC60-3C53235CDEF5}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:RoleDescriptor" xmi:id="_rh-NcTT7EdqNn71iifr4xw" name="rup_system_analyst" guid="_rh-NcTT7EdqNn71iifr4xw" presentationName="System Analyst" superActivities="{0FEE5795-6090-4D82-9BDB-925E5F0D9985}" modifies="_CM61Vxi2Edq_uI8xTPML6g _ETqlcDneEdqxANP9kNH4WA" responsibleFor="_ETqlcDneEdqxANP9kNH4WA _CM61Whi2Edq_uI8xTPML6g _CM61WRi2Edq_uI8xTPML6g _CM61WBi2Edq_uI8xTPML6g _CM61Vxi2Edq_uI8xTPML6g _CM61Vhi2Edq_uI8xTPML6g _CM61VRi2Edq_uI8xTPML6g _CM61VBi2Edq_uI8xTPML6g">
+        <Role href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{F1F206DF-3AA0-4AC0-92EF-8E4A01B6C5B5}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_ETqlcDneEdqxANP9kNH4WA" name="rup_requirements_attributes" guid="_ETqlcDneEdqxANP9kNH4WA" presentationName="Requirements Attributes" superActivities="{0FEE5795-6090-4D82-9BDB-925E5F0D9985}">
+        <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{D0E2E7A1-4179-470E-AA18-419D5FEA275D}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="_F1szQkohEdqrjq4i3fchvA" name="detail_a_use_case" guid="_F1szQkohEdqrjq4i3fchvA" presentationName="Detail a Use Case" superActivities="{0FEE5795-6090-4D82-9BDB-925E5F0D9985}" mandatoryInput="_CM61Uhi2Edq_uI8xTPML6g _CM61Uxi2Edq_uI8xTPML6g" optionalInput="_CM61VBi2Edq_uI8xTPML6g _CM61VRi2Edq_uI8xTPML6g _CM61Vhi2Edq_uI8xTPML6g _CM61Vxi2Edq_uI8xTPML6g _CM61WBi2Edq_uI8xTPML6g _CM61WRi2Edq_uI8xTPML6g _CM61Whi2Edq_uI8xTPML6g" output="_CM61Uhi2Edq_uI8xTPML6g _ETqlcDneEdqxANP9kNH4WA" performedPrimarilyBy="_CM61URi2Edq_uI8xTPML6g">
+        <Task href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{536BC669-A8FB-426D-88FF-CBEA806A9066}"/>
+        <selectedSteps href="uma://_1CYP8NnmEdmO6L4XMImrsA#_N2HPUNnnEdmO6L4XMImrsA"/>
+        <selectedSteps href="uma://_1CYP8NnmEdmO6L4XMImrsA#_N2HPUdnnEdmO6L4XMImrsA"/>
+        <selectedSteps href="uma://_1CYP8NnmEdmO6L4XMImrsA#_N2HPUtnnEdmO6L4XMImrsA"/>
+        <selectedSteps href="uma://_1CYP8NnmEdmO6L4XMImrsA#_N2RAUNnnEdmO6L4XMImrsA"/>
+        <selectedSteps href="uma://_1CYP8NnmEdmO6L4XMImrsA#_N2RAUdnnEdmO6L4XMImrsA"/>
+        <selectedSteps href="uma://_1CYP8NnmEdmO6L4XMImrsA#_N2RAUtnnEdmO6L4XMImrsA"/>
+        <selectedSteps href="uma://_1CYP8NnmEdmO6L4XMImrsA#_N2RAU9nnEdmO6L4XMImrsA"/>
+        <selectedSteps href="uma://_1CYP8NnmEdmO6L4XMImrsA#_N2RAVNnnEdmO6L4XMImrsA"/>
+        <selectedSteps href="uma://_1CYP8NnmEdmO6L4XMImrsA#_N2RAVdnnEdmO6L4XMImrsA"/>
+        <selectedSteps href="uma://_1CYP8NnmEdmO6L4XMImrsA#_N2RAVtnnEdmO6L4XMImrsA"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="_GmHjkEohEdqrjq4i3fchvA" name="develop_supplementary_specification" guid="_GmHjkEohEdqrjq4i3fchvA" presentationName="Develop Supplementary Specifications" superActivities="{0FEE5795-6090-4D82-9BDB-925E5F0D9985}" additionallyPerformedBy="_CM61URi2Edq_uI8xTPML6g" mandatoryInput="_CM61Uxi2Edq_uI8xTPML6g _CM61VRi2Edq_uI8xTPML6g" optionalInput="_GmNqMEohEdqrjq4i3fchvA _CM61WRi2Edq_uI8xTPML6g _CM61VBi2Edq_uI8xTPML6g _CM61WBi2Edq_uI8xTPML6g" output="_CM61Vxi2Edq_uI8xTPML6g _ETqlcDneEdqxANP9kNH4WA" performedPrimarilyBy="_rh-NcTT7EdqNn71iifr4xw">
+        <Task href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#_I5vM8DJwEdqLGaxX1Cc4eA"/>
+        <selectedSteps href="uma://-N2e9fSsCqpKoMN6cIDttAw#_Nn6wYDavEdqp39qgkZWKSA"/>
+        <selectedSteps href="uma://-N2e9fSsCqpKoMN6cIDttAw#_bX77cDfzEdqeAunr9Ma_fQ"/>
+        <selectedSteps href="uma://-N2e9fSsCqpKoMN6cIDttAw#_Uo-_YDavEdqp39qgkZWKSA"/>
+        <selectedSteps href="uma://-N2e9fSsCqpKoMN6cIDttAw#_q0hIwDf0EdqeAunr9Ma_fQ"/>
+        <selectedSteps href="uma://-N2e9fSsCqpKoMN6cIDttAw#_T-t1sDf0EdqeAunr9Ma_fQ"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_GmNqMEohEdqrjq4i3fchvA" name="rup_business_case" guid="_GmNqMEohEdqrjq4i3fchvA" presentationName="Business Case" superActivities="{0FEE5795-6090-4D82-9BDB-925E5F0D9985}">
+        <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{9B13F235-E8E9-4CDC-9ACE-216124C8C5EC}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="_HVl4sEohEdqrjq4i3fchvA" name="detail_software_requirements" guid="_HVl4sEohEdqrjq4i3fchvA" presentationName="Detail the Software Requirements" superActivities="{0FEE5795-6090-4D82-9BDB-925E5F0D9985}" mandatoryInput="_CM61WRi2Edq_uI8xTPML6g _CM61Uxi2Edq_uI8xTPML6g" optionalInput="_CM61WBi2Edq_uI8xTPML6g _CM61VBi2Edq_uI8xTPML6g _HVr_UEohEdqrjq4i3fchvA _ETqlcDneEdqxANP9kNH4WA" output="_HVr_UUohEdqrjq4i3fchvA _HVr_UkohEdqrjq4i3fchvA _ETqlcDneEdqxANP9kNH4WA" performedPrimarilyBy="_CM61URi2Edq_uI8xTPML6g">
+        <Task href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{A1FA1E95-8028-42EB-9B92-0DA77380F3E1}"/>
+        <selectedSteps href="uma://_1Ld6gNnmEdmO6L4XMImrsA#_PO7cYNnnEdmO6L4XMImrsA"/>
+        <selectedSteps href="uma://_1Ld6gNnmEdmO6L4XMImrsA#_PO7cYdnnEdmO6L4XMImrsA"/>
+        <selectedSteps href="uma://_1Ld6gNnmEdmO6L4XMImrsA#_PO7cYtnnEdmO6L4XMImrsA"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_HVr_UEohEdqrjq4i3fchvA" name="rup_user_interface_prototype" guid="_HVr_UEohEdqrjq4i3fchvA" presentationName="User-Interface Prototype" superActivities="{0FEE5795-6090-4D82-9BDB-925E5F0D9985}">
+        <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{3DF10D00-8C80-4429-92B8-C6A221F0F90C}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_HVr_UUohEdqrjq4i3fchvA" name="rup_software_requirements_specification" guid="_HVr_UUohEdqrjq4i3fchvA" presentationName="Software Requirements Specification" superActivities="{0FEE5795-6090-4D82-9BDB-925E5F0D9985}">
+        <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{BE8165DC-BAF2-4237-B27D-F2A037023364}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_HVr_UkohEdqrjq4i3fchvA" name="rup_software_requirement" guid="_HVr_UkohEdqrjq4i3fchvA" presentationName="Software Requirement" superActivities="{0FEE5795-6090-4D82-9BDB-925E5F0D9985}">
+        <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{BB502500-EEEC-4BDE-8697-186666D6D5B3}"/>
+      </processElements>
+    </childPackages>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_A8mc9Ri2Edq_uI8xTPML6g" name="manage_changing_requirements" guid="_A8mc9Ri2Edq_uI8xTPML6g">
+      <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="{28B39D62-9D73-4254-9CB8-26CFA737D45E}" name="manage_changing_requirements" guid="{28B39D62-9D73-4254-9CB8-26CFA737D45E}" presentationName="Manage Changing Requirements" briefDescription="This activity manages changes to requirements and assesses their overall impact." isPlanned="false" superActivities="{38A9C609-9A59-4D03-B835-AA84A716E626}" isEventDriven="true" breakdownElements="_CM61Yhi2Edq_uI8xTPML6g _CM61ZRi2Edq_uI8xTPML6g _CM61Zhi2Edq_uI8xTPML6g _CM61Zxi2Edq_uI8xTPML6g _CM61aBi2Edq_uI8xTPML6g _CM61aRi2Edq_uI8xTPML6g _CM61axi2Edq_uI8xTPML6g _CNA78Ri2Edq_uI8xTPML6g _JvNBEDneEdqxANP9kNH4WA _JvNBETneEdqxANP9kNH4WA _KkylQDneEdqxANP9kNH4WA _KkylQTneEdqxANP9kNH4WA _LVNVlDneEdqxANP9kNH4WA _IbNc8kohEdqrjq4i3fchvA _JHbpwEohEdqrjq4i3fchvA _J3d_kEohEdqrjq4i3fchvA _J3kGMEohEdqrjq4i3fchvA _J3kGMUohEdqrjq4i3fchvA _J3kGMkohEdqrjq4i3fchvA _J3kGM0ohEdqrjq4i3fchvA _J3kGNEohEdqrjq4i3fchvA _i2a7cL7YEdqboqO8QqaIwQ">
+        <presentation xmi:id="-QhMuihC6lxUD3MzfNIHNjQ" href="uma://-ZryvkL5odWOFg6jD_52dpg#-QhMuihC6lxUD3MzfNIHNjQ"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_CM61Yhi2Edq_uI8xTPML6g" name="rup_glossary" guid="_CM61Yhi2Edq_uI8xTPML6g" presentationName="Glossary" superActivities="{28B39D62-9D73-4254-9CB8-26CFA737D45E}">
+        <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{3BF8CC04-9101-47A4-9473-C8205EA588B6}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_CM61ZRi2Edq_uI8xTPML6g" name="rup_vision" guid="_CM61ZRi2Edq_uI8xTPML6g" presentationName="Vision" superActivities="{28B39D62-9D73-4254-9CB8-26CFA737D45E}">
+        <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{417F089F-6636-451A-A8AB-AB4EAC7AC4F1}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_CM61Zhi2Edq_uI8xTPML6g" name="rup_usecase_model" guid="_CM61Zhi2Edq_uI8xTPML6g" presentationName="Use-Case Model" superActivities="{28B39D62-9D73-4254-9CB8-26CFA737D45E}">
+        <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{9C66F2EC-EDEB-4369-9AFB-04B9E7CBCB8E}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_CM61Zxi2Edq_uI8xTPML6g" name="rup_usecase" guid="_CM61Zxi2Edq_uI8xTPML6g" presentationName="Use Case" superActivities="{28B39D62-9D73-4254-9CB8-26CFA737D45E}">
+        <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{B1526BC5-E346-42CB-A08A-3C0D7F382407}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_CM61aBi2Edq_uI8xTPML6g" name="rup_change_request" guid="_CM61aBi2Edq_uI8xTPML6g" presentationName="Change Request" superActivities="{28B39D62-9D73-4254-9CB8-26CFA737D45E}">
+        <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{694A7BC8-3D20-4172-BC56-6C7BD4590BA5}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_CM61aRi2Edq_uI8xTPML6g" name="rup_supplementary_specification" guid="_CM61aRi2Edq_uI8xTPML6g" presentationName="Supplementary Specifications" superActivities="{28B39D62-9D73-4254-9CB8-26CFA737D45E}">
+        <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{B16C2941-791C-44E6-B353-354109B5C9DE}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_CM61axi2Edq_uI8xTPML6g" name="rup_usecase_package" guid="_CM61axi2Edq_uI8xTPML6g" presentationName="Use-Case Package" superActivities="{28B39D62-9D73-4254-9CB8-26CFA737D45E}">
+        <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{102E424E-98DE-4F54-B1A0-8F8FD54D6BEE}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:RoleDescriptor" xmi:id="_CNA78Ri2Edq_uI8xTPML6g" name="rup_system_analyst" guid="_CNA78Ri2Edq_uI8xTPML6g" presentationName="System Analyst" superActivities="{28B39D62-9D73-4254-9CB8-26CFA737D45E}" modifies="_CM61Yhi2Edq_uI8xTPML6g _CM61aRi2Edq_uI8xTPML6g _CM61Zhi2Edq_uI8xTPML6g _JvNBETneEdqxANP9kNH4WA _KkylQDneEdqxANP9kNH4WA _CM61ZRi2Edq_uI8xTPML6g" responsibleFor="_J3kGNEohEdqrjq4i3fchvA _KkylQTneEdqxANP9kNH4WA _KkylQDneEdqxANP9kNH4WA _JvNBETneEdqxANP9kNH4WA _CM61axi2Edq_uI8xTPML6g _CM61aRi2Edq_uI8xTPML6g _CM61Zhi2Edq_uI8xTPML6g _CM61ZRi2Edq_uI8xTPML6g _CM61Yhi2Edq_uI8xTPML6g">
+        <Role href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{F1F206DF-3AA0-4AC0-92EF-8E4A01B6C5B5}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_JvNBEDneEdqxANP9kNH4WA" name="rup_actor" guid="_JvNBEDneEdqxANP9kNH4WA" presentationName="Actor" superActivities="{28B39D62-9D73-4254-9CB8-26CFA737D45E}">
+        <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{0EEBBA43-F5C6-4594-9F06-65D99F7556DF}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_JvNBETneEdqxANP9kNH4WA" name="rup_requirements_attributes" guid="_JvNBETneEdqxANP9kNH4WA" presentationName="Requirements Attributes" superActivities="{28B39D62-9D73-4254-9CB8-26CFA737D45E}">
+        <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{D0E2E7A1-4179-470E-AA18-419D5FEA275D}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_KkylQDneEdqxANP9kNH4WA" name="rup_requirements_management_plan" guid="_KkylQDneEdqxANP9kNH4WA" presentationName="Requirements Management Plan" superActivities="{28B39D62-9D73-4254-9CB8-26CFA737D45E}">
+        <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{53CFF11F-D0DB-4C92-B4D8-90D46B0EE3DF}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_KkylQTneEdqxANP9kNH4WA" name="rup_stakeholder_requests" guid="_KkylQTneEdqxANP9kNH4WA" presentationName="Stakeholder Requests" superActivities="{28B39D62-9D73-4254-9CB8-26CFA737D45E}">
+        <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{75F38765-E25B-4459-907E-77F429652C0F}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_LVNVlDneEdqxANP9kNH4WA" name="rup_review_record" guid="_LVNVlDneEdqxANP9kNH4WA" presentationName="Review Record" superActivities="{28B39D62-9D73-4254-9CB8-26CFA737D45E}">
+        <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{4047B5B0-5FB7-4960-8A7E-451719D85DFF}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="_IbNc8kohEdqrjq4i3fchvA" name="structure_use_case_model" guid="_IbNc8kohEdqrjq4i3fchvA" presentationName="Structure the Use-Case Model" superActivities="{28B39D62-9D73-4254-9CB8-26CFA737D45E}" mandatoryInput="_CM61Zhi2Edq_uI8xTPML6g" output="_CM61Yhi2Edq_uI8xTPML6g _CM61aRi2Edq_uI8xTPML6g _CM61Zhi2Edq_uI8xTPML6g _JvNBETneEdqxANP9kNH4WA" performedPrimarilyBy="_CNA78Ri2Edq_uI8xTPML6g">
+        <Task href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{F7D9D038-B184-43CC-9353-15BA154F87B5}"/>
+        <selectedSteps href="uma://_1CrK5tnmEdmO6L4XMImrsA#_OAQCwNnnEdmO6L4XMImrsA"/>
+        <selectedSteps href="uma://_1CrK5tnmEdmO6L4XMImrsA#_OAQCwdnnEdmO6L4XMImrsA"/>
+        <selectedSteps href="uma://_1CrK5tnmEdmO6L4XMImrsA#_OAQCwtnnEdmO6L4XMImrsA"/>
+        <selectedSteps href="uma://_1CrK5tnmEdmO6L4XMImrsA#_OAQCw9nnEdmO6L4XMImrsA"/>
+        <selectedSteps href="uma://_1CrK5tnmEdmO6L4XMImrsA#_OAQCxNnnEdmO6L4XMImrsA"/>
+        <selectedSteps href="uma://_1CrK5tnmEdmO6L4XMImrsA#_Q_kVkDaXEdqp39qgkZWKSA"/>
+        <selectedSteps href="uma://_1CrK5tnmEdmO6L4XMImrsA#_OAQCxdnnEdmO6L4XMImrsA"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="_JHbpwEohEdqrjq4i3fchvA" name="manage_dependencies" guid="_JHbpwEohEdqrjq4i3fchvA" presentationName="Manage Dependencies" superActivities="{28B39D62-9D73-4254-9CB8-26CFA737D45E}" mandatoryInput="_KkylQDneEdqxANP9kNH4WA" optionalInput="_KkylQTneEdqxANP9kNH4WA _JvNBETneEdqxANP9kNH4WA _CM61ZRi2Edq_uI8xTPML6g _CM61aBi2Edq_uI8xTPML6g" output="_KkylQDneEdqxANP9kNH4WA _JvNBETneEdqxANP9kNH4WA _CM61ZRi2Edq_uI8xTPML6g" performedPrimarilyBy="_CNA78Ri2Edq_uI8xTPML6g">
+        <Task href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{7F42C4D6-584F-4B19-9B0B-FDE86BD85FBB}"/>
+        <selectedSteps href="uma://_1IVuAtnmEdmO6L4XMImrsA#_PIEmcNnnEdmO6L4XMImrsA"/>
+        <selectedSteps href="uma://_1IVuAtnmEdmO6L4XMImrsA#_PIEmcdnnEdmO6L4XMImrsA"/>
+        <selectedSteps href="uma://_1IVuAtnmEdmO6L4XMImrsA#_PIEmctnnEdmO6L4XMImrsA"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="_J3d_kEohEdqrjq4i3fchvA" name="review_requirements" guid="_J3d_kEohEdqrjq4i3fchvA" presentationName="Review Requirements" superActivities="{28B39D62-9D73-4254-9CB8-26CFA737D45E}" mandatoryInput="_J3kGMEohEdqrjq4i3fchvA _J3kGMUohEdqrjq4i3fchvA _J3kGMkohEdqrjq4i3fchvA" optionalInput="_CM61ZRi2Edq_uI8xTPML6g _CM61aBi2Edq_uI8xTPML6g _J3kGM0ohEdqrjq4i3fchvA _CM61Yhi2Edq_uI8xTPML6g _KkylQTneEdqxANP9kNH4WA _J3kGNEohEdqrjq4i3fchvA _CM61aRi2Edq_uI8xTPML6g _CM61Zhi2Edq_uI8xTPML6g _JvNBEDneEdqxANP9kNH4WA _CM61axi2Edq_uI8xTPML6g _CM61Zxi2Edq_uI8xTPML6g _JvNBETneEdqxANP9kNH4WA _KkylQDneEdqxANP9kNH4WA" output="_LVNVlDneEdqxANP9kNH4WA" performedPrimarilyBy="_i2a7cL7YEdqboqO8QqaIwQ">
+        <Task href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{FEC5ED66-F467-4BD5-AB11-B300E101DB9B}"/>
+        <selectedSteps href="uma://_1Ni-INnmEdmO6L4XMImrsA#_PUvJcNnnEdmO6L4XMImrsA"/>
+        <selectedSteps href="uma://_1Ni-INnmEdmO6L4XMImrsA#_PUvJcdnnEdmO6L4XMImrsA"/>
+        <selectedSteps href="uma://_1Ni-INnmEdmO6L4XMImrsA#_PUvJctnnEdmO6L4XMImrsA"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_J3kGMEohEdqrjq4i3fchvA" name="rup_iteration_plan" guid="_J3kGMEohEdqrjq4i3fchvA" presentationName="Iteration Plan" superActivities="{28B39D62-9D73-4254-9CB8-26CFA737D45E}">
+        <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{97269E0F-CDF3-448D-A732-DF39D099BDDD}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_J3kGMUohEdqrjq4i3fchvA" name="rup_business_case" guid="_J3kGMUohEdqrjq4i3fchvA" presentationName="Business Case" superActivities="{28B39D62-9D73-4254-9CB8-26CFA737D45E}">
+        <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{9B13F235-E8E9-4CDC-9ACE-216124C8C5EC}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_J3kGMkohEdqrjq4i3fchvA" name="rup_software_requirement" guid="_J3kGMkohEdqrjq4i3fchvA" presentationName="Software Requirement" superActivities="{28B39D62-9D73-4254-9CB8-26CFA737D45E}">
+        <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{BB502500-EEEC-4BDE-8697-186666D6D5B3}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_J3kGM0ohEdqrjq4i3fchvA" name="rup_software_requirements_specification" guid="_J3kGM0ohEdqrjq4i3fchvA" presentationName="Software Requirements Specification" superActivities="{28B39D62-9D73-4254-9CB8-26CFA737D45E}">
+        <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{BE8165DC-BAF2-4237-B27D-F2A037023364}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_J3kGNEohEdqrjq4i3fchvA" name="rup_storyboard" guid="_J3kGNEohEdqrjq4i3fchvA" presentationName="Storyboard" superActivities="{28B39D62-9D73-4254-9CB8-26CFA737D45E}">
+        <WorkProduct href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{77F6A9E0-5650-40BA-BC60-3C53235CDEF5}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:RoleDescriptor" xmi:id="_i2a7cL7YEdqboqO8QqaIwQ" name="rup_technical_reviewer" guid="_i2a7cL7YEdqboqO8QqaIwQ" presentationName="Technical Reviewer" superActivities="{28B39D62-9D73-4254-9CB8-26CFA737D45E}" modifies="_LVNVlDneEdqxANP9kNH4WA">
+        <Role href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#{0319C70C-35C9-4190-94F0-E7E5E9216CA0}"/>
+      </processElements>
+    </childPackages>
+    <process xsi:type="org.eclipse.epf.uma:CapabilityPattern" xmi:id="{38A9C609-9A59-4D03-B835-AA84A716E626}" name="requirements" guid="{38A9C609-9A59-4D03-B835-AA84A716E626}" presentationName="Requirements" briefDescription="This capability pattern covers the activities and workflow for the Requirements discipline." isPlanned="false" breakdownElements="{554ECC71-6D6C-4ABD-B7CE-357973C63B9F} {F9E2B414-29F4-48F9-B263-35570D64314B} {20E30ECF-7359-45EC-AA5F-8A7BFA21C472} {CA9197A9-051E-4845-A7FC-2A8750BD8C02} {0FEE5795-6090-4D82-9BDB-925E5F0D9985} {28B39D62-9D73-4254-9CB8-26CFA737D45E}">
+      <presentation xmi:id="-0VETBrCsr5obZan45HksuA" href="uma://-ZryvkL5odWOFg6jD_52dpg#-0VETBrCsr5obZan45HksuA"/>
+      <guidelines href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#3.181902521799359E-305"/>
+      <defaultContext href="uma://_0q85QJySEd2xJNwbI6lxKA#_xqmb0NnmEdmO6L4XMImrsA"/>
+      <validContext href="uma://_0q85QJySEd2xJNwbI6lxKA#_xqmb0NnmEdmO6L4XMImrsA"/>
+    </process>
+  </org.eclipse.epf.uma:ProcessComponent>
+</xmi:XMI>

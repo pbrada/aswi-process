@@ -1,0 +1,330 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2// EN">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Example: SOA Model Example</title>
+<link type="text/css" href="../../../../css/default.css" rel="StyleSheet">
+<script src="../../../../scripts/contentpage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					backPath = './../../';
+				</script>
+</head>
+<body>
+ 
+<h2>Example: SOA Model Example</h2>
+<h5></h5>
+<ul>
+        <li><a href="#Problem_Description">Problem Description</a>
+        <li><a href="#Scope_and_Goals">Project Scope and Goals</a>
+        <li><a href="#Service_Identification">Service Identification</a>
+        <li><a href="#Service_Design">Service Design</a>
+        <li><a href="#Service_Realization">Service Realization</a>
+      </ul>
+
+<h3><a name="Problem_Description">Problem Description</a> <a href="#Top"><img src="top.gif" alt="To top of page" border="0" width="26" height="20"></a></h3>
+      In this example we consider the problems of a retailer who has chosen to
+      reimplement certain functions used by the applications in their Point-of-Sale
+      (PoS) terminals as services. Today the <i>trading application</i> is developed as a monolithic application with very tightly coupled components but with some components residing on the In-Store Servers (ISS) and some requests are even forwarded by the ISS to servers centrally located in the enterprise. The issue is that the store infrastructure in general and the trading application specifically can be hard to maintain due to the tight coupling of components and the use of proprietary protocols and technology in the development of, and connection between, components.
+      <p>In previous generations of store systems proprietary and low-capacity machines
+      were used for the PoS terminals and there were restrictions on bandwidth
+      in-store as well as out-of-store - these restrictions are largely now gone.
+      With this in mind, and the existing move to service-oriented architecture
+      within the enterprise back-end systems it has been decided that some of
+      the capabilities provided by the ISS and central servers shall be exposed
+      to the trading application as services.</p>
+      
+<h3><a name="Scope_and_Goals">Project Scope and Goals</a> <a href="#Top"><img src="top.gif" alt="To top of page" border="0" width="26" height="20"></a></h3>
+      Initially the capabilities to consider have been chosen because the share
+      a common pattern in that they currently require logic in the trading application
+      to query more than one data store for information. Thus, the services proposed
+      not only provide a common interface but also divorce the trading application
+      from explicit knowledge of the data location and from having to deal with
+      multiple protocols.
+      <ul>
+        <li><b>Customer Lookup</b>; this is a two-step process from the terminal in that there is a local
+        database in the store of customers who have already purchased items from
+        the store or who have had service performed on items at the store. If the
+        customer is not found in the store database (a direct connection is made
+        to the database and a SQL query executed) then the trading application
+        queries a central customer database using a message queue approach via
+        a queue server on the ISS. The new service shall be located on the ISS
+        and act as a single point of communication from the trading application,
+        the application will communicate with the ISS which will in turn query
+        the local database before forwarding the request to another service (implementing
+        the same service specification) on the central server which will query
+        its local database. 
+        <li><b>Service Scheduling</b>; in this case a customer wishes to schedule a service on an item they
+        have purchased, currently the trading application has to query the customer
+        database (see above), query the central warranty database to see if the
+        item is under warranty and update the service schedule with the date/time
+        the customer is planning to bring in the item. It seems that there is a
+        better way to tackle the problem and the new scheduling service will work
+        as follows. Given the serial number of an item the warranty database can
+        be queried; this database already contains the customer ID and so the customer
+        data can be extracted at the same time. If the customer only has the type
+        ID for the item we have to query for the customer and item as before. This
+        will all be accomplished by the service, removing the logic from the trading
+        application.
+        <li><b>Inventory Check</b>; in this case a similar problem exists, the service queries first the
+        local real-time database for inventory and if an item is not found it queries
+        the enterprise database which contains less information on the products
+        but contains the inventory for all stores (except that it is only updated
+        in batch overnight so is not guaranteed. The new ISS service will aggregate
+        the queries as above, but will also provide for real-time updates to the
+        central server to pass inventory change events to the center and allow
+        queries on other stores to be more accurate. This implies that the inventory
+        service on the center has the ability to receive these inventory change
+        events which the local service does not.
+      </ul>
+      These services will be accessed over RMI from the trading application to
+      the ISS service and using SOAP over JMS from the ISS to the central service.
+      
+<h3><a name="Service_Identification">Service Identification</a> <a href="#Top"><img src="top.gif" alt="To top of page" border="0" width="26" height="20"></a></h3>
+      The following outlines the steps undertaken by the architecture team consisting 
+of members of the retailers own IT organization and external consultants brought 
+in as experts in development of service-oriented solutions.Note that the steps 
+below are not intended to represent a recommended series of RUP activities, they 
+simply catalog the activities of an actual project.
+<p>It is important to note that this project is to improve the technical implementation
+      of currently existing functions and so does not include a great deal of
+      time spent in either business modeling or analysis as we can reuse the
+      models created for the original trading application. The current set of
+      models (on the left in the diagram below) follow the structure shown below,
+      showing a RUP Use Case Model, an Analysis Model for the common components
+      of the trading application followed by the detailed Design Model and finally
+      a set of Implementation Models for the Java development teams.</p>
+      
+<p align="center"><img src="soa_mdlex_analysis-01.gif" alt="Diagram is described in the textual content." width="425" height="203" border="0"></p>
+      The Service Model has been introduced (on the right in the diagram above)
+      as a refinement of the Analysis Model into a set of services with their
+      own Implementation Models. The trading application design can now be modified
+      to show the usage of these common services and the relationship between
+      the trading application and service Java models is shown as well.
+      <h4>Service Model Creation</h4>
+      The Store Support Service Model was created according to the UML Profile
+      for Software Services and a template model (included in Rational Software
+      Architect), as described in the diagram below. The model was identified
+      as a <u>refinement</u> of the Analysis Model, as shown above. As you can see the structure is
+      presented in an overview diagram that demonstrates the dependencies between
+      the views recommended by the template.
+      
+<p align="center"><img src="soa_mdlex_template-01.gif" alt="Diagram is described in the textual content." width="342" height="215" border="0"></p>
+      The diagram links next to the view packages allow for quick navigation
+      of the model and will be completed in the following sections.
+      
+<p>For more information see the tool mentor <i><strong>Creating a Service Model 
+  in RSA</strong></i>.</p>
+      <h4>Identify Service Partitions (Locality)</h4>
+      It is clear from the description of the problem above that there are a
+      number of ways we might look at partitioning the system, for example we
+      might introduce partitions that represent inventory management, service/warranty
+      management, point-of-sale operations (price lookup, customer, etc.) however
+      these are not primary concerns for the architect and so the partitions
+      added to the model represent logical localities for the services provided
+      either in-store or at the enterprise level.
+      
+<p align="center"><img src="soa_mdlex_partitions-01.gif" alt="Diagram is described in the textual content." width="178" height="155" border="0"></p>
+      When we say that these are logical partitions we are identifying that the
+      Store Services partition contains a set of services that are instantiated
+      at the store level, we say nothing about the physical deployment of these
+      services (single server, cluster, etc.). These logical partitions are provided
+      for the architect to represent the significant aspects of the solution.
+      <p>Also note that in the picture above the architect has introduced an additional element, the trading application itself, to allow for descriptions of communication between the application and the services. The trading application is a UML 2.0 component with the stereotype <i>Service Consumer</i>.</p>
+      For more information see the concept <i><strong>Solution Partitioning</strong></i>. 
+<h4>Analyze Existing Functions</h4>
+      The next step is to analyze the current implementation of the trading application,
+      to look at the details of the database access identified in the problem
+      statement above. The following table was then developed (note that it only
+      contains details for the customer and inventory lookups).<br>&nbsp;
+      <table border="1" width="100%">
+        <tbody>
+          <tr>
+            <th valign="top" width="15%">Name</th>
+            <th valign="top" width="15%">Technology</th>
+            <th valign="top" width="20%">Inputs</th>
+            <th valign="top" width="20%">Outputs</th>
+            <th valign="top" width="30%">Comments</th>
+          </tr>
+          <tr>
+            <td valign="top" width="15%">sp_get_custlist_by_phone</td>
+            <td valign="top" width="15%">SQL Server Stored Procedure</td>
+            <td valign="top" width="20%">phonenum (char 10)</td>
+            <td valign="top" width="20%">List of:
+            <blockquote>custid (id) <br>
+            custname (char 40)</blockquote>
+            </td>
+            <td valign="top" width="30%">This stored procedure returns a list of customer details by phone number,
+            the list may be presented to the customer for selection. The sp_get_cust_details
+            call is used to return a single customer record.</td>
+          </tr>
+          <tr>
+            <td valign="top" width="15%">sp_get_cust_details</td>
+            <td valign="top" width="15%">SQL Server Stored Procedure</td>
+            <td valign="top" width="20%">custid (id)</td>
+            <td valign="top" width="20%">Customer record</td>
+            <td valign="top" width="30%">The details of a customer are returned, their name, address, contact information
+            and so on.</td>
+          </tr>
+          <tr>
+            <td valign="top" width="15%">CUST_QUERY</td>
+            <td valign="top" width="15%">IBM MQSeries</td>
+            <td valign="top" width="20%">phonenum (char 10)<br>
+            return-queue-name (char 120)<br>
+            correlation-id (char 120)</td>
+            <td valign="top" width="20%">N/A</td>
+            <td valign="top" width="30%">Into this queue the application places the details of the customers to
+            query, the message is delivered to the center where the server posts the
+            reply message to the identified return queue.</td>
+          </tr>
+          <tr>
+            <td valign="top" width="15%">&lt;return-queue-name&gt;</td>
+            <td valign="top" width="15%">IBM MQSeries</td>
+            <td valign="top" width="20%">N/A</td>
+            <td valign="top" width="20%">correlation-id (char 120)<br>
+            List of Customer record</td>
+            <td valign="top" width="30%">When returning the customer records the return message also contains the
+            correlation-id to ensure that the reply can be associated with a given
+            request. This allows the in-store server to have a single return queue
+            for all terminals, the terminal queries the queue for a response message
+            with its correlation id.</td>
+          </tr>
+          <tr>
+            <td valign="top" width="15%">sp_get_invstate_for_sku</td>
+            <td valign="top" width="15%">SQL Server Stored Procedure</td>
+            <td valign="top" width="20%">sku (char 13)</td>
+            <td valign="top" width="20%">Inventory record</td>
+            <td valign="top" width="30%"></td>
+          </tr>
+          <tr>
+            <td valign="top" width="15%">INVENTORY_QUERY</td>
+            <td valign="top" width="15%">IBM MQSeries</td>
+            <td valign="top" width="20%">sku (char 13)<br>
+            return-queue-name (char 120)<br>
+            correlation-id (char 120)</td>
+            <td valign="top" width="20%">N/A</td>
+            <td valign="top" width="30%"></td>
+          </tr>
+          <tr>
+            <td valign="top" width="15%">&lt;return-queue-name&gt;</td>
+            <td valign="top" width="15%">IBM MQSeries</td>
+            <td valign="top" width="20%">N/A</td>
+            <td valign="top" width="20%">Inventory record</td>
+            <td valign="top" width="30%"></td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      As you can see these entries represent the existing implementation, which
+      will be replaced with a new implementation, yet the purpose and function
+      will be maintained.
+      <h4>Initial Service Specification Development</h4>
+The activity <i><strong>Service Identification</strong></i> introduces a number 
+of techniques for identifying the services, and operations on services, required 
+to support a solution. In the case of this example we are looking at a form of 
+legacy renewal, the transformation of existing functionality to a services model 
+and specifically services implementation technology. In doing this the first aspect 
+is to develop the set of <i><strong>Service Specifications</strong></i> that will 
+provide the contracts for the services implementing the functions described above. 
+The following diagram shows the three, currently empty, service specifications 
+created at this stage, one for each of the services discussed in the introduction. 
+<p align="center"><img src="soa_mdlex_specifications-01.gif" alt="Diagram is described in the textual content." width="126" height="150" border="0"></p>
+      <p>Next we analyze possible usage patterns for the services, for example we
+could actually have two services, one in-store and one enterprise, where
+the logic for the database access and enterprise access are both encapsulated
+in the in-store service. Alternatively we might choose to have a facade
+service in the store that encapsulates the logic and calls two identical
+services, one that encapsulates the local database access and the second
+at the enterprise. The second choice adds flexibility in changing the logic
+accessing the two stores, yet adds overhead and communication costs for
+a relatively simple function. So, for the customer lookup and the inventory
+lookup the first option has been chosen. As yet the details of the distribution
+of services and service providers are not decided, service identification
+is far more effective if focused only on service specifications.</p>
+<p>To identify the roles and responsibilities of these services we use a <i><strong>Service 
+  Collaboration</strong></i> and specifically a UML 2.0 Composite Structure diagram 
+  representing the configuration of the services for customer lookup. The structure 
+  diagram is shown below and we can see UML 2.0 Parts representing each element 
+  in the collaboration. Note, the connectors between the Trading Application and 
+  in-store service and between the in-store and enterprise services are stereotyped 
+  as <i><strong>Service Channel</strong></i> and denote the bindings to use (RMI 
+  or JMS as identified above). The binding for the connector between the in-store 
+  service and the local database component (more later) is undefined.</p>
+<p align="center"><img src="soa_mdlex_lookup-01.gif" alt="Diagram is described in the textual content." width="284" height="175" border="0"></p>
+<p>One key element to note here is that the LocalCustomerLookupProvider is
+a generated service, it is a thin wrapper service around a database query,
+there is a single operation representing a SQL select. This approach was
+chosen over direct access to the database by the in-store customer lookup
+service to allow for the local service to include additional business rules
+or even to become a more complete service at some later date. </p>
+<p>However, this diagram only shows the structure of the collaboration, the
+      following interaction diagram (UML 2.0 Sequence Diagram) represents the
+      actual communications between the services. Note that we have added the
+      operation getCustomerByPhone to the service specification. Also note that
+      UML 2.0 allows for the specification of optional &quot;fragment&quot; of
+      a sequence diagram, in this case denoting that we only communicate with
+      the enterprise service if the local lookup fails.</p>
+      
+<p align="center"><img src="soa_mdlex_lookup-02.gif" alt="Diagram is described in the textual content." width="550" height="321" border="0"></p>
+      <p>The combination of static structure and communication diagrams allow us
+      to document the service composition and collaboration and have in this
+      case only identified the need for a single operation on the service specification.</p>
+For more information see the activity <i><strong>Service Identification</strong></i>. 
+<h3><a name="Service_Design">Service Design</a> <a href="#Top"><img src="top.gif" alt="To top of page" border="0" width="26" height="20"></a></h3>
+<p>Taking the model from the Service Identification activity we transition the 
+  identification of a set of candidate services into the detailed design of the 
+  services we intend to build. The first step is to map out the service specifications 
+  that realize the specifications above; as you can imagine there are decisions 
+  to be made in how services realize the service specifications from the model 
+  above. In this example we have a reasonably simple structure, but one that will 
+  probably be common to a lot of projects. In this case we have a single <i><strong>Service 
+  Providers</strong></i> presenting a single service which is the realization 
+  of a single specification. It is certainly possible to have more than one service 
+  per provider. We have also note some usage relationships between the services 
+  in this model, these dependencies are important in understanding how services 
+  can be evolved over time.</p>
+<p align="center"><img src="soa_mdlex_services-01.gif" alt="Diagram is described in the textual content." width="462" height="236" border="0"></p>
+<p>This structure allows us now to move more into the space of distribution,
+while the model is still a logical view of the services, as the service
+providers represent the units of deployment for the service model. The
+service providers are also required for the definition of composite services
+as a service itself (a UML 2.0 Port) is not able to own the structure required
+to describe the composition.</p>
+<h4>Message Design</h4>
+<p>We said nothing above, in the service identification activity, about the
+actual messages exchanged between the operations described on the service
+specifications. This can be quite a common approach, to capture the responsibilities
+of the services in terms of operations deferring the detailed design of
+the messages until later - in some cases this approach is reversed, where
+the message structures are known ahead of time and then aggregated into
+a set of operations.</p>
+<p>In this case we are able to leverage a domain model developed as a part
+of the component analysis model (previous developed asset) and so our message
+model is not built from nothing but identifies a subset of the domain model
+to be reused. The example below demonstrates this relationship, the domain
+classes are completely technology and platform unaware, our messages on
+the other hand are assumed to be data transfer objects, structures passed
+between services. So rather than changing the domain model we create the
+messages on the &quot;outside&quot; of the class structure, composed of
+elements in the inside.</p>
+<p align="center"><img src="soa_mdlex_message-01.gif" alt="Diagram is described in the textual content." width="608" height="210" border="0"></p>
+      For more information see the the concept <i><strong>Message Design</strong></i>. 
+<h3><a name="Service_Realization">Service Realization</a> <a href="#Top"><img src="top.gif" alt="To top of page" border="0" width="26" height="20"></a></h3>
+<p>In this case we will focus on the realization of the in-store customer
+lookup service; this service is typical in the transformation from service
+model to design model. The transformation itself is documented in a guideline,
+and results in the following model structure.</p>
+<p align="center"><img src="soa_mdlex_realize-01.gif" alt="Diagram is described in the textual content." width="544" height="182" border="0"></p>
+<p>While this is still a design model we can, using tools, transform this
+model still further into the EJB implementation shown below. Basically
+this implementation is transformed from the CustomerByPhone class above
+and the messages detailing the customer are transformed into the entity
+bean used to query the database.</p>
+<p align="center"><img src="soa_mdlex_realize-02.gif" alt="Diagram is described in the textual content." width="595" height="354" border="0"></p>
+<p>For more information see the guideline <i><strong>Going from Services to Service 
+  Components</strong></i>.</p>
+
+
+
+
+</body>
+</html>
+

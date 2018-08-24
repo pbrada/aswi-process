@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ArtifactDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_16aEINnmEdmO6L4XMImrsA" name="rup_design_subsystem,{A3C60B25-9780-4BFA-81AF-C1AD40D8A833}" guid="_16aEINnmEdmO6L4XMImrsA" changeDate="2005-11-15T17:02:44.732-0800" version="7.1.0">
+  <mainDescription>&lt;p>&#xD;
+    &amp;nbsp;A Design Subsystem is a&amp;nbsp;part of a system that encapsulates behavior, exposes a set of interfaces, and&#xD;
+    packages other model elements. From the outside, a subsystem is a single design model element that collaborates with&#xD;
+    other mod elelements to fulfill its responsibilities. The externally visible interfaces and their behavior is referred&#xD;
+    to as the subsystem specification. On the inside, a subsystem is a collection of model elements (design classes and&#xD;
+    other subsystems) that realize the interfaces and behavior of the subsystem specification. This is referred to as the&#xD;
+    subsystem realization.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    The 'encapsulation' ability of design subsystems is contrasted by that of the &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../core.base_rup/workproducts/rup_design_package_8376BC8E.html&quot;&#xD;
+    guid=&quot;{80CC5437-F481-487B-A69B-957D9D236D8D}&quot;>Artifact: Design Package&lt;/a>, which does not realize interfaces. Packages&#xD;
+    are used primarily for configuration management and model organization, where subsystems provide additional behavioral&#xD;
+    semantics.&#xD;
+&lt;/p></mainDescription>
+  <purpose>&lt;a id=&quot;XE_design_subsystem__as_artifact&quot; name=&quot;XE_design_subsystem__as_artifact&quot;>&lt;/a>&lt;a id=&quot;Top&quot; name=&quot;Top&quot;>&lt;/a>&lt;a&#xD;
+id=&quot;XE_design_subsystem__purpose_of&quot; name=&quot;XE_design_subsystem__purpose_of&quot;>&lt;/a>&lt;a id=&quot;Purpose&quot; name=&quot;Purpose&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    A Design Subsystem encapsulates behavior, providing explicit and formal interfaces, and does not (by convention) expose&#xD;
+    its internal contents. This provides the ability to completely encapsulate the interactions of a number of classes&#xD;
+    and/or subsystems.&#xD;
+&lt;/p></purpose>
+  <representationOptions>UML Representation: Design Subsystems are modeled as UML 2.0 components. UML also defines a stereotype for component named&#xD;
+&amp;lt;&amp;lt;subsystem&amp;gt;&amp;gt;, indicating that this may be used, for example, to represent large scale structures. See &lt;a&#xD;
+class=&quot;elementLinkWithType&quot; href=&quot;./../../core.base_rup/guidances/guidelines/design_subsystem_B26FD609.html&quot;&#xD;
+guid=&quot;1.2314266786534317E-305&quot;>Guideline: Design Subsystem&lt;/a> for representation.&amp;nbsp; &#xD;
+&lt;p>&#xD;
+    &lt;a id=&quot;Tailoring&quot; name=&quot;Tailoring&quot;>&lt;/a>&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Design Subsystems are an important means of decomposing large systems into understandable parts. They are particularly&#xD;
+    useful in component-based development to specify components (see &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../core.base_rup/guidances/concepts/component_A2E2B3B1.html&quot; guid=&quot;3.524150980437479E-305&quot;>Concept: Component&lt;/a>)&#xD;
+    expected to be independently developed, re-used, or replaced.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Important tailoring decisions related to Design Subsystems are:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        whether and when to separate specification from realization (see &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+        href=&quot;./../../core.base_rup/guidances/guidelines/design_subsystem_B26FD609.html&quot; guid=&quot;1.2314266786534317E-305&quot;>Guideline:&#xD;
+        Design Subsystem&lt;/a>)&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        whether or not to model subsystem interfaces localized into ports (see &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+        href=&quot;./../../core.base_rup/tasks/subsystem_design_5D1BCC0C.html&quot; guid=&quot;{CAA385CA-2BA2-40F2-8FE3-E21089D02119}&quot;>Task:&#xD;
+        Subsystem Design&lt;/a>)&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>&#xD;
+    This tailoring decision should be captured in &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../core.base_rup/workproducts/rup_project_specific_guidelines_8DC8DA32.html&quot;&#xD;
+    guid=&quot;{E5501201-7EE6-4243-AE91-73880FF76FC1}&quot;>Artifact: Project-Specific Guidelines&lt;/a>.&#xD;
+&lt;/p>&#xD;
+&lt;h3>&#xD;
+    &lt;a id=&quot;UML_1x_Representation&quot; name=&quot;UML_1x_Representation&quot;>UML 1.x Representation&lt;/a>&#xD;
+&lt;/h3>&#xD;
+&lt;p>&#xD;
+    An important tailoring decision is whether to model design subsystems as UML 2.0 components or UML 1.5 subsystems (see&#xD;
+    &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../core.base_rup/guidances/guidelines/design_subsystem_B26FD609.html&quot;&#xD;
+    guid=&quot;1.2314266786534317E-305&quot;>Guideline: Design Subsystem&lt;/a>).&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Refer to &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../core.base_rup/guidances/supportingmaterials/differences_between_uml_1_x_and_uml_2_0_CA70F2E6.html&quot;&#xD;
+    guid=&quot;4.792914878943572E-306&quot;>Differences Between UML 1.x and UML 2.0&lt;/a> for more information.&#xD;
+&lt;/p>&lt;br />&#xD;
+&lt;br /></representationOptions>
+</org.eclipse.epf.uma:ArtifactDescription>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_2Gn7NNnmEdmO6L4XMImrsA" name="implement_developer_test,{862F3EC5-70C3-4D9C-BF0E-EF93AE1BF936}" guid="_2Gn7NNnmEdmO6L4XMImrsA" changeDate="2005-10-10T08:40:05.321-0700" version="7.1.0">
+  <sections xmi:id="_Uuv7ENnnEdmO6L4XMImrsA" name=" Refine the Scope and Identify the Tests " guid="_Uuv7ENnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;Refine_the_Scope_and_Identify_the_Tests&quot; name=&quot;Refine_the_Scope_and_Identify_the_Tests&quot;>&lt;/a>&#xD;
+&lt;div align=&quot;left&quot;>&#xD;
+    &lt;table border=&quot;1&quot; summary=&quot;layout table&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;4&quot;&#xD;
+    style=&quot;border: 1px solid rgb(128,128,128)&quot; bordercolorlight=&quot;#808080&quot; bordercolordark=&quot;#808080&quot;>&#xD;
+        &lt;tr>&#xD;
+            &lt;th width=&quot;5%&quot;>&#xD;
+                Purpose:&amp;nbsp;&#xD;
+            &lt;/th>&#xD;
+            &lt;td width=&quot;95%&quot;>&#xD;
+                To identify the Component under Test and define a set of tests that are of most benefit in the current&#xD;
+                iteration&#xD;
+            &lt;/td>&#xD;
+        &lt;/tr>&#xD;
+    &lt;/table>&lt;br />&#xD;
+&lt;/div>&#xD;
+&lt;p>&#xD;
+    In a formal environment the components and the tests needed to be developed are specified in the Test Design artifact,&#xD;
+    making this step optional. There are other occasions when the developer tests are driven by Change Requests, bug fixes,&#xD;
+    implementation decisions that need to be validated, subsystem testing with only the Design Model as input. For each of&#xD;
+    these cases:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        define the goal: subsystem/component interface validation, implementation validation, reproduce a defect&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        define the scope: subsystem, component, group of components&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        define the test type and details: black-box, white-box, pre-conditions, post-conditions, invariants, input/output&#xD;
+        and execution conditions, observation/control points, clean-up actions&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        decide what is the life span of the test; for example a test built specially for fixing a defect might be a&#xD;
+        throw-away one, but one that exercises the external interfaces will have the same lifecycle as the component under&#xD;
+        test&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></sectionDescription>
+  </sections>
+  <sections xmi:id="_Uuv7EdnnEdmO6L4XMImrsA" name=" Select Appropriate Implementation Technique " guid="_Uuv7EdnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;Select_Appropriate_Implementation_Technique&quot; name=&quot;Select_Appropriate_Implementation_Technique&quot;>&lt;/a>&#xD;
+&lt;div align=&quot;left&quot;>&#xD;
+    &lt;table border=&quot;1&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;4&quot; style=&quot;border: 1px solid rgb(128,128,128)&quot;&#xD;
+    bordercolor=&quot;#808080&quot; bordercolorlight=&quot;#808080&quot; bordercolordark=&quot;#808080&quot;>&#xD;
+        &lt;tr>&#xD;
+            &lt;th width=&quot;5%&quot;>&#xD;
+                Purpose:&amp;#160;&#xD;
+            &lt;/th>&#xD;
+            &lt;td width=&quot;95%&quot;>&#xD;
+                To determine the appropriate technique to implement the test&#xD;
+            &lt;/td>&#xD;
+        &lt;/tr>&#xD;
+    &lt;/table>&lt;br />&#xD;
+&lt;/div>&#xD;
+&lt;p>&#xD;
+    There are various techniques available to implement a test, but they can be considered in terms of two general&#xD;
+    categories: manual and automated testing. Most of the developer tests are implemented using automated testing&#xD;
+    techniques:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        programmed tests, using either the same software programming techniques and environment as the component under&#xD;
+        test, or less complex programming languages and tools ( e.g. scripting languages: tcl, shell based, etc.)&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        recorded or captured tests, built by using test automation tools which capture the interactions between the&#xD;
+        component under test and the rest of the system, and produce the basic tests&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        generated tests: some aspects of the test, either procedural or the test data, could be automatically generated&#xD;
+        using more complex test automation tools&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>Although the most popular approach is the &quot;programmed test&quot; one, in some cases - GUI related testing for example, the&#xD;
+more efficient way to conduct a test is manually, following a sequence of instructions that have been captured in a textual&#xD;
+description form.</sectionDescription>
+  </sections>
+  <sections xmi:id="_Uuv7EtnnEdmO6L4XMImrsA" name=" Implement the Test " guid="_Uuv7EtnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;Implement_the_Test&quot; name=&quot;Implement_the_Test&quot;>&lt;/a>&#xD;
+&lt;div align=&quot;left&quot;>&#xD;
+    &lt;table border=&quot;1&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;4&quot; style=&quot;border: 1px solid rgb(128,128,128)&quot;&#xD;
+    bordercolorlight=&quot;#808080&quot; bordercolordark=&quot;#808080&quot;>&#xD;
+        &lt;tr>&#xD;
+            &lt;th width=&quot;5%&quot;>&#xD;
+                Purpose:&amp;nbsp;&#xD;
+            &lt;/th>&#xD;
+            &lt;td width=&quot;95%&quot;>&#xD;
+                To implement the tests identified in the definition step or task&#xD;
+            &lt;/td>&#xD;
+        &lt;/tr>&#xD;
+    &lt;/table>&lt;br />&#xD;
+&lt;/div>&#xD;
+&lt;p>&#xD;
+    Implement all the elements defined in the first step. Detail and clearly specify the test environment pre-conditions&#xD;
+    and what are the steps to get the component under test to the state where the test(s) could be conducted. Identify the&#xD;
+    clean-up steps to be followed in order to restore the environment to the original state. Pay special attention to the&#xD;
+    implementation of the observation/control points, as these aspects might need special support that has to be&#xD;
+    implemented in the component under test.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_Uuv7E9nnEdmO6L4XMImrsA" name=" Establish External Data Sets " guid="_Uuv7E9nnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;Establish_External_Data_Sets&quot; name=&quot;Establish_External_Data_Sets&quot;>&lt;/a>&#xD;
+&lt;div align=&quot;left&quot;>&#xD;
+    &lt;table border=&quot;1&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;4&quot; style=&quot;border: 1px solid rgb(128,128,128)&quot;&#xD;
+    bordercolorlight=&quot;#808080&quot; bordercolordark=&quot;#808080&quot;>&#xD;
+        &lt;tr>&#xD;
+            &lt;th width=&quot;5%&quot;>&#xD;
+                Purpose:&amp;nbsp;&#xD;
+            &lt;/th>&#xD;
+            &lt;td width=&quot;95%&quot;>&#xD;
+                To create and maintain data, stored externally to the test, that are used by the test during execution&#xD;
+            &lt;/td>&#xD;
+        &lt;/tr>&#xD;
+    &lt;/table>&lt;br />&#xD;
+&lt;/div>&#xD;
+&lt;p>&#xD;
+    In most of the cases, decoupling the Test Data from the Test leads to a more maintainable solution. If the test's life&#xD;
+    span is very short, hardcoding the data within the test might be more efficient, but if many test execution cycles are&#xD;
+    needed using different data sets, the simplest way is to store them externally. There are some other advantages if the&#xD;
+    Test Data is decoupled from the Test:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        more than one test could use the same data set&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        easy to modify and/or multiply&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        could be used to control the conditional branching logic within the Test&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></sectionDescription>
+  </sections>
+  <sections xmi:id="_Uuv7FNnnEdmO6L4XMImrsA" name=" Verify the Test Implementation " guid="_Uuv7FNnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;Verify_the_Test_Implementation&quot; name=&quot;Verify_the_Test_Implementation&quot;>&lt;/a>&#xD;
+&lt;div align=&quot;left&quot;>&#xD;
+    &lt;table border=&quot;1&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;4&quot; style=&quot;border: 1px solid rgb(128,128,128)&quot;&#xD;
+    bordercolorlight=&quot;#808080&quot; bordercolordark=&quot;#808080&quot;>&#xD;
+        &lt;tr>&#xD;
+            &lt;th width=&quot;5%&quot;>&#xD;
+                Purpose:&amp;nbsp;&#xD;
+            &lt;/th>&#xD;
+            &lt;td width=&quot;95%&quot;>&#xD;
+                To verify the correct workings of the Test&#xD;
+            &lt;/td>&#xD;
+        &lt;/tr>&#xD;
+    &lt;/table>&lt;br />&#xD;
+&lt;/div>&#xD;
+&lt;p>&#xD;
+    Test the Test. Check the environment setup and clean-up instructions. Run the Test, observe its behavior and fix the&#xD;
+    test's defects. If the test will be long-lived, ask a person with less inside knowledge to run it and check if there is&#xD;
+    enough support information. Review it with other people within the development team and other interested parties.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_Uuv7FdnnEdmO6L4XMImrsA" name=" Maintain Traceability Relationships " guid="_Uuv7FdnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;Maintain_Traceability_Relationships&quot; name=&quot;Maintain_Traceability_Relationships&quot;>&lt;/a>&#xD;
+&lt;div align=&quot;left&quot;>&#xD;
+    &lt;table border=&quot;1&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;4&quot; style=&quot;border: 1px solid rgb(128,128,128)&quot;&#xD;
+    bordercolorlight=&quot;#808080&quot; bordercolordark=&quot;#808080&quot;>&#xD;
+        &lt;tr>&#xD;
+            &lt;th width=&quot;5%&quot;>&#xD;
+                Purpose:&amp;nbsp;&#xD;
+            &lt;/th>&#xD;
+            &lt;td width=&quot;95%&quot;>&#xD;
+                To enable impact analysis and assessment reporting to be performed on the traced item&#xD;
+            &lt;/td>&#xD;
+        &lt;/tr>&#xD;
+    &lt;/table>&lt;br />&#xD;
+&lt;/div>&#xD;
+&lt;p>&#xD;
+    Depending on the level of formality, you may or may not need to maintain traceability relationships. If you do, use the&#xD;
+    traceability requirements outlined in the Test Plan to update the traceability relationships as required.&#xD;
+&lt;/p>&lt;br /></sectionDescription>
+  </sections>
+  <purpose>&lt;a id=&quot;Top&quot; name=&quot;Top&quot;>&lt;/a>&lt;a id=&quot;XE_Implement_Component__implementation_of_tests_for&quot;&#xD;
+name=&quot;XE_Implement_Component__implementation_of_tests_for&quot;>&lt;/a>&lt;a id=&quot;XE_unit_test__implementation_of&quot;&#xD;
+name=&quot;XE_unit_test__implementation_of&quot;>&lt;/a>&lt;a id=&quot;XE_Test__Implementing_Developer_Tests&quot;&#xD;
+name=&quot;XE_Test__Implementing_Developer_Tests&quot;>&lt;/a> &#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        To implement one or more tests that enable the validation of the individual software components through physical&#xD;
+        execution&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        To develop tests that can be executed in conjunction with other tests as part of a larger test infrastructure&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></purpose>
+</org.eclipse.epf.uma:TaskDescription>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="-PPk8UBi1noiNUdDmXtVelQ" name="publish_or_deploy_asset,_gdi5UN92EdqhGsqsJmAtOw" guid="-PPk8UBi1noiNUdDmXtVelQ" changeDate="2007-05-28T14:50:03.265-0700" version="1.0.0">
+  <mainDescription>&lt;p>&#xD;
+    In this task, the asset is made visible to a target audience that goes beyond the Repository. As part of the normal&#xD;
+    asset review activities, the asset may transition to the state of Approved. It is then&amp;nbsp;visible to the Asset&#xD;
+    Consumers with the appropriate access control.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    However, here&amp;nbsp;you are interested in making the asset visible to other target audiences. This task will largely&#xD;
+    take place as certain asset types, such as Service Interfaces, are published into service registries.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    In this case the Service Interface likely has several key artifacts such as the WSDL,&amp;nbsp;and XSDs. At this point, the&#xD;
+    approved Service Interface asset is selected and the target service registry is identified. The contents of the Service&#xD;
+    Interface (or whatever asset type it may be) asset are published to the service registry.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    This can affect the state of the asset in the Repository by&amp;nbsp;transitioning to something such as “published”.&#xD;
+    Publishing the asset introduces some issues around classification and security. The classification of the asset in the&#xD;
+    Repository may not map directly to the classification that is available in the target repository or registry.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Another consideration is security and access control. In some cases the access control between the two systems may be&#xD;
+    dissimilar. It is critical that one Repository does not betray the access control specified in another repository.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    A development-time repository is focused on the governance of assets to aid the development organization. The runtime&#xD;
+    service registry is focused on the governance of services into and out of production environments.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;img style=&quot;WIDTH: 638px; HEIGHT: 343px&quot; height=&quot;550&quot;&#xD;
+    alt=&quot;The contents of the Service Interface asset are published to the service registry.&quot; src=&quot;./resources/Image14.gif&quot;&#xD;
+    width=&quot;322&quot; />&#xD;
+&lt;/p>When publishing an asset to another repository or registry, the administrators will also need to deal with duplicated&#xD;
+data and how to handle updates and new versions. It is also necessary to consider which system is the source of record for&#xD;
+the asset or some portion of the asset.</mainDescription>
+  <sections xmi:id="_z8oDcKdAEdu3IsnteZnoTw" name="Select Approved Asset in Repository" guid="_z8oDcKdAEdu3IsnteZnoTw">
+    <sectionDescription>Select the asset, such as a Service Interface, to be published.</sectionDescription>
+  </sections>
+  <sections xmi:id="_1rWPEKdAEdu3IsnteZnoTw" name="Select the Target Registry or other Repository" guid="_1rWPEKdAEdu3IsnteZnoTw"/>
+  <sections xmi:id="_4ZiToKdAEdu3IsnteZnoTw" name="Publish the Asset's Contents to the Target Repository" guid="_4ZiToKdAEdu3IsnteZnoTw"/>
+  <purpose>Move the asset through the lifecycle to now be&amp;nbsp;visible in some other tools, such as a service registry.</purpose>
+</org.eclipse.epf.uma:TaskDescription>

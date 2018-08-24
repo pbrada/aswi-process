@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_C9IFotwuEdmRU7lXzo6lKQ" name="designing_j2ee_application_clients,3.078384841899093E-305" guid="_C9IFotwuEdmRU7lXzo6lKQ" version="7.1.0">
+  <mainDescription>&lt;h2>&#xD;
+    &lt;a id=&quot;Introduction&quot; name=&quot;Introduction&quot;>&lt;/a>Introduction&#xD;
+&lt;/h2>&#xD;
+&lt;p>&#xD;
+    This guideline focuses on designing the details of an Application Client. Additional guidance on Application Clients is&#xD;
+    provided in &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../../tech.j2ee/guidances/guidelines/j2ee_application_client_3499CC99.html&quot;&#xD;
+    guid=&quot;8.333388171077014E-306&quot;>Guideline: J2EE Application Client&lt;/a>&#xD;
+&lt;/p>&#xD;
+&lt;h2>&#xD;
+    &lt;a id=&quot;Guidelines&quot; name=&quot;Guidelines&quot;>&lt;/a>Guidelines&#xD;
+&lt;/h2>&#xD;
+&lt;p>&#xD;
+    The designer must consider what mechanisms the Application Client uses to communicate with the rest of system. Does it,&#xD;
+    for example, interact directly with EJBs, or indirectly via HTTP or JMS? Also, application clients can use Java&#xD;
+    threads, and so concurrency within the application client needs to be considered. These are decisions made as part of&#xD;
+    &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../../core.base_rup/tasks/describe_runtime_architecture_2F8E190.html&quot;&#xD;
+    guid=&quot;{4D35C038-A2D0-48B8-9ECD-52717FEAE33A}&quot;>Task: Describe the Run-time Architecture&lt;/a>.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    The designer must also consider what classes and subsystems execute as part of the application client, what interfaces&#xD;
+    (if any) that they in turn expose to the rest of system, and what dependencies they have on other parts of the system.&#xD;
+    See &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../../core.base_rup/workproducts/rup_design_subsystem_1A8D169B.html&quot;&#xD;
+    guid=&quot;{A3C60B25-9780-4BFA-81AF-C1AD40D8A833}&quot;>Artifact: Design Subsystem&lt;/a> for details.&#xD;
+&lt;/p>&lt;br />&#xD;
+&lt;br /></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_2jFNsNnmEdmO6L4XMImrsA" name="define_test_environment_configurations,{187268D3-3166-4823-8DD8-5E1112004AC3}" guid="_2jFNsNnmEdmO6L4XMImrsA" changeDate="2005-11-04T07:48:29.080-0800" version="7.1.0">
+  <sections xmi:id="_WORNENnnEdmO6L4XMImrsA" name=" Examine Test Approach against software architecture " guid="_WORNENnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;ExamineTestApproachAndSAD&quot; name=&quot;ExamineTestApproachAndSAD&quot;>&lt;/a>&#xD;
+&lt;div align=&quot;left&quot;>&#xD;
+    &lt;table border=&quot;1&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;4&quot; style=&quot;border: 1px solid rgb(128,128,128)&quot;&#xD;
+    bordercolorlight=&quot;#808080&quot; bordercolordark=&quot;#808080&quot;>&#xD;
+        &lt;tr>&#xD;
+            &lt;td width=&quot;5%&quot;>&#xD;
+                &lt;b>Purpose:&lt;/b>&amp;nbsp;&#xD;
+            &lt;/td>&#xD;
+            &lt;td width=&quot;95%&quot;>&#xD;
+                To refresh your understanding of the approach for the testing and how that will be constrained by the the&#xD;
+                software architecture.&amp;nbsp;&#xD;
+            &lt;/td>&#xD;
+        &lt;/tr>&#xD;
+    &lt;/table>&lt;br />&#xD;
+&lt;/div>&#xD;
+&lt;p>&#xD;
+    Reviewing the test approach, itemize and characterize the key aspects the the test approach. Using this information,&#xD;
+    review the software architecture and begin to formulate an understanding of the general environmental needs for the&#xD;
+    testing effort.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_WORNEdnnEdmO6L4XMImrsA" name=" Identify each specific deployment environment " guid="_WORNEdnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;IdentifyDeploymentEnvirons&quot; name=&quot;IdentifyDeploymentEnvirons&quot;>&lt;/a>&#xD;
+&lt;div align=&quot;left&quot;>&#xD;
+    &lt;table border=&quot;1&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;4&quot; style=&quot;border: 1px solid rgb(128,128,128)&quot;&#xD;
+    bordercolorlight=&quot;#808080&quot; bordercolordark=&quot;#808080&quot;>&#xD;
+        &lt;tr>&#xD;
+            &lt;td width=&quot;5%&quot;>&#xD;
+                &lt;b>Purpose:&lt;/b>&amp;nbsp;&#xD;
+            &lt;/td>&#xD;
+            &lt;td width=&quot;95%&quot;>&#xD;
+                To gain an understanding of the number of different deployment environments and become acquainted with the&#xD;
+                key characteristics of each.&amp;nbsp;&#xD;
+            &lt;/td>&#xD;
+        &lt;/tr>&#xD;
+    &lt;/table>&lt;br />&#xD;
+     Using the software architecture as a starting point, locate and review the deployment model and associated&#xD;
+    information. Identify each specific target environment the software will be deployed on and become familiar with the&#xD;
+    distinguishing characteristics of each.&#xD;
+&lt;/div></sectionDescription>
+  </sections>
+  <sections xmi:id="_WORNEtnnEdmO6L4XMImrsA" name=" Consolidate list of necessary environments " guid="_WORNEtnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;ConsolidateEnvirons&quot; name=&quot;ConsolidateEnvirons&quot;>&lt;/a>&#xD;
+&lt;div align=&quot;left&quot;>&#xD;
+    &lt;table border=&quot;1&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;4&quot; style=&quot;border: 1px solid rgb(128,128,128)&quot;&#xD;
+    bordercolorlight=&quot;#808080&quot; bordercolordark=&quot;#808080&quot;>&#xD;
+        &lt;tr>&#xD;
+            &lt;td width=&quot;5%&quot;>&#xD;
+                &lt;b>Purpose:&lt;/b>&amp;nbsp;&#xD;
+            &lt;/td>&#xD;
+            &lt;td width=&quot;95%&quot;>&#xD;
+                To formulate a consolidated list of a short number of environments that provide the broadest range of&#xD;
+                environmental experience.&amp;nbsp;&#xD;
+            &lt;/td>&#xD;
+        &lt;/tr>&#xD;
+    &lt;/table>&lt;br />&#xD;
+     It's not usually practical to setup and administer a large number of test environments. Economies of scale usually&#xD;
+    force your hand to accepting a limited subset of the possible target environments you could test. Make a list of all&#xD;
+    the target environments you have identified, and looks for ways to consolidate and reduce the list to a manageable&#xD;
+    subset. It's typical for both base hardware and operating system software to be shared across multiple test&#xD;
+    environments.&#xD;
+&lt;/div></sectionDescription>
+  </sections>
+  <sections xmi:id="_WORNE9nnEdmO6L4XMImrsA" name=" For each Test Environment Configuration " guid="_WORNE9nnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;ForEachEnviron&quot; name=&quot;ForEachEnviron&quot;>&lt;/a>&#xD;
+&lt;div align=&quot;left&quot;>&#xD;
+    &lt;table border=&quot;1&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;4&quot; style=&quot;border: 1px solid rgb(128,128,128)&quot;&#xD;
+    bordercolorlight=&quot;#808080&quot; bordercolordark=&quot;#808080&quot;>&#xD;
+        &lt;tr>&#xD;
+            &lt;td width=&quot;5%&quot;>&#xD;
+                &lt;b>Purpose:&lt;/b>&amp;nbsp;&#xD;
+            &lt;/td>&#xD;
+            &lt;td width=&quot;95%&quot;>&#xD;
+                To define the essential elements of the each Test Environment Configuration that will enable the required&#xD;
+                testing to be performed.&amp;nbsp;&#xD;
+            &lt;/td>&#xD;
+        &lt;/tr>&#xD;
+    &lt;/table>&lt;br />&#xD;
+&lt;/div>&#xD;
+&lt;p>&#xD;
+    For each Test Environment Configuration you have identified that you should perform your testing against, identify and&#xD;
+    define the following details.&#xD;
+&lt;/p>&#xD;
+&lt;h4>&#xD;
+    &lt;a id=&quot;IdentifySpecificNeeds&quot; name=&quot;IdentifySpecificNeeds&quot;>Identify specific environment needs for each test&#xD;
+    technique&lt;/a>&#xD;
+&lt;/h4>&#xD;
+&lt;p>&#xD;
+    Using the Test Plan, identify each technique that will be part of the Test Approach. For each technique, list the&#xD;
+    specific environmental requirements that will need to be satisfied to allow the testing to be undertaken.&#xD;
+&lt;/p>&#xD;
+&lt;h4>&#xD;
+    &lt;a id=&quot;DefineBaseInventory&quot; name=&quot;DefineBaseInventory&quot;>Define inventory of base hardware and software&lt;/a>&#xD;
+&lt;/h4>&#xD;
+&lt;p>&#xD;
+    Using the requirements you have identified, begin collating a list of both the hardware and software that will be&#xD;
+    require to conduct the testing. Keep an eye open to find opportunities for consolidation.&#xD;
+&lt;/p>&#xD;
+&lt;h4>&#xD;
+    &lt;a id=&quot;DefineTestInventory&quot; name=&quot;DefineTestInventory&quot;>Define detailed inventory of hardware and software to support&#xD;
+    test process&lt;/a>&#xD;
+&lt;/h4>&#xD;
+&lt;p>&#xD;
+    Now gather the details for each configuration. Be as specific as possible. This may require the assistance of technical&#xD;
+    support or system administration resources. Try to find the minimum and maximum &quot;extremes&quot; for the possible&#xD;
+    environments. Often these min/ max extremes are enough to provide a sufficient breadth of environment experience.&#xD;
+&lt;/p>&#xD;
+&lt;h4>&#xD;
+    &lt;a id=&quot;DefineEnvironManagement&quot; name=&quot;DefineEnvironManagement&quot;>Define Test Environment management process&#xD;
+    requirements&lt;/a>&#xD;
+&lt;/h4>&#xD;
+&lt;p>&#xD;
+    To setup, maintain and manage a test environment is often a difficult and demanding undertaking. Give thought to the&#xD;
+    management procedures you will adopt to keep the test environment in good working order.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_WORNFNnnEdmO6L4XMImrsA" name=" Evaluate and verify your results " guid="_WORNFNnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;EvaluateResults&quot; name=&quot;EvaluateResults&quot;>&lt;/a>&#xD;
+&lt;div align=&quot;left&quot;>&#xD;
+    &lt;table border=&quot;1&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;4&quot; style=&quot;border: 1px solid rgb(128,128,128)&quot;&#xD;
+    bordercolorlight=&quot;#808080&quot; bordercolordark=&quot;#808080&quot;>&#xD;
+        &lt;tr>&#xD;
+            &lt;td width=&quot;5%&quot;>&#xD;
+                &lt;b>Purpose:&lt;/b>&amp;nbsp;&#xD;
+            &lt;/td>&#xD;
+            &lt;td width=&quot;95%&quot;>&#xD;
+                To verify that the task has been completed appropriately and that the resulting work products are&#xD;
+                acceptable.&amp;nbsp;&#xD;
+            &lt;/td>&#xD;
+        &lt;/tr>&#xD;
+    &lt;/table>&lt;br />&#xD;
+&lt;/div>&#xD;
+&lt;p>&#xD;
+    Now that you have completed the work, it is beneficial to verify that the work was of sufficient value, and that you&#xD;
+    did not simply consume vast quantities of paper. You should evaluate whether your work is of appropriate quality, and&#xD;
+    that it is complete enough to be useful to those team members who will make subsequent use of it as input to their&#xD;
+    work. Where possible, use the checklists provided in RUP to verify that quality and completeness are &quot;good enough&quot;.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Have the people performing the downstream tasks that rely on your work as input take part in reviewing your interim&#xD;
+    work. Do this while you still have time available to take action to address their concerns. You should also evaluate&#xD;
+    your work against the key input work products to make sure you have represented them accurately and sufficiently. It&#xD;
+    may be useful to have the author of the input work product review your work on this basis.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Try to remember that that RUP is an iterative delivery process and that in many cases work products evolve over time.&#xD;
+    As such, it is not usually necessary-and is often counterproductive-to fully-form a work product that will only be&#xD;
+    partially used or will not be used at all in immediately subsequent work. This is because there is a high probability&#xD;
+    that the situation surrounding the work product will change-and the assumptions made when the work product was created&#xD;
+    proven incorrect-before the work product is used, resulting in wasted effort and costly rework. Also avoid the trap of&#xD;
+    spending too many cycles on presentation to the detriment of content value. In project environments where presentation&#xD;
+    has importance and economic value as a project deliverable, you might want to consider using an administrative resource&#xD;
+    to perform presentation tasks.&#xD;
+&lt;/p>&lt;br />&#xD;
+&lt;br /></sectionDescription>
+  </sections>
+</org.eclipse.epf.uma:TaskDescription>

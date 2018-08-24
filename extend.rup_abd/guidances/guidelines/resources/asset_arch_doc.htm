@@ -1,0 +1,164 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<title>Asset Architecture Document</title>
+<style><!--
+.Normal
+	{line-height:12.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+.MsoTitle
+	{text-align:center;
+	font-size:18.0pt;
+	font-family:Arial;
+	font-weight:bold;}
+.InfoBlue
+	{line-height:12.0pt;
+	font-size:10.0pt;
+	font-family:Times;
+	color:blue;
+	font-style:italic;}
+-->
+</style>
+</head>
+<body lang=EN-US link=blue vlink=purple class="Normal" bgcolor="#FFFFFF">
+<p class=MsoTitle><span style='"SUBJECT  \\* MERGEFORMAT"'>&lt;Project Name&gt;</span></p>
+<p class=MsoTitle><span style='"TITLE  \\* MERGEFORMAT"'>Asset Architecture Document</span></p>
+<h1><a name="_Toc456598586"></a><a name="_Toc492766840"> 1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  </span> Introduction</a></h1>
+<p class=InfoBlue>[This section provides an overview of the entire <strong>Asset 
+  Architecture Document</strong>. It includes the purpose, scope, definitions, 
+  acronyms, abbreviations, references, and overview of the <strong>Asset Architecture 
+  Document</strong>.]</p>
+<p>This document provides a comprehensive architectural overview of the &lt;name 
+  of Asset&gt;. It is intended to capture and convey the significant architectural 
+  decisions that have been made regarding the composition of the individual artifacts 
+  that are to be included in the asset.</p>
+<h1><a name="_Toc492766847"> 2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  </span> Architectural Goals and Constraints</a> </h1>
+<p class=InfoBlue>[This section describes the asset requirements and objectives 
+  that have some significant impact on the architecture; for example, ease of 
+  use, required skill level, use of an off-the-shelf product or existing reusable 
+  asset, use of a specific standard representation for the asset, etc. It also 
+  captures the special constraints that may apply: design and implementation strategy, 
+  development tools, team structure, schedule, existing artifacts, and so on.]</p>
+<h1> 3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  </span> Asset Environment</h1>
+<p class=InfoBlue>[This section describes the environments/contexts the asset 
+  intended to be applied within. This includes the development context, deployment 
+  context, business domain context, etc.</p>
+<p class=InfoBlue>Some possible contexts to consider capturing values for include:<span style='"Arial Unicode MS"'></span></p>
+<p class=InfoBlue> <span
+style='font-style:normal'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  </span></span> <span style='font-style:normal;'>Deployment Context</span>: Identifies 
+  the servers and runtime environment for which the asset is intended such as 
+  “websphere” </p>
+<p class=InfoBlue> <span
+style='font-style:normal'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  </span></span> <span style='font-style:normal;'>Development Context</span>: 
+  Identifies the development environment in which the asset is intended to be 
+  developed/extended </p>
+<p class=InfoBlue> <span
+style='font-style:normal'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  </span></span> <span style='font-style:normal;'>Domain Context</span>: Identifies 
+  business domain of the asset such as “insurance” </p>
+<p class=InfoBlue> <span
+style='font-style:normal'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  </span></span> <span style='font-style:normal;'>Reuse Scope Context</span>: 
+  Identifies organizationally where the asset is intended to be reused, such as, 
+  project team, department, enterprise, and so on </p>
+<p class=InfoBlue> <span
+style='font-style:normal'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  </span></span> <span style='font-style:normal;'>Test Context</span>: Identifies 
+  the contexts in which the asset should be tested such as “load test”, “performance 
+  test”, “functional test” and so on]</p>
+<h1> 4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  </span> Relationships to Other Assets </h1>
+<p class=InfoBlue>[This section describes and relationships the asset may have 
+  to other assets.  For example, the asset may depend on another asset to provide 
+  a specific service, or may be dependent on another asset being applied before 
+  the asset itself is applied.]</p>
+<h1> 5.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  </span> Usage Model (Use-Case View)</h1>
+<p class=InfoBlue>[This section describes how the asset consumer should use the 
+  asset.  It can be considered an initial usage model for the asset.]</p>
+<h2> 5.1<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  </span> Overview</h2>
+<p class=InfoBlue>[This section contains the Use-Case Model for the asset.  It 
+  lists the actors (i.e., the asset consumers) of the asset and the use cases 
+  or scenarios (descriptions of how the actor uses the asset).  There should be 
+  a direct correspondence between the use cases and the features described in 
+  the Asset Vision]</p>
+<h2><a name="_Toc492766850"> 5.2<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  </span> Use-Case Realizations</a></h2>
+<p class=InfoBlue>[This section illustrates how the asset actually works by giving 
+  a few selected use-case (or scenario) realizations, and explains how the various 
+  asset artifacts contribute to their functionality.</p>
+<p class=InfoBlue>In the context of a reusable asset, use-case realizations describe 
+  how the asset artifacts contribute to providing the functionality described 
+  in the use case.]</p>
+<h1> 6.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  </span> Asset Feature Priorities</h1>
+<p class=InfoBlue>[This section lists the relative priority of each of the asset 
+  features described in the Usage Model section. This information is used during 
+  iteration planning for the development of the asset artifacts.]</p>
+<h1> 7.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  </span> Logical Asset Organization (Logical View)</h1>
+<p class=InfoBlue>[This section describes the overall logical organization of 
+  the asset, as well as lists the artifacts that are contained with the asset.  
+  In addition to documenting the package hierarchy, the rationale for the organization 
+  should also be documented.]</p>
+<h2><a name="_Toc492766851"> 7.1<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  </span> Overview</a></h2>
+<p class=InfoBlue>[This section describes the overall logical organization of 
+  the asset, including its package hierarchy and any important relationships between 
+  those packages]</p>
+<h2> 7.2<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  </span> Logical Packages</h2>
+<p class=InfoBlue>[For each package, include a subsection with its name, a brief 
+  description, and a list of all of the asset artifacts (and possibly sub-packages) 
+  contained within the package. </p>
+<p class=InfoBlue>For each asset artifact in the package, include its name, brief 
+  description, and any relationships with other asset artifacts.]</p>
+<h1> 8.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  </span> Physical Asset Organization (Implementation View)</h1>
+<p class=InfoBlue>[This section describes the overall physical organization of 
+  the asset (i.e., the asset files and directories).  </p>
+<p class=InfoBlue>The physical organization of the asset is usually not the same 
+  as the logical organization, as the physical organization of the asset is impacted 
+  by the choice of what format to use to package the asset (for example, the Reusable 
+  Asset Specification).  Thus, the physical organization is usually not defined 
+  “up front”, but is instead documented just before the asset is packaged (or 
+  immediately after the packaging is complete).</p>
+<h2><a name="_Toc492766856"> 8.1<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  </span> Overview</a></h2>
+<p class=InfoBlue>[This describes the overall physical organization of the asset.  
+  It lists the physical directories that contain the asset files, as well as any 
+  “rules” that govern what files can be included in what directory.</p>
+<p class=InfoBlue>If a standard asset representation has been selected for the 
+  asset, the affect on the physical organization of the asset should be described 
+  here.]</p>
+<h2> 8.2<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  </span> Physical Directories</h2>
+<p class=InfoBlue>[For each physical directory, include a subsection with its 
+  name, a brief description, and a list of all of the files (and possibly sub-directories) 
+  contained within the directory.] </p>
+<h1> 9.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  </span> (Optional) Customization Options </h1>
+<p class=InfoBlue>[If the asset provides explicit customization options for specific 
+  contexts (for example, instantiating an architectural framework with a specific 
+  back-end database, or instantiating a deployment service for a specific product), 
+  then this section should describe those customization options.  </p>
+<p class=InfoBlue>This section should explicitly describe what can be customized 
+  and then provide guidelines for performing the customization.. For example, 
+  in the case of an asset that represents a template or framework, this section 
+  should describe the formal parameters that need to be bound to actual parameters 
+  as part of instantiating the asset, as well as providing suggestions on what 
+  they should be bound to.  Detailed usage instructions are not required here, 
+  as those will be provided in the complete asset documentation. The goal here 
+  is to just identify those aspects of the asset are intended to have customization 
+  &quot;built-in&quot;.]</p>
+</body>
+</html>

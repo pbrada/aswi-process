@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="-x11qt8TVnuIKeMC69UP1TQ" name="process_contribution,_NYASQBtqEdqSLrJ4Ij2LVA" guid="-x11qt8TVnuIKeMC69UP1TQ" changeDate="2005-11-15T11:34:50.224-0800" version="7.1.0">
+  <mainDescription>&lt;p>&#xD;
+    A Process Contribution is a special Process that externally defines additions and changes to an existing Process&#xD;
+    without directly modifying the existing Process. It achieves this by describing these additions and changes in a&#xD;
+    separate Process structure. This structures' elements relate to the other Process's elements using &quot;Contributes&quot; and&#xD;
+    &quot;Replace&quot; specializations. Process Contributions are normally packaged with Method Plug-ins that extend existing Method&#xD;
+    Plug-in with new capabilities.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    A Process Contribution is a kind of &quot;process plug-in&quot; that plugs additional breakdown structures into an existing&#xD;
+    Process and therefore updates it afterwards with new or changed capabilities. For example, the J2EE Plug-in plugs into&#xD;
+    the technology independent main Plug-in. It may update the generic Delivery Processes defined in that Plug-in with J2EE&#xD;
+    specific Activities. A respective &quot;.NET Plug-in&quot; could define similar updates relevant for that technology platform. A&#xD;
+    process practitioner could then apply the chosen Plug-in, thereby generating a technology specific Process, but keeping&#xD;
+    maintenance of his/her Processes minimal, because technology specific parts are kept separate and will be applied on&#xD;
+    demand only.&#xD;
+&lt;/p></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

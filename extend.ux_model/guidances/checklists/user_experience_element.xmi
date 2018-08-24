@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="-yzZu4xVitikzOYroCCDILA" name="user-experience_element,1.0933258756459082E-305" guid="-yzZu4xVitikzOYroCCDILA" changeDate="2005-11-19T19:41:52.958-0800" version="7.1.0">
+  <sections xmi:id="_vP4XgFl3EdqijtaSH2sQMg" name="General" guid="_vP4XgFl3EdqijtaSH2sQMg">
+    <sectionDescription>&lt;ul>&#xD;
+    &lt;li>&#xD;
+        The &lt;a class=&quot;elementLink&quot;&#xD;
+        href=&quot;./../../../extend.ux_model/workproducts/user_experience_element_D76CBED9.html&quot;&#xD;
+        guid=&quot;{359C3727-8E7C-4C08-BBAA-D428674CB552}&quot;>User-Experience Element&lt;/a> has a name that reflects its&#xD;
+        responsibility.&amp;nbsp; Names must be unique, and no two elements should have synonymous names.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        There should be a brief description defined for the element itself, as well as for any dynamic content and user&#xD;
+        actions.&amp;nbsp; Remember, the User-Experience Model is intended to be contract between the user-experience and the&#xD;
+        engineering teams.&amp;nbsp; Thus, it is important that it is unambiguously documented.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        The properties of the User-Experience Element, including its actions, navigation associations, and content, are&#xD;
+        justified and consistent with each other.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        The necessary navigation associations have been defined between User-Experience Elements, and the navigation&#xD;
+        associations are consistent.&amp;nbsp; See the &quot;Navigation Associations&quot; section of this checklist&amp;nbsp;for a specific&#xD;
+        navigation association checklist.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        The element's Special Requirements are readable and suit their purpose.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></sectionDescription>
+  </sections>
+  <sections xmi:id="_6CkeAFl3EdqijtaSH2sQMg" name="Screens" guid="_6CkeAFl3EdqijtaSH2sQMg">
+    <sectionDescription>&lt;ul>&#xD;
+    &lt;li>&#xD;
+        The User-Experience Element has a &amp;lt;&amp;lt;screen&amp;gt;&amp;gt; stereotype.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        The definition of each screen includes the dynamic content to appear on the element (modeled as attributes), as&#xD;
+        well as any user actions or environment actions that can be invoked on the element (modeled as operations).&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        If the screen contains input fields, &amp;lt;&amp;lt;input form&amp;gt;&amp;gt; class(es) have been modeled (a single screen may&#xD;
+        contain multiple input forms).&amp;nbsp; There is a composition relationship from the screen to the contained input&#xD;
+        forms.&lt;br />&#xD;
+         For more information, see the &quot;Input Forms&quot; section of this checklist.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        If messages are to be displayed on a screen, the necessary dynamic content attributes have been defined, as well as&#xD;
+        the environment actions that display the messages.&amp;nbsp; For more information on modeling screen messages, see &lt;a&#xD;
+        class=&quot;elementLinkWithUserText&quot;&#xD;
+        href=&quot;./../../../extend.ux_model/guidances/guidelines/user_experience_element_F0023A91.html#Modeling%20Screen%20Messages&quot;&#xD;
+         guid=&quot;9.763858677053972E-306&quot;>Guideline: User-Experience Element, Modeling Screen Messages&lt;/a>.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        The screen participates in at least one &lt;a class=&quot;elementLink&quot;&#xD;
+        href=&quot;./../../../extend.ux_model/workproducts/user_experience_storyboard_49E2F5E1.html&quot;&#xD;
+        guid=&quot;{7346D963-ECD9-4D3F-B633-E429B43B7BD7}&quot;>User-Experience Storyboard&lt;/a>.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        The screen fulfills the requirements made on it from the use-case realizations and storyboards in which it&#xD;
+        participates.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></sectionDescription>
+  </sections>
+  <sections xmi:id="_GoWSwFl4EdqijtaSH2sQMg" name="Input forms" guid="_GoWSwFl4EdqijtaSH2sQMg">
+    <sectionDescription>&lt;ul>&#xD;
+    &lt;li>&#xD;
+        The User-Experience Element has a &amp;lt;&amp;lt;input form&amp;gt;&amp;gt; stereotype.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Every input form is part of a screen. The relationship between screens and their input forms is modeled as a&#xD;
+        composition relationship from the &amp;lt;&amp;lt;screen&amp;gt;&amp;gt; class to the contained &amp;lt;&amp;lt;input form&amp;gt;&amp;gt;&#xD;
+        class(es).&amp;nbsp;&lt;br />&#xD;
+         See the &quot;Screens&quot; section of this checklist for more information.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        The name of the input form should reflect the data that is being entered on the form, and it is recommended that&#xD;
+        &quot;form&quot; be included as the last word in the class name (e.g., &quot;account info form&quot;).&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        The definition of each input form includes the input fields (modeled as attributes), as well as any user actions&#xD;
+        that can be invoked on the element (modeled as operations).&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        There is at least two user actions defined for the input form -- an action to submit the form content and an action&#xD;
+        to cancel the submission. Another useful action is an action to clear the form of any entered information.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&lt;br /></sectionDescription>
+  </sections>
+</org.eclipse.epf.uma:ContentDescription>

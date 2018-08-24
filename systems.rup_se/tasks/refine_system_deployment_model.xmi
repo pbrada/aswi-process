@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_-WKGMN0MEdmhp5PapAYf4w" name="refine_system_deployment_model,{B8F36D9E-D010-4D38-8E2F-57B28CC16D1A}" guid="_-WKGMN0MEdmhp5PapAYf4w" changeDate="2005-11-11T19:29:06.380-0800" version="7.1.0">
+  <sections xmi:id="_AYejQN0NEdmhp5PapAYf4w" name=" Update locality supplementary requirements " guid="_AYejQN0NEdmhp5PapAYf4w">
+    <sectionDescription>&lt;a id=&quot;Update Locality Supplementary Requirements&quot; name=&quot;Update Locality Supplementary Requirements&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    The System Designer makes decisions about the determination and allocation of behavior in &lt;a&#xD;
+    class=&quot;elementLinkWithType&quot; href=&quot;./../../systems.rup_se/tasks/se_operation_analysis_6C6BED14.html&quot;&#xD;
+    guid=&quot;_GMjFYOQ5Edm1mN374l9mbg&quot;>Task: System Operation Analysis&lt;/a> and &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../systems.rup_se/tasks/se_operation_design_FE6558AC.html&quot; guid=&quot;_Gb4P8OQ7Edm1mN374l9mbg&quot;>Task: System Operation&#xD;
+    Design&lt;/a> and summarizes these decisions in the survey of subsystem operations hosted at a locality, which is made a&#xD;
+    property of the &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../systems.rup_se/workproducts/rup_system_deployment_model_C12856E8.html&quot;&#xD;
+    guid=&quot;{F3EF5651-065C-478F-81CC-D55D90FF0CBC}&quot;>Artifact: System Deployment Model&lt;/a>. The sort of subsystem operations&#xD;
+    by locality gives the System Architect an indication of the computing load at a locality (and so is useful for&#xD;
+    reasoning about the capacity of the physical components that support the locality). The System Architect updates the&#xD;
+    locality supplementary requirements based on this input.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_AYejQd0NEdmhp5PapAYf4w" name=" Create/update locality interactions " guid="_AYejQd0NEdmhp5PapAYf4w">
+    <sectionDescription>&lt;a id=&quot;Create/Update Locality Interactions&quot; name=&quot;Create/Update Locality Interactions&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    In this step, the System Architect creates collaborations of localities and illustrates these with interaction diagrams&#xD;
+    which show the data exchanged and the sequencing of exchanges between localities. This permits the System Architect to&#xD;
+    reason about the coupling and cohesion of localities, and the required links (and their bandwidth) between localities.&#xD;
+    The diagram shows the localities as stereotyped nodes.&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;center&quot;>&#xD;
+    &lt;img height=&quot;566&quot; alt=&quot;diagram showing localities as stereotyped nodes&quot; src=&quot;resources/localityinter.gif&quot; width=&quot;515&quot;&#xD;
+    border=&quot;0&quot; />&#xD;
+&lt;/p>&#xD;
+&lt;p class=&quot;picturetext&quot; align=&quot;center&quot;>&#xD;
+    Example Locality Interaction Diagram.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_AYqwgN0NEdmhp5PapAYf4w" name=" Refine Locality Model based on interactions " guid="_AYqwgN0NEdmhp5PapAYf4w">
+    <sectionDescription>&lt;a id=&quot;Refine Locality Model Based on Interactions&quot; name=&quot;Refine Locality Model Based on Interactions&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    Based on discoveries made in the examination of locality interactions, the localities themselves can be refactored&#xD;
+    (repartitioned), additional localities included, and so on. The locality supplementary requirements might be&#xD;
+    consequently affected. The connections can also be specified with more certainty in this step.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_AYqwgd0NEdmhp5PapAYf4w" name=" Update locality subsystem survey " guid="_AYqwgd0NEdmhp5PapAYf4w">
+    <sectionDescription>&lt;a id=&quot;Update Locality Subsystem Survey&quot; name=&quot;Update Locality Subsystem Survey&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    Any repartitioning of localities also has an effect on the subsystem&amp;nbsp;operation survey, which is updated in the&#xD;
+    System Deployment Model.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_AYqwgt0NEdmhp5PapAYf4w" name=" Develop/refine locality characteristics and derive locality element requirements " guid="_AYqwgt0NEdmhp5PapAYf4w">
+    <sectionDescription>&lt;a id=&quot;Develop/refine Locality Characteristics and Derive Locality Element Requirements&quot;&#xD;
+name=&quot;Develop/refine Locality Characteristics and Derive Locality Element Requirements&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    As the Locality Model stabilizes, the realization of locality supplementary requirements as locality characteristics&#xD;
+    can progress, and the System Architect can begin to construct the Descriptor Level of the System Deployment Model to&#xD;
+    support these characteristics (which become a statement of requirements for elements at the Descriptor Level).&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_AYqwg90NEdmhp5PapAYf4w" name=" Develop/refine Descriptor-Level Model " guid="_AYqwg90NEdmhp5PapAYf4w">
+    <sectionDescription>&lt;a id=&quot;Develop/refine Descriptor Level Model&quot; name=&quot;Develop/refine Descriptor Level Model&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    At this point, the System Architect starts to commit to hardware, software, and human elements to realize the&#xD;
+    localities (and their hosted subsystem operations). The realization of a locality can be in terms of:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        manual processing&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        general computational platforms and associated software, in which the computational platform is a delivery vehicle&#xD;
+        for the capabilities of the software&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        other hardware elements &#xD;
+        &lt;ul>&#xD;
+            &lt;li>&#xD;
+                mechanical&#xD;
+            &lt;/li>&#xD;
+            &lt;li>&#xD;
+                hydraulic&#xD;
+            &lt;/li>&#xD;
+            &lt;li>&#xD;
+                electrical&#xD;
+            &lt;/li>&#xD;
+            &lt;li>&#xD;
+                electromechanical&#xD;
+            &lt;/li>&#xD;
+            &lt;li>&#xD;
+                ...&#xD;
+            &lt;/li>&#xD;
+        &lt;/ul>which might contain no software, or in which software is &lt;i>embedded&lt;/i> (and is therefore specialized in&#xD;
+        support of the hardware function).&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>&#xD;
+    At the Descriptor Level, the System Architect specifies the types of elements, without making specific choices of&#xD;
+    equipment (by manufacturer, model number, and so on). An allocation or budgeting process is used to define the&#xD;
+    characteristics of the descriptor nodes.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_AYw3IN0NEdmhp5PapAYf4w" name=" Develop/refine Implementation-Level Model " guid="_AYw3IN0NEdmhp5PapAYf4w">
+    <sectionDescription>&lt;a id=&quot;Develop/refine Implementation Level Model&quot; name=&quot;Develop/refine Implementation Level Model&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    At this, the physical level of realization of the System Deployment Model, the actual hardware selections are made and&#xD;
+    the numbers and skills of staff needed are specified. Trade studies can be conducted to select a cost-effective (set&#xD;
+    of) configurations which meet or exceed the specified characteristics.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_AYw3Id0NEdmhp5PapAYf4w" name=" Evaluate the results " guid="_AYw3Id0NEdmhp5PapAYf4w">
+    <sectionDescription>&lt;a id=&quot;Evaluate the Results&quot; name=&quot;Evaluate the Results&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    Decisions made in this&amp;nbsp;task are captured in the System Deployment Model; those aspects which the System Architect&#xD;
+    considers to be significant are also recorded in the &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../systems.rup_se/workproducts/rup_system_architecture_document_C5DEEFE5.html&quot;&#xD;
+    guid=&quot;{F411BB0B-C101-4D78-96B9-10749A72EAD8}&quot;>Artifact: System Architecture Document&lt;/a> (in this case, as part of the&#xD;
+    &lt;i>Physical&lt;/i> viewpoint). The effectiveness of proposed solutions at all levels needs to be reviewed with the&#xD;
+    stakeholders and the development team to ensure that all requirements (cost, capability, constraints) are satisfied.&#xD;
+    Techniques such as simulation and prototyping can be used to provide more objective demonstrations of the adequacy of&#xD;
+    the design(s).&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;br />&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <purpose>&lt;a id=&quot;Top&quot; name=&quot;Top&quot;>&lt;/a> &#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        To refine the Locality Model into a Descriptor-Level Model and then to an Implementation level, through analysis of&#xD;
+        the localities, their characteristics, and hosted subsystem operations&lt;b>. &lt;i>Note:&lt;/i>&lt;/b> &lt;i>There is a possible&#xD;
+        interface here to genuine hardware component work (that is, beyond computing platforms).&lt;/i>&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        To support supplementary requirements at the Descriptor Level, inheriting the locality requirements through&#xD;
+        allocation/budgeting.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></purpose>
+</org.eclipse.epf.uma:TaskDescription>

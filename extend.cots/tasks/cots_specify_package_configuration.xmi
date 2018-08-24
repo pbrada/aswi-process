@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_sv0DYNoTEdmCj7Yn9Ev4rg" name="cots_specify_package_configuration,{1159A75E-CD3E-459C-8450-2930022CD146}" guid="_sv0DYNoTEdmCj7Yn9Ev4rg" version="7.1.0">
+  <sections xmi:id="_tm1K8NoTEdmCj7Yn9Ev4rg" name=" Create Package Configuration Specification " guid="_tm1K8NoTEdmCj7Yn9Ev4rg">
+    <sectionDescription>&lt;a id=&quot;CreatePackageConfiguration&quot; name=&quot;CreatePackageConfiguration&quot;>&lt;/a>&#xD;
+&lt;p>&#xD;
+    A package configuration describes the selection and setting of values and options that customize a COTS package for&#xD;
+    installation.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    The customization rules and standards for configuration parameters are key elements that should be well known, agreed&#xD;
+    to, and documented with the stakeholders so that the package can be can be correctly configured with the appropriate&#xD;
+    settings to support the intended business processes and organization. There might have to be compromises made in the&#xD;
+    business processes and organization to accommodate the limitations of the chosen package. The selected package might&#xD;
+    provide some assistance with configuration tools and techniques.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Building on the rules and standards and the package characteristics, the COTS Configuration Specification artifact&#xD;
+    identifies and describes the parameters for a solution-specific version of a package. A variety of means such as&#xD;
+    configuration scripts or files containing lists of parameters may be used to identify and describe the parameters that&#xD;
+    typically include:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Global settings&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Country settings&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Languages&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Currencies (such as exchange rates, decimal places, and rounding rules)&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Units of measurement&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Calendar&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Chart of accounts&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Company codes&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Organization structure and hierarchy elements&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>&#xD;
+    While it is essential to configure the package parameters themselves correctly to allow the intended business processes&#xD;
+    and organization to operate, it is vital to document the background decisions made in choosing the parameter settings.&#xD;
+    This documentation should include:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Who performed the configuration&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Change management history&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Who approved the changes and the configuration&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Scenarios required to test the configuration&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        How the configuration meets the stakeholder's business process and organizational requirements&lt;br />&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></sectionDescription>
+  </sections>
+  <sections xmi:id="_tm1K8doTEdmCj7Yn9Ev4rg" name=" Validate and Verify Package Configuration " guid="_tm1K8doTEdmCj7Yn9Ev4rg">
+    <sectionDescription>&lt;a id=&quot;ValidateVerifyConfiguration&quot; name=&quot;ValidateVerifyConfiguration&quot;>&lt;/a>&#xD;
+&lt;p>&#xD;
+    An instance of an &lt;u>&lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../extend.cots/workproducts/cots_executing_system_C8925279.html&quot;&#xD;
+    guid=&quot;{2179F9CD-7406-4BDC-921D-D27384146E31}&quot;>&lt;font color=&quot;#FF0000&quot;>Executing System&lt;/font>&lt;/a>&lt;/u> might be required&#xD;
+    to assist stakeholders in the verification and validation of the configuration parameters. Validation and verification&#xD;
+    of the configuration parameters comes through the successful execution of the &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../core.base_rup/workproducts/rup_test_plan_53712941.html&quot; guid=&quot;{B95CA9FA-A00E-4C6C-AA16-133297812CC0}&quot;>&lt;font&#xD;
+    color=&quot;#FF0000&quot;>Test Plan&lt;/font>&lt;/a> defined for the project. The critical use cases and critical nonfunctional&#xD;
+    requirements will guide in the stakeholder validation and verification of the configuration during testing.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Review and record the agreement between the project team and the stakeholders concerning the configuration parameters&#xD;
+    contained in the baselined &lt;u>&lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../extend.cots/workproducts/cots_package_configuration_specification_4DEF7D23.html&quot;&#xD;
+    guid=&quot;{64C479CF-3557-44C0-9408-E109DF54E400}&quot;>&lt;font color=&quot;#FF0000&quot;>Package Configuration&#xD;
+    Specification&lt;/font>&lt;/a>&lt;/u>.&lt;br />&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <purpose>&lt;a id=&quot;Top&quot; name=&quot;Top&quot;>&lt;/a> &#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        To identify and specify configuration parameters for the global settings and other business organization structure&#xD;
+        and hierarchy elements inherent in the package&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        To establish and document a set of rules and standards for setting configuration parameters&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        To obtain agreement from the stakeholders that the configuration parameter settings fulfill the business processes&#xD;
+        and organizational requirements as specified in the solution&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></purpose>
+</org.eclipse.epf.uma:TaskDescription>

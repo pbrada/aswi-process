@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_3yNTQNnmEdmO6L4XMImrsA" name="setup_cm_environment,{FC91D0C9-759E-4D3D-86D8-22D7B26AA0F6}" guid="_3yNTQNnmEdmO6L4XMImrsA" changeDate="2005-10-28T08:13:40.755-0700" version="7.1.0">
+  <mainDescription>&lt;p>&#xD;
+    Setting up the CM environment involves allocating machine resources (servers and disk space) and installing the&#xD;
+    configuration management tools.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Setting up the development environment involves creating repositories, setting up the product directory structure, and&#xD;
+    importing any existing files. The initial environment serves as a baseline for further development work.&#xD;
+&lt;/p></mainDescription>
+  <sections xmi:id="_aeqEMNnnEdmO6L4XMImrsA" name=" Set up the CM Hardware Environment " guid="_aeqEMNnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;Plan the CM Environment&quot; name=&quot;Plan the CM Environment&quot;>&lt;/a>&#xD;
+&lt;div align=&quot;left&quot;>&#xD;
+    &lt;table border=&quot;1&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;4&quot; style=&quot;border: 1px solid rgb(128,128,128)&quot;&#xD;
+    bordercolorlight=&quot;#808080&quot; bordercolordark=&quot;#808080&quot;>&#xD;
+        &lt;tr>&#xD;
+            &lt;td width=&quot;5%&quot;>&#xD;
+                &lt;b>Purpose:&lt;/b>&amp;nbsp;&#xD;
+            &lt;/td>&#xD;
+            &lt;td width=&quot;95%&quot;>&#xD;
+                To allocate the hardware resources required to install&amp;nbsp; and configure the CM Tool.&amp;nbsp;&#xD;
+            &lt;/td>&#xD;
+        &lt;/tr>&#xD;
+    &lt;/table>&#xD;
+&lt;/div>&#xD;
+&lt;p>&#xD;
+    The Configuration Manager works with the System Administrator to allocate machine resources, and install the necessary&#xD;
+    software tools.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    The key considerations (in order of priority) for the machine dedicated to running the server that mediates access to&#xD;
+    actual data in&amp;nbsp; the project repository are the following:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Memory Requirements&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Disk Input / Output Requirements&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Network Bandwidth&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Project Repository Disk Space&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>&#xD;
+    Information on each of these items is provided under the &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../core.base_rup/workproducts/rup_project_repository_E3932821.html&quot;&#xD;
+    guid=&quot;{A99B1686-7BD7-43B3-9A7F-7DB18A10F4B2}&quot;>Artifact: Project Repository&lt;/a>&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_aeqEMdnnEdmO6L4XMImrsA" name=" Map the Architecture to the Repository " guid="_aeqEMdnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;Map the Architecture to the Repository&quot; name=&quot;Map the Architecture to the Repository&quot;>&lt;/a> &#xD;
+&lt;div align=&quot;left&quot;>&#xD;
+    &lt;table&#xD;
+    style=&quot;BORDER-RIGHT: rgb(128,128,128) 1px solid; BORDER-TOP: rgb(128,128,128) 1px solid; BORDER-LEFT: rgb(128,128,128) 1px solid; BORDER-BOTTOM: rgb(128,128,128) 1px solid&quot;&#xD;
+     cellspacing=&quot;0&quot; bordercolordark=&quot;#808080&quot; cellpadding=&quot;4&quot; width=&quot;100%&quot; bordercolorlight=&quot;#808080&quot; border=&quot;1&quot;>&#xD;
+        &lt;tbody>&#xD;
+            &lt;tr>&#xD;
+                &lt;td width=&quot;5%&quot;>&#xD;
+                    &lt;b>Purpose:&lt;/b>&amp;nbsp;&#xD;
+                &lt;/td>&#xD;
+                &lt;td width=&quot;95%&quot;>&#xD;
+                    The Product Directory Structure is logically organized to ensure that there is a placeholder for all&#xD;
+                    project related work products.&amp;nbsp;&#xD;
+                &lt;/td>&#xD;
+            &lt;/tr>&#xD;
+        &lt;/tbody>&#xD;
+    &lt;/table>&#xD;
+&lt;/div>&#xD;
+&lt;p>&#xD;
+    The product directory structure serves a logically nested placeholder for all product-related work products. The shape&#xD;
+    of the directory (which serves as the project repository) depends on the number of subsystems in the overall system,&#xD;
+    and the number of elements in each subsystem.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    The logical structure of the product does not emerge until these tasks are underway: &lt;a class=&quot;PresentationName&quot;&#xD;
+    href=&quot;./../../core.base_rup/disciplines/rup_analysis_design_discipline_29760231.html&quot; guid=&quot;_ydt62NnmEdmO6L4XMImrsA&quot;>Analysis&#xD;
+    &amp;amp; Design&lt;/a>. An initial project repository needs to be created for the management and planning work products.&#xD;
+    Guidance for the initial structure is provided under &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../core.base_rup/guidances/concepts/product_directory_structure_293B0B00.html&quot; guid=&quot;3.654568680407835E-305&quot;>Concept:&#xD;
+    Product Directory Structure&lt;/a>.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    The rest of the structure can be elaborated once design decisions have been made, and the nature of the Implementation&#xD;
+    View becomes clearer on how various design elements are to be packaged for implementation.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Create a placeholder for each subsystem that needs to be implemented in the directory structure. Estimate the storage&#xD;
+    requirements for the work products that will be developed, and ensure that there will be sufficient physical storage.&#xD;
+    For CM purposes, there must be a high degree of cohesion between internal elements in the product directory structure.&#xD;
+    The subsystems should have clearly defined interfaces with the other parts of the system, and be independently&#xD;
+    buildable and testable. The key reason here is to allow for independent and parallel development of the systems by&#xD;
+    separate teams. The idea is to&amp;nbsp;significantly speed up development and promote reuse and ease of system&#xD;
+    maintenance.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_aeqEMtnnEdmO6L4XMImrsA" name=" Create Initial Set of Versioned Elements " guid="_aeqEMtnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;Create Initial Set of Versioned Elements&quot; name=&quot;Create Initial Set of Versioned Elements&quot;>&lt;/a>&#xD;
+&lt;div align=&quot;left&quot;>&#xD;
+    &lt;table border=&quot;1&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;4&quot; style=&quot;border: 1px solid rgb(128,128,128)&quot;&#xD;
+    bordercolorlight=&quot;#808080&quot; bordercolordark=&quot;#808080&quot;>&#xD;
+        &lt;tr>&#xD;
+            &lt;td width=&quot;5%&quot;>&#xD;
+                &lt;b>Purpose:&lt;/b>&amp;nbsp;&#xD;
+            &lt;/td>&#xD;
+            &lt;td width=&quot;95%&quot;>&#xD;
+                To create an initial baseline of project work products.&amp;nbsp;&#xD;
+            &lt;/td>&#xD;
+        &lt;/tr>&#xD;
+    &lt;/table>&#xD;
+&lt;/div>&#xD;
+&lt;p>&#xD;
+    Even on projects with no configuration management there is a notion of a directory structure and an existing body of&#xD;
+    material that is used by the project on an on-going basis. The idea is to export/import the existing material into the&#xD;
+    structure created for product development.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_aeqEM9nnEdmO6L4XMImrsA" name=" Define Baseline Promotion Levels " guid="_aeqEM9nnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;Define Baseline Promotion Levels&quot; name=&quot;Define Baseline Promotion Levels&quot;>&lt;/a> &#xD;
+&lt;div align=&quot;left&quot;>&#xD;
+    &lt;table&#xD;
+    style=&quot;BORDER-RIGHT: rgb(128,128,128) 1px solid; BORDER-TOP: rgb(128,128,128) 1px solid; BORDER-LEFT: rgb(128,128,128) 1px solid; BORDER-BOTTOM: rgb(128,128,128) 1px solid&quot;&#xD;
+     cellspacing=&quot;0&quot; bordercolordark=&quot;#808080&quot; cellpadding=&quot;4&quot; width=&quot;100%&quot; bordercolorlight=&quot;#808080&quot; border=&quot;1&quot;>&#xD;
+        &lt;tbody>&#xD;
+            &lt;tr>&#xD;
+                &lt;td width=&quot;5%&quot;>&#xD;
+                    &lt;b>Purpose:&lt;/b>&amp;nbsp;&#xD;
+                &lt;/td>&#xD;
+                &lt;td width=&quot;95%&quot;>&#xD;
+                    To ensure all elements stored in the project repository share a common set of &quot;legal&quot; promotion&#xD;
+                    levels.&amp;nbsp;&#xD;
+                &lt;/td>&#xD;
+            &lt;/tr>&#xD;
+        &lt;/tbody>&#xD;
+    &lt;/table>&#xD;
+&lt;/div>&#xD;
+&lt;p>&#xD;
+    A baseline is a single version of the project repository. The quality or status of that baseline is indicated by a&#xD;
+    baseline promotion level. All elements stored in the project repository share a common set of &quot;legal&quot; promotion levels,&#xD;
+    preferably with consistent definitions across multiple projects. Reference Configuration Management &lt;a&#xD;
+    class=&quot;elementLinkWithType&quot; href=&quot;./../../core.base_rup/guidances/concepts/baselining_88B2C018.html&quot;&#xD;
+    guid=&quot;4.4540149642001026E-305&quot;>Concept: Baselining&lt;/a> for more details.&lt;br />&#xD;
+    &lt;br />&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <purpose>&lt;a id=&quot;Top&quot; name=&quot;Top&quot;>&lt;/a>&lt;a id=&quot;XE_configuration_management__environment_setup&quot;&#xD;
+name=&quot;XE_configuration_management__environment_setup&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    The purpose of this task is to establish an environment where the product can be developed and built. This is done in&#xD;
+    two parts, firstly by setting up the hardware environment, and then by establishing the development environment.&#xD;
+&lt;/p></purpose>
+</org.eclipse.epf.uma:TaskDescription>

@@ -1,0 +1,467 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2// EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>System Architecture Document</title>
+<link type="text/css" href="../../../../css/default.css" rel="StyleSheet">
+<script src="../../../../scripts/contentpage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					backPath = './../../';
+				</script>
+</head>
+
+<body >
+
+<div class=Section1> 
+  <p class=MsoTitle align=right style='text-align:right'>&lt;Project Name&gt;</p>
+  <p class=MsoTitle align=right style='text-align:right'>System Architecture 
+    Document</p>
+  <p class=MsoTitle align=right style='text-align:right'><span style='font-size:
+14.0pt;'>Version &lt;1.0&gt;</span></p>
+  <p class=InfoBlue align="left"><i>[<b>Note:</b> The following template is provided 
+    for use with the Rational Unified Process.&nbsp;Text enclosed in square brackets 
+    and displayed in blue italics (style=InfoBlue) is included to provide guidance 
+    to the author and must be deleted before publishing the document. A paragraph 
+    entered following this style will automatically be set to normal (style=Body 
+    Text).]</i></p>
+  <p class=InfoBlue>&nbsp; </p>
+</div>
+<div class=Section2> 
+  <p class=MsoTitle>Revision History</p>
+  <table border=1 cellspacing=0 cellpadding=0 style='border-collapse:collapse;
+ border:none;'>
+    <tr> 
+      <td width=154 valign=top style='width:1.6in;border:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt'> 
+        <p class=Tabletext align=center style='text-align:center'><b>Date</b></p>
+      </td>
+      <td width=77 valign=top style='width:.8in;border:solid windowtext .75pt;
+  border-left:none;padding:0in 5.4pt 0in 5.4pt'> 
+        <p class=Tabletext align=center style='text-align:center'><b>Version</b></p>
+      </td>
+      <td width=250 valign=top style='width:2.6in;border:solid windowtext .75pt;
+  border-left:none;padding:0in 5.4pt 0in 5.4pt'> 
+        <p class=Tabletext align=center style='text-align:center'><b>Description</b></p>
+      </td>
+      <td width=154 valign=top style='width:1.6in;border:solid windowtext .75pt;
+  border-left:none;padding:0in 5.4pt 0in 5.4pt'> 
+        <p class=Tabletext align=center style='text-align:center'><b>Author</b></p>
+      </td>
+    </tr>
+    <tr> 
+      <td width=154 valign=top style='width:1.6in;border:solid windowtext .75pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'> 
+        <p class=Tabletext>&lt;dd/mmm/yy&gt;</p>
+      </td>
+      <td width=77 valign=top style='width:.8in;border-top:none;border-left:none;
+  border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt'> 
+        <p class=Tabletext>&lt;x.x&gt;</p>
+      </td>
+      <td width=250 valign=top style='width:2.6in;border-top:none;border-left:none;
+  border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt'> 
+        <p class=Tabletext>&lt;details&gt;</p>
+      </td>
+      <td width=154 valign=top style='width:1.6in;border-top:none;border-left:none;
+  border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt'> 
+        <p class=Tabletext>&lt;name&gt;</p>
+      </td>
+    </tr>
+    <tr> 
+      <td width=154 valign=top style='width:1.6in;border:solid windowtext .75pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp; </td>
+      <td width=77 valign=top style='width:.8in;border-top:none;border-left:none;
+  border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>&nbsp; </td>
+      <td width=250 valign=top style='width:2.6in;border-top:none;border-left:none;
+  border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>&nbsp; </td>
+      <td width=154 valign=top style='width:1.6in;border-top:none;border-left:none;
+  border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>&nbsp; </td>
+    </tr>
+    <tr> 
+      <td width=154 valign=top style='width:1.6in;border:solid windowtext .75pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp; </td>
+      <td width=77 valign=top style='width:.8in;border-top:none;border-left:none;
+  border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>&nbsp; </td>
+      <td width=250 valign=top style='width:2.6in;border-top:none;border-left:none;
+  border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>&nbsp; </td>
+      <td width=154 valign=top style='width:1.6in;border-top:none;border-left:none;
+  border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>&nbsp; </td>
+    </tr>
+    <tr> 
+      <td width=154 valign=top style='width:1.6in;border:solid windowtext .75pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp; </td>
+      <td width=77 valign=top style='width:.8in;border-top:none;border-left:none;
+  border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>&nbsp; </td>
+      <td width=250 valign=top style='width:2.6in;border-top:none;border-left:none;
+  border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>&nbsp; </td>
+      <td width=154 valign=top style='width:1.6in;border-top:none;border-left:none;
+  border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>&nbsp; </td>
+    </tr>
+  </table>
+  <b><span style='font-size:18.0pt;font-family:Arial;'><br clear=all style='page-break-before:always'>
+  </span></b> 
+  
+  <p class=MsoTitle>Table of Contents</p>
+</div>
+
+<p class="MsoNormal" style="margin-left:.25in;text-indent:-.25in;mso-list:l0 level1 lfo1;
+tab-stops:list .25in"><font size="3"><a href="#1.                  Introduction">1.<span style="font-style: normal; font-variant: normal; font-weight: normal; font-family: Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Introduction</a></font></p>
+<p class="MsoNormal" style="margin-left:.55in;text-indent:-.3in;mso-list:l0 level2 lfo1;
+tab-stops:list .55in"><font size="3"><a href="#1.1               Purpose">1.1<span style="font-style: normal; font-variant: normal; font-weight: normal; font-family: Times New Roman">&nbsp;&nbsp;
+</span>Purpose</a></font></p>
+<p class="MsoNormal" style="margin-left:.55in;text-indent:-.3in;mso-list:l0 level2 lfo1;
+tab-stops:list .55in"><font size="3"><a href="#1.2               Scope">1.2<span style="font-style: normal; font-variant: normal; font-weight: normal; font-family: Times New Roman">&nbsp;&nbsp;
+</span>Scope</a></font></p>
+<p class="MsoNormal" style="margin-left:.85in;text-indent:-.35in;mso-list:l0 level3 lfo1;
+tab-stops:list .85in"><font size="3"><a href="#1.2.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Identification">1.2.1<span style="font-style: normal; font-variant: normal; font-weight: normal; font-family: Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Identification</a></font></p>
+<p class="MsoNormal" style="margin-left:.85in;text-indent:-.35in;mso-list:l0 level3 lfo1;
+tab-stops:list .85in"><font size="3"><a href="#1.2.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System Overview">1.2.2<span style="font-style: normal; font-variant: normal; font-weight: normal; font-family: Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>System Overview</a></font></p>
+<p class="MsoNormal" style="margin-left:.55in;text-indent:-.3in;mso-list:l0 level2 lfo1;
+tab-stops:list .55in"><font size="3"><a href="#1.3               Definitions, Acronyms and Abbreviations">1.3<span style="font-style: normal; font-variant: normal; font-weight: normal; font-family: Times New Roman">&nbsp;&nbsp; 
+  </span>Definitions, Acronyms, and Abbreviations</a></font></p>
+<p class="MsoNormal" style="margin-left:.55in;text-indent:-.3in;mso-list:l0 level2 lfo1;
+tab-stops:list .55in"><font size="3"><a href="#1.4               References">1.4<span style="font-style: normal; font-variant: normal; font-weight: normal; font-family: Times New Roman">&nbsp;&nbsp;
+</span>References</a></font></p>
+<p class="MsoNormal" style="margin-left:.55in;text-indent:-.3in;mso-list:l0 level2 lfo1;
+tab-stops:list .55in"><font size="3"><a href="#1.5               Document Overview">1.5<span style="font-style: normal; font-variant: normal; font-weight: normal; font-family: Times New Roman">&nbsp;&nbsp;
+</span>Document Overview</a></font></p>
+<p class="MsoNormal" style="margin-left:.25in;text-indent:-.25in;mso-list:l0 level1 lfo1;
+tab-stops:list .25in"><font size="3"><a href="#2.                  Architectural Principles and Critical Requirements">2.<span style="font-style: normal; font-variant: normal; font-weight: normal; font-family: Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Architectural Principles and Critical Requirements</a></font></p>
+<p class="MsoNormal" style="margin-left:.55in;text-indent:-.3in;mso-list:l0 level2 lfo1;
+tab-stops:list .55in"><font size="3"><a href="#2.1        Architectural Principles">2.1<span style="font-style: normal; font-variant: normal; font-weight: normal; font-family: Times New Roman">&nbsp;&nbsp;
+</span>Architectural Principles</a></font></p>
+<p class="MsoNormal" style="margin-left:.55in;text-indent:-.3in;mso-list:l0 level2 lfo1;
+tab-stops:list .55in"><font size="3"><a href="#2.2        Critical Requirements">2.2<span style="font-style: normal; font-variant: normal; font-weight: normal; font-family: Times New Roman">&nbsp;&nbsp;
+</span>Critical Requirements</a></font></p>
+<p class="MsoNormal" style="margin-left:.85in;text-indent:-.35in;mso-list:l0 level3 lfo1;
+tab-stops:list .85in"><font size="3"><a href="#2.2.1        System Use-Cases">2.2.1<span style="font-style: normal; font-variant: normal; font-weight: normal; font-family: Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  </span>System Use Cases</a></font></p>
+<p class="MsoNormal" style="margin-left:.85in;text-indent:-.35in;mso-list:l0 level3 lfo1;
+tab-stops:list .85in"><font size="3"><a href="#2.2.2        System Supplementary Requirements">2.2.2<span style="font-style: normal; font-variant: normal; font-weight: normal; font-family: Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>System Supplementary Requirements</a></font></p>
+<p class="MsoNormal" style="margin-left:.25in;text-indent:-.25in;mso-list:l0 level1 lfo1;
+tab-stops:list .25in"><font size="3"><a href="#3.                  Worker Viewpoint">3.<span style="font-style: normal; font-variant: normal; font-weight: normal; font-family: Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Worker Viewpoint</a></font></p>
+<p class="MsoNormal" style="margin-left:.55in;text-indent:-.3in;mso-list:l0 level2 lfo1;
+tab-stops:list .55in"><font size="3"><a href="#3.1               Policies">3.1<span style="font-style: normal; font-variant: normal; font-weight: normal; font-family: Times New Roman">&nbsp;&nbsp;
+</span>Policies</a></font></p>
+<p class="MsoNormal" style="margin-left:.55in;text-indent:-.3in;mso-list:l0 level2 lfo1;
+tab-stops:list .55in"><font size="3"><a href="#3.2                Organization Model">3.2<span style="font-style: normal; font-variant: normal; font-weight: normal; font-family: Times New Roman">&nbsp;&nbsp;
+</span>Organization Model</a></font></p>
+<p class="MsoNormal" style="margin-left:.55in;text-indent:-.3in;mso-list:l0 level2 lfo1;
+tab-stops:list .55in"><font size="3"><a href="#3.3                System Worker Model">3.3<span style="font-style: normal; font-variant: normal; font-weight: normal; font-family: Times New Roman">&nbsp;&nbsp;
+</span>System Worker Model</a></font></p>
+<p class="MsoNormal" style="margin-left:.55in;text-indent:-.3in;mso-list:l0 level2 lfo1;
+tab-stops:list .55in"><font size="3"><a href="#3.4                Rationale">3.4<span style="font-style: normal; font-variant: normal; font-weight: normal; font-family: Times New Roman">&nbsp;&nbsp;
+</span>Rationale</a></font></p>
+<p class="MsoNormal" style="margin-left:.25in;text-indent:-.25in;mso-list:l0 level1 lfo1;
+tab-stops:list .25in"><font size="3"><a href="#4.                  Logical Viewpoint">4.<span style="font-style: normal; font-variant: normal; font-weight: normal; font-family: Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Logical Viewpoint</a></font></p>
+<p class="MsoNormal" style="margin-left:.55in;text-indent:-.3in;mso-list:l0 level2 lfo1;
+tab-stops:list .55in"><font size="3"><a href="#4.1               System Context">4.1<span style="font-style: normal; font-variant: normal; font-weight: normal; font-family: Times New Roman">&nbsp;&nbsp;
+</span>System Context</a></font></p>
+<p class="MsoNormal" style="margin-left:.85in;text-indent:-.35in;mso-list:l0 level3 lfo1;
+tab-stops:list .85in"><font size="3"><a href="#4.1.1             External Interfaces">4.1.1<span style="font-style: normal; font-variant: normal; font-weight: normal; font-family: Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>External Interfaces</a></font></p>
+<p class="MsoNormal" style="margin-left:.55in;text-indent:-.3in;mso-list:l0 level2 lfo1;
+tab-stops:list .55in"><font size="3"><a href="#4.2               Subsystems">4.2<span style="font-style: normal; font-variant: normal; font-weight: normal; font-family: Times New Roman">&nbsp;&nbsp;
+</span>Subsystems</a></font></p>
+<p class="MsoNormal" style="margin-left:.55in;text-indent:-.3in;mso-list:l0 level2 lfo1;
+tab-stops:list .55in"><font size="3"><a href="#4.3               Interactions">4.3<span style="font-style: normal; font-variant: normal; font-weight: normal; font-family: Times New Roman">&nbsp;&nbsp;
+</span>Interactions</a></font></p>
+<p class="MsoNormal" style="margin-left:.55in;text-indent:-.3in;mso-list:l0 level2 lfo1;
+tab-stops:list .55in"><font size="3"><a href="#4.4               Supplementary Requirements Flowdown">4.4<span style="font-style: normal; font-variant: normal; font-weight: normal; font-family: Times New Roman">&nbsp;&nbsp;
+</span>Supplementary Requirements Flowdown</a></font></p>
+<p class="MsoNormal" style="margin-left:.55in;text-indent:-.3in;mso-list:l0 level2 lfo1;
+tab-stops:list .55in"><font size="3"><a href="#4.5               Rationale">4.5<span style="font-style: normal; font-variant: normal; font-weight: normal; font-family: Times New Roman">&nbsp;&nbsp;
+</span>Rationale</a></font></p>
+<p class="MsoNormal" style="margin-left:.25in;text-indent:-.25in;mso-list:l0 level1 lfo1;
+tab-stops:list .25in"><font size="3"><a href="#5.                  Process Viewpoint">5.<span style="font-style: normal; font-variant: normal; font-weight: normal; font-family: Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Process Viewpoint</a></font></p>
+<p class="MsoNormal" style="margin-left:.55in;text-indent:-.3in;mso-list:l0 level2 lfo1;
+tab-stops:list .55in"><font size="3"><a href="#5.1               System Process Model">5.1<span style="font-style: normal; font-variant: normal; font-weight: normal; font-family: Times New Roman">&nbsp;&nbsp;
+</span>System Process Model</a></font></p>
+<p class="MsoNormal" style="margin-left:.55in;text-indent:-.3in;mso-list:l0 level2 lfo1;
+tab-stops:list .55in"><font size="3"><a href="#5.2               Rationale">5.2<span style="font-style: normal; font-variant: normal; font-weight: normal; font-family: Times New Roman">&nbsp;&nbsp;
+</span>Rationale</a></font></p>
+<p class="MsoNormal" style="margin-left:.25in;text-indent:-.25in;mso-list:l0 level1 lfo1;
+tab-stops:list .25in"><font size="3"><a href="#6.                  Physical Viewpoint">6.<span style="font-style: normal; font-variant: normal; font-weight: normal; font-family: Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Physical Viewpoint</a></font></p>
+<p class="MsoNormal" style="margin-left:.55in;text-indent:-.3in;mso-list:l0 level2 lfo1;
+tab-stops:list .55in"><font size="3"><a href="#6.1               System Physical Layout, Characteristics and Properties">6.1<span style="font-style: normal; font-variant: normal; font-weight: normal; font-family: Times New Roman">&nbsp;&nbsp; 
+  </span>System Physical Layout, Characteristics, and Properties</a></font></p>
+<p class="MsoNormal" style="margin-left:.55in;text-indent:-.3in;mso-list:l0 level2 lfo1;
+tab-stops:list .55in"><font size="3"><a href="#6.2               Locality Model&nbsp;">6.2<span style="font-style: normal; font-variant: normal; font-weight: normal; font-family: Times New Roman">&nbsp;&nbsp;
+</span>Locality Model</a></font></p>
+<p class="MsoNormal" style="margin-left:.55in;text-indent:-.3in;mso-list:l0 level2 lfo1;
+tab-stops:list .55in"><font size="3"><a href="#6.3               Descriptor Level Model&nbsp;">6.3<span style="font-style: normal; font-variant: normal; font-weight: normal; font-family: Times New Roman">&nbsp;&nbsp;
+</span>Descriptor Level Model</a></font></p>
+<p class="MsoNormal" style="margin-left:.55in;text-indent:-.3in;mso-list:l0 level2 lfo1;
+tab-stops:list .55in"><font size="3"><a href="#6.4               Implementation Level Model">6.4<span style="font-style: normal; font-variant: normal; font-weight: normal; font-family: Times New Roman">&nbsp;&nbsp;
+</span>Implementation Level Model</a></font></p>
+<p class="MsoNormal" style="margin-left:.55in;text-indent:-.3in;mso-list:l0 level2 lfo1;
+tab-stops:list .55in"><font size="3"><a href="#6.5               Rationale">6.5<span style="font-style: normal; font-variant: normal; font-weight: normal; font-family: Times New Roman">&nbsp;&nbsp;
+</span>Rationale</a></font></p>
+<p class="MsoNormal" style="margin-left:.25in;text-indent:-.25in;mso-list:l0 level1 lfo1;
+tab-stops:list .25in"><font size="3"><a href="#7.                  Information Viewpoint">7.<span style="font-style: normal; font-variant: normal; font-weight: normal; font-family: Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Information Viewpoint</a></font></p>
+<p class="MsoNormal" style="margin-left:.55in;text-indent:-.3in;mso-list:l0 level2 lfo1;
+tab-stops:list .55in"><font size="3"><a href="#7.1               Business Information Rules&nbsp;">7.1<span style="font-style: normal; font-variant: normal; font-weight: normal; font-family: Times New Roman">&nbsp;&nbsp;
+</span>Business Information Rules</a></font></p>
+<p class="MsoNormal" style="margin-left:.55in;text-indent:-.3in;mso-list:l0 level2 lfo1;
+tab-stops:list .55in"><font size="3"><a href="#7.2               System Data Model">7.2<span style="font-style: normal; font-variant: normal; font-weight: normal; font-family: Times New Roman">&nbsp;&nbsp;
+</span>System Data Model</a></font></p>
+<p class="MsoNormal" style="margin-left:.55in;text-indent:-.3in;mso-list:l0 level2 lfo1;
+tab-stops:list .55in"><font size="3"><a href="#7.3               Rationale">7.3<span style="font-style: normal; font-variant: normal; font-weight: normal; font-family: Times New Roman">&nbsp;
+</span>Rationale</a></font></p>
+
+<p class="MsoNormal" style="margin-left:.25in;text-indent:-.25in;mso-list:l0 level1 lfo1;
+tab-stops:list .25in"><font size="3"><a href="#8.                  Viewpoint Consistency">8.<span style="font-style: normal; font-variant: normal; font-weight: normal; font-family: Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Viewpoint Consistency</a></font></p>
+
+<p></p>
+
+  <p class=MsoTitle><br
+clear=all style='page-break-before:always'>
+    System Architecture Document </p>
+  <h4><font><a name="1.                  Introduction">1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+    </span>Introduction</a></font></h4>
+<p class=InfoBlue>[The introduction of the <strong>System Architecture Document</strong> 
+  provides an overview of the entire <strong>System Architecture Document</strong>.]</p>
+  <h5><font><a name="1.1Purpose">1.1<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+    </span>Purpose</a></font></h5>
+  
+<p class=MsoNormal>This document provides a comprehensive architectural overview 
+  of the system, using a number of different architectural viewpoints to depict 
+  different aspects of the system. It is intended to capture and convey the <i> 
+  significant </i> architectural influences and decisions which affect the system.</p>
+  
+<p class=InfoBlue>[This section defines the purpose of the <strong>System Architecture 
+  Document</strong>, in the overall project documentation, and briefly describes 
+  the structure of the document. Identify the specific audiences for the document, 
+  with an indication of how they are expected to use the document.]</p>
+  <h5><font><a name="1.2               Scope">1.2<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+    </span>Scope</a></font></h5>
+  <p class=InfoBlue>[A brief description of the applicability of the <b>System Architecture Document</b>; what is affected or influenced by this document.]</p>
+<h6><font><b><font size="2"><a name="1.2.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Identification">1.2.1<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Identification</a></font></b></font></h6>
+<p class="InfoBlue">[This subsection provides identification of the system to which
+this document applies, in the form of identifying numbers, names, versions, and
+so on.]</p><font>
+<h6><b><font size="2"><a name="1.2.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System Overview">1.2.2<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>System
+Overview</a></font></b></h6>
+<p class="InfoBlue">[This subsection describes the purpose and general nature 
+  of the system to which this document applies. When the system exists in some 
+  form, or has some precursors, this subsection also summarize the history of 
+  the system and its operation. Identify the key stakeholders, for example, the 
+  acquirer, the user(s), operating agencies, and so on.]</p>
+  
+<h5><font><a name="1.3               Definitions, Acronyms and Abbreviations">1.3<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  </span>Definitions, Acronyms, and Abbreviations</a></font></h5>
+  
+<p class=InfoBlue>[This subsection provides the definitions of all terms, acronyms, 
+  and abbreviations required to properly interpret the <strong>System Architecture 
+  Document</strong>.&nbsp;This information can be provided by reference to the 
+  project Glossary.]</p>
+  <h5><font><a name="1.4               References">1.4<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+    </span>References</a></font></h5>
+  
+<p class=InfoBlue>[This subsection provides a complete list of all documents referenced 
+  elsewhere in the <strong>System Architecture Document</strong>. Identify each 
+  document by title, report number (if applicable), date, and publishing organization. 
+  Specify the sources from which the references can be obtained. This information 
+  can be provided by reference to an appendix or to another document.]</p>
+  </font><h5><font><a name="1.5               Document Overview"><font>1.5<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></font></a></font><a name="1.5               Document Overview"><font>Document
+Overview</font></a></h5>
+<font> 
+<p class=InfoBlue>[This subsection describes what the rest of the <strong>System 
+  Architecture Document</strong> contains and explains how the <strong>System 
+  Architecture Document</strong> is organized.]</p>
+<h4><font><a name="2.                  Architectural Principles and Critical Requirements">2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  </span>Architectural Principles and Critical Requirements</a></font></h4>
+<font> 
+<h5><a name="2.1        Architectural Principles">2.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  Architectural Principles</a></h5>
+<p class=InfoBlue>[In this section, the predetermined styles, rules and heuristics 
+  which are used to shape the system architecture are described, along with the 
+  rationale for their selection (for example, environmental, organizational, and 
+  domain influences). Architectural style includes identification of (classes 
+  of) reusable elements and compositions of these (and the rules that allow composition), 
+  and descriptions of methods for presentation and analysis of systems using a 
+  particular style.]</p>
+<h5><a name="2.2        Critical Requirements">2.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  Critical Requirements</a></h5>
+<h6><font size="2"><a name="2.2.1        System Use-Cases">2.2.1<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  </span>System Use Cases</a></font></h6>
+<p class="InfoBlue">[This subsection lists system use cases or scenarios from 
+  the System Use-Case Model if they represent some significant, central functionality 
+  of the final system, or if they have a large architectural coverage, that is, 
+  if they exercise many architectural elements, or if they stress or illustrate 
+  a specific, delicate point of the system architecture. Identify any associated 
+  performance requirements that are to be tracked as part of the Technical Performance 
+  Measurement process.]</p>
+<h6><font size="2"><a name="2.2.2        System Supplementary Requirements">2.2.2<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  </span>System Supplementary Requirements</a></font></h6>
+<p class="InfoBlue">[This subsection lists critical physical, environmental, quality 
+  of service, specialty engineering or other constraints that significantly shape 
+  the system architecture. Also, identify which of these are tracked as part of 
+  the Technical Performance Measurement process.]</p>
+<h4><font><a name="3.                  Worker Viewpoint">3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  </span>Worker Viewpoint</a></font></h4>
+<font> 
+<p class=InfoBlue>[This section illustrates significant aspects of the system 
+  from the worker viewpoint, which concerns itself with the roles and responsibilities 
+  of the organization and system workers (and policies affecting these).]</p>
+<h5><a name="3.1               Policies">3.1<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  </span>Policies</a></h5>
+<p class="InfoBlue">[TBD]</p>
+<h5><a name="3.2                Organization Model">3.2<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  </span>Organization Model</a></h5>
+<p class="InfoBlue">[TBD]</p>
+<h5><a name="3.3                System Worker Model">3.3<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  </span>System Worker Model</a></h5>
+<p class="InfoBlue">[TBD]</p>
+<h5><a name="3.4                Rationale">3.4<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  </span>Rationale</a></h5>
+<p class="InfoBlue">[TBD]</p>
+<h4><font><a name="4.                  Logical Viewpoint">4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  </span>Logical Viewpoint</a></font></h4>
+<font> 
+<p class=InfoBlue>[This section illustrates significant aspects of the system 
+  from the logical viewpoint, which concerns itself with the way the system performs 
+  its functions in terms of its partitioning into subsystems, their connections, 
+  interactions and processing, and how the non-functional requirements, including 
+  quality of service and other constraints are flowed down to the subsystems.]</p>
+<h5><a name="4.1               System Context">4.1<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  </span>System Context</a></h5>
+<p class="InfoBlue">[This subsection describes the architecturally significant 
+  elements from the Context Diagram in the System Analysis Model, for example, 
+  entities with which the system interacts, connections and material, data, or 
+  other flows to be supported.]</p>
+<h6><font size="2"><a name="4.1.1             External Interfaces">4.1.1<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  </span>External Interfaces</a></font></h6>
+<p class="InfoBlue">[In this subsection, describe the significant interfaces (offered 
+  and required) that support the entities, connections, and flows identified in 
+  4.1 System Context.]</p>
+<h5><font><a name="4.2               Subsystems">4.2<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  </span>Subsystems</a></font></h5>
+<font> 
+<p class=InfoBlue>[This subsection identifies and describes the subsystems that 
+  play an architecturally significant role, in terms of the interfaces (capabilities 
+  and attributes) they support and require, and the nature of their relationships, 
+  one to the other, and external to the system.]</p>
+<h5><a name="4.3               Interactions">4.3<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  </span>Interactions</a></h5>
+<p class="InfoBlue">[This subsection describes how the significant use cases and 
+  use-case scenarios are realized in terms of subsystem interactions, and how 
+  critical system performance requirements are reflected in performance constraints 
+  placed on subsystem capabilities and the links between subsystems.]</p>
+<h5><a name="4.4               Supplementary Requirements Flowdown">4.4<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  </span>Supplementary Requirements Flowdown</a></h5>
+<p class="InfoBlue">[This subsection describes how the critical physical, environmental, 
+  quality of service, specialty engineering and other constraints, are flowed 
+  down to the subsystems, and how the subsystem characteristics, so determined, 
+  combine to yield the desired system characteristics.]</p>
+<h5><a name="4.5               Rationale">4.5<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  </span>Rationale</a></h5>
+<p class="InfoBlue">[This subsection describes the trade studies, analysis, and 
+  reasoning that led to the definition and selection of this logical architecture, 
+  and why the particular subsystems and interactions chosen are significant. Where 
+  decisions have been taken to include humans as part of the operational system, 
+  the trade-off between humans and performance of the same functions in hardware 
+  or software, and the way in which human performance characteristics have been 
+  taken into account, are of particular interest. This subsection also describes 
+  the rationale (for example, modeling, analysis, prototyping) used for the budgeting 
+  or assignment of the non-functional requirements.]</p>
+<h4><font><a name="5.                  Process Viewpoint">5.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  </span>Process Viewpoint</a></font></h4>
+<p class=InfoBlue>[This section illustrates significant aspects of the system 
+  from the process viewpoint, which concerns itself with the way the system architecture is 
+  designed to take advantage of concurrency (multiple processes performed apparently 
+  or actually in parallel), to yield simpler (and so more easily maintained) architectures,&nbsp; 
+  and to address scalability, performance, throughput, and reliability concerns.]</p>
+<h5><font><a name="5.1               System Process Model">5.1<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  </span>System Process Model</a></font></h5>
+<p class=InfoBlue>[In this subsection, the significant or critical <b>active</b> 
+  elements of the system (subsystems, classes, objects) are identified and their 
+  important relationships and interactions described. This information comes from 
+  the System Analysis Model and System Design Model, with a focus on the active 
+  elements that represent the processes in the system.]</p>
+<h5><font><a name="5.2               Rationale">5.2<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  </span>Rationale</a></font></h5>
+<p class=InfoBlue>[The analysis, reasoning, and trade studies that resulted in 
+  the process architecture are described here, as well as an explanation of why 
+  the processes and interactions discussed are important.] </p>
+</font>
+<h4><font><font><a name="6.                  Physical Viewpoint">6.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  </span></a></font></font><a name="6.                  Physical Viewpoint"><font>Physical 
+  Viewpoint</font></a></h4>
+<font> 
+<p class=InfoBlue>[This section illustrates significant aspects of the system 
+  from the physical viewpoint, which concerns itself with the physical infrastructure 
+  required to support system functionality and distribution.]</p>
+<h5><a name="6.1               System Physical Layout, Characteristics and Properties">6.1<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  </span>System Physical Layout, Characteristics, and Properties</a>&nbsp;</h5>
+<p class="InfoBlue">[This subsection describes important aspects of the system's 
+  physical placement, equipment installation and assembly, and safe, reliable, 
+  physical operation. Aspects to be considered include weight, power supply, heat 
+  generation and dissipation, acceleration/vibration effects, electromagnetic 
+  interference, physical access, and so on.]</p>
+<h5><a name="6.2               Locality Model&nbsp;">6.2<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  </span>Locality Model&nbsp;</a></h5>
+<p class="InfoBlue">[Describe significant or critical aspects of the <b>Locality</b> 
+  Model, including locality decomposition (if any), locality and connection characteristics, 
+  hosted subsystems, and interesting locality interactions.]</p>
+<h5><a name="6.3               Descriptor Level Model&nbsp;">6.3<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  </span>Descriptor Level Model&nbsp;</a></h5>
+<p class="InfoBlue">[Describe significant or critical aspects of the System Deployment 
+  Model at the <b>Descriptor</b> level, where the <i>types</i> of processing resources 
+  at a locality are specified - these are <i>nodes</i>, which might include 
+  computing devices (servers, workstations, and so on), people, or other electro-mechanical 
+  devices.]</p>
+<h5><a name="6.4               Implementation Level Model">6.4<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  </span>Implementation Level Model</a>&nbsp;</h5>
+<p class="InfoBlue">[Describe significant or critical aspects of the System Deployment 
+  Model at the <b>Implementation</b> level, where the actual hardware selection 
+  is made, numbers of role instances (in the case of human resources) are determined, 
+  and a set of configurations, capacity, power (and other environmental requirements), 
+  cost, and performance is defined.]</p>
+<h5><a name="6.5               Rationale">6.5<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  </span>Rationale</a></h5>
+<p class="InfoBlue">[The analysis, reasoning and trade studies that resulted in 
+  the physical layout and deployment architecture are described here, with an 
+  explanation of why the particular aspects presented are important.]</p>
+<h4><font><a name="7.                  Information Viewpoint">7.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  </span>Information Viewpoint</a></font></h4>
+<p class=InfoBlue>[TBD]</p>
+<h5><a name="7.1               Business Information Rules&nbsp;">7.1<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  </span>Business Information Rules&nbsp;</a></h5>
+<p class="InfoBlue">[TBD]</p>
+<h5><a name="7.2               System Data Model">7.2<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  </span>System Data Model</a>&nbsp;</h5>
+<p class="InfoBlue">[TBD]</p>
+<h5><a name="7.3               Rationale">7.3<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  </span>Rationale</a></h5>
+<p class="InfoBlue">[TBD]</p>
+<h4><font><a name="8.                  Viewpoint Consistency">8.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  </span>Viewpoint Consistency</a></font></h4>
+<p class=InfoBlue>[TBD]</p>
+</font></font></font></font></font></html>

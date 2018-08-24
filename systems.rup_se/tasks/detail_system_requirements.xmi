@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_90Es190MEdmhp5PapAYf4w" name="detail_system_requirements,{B4498C3E-52D5-4732-9172-94265D8A17D5}" guid="_90Es190MEdmhp5PapAYf4w" version="7.1.0">
+  <sections xmi:id="_ALyLEN0NEdmhp5PapAYf4w" name=" Refine the Supplementary Specifications " guid="_ALyLEN0NEdmhp5PapAYf4w">
+    <sectionDescription>&lt;a id=&quot;Refine the Supplementary Specifications&quot; name=&quot;Refine the Supplementary Specifications&quot;>&lt;/a>&#xD;
+&lt;p>&#xD;
+    The Supplementary Specifications are refined and augmented based on evaluation feedback and continued work on the&#xD;
+    Use-Case Model (in allocating non-functional requirements, such as performance requirements, to use cases and use-case&#xD;
+    black-box steps). Consult the artifact &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../core.base_rup/guidances/checklists/supplementary_specifications_13D7A7B2.html&quot;&#xD;
+    guid=&quot;3.6983852748116677E-306&quot;>Checklist: Supplementary Specifications&lt;/a> as part of evaluation.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    If requirements are traced or otherwise formally managed, make sure that each requirement is clearly identified and&#xD;
+    labeled and updated in the &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../core.base_rup/workproducts/rup_requirements_attributes_EFE5ABAC.html&quot;&#xD;
+    guid=&quot;{D0E2E7A1-4179-470E-AA18-419D5FEA275D}&quot;>Artifact: Requirements Attributes&lt;/a>.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_AL-YUN0NEdmhp5PapAYf4w" name=" Generate supporting reports " guid="_AL-YUN0NEdmhp5PapAYf4w">
+    <sectionDescription>&lt;a id=&quot;Generate supporting reports&quot; name=&quot;Generate supporting reports&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    Requirements are often stored and managed using one or more tools. For example, tools for:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        graphical use-case modeling&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;a class=&quot;elementLink&quot; href=&quot;./../../core.base_rup/guidances/concepts/traceability_8F6B898D.html&quot;&#xD;
+        guid=&quot;1.4005695544042474E-306&quot;>Traceability&lt;/a> and &lt;a class=&quot;elementLink&quot;&#xD;
+        href=&quot;./../../core.base_rup/guidances/concepts/requirements_management_8067CA83.html&quot;&#xD;
+        guid=&quot;8.93441552545224E-307&quot;>Requirements Management&lt;/a>&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        other textual and graphical documentation&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>&#xD;
+    This step generates documentation from these tools so that the information can be easily reviewed.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    When using Rational tools, the following reports are applicable:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+        href=&quot;./../../extend.formal_resources/guidances/reports/use-case_model_survey_F909BC71.html&quot;&#xD;
+        guid=&quot;5.732873433575423E-305&quot;>Report: Use-Case Model Survey&lt;/a>&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+        href=&quot;./../../extend.formal_resources/guidances/reports/use_case_specification_use-case_name_F39A1207.html&quot;&#xD;
+        guid=&quot;1.338789375307351E-305&quot;>Report: Use-Case Specification&lt;/a>&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>&#xD;
+    If specialized tools are not used for capturing the requirements, then this step is not applicable (all software&#xD;
+    requirements would be written directly in the documentation).&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_AMQsMd0NEdmhp5PapAYf4w" name=" Package the requirements for review " guid="_AMQsMd0NEdmhp5PapAYf4w">
+    <sectionDescription>&lt;a id=&quot;Assemble the SRS&quot; name=&quot;Assemble the SRS&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    For less formal projects, this step consists of bundling the relevant reports and hand-generated documentation, with&#xD;
+    sufficient supporting material so requirements can be effectively reviewed.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    On more formal projects, the &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../systems.rup_se/workproducts/rup_system_requirements_specification_ABD179DD.html&quot;&#xD;
+    guid=&quot;{4E1B29EA-48D6-4020-8868-9813985F99E2}&quot;>Artifact: System Requirements Specification&lt;/a> collects and organizes&#xD;
+    all requirements for the project. The System Requirements Specification is simply a composition of the Use-Case Model&#xD;
+    (representing the functional capabilities) and the Supplementary Specifications (capturing all other requirements). If&#xD;
+    the project is required to deliver a System Requirements Specification as a single artifact in true document form, then&#xD;
+    this can be done by extracting reports from the Use-Case Model and individual use cases (see &lt;a&#xD;
+    class=&quot;elementLinkWithType&quot; href=&quot;./../../extend.formal_resources/guidances/reports/use-case_model_survey_F909BC71.html&quot;&#xD;
+    guid=&quot;5.732873433575423E-305&quot;>Report: Use-Case Model Survey&lt;/a> and &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../extend.formal_resources/guidances/reports/use_case_specification_use-case_name_F39A1207.html&quot;&#xD;
+    guid=&quot;1.338789375307351E-305&quot;>Report: Use-Case Specification&lt;/a> ) and combining these with the Supplementary&#xD;
+    Specifications.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    The template provided with the &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../systems.rup_se/workproducts/rup_system_requirements_specification_ABD179DD.html&quot;&#xD;
+    guid=&quot;{4E1B29EA-48D6-4020-8868-9813985F99E2}&quot;>Artifact: System Requirements Specification&lt;/a> serves as a checklist&#xD;
+    when the Supplementary Specifications and Use-Case Model artifacts are produced, because these component artifacts&#xD;
+    actually contain all of the needed content. If the project decides not to produce Supplementary Specifications or a&#xD;
+    Use-Case Model (or decides not to present system requirements to the customer in this way), then the System&#xD;
+    Requirements Specification template can be used to guide content production.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;br />&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <purpose>&lt;a id=&quot;Top&quot; name=&quot;Top&quot;>&lt;/a> &#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        To refine, if necessary, the Supplementary Specifications for the system.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        To produce a composite artifact, the System Requirements Specification, which combines the specification of&#xD;
+        required functional capability and required constraints.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></purpose>
+</org.eclipse.epf.uma:TaskDescription>

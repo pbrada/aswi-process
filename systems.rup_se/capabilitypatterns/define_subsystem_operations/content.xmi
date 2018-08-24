@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ProcessDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="-khwqXj29Q8ylUjlraWSuiQ" name="define_subsystem_operations,_GRK14VVnEdq-S-2DETo4XA" guid="-khwqXj29Q8ylUjlraWSuiQ" version="7.1.0">
+  <mainDescription>&lt;p>&#xD;
+    This&amp;nbsp;activity describes a top-down approach of logically decomposing the system across multiple aspects driven by&#xD;
+    the chosen architectural viewpoints and views (see the &lt;a class=&quot;elementLinkWithUserText&quot;&#xD;
+    href=&quot;./../../core.base_rup/guidances/concepts/use_case_flowdown_6BF482DB.html&quot; guid=&quot;_6SxgEOM9EdmaZcY4PeqVxA&quot;>Use Case&#xD;
+    Flowdown&lt;/a> and &lt;a class=&quot;elementLinkWithUserText&quot;&#xD;
+    href=&quot;./../../core.base_rup/guidances/concepts/supplementary_reqs_flowdown_69E8E8A9.html&quot;&#xD;
+    guid=&quot;_vt06oOM9EdmaZcY4PeqVxA&quot;>Supplementary Requirements Flowdown&lt;/a> concepts).&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Although in most of the cases the starting point will be the top-level use cases, this is not a pre-requisite. If the&#xD;
+    use-case techniques are not employed by the modeling team, this operation-based approach could still be used as long as&#xD;
+    you can define the operations for the top-level system. This is also true&amp;nbsp;when this activity is performed&#xD;
+    for&amp;nbsp;a subsystem for which only the operations have been defined.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    There are two other main characteristics of this approach. One, this is a play around two perspectives on the&#xD;
+    (sub)systems: black box and white box. You start with the black box perspective and define the externally&#xD;
+    visible&amp;nbsp;properties of the system(s), mostly in terms of operations. Then you open up the black box, define or&#xD;
+    identify its elements and describe how each system operation is realized by the elements' operations. The second&#xD;
+    characteristic of this approach is the fact that is recursive. You are applying the same general method at lower, more&#xD;
+    detailed levels, for finer-grained subsystems.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    A simplified workflow through this&amp;nbsp;activity is presented below:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../systems.rup_se/tasks/se_define_system_context_1233657D.html&quot;&#xD;
+        guid=&quot;{C66A11BC-B869-4702-AE8D-C8347BD0AA96}&quot;>Task: Define the System Context&lt;/a>: start with the&amp;nbsp;system use&#xD;
+        cases and define the top-level system operations (black-box perspective).&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../systems.rup_se/tasks/architectural_analysis_30D2538.html&quot;&#xD;
+        guid=&quot;{B7FABC7A-42FA-4DC7-A1F4-C4F5DB6F673F}&quot;>Task: System Architectural Analysis&lt;/a>: define the structural&#xD;
+        organization&amp;nbsp;of the subsystems&amp;nbsp;(white-box perspective).&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../systems.rup_se/tasks/se_operation_analysis_6C6BED14.html&quot;&#xD;
+        guid=&quot;_GMjFYOQ5Edm1mN374l9mbg&quot;>Task: System Operation Analysis&lt;/a>: realize the top-level operations by&#xD;
+        collaborations of the subsystems' operations&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../systems.rup_se/tasks/se_operation_design_FE6558AC.html&quot;&#xD;
+        guid=&quot;_Gb4P8OQ7Edm1mN374l9mbg&quot;>Task: System Operation Design&lt;/a>: refine and refactor the operations defined during&#xD;
+        analysis and expand the realizations over the previously chosen architectural viewpoints/views.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></mainDescription>
+  <purpose>&lt;p>&#xD;
+    The purpose of this&amp;nbsp;activity is to identify for each subsystem the main set of operations, group them into&#xD;
+    interfaces and recursively define their realizations in terms of the operations supported by the next level subsystems.&#xD;
+&lt;/p></purpose>
+  <howtoStaff>&lt;p>
+    This activity is best carried out by a small team (playing the role of &lt;a class=&quot;elementLinkWithUserText&quot; href=&quot;./../../systems.rup_se/roles/rup_system_architect,{A83E9C0E-3BBD-4D5A-902F-3B82F21975E3}.html&quot; guid=&quot;{A83E9C0E-3BBD-4D5A-902F-3B82F21975E3}&quot;>System Architect&lt;/a>&amp;nbsp;and &lt;a class=&quot;elementLinkWithUserText&quot; href=&quot;./../../systems.rup_se/roles/rup_system_designer,{17D1CF2F-DA3E-4EC0-AB76-C8B47343183B}.html&quot; guid=&quot;{17D1CF2F-DA3E-4EC0-AB76-C8B47343183B}&quot;>System Designer&lt;/a>, and usually guided by one or two individuals who
+    have deep experience in architecting systems in the relevant domain) staffed by cross-functional team members. Issues
+    that are typically architecturally important include performance, scaling, distribution, or other specialty engineering
+    requirements. Significant architectural constraints might also flow from physical and environmental requirements. The
+    team should also include members with domain experience who can identify key abstractions. The team should also have
+    experience with model organization and layering.
+&lt;/p></howtoStaff>
+</org.eclipse.epf.uma:ProcessDescription>

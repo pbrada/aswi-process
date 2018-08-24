@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_ELiZgNwuEdmRU7lXzo6lKQ" name="designing_message-driven_beans,7.497484412493539E-306" guid="_ELiZgNwuEdmRU7lXzo6lKQ" version="7.1.0">
+  <mainDescription>&lt;a id=&quot;Top&quot; name=&quot;Top&quot;>&lt;/a> &#xD;
+&lt;h3>&#xD;
+    &lt;a id=&quot;Introduction&quot; name=&quot;Introduction&quot;>&lt;/a>Introduction&#xD;
+&lt;/h3>&#xD;
+&lt;p>&#xD;
+    This guideline focuses on designing message-driven beans. Additional guidance on message-driven beans, such as how to&#xD;
+    identify and model them, is provided by &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../../tech.j2ee/guidances/guidelines/message-driven_bean_12D6102.html&quot;&#xD;
+    guid=&quot;3.616542707987638E-305&quot;>Guideline: Message-Driven Bean&lt;/a>. General guidance on EJBs is provided by &lt;a&#xD;
+    class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../../tech.j2ee/guidances/guidelines/enterprise_javabean_ejb_7F0C3AFF.html&quot;&#xD;
+    guid=&quot;1.5078998518719443E-305&quot;>Guideline: Enterprise JavaBean (EJB)&lt;/a>&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Note that since message-driven beans are invoked indirectly via messages, rather than directly via interface&#xD;
+    operations, their design entails elaborating message format and describing behavior in response to messages, and not&#xD;
+    elaborating interface operations.&#xD;
+&lt;/p>&#xD;
+&lt;h3>&#xD;
+    &lt;a id=&quot;Transactions&quot; name=&quot;Transactions&quot;>Transactions&lt;/a>&#xD;
+&lt;/h3>&#xD;
+&lt;p>&#xD;
+    One limitation of using messaging is that the producer of a message and the consumer (the message-driven bean) cannot&#xD;
+    participate in the same transaction. The producer can use a transaction to place the message on the queue, and the&#xD;
+    message-driven bean can use a separate transaction to commit the results of consuming the message, but these must&#xD;
+    always be separate transactions.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Message-driven beans can use bean-managed or container-managed transactions. Generally container-managed transactions&#xD;
+    are simpler, and so are the preferred approach. See &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../../tech.j2ee/guidances/guidelines/designing_enterprise_javabeans_ejbs_1F6B0E88.html&quot;&#xD;
+    guid=&quot;2.8082009592332426E-306&quot;>Guideline: Designing Enterprise JavaBeans (EJBs)&lt;/a> for more guidance.&#xD;
+&lt;/p>&#xD;
+&lt;h3>&#xD;
+    &lt;a id=&quot;Message Order&quot; name=&quot;Message Order&quot;>Message Order&lt;/a>&#xD;
+&lt;/h3>&#xD;
+&lt;p>&#xD;
+    Each message-driven bean is an active class that may have multiple instances. Since each message-driven bean instance&#xD;
+    runs concurrently, the processing of a message received by one instance may complete before or after a message&#xD;
+    processed by another instance.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    This means that messages can be consumed in a different order than in which they were produced. The design of&#xD;
+    message-driven beans must take this possibility into account.&#xD;
+&lt;/p>&lt;br />&#xD;
+&lt;br /></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

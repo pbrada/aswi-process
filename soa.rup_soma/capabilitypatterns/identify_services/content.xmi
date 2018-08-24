@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1">
+  <org.eclipse.epf.uma:ProcessDescription xmi:id="-CzlZmj255QkeG5RLJVbpvQ" name="identify_services,_HTHEkCv-EduYBoDegGQopA" guid="-CzlZmj255QkeG5RLJVbpvQ">
+    <mainDescription>&lt;p>&#xD;
+    This section outlines guidance on how the&amp;nbsp;Software Architect&amp;nbsp;or Designer can identify services. This process&#xD;
+    of service identification and clustering into&amp;nbsp;Service Specifications&amp;nbsp;and Service Providers can be approached&#xD;
+    from a number of perspectives and the choices below may be used alone or most likely in combination in any particular&#xD;
+    project. The identification of services is most likely one of the first tasks in the modeling of a service-oriented&#xD;
+    solution. Therefore, errors made during identification can flow through detailed design and implementation tasks.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    The following diagram demonstrates the differing approaches to service identification. These are not mutually&#xD;
+    exclusive, but the choices of which ones are appropriate will need to take into account wider process and project&#xD;
+    concerns. Each of the colored ovals represents one of the techniques described below. There are two forms of&#xD;
+    collaboration-based identification where the collaboration may be identified using business-process modeling or&#xD;
+    use-case modeling.&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;center&quot;>&#xD;
+    &lt;img height=&quot;133&quot; alt=&quot;&quot; src=&quot;./resources/soa_svce_identification-05.gif&quot; width=&quot;421&quot; />&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    However, one of the first decisions to make, and it is independent of the approaches above, is whether the&#xD;
+    identification is purely based on the understanding of Operations which are later aggregation into services or whether&#xD;
+    a set of services are already known and Operations are added to services as identified.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;b>Service-first&lt;/b>; this technique is common to both object-oriented and component based development where the&#xD;
+    Classes of objects or components are identified first, presumably using an analysis technique to identify the classes&#xD;
+    of &quot;things&quot; in some business or technical domain. Then, as collaborations between objects are analyzed, the operations&#xD;
+    (responsibilities of the object) are identified and added to the classes. In the same way, Services may be identified&#xD;
+    from Domain Analysis and augmented by the Operations identified in the approaches below.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;b>Operation-first&lt;/b>; however, some critics have pointed out that services are not like classes and objects or&#xD;
+    components. Services may manage a set of resources, but the service/resource relationship is fundamentally different to&#xD;
+    the class/object relationship. As such, different analysis techniques are required and tend to favor the late&#xD;
+    identification of services by aggregating a set of identified Operations into some logical grouping.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    The examples within this activity will demonstrate the use of a Service-first technique because it is more easily used&#xD;
+    by those familiar with similar guidance in Rational Unified Process (RUP).&#xD;
+&lt;/p></mainDescription>
+  </org.eclipse.epf.uma:ProcessDescription>
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="-jcxjy7bQQ0X7NpF0-ypMxg" name="soa_identify_services,_7ZObICxuEdupJ8eX04kqLQ" guid="-jcxjy7bQQ0X7NpF0-ypMxg"/>
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="-5LiPFe6wktMQmXTNnpa7Dw" name="goal_service_modeling,_TZxh9knuEduC74V7YHXTOQ" guid="-5LiPFe6wktMQmXTNnpa7Dw">
+    <mainDescription>&lt;p>&#xD;
+    The Goal-Service Model can be thought of as going through two elaborations.&amp;nbsp; The first elaboration captures the&#xD;
+    initial structure of goals, sub-goals, KPIs and metrics for the project, and maps goals and sub-goals to candidate&#xD;
+    services where possible.&amp;nbsp; At the end of this elaboration there may be goals or sub-goals that do not yet map to a&#xD;
+    service.&amp;nbsp;&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    The second elaboration takes place when making service exposure decisions, during which candidate services are&#xD;
+    evaluated for business alignment.&amp;nbsp; Any service that is going to be chosen for exposure must map to at least one&#xD;
+    goal or sub-goal in the Goal-Service Model.&amp;nbsp; This can result in an update to the Goal-Service Model to document&#xD;
+    the service mapping, and potentially to add a new goal or sub-goal (subject to careful evaluation for fit with business&#xD;
+    objectives).&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Goal-Service Modeling, similar to other SOMA activities, is typically carried out using an approach that incrementally&#xD;
+    builds a Goal-Service Model through several iterations.&amp;nbsp; One area of the Goal-Service Model may be found to be&#xD;
+    complete to the point described for the first elaboration, while another portion may already complete to the point&#xD;
+    described for the second elaboration.&amp;nbsp; Eventually additional iterations of Goal-Service Modeling and Service&#xD;
+    Exposure Decisions will result in a Goal-Service Model that has been completed to the second level of elaboration for&#xD;
+    all areas of the model that are necessary to complete the current project.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    The information needed to create an instance of the Goal-Service Model work product can be gathered through interviews&#xD;
+    and facilitated work sessions.&amp;nbsp; To provide structure for the interviews or work sessions, an instance of the&#xD;
+    Goal-Service Model template can be filled out during the sessions, providing all participants with a visible and&#xD;
+    evolving framework of goals and sub-goals.&lt;br />&#xD;
+&lt;/p></mainDescription>
+  </org.eclipse.epf.uma:ActivityDescription>
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="-A3DCDl5DTNnB_dAM7TZcjw" name="Domain Decomposition,_J5kdIExCEduGSMz-5zscXg" guid="-A3DCDl5DTNnB_dAM7TZcjw">
+    <mainDescription>&lt;p>&#xD;
+    A top-down business-driven decomposition to identify:&#xD;
+&lt;/p>&#xD;
+&lt;ol>&#xD;
+    &lt;li>&#xD;
+        Candidate services&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Functional areas that identify boundaries for subsystems (and later on, candidate service components to realize&#xD;
+        services)&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Business processes (service flows)&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Commonality and variations of business functionality&#xD;
+    &lt;/li>&#xD;
+&lt;/ol></mainDescription>
+  </org.eclipse.epf.uma:ActivityDescription>
+</xmi:XMI>

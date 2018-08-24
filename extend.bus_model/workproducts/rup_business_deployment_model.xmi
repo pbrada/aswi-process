@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ArtifactDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="-wKYa3YncYOxN2PgQyewbbQ" name="rup_business_deployment_model,_lm_NMBpWEdqUwb9RAn2tTA" guid="-wKYa3YncYOxN2PgQyewbbQ" changeDate="2005-09-22T12:44:59.349-0700" version="7.1.0">
+  <purpose>&lt;p>&#xD;
+    The purpose of the Business Deployment Model is to capture the physical&amp;nbsp;partitioning and distribution&amp;nbsp;of the&#xD;
+    business. These could be geographical locations and their characteristics, the communication channels between them and&#xD;
+    their properties or other physical resources.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    The representation of the Business Deployment Model could be done at different levels of abstraction. The Locality&#xD;
+    Model represents the initial,&amp;nbsp;abstract decomposition into physical elements. A locality expresses notionally where&#xD;
+    the business takes place without defining the exact geographic location. Depending on the scope of business modeling,&#xD;
+    these localities might be decomposed into finer-grained localities. As decisions are taken, the model evolves into a&#xD;
+    more &quot;concrete&quot; one, capturing the different characteristics of each physical resource.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    The Business Deployment Model is also representing the mapping of the business subsytems operations (grouped around&#xD;
+    interfaces) to localities. This determines the resource requirements for each locality. Based on the behavior to be&#xD;
+    supported at the localities, collaborations of localities can be constructed (and represented in interaction diagrams).&#xD;
+    These help characterize the connections between the localities.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Each locality in the System Deployment Model has an attached description of derived business supplementary requirements&#xD;
+    (derived from&amp;nbsp;business supplementary specifications) which specify quality (reliability, performance, scalability,&#xD;
+    usability and so forth), physical, political&amp;nbsp;and environmental requirements, and&amp;nbsp;other constraints (cost,&#xD;
+    risk, and so forth). From these requirements, the actual characteristics (of each locality) are determined; obviously,&#xD;
+    these are chosen to meet the explicit requirements at least, but can exceed the requirements (for example, to cope with&#xD;
+    unexpected capacity demands).&#xD;
+&lt;/p></purpose>
+  <reasonsForNotNeeding>The Business Deployment Model is usually needed for large projects involving business modeling.</reasonsForNotNeeding>
+  <representationOptions>UML Representation: &#xD;
+&lt;p>&#xD;
+    Model, stereotyped as &quot;business deployment model.&quot;&#xD;
+&lt;/p></representationOptions>
+</org.eclipse.epf.uma:ArtifactDescription>

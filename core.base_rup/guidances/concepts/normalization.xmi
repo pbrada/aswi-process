@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_1s2JQNnmEdmO6L4XMImrsA" name="normalization,3.183357382287462E-306" guid="_1s2JQNnmEdmO6L4XMImrsA" changeDate="2005-06-24T14:13:54.801-0700" version="7.1.0">
+  <copyrightStatement href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#_egIacP1mEdm9-ZPZADkvIg"/>
+  <mainDescription>&lt;a id=&quot;Top&quot; name=&quot;Top&quot;>&lt;/a> &#xD;
+&lt;h3>&#xD;
+    &lt;a id=&quot;Introduction&quot; name=&quot;Introduction&quot;>Introduction&lt;/a>&#xD;
+&lt;/h3>&#xD;
+&lt;p>&#xD;
+    This concept document provides a brief discussion of the topic of data normalization as it applies to the development&#xD;
+    of the &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../../core.base_rup/workproducts/rup_data_model_65B46980.html&quot;&#xD;
+    guid=&quot;{9DCF1723-1A21-4F48-BEDE-DBC543489682}&quot;>Artifact: Data Model&lt;/a>.&amp;nbsp;It does not provide a full treatment of&#xD;
+    normalization, because the subject is quite broad and has been documented in many texts on database design.&amp;nbsp;In [&lt;a&#xD;
+    class=&quot;elementLinkWithUserText&quot; href=&quot;./../../../core.base_rup/customcategories/references_56F06DFD.html#NBG01&quot;&#xD;
+    guid=&quot;7.755968586980351E-308&quot;>NBG01&lt;/a>], normalization is defined as &quot;an analytic technique used to produce a correct&#xD;
+    relational database design.&quot; In practice, normalization is a procedure for eliminating redundancy in the Data Model by&#xD;
+    means of applying restrictive rules. Elimination of data redundancy in the tables of the Data Model helps enforce&#xD;
+    referential integrity of the data in the database.&amp;nbsp;&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Normalization is usually performed on the Data Model after an initial version of the tables and their relationships has&#xD;
+    been developed in the model.&amp;nbsp;The exact timing of when to apply normalization depends on the specific project&#xD;
+    situation and is up to the &lt;a class=&quot;elementLink&quot; href=&quot;./../../../core.base_rup/roles/rup_database_designer_524DC34F.html&quot;&#xD;
+    guid=&quot;{87EE3BF5-17CA-4211-BD3D-32F361E58550}&quot;>Database Designer&lt;/a>.&amp;nbsp;The normalization process is applied to the&#xD;
+    tables in the Data Model in series of steps in which each step applies rules that are stricter than the last.&amp;nbsp;&#xD;
+&lt;/p>&#xD;
+&lt;h3>&#xD;
+    &lt;a id=&quot;Levels of Normalization&quot; name=&quot;Levels of Normalization&quot;>&lt;/a>Levels of Normalization&#xD;
+&lt;/h3>&#xD;
+&lt;p>&#xD;
+    Normalization is hierarchically classified into numeric forms, with the most common being first, second, and third&#xD;
+    normal form. Each level of normalization is more restrictive than the previous. The first three hierarchical levels of&#xD;
+    normalization are:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        &lt;b>First Normal Form&lt;/b>-Repeating groups of data columns in tables have been eliminated such that data is&#xD;
+        organized into atomic units.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;b>Second Normal Form&lt;/b>-Data is in first normal form, and redundancy on primary key fields has been eliminated&#xD;
+        such that column values are wholly dependent on the primary key field.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;b>Third Normal Form&lt;/b>-Data is in second normal form, and each column is not dependent on any other non-key&#xD;
+        column.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>&#xD;
+    Other levels of normalization are possible but are not covered in this discussion.&amp;nbsp; Information on additional&#xD;
+    levels of normalization can be found in [&lt;a class=&quot;elementLinkWithUserText&quot;&#xD;
+    href=&quot;./../../../core.base_rup/customcategories/references_56F06DFD.html#DAT99&quot;&#xD;
+    guid=&quot;7.755968586980351E-308&quot;>DAT99&lt;/a>].&amp;nbsp;The exact level of normalization to apply to the Data Model is a&#xD;
+    decision that the database designer must make based on the specifics of the project situation.&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &amp;nbsp;&#xD;
+&lt;/p></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

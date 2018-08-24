@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:GuidanceDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_qcn9wPS3EdmIX5Pw7v8pRw" name="the_rup_update_for_service-oriented_architecture,3.271868778372756E-306" guid="_qcn9wPS3EdmIX5Pw7v8pRw" changeDate="2006-11-06T21:16:51.016-0800" version="1.0.0">
+  <mainDescription>&lt;p>
+    By &lt;a href=&quot;mailto:arsanjan@us.ibm.com&quot;>Ali Arsanjani&lt;/a>, &lt;a href=&quot;mailto:skjohn@us.ibm.com&quot;>Simon Johnston&lt;/a>, &lt;a
+    href=&quot;mailto:jsmith@au1.ibm.com&quot;>John Smith&lt;/a>, IBM &amp;copy; Copyright 2005, 2006&amp;nbsp;by IBM Corporation. All Rights
+    Reserved.
+&lt;/p>
+&lt;h3>
+    Topics
+&lt;/h3>
+&lt;ul>
+    &lt;li>
+        &lt;a href=&quot;#Motivation&quot;>Introduction&lt;/a>
+    &lt;/li>
+    &lt;li>
+        &lt;a href=&quot;#overview&quot;>Method Integration Overview&lt;/a>
+    &lt;/li>
+    &lt;li>
+        &lt;a href=&quot;#principles&quot;>Principles&lt;/a>
+    &lt;/li>
+    &lt;li>
+        &lt;a href=&quot;#scope&quot;>Scope&lt;/a>
+    &lt;/li>
+    &lt;li>
+        &lt;a href=&quot;#decisions&quot;>Key Decisions&lt;/a>
+    &lt;/li>
+    &lt;li>
+        &lt;a href=&quot;#acknowledgements&quot;>Acknowledgements&lt;/a>
+    &lt;/li>
+&lt;/ul>
+&lt;h3>
+    &lt;a id=&quot;Motivation&quot; name=&quot;Motivation&quot;>Introduction&lt;/a>
+&lt;/h3>
+&lt;p>
+    This paper describes the third update to the Rational Unified Process (RUP) focused upon Service-Oriented Architecture
+    (SOA). This update represents a major milestone in the RUP guidance around SOA as it provides a unified method
+    combining previous RUP for SOA content with content from the IBM &lt;a
+    href=&quot;http://www-1.ibm.com/services/us/bcs/html/bcs_index.html&quot; target=&quot;_blank&quot;>Global Business Services&lt;/a> (GBS) &lt;a
+    href=&quot;http://www-1.ibm.com/services/us/bcs/pdf/g510-5060-ibm-service-oriented-modeling-arch.pdf&quot;
+    target=&quot;blank&quot;>Service-Oriented Modeling and Architecture&lt;/a> (SOMA) method. The SOMA method has been successfully used
+    by IBM in a number of client engagements, and while it was initially developed leveraging the existing IBM Global
+    Services Method (GS Method) it was felt that in the area of SOA both IBM and our customers would benefit more from a
+    unified method approach than having two separate methods. When looking at the two methods it is clear that the authors
+    had very similar aims in mind and structured the methods in similar ways - in fact the two teams did meet in 2004 and
+    made some changes to both methods to align terminology. While this alignment is not necessarily surprising as both
+    methods are focused on the pragmatic activities of developing a service-oriented solution it was noted that a generic
+    framework could be extracted that would be able to describe both methods at a high level.
+&lt;/p>
+&lt;p>
+    For customers familiar with Classic RUP you may wish to review &lt;a class=&quot;elementLinkWithType&quot;
+    href=&quot;./../../../soa.rup_soma/guidances/concepts/developing_service-oriented_solutions,3.300952218919066E-305.html&quot;
+    guid=&quot;3.300952218919066E-305&quot;>Concept: Developing Service-Oriented Solutions&lt;/a>.
+&lt;/p>
+&lt;p>
+    For IBM staff familiar with SOMA you may wish to review &lt;a class=&quot;elementLinkWithType&quot;
+    href=&quot;./../../../soa.rup_soma/guidances/roadmaps/soa_soma,_dI9coExiEdumvs0NuKFubw.html&quot;
+    guid=&quot;_dI9coExiEdumvs0NuKFubw&quot;>Roadmap: Transitioning from IBM SOMA&lt;/a>.
+&lt;/p>
+&lt;h3>
+    &lt;a id=&quot;overview&quot; name=&quot;overview&quot;>Method Integration Overview&lt;/a>
+&lt;/h3>
+&lt;p>
+    The following diagram illustrates the framework mentioned above. It represents a method neutral set of activities
+    required of any process for the development of service-oriented solutions. Now, this diagram is significantly
+    simplified from the content of either method but clearly represents the key activities of both methods -- Service
+    Identification, Service Specification and Service Realization&lt;em>.&lt;/em> In the area of work products, it was clear that
+    there was a lot of conceptual alignment. Similar work products were required with similar roles and stakeholders, but
+    in some cases were realized differently; for example, as either a UML model or a Word document. This was seen as a
+    relatively simple alignment to make. Again, in general the major influences correspond well to the activities although,
+    of course, the reality is that all requirements have some bearing on all activities.
+&lt;/p>
+&lt;p align=&quot;center&quot;>
+    &amp;nbsp;&lt;img height=&quot;289&quot; alt=&quot;Method Overview&quot; src=&quot;./resources/method_overview.png&quot; width=&quot;506&quot; />
+&lt;/p>
+&lt;p align=&quot;center&quot;>
+    &lt;font size=&quot;-2&quot;>Figure - The Unified SOA Method Framework&lt;/font>
+&lt;/p>
+&lt;p>
+    It is possible to expand a further level of the framework, for the activities identified here are supported by a number
+    of techniques and it is really in the area of the detailed techniques that the integration of the methods takes place.
+    This paper will not provide the detail on the technique integration, however, it is important to note that the
+    development of a single and coherent method led to some changes in both of the methods used as starting points to
+    ensure that the reader will see a consistency in concept, approach, task and work product definitions. One decision,
+    for example, that provides a level of consistency to the content is to use the existing RUP for SOA Work Product:
+    Service Model as the primary source from which a number of textual reports and tables can be generated to provide the
+    work products expected by SOMA practitioners. In general this change provides the value that the UML service model has
+    additional semantics and can be used to develop both service specification and realization models, however the service
+    model has to be extended to capture additional information required by existing SOMA work products; for example, the
+    Work Product: Service Specification has been extended with additional properties source and status that capture
+    information routinely used by SOMA practitioners.
+&lt;/p>
+&lt;h3>
+    &lt;a id=&quot;principles&quot; name=&quot;principles&quot;>Principles&lt;/a>
+&lt;/h3>
+&lt;p>
+    The plugin is based around the following guiding ideas:
+&lt;/p>
+&lt;ol>
+    &lt;li>
+        &lt;div>
+            Allow for future growth; minimize or avoid constraints on future additions of activities, workproducts, roles,
+            etc.
+        &lt;/div>
+    &lt;/li>
+    &lt;li>
+        Maintain ability to add proprietary extensions to current or future commercial methods: for example, industry
+        specific extensions or assets in SOMA; proprietary content can also be added to the framework for service leverage
+    &lt;/li>
+    &lt;li>
+        Converge on customer facing and internal IBM messaging
+    &lt;/li>
+    &lt;li>
+        Method must remain tool agnostic, but provide guidelines of integration for toolmentors, favoring the IBM portfolio
+    &lt;/li>
+    &lt;li>
+        Enable the capabilities of the activities of the method rather than restrict them based on GS Method or RUP or
+        other legacy methods.
+    &lt;/li>
+&lt;/ol>
+&lt;h3>
+    &lt;a id=&quot;scope&quot; name=&quot;scope&quot;>Scope&lt;/a>
+&lt;/h3>
+&lt;p>
+    This update to the Rational Unified Process (RUP) has the scope of introducing guidance for the &lt;i>&lt;a
+    class=&quot;elementLink&quot; href=&quot;./../../../core.base_rup/roles/rup_software_architect,{4AC346F0-E6FC-4D2C-8410-2EDF8DDDC91D}.html&quot;
+    guid=&quot;{4AC346F0-E6FC-4D2C-8410-2EDF8DDDC91D}&quot;>Software Architect&lt;/a>&lt;/i> and &lt;i>&lt;a class=&quot;elementLink&quot;
+    href=&quot;./../../../core.base_rup/roles/rup_designer,{DB21F5EF-810B-4994-B120-79FA8774FA9D}.html&quot;
+    guid=&quot;{DB21F5EF-810B-4994-B120-79FA8774FA9D}&quot;>Designer&lt;/a>&lt;/i> in developing a &lt;i>&lt;a class=&quot;elementLinkWithUserText&quot;
+    href=&quot;./../../../soa.rup_soma/workproducts/soa_service_model,{E24679B7-19F1-483B-A1F1-578839C43888}.html&quot;
+    guid=&quot;{E24679B7-19F1-483B-A1F1-578839C43888}&quot;>Service Model&lt;/a>&lt;/i>, a model representing a portfolio of services that
+    can be used as the basis for implementation tasks already in the RUP. It is also our intent to describe the connection
+    between business modeling and the services model. Many Service-Oriented Architecture (SOA) projects use
+    business-process models in understanding their business, functional requirements, and the services required to support
+    a process.
+&lt;/p>
+&lt;p>
+    The scope of this update was addressed briefly in the introduction, but here are the set of requirements and scoping
+    statements used to guide the project.
+&lt;/p>
+&lt;ul>
+    &lt;li>
+        &lt;strong>Leverage the existing RUP;&lt;/strong> in this case it means that where possible we should describe new tasks
+        and work products in relation to existing ones in the RUP and not unnecessarily add new concepts. Also, new
+        elements should be added such that they fit into the overall flow of the RUP.
+    &lt;/li>
+    &lt;li>
+        &lt;strong>Look forward to future tool capabilities;&lt;/strong> although the RUP is not tool dependent, it should be
+        understood that there is no point in developing content in areas where no tooling will ever exist and then, there
+        is no need to not write a topic because the tool is not in the market but we can expect it to be soon.
+    &lt;/li>
+    &lt;li>
+        &lt;strong>Integration of other IBM experience in SOA;&lt;/strong> it is clear that other groups within IBM have
+        experience that can be leveraged; harvested; and added to the concepts, guidelines, and practice we are
+        introducing.
+    &lt;/li>
+    &lt;li>
+        &lt;strong>Scope changes to Analysis &amp;amp; Design;&lt;/strong> we have looked at the literature that describes the
+        application of SOA to business design and the implication of SOA on business models, operational organization, and
+        business integration. We have also looked at the differences SOA tends to make on implementation, deployment, and
+        operational management. This is too broad a scope for the first iteration so we have only focused on architecture
+        and design issues.
+    &lt;/li>
+    &lt;li>
+        &lt;strong>Deliver a foundation;&lt;/strong> this is the first iteration. We expect that additional guidance can be added
+        to the framework presented here and the connection made between this content and the rest of the RUP in subsequent
+        iterations.
+    &lt;/li>
+    &lt;li>
+        &lt;strong>Look to changes that need to be made in the base, but defer to future release;&lt;/strong> we know that some
+        concepts we introduce would fit better with terminology or other minor changes to the base RUP. While it would be
+        desirable to change the RUP, that would have wider implications and would take far longer.
+    &lt;/li>
+&lt;/ul>
+&lt;h3>
+    &lt;a id=&quot;decisions&quot; name=&quot;decisions&quot;>Key Decisions&lt;/a>
+&lt;/h3>
+&lt;p>
+    We intend that this content be a part of the base RUP in the next commercial release of the product. In the meantime,
+    we want to make the content available to customers so content described here will be packaged as a RUP plug-in and made
+    available for download.
+&lt;/p>
+&lt;p>
+    In parallel, changes are being made to the Business Modeling (BM) discipline that would make the connection between BM
+    and SOA stronger; however a decision was made to wait for the BM changes before completing the SOA plug-in. The
+    integration of both sets of changes will be made for the commercial release.
+&lt;/p>
+&lt;p>
+    A number of key ideas will be incorporated from the GBS &lt;a
+    href=&quot;http://www.ibm.com/developerworks/webservices/library/ws-soa-design1&quot;>Service-Oriented Modeling and Architecture
+    (SOMA)&lt;/a>. While it is not possible to incorporate all the ideas and guidance in SOMA, mainly where it falls outside
+    of the scope we set, it has been useful in guiding our work.
+&lt;/p>
+&lt;p>
+    Certain new principles have been introduced, including concepts that have affected the way we have approached the rest
+    of the content, one of which is the concept of a service portfolio and an enterprise-wide view of the services provided
+    in the enterprise.
+&lt;/p>
+&lt;h3>
+    &lt;a id=&quot;acknowledgements&quot; name=&quot;acknowledgements&quot;>Acknowledgements&lt;/a>
+&lt;/h3>
+&lt;p>
+    The authors would like to thank the following for their valuable contribution to this work. Alan Brown and Sky Matthews
+    for their support and review of the content. Thanks to Eoin Lane, Steve Graham, Ed Kahan and Grant Larsen for providing
+    not only comments on the work, but many examples that helped us and sometimes stumped us. We would also like to thank
+    our colleagues working on the SOMA effort, Ali Arsanjani, Luba Cherbakov, and Kerrie Holley. Additional material was
+    included in this revision from Maryann Hondo, Web Services Security Architect at IBM.
+&lt;/p>
+&lt;p>
+    Finally we would like to thank Claus Torp Jensen&amp;nbsp;and his team at&amp;nbsp;Danske Bank for their open and frank dialog
+    on the bank's experience with applying SOA in the real world.&amp;nbsp;&amp;nbsp;
+&lt;/p></mainDescription>
+</org.eclipse.epf.uma:GuidanceDescription>

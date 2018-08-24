@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_1G_qMNnmEdmO6L4XMImrsA" name="actor,4.4998806518941313E-305" guid="_1G_qMNnmEdmO6L4XMImrsA" changeDate="2005-06-20T20:40:06.626-0700" version="7.1.0">
+  <mainDescription>&lt;a id=&quot;XE_checkpoints__for_actors&quot; name=&quot;XE_checkpoints__for_actors&quot;>&lt;/a>&amp;nbsp;&lt;br />&#xD;
+&lt;br /></mainDescription>
+  <sections xmi:id="_EyHRofM1Edmy-_OjcFOpJQ" name=" Have you found all the actors" guid="_EyHRofM1Edmy-_OjcFOpJQ">
+    <sectionName> Have you found all the actors</sectionName>
+    <sectionDescription>That is, have you accounted for and modeled all roles in the system's environment? Although you should check this, you&#xD;
+cannot be sure until you have found and described all the use cases.</sectionDescription>
+  </sections>
+  <sections xmi:id="_EyHRovM1Edmy-_OjcFOpJQ" name=" Is each actor involved with at least one use case" guid="_EyHRovM1Edmy-_OjcFOpJQ">
+    <sectionName> Is each actor involved with at least one use case</sectionName>
+    <sectionDescription>Remove any actors not mentioned in the use-case descriptions, or any actors without communicates-associations with a use&#xD;
+case. However, an actor mentioned in a use-case description is likely to have a communicates-association with that&#xD;
+particular use case.</sectionDescription>
+  </sections>
+  <sections xmi:id="_EyHRo_M1Edmy-_OjcFOpJQ" name=" Can you name at least two people who would be able to perform the role of a particular actor" guid="_EyHRo_M1Edmy-_OjcFOpJQ">
+    <sectionName> Can you name at least two people who would be able to perform as a particular actor</sectionName>
+    <sectionDescription>If not, check if the role the actor models is part of another one. If so, you should merge the actor with another actor.</sectionDescription>
+  </sections>
+  <sections xmi:id="_EyHRpPM1Edmy-_OjcFOpJQ" name=" Do any actors play similar roles in relation to the system" guid="_EyHRpPM1Edmy-_OjcFOpJQ">
+    <sectionName> Do any actors play similar roles in relation to the system</sectionName>
+    <sectionDescription>If so, you should merge them into a single actor. The communicates-associations and use-case descriptions show how the&#xD;
+actors and the system interrelate.</sectionDescription>
+  </sections>
+  <sections xmi:id="_EyHRpfM1Edmy-_OjcFOpJQ" name=" Do two actors play the same role in relation to a use case" guid="_EyHRpfM1Edmy-_OjcFOpJQ">
+    <sectionName> Do two actors play the same role in relation to a use case</sectionName>
+    <sectionDescription>If so, you should use actor-generalizations to model their shared behavior.</sectionDescription>
+  </sections>
+  <sections xmi:id="_EyHRpvM1Edmy-_OjcFOpJQ" name=" Will a particular actor use the system in several (completely different) ways or does he have several (completely different) purposes for using the use case" guid="_EyHRpvM1Edmy-_OjcFOpJQ">
+    <sectionName> Will a particular actor use the system in several (completely different) ways or does he have several (completely different) purposes for using the use case</sectionName>
+    <sectionDescription>If so, you should probably have more than one actor.</sectionDescription>
+  </sections>
+  <sections xmi:id="_EyHRp_M1Edmy-_OjcFOpJQ" name=" Do the actors have intuitive and descriptive names" guid="_EyHRp_M1Edmy-_OjcFOpJQ">
+    <sectionName> Do the actors have intuitive and descriptive names</sectionName>
+    <sectionDescription>Can both users and customers understand the names? It is important that actor names correspond to their roles. If not,&#xD;
+change them.</sectionDescription>
+  </sections>
+</org.eclipse.epf.uma:ContentDescription>

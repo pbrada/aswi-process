@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_3jBAsdnmEdmO6L4XMImrsA" name="creating_multiple_sites_rup_clearcase_env,{9EE4A89E-5DB3-433D-A9C9-1798D1BC7E61}" guid="_3jBAsdnmEdmO6L4XMImrsA" changeDate="2005-10-06T10:25:22.782-0700" changeDescription=" Was attached to Management\Project Environmentl\Guidance" version="7.1.0">
+  <mainDescription>&lt;a id=&quot;Top&quot; name=&quot;Top&quot;>&lt;/a> &#xD;
+&lt;h3>&#xD;
+    What does ClearCase MultiSite do for your company?&#xD;
+&lt;/h3>The ClearCase MultiSite product is an add-on product to ClearCase used to distribute software development across&#xD;
+different geographical locations. For example, if your company has developers in Boston, San Francisco, and Bangalore, you&#xD;
+can give every developer local, real-time access to the source code repository (the versioned object base, or VOB). With&#xD;
+MultiSite, each site has its own copy (replica) of the VOB and all developers can work in parallel on the source files&#xD;
+without collisions.&amp;nbsp; &#xD;
+&lt;p>&#xD;
+    Conflicting changes at different sites are prevented by ClearCase MultiSite's mastership scheme. Most ClearCase objects&#xD;
+    can be mastered by only one replica, and only those developers who use that replica can modify the object. MultiSite&#xD;
+    has facilities you can use to share control of source code elements so multiple developers can work on the same source&#xD;
+    file in turn.&amp;nbsp;&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Instead of &quot;throwing changes over the wall&quot;, you can use the synchronization tools supplied with ClearCase MultiSite to&#xD;
+    send changes among replicas as often as site connectivity allows. If you have IP connections, you can use MultiSite's&#xD;
+    shipping mechanism and configurable scripts to synchronize replicas frequently and automatically, giving developers at&#xD;
+    other sites access to the very latest changes made at your site. If you do not have IP connections, you can choose&#xD;
+    another synchronization method (for example, electronic mail, ftp, or magnetic tape) that's appropriate to your&#xD;
+    configuration.&amp;nbsp;&#xD;
+&lt;/p>&#xD;
+&lt;h3>&#xD;
+    Do you need ClearCase MultiSite?&#xD;
+&lt;/h3>&#xD;
+&lt;p>&#xD;
+    You should consider using ClearCase and ClearCase MultiSite if you need to distribute development among several&#xD;
+    different locations and it's impractical for developers to remotely access VOBs. An additional benefit to using&#xD;
+    MultiSite is that you can use it as a backup mechanism by creating a replica in a different region at your site and&#xD;
+    synchronizing it frequently with the primary replica. By backing up the secondary replica instead of the primary&#xD;
+    replica, you can allow development to continue unhindered in the primary replica. Also, if the primary replica's host&#xD;
+    has a catastrophic disk crash, you can put the backup replica into use to avoid development downtime.&amp;nbsp;&#xD;
+&lt;/p>&lt;b>&lt;img height=&quot;16&quot; alt=&quot;book icon&quot; src=&quot;../../resources/book.gif&quot; width=&quot;16&quot; />&lt;/b> For more information about this&#xD;
+product, see the &lt;a href=&quot;http://www-306.ibm.com/software/rational/&quot; target=&quot;_blank&quot;>ClearCase MultiSite information&#xD;
+page&lt;/a> on the &lt;a href=&quot;http://www-306.ibm.com/software/rational/&quot; target=&quot;_blank&quot;>IBM/Rational Web site&lt;/a>, contact your&#xD;
+IBM sales representative, or see the ClearCase MultiSite &lt;i>Administrator's Manual&lt;/i>.&lt;br /></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

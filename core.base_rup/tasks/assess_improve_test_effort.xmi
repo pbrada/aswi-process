@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_2enkc9nmEdmO6L4XMImrsA" name="assess_improve_test_effort,{AE6717A4-5E8C-41B6-8460-B743C9BDB437}" guid="_2enkc9nmEdmO6L4XMImrsA" changeDate="2005-11-04T07:51:43.189-0800" version="7.1.0">
+  <sections xmi:id="_WElFkNnnEdmO6L4XMImrsA" name=" Capture work status " guid="_WElFkNnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;CaptureWorkStatus&quot; name=&quot;CaptureWorkStatus&quot;>&lt;/a>&#xD;
+&lt;div align=&quot;left&quot;>&#xD;
+    &lt;table border=&quot;1&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;4&quot; style=&quot;border: 1px solid rgb(128,128,128)&quot;&#xD;
+    bordercolorlight=&quot;#808080&quot; bordercolordark=&quot;#808080&quot;>&#xD;
+        &lt;tr>&#xD;
+            &lt;td width=&quot;5%&quot;>&#xD;
+                &lt;b>Purpose:&lt;/b>&amp;nbsp;&#xD;
+            &lt;/td>&#xD;
+            &lt;td width=&quot;95%&quot;>&#xD;
+                To gain an objective, up-to-date understanding of the general status of the testing work against&#xD;
+                plan.&amp;nbsp;&#xD;
+            &lt;/td>&#xD;
+        &lt;/tr>&#xD;
+    &lt;/table>&lt;br />&#xD;
+&lt;/div>&#xD;
+&lt;p>&#xD;
+    There are different ways to approach this step, and much of the approach will depend on your project culture. Where&#xD;
+    available, gather and collate progress reports prepared by individual team members or sub-teams. Project time sheets&#xD;
+    are another possible source to consider. Where project scheduling systems such as Microsoft Project are actively used&#xD;
+    and updated with actual progress this provides another useful information source. Where available and actively used,&#xD;
+    you might also derive objective status or progress metrics from configuration and change management systems.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    For this step and subsequent steps that deal with gathering information and assessing the test effort, try to obtain a&#xD;
+    balanced view incorporating both objective and subjective measures. Remember that objective numbers only give part of&#xD;
+    the picture and need to be supported and explained by the current project &quot;climate&quot;. Conversely, don't rely purely on&#xD;
+    hearsay and subjective speculation about the test effort: look for supporting objective evidence. We recommend you&#xD;
+    supplement your objective data by discussion with either team leads or where possible individual team members to gather&#xD;
+    subjective assessments and gauge how much confidence you can place in the objective data.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_WEu2kNnnEdmO6L4XMImrsA" name=" Gather test effort productivity and effectiveness metrics " guid="_WEu2kNnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;GatherTestProductEffectMetrics&quot; name=&quot;GatherTestProductEffectMetrics&quot;>&lt;/a>&#xD;
+&lt;div align=&quot;left&quot;>&#xD;
+    &lt;table border=&quot;1&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;4&quot; style=&quot;border: 1px solid rgb(128,128,128)&quot;&#xD;
+    bordercolorlight=&quot;#808080&quot; bordercolordark=&quot;#808080&quot;>&#xD;
+        &lt;tr>&#xD;
+            &lt;td width=&quot;5%&quot;>&#xD;
+                &lt;b>Purpose:&lt;/b>&amp;nbsp;&#xD;
+            &lt;/td>&#xD;
+            &lt;td width=&quot;95%&quot;>&#xD;
+                To gather and examine objective data that enables the assessment of the testing performed by the test&#xD;
+                team.&amp;nbsp;&#xD;
+            &lt;/td>&#xD;
+        &lt;/tr>&#xD;
+    &lt;/table>&lt;br />&#xD;
+&lt;/div>&#xD;
+&lt;p>&#xD;
+    Investigate how much effort has been spent on the identification, definition, design, implementation and execution of&#xD;
+    tests. Keep an eye out for signs of excessive effort being devoted to one aspect of the test effort to the detriment of&#xD;
+    others. Look also for areas where effort may be unproductive or not showing sufficient benefit for the level of effort&#xD;
+    being expended.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Look also at the effectiveness of the testing. Look for data that supports your initial observations of effectiveness.&#xD;
+    Consider aspects such as defect discovery rate, defect severity counts, duplicate defect statistics, and defects&#xD;
+    detected as test escapes.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_WEu2kdnnEdmO6L4XMImrsA" name=" Gather Change Request distribution, trend and aging metrics " guid="_WEu2kdnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;CRMetrics&quot; name=&quot;CRMetrics&quot;>&lt;/a>&#xD;
+&lt;div align=&quot;left&quot;>&#xD;
+    &lt;table border=&quot;1&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;4&quot; style=&quot;border: 1px solid rgb(128,128,128)&quot;&#xD;
+    bordercolorlight=&quot;#808080&quot; bordercolordark=&quot;#808080&quot;>&#xD;
+        &lt;tr>&#xD;
+            &lt;td width=&quot;5%&quot;>&#xD;
+                &lt;b>Purpose:&lt;/b>&amp;nbsp;&#xD;
+            &lt;/td>&#xD;
+            &lt;td width=&quot;95%&quot;>&#xD;
+                To gather and examine objective data that enables the assessment of the issues and defects logged by the&#xD;
+                test team.&amp;nbsp;&#xD;
+            &lt;/td>&#xD;
+        &lt;/tr>&#xD;
+    &lt;/table>&lt;br />&#xD;
+&lt;/div>&#xD;
+&lt;p>&#xD;
+    Identify important trends evident in the Change Request data. In general it's less important for this task to spend&#xD;
+    time analyzing data volumes and more important to identify what the relative data trends are indicating. Look for&#xD;
+    positive signs such as a steady, continuous rate of defect discovery, or a light ongoing increase or decrease in&#xD;
+    discovery rate over time. Be on the lookout for sharp peaks and troughs in discovery rate that indicate the test team&#xD;
+    may be encountering process, environmental, political or other problems that are reducing their productivity.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Look at trends in defects closures. Look for significant increases of closures by development staff as &quot;not&#xD;
+    reproducible&quot;; identify cases where this is a result of insufficient analysis of the failure having been performed by&#xD;
+    the test team and quantify the extent of this problem. Look at trends in defects being closed by development staff as&#xD;
+    &quot;functioning as designed&quot;; identify cases where this is a result of insufficient analysis of the specification having&#xD;
+    been performed by the test team and quantify the extent of this problem. Be careful to confirm these indications are&#xD;
+    not false and due instead to overworked developers triaging their workload. Some analysis should also be done of defect&#xD;
+    verification trends as fixes to defects are released to the test team in subsequent builds: look out for trends that&#xD;
+    indicate defects awaiting verification by the test team are aging or growing to an unmanageable number.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Look for other trends that indicate problems. Look at the the way in which defects and other change requests have been&#xD;
+    recorded or managed by the test team: ambiguous and insufficient information on a change request is difficult and&#xD;
+    frustrating for a developer to take action on. The team should take care to monitor that the quality of the information&#xD;
+    recorded against defects remains-on average-relatively high. Take the opportunity to improve the clarity of the&#xD;
+    associated Change Requests, eliminating ambiguity and emotive language and reasoning. Work together with the&#xD;
+    individuals who created these work products to ensure the essence of the problem is clearly stated and encourage them&#xD;
+    to find factual and accurate ways to approach discussing the Issues.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Also look out for imbalances in defect distribution on a number of different dimensions. Look for functional areas of&#xD;
+    the application or the specification that have low defect counts raised against them: this may indicate an exposure&#xD;
+    that insufficient testing has been undertaken in that functional area. Look also at distribution by test team member:&#xD;
+    there may be indications that individual team members are overworked and that productivity is suffering.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_WEu2ktnnEdmO6L4XMImrsA" name=" Gather traceability, coverage and dependency metrics " guid="_WEu2ktnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;GatherTraceability&quot; name=&quot;GatherTraceability&quot;>&lt;/a>&#xD;
+&lt;div align=&quot;left&quot;>&#xD;
+    &lt;table border=&quot;1&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;4&quot; style=&quot;border: 1px solid rgb(128,128,128)&quot;&#xD;
+    bordercolorlight=&quot;#808080&quot; bordercolordark=&quot;#808080&quot;>&#xD;
+        &lt;tr>&#xD;
+            &lt;td width=&quot;5%&quot;>&#xD;
+                &lt;b>Purpose:&lt;/b>&amp;nbsp;&#xD;
+            &lt;/td>&#xD;
+            &lt;td width=&quot;95%&quot;>&#xD;
+                To gather and examine objective data that enables the assessment asset traceability.&amp;nbsp;&#xD;
+            &lt;/td>&#xD;
+        &lt;/tr>&#xD;
+    &lt;/table>&lt;br />&#xD;
+&lt;/div>&#xD;
+&lt;p>&#xD;
+    Analyze the state of the traceability relationships between the testing assets-Test Ideas, Test Cases, Test Scripts,&#xD;
+    Test Suites and Change Requests-and the upstream and downstream assets they relate to. Look for signs that indicate the&#xD;
+    test effort is focused on the correct areas and a useful set of motivations. Look also for negative indications that&#xD;
+    suggest certain aspects of testing are missing or are no longer of importance: If the requirements or development teams&#xD;
+    are working on areas not represented by the current test effort, this should raise concerns.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_WEu2k9nnEdmO6L4XMImrsA" name=" Evaluate metrics and formulate initial assessment " guid="_WEu2k9nnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;EvaluateMetrics&quot; name=&quot;EvaluateMetrics&quot;>&lt;/a>&#xD;
+&lt;div align=&quot;left&quot;>&#xD;
+    &lt;table border=&quot;1&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;4&quot; style=&quot;border: 1px solid rgb(128,128,128)&quot;&#xD;
+    bordercolorlight=&quot;#808080&quot; bordercolordark=&quot;#808080&quot;>&#xD;
+        &lt;tr>&#xD;
+            &lt;td width=&quot;5%&quot;>&#xD;
+                &lt;b>Purpose:&lt;/b>&amp;nbsp;&#xD;
+            &lt;/td>&#xD;
+            &lt;td width=&quot;95%&quot;>&#xD;
+                To evaluate and assess the metric data and formulate an initial assessment of the effectiveness of the test&#xD;
+                effort against plan.&amp;nbsp;&#xD;
+            &lt;/td>&#xD;
+        &lt;/tr>&#xD;
+    &lt;/table>&lt;br />&#xD;
+&lt;/div>&#xD;
+&lt;p>&#xD;
+    Collate all of the information you have gathered and evaluate it as a collective whole. Remember that each piece of the&#xD;
+    data gathered only addresses one aspect of the total assessment, and you must formulate your assessment of the test&#xD;
+    effort based on a balanced and considered view of all data.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Record you initial assessment in a format that will be suitable for the stakeholders to make comments and give feedback&#xD;
+    on.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_WEu2lNnnEdmO6L4XMImrsA" name=" Record findings " guid="_WEu2lNnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;RecordFindings&quot; name=&quot;RecordFindings&quot;>&lt;/a>&#xD;
+&lt;div align=&quot;left&quot;>&#xD;
+    &lt;table border=&quot;1&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;4&quot; style=&quot;border: 1px solid rgb(128,128,128)&quot;&#xD;
+    bordercolorlight=&quot;#808080&quot; bordercolordark=&quot;#808080&quot;>&#xD;
+        &lt;tr>&#xD;
+            &lt;td width=&quot;5%&quot;>&#xD;
+                &lt;b>Purpose:&lt;/b>&amp;nbsp;&#xD;
+            &lt;/td>&#xD;
+            &lt;td width=&quot;95%&quot;>&#xD;
+                To document summary findings for inclusion in project management reporting and to enable analysis of&#xD;
+                subsequent status assessment against earlier assessments.&amp;nbsp;&#xD;
+            &lt;/td>&#xD;
+        &lt;/tr>&#xD;
+    &lt;/table>&lt;br />&#xD;
+&lt;/div>&#xD;
+&lt;p>&#xD;
+    This task produces summary status information that is important to the project manager and other roles in the&#xD;
+    management team. These roles will use the summary findings to make informed decisions about the project.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    We recommend your record some aspects of the test effort assessment in a format that allows subsequent assessments to&#xD;
+    be compared and contrasted with previous ones. This will enable you to analyze the relative trend in test effort&#xD;
+    improvements over time.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_WEu2ldnnEdmO6L4XMImrsA" name=" Present assessment and gather feedback " guid="_WEu2ldnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;PresentAssessment&quot; name=&quot;PresentAssessment&quot;>&lt;/a>&#xD;
+&lt;div align=&quot;left&quot;>&#xD;
+    &lt;table border=&quot;1&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;4&quot; style=&quot;border: 1px solid rgb(128,128,128)&quot;&#xD;
+    bordercolorlight=&quot;#808080&quot; bordercolordark=&quot;#808080&quot;>&#xD;
+        &lt;tr>&#xD;
+            &lt;td width=&quot;5%&quot;>&#xD;
+                &lt;b>Purpose:&lt;/b>&amp;nbsp;&#xD;
+            &lt;/td>&#xD;
+            &lt;td width=&quot;95%&quot;>&#xD;
+                To engage stakeholders and obtain their feedback on whether the actual testing effort is serving their&#xD;
+                needs.&amp;nbsp;&#xD;
+            &lt;/td>&#xD;
+        &lt;/tr>&#xD;
+    &lt;/table>&lt;br />&#xD;
+&lt;/div>&#xD;
+&lt;p>&#xD;
+    Present your assessment for stakeholders to comment and offer feedback on. The format or method for doing this will&#xD;
+    differ from project to project: in some cases it will be a series of informal conversations, in another simply a&#xD;
+    posting on a project intranet web-site, and in others a formal presentation-choose a format that suits your culture.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Even with the best planning and specification documents possible, there will usually be differences between the&#xD;
+    original expectation and intent of those documents and the resulting end product. This is as true for testing and&#xD;
+    evaluating software as it is for the software development itself. The value of this step is to take the opportunity to&#xD;
+    elicit the stakeholders feedback and identify where the careful planning and documentation has not achieved what was&#xD;
+    originally expected or intended.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_WEu2ltnnEdmO6L4XMImrsA" name=" Plan and implement improvement initiatives " guid="_WEu2ltnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;ImplementImprovements&quot; name=&quot;ImplementImprovements&quot;>&lt;/a>&#xD;
+&lt;div align=&quot;left&quot;>&#xD;
+    &lt;table border=&quot;1&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;4&quot; style=&quot;border: 1px solid rgb(128,128,128)&quot;&#xD;
+    bordercolorlight=&quot;#808080&quot; bordercolordark=&quot;#808080&quot;>&#xD;
+        &lt;tr>&#xD;
+            &lt;td width=&quot;5%&quot;>&#xD;
+                &lt;b>Purpose:&lt;/b>&amp;nbsp;&#xD;
+            &lt;/td>&#xD;
+            &lt;td width=&quot;95%&quot;>&#xD;
+                To identify areas for improvement and formulate initial strategies for achieving those improvements.&amp;nbsp;&#xD;
+            &lt;/td>&#xD;
+        &lt;/tr>&#xD;
+    &lt;/table>&lt;br />&#xD;
+&lt;/div>&#xD;
+&lt;p>&#xD;
+    Based on your analysis and the feedback you've received from various stakeholders, identify opportunities for&#xD;
+    improvement. Look for ways to make the testing more effective, productive and efficient. This might involve:&#xD;
+    reassigning staff, including pairing staff to work more effectively or employing specialized contractors; using&#xD;
+    productivity tools to improve efficiency; finding alternative approaches and techniques that are more productive in&#xD;
+    terms of finding defects.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    In most cases it's better to make small, incremental improvements to the test effort and avoid the risk of derailing&#xD;
+    the project with large, unsettling changes: In some cases a bigger change is warranted and useful. Use your best&#xD;
+    judgment to formulate an appropriate approach to improvement and discuss your ideas with other management staff to get&#xD;
+    their input before committing the team to embrace large changes.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_WEu2l9nnEdmO6L4XMImrsA" name=" Monitor and support improvement initiatives " guid="_WEu2l9nnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;ManageImprovements&quot; name=&quot;ManageImprovements&quot;>&lt;/a>&#xD;
+&lt;div align=&quot;left&quot;>&#xD;
+    &lt;table border=&quot;1&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;4&quot; style=&quot;border: 1px solid rgb(128,128,128)&quot;&#xD;
+    bordercolorlight=&quot;#808080&quot; bordercolordark=&quot;#808080&quot;>&#xD;
+        &lt;tr>&#xD;
+            &lt;td width=&quot;5%&quot;>&#xD;
+                &lt;b>Purpose:&lt;/b>&amp;nbsp;&#xD;
+            &lt;/td>&#xD;
+            &lt;td width=&quot;95%&quot;>&#xD;
+                To ensure that necessary improvement initiatives are achieved in a satisfactory and timely manner.&amp;nbsp;&#xD;
+            &lt;/td>&#xD;
+        &lt;/tr>&#xD;
+    &lt;/table>&lt;br />&#xD;
+&lt;/div>&#xD;
+&lt;p>&#xD;
+    For the improvements to be effective, you will need to manage their success. Identify ways that you will be able to&#xD;
+    monitor improvement initiatives-preferably in advance on their adoption-to assess their effectiveness. Either actively&#xD;
+    monitor the progress being made in adopting the changes yourself, or appoint someone else on the team to do so.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Most changes meet resistance or problems that must be overcome for them to be ultimately successful. Allow time for and&#xD;
+    be prepared to quickly address any issues that arise and prevent the initiative from succeeding. Be sensitive to&#xD;
+    peoples natural reluctance to change and find ways to address their concerns appropriately.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_WEu2mNnnEdmO6L4XMImrsA" name=" Evaluate and verify your results " guid="_WEu2mNnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;EvaluateResults&quot; name=&quot;EvaluateResults&quot;>&lt;/a>&#xD;
+&lt;div align=&quot;left&quot;>&#xD;
+    &lt;table border=&quot;1&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;4&quot; style=&quot;border: 1px solid rgb(128,128,128)&quot;&#xD;
+    bordercolorlight=&quot;#808080&quot; bordercolordark=&quot;#808080&quot;>&#xD;
+        &lt;tr>&#xD;
+            &lt;td width=&quot;5%&quot;>&#xD;
+                &lt;b>Purpose:&lt;/b>&amp;nbsp;&#xD;
+            &lt;/td>&#xD;
+            &lt;td width=&quot;95%&quot;>&#xD;
+                To verify that the task has been completed appropriately and that the resulting work products are&#xD;
+                acceptable.&amp;nbsp;&#xD;
+            &lt;/td>&#xD;
+        &lt;/tr>&#xD;
+    &lt;/table>&lt;br />&#xD;
+&lt;/div>&#xD;
+&lt;p>&#xD;
+    Now that you have completed the work, it is beneficial to verify that the work was of sufficient value, and that you&#xD;
+    did not simply consume vast quantities of paper. You should evaluate whether your work is of appropriate quality, and&#xD;
+    that it is complete enough to be useful to those team members who will make subsequent use of it as input to their&#xD;
+    work. Where possible, use the checklists provided in RUP to verify that quality and completeness are &quot;good enough&quot;.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Have the people performing the downstream tasks that rely on your work as input take part in reviewing your interim&#xD;
+    work. Do this while you still have time available to take action to address their concerns. You should also evaluate&#xD;
+    your work against the key input work products to make sure you have represented them accurately and sufficiently. It&#xD;
+    may be useful to have the author of the input work product review your work on this basis.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Try to remember that that RUP is an iterative delivery process and that in many cases work products evolve over time.&#xD;
+    As such, it is not usually necessary-and is often counterproductive-to fully-form a work product that will only be&#xD;
+    partially used or will not be used at all in immediately subsequent work. This is because there is a high probability&#xD;
+    that the situation surrounding the work product will change-and the assumptions made when the work product was created&#xD;
+    proven incorrect-before the work product is used, resulting in wasted effort and costly rework. Also avoid the trap of&#xD;
+    spending too many cycles on presentation to the detriment of content value. In project environments where presentation&#xD;
+    has importance and economic value as a project deliverable, you might want to consider using an administrative resource&#xD;
+    to perform presentation tasks.&#xD;
+&lt;/p>&lt;br />&#xD;
+&lt;br /></sectionDescription>
+  </sections>
+  <purpose>&lt;a id=&quot;Top&quot; name=&quot;Top&quot;>&lt;/a>&lt;a id=&quot;XE_test__improving_the_test_effort&quot; name=&quot;XE_test__improving_the_test_effort&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    The purpose of this task is to:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Make an assessment of the productivity, effectiveness and completeness of the test effort&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Make adjustments to the test effort (both tactical and strategic) to improve effectiveness&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></purpose>
+</org.eclipse.epf.uma:TaskDescription>

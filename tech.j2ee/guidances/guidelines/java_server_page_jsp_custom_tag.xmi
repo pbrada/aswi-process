@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_C-v2QtwuEdmRU7lXzo6lKQ" name="java_server_page_jsp_custom_tag,2.7697091422782074E-305" guid="_C-v2QtwuEdmRU7lXzo6lKQ" version="7.1.0">
+  <copyrightStatement href="uma://{928369F7-6023-4D92-9476-A24595B9D4BC}#_vtEpkP1QEdm0MIyQRNy4gA"/>
+  <mainDescription>&lt;h3>&#xD;
+    &lt;a id=&quot;Introduction&quot; name=&quot;Introduction&quot;>&lt;/a>Introduction&#xD;
+&lt;/h3>&#xD;
+&lt;p>&#xD;
+    These guidelines describe when to use JSP custom tags, how to model them, and some applicable design considerations.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    For more information on JSP custom tags, see &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../../tech.j2ee/guidances/concepts/java_server_page_jsp_custom_tag_81C52E2B.html&quot;&#xD;
+    guid=&quot;4.4600116920171025E-305&quot;>Concept: Java Server Page (JSP) Custom Tag&lt;/a>.&#xD;
+&lt;/p>&#xD;
+&lt;h3>&#xD;
+    &lt;a id=&quot;Identifying_JSP_Custom_Tags&quot; name=&quot;Identifying_JSP_Custom_Tags&quot;>&lt;/a>Identifying JSP Custom Tags&#xD;
+&lt;/h3>&#xD;
+&lt;p>&#xD;
+    JSP custom tags are simple Java classes implementing the glue between Java implementation and the JSP pages. Custom&#xD;
+    tags are ways of minimizing the use of Java code appearing in JSP pages. In projects where Java development and Web&#xD;
+    design must be separated, JSP custom tags can eliminate Java code from the JSP page, hiding the Java code from the Web&#xD;
+    designers.&#xD;
+&lt;/p>&#xD;
+&lt;h3>&#xD;
+    &lt;a id=&quot;Modeling_JSP_Custom_Tags&quot; name=&quot;Modeling_JSP_Custom_Tags&quot;>&lt;/a>Modeling JSP Custom Tags&#xD;
+&lt;/h3>&#xD;
+&lt;p>&#xD;
+    JSP custom tags are modeled as simple Java classes. In UML, the stereotype &amp;lt;&amp;lt;JSPTag&amp;gt;&amp;gt; distinguishes them&#xD;
+    from other Java classes.&#xD;
+&lt;/p>&#xD;
+&lt;blockquote>&#xD;
+    &lt;p>&#xD;
+        &lt;img alt=&quot;Example UML diagram showing JSPTag&quot; src=&quot;resources/example_tag.gif&quot; />&#xD;
+    &lt;/p>&#xD;
+&lt;/blockquote>&#xD;
+&lt;h3>&#xD;
+    &lt;a id=&quot;Concurrency&quot; name=&quot;Concurrency&quot;>&lt;/a>Concurrency&#xD;
+&lt;/h3>&#xD;
+&lt;p>&#xD;
+    Tag handlers are used by one thread at a time (unlike, for instance, Servlets); however, there may be multiple threads&#xD;
+    operating on different instances of custom tags. A developer should be careful accessing shared resources (such as&#xD;
+    static data) to avoid concurrency problems.&#xD;
+&lt;/p>&#xD;
+&lt;h3>&#xD;
+    &lt;a id=&quot;Cleanup&quot; name=&quot;Cleanup&quot;>&lt;/a>Cleanup&#xD;
+&lt;/h3>&#xD;
+&lt;p>&#xD;
+    Tag handlers may be pooled and reused by the Web container. If resources are required, they should be created in&#xD;
+    &lt;i>doStartTag()&lt;/i> and the developer should implement &lt;i>release()&lt;/i> to cleanup the resources before reuse.&#xD;
+&lt;/p></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

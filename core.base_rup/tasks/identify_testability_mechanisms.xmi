@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_2qigktnmEdmO6L4XMImrsA" name="identify_testability_mechanisms,{28208FC5-9C66-42D1-8E27-11DDE41EB654}" guid="_2qigktnmEdmO6L4XMImrsA" changeDate="2005-11-04T08:00:12.311-0800" version="7.1.0">
+  <sections xmi:id="_Wr6yYNnnEdmO6L4XMImrsA" name=" Examine the software architecture and its target environments " guid="_Wr6yYNnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;ExamineArchitectureEnvironment&quot; name=&quot;ExamineArchitectureEnvironment&quot;>&lt;/a>&#xD;
+&lt;div align=&quot;left&quot;>&#xD;
+    &lt;table border=&quot;1&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;4&quot; style=&quot;border: 1px solid rgb(128,128,128)&quot;&#xD;
+    bordercolorlight=&quot;#808080&quot; bordercolordark=&quot;#808080&quot;>&#xD;
+        &lt;tr>&#xD;
+            &lt;td width=&quot;5%&quot;>&#xD;
+                &lt;b>Purpose:&lt;/b>&amp;nbsp;&#xD;
+            &lt;/td>&#xD;
+            &lt;td width=&quot;95%&quot;>&#xD;
+                To gain an understanding of the software architecture and its relationship to the target deployment&#xD;
+                environments.&amp;nbsp;&#xD;
+            &lt;/td>&#xD;
+        &lt;/tr>&#xD;
+    &lt;/table>&lt;br />&#xD;
+&lt;/div>&#xD;
+&lt;p>&#xD;
+    To perform this task within the appropriate context, it is important to have a good understanding of the software being&#xD;
+    developed, its architecture and the key mechanisms and features that it will support. Examine the available&#xD;
+    documentation for the software architecture to gain an initial understanding and supplement this with interviews or&#xD;
+    discussions with the software architect as required. Consider the impact that each target deployment environment might&#xD;
+    have on this information and note any important findings you think may be relevant to the test effort.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_Wr6yYdnnEdmO6L4XMImrsA" name=" Identify candidate mechanisms for test " guid="_Wr6yYdnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;IdentifyCandidateMechanisms&quot; name=&quot;IdentifyCandidateMechanisms&quot;>&lt;/a>&#xD;
+&lt;div align=&quot;left&quot;>&#xD;
+    &lt;table border=&quot;1&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;4&quot; style=&quot;border: 1px solid rgb(128,128,128)&quot;&#xD;
+    bordercolorlight=&quot;#808080&quot; bordercolordark=&quot;#808080&quot;>&#xD;
+        &lt;tr>&#xD;
+            &lt;td width=&quot;5%&quot;>&#xD;
+                &lt;b>Purpose:&lt;/b>&amp;nbsp;&#xD;
+            &lt;/td>&#xD;
+            &lt;td width=&quot;95%&quot;>&#xD;
+                To identify the potential test mechanisms that the testing approach will require.&amp;nbsp;&#xD;
+            &lt;/td>&#xD;
+        &lt;/tr>&#xD;
+    &lt;/table>&lt;br />&#xD;
+&lt;/div>&#xD;
+&lt;p>&#xD;
+    Using your knowledge of the software architecture and its target environments, examine the information provided in the&#xD;
+    test approach. Consider the key technical aspects of the approach and assemble a list of candidate mechanisms that will&#xD;
+    be needed to support it. Here is a partial list of common mechanisms you should consider as candidates; persistence,&#xD;
+    concurrency, distribution, communication, security, transaction management, recovery, error detection handling &amp;amp;&#xD;
+    reporting, and process control &amp;amp; synchronization.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Note that these mechanisms often apply to both manual and automated test efforts, although a specific mechanism may&#xD;
+    have more or less relevance to manual or automated testing. Also note that even where the same mechanism is required&#xD;
+    for both manual and automated test efforts, the characteristics of the implemented solution will usually differ.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_Wr6yYtnnEdmO6L4XMImrsA" name=" Inventory the existing test mechanisms " guid="_Wr6yYtnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;InventoryExistingMechanisms&quot; name=&quot;InventoryExistingMechanisms&quot;>&lt;/a>&#xD;
+&lt;div align=&quot;left&quot;>&#xD;
+    &lt;table border=&quot;1&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;4&quot; style=&quot;border: 1px solid rgb(128,128,128)&quot;&#xD;
+    bordercolorlight=&quot;#808080&quot; bordercolordark=&quot;#808080&quot;>&#xD;
+        &lt;tr>&#xD;
+            &lt;td width=&quot;5%&quot;>&#xD;
+                &lt;b>Purpose:&lt;/b>&amp;nbsp;&#xD;
+            &lt;/td>&#xD;
+            &lt;td width=&quot;95%&quot;>&#xD;
+                To identify opportunities to reuse existing implementations for the candidate mechanisms and identify which&#xD;
+                additional implementations will need to be developed.&amp;nbsp;&#xD;
+            &lt;/td>&#xD;
+        &lt;/tr>&#xD;
+    &lt;/table>&lt;br />&#xD;
+&lt;/div>&#xD;
+&lt;p>&#xD;
+    Examine the available test tools and existing test implementations and create an inventory of mechanisms that have one&#xD;
+    or more existing solutions. While this step is more obviously relevant in terms of the automated test effort, there are&#xD;
+    some equivalent considerations for the manual test effort.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;b>Sub-topics:&lt;/b>&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        &lt;a href=&quot;#ExistingAutomationMechanisms&quot;>Test automation mechanisms&lt;/a>&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;a href=&quot;#ExistingManualMechanisms&quot;>Manual test mechanisms&lt;/a>&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;h4>&#xD;
+    &lt;a id=&quot;ExistingAutomationMechanisms&quot; name=&quot;ExistingAutomationMechanisms&quot;>Test automation mechanisms&lt;/a> &lt;a&#xD;
+    href=&quot;#InventoryExistingMechanisms&quot;>&lt;img src=&quot;./../../core.base_rup/resources/top.gif&quot; alt=&quot;To top of page&quot; border=&quot;0&quot; width=&quot;20&quot;&#xD;
+    height=&quot;15&quot; />&lt;/a>&#xD;
+&lt;/h4>&#xD;
+&lt;p>&#xD;
+    Start by compiling a list of the tools available to you or that you plan to purchase. Remember that automation tools&#xD;
+    take many forms and your list will usually include more than the automated test implementation and execution tools. For&#xD;
+    each tool, examine the mechanisms provided by the tool. For example, does the scripting tool you plan to use provide&#xD;
+    its own data persistency mechanism, and if so, is it appropriate for your needs or will you need to supplement it?&#xD;
+    Other questions might include; Does the execution tool allow concurrent execution of test scripts on multiple host&#xD;
+    client machines? Does the execution tool allow distribution of scripts from a central master machine to multiple host&#xD;
+    client machines?&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Where existing test automation implementations are available, there will be additional mechanisms to inventory. Some&#xD;
+    aspects of these implementations will extend or supplement the basic mechanisms provided by the tools to make them more&#xD;
+    useful. Other aspects will offer implementations for additional mechanisms not provided in the base tool.&#xD;
+    &lt;!--- See [[[Guidelines: Test Automation Architecture]]] &#xD;
+          for further suggestions.&lt;/p>=-->&#xD;
+&lt;/p>&#xD;
+&lt;h4>&#xD;
+    &lt;a id=&quot;ExistingManualMechanisms&quot; name=&quot;ExistingManualMechanisms&quot;>Manual test mechanisms&lt;/a> &lt;a&#xD;
+    href=&quot;#InventoryExistingMechanisms&quot;>&lt;img src=&quot;./../../core.base_rup/resources/top.gif&quot; alt=&quot;To top of page&quot; border=&quot;0&quot; width=&quot;20&quot;&#xD;
+    height=&quot;15&quot; />&lt;/a>&#xD;
+&lt;/h4>&#xD;
+&lt;p>&#xD;
+    At a basic level, this will involve reviewing the test guidelines that exist for test implementation and execution. You&#xD;
+    should look for existing process solutions for issues such as concurrency-how testers can share data sets, especially&#xD;
+    existing data beds without adversely affecting each other; distribution-if the test team is distributed, what solutions&#xD;
+    are available to coordinate the separate test efforts. &lt;!--- See [[[Guidelines: Test Guidelines (Test Approach)]]] &#xD;
+          for further suggestions.=-->&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_Wr6yY9nnEdmO6L4XMImrsA" name=" Define the test mechanisms you will use " guid="_Wr6yY9nnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;DefineUsedMechanisms&quot; name=&quot;DefineUsedMechanisms&quot;>&lt;/a>&#xD;
+&lt;div align=&quot;left&quot;>&#xD;
+    &lt;table border=&quot;1&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;4&quot; style=&quot;border: 1px solid rgb(128,128,128)&quot;&#xD;
+    bordercolorlight=&quot;#808080&quot; bordercolordark=&quot;#808080&quot;>&#xD;
+        &lt;tr>&#xD;
+            &lt;td width=&quot;5%&quot;>&#xD;
+                &lt;b>Purpose:&lt;/b>&amp;nbsp;&#xD;
+            &lt;/td>&#xD;
+            &lt;td width=&quot;95%&quot;>&#xD;
+                To communicate the decisions made about the required test mechanisms.&amp;nbsp;&#xD;
+            &lt;/td>&#xD;
+        &lt;/tr>&#xD;
+    &lt;/table>&lt;br />&#xD;
+&lt;/div>&#xD;
+&lt;p>&#xD;
+    Now that you've decided on the test mechanisms required, you need to communicate your choices to the test team and&#xD;
+    other stakeholders in the test effort. We recommend you document the decisions about the test mechanisms required for&#xD;
+    automation as part of the the Test Automation Architecture documentation, and those that relate to manual testing as&#xD;
+    part of the Test Guidelines.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    As an alternative to formal documentation, you might choose to simply record this information as a set of informal&#xD;
+    architecture and process notes accompanied by some explanatory diagrams, possibly retained on a white-board. During&#xD;
+    test implementation and execution individual testers will make use of this information to make tactical decisions.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Where you have identified the potential requirement for special test interfaces that will need to be built into the&#xD;
+    software being developed, you should consider recording this requirement by creating one or more outlined Test&#xD;
+    Interface Specifications; this outline should provide a name, brief description and enumerate the main test interface&#xD;
+    requirements or features. Avoid spending a lot of time on these outlines; the list of requirements and features will be&#xD;
+    subsequently detailed in &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../core.base_rup/tasks/define_testability_elements_B792858D.html&quot; guid=&quot;{CDA7EC1B-2D50-46BE-A3BA-C621EAF22D84}&quot;>Task:&#xD;
+    Define Testability Elements&lt;/a>.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_Wr6yZNnnEdmO6L4XMImrsA" name=" Evaluate and verify your results " guid="_Wr6yZNnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;EvaluateResults&quot; name=&quot;EvaluateResults&quot;>&lt;/a>&#xD;
+&lt;div align=&quot;left&quot;>&#xD;
+    &lt;table border=&quot;1&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;4&quot; style=&quot;border: 1px solid rgb(128,128,128)&quot;&#xD;
+    bordercolorlight=&quot;#808080&quot; bordercolordark=&quot;#808080&quot;>&#xD;
+        &lt;tr>&#xD;
+            &lt;td width=&quot;5%&quot;>&#xD;
+                &lt;b>Purpose:&lt;/b>&amp;nbsp;&#xD;
+            &lt;/td>&#xD;
+            &lt;td width=&quot;95%&quot;>&#xD;
+                To verify that the task has been completed appropriately and that the resulting work products are&#xD;
+                acceptable.&amp;nbsp;&#xD;
+            &lt;/td>&#xD;
+        &lt;/tr>&#xD;
+    &lt;/table>&lt;br />&#xD;
+&lt;/div>&#xD;
+&lt;p>&#xD;
+    Now that you have completed the work, it is beneficial to verify that the work was of sufficient value, and that you&#xD;
+    did not simply consume vast quantities of paper. You should evaluate whether your work is of appropriate quality, and&#xD;
+    that it is complete enough to be useful to those team members who will make subsequent use of it as input to their&#xD;
+    work. Where possible, use the checklists provided in RUP to verify that quality and completeness are &quot;good enough&quot;.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Have the people performing the downstream tasks that rely on your work as input take part in reviewing your interim&#xD;
+    work. Do this while you still have time available to take action to address their concerns. You should also evaluate&#xD;
+    your work against the key input work products to make sure you have represented them accurately and sufficiently. It&#xD;
+    may be useful to have the author of the input work product review your work on this basis.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Try to remember that that RUP is an iterative delivery process and that in many cases work products evolve over time.&#xD;
+    As such, it is not usually necessary-and is often counterproductive-to fully-form a work product that will only be&#xD;
+    partially used or will not be used at all in immediately subsequent work. This is because there is a high probability&#xD;
+    that the situation surrounding the work product will change-and the assumptions made when the work product was created&#xD;
+    proven incorrect-before the work product is used, resulting in wasted effort and costly rework. Also avoid the trap of&#xD;
+    spending too many cycles on presentation to the detriment of content value. In project environments where presentation&#xD;
+    has importance and economic value as a project deliverable, you might want to consider using an administrative resource&#xD;
+    to perform presentation tasks.&#xD;
+&lt;/p>&lt;br />&#xD;
+&lt;br /></sectionDescription>
+  </sections>
+</org.eclipse.epf.uma:TaskDescription>

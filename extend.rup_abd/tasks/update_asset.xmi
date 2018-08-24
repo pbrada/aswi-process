@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="-r9Z1eIIKLOIdaxlqXKpY3Q" name="modify_asset,_RxMzIPCtEdquxKT1X5kJ4g" guid="-r9Z1eIIKLOIdaxlqXKpY3Q" changeDate="2007-05-28T15:30:11.859-0700" version="1.0.0">
+  <mainDescription>&lt;p>&#xD;
+    An asset is described with metadata and has artifacts, each of which can be modified. The nature of the modification,&#xD;
+    or update, dictates if a new asset version is required.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    It is up to the organization to establish the asset versioning policies, such as when a new asset version is required.&#xD;
+    For example, modifying a grammar issue in the metadata may be deemed by some to not require a new asset version.&#xD;
+    Whereas if the grammar issue is in one of the artifacts, then some may state that a new asset version is required.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    A general guideline to follow is to categorize asset modifications as structural and non-structural. Structural changes&#xD;
+    include modifying the following items:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Metadata&#xD;
+    &lt;/li>&#xD;
+    &lt;li style=&quot;list-style: none&quot;>&#xD;
+        &lt;ul>&#xD;
+            &lt;li>&#xD;
+                Asset version&#xD;
+            &lt;/li>&#xD;
+            &lt;li>&#xD;
+                Asset relationship&#xD;
+            &lt;/li>&#xD;
+            &lt;li>&#xD;
+                Artifact reference&#xD;
+            &lt;/li>&#xD;
+        &lt;/ul>&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Artifact&#xD;
+    &lt;/li>&#xD;
+    &lt;li style=&quot;list-style: none&quot;>&#xD;
+        &lt;ul>&#xD;
+            &lt;li>&#xD;
+                File name or path or content&#xD;
+            &lt;/li>&#xD;
+        &lt;/ul>&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>&#xD;
+    In general, these kinds of changes require a new asset version to be created. Non-structural changes are modifications&#xD;
+    to asset metadata other than those described; and do not require a new asset version.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    The organization needs to determine the tolerance level for changes before requiring a new asset version. When the new&#xD;
+    version is created then the asset review and approval activities take place.&#xD;
+&lt;/p></mainDescription>
+  <sections xmi:id="_jIpY0KdUEdu3IsnteZnoTw" name="Identify or Discover a Problem with an Asset" guid="_jIpY0KdUEdu3IsnteZnoTw">
+    <sectionDescription>&lt;p>&#xD;
+    Asset problems may be submitted as part of a change management system. Alternatively, requirements may be posted in a&#xD;
+    requirements management system, or the Asset Owner may be notified via instant messaging of a defect.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Regardless of the source of the notification, the Asset Owner or Producer&amp;nbsp;must be&amp;nbsp;notified of the problem,&#xD;
+    and needs to prepare a plan to address this issue.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_lqBwcKdUEdu3IsnteZnoTw" name="Search for the Asset" guid="_lqBwcKdUEdu3IsnteZnoTw">
+    <sectionDescription>The asset with the reported issue should be located in the Repository. See &lt;a class=&quot;elementLinkWithUserText&quot;&#xD;
+href=&quot;./../../extend.rup_abd/tasks/search_asset_C29C6178.html&quot;&#xD;
+guid=&quot;{81DC995B-5930-4F2B-B574-9805136CE94A}&quot;>Search Asset&lt;/a>.</sectionDescription>
+  </sections>
+  <sections xmi:id="_nIWIkKdUEdu3IsnteZnoTw" name="Plan Asset Update Activity" guid="_nIWIkKdUEdu3IsnteZnoTw">
+    <sectionDescription>&lt;p>&#xD;
+    The correction or adjustment to the asset should be planned. The necessary resources to modify the asset should be&#xD;
+    estimated and secured. The expected timing of making the changes should be understood.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    An impact analysis should be conducted where current Asset Consumers are evaluated and the impact to their efforts is&#xD;
+    understood. This may require communication and planning with Asset Consumers.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    The impact analysis should also address asset relationships, including the related assets’ Asset Owners or Producers,&#xD;
+    as well as other technical dependencies. The Asset Owners or Producers of related assets may need to participate in the&#xD;
+    planning depending on the nature of the problem and the nature of the asset relationship.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    The review process for the asset may need to be revised to include other reviewers and subject matter experts.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_otObsKdUEdu3IsnteZnoTw" name="Update the Asset" guid="_otObsKdUEdu3IsnteZnoTw">
+    <sectionDescription>&lt;p>&#xD;
+    To update the asset a developer will&amp;nbsp;follow steps similar to the ones&amp;nbsp;outlined below:&#xD;
+&lt;/p>&#xD;
+&lt;ol>&#xD;
+    &lt;li>&#xD;
+        Search for the asset in the Repository.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Retrieve the asset: identify the SCM location from which to check out the asset artifacts.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Modify the asset artifacts and metadata: the Asset Owner/Producer may need to conduct merges from previous changes&#xD;
+        to the artifacts made by others but which have not yet been incorporated into the published asset in the&#xD;
+        Repository.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Submit the modified asset: make changes to metadata, supporting documents, and identify the SCM label or tag that&#xD;
+        should be applied to this asset version. The asset should now be ready for the review and test process.&#xD;
+    &lt;/li>&#xD;
+&lt;/ol></sectionDescription>
+  </sections>
+  <purpose>To improve and refine the asset.</purpose>
+</org.eclipse.epf.uma:TaskDescription>

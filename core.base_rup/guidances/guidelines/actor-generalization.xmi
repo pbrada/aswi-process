@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_1EKYodnmEdmO6L4XMImrsA" name="actor-generalization,2.144844789747145E-305" guid="_1EKYodnmEdmO6L4XMImrsA" changeDate="2005-06-22T18:42:58.847-0700" version="7.1.0">
+  <mainDescription>&lt;a id=&quot;XE_actor-generalization__guidelines_for&quot; name=&quot;XE_actor-generalization__guidelines_for&quot;>&lt;/a>&lt;a id=&quot;Top&quot;&#xD;
+name=&quot;Top&quot;>&lt;/a> &#xD;
+&lt;h3>&#xD;
+    &lt;a id=&quot;Explanation&quot; name=&quot;Explanation&quot;>Explanation&lt;/a>&#xD;
+&lt;/h3>&#xD;
+&lt;p>&#xD;
+    Several actors can play the same role in a particular use case. Thus, a Teller and an Accountant, both of whom check&#xD;
+    the balance of an account, are seen as the same external entity by the use case that does the checking. The shared role&#xD;
+    is modeled as an actor, Balance Supervisor, inherited by the two original actors. This relationship is shown with&#xD;
+    actor-generalizations.&#xD;
+&lt;/p>&#xD;
+&lt;p class=&quot;picturecenter&quot; align=&quot;center&quot;>&#xD;
+    &lt;img height=&quot;236&quot; alt=&quot;Diagram described in accompanying text.&quot; src=&quot;resources/md_actg2.gif&quot; width=&quot;274&quot; />&#xD;
+&lt;/p>&#xD;
+&lt;p class=&quot;picturetext&quot;>&#xD;
+    The actors Teller and Accountant inherit all the properties of a Balance Supervisor. Thus, both these actors can act as&#xD;
+    Balance Supervisors.&#xD;
+&lt;/p>&#xD;
+&lt;h3>&#xD;
+    &lt;a id=&quot;Use&quot; name=&quot;Use&quot;>Use&lt;/a>&#xD;
+&lt;/h3>&#xD;
+&lt;p>&#xD;
+    A user can play several roles in relation to the system, which means that the user may, in fact, correspond to several&#xD;
+    actors. To make the model clearer, you can represent the user by one actor who inherits several actors. Each inherited&#xD;
+    actor represents one of the user's roles relative to the system.&#xD;
+&lt;/p>&lt;br />&#xD;
+&lt;br /></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

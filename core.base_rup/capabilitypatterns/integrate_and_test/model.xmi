@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:org.eclipse.epf.uma.resourcemanager="http:///org/eclipse/epf/uma/resourcemanager.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1">
+  <org.eclipse.epf.uma.resourcemanager:ResourceManager xmi:id="_cEc0YUdjEdqVZeSWHJlGyA" guid="_cEc0YUdjEdqVZeSWHJlGyA">
+    <resourceDescriptors xmi:id="_cEc0YkdjEdqVZeSWHJlGyA" id="-30NVASDjxbmEw86CNnBjOg" uri="content.xmi"/>
+  </org.eclipse.epf.uma.resourcemanager:ResourceManager>
+  <org.eclipse.epf.uma:ProcessComponent xmi:id="_b3LNYEdjEdqVZeSWHJlGyA" name="integrate_and_test" guid="_b3LNYEdjEdqVZeSWHJlGyA">
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_lEobcEdjEdqVZeSWHJlGyA" name="integrate_and_build_within_scope" guid="_lEobcEdjEdqVZeSWHJlGyA">
+      <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_lGvUQEdjEdqVZeSWHJlGyA" name="integrate_and_build_within_scope" guid="_lGvUQEdjEdqVZeSWHJlGyA" superActivities="_b3LNYUdjEdqVZeSWHJlGyA" isOngoing="true" variabilityType="extends">
+        <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:CapabilityPattern" href="uma://_OG_3gEdiEdqVZeSWHJlGyA#_OG_3gUdiEdqVZeSWHJlGyA"/>
+      </processElements>
+    </childPackages>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_mS8osEdjEdqVZeSWHJlGyA" name="test_and_evaluate_within_scope" guid="_mS8osEdjEdqVZeSWHJlGyA">
+      <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_mUqf8EdjEdqVZeSWHJlGyA" name="test_and_evaluate_within_scope" guid="_mUqf8EdjEdqVZeSWHJlGyA" hasMultipleOccurrences="true" superActivities="_b3LNYUdjEdqVZeSWHJlGyA" variabilityType="extends">
+        <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:CapabilityPattern" href="uma://_D1WfAEdWEdqMoerwwyqMKQ#_D2HUKEdWEdqMoerwwyqMKQ"/>
+      </processElements>
+    </childPackages>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_ZmhZwEetEdq_lfJYt-Zj8A" name="verify_test_approach" guid="_ZmhZwEetEdq_lfJYt-Zj8A">
+      <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_ZqWJ0EetEdq_lfJYt-Zj8A" name="verify_test_approach" guid="_ZqWJ0EetEdq_lfJYt-Zj8A" superActivities="_b3LNYUdjEdqVZeSWHJlGyA" isOngoing="true" variabilityType="extends">
+        <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:Activity" href="uma://_5rkvIRpREdqFPPVWQscZ5A#{7BD514AF-19F9-408F-8279-309BD153C157}"/>
+      </processElements>
+    </childPackages>
+    <process xsi:type="org.eclipse.epf.uma:CapabilityPattern" xmi:id="_b3LNYUdjEdqVZeSWHJlGyA" name="integrate_and_test" guid="_b3LNYUdjEdqVZeSWHJlGyA" presentationName="Integrate and Test" briefDescription="This covers the activities required to fully integrate and test the product.  It includes all of the various scopes of testing, including all of the levels and types of tests planned for the iteration, further scoped by the portions of the system appropriate for the test. " isOngoing="true" breakdownElements="_ZqWJ0EetEdq_lfJYt-Zj8A _lGvUQEdjEdqVZeSWHJlGyA _mUqf8EdjEdqVZeSWHJlGyA">
+      <presentation xmi:id="-30NVASDjxbmEw86CNnBjOg" href="uma://-30NVASDjxbmEw86CNnBjOg#-30NVASDjxbmEw86CNnBjOg"/>
+      <defaultContext href="uma://_0q85QJySEd2xJNwbI6lxKA#_xqmb0NnmEdmO6L4XMImrsA"/>
+      <validContext href="uma://_0q85QJySEd2xJNwbI6lxKA#_xqmb0NnmEdmO6L4XMImrsA"/>
+    </process>
+  </org.eclipse.epf.uma:ProcessComponent>
+</xmi:XMI>

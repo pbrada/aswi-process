@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ArtifactDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_17cl8NnmEdmO6L4XMImrsA" name="rup_event,{53AF0AB8-E1A1-45E7-8E4F-AFE2427633C6}" guid="_17cl8NnmEdmO6L4XMImrsA" changeDate="2005-08-23T20:43:30.390-0700" version="7.1.0">
+  <mainDescription>&lt;p>&#xD;
+    An event is used to identify and capture information about external occurrences that the system is aware of and to&#xD;
+    which it must respond. Events can also be used to capture information about internal events, such as exceptions.&#xD;
+&lt;/p></mainDescription>
+  <purpose>&lt;a id=&quot;XE_event__as_artifact&quot; name=&quot;XE_event__as_artifact&quot;>&lt;/a>&lt;a id=&quot;Top&quot; name=&quot;Top&quot;>&lt;/a>&lt;a id=&quot;XE_event__purpose_of&quot;&#xD;
+name=&quot;XE_event__purpose_of&quot;>&lt;/a>&lt;a id=&quot;Purpose&quot; name=&quot;Purpose&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    The purpose of this work product&amp;nbsp;is to capture characteristics of events, such as frequency, priority, and&#xD;
+    response requirements.&#xD;
+&lt;/p></purpose>
+  <briefOutline>&lt;a id=&quot;Brief Outline&quot; name=&quot;Brief Outline&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    Important characteristics of events are:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        internal vs. external - Is the event external or internal?&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        priority - Does this event need to cause the suspension of other processing in order to be handled?&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        frequency - How often does the event occur?&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        frequency distribution - Does the event occur at regular intervals, or are there spikes?&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        response requirements - How the quickly the system must respond to the event (may need to distinguish between&#xD;
+        average and worst case).&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        kind - Is this a Call Event, Time Event, Signal Event, or Change Event (see &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+        href=&quot;./../../core.base_rup/guidances/concepts/events_and_signals_734567DC.html&quot; guid=&quot;1.800598287887014E-305&quot;>Concept:&#xD;
+        Events and Signals&lt;/a> for definitions)?&lt;br />&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></briefOutline>
+  <representationOptions>&lt;p>&#xD;
+    In the context of state and activity diagrams, Event refers to a trigger for a state transition.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    However, this work product covers &quot;event&quot; in the more general sense, as occurrences to which the system must respond,&#xD;
+    including signals, calls, state changes, or time events.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Also see &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../core.base_rup/workproducts/rup_signal_AD16C912.html&quot;&#xD;
+    guid=&quot;{8CA124DA-A80C-45D7-BC65-BA6B4247FF11}&quot;>Artifact: Signal&lt;/a>.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;a id=&quot;Tailoring&quot; name=&quot;Tailoring&quot;>&lt;/a>&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Event characteristics can be captured in a spreadsheet, database, requirements management database, or as a table in&#xD;
+    the Software Architecture Document.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    They can even be captured as classes, stereotyped &amp;lt;&amp;lt;event&amp;gt;&amp;gt;, although this should be treated as a&#xD;
+    convenient way of capturing management information about events, and not be confused with data transmitted when the&#xD;
+    event occurs. If a call event results in the transmission of data, the data should be represented by the signature of&#xD;
+    the called operation. If the event is a signal, its data can be modeled explicitly (see &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../core.base_rup/workproducts/rup_signal_AD16C912.html&quot; guid=&quot;{8CA124DA-A80C-45D7-BC65-BA6B4247FF11}&quot;>Artifact:&#xD;
+    Signal&lt;/a>).&#xD;
+&lt;/p>&lt;br />&#xD;
+&lt;br /></representationOptions>
+</org.eclipse.epf.uma:ArtifactDescription>

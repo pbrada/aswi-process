@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_swZSMNoTEdmCj7Yn9Ev4rg" name="cots_define_solutions,{0970A6B8-349C-4C86-809B-AB025882F591}" guid="_swZSMNoTEdmCj7Yn9Ev4rg" changeDate="2005-11-28T15:58:07.147-0800" version="7.1.0">
+  <sections xmi:id="_tnHe0NoTEdmCj7Yn9Ev4rg" name=" Perform Gap Analysis " guid="_tnHe0NoTEdmCj7Yn9Ev4rg">
+    <sectionDescription>&lt;a id=&quot;PerfromGapAnalysis&quot; name=&quot;PerfromGapAnalysis&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    &lt;strong>Note:&lt;/strong> Though this step is presented in a logical order, one might need to alternate between it and the&#xD;
+    other 3 steps contained in this task or perform some of them in parallel.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    This step is performed by doing a pair-wise comparison of the COTS packages identified in the context of the&#xD;
+    marketplace sphere to the information gathered from the architecture and design sphere, stakeholder needs and business&#xD;
+    processes sphere, and programmatics and risks sphere. The focus is on trying to understand where they match, where they&#xD;
+    don't match, and a characterization of the mismatches.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    The pair-wise comparison does not have to focus on all the spheres at the same time. For instance, the step could start&#xD;
+    by comparing the identified COTS packages to the information gathered from the architecture and design sphere only, in&#xD;
+    order to access how each COTS package fits into the enterprise architecture. Based on this information, some tradeoffs&#xD;
+    could be negotiated and a solution formed. Then, the information gathered from the stakeholder needs and business&#xD;
+    processes sphere could be added in order to assess how each COTS package supports the required user business processes.&#xD;
+    Based on this information, some tradeoffs could be negotiated and the solution refined. This process&#xD;
+    continues&amp;nbsp;until&amp;nbsp;the solution is formed based on all the available information gathered from the spheres.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_tnHe0doTEdmCj7Yn9Ev4rg" name=" Negotiate Tradeoffs " guid="_tnHe0doTEdmCj7Yn9Ev4rg">
+    <sectionDescription>&lt;a id=&quot;NegotiateTradeoffs&quot; name=&quot;NegotiateTradeoffs&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    &lt;strong>Note:&lt;/strong> Though this step is presented in a logical order, one might need to alternate between it and the&#xD;
+    other 3 steps contained in this task or perform some of them in parallel.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    This is a key step to make sure that any identified mismatch is understood and resolved. It is imperative to understand&#xD;
+    how important each mismatch is to the solution and understand the possible ways the mismatch can be resolved.&#xD;
+    Mismatches can be resolved through negotiating with stakeholders to modify user business processes and stated&#xD;
+    stakeholder needs; gathering more information about the capabilities of the COTS packages and their ability to be&#xD;
+    tailored to accommodate the mismatch; changing the way the architecture uses the COTS packages; or creating a custom&#xD;
+    component to provide the necessary capability. If a mismatch cannot be sufficiently resolved, the candidate solution&#xD;
+    can be removed from further consideration.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_tnHe0toTEdmCj7Yn9Ev4rg" name=" Form Solution " guid="_tnHe0toTEdmCj7Yn9Ev4rg">
+    <sectionDescription>&lt;a id=&quot;FormSolution&quot; name=&quot;FormSolution&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    &lt;strong>Note:&lt;/strong> Though this step is presented in a logical order, one might need to alternate between it and the&#xD;
+    other 3 steps contained in this task or perform some of them in parallel.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    With an understanding of the matches and mismatches, a solution is formed (or updated) by assembling one or more COTS&#xD;
+    packages or COTS package components, legacy systems (piece of the systems being replaced), reuse libraries, other reuse&#xD;
+    sources (for example, freeware, shareware), any required custom code (including wrappers and &quot;glue&quot;) and appropriate&#xD;
+    linkage to the broader organization's architecture with which the solution must interface. The solution architecture&#xD;
+    and design is capture in the solution dossier.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_tnHe09oTEdmCj7Yn9Ev4rg" name=" Score Solution" guid="_tnHe09oTEdmCj7Yn9Ev4rg">
+    <sectionDescription>&lt;a id=&quot;ScoreSolution&quot; name=&quot;ScoreSolution&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    &lt;strong>Note:&lt;/strong> Though this step is presented in a logical order, one might need to alternate between it and the&#xD;
+    other 3 steps contained in this task or perform some of them in parallel.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    The objective of this step is to score the solution against the project's constraints, including the critical use cases&#xD;
+    and the critical non-functional requirements, architectural and design constraints, project management constraints, and&#xD;
+    any constraint related to business processes. The rating is done by using &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../core.base_rup/workproducts/rup_requirements_attributes_EFE5ABAC.html&quot;&#xD;
+    guid=&quot;{D0E2E7A1-4179-470E-AA18-419D5FEA275D}&quot;>Requirements Attributes&lt;/a>. Again, involving all stakeholders (or&#xD;
+    empowered representatives) is highly recommended while performing this step in order to gather as much feedback as&#xD;
+    possible on the candidate solution.&#xD;
+&lt;/p>&lt;br />&#xD;
+&lt;br /></sectionDescription>
+  </sections>
+  <purpose>&lt;a id=&quot;Top&quot; name=&quot;Top&quot;>&lt;/a> &#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        To combine the information gathered from the four spheres of influence (&lt;a class=&quot;elementLinkWithType&quot;&#xD;
+        href=&quot;./../../extend.cots/guidances/concepts/process_drivers_for_cots_package_delivery_B697A128.html&quot;&#xD;
+        guid=&quot;1.4106163930012463E-305&quot;>Concept: Process Drivers for COTS Package Delivery&lt;/a>) to form or update a solution&#xD;
+        by: &#xD;
+        &lt;ul>&#xD;
+            &lt;li>&#xD;
+                Performing gap analysis&#xD;
+            &lt;/li>&#xD;
+            &lt;li>&#xD;
+                Negotiating tradeoffs&#xD;
+            &lt;/li>&#xD;
+            &lt;li>&#xD;
+                Forming solution&#xD;
+            &lt;/li>&#xD;
+            &lt;li>&#xD;
+                Scoring solution&#xD;
+            &lt;/li>&#xD;
+        &lt;/ul>&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>&#xD;
+    &lt;strong>Note:&lt;/strong> Though the steps in this task are presented in a logical order, one might need to alternate&#xD;
+    between them or perform some of them in parallel&#xD;
+&lt;/p></purpose>
+</org.eclipse.epf.uma:TaskDescription>

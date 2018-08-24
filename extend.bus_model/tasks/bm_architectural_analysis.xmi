@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="-o2YBNJ1dwvWsuBQfkUmo_w" name="bm_architectural_analysis,_xfhhcBpWEdqUwb9RAn2tTA" guid="-o2YBNJ1dwvWsuBQfkUmo_w" changeDate="2005-10-12T11:07:29.588-0700" version="7.1.0">
+  <copyrightStatement href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#_NH1FoPTFEdmkpYARNN468A"/>
+  <mainDescription>&lt;p>&#xD;
+    This task adds value only if you are doing business modeling in order to &lt;a class=&quot;elementLinkWithUserText&quot;&#xD;
+    href=&quot;./../../core.base_rup/guidances/termdefinitions/business_engineering_744E8794.html&quot; guid=&quot;_x8onANnmEdmO6L4XMImrsA&quot;>engineer&#xD;
+    your business&lt;/a>. If you are merely building a chart of an existing organization in order to derive system&#xD;
+    requirements, architecting the business is not necessary. See also &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../extend.bus_model/guidances/concepts/scope_of_business_modeling_421E0509.html&quot;&#xD;
+    guid=&quot;7.910331746816979E-305&quot;>Concept: Scope of Business Modeling&lt;/a>.&amp;nbsp;&#xD;
+&lt;/p></mainDescription>
+  <sections xmi:id="_NUf1IB71Edqp2L-b_uRNLA" name="Develop an Overview of the Business Architecture" guid="_NUf1IB71Edqp2L-b_uRNLA">
+    <sectionDescription>&lt;p>&#xD;
+    The business architecture overview is created early in the lifecycle of a project, possibly as early as the development&#xD;
+    of the proposal. It is often depicted in graphical form, using some informal notation or storyboarding technique. It&#xD;
+    represents the intent and idea behind a business modeling effort. The lead business-process analyst produces the&#xD;
+    business architecture overview, often in collaboration with the project sponsor.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    The overview graph must indicate major elements of the business and its environment, such as teams, business tools, and&#xD;
+    external sources of influence (for example, regulatory bodies, partners, and market segments).&amp;nbsp;The overview graph&#xD;
+    most often does not focus on the entire business architecture as described here. However, a large effort, such as a&#xD;
+    business process re-engineering (BPR) project, would consider the entire business architecture. The notion of business&#xD;
+    architecture is described in &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../extend.bus_model/guidances/concepts/business_architecture_D437B035.html&quot; guid=&quot;2.6275891002471178E-306&quot;>Concept:&#xD;
+    Business Architecture&lt;/a>.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    It is useful to consider the purpose of business architecture and its intended audience. This ensures that the manner&#xD;
+    in which the business architecture is described and presented will be appropriate for those who must understand it. The&#xD;
+    intended audience can be categorized into different groups with various concerns. Each of these groups will be&#xD;
+    interested in different architectural views of the &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../extend.bus_model/workproducts/rup_business_architecture_document_A73E67D4.html&quot;&#xD;
+    guid=&quot;{D3A0CA96-30AD-4461-9386-A3EC9A7E879F}&quot;>Artifact: Business Architecture Document&lt;/a>.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    At this point, the business architecture overview is a provisional first pass. No commitments should be based on this&#xD;
+    overview diagram. The initial overview graph may or may not be included as part of the &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../extend.bus_model/workproducts/rup_business_architecture_document_A73E67D4.html&quot;&#xD;
+    guid=&quot;{D3A0CA96-30AD-4461-9386-A3EC9A7E879F}&quot;>Artifact: Business Architecture Document&lt;/a>, depending on what value it&#xD;
+    adds to the content.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_mzh0QB71Edqp2L-b_uRNLA" name="Describe the Forces Affecting the Business Architecture" guid="_mzh0QB71Edqp2L-b_uRNLA">
+    <sectionDescription>&lt;p>&#xD;
+    Identify the constraints and trends within the business and its environment that could have a significant effect on the&#xD;
+    structure of the business or the way in which it works. When defining the business architecture, these forces must be&#xD;
+    analyzed to ensure that the business can adapt to possible changes within a reasonable time and withstand other kinds&#xD;
+    of impact.&amp;nbsp; Forces that are worth considering include the business strategy and trends, as well as possible future&#xD;
+    events that would affect every part of the organization or radically change some significant central part of it. In&#xD;
+    addition, it is important to consider changes that might have to be made very rapidly, along with constraints that&#xD;
+    might be imposed or lifted in future that may alter the way business is done or open new opportunities.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Consider the probability of these events or changes occurring, and try to visualize their effects on the business. Once&#xD;
+    you understand the probabilities and effects, you can prioritize these forces and make decisions regarding how to deal&#xD;
+    with the highest-priority issues. The options available for dealing with each change are:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Prepare for rapid response to the change.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Act is if the change has already occurred.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Minimize the possible effects of the change.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Ignore the possibility of the change occurring.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>&#xD;
+    Document your results in the &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../extend.bus_model/workproducts/rup_business_architecture_document_A73E67D4.html&quot;&#xD;
+    guid=&quot;{D3A0CA96-30AD-4461-9386-A3EC9A7E879F}&quot;>Artifact: Business Architecture Document&lt;/a>, the section on&#xD;
+    architectural drivers and constraints.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_bzeN4B76Edqp2L-b_uRNLA" name="Outline the High-Level Organization" guid="_bzeN4B76Edqp2L-b_uRNLA">
+    <sectionDescription>&lt;p>&#xD;
+    Identify the high-level groupings that will constitute the organization. These can be departments, divisions, or&#xD;
+    business units, depending on what terminology your organization uses. These high-level groupings can be used as input&#xD;
+    when identifying your initial set of &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../extend.bus_model/workproducts/rup_business_system_BB28EEB.html&quot;&#xD;
+    guid=&quot;{4064F184-314B-4965-9F08-6AE5DBF6205A}&quot;>Artifact: Business System&lt;/a>(s) in the Business Analysis Model (if you&#xD;
+    have a very large and complex business model).&amp;nbsp;&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Consider the scope of the project as defined in the &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../extend.bus_model/workproducts/rup_business_vision_55FFBD95.html&quot;&#xD;
+    guid=&quot;{C1A31211-2C05-4665-8DC5-6BFB63F4FCE4}&quot;>Artifact: Business Vision&lt;/a>. There is no point in exploring details of&#xD;
+    parts of the organization that are out of scope. See also &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../extend.bus_model/guidances/concepts/modeling_large_organizations_DB7556B6.html&quot;&#xD;
+    guid=&quot;1.268342166757605E-304&quot;>Concept: Modeling Large Organizations&lt;/a>.&amp;nbsp;&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Sketches to a high-level organization should be included in the organization structure view of the Business&#xD;
+    Architecture Document. See also &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../extend.bus_model/guidances/guidelines/business_architecture_document_40B95005.html&quot;&#xD;
+    guid=&quot;1.2153147493608049E-305&quot;>Guideline: Business Architecture Document&lt;/a>, the section on organization structure&#xD;
+    view.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_oNwkUB76Edqp2L-b_uRNLA" name="Identify Business Systems" guid="_oNwkUB76Edqp2L-b_uRNLA">
+    <sectionDescription>&lt;p>&#xD;
+    Identify and briefly describe business systems within the business being modeled. Business systems are really only&#xD;
+    useful for large, complex business models. Depending on the business-modeling scenario and the scope of your efforts,&#xD;
+    you might decide against using business systems at all.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    A business system represents a relatively independent capability within the organization. It defines a set of&#xD;
+    responsibilities as well as the business workers, business entities, and business events that undertake these&#xD;
+    responsibilities. In this way, a business system is a structural part of the organization, like a department, except&#xD;
+    that the only interactions allowed within a business system are through the predefined responsibilities. Consider, for&#xD;
+    example, a serving window in a restaurant or an IT support department with a services catalog. In both these examples,&#xD;
+    there are predefined interactions. What, for example, would happen if you went around to the back of the restaurant to&#xD;
+    try to get a meal from somebody in the kitchen? Similarly, what would happen if you asked the computer support&#xD;
+    technician to book you an airline flight? We use business systems to disallow any interactions with the business&#xD;
+    workers and business entities within it, other than the specified interactions. This allows us to partition large,&#xD;
+    complex business models so that we can focus on detailing one part of the model without losing sight of where it fits&#xD;
+    into the whole.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Discuss and obtain agreement regarding which (if any) business systems should be included in your model. Some business&#xD;
+    systems may be described in only limited detail in the context of the business use-case realizations. Others may&#xD;
+    provide important input or receive output, in which cases they should be modeled as business actors. This means they&#xD;
+    are external to the business being modeled.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    You may want to indicate how a business system participates in a business use case without showing the internal&#xD;
+    interactions between business workers and business entities within that business system. Where necessary, you can &quot;zoom&#xD;
+    into&quot; the business system to show internal collaborations as part of the business use case.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    For more information on business systems, see &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../extend.bus_model/guidances/guidelines/business_system_4B3288B3.html&quot; guid=&quot;5.503233494422666E-306&quot;>Guideline:&#xD;
+    Business System&lt;/a>.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_p_yioB76Edqp2L-b_uRNLA" name="Identify Key Abstractions - Business Workers and Entities" guid="_p_yioB76Edqp2L-b_uRNLA">
+    <sectionDescription>&lt;p>&#xD;
+    For key interfaces to customers and (where appropriate) between business systems, the primary &lt;a&#xD;
+    class=&quot;elementLinkWithType&quot; href=&quot;./../../extend.bus_model/workproducts/rup_business_worker_75AE475B.html&quot;&#xD;
+    guid=&quot;{6C6AD4E6-C7B4-42E1-A3D1-FAC9DC2415B5}&quot;>Artifact: Business Worker&lt;/a>(s) and &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../extend.bus_model/workproducts/rup_business_entity_638A1D00.html&quot;&#xD;
+    guid=&quot;{9A14ED32-2AC5-457E-93B8-474642D33A50}&quot;>Artifact: Business Entity&lt;/a>(s) must be identified.&amp;nbsp;It may also&#xD;
+    help to define the purpose of each business system and its capabilities. Clear definitions of purpose and capabilities&#xD;
+    provide a better understanding of the role that the business system must play in business use-case realizations. Such&#xD;
+    definitions also help reveal the manner in which the business system must interact with other ones.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_zpImAB77Edqp2L-b_uRNLA" name="Define Distribution (Geographic) View" guid="_zpImAB77Edqp2L-b_uRNLA">
+    <sectionDescription>&lt;p>&#xD;
+    This view describes the geographic locations in which the business is deployed, along with the distribution of&#xD;
+    organizational structure and function across these locations. The locality view is useful for assessing the impact of&#xD;
+    time and distance on the business processes. Processes may be streamlined, or the organization itself may be&#xD;
+    restructured to eliminate the overhead of coordinating distributed tasks.&amp;nbsp; Furthermore, unique characteristics of&#xD;
+    each location (such as legislation, resources, accessibility, or image) may affect the decision to deploy certain&#xD;
+    business activities there. Ships may also be regarded as locations. The process of defining the Geographic View&#xD;
+    consists of the following tasks:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Identify the major locations (countries or cities) in which business activities are performed.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Identify the dependencies and paths of communication between these locations.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Map the business systems (from the Organization View) to these locations.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Assess the positive and negative qualities of each location regarding the business activities performed there.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Assess the overall effects of distribution on the business use cases.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Explore the effects of streamlining business use cases or restructuring the organization to eliminate overhead.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></sectionDescription>
+  </sections>
+  <sections xmi:id="_8pUNEB77Edqp2L-b_uRNLA" name="Define Human Resources (Worker) and Cultural Views" guid="_8pUNEB77Edqp2L-b_uRNLA">
+    <sectionDescription>&lt;p>&#xD;
+    The process of defining the human resource aspects of the business includes the following tasks:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Consider the competence profiles that exist within the organization. Define competence profiles that will be&#xD;
+        required in the future, or define the necessary changes to the existing profiles. Will the future business require&#xD;
+        employees to be more or less independent? Will they need higher or lower education requirements?&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Discuss education needs. Define both long-term training programs to overcome the differences between current and&#xD;
+        desired competence profiles, as well as any initial training needs associated with the introduction of new business&#xD;
+        processes.&amp;nbsp;&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Define any mechanisms (reward structures, trainee programs, mentor programs, or other incentives) that exist or&#xD;
+        need to be put in place to enhance skill levels. Discuss the advantages and disadvantages of each.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Explore the possibility of relocating individuals in the organization due to changes in responsibilities or the&#xD;
+        need to enhance communication.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>&#xD;
+    The process of describing cultural aspects of the business includes the following tasks:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Determine the characteristics of the culture.&amp;nbsp;&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Determine which of these characteristics are key to the organization and must be left undisturbed.&amp;nbsp;&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Discuss which characteristics must change.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Determine what mechanisms are in place to maintain and encourage the culture. Discuss ideas for new or changed&#xD;
+        mechanisms.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Define a path to be taken to introduce any changes that you deem necessary.&amp;nbsp;&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>&#xD;
+    The results of this step should be documented in the Human Resource View of the Business Architecture Document. See&#xD;
+    also &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../extend.bus_model/guidances/guidelines/business_architecture_document_40B95005.html&quot;&#xD;
+    guid=&quot;1.2153147493608049E-305&quot;>Guideline: Business Architecture Document&lt;/a>, the section on human resource view.&amp;nbsp;&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_HpBb4B78Edqp2L-b_uRNLA" name="Evaluate your Results" guid="_HpBb4B78Edqp2L-b_uRNLA">
+    <sectionDescription>&lt;p>&#xD;
+    Check the Business Architecture Document verify that your work is on track. See &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../extend.bus_model/guidances/checklists/business_architecture_document_7C3158E3.html&quot;&#xD;
+    guid=&quot;2.823852695977491E-305&quot;>Checklist: Business Architecture Document&lt;/a>.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <purpose>&lt;ul class=&quot;noindent&quot;>&#xD;
+    &lt;li>&#xD;
+        To understand the forces that significantly affect the business.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        To define an architecture for the business.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        To define the business patterns, key mechanisms, and modeling conventions for the business.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></purpose>
+</org.eclipse.epf.uma:TaskDescription>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ArtifactDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_23NDktnmEdmO6L4XMImrsA" name="rup_test_suite,{33DE37A2-ECFE-483B-934B-629F5802F87C}" guid="_23NDktnmEdmO6L4XMImrsA" changeDate="2005-09-27T19:52:59.248-0700" version="7.1.0">
+  <mainDescription>&lt;p>&#xD;
+    The Test Suite provides a means of managing the complexity of the test implementation. Many system test efforts fail&#xD;
+    because the team gets lost in the minutia of all of the detailed tests, and subsequently loses control of the test&#xD;
+    effort. Similar to UML packages, Test Suites provide a hierarchy of encapsulating containers to help manage the test&#xD;
+    implementation. They provide a means of managing the strategic aspects of the test effort by collecting tests together&#xD;
+    in related groups that can be planned, managed, and assessed in a meaningful way.&#xD;
+&lt;/p>&lt;!--EndFragment--></mainDescription>
+  <purpose>&lt;a id=&quot;Top&quot; name=&quot;Top&quot;>&lt;/a>&lt;a id=&quot;XE_test_suite__artifact_definition&quot; name=&quot;XE_test_suite__artifact_definition&quot;>&lt;/a>&lt;a&#xD;
+id=&quot;Purpose&quot; name=&quot;Purpose&quot;>&lt;/a>&lt;a id=&quot;XE_test_suite__purpose_of&quot; name=&quot;XE_test_suite__purpose_of&quot;>&lt;/a> &#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        To manage and sequence the execution of tests.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        To provide a useful and related set of test log information from which test results can be determined.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></purpose>
+  <briefOutline>&lt;a id=&quot;BriefOutline&quot; name=&quot;BriefOutline&quot;>&lt;/a>&lt;a id=&quot;XE_test_suite__brief_outline_of&quot;&#xD;
+name=&quot;XE_test_suite__brief_outline_of&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    Each Test Suite needs to consider various aspects, including the following:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        compatibly and relevance of the individual tests to be executed by the Test Suite, especially in terms of test&#xD;
+        objective and scope&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        points from which the Test Suite can be recovered or resumed if execution is halted&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        required configuration settings for the Test Suite of both hardware and software; for example, video-display&#xD;
+        resolution, resource allocation, environment variables, and so forth&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        pre-existing consumables required by the Test Suite, such as populated data sets, receipt printer dockets, and so&#xD;
+        on&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></briefOutline>
+  <representationOptions>&lt;a id=&quot;Tailoring&quot; name=&quot;Tailoring&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    This work product represents a container for organizing arbitrary collections of related tests. This may be realized&#xD;
+    (implemented) as one or more automated regression Test Suites, but the Test Suite can also be a work plan for the&#xD;
+    implementation of a group of related manual tests. Note also that Test Suites can be nested hierarchically, therefore&#xD;
+    one Test Suite may be enclosed within another.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Sometimes these groups of tests will relate directly to a subsystem or other system design element, but other times&#xD;
+    they'll relate directly to things such as quality dimensions, core &quot;mission critical&quot; functions, requirements&#xD;
+    compliance, standards adherence, and many others concerns that cut across, or are not directly related to, the internal&#xD;
+    system elements.&#xD;
+&lt;/p>You should consider creating Test Suites that arrange the available Test Scripts-in addition to other Test Suites-in&#xD;
+many different combinations: the more variations you have, the more you'll increase coverage and the potential for finding&#xD;
+errors. Give thought to a variety of Test Suites that will cover the breadth and depth of the target test items. Remember&#xD;
+the corresponding implication that a single Test Script (or Test Suite) may appear in many different Test Suites. &#xD;
+&lt;p>&#xD;
+    Some test automation tools provide the ability to automatically generate or assemble Test Suites. There are also&#xD;
+    implementation techniques that enable automated Test Suites to dynamically select all or part of their component Test&#xD;
+    Scripts for each test cycle run.&lt;br />&#xD;
+    &lt;br />&#xD;
+&lt;/p></representationOptions>
+</org.eclipse.epf.uma:ArtifactDescription>

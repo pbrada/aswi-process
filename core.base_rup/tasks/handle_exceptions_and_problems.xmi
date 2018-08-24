@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_3UQzAtnmEdmO6L4XMImrsA" name="handle_exceptions_and_problems,{E497E75A-2E69-474E-A814-42BBD8081D1F}" guid="_3UQzAtnmEdmO6L4XMImrsA" changeDate="2005-11-04T07:05:43.337-0800" version="7.1.0">
+  <mainDescription>&lt;p>&#xD;
+    A Status Assessment is created in the regularly scheduled Report Status task. Each Status Assessment identifies any&#xD;
+    &lt;b>problems&lt;/b> or &quot;things gone wrong&quot;. These can be project problems (e.g. deviations from plans, personnel), product&#xD;
+    problems (defects, requirements ambiguities, technology deficiencies), and realized risks. The Status Assessment also&#xD;
+    identifies any &lt;b>exceptions&lt;/b> that occur. Exceptions can be thought of as issues that are barriers to project&#xD;
+    progress (e.g. availability of equipment, availability of key individuals to answer questions, difficulty getting a&#xD;
+    decision made). The Project Manager also maintains an Issues List, which is maintained more or less continuously and so&#xD;
+    is usually more current than the Status Assessment. These are the means of recording and tracking the issues that are&#xD;
+    the stimulus for this task.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    The project manager invokes the Handle Exceptions and Problems task to address any problems or issues as they become&#xD;
+    known.&#xD;
+&lt;/p></mainDescription>
+  <sections xmi:id="_Yjk3kNnnEdmO6L4XMImrsA" name=" Evaluate Exceptions and Problems " guid="_Yjk3kNnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;Evaluate Exceptions and Problems&quot; name=&quot;Evaluate Exceptions and Problems&quot;>&lt;/a>&#xD;
+&lt;p>&#xD;
+    The first step is to evaluate each of the problems/issues identified in the Status Assessment and Issues List. Most&#xD;
+    projects run a regular (often weekly) &quot;Issues Meeting&quot; for this purpose attended by the project manager, software&#xD;
+    architect and team leads. For each problem/issue you need to identify the cause, its impact on the project, and&#xD;
+    determine what your options are to resolve it. You should also determine if the possible solutions are within the&#xD;
+    authority of the project team to implement.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_Yjk3kdnnEdmO6L4XMImrsA" name=" Determine Appropriate Corrective Actions " guid="_Yjk3kdnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;Determine Appropriate Corrective Actions&quot; name=&quot;Determine Appropriate Corrective Actions&quot;>&lt;/a>&#xD;
+&lt;p>&#xD;
+    Next, for each problem/exception, select the preferred approach for resolution and determine the steps you need to take&#xD;
+    to implement it. If this approach will require a change to the Software Development Plan or the product's requirements&#xD;
+    or design, you will need to create a Change Request and implement the change following the project's Configuration&#xD;
+    Management Plan. If the approach does not change one of the baselined plans then the solution can be implemented by the&#xD;
+    project manager issuing a new Work Order. In either case, if the preferred solution is beyond the authority of the&#xD;
+    project team the issue should be escalated to the Project Review Authority for resolution. For example, if the Project&#xD;
+    Manager has determined that, without corrective action, the current iteration will not meet its planned end date, the&#xD;
+    preferred course of action is to re-scope the iteration (because iterations are &lt;a class=&quot;elementLinkWithUserText&quot;&#xD;
+    href=&quot;./../../core.base_rup/guidances/termdefinitions/timeboxing_109B588A.html&quot; guid=&quot;_yYy-k9nmEdmO6L4XMImrsA&quot;>timeboxed&lt;/a>): if&#xD;
+    this impacts something that is deliverable to the customer at the end of the iteration, then it should not be done&#xD;
+    unilaterally by the project team.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_Yjk3ktnnEdmO6L4XMImrsA" name=" Issue Change Requests and/or Work Orders " guid="_Yjk3ktnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;Issue Change Requests and/or Work Orders&quot; name=&quot;Issue Change Requests and/or Work Orders&quot;>&lt;/a>&#xD;
+&lt;p>&#xD;
+    Once the corrective action for each problem or exception has been determined, and any necessary approvals, the project&#xD;
+    manager documents the work involved and raises Change Requests and/or Work Orders to initiate the work. The project&#xD;
+    manager is often able to retire issues from the Issues List at this point, because the closure will be tracked by other&#xD;
+    means.&#xD;
+&lt;/p>&lt;br />&#xD;
+&lt;br /></sectionDescription>
+  </sections>
+</org.eclipse.epf.uma:TaskDescription>

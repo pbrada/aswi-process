@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:org.eclipse.epf.uma.resourcemanager="http:///org/eclipse/epf/uma/resourcemanager.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1">
+  <org.eclipse.epf.uma.resourcemanager:ResourceManager xmi:id="_LtMZ0CCaEdq3qtLcbHn6PQ" guid="_LtMZ0CCaEdq3qtLcbHn6PQ">
+    <resourceDescriptors xmi:id="_LtMZ0SCaEdq3qtLcbHn6PQ" id="-w2DSIz4kdG8alIr4z1e21Q" uri="content.xmi"/>
+  </org.eclipse.epf.uma.resourcemanager:ResourceManager>
+  <org.eclipse.epf.uma:ProcessComponent xmi:id="_LnRYACCaEdq3qtLcbHn6PQ" name="plan_entire_project" guid="_LnRYACCaEdq3qtLcbHn6PQ">
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_cBvJ4CCbEdq3qtLcbHn6PQ" name="plan_the_project" guid="_cBvJ4CCbEdq3qtLcbHn6PQ">
+      <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_cBvJ4SCbEdq3qtLcbHn6PQ" name="plan_the_project" guid="_cBvJ4SCbEdq3qtLcbHn6PQ" superActivities="_LnRYASCaEdq3qtLcbHn6PQ" variabilityType="extends">
+        <linkToPredecessor href="uma://_5rMUoRpREdqFPPVWQscZ5A#_0_UHcBppEdqzB8RIDEHKhg"/>
+        <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:Activity" href="uma://_5rMUoRpREdqFPPVWQscZ5A#{823EF41B-2BD1-464B-84DB-C7BD432636E2}"/>
+      </processElements>
+    </childPackages>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_etEuwCCbEdq3qtLcbHn6PQ" name="plan_project_configuration_change_control" guid="_etEuwCCbEdq3qtLcbHn6PQ">
+      <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_euaLgCCbEdq3qtLcbHn6PQ" name="plan_project_configuration_change_control" guid="_euaLgCCbEdq3qtLcbHn6PQ" superActivities="_LnRYASCaEdq3qtLcbHn6PQ" variabilityType="extends">
+        <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:Activity" href="uma://_5qDFIxpREdqFPPVWQscZ5A#{043594BF-28ED-41EF-8C55-FBD65551D0CA}"/>
+      </processElements>
+    </childPackages>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_hyAfYCCbEdq3qtLcbHn6PQ" name="plan_the_integration" guid="_hyAfYCCbEdq3qtLcbHn6PQ">
+      <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_h0M3wCCbEdq3qtLcbHn6PQ" name="plan_the_integration" guid="_h0M3wCCbEdq3qtLcbHn6PQ" superActivities="_LnRYASCaEdq3qtLcbHn6PQ" linkToPredecessor="_idTaZuz9EdqNQM4riIm-Mw" variabilityType="extends">
+        <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:Activity" href="uma://_5rAHYRpREdqFPPVWQscZ5A#{3CBDBBD0-6482-4FA2-820B-F6711E0BD84B}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_idTaZuz9EdqNQM4riIm-Mw" guid="_idTaZuz9EdqNQM4riIm-Mw">
+        <pred xsi:type="org.eclipse.epf.uma:Activity" href="uma://_5rAHYRpREdqFPPVWQscZ5A#{4C4FF747-885B-4569-A462-756C8ADD79AB}"/>
+      </processElements>
+    </childPackages>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_jm_rECCbEdq3qtLcbHn6PQ" name="plan_deployment" guid="_jm_rECCbEdq3qtLcbHn6PQ">
+      <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_jnwgECCbEdq3qtLcbHn6PQ" name="plan_deployment" guid="_jnwgECCbEdq3qtLcbHn6PQ" superActivities="_LnRYASCaEdq3qtLcbHn6PQ" variabilityType="extends">
+        <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:Activity" href="uma://_5qJLxBpREdqFPPVWQscZ5A#{9B5E6B08-625F-40DF-AA4E-0BD056C0553A}"/>
+      </processElements>
+    </childPackages>
+    <process xsi:type="org.eclipse.epf.uma:CapabilityPattern" xmi:id="_LnRYASCaEdq3qtLcbHn6PQ" name="plan_entire_project" guid="_LnRYASCaEdq3qtLcbHn6PQ" presentationName="Define Project Plans" briefDescription="This covers general planning for the release.  It does not include detailed planning for product testing (the evaluation mission)." breakdownElements="_cBvJ4SCbEdq3qtLcbHn6PQ _euaLgCCbEdq3qtLcbHn6PQ _h0M3wCCbEdq3qtLcbHn6PQ _jnwgECCbEdq3qtLcbHn6PQ">
+      <presentation xmi:id="-w2DSIz4kdG8alIr4z1e21Q" href="uma://-w2DSIz4kdG8alIr4z1e21Q#-w2DSIz4kdG8alIr4z1e21Q"/>
+      <defaultContext href="uma://_0q85QJySEd2xJNwbI6lxKA#_xqmb0NnmEdmO6L4XMImrsA"/>
+      <validContext href="uma://_0q85QJySEd2xJNwbI6lxKA#_xqmb0NnmEdmO6L4XMImrsA"/>
+    </process>
+  </org.eclipse.epf.uma:ProcessComponent>
+</xmi:XMI>

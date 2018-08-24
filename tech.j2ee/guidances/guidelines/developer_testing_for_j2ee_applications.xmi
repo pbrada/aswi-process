@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_C__MY9wuEdmRU7lXzo6lKQ" name="developer_testing_for_j2ee_applications,7.478154848063033E-306" guid="_C__MY9wuEdmRU7lXzo6lKQ" changeDate="2005-10-25T14:44:13.837-0700" version="7.1.0">
+  <mainDescription>&lt;h3>&#xD;
+    Setting Up the Test Environment&#xD;
+&lt;/h3>&#xD;
+&lt;p>&#xD;
+    Ordinary Java classes can be compiled and tested without creating a &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../../tech.j2ee/guidances/guidelines/j2ee_module_B302A794.html&quot; guid=&quot;1.5663580058239784E-305&quot;>J2EE&#xD;
+    Module&lt;/a>. However, J2EE components, such as EJBs and servlets, rely on services provided by the container, and must&#xD;
+    be assembled and deployed to a container in order to be tested.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Thus, the implementer of J2EE components must assemble the components into J2EE Module(s) and possibly a &lt;a&#xD;
+    class=&quot;elementLink&quot; href=&quot;./../../../tech.j2ee/guidances/guidelines/j2ee_application_436A58D2.html&quot;&#xD;
+    guid=&quot;1.6057780853529704E-306&quot;>J2EE Application&lt;/a>, and then deploy those archives to a unit testing environment prior&#xD;
+    to unit testing.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    For more information on assembling J2EE Modules, see &lt;a class=&quot;elementlinkwithtype&quot;&#xD;
+    href=&quot;./../../../tech.j2ee/guidances/guidelines/assembling_j2ee_modules_17925A58.html&quot;&#xD;
+    guid=&quot;3.7932077950837037E-305&quot;>Guideline: Assembling J2EE Modules&lt;/a>.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    For more information on assembling J2EE Applications, see &lt;a class=&quot;elementlinkwithtype&quot;&#xD;
+    href=&quot;./../../../tech.j2ee/guidances/guidelines/assembling_j2ee_applications_38E5D5D5.html&quot;&#xD;
+    guid=&quot;3.347498143656868E-305&quot;>Guideline: Assembling J2EE Applications&lt;/a>.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    For more information on deploying J2EE Applications, see &lt;a class=&quot;elementlinkwithtype&quot;&#xD;
+    href=&quot;./../../../tech.j2ee/guidances/guidelines/deploying_j2ee_modules_and_applications_62A4A967.html&quot;&#xD;
+    guid=&quot;5.3908533897796765E-306&quot;>Guideline: Deploying J2EE Modules and Applications&lt;/a>.&#xD;
+&lt;/p>&#xD;
+&lt;h3>&#xD;
+    &lt;a id=&quot;General J2EE Testing Guidelines&quot; name=&quot;General J2EE Testing Guidelines&quot;>&lt;/a>General J2EE Testing Guidelines&#xD;
+&lt;/h3>&#xD;
+&lt;p>&#xD;
+    In addition to testing the functionality provided by the source code, for EJBs, JSPs, and Servlets, the container&#xD;
+    itself provides functionality that needs to be tested, such as persistence, transactions, and security.&#xD;
+&lt;/p>&lt;br />&#xD;
+&lt;br /></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

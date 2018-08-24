@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="-MbDo1By4dvTuy3mYONvtxQ" name="create_asset,_QEOT8PCtEdquxKT1X5kJ4g" guid="-MbDo1By4dvTuy3mYONvtxQ" changeDate="2007-01-17T14:24:16.187-0800" version="1.0.0">
+  <mainDescription>&lt;p>&#xD;
+    In this task the asset artifacts are created and/or harvested. The asset is created according to the Asset&#xD;
+    Specification. Packaging the asset includes preparing documentation and supporting material to provide easy&#xD;
+    comprehension of the asset. The asset’s metadata, such as name, description, and anticipated context is prepared.&#xD;
+    Finally the asset is submitted to the Repository.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Major considerations in creating assets:&#xD;
+&lt;/p>&#xD;
+&lt;ol>&#xD;
+    &lt;li>&#xD;
+        Understand the recurring problem and proposed solution; the Asset Specification addresses this.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Understand and develop for the intended Asset Consumer, including:&#xD;
+    &lt;/li>&#xD;
+    &lt;li style=&quot;LIST-STYLE-TYPE: none&quot;>&#xD;
+        &lt;ul>&#xD;
+            &lt;li>&#xD;
+                Identifying how it is expected the Asset Consumer will discover the asset (this affects both classification&#xD;
+                of the asset as well as the packaging material that is prepared)&#xD;
+            &lt;/li>&#xD;
+            &lt;li>&#xD;
+                The anticipated context(s) the Asset Consumer will be in (such as a development context, or a runtime&#xD;
+                context, or a business context), as well as the skill set of the Asset Consumer&amp;nbsp;&#xD;
+            &lt;/li>&#xD;
+        &lt;/ul>&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Understand who will fund, maintain and support the asset&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Understand the asset versioning strategy&#xD;
+    &lt;/li>&#xD;
+&lt;/ol>&#xD;
+&lt;p>&#xD;
+    The Asset Specification will identify a possible asset type. Each asset is of a single type, and can be classified&#xD;
+    multiple times. For example,&amp;nbsp;you can take an asset such as a stock quote service.&amp;nbsp;You can determine the asset&#xD;
+    type is Service, and&amp;nbsp;you may classify the stock quote service as a “non-commercial” service, and as a “domestic”&#xD;
+    service, providing quotes for only domestic traded stocks.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Looking at several of the steps of creating assets, they have direct impact on the consumability of the asset, for&#xD;
+    instance:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Creating or harvesting artifacts: impacts the usability of the asset&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Packaging the asset: impacts the comprehension of the asset&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Categorizing the asset: impacts the searching and discoverability of the asset&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>&#xD;
+    This point cannot be emphasized enough. The steps of creating an asset should be focused on the Asset Consumer, for&#xD;
+    both their ease of use and for&amp;nbsp;the downstream maintenance.&#xD;
+&lt;/p></mainDescription>
+  <sections xmi:id="_o6bW0KZ7EduHC6cE2S3HNg" name="Understand the Considerations in Creating Assets" guid="_o6bW0KZ7EduHC6cE2S3HNg">
+    <sectionDescription>Some of the main considerations are described in the main description for this task. Understanding the answers to these&#xD;
+considerations is critical to building the proper asset. Again the goal is to not overpopulate the Repository with assets&#xD;
+just because we can. The goal is to populate the Repository with the right set of assets that provide a solution to a&#xD;
+problem the organization faces, and that are easy for Asset Consumers to use.</sectionDescription>
+  </sections>
+  <sections xmi:id="_vbNjQKZ7EduHC6cE2S3HNg" name="Create or Harvest Artifacts" guid="_vbNjQKZ7EduHC6cE2S3HNg">
+    <sectionDescription>&lt;p>&#xD;
+    An asset may have many artifacts. Some artifacts are created for the asset, whereas others may be harvested. In either&#xD;
+    case the artifacts should be prepared to the accepted level of context and dependencies.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    In many cases dependencies need to be removed or modified in the artifacts to meet the expected context Asset Consumers&#xD;
+    will have.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    The artifacts are prepared in the Asset Owner’s/Producer’s workspace. The artifacts should be checked in to an SCM&#xD;
+    (source control management) system before associating the artifacts with the asset in the Repository.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_IAB84KZ8EduHC6cE2S3HNg" name="Package Asset" guid="_IAB84KZ8EduHC6cE2S3HNg">
+    <sectionDescription>&lt;p>&#xD;
+    There are several things that happen at this step including:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Prepare the documentation for the Asset Consumer&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Determine the metadata for the asset&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>&#xD;
+    There are several things which help mitigate reuse costs. These include:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Quicker, easier comprehension of the asset&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Asset complexity is minimal to moderate&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Asset size is minimal to moderate&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Documentation quality is high&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>&#xD;
+    These are subjective factors but describe the underlying principles to creating assets. Addressing documentation&#xD;
+    quality and ease of asset comprehension are the purpose of packaging assets.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    The extra investment for packaging assets is justified if the effort in this area reduces the costs of reuse.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_Y1-mUKZ8EduHC6cE2S3HNg" name="Categorize Asset" guid="_Y1-mUKZ8EduHC6cE2S3HNg">
+    <sectionDescription>&lt;p>&#xD;
+    There are several terms describing this step, such as classifying the asset, or using taxonomies.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    The goal here is to assign values to the asset metadata that benefit the discovery of the asset. More formal structures&#xD;
+    such as category schemas or taxonomies are typically used. However, other techniques such as tagging assets with terms&#xD;
+    that are meaningful to the Asset Consumer are less structured techniques but are often more useful means of searching&#xD;
+    and finding assets.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Assets should be categorized as they are created and submitted, but certainly should be permitted to be categorized at&#xD;
+    other points in the lifetime of the asset.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_fBTgIKZ8EduHC6cE2S3HNg" name="Submit Asset" guid="_fBTgIKZ8EduHC6cE2S3HNg">
+    <sectionDescription>&lt;p>&#xD;
+    Submitting the asset to the Repository, the Asset Owner/Producer typically fills in the asset metadata, associates the&#xD;
+    selected artifacts and categorizes the asset using category schemas and taxonomies in the Repository.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    For some Repositories the asset version is declared by the person submitting the asset.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    When selecting the artifacts to be in the asset typically the Asset Producer/Owner will select the root directory where&#xD;
+    the artifacts live. Some Repositories will permit only one root directory in the asset, others may permit multiple root&#xD;
+    directories. When selecting the artifacts for the asset, the Asset Owner/Producer will often need to identify a label&#xD;
+    or some other identifiable tag that is stored in the asset metadata and SCM to ensure proper retrieval of the asset&#xD;
+    artifacts for the Asset Consumer.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    In a governed Repository the asset should be submitted to review and approval processes. Governing the asset&#xD;
+    submission, review, and approval processes adds to the quality and usability of the assets in the Repository.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <purpose>Populate repository with the right assets, providing solutions to problems in the enterprise.</purpose>
+</org.eclipse.epf.uma:TaskDescription>

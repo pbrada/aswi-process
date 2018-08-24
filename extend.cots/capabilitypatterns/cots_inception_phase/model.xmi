@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:org.eclipse.epf.uma.resourcemanager="http:///org/eclipse/epf/uma/resourcemanager.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1">
+  <org.eclipse.epf.uma.resourcemanager:ResourceManager xmi:id="_dqPyAPfZEdmriZhf4djjLA" guid="_dqPyAPfZEdmriZhf4djjLA">
+    <resourceDescriptors xmi:id="_dqPyAffZEdmriZhf4djjLA" id="_6eufcPfYEdmriZhf4djjLA" uri="content.xmi"/>
+  </org.eclipse.epf.uma.resourcemanager:ResourceManager>
+  <org.eclipse.epf.uma:ProcessComponent xmi:id="_mX7-EPfdEdmci7YbVnIGzg" name="cots_inception_phase" guid="_mX7-EPfdEdmci7YbVnIGzg">
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_S7RAYFVbEdqPvpWSBXcbUw" name="cots_inception_recommend_candidate_solutions" guid="_S7RAYFVbEdqPvpWSBXcbUw">
+      <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_S9E-QFVbEdqPvpWSBXcbUw" name="cots_inception_recommend_candidate_solutions" guid="_S9E-QFVbEdqPvpWSBXcbUw" superActivities="_mX7-EffdEdmci7YbVnIGzg" variabilityType="extends">
+        <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:CapabilityPattern" href="uma://_1iySMPr_EdmQwKBXhQotBQ#_1iySMfr_EdmQwKBXhQotBQ"/>
+      </processElements>
+    </childPackages>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="__1-_UFVfEdqce-f0A5RH8g" name="cots_inception_support_iteration" guid="__1-_UFVfEdqce-f0A5RH8g">
+      <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="__3mv8FVfEdqce-f0A5RH8g" name="cots_inception_support_iteration" guid="__3mv8FVfEdqce-f0A5RH8g" superActivities="_mX7-EffdEdmci7YbVnIGzg" variabilityType="extends">
+        <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:CapabilityPattern" href="uma://_hkIbYPfeEdmriJhf4djjLA#_hkIbYffeEdmriJhf4djjLA"/>
+      </processElements>
+    </childPackages>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_H_00QFVgEdqce-f0A5RH8g" name="cots_inception_gather_info_from_spheres" guid="_H_00QFVgEdqce-f0A5RH8g">
+      <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_IG5FkFVgEdqce-f0A5RH8g" name="cots_inception_gather_info_from_spheres" guid="_IG5FkFVgEdqce-f0A5RH8g" superActivities="_mX7-EffdEdmci7YbVnIGzg" variabilityType="extends">
+        <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:CapabilityPattern" href="uma://_6lW5oPfdEdmriJhf4djjLA#_6lW5offdEdmriJhf4djjLA"/>
+      </processElements>
+    </childPackages>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_QNYrkFVgEdqce-f0A5RH8g" name="cots_inception_define_candidate_solutions" guid="_QNYrkFVgEdqce-f0A5RH8g">
+      <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_QODZ8FVgEdqce-f0A5RH8g" name="cots_inception_define_candidate_solutions" guid="_QODZ8FVgEdqce-f0A5RH8g" hasMultipleOccurrences="true" superActivities="_mX7-EffdEdmci7YbVnIGzg" variabilityType="extends">
+        <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:CapabilityPattern" href="uma://_P6-zYPfeEdmriJhf4djjLA#_P6-zYffeEdmriJhf4djjLA"/>
+      </processElements>
+    </childPackages>
+    <process xsi:type="org.eclipse.epf.uma:CapabilityPattern" xmi:id="_mX7-EffdEdmci7YbVnIGzg" name="cots_inception_phase" guid="_mX7-EffdEdmci7YbVnIGzg" presentationName="COTS Inception Iteration" briefDescription="This is an example of inception phase iteration. It includes the activities typically performed during a single iteration in the inception phase. " isRepeatable="true" breakdownElements="_IG5FkFVgEdqce-f0A5RH8g _QODZ8FVgEdqce-f0A5RH8g _S9E-QFVbEdqPvpWSBXcbUw __3mv8FVfEdqce-f0A5RH8g">
+      <presentation xmi:id="_6eufcPfYEdmriZhf4djjLA" href="uma://_6eufcPfYEdmriZhf4djjLA#_6eufcPfYEdmriZhf4djjLA"/>
+      <defaultContext href="uma://_0q85QJySEd2xJNwbI6lxKA#_sU4a4NoTEdmCj7Yn9Ev4rg"/>
+      <validContext href="uma://_0q85QJySEd2xJNwbI6lxKA#_sU4a4NoTEdmCj7Yn9Ev4rg"/>
+    </process>
+  </org.eclipse.epf.uma:ProcessComponent>
+</xmi:XMI>

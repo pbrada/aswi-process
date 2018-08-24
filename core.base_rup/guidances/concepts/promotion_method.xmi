@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_3j5xhNnmEdmO6L4XMImrsA" name="promotion_method,1.720995905987093E-305" guid="_3j5xhNnmEdmO6L4XMImrsA" changeDate="2005-06-24T10:44:10.161-0700" version="7.1.0">
+  <mainDescription>&lt;a id=&quot;Top&quot; name=&quot;Top&quot;>&lt;/a>&lt;a id=&quot;XE_promotion_method__definition&quot; name=&quot;XE_promotion_method__definition&quot;>&lt;/a> &#xD;
+&lt;h3>&#xD;
+    &lt;a id=&quot;Definition&quot; name=&quot;Definition&quot;>Definition&lt;/a>&#xD;
+&lt;/h3>&#xD;
+&lt;p>&#xD;
+    As the project progresses and the completeness and stability of baselines improve, &quot;promotion levels&quot; can be used to&#xD;
+    characterize the baseline in terms of its completeness or stability.&amp;nbsp;Promotion levels and other baseline&#xD;
+    attributes should be defined as appropriate to meet the needs of the individual project, although you'll typically find&#xD;
+    that a common set of definitions can be reused in many different projects. Here's an example of promotion levels that&#xD;
+    might be appropriate to use:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Integration Tested&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        System Tested&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Acceptance Tested&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Production Delivered&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>&#xD;
+    In this example, the levels are sequenced to reflect the relative progression in completeness and stability of the&#xD;
+    software over time. Note that while the software will usually progress forward through these levels, it can also&#xD;
+    regress in terms of completeness or stability. The act of changing the promotion level of a baseline in the former case&#xD;
+    is called promoting and in the latter case demoting the baseline.&#xD;
+&lt;/p>&#xD;
+&lt;h3>&#xD;
+    &lt;a id=&quot;Explanation&quot; name=&quot;Explanation&quot;>Explanation&lt;/a>&#xD;
+&lt;/h3>&#xD;
+&lt;p>&#xD;
+    On occasion, the configuration manager may need to demote a baseline by changing its promotion level to one that is&#xD;
+    lower in the promotion level order. For example, the integrator may discover a a major bug in a newly created baseline.&#xD;
+    To prevent developers introducing this bug into their development workspaces, the problems with the baseline can also&#xD;
+    be more clearly indicated by adding a label to the the baseline such as &quot;rejected&quot;.&#xD;
+&lt;/p>&#xD;
+&lt;h3>&#xD;
+    &lt;a id=&quot;Use&quot; name=&quot;Use&quot;>Use&lt;/a>&lt;a id=&quot;XE_promotion_method__guidelines_for&quot;&#xD;
+    name=&quot;XE_promotion_method__guidelines_for&quot;>&lt;/a>&#xD;
+&lt;/h3>&#xD;
+&lt;p>&#xD;
+    The recommended baseline represents a system configuration that has achieved a specific promotion level. A baseline&#xD;
+    becomes part of the set of recommended baselines when it is promoted to a certain level, for example, &quot;Acceptance&#xD;
+    Tested&quot;. Promotion levels can be used in project development policies. For example, a policy on a project could be that&#xD;
+    a given baseline is considered &quot;recommended&quot; when it reaches a particular promotion level. This policy helps to ensure&#xD;
+    that developers rebase their workspaces whenever a baseline passes an acceptable level of completeness and stability.&#xD;
+&lt;/p>&lt;br />&#xD;
+&lt;br /></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

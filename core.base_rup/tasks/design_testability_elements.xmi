@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_2Itl4NnmEdmO6L4XMImrsA" name="design_testability_elements,{635D3072-5A38-4EF8-B63E-08502EBBC8B4}" guid="_2Itl4NnmEdmO6L4XMImrsA" changeDate="2005-11-04T07:42:45.042-0800" version="7.1.0">
+  <sections xmi:id="_VH7QENnnEdmO6L4XMImrsA" name=" Identify Test-Specific Classes and Packages " guid="_VH7QENnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;Identify Test Specific Classes and Packages&quot; name=&quot;Identify Test Specific Classes and Packages&quot;>&lt;/a>&lt;a&#xD;
+id=&quot;XE_test_procedure__design_behavior&quot; name=&quot;XE_test_procedure__design_behavior&quot;>&lt;/a>&#xD;
+&lt;div align=&quot;left&quot;>&#xD;
+    &lt;table border=&quot;1&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;4&quot; style=&quot;border: 1px solid rgb(128,128,128)&quot;&#xD;
+    bordercolorlight=&quot;#808080&quot; bordercolordark=&quot;#808080&quot;>&#xD;
+        &lt;tr>&#xD;
+            &lt;td width=&quot;5%&quot;>&#xD;
+                &lt;b>Purpose&lt;/b>&#xD;
+            &lt;/td>&#xD;
+            &lt;td width=&quot;95%&quot;>&#xD;
+                To identify and design the classes and packages that will provide the needed test specific&#xD;
+                functionality.&amp;nbsp;&#xD;
+            &lt;/td>&#xD;
+        &lt;/tr>&#xD;
+    &lt;/table>&lt;br />&#xD;
+&lt;/div>&#xD;
+&lt;p>&#xD;
+    Based on input from the test designer identify and specify test-specific classes and packages in the design model.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    A driver or stub of a design class has the same methods as the original class, but there is no behavior defined for the&#xD;
+    methods other than to provide for input (to the target for test) or returning a pre-defined value (to the target for&#xD;
+    test).&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    A driver or stub of a design package contains simulated classes for the classes that form the public interface of the&#xD;
+    original package.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_VH7QEdnnEdmO6L4XMImrsA" name=" Design Interface to Automated Test Tool " guid="_VH7QEdnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;Design Interface to Automated Test Tool&quot; name=&quot;Design Interface to Automated Test Tool&quot;>&lt;/a>&lt;a&#xD;
+id=&quot;XE_test_tool__design_interface_to&quot; name=&quot;XE_test_tool__design_interface_to&quot;>&lt;/a>&#xD;
+&lt;div align=&quot;leftt&quot;>&#xD;
+    &lt;table border=&quot;1&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;4&quot; style=&quot;border: 1px solid rgb(128,128,128)&quot;&#xD;
+    bordercolorlight=&quot;#808080&quot; bordercolordark=&quot;#808080&quot;>&#xD;
+        &lt;tr>&#xD;
+            &lt;td width=&quot;5%&quot;>&#xD;
+                &lt;b>Purpose&lt;/b>&#xD;
+            &lt;/td>&#xD;
+            &lt;td width=&quot;95%&quot;>&#xD;
+                To identify the interface necessary for the integration of an automated test tool with test-specific&#xD;
+                functionality.&amp;nbsp;&#xD;
+            &lt;/td>&#xD;
+        &lt;/tr>&#xD;
+    &lt;/table>&lt;br />&#xD;
+&lt;/div>&#xD;
+&lt;p>&#xD;
+    Identify what behavior is needed to make your test automation tool communicate with your target for test in an&#xD;
+    efficient way. Identify and describe the appropriate design classes and packages.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_VIFBENnnEdmO6L4XMImrsA" name=" Design Test Procedure Behavior " guid="_VIFBENnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;Design Test Procedure Behavior&quot; name=&quot;Design Test Procedure Behavior&quot;>&lt;/a>&#xD;
+&lt;div align=&quot;left&quot;>&#xD;
+    &lt;table border=&quot;1&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;4&quot; style=&quot;border: 1px solid rgb(128,128,128)&quot;&#xD;
+    bordercolorlight=&quot;#808080&quot; bordercolordark=&quot;#808080&quot;>&#xD;
+        &lt;tr>&#xD;
+            &lt;td width=&quot;5%&quot;>&#xD;
+                &lt;b>Purpose&lt;/b>&#xD;
+            &lt;/td>&#xD;
+            &lt;td width=&quot;95%&quot;>&#xD;
+                To automate test procedures for which there is no automated test tool available.&amp;nbsp;&#xD;
+            &lt;/td>&#xD;
+        &lt;/tr>&#xD;
+    &lt;/table>&lt;br />&#xD;
+&lt;/div>&#xD;
+&lt;p>&#xD;
+    To automate test procedures for which there is no automation tool, identify the appropriate design classes and&#xD;
+    packages. Use the test cases and the use cases they derive from as input.&#xD;
+&lt;/p>&lt;br />&#xD;
+&lt;br /></sectionDescription>
+  </sections>
+</org.eclipse.epf.uma:TaskDescription>

@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1">
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="-M8FjMaz9zywQNwBbJ9mj-g" name="create_project_configuration_management_cm_environments,{C241B2F9-AA48-45E6-89F0-F0A3DC2496DA}" guid="-M8FjMaz9zywQNwBbJ9mj-g">
+    <mainDescription>&lt;a id=&quot;Description&quot; name=&quot;Description&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    This work is done by making sure the essential artifacts are available to developers and integrators in the various&#xD;
+    private and public workspaces as they need them, and then are adequately baselined and stored for subsequent use.&#xD;
+    Setting up the CM environment involves creating the &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../core.base_rup/guidances/concepts/product_directory_structure_293B0B00.html&quot; guid=&quot;3.654568680407835E-305&quot;>Product&#xD;
+    Directory Structure&lt;/a>, repositories, &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../core.base_rup/guidances/concepts/workspaces_3B55A225.html&quot; guid=&quot;3.4400958589714374E-305&quot;>Workspaces&lt;/a> (developer&#xD;
+    and integration) and allocating machine resources (servers and disk space).&#xD;
+&lt;/p></mainDescription>
+    <usageGuidance>&lt;p>&#xD;
+    Typically this work starts in Inception and continues throughout the lifecycle. Generally this work is most prevalent&#xD;
+    in iterations at the very beginning of each phase (or at the end of each preceding phase) to prepare a suitable CM&#xD;
+    environment for the forthcoming phase. Note that the requirements for a CM environment often change from phase-to-phase&#xD;
+    as the team size expands and contracts: a smaller development team in early phases normally requires a less formal&#xD;
+    environment than is required in later phases.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    This work is not considered optional, although project culture will mean this work will vary from being a small&#xD;
+    consideration to a large endeavor. Note that where an existing CM environment is in place, this work may be more&#xD;
+    focused on tailoring that environment to suit the project or lifecycle phase.&#xD;
+&lt;/p></usageGuidance>
+    <howtoStaff>&lt;a id=&quot;HowToStaff&quot; name=&quot;HowToStaff&quot;>&lt;/a> 
+&lt;p>
+    To set up an appropriate environment, a person playing the Configuration Manager role needs to have a good
+    understanding of the component structures of the overall product, and will need to work closely with the &lt;a
+    class=&quot;elementLink&quot; href=&quot;resources/rup_software_architect,{4AC346F0-E6FC-4D2C-8410-2EDF8DDDC91D}.html&quot;
+    guid=&quot;{4AC346F0-E6FC-4D2C-8410-2EDF8DDDC91D}&quot;>Software Architect&lt;/a> to ensure that adequate &quot;place holder&quot; CM items
+    are established.
+&lt;/p>
+&lt;p>
+    A person playing the Integrator role in this work needs to ensure that artifacts delivered from the developer
+    workspaces are sufficiently tested such that they can be incorporated into a testable build. The Integrator role needs
+    to be familiar with Project CM Policies, Build and Test Practices.
+&lt;/p></howtoStaff>
+  </org.eclipse.epf.uma:ActivityDescription>
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="-rxzG9HKmgxx6UlsN7UaWbQ" name="plan_project_configuration_change_control,{043594BF-28ED-41EF-8C55-FBD65551D0CA}" guid="-rxzG9HKmgxx6UlsN7UaWbQ">
+    <mainDescription>&lt;a id=&quot;Description&quot; name=&quot;Description&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    The activity focuses on:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Establishing project configuration management policies&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Establishing policies and processes for controlling product change&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Documenting this information in the Configuration Management Plan (included in Software Development Plan)&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>&#xD;
+    CM policies refer to the ability to identify, safeguard and report on the artifacts that have been approved for use in&#xD;
+    a project. Identification is simplified and enabled through the use of proper tools to control project artifacts, and&#xD;
+    the systematic labeling of those artifacts over time to identify their relative maturity and their relationships with&#xD;
+    each other at given points in time. Systematic identification practices are a key enabler for the safeguarding of&#xD;
+    project artifacts through archiving and baselining techniques.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Standard, documented change control processes help to ensure that changes are made within a project in a consistent&#xD;
+    manner, and the appropriate stakeholders are informed of the current state of the product, requested changes to it and&#xD;
+    the impact of these changes on cost, schedule and so forth.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    The CM Plan documents how product related CM activities are to be planned, implemented controlled and organized.&#xD;
+&lt;/p></mainDescription>
+    <keyConsiderations>&lt;a id=&quot;Timing&quot; name=&quot;Timing&quot;>&lt;/a>&lt;a id=&quot;Optionality&quot; name=&quot;Optionality&quot;>&lt;/a>&lt;a id=&quot;WorkGuidelines&quot;&#xD;
+name=&quot;WorkGuidelines&quot;>&lt;/a></keyConsiderations>
+    <usageGuidance>&lt;p>&#xD;
+    This work is primarily performed in the first iterations in each phase. While most important in the Construction and&#xD;
+    Transition phases, this work may be important in the Elaboration and even Inception phase, depending on project&#xD;
+    culture.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    This work is not considered optional, although it will differ in format, style and level of ceremony to suit the&#xD;
+    project context. Note also that the rigidity and formality of the change process tend to change increase over the life&#xD;
+    of the project, typically becoming most formal and rigid in the Transition phase.&lt;br />&#xD;
+&lt;/p></usageGuidance>
+    <howtoStaff>&lt;a id=&quot;HowToStaff&quot; name=&quot;HowToStaff&quot;>&lt;/a> 
+&lt;p>
+    A person playing the Configuration Manager role needs to be organized by nature, yet flexible enough to plan
+    configuration and change control to suit the needs of the project team. The Configuration Manager role supports the
+    team by ensuring that the project change policies are reflected within the projects change management tools, enabling
+    software developers to easily transition artifacts through state changes in accordance with the defined development and
+    approval practices. The Configuration Manager role is required to put measures in place to monitor that the CM Plan is
+    being followed as intended, that audit reporting is occurring on a regular basis, and to work with the System
+    Administrator role to ensure that backups of CM assets are in safekeeping (e.g. fireproof safe for backup sets on-site,
+    weekly backup sets stored off-site).
+&lt;/p>
+&lt;p>
+    The Change Control Manager is a key arbitration role. In this capacity, the decision for the inclusion of any given
+    change in a software build is ultimately made by the Change Control Manager on a project. In practice, only those
+    changes of significant potential impact typically warrant monitoring, and any potential impact on the inclusion-or
+    exclusion-of changes to the product should be carefully considered with regard to project factors such as the political
+    climate, the need to establish trust between developer and customer and so forth.
+&lt;/p></howtoStaff>
+  </org.eclipse.epf.uma:ActivityDescription>
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="-326fHDhxS9FU6ClQqeoFYg" name="manage_baselines_releases,{22B90B6F-6F9F-41CF-9A05-8F64BF39CD36}" guid="-326fHDhxS9FU6ClQqeoFYg">
+    <mainDescription>&lt;a id=&quot;Description&quot; name=&quot;Description&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    The frequency and formality in which baselines are created are described in the CM Plan. The degree of formality is&#xD;
+    clearly much higher for a product being released to a customer than for executable releases within the internal project&#xD;
+    team. When the combined set of artifacts reach certain stages or levels of maturity, baselines are created to assist&#xD;
+    managing availability for release, reuse and so forth.&#xD;
+&lt;/p></mainDescription>
+    <usageGuidance>&lt;p>&#xD;
+    Typically this work starts in Elaboration, though it is most prevalent in the Construction and Transition phases. In&#xD;
+    some cases there may be value in baselining Inception artifacts, but this is not the general case. Multiple baselines&#xD;
+    may be created and managed within a single iteration and may happen at any stage during the iteration.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    As a general rule, this work is optional if an executable release does not need to be externally delivered outside the&#xD;
+    core development team.&lt;br />&#xD;
+&lt;/p></usageGuidance>
+    <howtoStaff>&lt;a id=&quot;HowToStaff&quot; name=&quot;HowToStaff&quot;>&lt;/a> 
+&lt;p>
+    This work is primarily driven by the Configuration Manager role, where the typical need is to be able to assemble a
+    product for release. The released product requires a Bill of Materials (BOM) that serves as a complete checklist of
+    what is to be delivered to the customer. The released product will inevitably require release notes and training
+    material as described in the Deployment activities.
+&lt;/p>
+&lt;p>
+    The Integrator role contributes to this work by ensuring that artifacts delivered from the developer workspaces are
+    integrated such that they can be incorporated into a independently testable build. The person playing the Integrator
+    role needs to be familiar with Project CM Policies and Test Practices.
+&lt;/p></howtoStaff>
+  </org.eclipse.epf.uma:ActivityDescription>
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="-IqnLunXXb3uRdEeoZ0c7kg" name="change_and_deliver_configuration_items,{FD5B58EB-7B18-4B5E-AF3A-B8F49E3915BE}" guid="-IqnLunXXb3uRdEeoZ0c7kg">
+    <mainDescription>&lt;a id=&quot;Description&quot; name=&quot;Description&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    This activity is focused on:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        The creation of workspaces, accessing project artifacts, making changes to those artifacts, delivering the changes&#xD;
+        for inclusion in the overall product, by any role in the project team.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        The building of the product, creation of baselines and promotion of the baselines for availability to the rest of&#xD;
+        the development team.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></mainDescription>
+    <usageGuidance>&lt;p>&#xD;
+    Typically this work starts in Inception and continues throughout the lifecycle. This work is not considered optional.&#xD;
+&lt;/p></usageGuidance>
+    <howtoStaff>&lt;a id=&quot;HowToStaff&quot; name=&quot;HowToStaff&quot;>&lt;/a> 
+&lt;p>
+    &quot;Any Role&quot; is used to represent any one of the roles defined in this configuration of the Rational Unified Process
+    (RUP), where someone playing the role may want to make changes to a RUP Artifact (Configuration Item).
+&lt;/p>
+&lt;p>
+    The Integrator (as described in other Activities) needs to be sure that artifacts delivered from the developer
+    workspaces are sufficiently tested such that they can be incorporated into a testable build. The Integrator needs to be
+    familiar with Project CM Policies and Test Practices.
+&lt;/p></howtoStaff>
+  </org.eclipse.epf.uma:ActivityDescription>
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="-d7f34FWz0khsg0wf-FS_1g" name="monitor_report_configuration_status,{0E00700B-4D61-4B80-A1D3-152F97B29F6A}" guid="-d7f34FWz0khsg0wf-FS_1g">
+    <mainDescription>&lt;a id=&quot;Description&quot; name=&quot;Description&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    This activity is focused on:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Ensuring that artifacts and their associated baselines are available.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Determining if required artifacts are stored in a controlled library and baselined.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Supporting project Configuration Status Accounting activities.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Facilitating reporting of change request information, especially the activities related to work performed against&#xD;
+        defect and enhancement requests.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Ensuring that data is &quot;rolled-up&quot; and reported for the purposes of tracking progress and trends.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></mainDescription>
+    <usageGuidance>&lt;p>&#xD;
+    This work is applicable throughout the project lifecycle, beginning as early as the Inception phase.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    This work is not considered optional, although project culture will mean this work will vary from low-ceremony to a&#xD;
+    high-ceremony undertaking, and will increase in complexity the larger or more distributed the project team becomes.&#xD;
+&lt;/p></usageGuidance>
+    <howtoStaff>&lt;a id=&quot;HowToStaff&quot; name=&quot;HowToStaff&quot;>&lt;/a> 
+&lt;p>
+    The person playing the &lt;a class=&quot;elementLinkWithType&quot;
+    href=&quot;resources/rup_configuration_manager,{8939FDEF-EC44-4009-9F16-FAD4CFAA0B2D}.html&quot;
+    guid=&quot;{8939FDEF-EC44-4009-9F16-FAD4CFAA0B2D}&quot;>Role: Configuration Manager&lt;/a> in accordance with the Configuration
+    Management Plan needs to provide quantitative reports that can be used to assess the project status.
+&lt;/p></howtoStaff>
+  </org.eclipse.epf.uma:ActivityDescription>
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="-yaIMIZDHcACJz3s0LqPCpQ" name="manage_change_requests,{BFBA9E6A-CB4B-45A7-9A25-FF7CA1A1153D}" guid="-yaIMIZDHcACJz3s0LqPCpQ">
+    <mainDescription>&lt;a id=&quot;Description&quot; name=&quot;Description&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    Having a standard, documented change control process ensures that changes are made within a project in a consistent&#xD;
+    manner and that the appropriate stakeholders are informed of the state of the product, changes to it and the cost and&#xD;
+    schedule impact of these changes.&#xD;
+&lt;/p></mainDescription>
+    <usageGuidance>&lt;p>&#xD;
+    While this work starts in Inception and continues throughout the lifecycle, it tends to gain importance as the&#xD;
+    lifecycle progresses. It is often much more formally managed in Transition than it starts out being managed in&#xD;
+    Inception.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    This work is not considered optional, although project culture will mean this work will vary from being a small&#xD;
+    informal consideration to a larger more formal endeavor. Note that some CM environments may enable the Change (or&#xD;
+    Configuration) Control Board (CCB) function to be supported through process automation where rules can be established&#xD;
+    within a tool. This is particularly valuable where the CCB function must be managed across distributed teams.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Further explanation of these concepts, suggested tasks, and states of &lt;a class=&quot;elementLinkWithUserText&quot;&#xD;
+    href=&quot;./../../core.base_rup/workproducts/rup_change_request_F2E6419.html&quot; guid=&quot;{694A7BC8-3D20-4172-BC56-6C7BD4590BA5}&quot;>Change&#xD;
+    Requests&lt;/a> are found in &lt;a class=&quot;elementLinkWithUserText&quot;&#xD;
+    href=&quot;./../../core.base_rup/guidances/concepts/change_request_management_119F2E47.html&quot; guid=&quot;5.975934904188119E-305&quot;>Concept:&#xD;
+    Change Request Management.&lt;/a>&#xD;
+&lt;/p>&lt;br />&#xD;
+&lt;br /></usageGuidance>
+    <howtoStaff>&lt;a id=&quot;HowToStaff&quot; name=&quot;HowToStaff&quot;>&lt;/a> 
+&lt;p>
+    The Change (or Configuration) Control Board (CCB) oversees the change process, and consists of representatives playing
+    various roles in RUP. Typically this includes managers, stakeholders (customers, end-users), developers, and testers.
+    In a small project, a single person, such as the project manager or software architect, may be the only representative
+    on the CCB. In the Rational Unified Process, this primary CCB role is the &lt;a class=&quot;elementLink&quot;
+    href=&quot;resources/rup_change_manager,{C1D3C2C0-15A0-49AD-9788-8C163E53CB96}.html&quot;
+    guid=&quot;{C1D3C2C0-15A0-49AD-9788-8C163E53CB96}&quot;>Change Control Manager&lt;/a>.
+&lt;/p></howtoStaff>
+  </org.eclipse.epf.uma:ActivityDescription>
+  <org.eclipse.epf.uma:ProcessDescription xmi:id="-6DgAxkjnX2ffZRnrqht1DA" name="configuration_change_management,{C85C9CC0-AD92-46C9-85BA-4C0672D6571E}" guid="-6DgAxkjnX2ffZRnrqht1DA">
+    <mainDescription>&lt;p>&#xD;
+    Each activity in this capability pattern&amp;nbsp;represents a high-level goal that needs to be achieved to perform&#xD;
+    effective configuration and change management.The activities&amp;nbsp;&lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../core.base_rup/capabilitypatterns/plan_project_configuration_change_control_CCF3647B.html&quot;&#xD;
+    guid=&quot;{043594BF-28ED-41EF-8C55-FBD65551D0CA}&quot;>Activity: Plan Project Configuration &amp;amp; Change Control&lt;/a>&amp;nbsp;and &lt;a&#xD;
+    class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../core.base_rup/capabilitypatterns/create_project_configuration_management_cm_environments_9299BD99.html&quot;&#xD;
+    guid=&quot;{C241B2F9-AA48-45E6-89F0-F0A3DC2496DA}&quot;>Activity: Create Project Configuration Management (CM) Environments&lt;/a>&#xD;
+    are performed at the start of a project. The rest are performed on an on-going basis throughout the project life-cycle.&#xD;
+&lt;/p></mainDescription>
+    <purpose>&lt;p>&#xD;
+    To explain the work involved in the Configuration and Change Management discipline, the activities, tasksÂ&amp;nbsp;and&#xD;
+    work products are organized into a capability pattern for the discipline.&#xD;
+&lt;/p>&lt;!--EndFragment--></purpose>
+    <usageNotes>&lt;h4>&#xD;
+    Decide How to Perform the Workflow&#xD;
+&lt;/h4>&#xD;
+&lt;p>&#xD;
+    The following decisions should be made regarding the Configuration &amp;amp; Change Management discipline's workflow:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Decide how to perform the workflow by looking at the activities in this workflow. Study the diagram, with its &lt;a&#xD;
+        class=&quot;elementLink&quot; href=&quot;./../../core.base_rup/guidances/termdefinitions/guard_condition_E3068D2.html&quot;&#xD;
+        guid=&quot;_yJ5m89nmEdmO6L4XMImrsA&quot;>guard condition&lt;/a>s, and the guidelines below. Decide which activities to perform&#xD;
+        and in which order.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Decide what parts of the Configuration &amp;amp; Change Management activities to perform. For example, the &lt;a&#xD;
+        class=&quot;elementLinkWithType&quot; href=&quot;./../../core.base_rup/capabilitypatterns/manage_change_requests_F7A11348.html&quot;&#xD;
+        guid=&quot;{BFBA9E6A-CB4B-45A7-9A25-FF7CA1A1153D}&quot;>Activity: Manage Change Requests&lt;/a>i s performed only if you are&#xD;
+        going to manage the change requests in a systematic way.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Decide when, during the project lifecycle, to introduce each part of the workflow.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></usageNotes>
+  </org.eclipse.epf.uma:ProcessDescription>
+</xmi:XMI>

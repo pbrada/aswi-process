@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_2OOYBNnmEdmO6L4XMImrsA" name="plan_subsystem_integration,{197B2D0F-6B49-4998-8A71-0799BC29D13F}" guid="_2OOYBNnmEdmO6L4XMImrsA" changeDate="2005-11-04T07:39:24.173-0800" version="7.1.0">
+  <sections xmi:id="_VV724NnnEdmO6L4XMImrsA" name=" Define the Builds " guid="_VV724NnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;Define the Builds&quot; name=&quot;Define the Builds&quot;>&lt;/a>&#xD;
+&lt;p>&#xD;
+    Study the use cases and scenarios that have been selected for the current iteration. Select one, or several scenarios,&#xD;
+    that will be the goal for each increment of the integration. It may be necessary to select only a part of a scenario&#xD;
+    that concerns this subsystem.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Capture the plan to integrate the subsystem, either in the project's Integration Build Plan, or in an integration build&#xD;
+    plan local to the subsystem.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_VV724dnnEdmO6L4XMImrsA" name=" Identify the Classes " guid="_VV724dnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;Identify the Classes&quot; name=&quot;Identify the Classes&quot;>&lt;/a>&#xD;
+&lt;p>&#xD;
+    Identify the classes that participate in the selected scenarios. Each scenario is described in a design use-case&#xD;
+    realization's sequence diagrams, communication diagrams, or class diagrams. Identify which classes you need to&#xD;
+    implement, and which classes have already been implemented. Also identify the classes that do not participate in the&#xD;
+    scenario, but are needed as stubs.&#xD;
+&lt;/p>&#xD;
+&lt;p class=&quot;picturecenter&quot; align=&quot;center&quot;>&#xD;
+    &lt;img src=&quot;resources/ac_plsui.gif&quot; alt=&quot;Class Use-case Diagram&quot; width=&quot;358&quot; height=&quot;163&quot; />&#xD;
+&lt;/p>&#xD;
+&lt;p class=&quot;picturetext&quot;>&#xD;
+    Classes are identified from design use-case realizations.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_VWrdwNnnEdmO6L4XMImrsA" name=" Update the Subsystem's Imports " guid="_VWrdwNnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;Update the Subsystem's Imports&quot; name=&quot;Update the Subsystem's Imports&quot;>&lt;/a>&#xD;
+&lt;p>&#xD;
+    Identify which other implementation subsystems are needed for this build. Decide which version of each subsystem to&#xD;
+    use. Update import dependencies for this subsystem to the correct versions of the other subsystems.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    If new system baselines have recently been promoted, the integrator will also have to decide when to update&#xD;
+    (rebaseline) the subsystem integration workspace. This decision is based on where in the development cycle you are. If&#xD;
+    your subsystem development is unstable in some critical area, then you may decide to postpone rebaselining.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    When it is late in the project, and close to a release (whether internal or external), it is crucial that subsystems&#xD;
+    have consistent import sets. Then there is a greater urgency to stay current with the system baselines.&#xD;
+&lt;/p>&lt;br />&#xD;
+ &lt;br /></sectionDescription>
+  </sections>
+</org.eclipse.epf.uma:TaskDescription>

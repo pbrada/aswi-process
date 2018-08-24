@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ProcessDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="-vUdROHGJGsDJ59HCwKXaDQ" name="define_business_operations,_NYeVMDnbEdqWU7Hm4tsbTA" guid="-vUdROHGJGsDJ59HCwKXaDQ" version="7.1.0">
+  <mainDescription>&lt;p>&#xD;
+    This&amp;nbsp;activity describes a top-down approach of logically decomposing the business sytems across multiple aspects&#xD;
+    driven by the chosen architectural viewpoints and views (see the &lt;a class=&quot;elementLinkWithUserText&quot;&#xD;
+    href=&quot;./../../core.base_rup/guidances/concepts/use_case_flowdown_6BF482DB.html&quot; guid=&quot;_6SxgEOM9EdmaZcY4PeqVxA&quot;>Use Case&#xD;
+    Flowdown&lt;/a> and &lt;a class=&quot;elementLinkWithUserText&quot;&#xD;
+    href=&quot;./../../core.base_rup/guidances/concepts/supplementary_reqs_flowdown_69E8E8A9.html&quot;&#xD;
+    guid=&quot;_vt06oOM9EdmaZcY4PeqVxA&quot;>Supplementary Requirements Flowdown&lt;/a> concepts).&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Although in most of the cases the starting point will be the top-level business use cases, this is not a pre-requisite.&#xD;
+    If the use-case techniques are not employed by the modeling team, this operation-based approach could still be used as&#xD;
+    long as you can define the operations for the top-level business system. This is also true&amp;nbsp;when this activity is&#xD;
+    performed for&amp;nbsp;a business subsystem for which only the operations have been defined.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    There are two other main characteristics of this approach. One, this is a play around two perspectives on the business&#xD;
+    (sub)systems: black box and white box. You start with the black box perspective and define the externally&#xD;
+    visible&amp;nbsp;properties of the system(s), mostly in terms of operations. Then you open up the black box, define or&#xD;
+    identify its elements and describe how each system operation is realized by the elements' operations. The second&#xD;
+    characteristic of this approach is the fact that is recursive. You are applying the same general method at lower, more&#xD;
+    detailed levels, for finer-grained subsystems.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    A simplified workflow through this&amp;nbsp;activity is presented below:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../extend.bus_model/tasks/bm_define_system_context_B5AA9CB3.html&quot;&#xD;
+        guid=&quot;_tPtHgBpVEdqUwb9RAn2tTA&quot;>Task: Define Business System Context&lt;/a>: start with the business use cases and&#xD;
+        define the top-level business system operations (black-box perspective).&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../extend.bus_model/tasks/bm_architectural_analysis_630ADB6.html&quot;&#xD;
+        guid=&quot;_xfhhcBpWEdqUwb9RAn2tTA&quot;>Task: Business Architectural Analysis&lt;/a>: define the structural&#xD;
+        organization&amp;nbsp;of the subsystems&amp;nbsp;(white-box perspective).&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../extend.bus_model/tasks/bm_operation_analysis_8DABA14.html&quot;&#xD;
+        guid=&quot;_jMFtgBpVEdqUwb9RAn2tTA&quot;>Task: Business Operation Analysis&lt;/a>: realize the top-level operations by&#xD;
+        collaborations of the subsystems' operations&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../extend.bus_model/tasks/bm_operation_design_CB34E401.html&quot;&#xD;
+        guid=&quot;_nJsykBpVEdqUwb9RAn2tTA&quot;>Task: Business Operation Design&lt;/a>: refine and refactor the operations defined&#xD;
+        during analysis and expand the realizations over the previously chosen architectural viewpoints/views.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></mainDescription>
+  <keyConsiderations>&lt;p>&#xD;
+    Perform&amp;nbsp;this&amp;nbsp;activity if you need to increase the rigor and precision of your modeling outputs.&#xD;
+    This&amp;nbsp;activity will usually be a building block part of larger&amp;nbsp;activity which will address all the aspects of&#xD;
+    defining either the&amp;nbsp;as-is business or the to-be one.&#xD;
+&lt;/p></keyConsiderations>
+  <purpose>&lt;p>&#xD;
+    The purpose of this&amp;nbsp;activity is to identify for each subsystem the main set of operations, group them into&#xD;
+    interfaces and recursively define their realizations in terms of the operations supported by the next level subsystems.&#xD;
+&lt;/p></purpose>
+  <howtoStaff>&lt;p>
+    A person acting as a business&amp;nbsp;architect and/or business process analyst&amp;nbsp;needs to have strong modeling and
+    writing skills. Although knowledge of the business is useful, it can be obtained by involving domain experts as
+    reviewers. To perform this activity&amp;nbsp;effectively, you also need people who are familiar with the current set of
+    software systems used in the organization, from both functional and support points of view.
+&lt;/p></howtoStaff>
+</org.eclipse.epf.uma:ProcessDescription>

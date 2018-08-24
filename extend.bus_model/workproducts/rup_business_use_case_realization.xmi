@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ArtifactDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_0qFrwtnmEdmO6L4XMImrsA" name="rup_business_use_case_realization,{47F095EB-E651-4A34-B75B-BACE38ED90C7}" guid="_0qFrwtnmEdmO6L4XMImrsA" changeDate="2005-09-21T19:44:36.808-0700" version="7.1.0">
+  <copyrightStatement href="uma://{1F4FEA6F-AF12-40BF-94BE-D316CE25314B}#_NH1FoPTFEdmkpYARNN468A"/>
+  <purpose>&lt;a id=&quot;Top&quot; name=&quot;Top&quot;>&lt;/a>&lt;a id=&quot;XE_business_use-case_realization__purpose_of&quot;&#xD;
+name=&quot;XE_business_use-case_realization__purpose_of&quot;>&lt;/a>&lt;a id=&quot;Purpose&quot; name=&quot;Purpose&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    While a Business Use Case describes what steps must be performed in order to deliver value to a business actor, a&#xD;
+    Business Use-Case Realization describes how these steps are performed within the organization. Business Use Cases are&#xD;
+    described from an external perspective, while Business Use-Case Realizations are described from an internal&#xD;
+    perspective.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Business Use-Case Realizations are used by stakeholders to verify that the project team (or other parties) understand&#xD;
+    how the business is structured and operates. Stakeholders also use them when identifying and prioritizing improvement&#xD;
+    to the organization. Business-process analysts and business designers use Business Use-Case Realizations to define the&#xD;
+    roles, responsibilities, and information required within the organization in order to realize business use cases. The&#xD;
+    effects of changes to the organization, such as business process automation or business process outsourcing, might be&#xD;
+    considered when using Business Use-Case Realizations. Systems analysts and software architects use Business-Use Case&#xD;
+    Realizations to understand how a software system fits into the organization.&#xD;
+&lt;/p></purpose>
+  <briefOutline>&lt;a id=&quot;Brief Outline&quot; name=&quot;Brief Outline&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    &lt;a id=&quot;XE_business_use_case__specification&quot; name=&quot;XE_business_use_case__specification&quot;>&lt;/a>A template is provided for a&#xD;
+    Business Use-Case Realization Specification, which contains the textual properties of the Business Use-Case&#xD;
+    Realization.&amp;nbsp; This document is used with a requirements management tool, such as Rational RequisitePro, for&#xD;
+    specifying and marking the requirements within the Business Use-Case Realization properties.&amp;nbsp;&amp;nbsp;&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    The diagrams of the Business Use-Case Realization can be developed in a visual modeling tool, such as Rational&#xD;
+    Rose.&amp;nbsp;A Business Use-Case Realization report (containing all diagrams and properties) can be generated with&#xD;
+    Rational SoDA.&amp;nbsp;&amp;nbsp;&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    For more information, see tool mentors: &lt;a class=&quot;elementLinkWithUserText&quot;&#xD;
+    href=&quot;./../../core.base_rup/guidances/toolmentors/manage_use_cases_69796AD.html&quot;&#xD;
+    guid=&quot;{F07848AD-3E5B-4061-9E6D-E02FB823763C}&quot;>Managing Use Cases with Rational Rose and Rational RequisitePro&lt;/a> and&#xD;
+    &lt;a class=&quot;elementLink&quot; href=&quot;./../../extend.bus_model/guidances/toolmentors/create_biz_use_case_real_report_7DB6DA0C.html&quot;&#xD;
+    guid=&quot;{2EF982DD-8F38-4E30-9113-F4F0112E2859}&quot;>Creating a Business Use-Case Realization Report Using Rational&#xD;
+    SoDA&lt;/a>.&amp;nbsp;&amp;nbsp;&#xD;
+&lt;/p></briefOutline>
+  <representationOptions>UML Representation: Collaboration, stereotyped as &amp;lt;&amp;lt;business use-case realization&amp;gt;&amp;gt; &#xD;
+&lt;p>&#xD;
+    &lt;a id=&quot;Tailoring&quot; name=&quot;Tailoring&quot;>&lt;/a>&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    In many cases, the focus of this work product is the activity diagram, in which you define what responsibilities belong&#xD;
+    to which business system or business worker, by using swimlanes. This is where you make key decisions about what to&#xD;
+    automate. Often, the Business Use-Case Realization Specification with the textual properties of the work product can&#xD;
+    then be excluded, and any derived requirements can go in the &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../extend.bus_model/workproducts/rup_supplementary_business_specification_BBC64E05.html&quot;&#xD;
+    guid=&quot;{0DADA95B-7C1D-44BD-9DB5-41AC99767753}&quot;>Supplementary Business Specification&lt;/a> instead. Activity diagrams can&#xD;
+    also indicate the sending and receiving of business events between business workers.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    If the Business Use Cases themselves will not be modified, but instead the realization of the Business Use Cases will&#xD;
+    change, the Business Use-Case Realizations can be used to compare current (as-is) process descriptions with target&#xD;
+    (to-be) process descriptions. For example, imagine that an existing software system is going to be replaced by a&#xD;
+    standard software product that will be administered by an external partner. In such a case, Business Use-Case&#xD;
+    Realizations can be used to assess the impact of this change on the organization.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Because Business Use-Case Realizations are generally more detailed and specific than Business Use Cases, they can also&#xD;
+    be used to illustrate differences between different contexts of a more abstract Business Use Case. For example,&#xD;
+    consider the case in which customers must be serviced using different communication channels (Internet, call center,&#xD;
+    mail, or electronic messaging, for example). The steps performed during a business use-case Request Quotation or Accept&#xD;
+    Proposal will remain unchanged, but the ways in which this business use case is performed will differ&amp;nbsp;for&#xD;
+    each&amp;nbsp;channel. Business Use-Case Realizations can be used to illustrate channel-specific realization of the&#xD;
+    business use case.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Recall that Business Use Cases are triggered either by Business Actors or by internal Business Events, through the&#xD;
+    invocation of one or more services provided by the business - invocation that occurs&amp;nbsp;externally in the case of the&#xD;
+    Business Actor, and internally in the case of the Business Event. A service comprises one or more business operations&#xD;
+    (see &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../extend.bus_model/workproducts/rup_bm_operation_14E87A5B.html&quot;&#xD;
+    guid=&quot;_Wg_T4BpVEdqUwb9RAn2tTA&quot;>Artifact: Business Operation&lt;/a>), so that a Business Use-Case Realization is the&#xD;
+    overlay of all required business operation realizations (see &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../extend.bus_model/workproducts/rup_bm_operation_realization_3EFF786F.html&quot; guid=&quot;_acjxkBpVEdqUwb9RAn2tTA&quot;>Artifact:&#xD;
+    Business Operation Realization&lt;/a>). This can be modeled as a large collaboration (the Business Use-Case Realization)&#xD;
+    which is built from smaller ones (the business operation realizations). Note though that the Business Use-Case&#xD;
+    Realization does not 'own' the business operation realizations - they may, and very likely will, show up in other&#xD;
+    Business Use-Case Realizations.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Note that there is no reason why you should not model some services provided by the business as private - they&#xD;
+    represent actions the business may ask of itself (when servicing a Business Event, for example) - but which are not&#xD;
+    available to a Business Actor.&#xD;
+&lt;/p></representationOptions>
+</org.eclipse.epf.uma:ArtifactDescription>

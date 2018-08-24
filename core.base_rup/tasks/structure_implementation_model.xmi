@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_2OhS8tnmEdmO6L4XMImrsA" name="structure_implementation_model,{35272424-8A0A-4DDD-BA74-C91B80A8D046}" guid="_2OhS8tnmEdmO6L4XMImrsA" changeDate="2005-11-04T07:40:08.867-0800" version="7.1.0">
+  <sections xmi:id="_VcWA4NnnEdmO6L4XMImrsA" name=" Establish the implementation model structure " guid="_VcWA4NnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;Establish the Implementation Model Structure&quot; name=&quot;Establish the Implementation Model Structure&quot;>&lt;/a>&#xD;
+&lt;div align=&quot;left&quot;>&#xD;
+    &lt;table border=&quot;1&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;4&quot; style=&quot;border: 1px solid rgb(128,128,128)&quot;&#xD;
+    bordercolorlight=&quot;#808080&quot; bordercolordark=&quot;#808080&quot;>&#xD;
+        &lt;tr>&#xD;
+            &lt;td width=&quot;5%&quot;>&#xD;
+                &lt;b>Purpose&lt;/b>&#xD;
+            &lt;/td>&#xD;
+            &lt;td width=&quot;95%&quot;>&#xD;
+                To establish the structure of the Implementation Model.&amp;nbsp;&#xD;
+            &lt;/td>&#xD;
+        &lt;/tr>&#xD;
+    &lt;/table>&lt;br />&#xD;
+&lt;/div>&#xD;
+&lt;p>&#xD;
+    In moving from the 'design space' to the 'implementation space' start by mirroring the structure of the Design Model in&#xD;
+    the Implementation Model.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Design Packages will have corresponding Implementation Subsystems, which will contain one or more directories and files&#xD;
+    (Artifact: Implementation Element) needed to implement the corresponding design elements. The mapping from the Design&#xD;
+    Model to the Implementation Model may change as each Implementation Subsystem is allocated to a specific layer in the&#xD;
+    architecture.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Create a diagram to represent the Implementation Model Structure (see Guidelines: Implementation Diagram).&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_VcWA4dnnEdmO6L4XMImrsA" name=" Adjust implementation subsystems " guid="_VcWA4dnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;Adjust Subsystems&quot; name=&quot;Adjust Subsystems&quot;>&lt;/a>&#xD;
+&lt;div align=&quot;left&quot;>&#xD;
+    &lt;table border=&quot;1&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;4&quot; style=&quot;border: 1px solid rgb(128,128,128)&quot;&#xD;
+    bordercolorlight=&quot;#808080&quot; bordercolordark=&quot;#808080&quot;>&#xD;
+        &lt;tr>&#xD;
+            &lt;td width=&quot;5%&quot;>&#xD;
+                &lt;b>Purpose&lt;/b>&#xD;
+            &lt;/td>&#xD;
+            &lt;td width=&quot;95%&quot;>&#xD;
+                Adapt the structure of the model to reflect team organization or implementation language constraints.&amp;nbsp;&#xD;
+            &lt;/td>&#xD;
+        &lt;/tr>&#xD;
+    &lt;/table>&lt;br />&#xD;
+&lt;/div>&#xD;
+&lt;p>&#xD;
+    Decide whether the organization of subsystems needs to be changed, by addressing small tactical issues related to the&#xD;
+    implementation environment. Below are some examples of such tactical issues. Note that if you decide to change the&#xD;
+    organization of implementation subsystems you must also decide whether you should go back and update the design model,&#xD;
+    or allow design model to differ from the implementation model.&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        &lt;b>Development team organization&lt;/b>. The subsystem structure must allow several implementers or teams of&#xD;
+        implementers to proceed in parallel without too much overlap and agitation. It is recommended that each&#xD;
+        implementation subsystem be the responsibility of one and only one team. This means that you might want to split a&#xD;
+        subsystem in two (if it is large), and assign the two pieces to be implemented by two implementers or two teams of&#xD;
+        implementers,&amp;nbsp; particularly if the two implementers (or teams) have different build/release cycles.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;b>Declarations of types&lt;/b>. In implementation you may realize that a subsystem needs to import work products from&#xD;
+        a another subsystem, because a type is declared in that subsystem. Typically, this occurs when you use typed&#xD;
+        programming languages, such as C++, Java and Ada. In this situation, and in general, it may be a good idea to&#xD;
+        extract type declarations into a separate subsystem.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p class=&quot;exampleheading&quot;>&#xD;
+    Example&#xD;
+&lt;/p>&#xD;
+&lt;p class=&quot;example&quot;>&#xD;
+    You extract some type declarations from &lt;b>Subsystem D&lt;/b>, into a new subsystem Types, to make &lt;b>Subsystem A&lt;/b>&#xD;
+    independent of changes to the public (visible) work products in &lt;b>Subsystem D&lt;/b>.&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;center&quot;>&#xD;
+    &lt;img src=&quot;resources/ac_stri1.gif&quot; alt=&quot;Illustration of Type Declaration Subsystem Extraction&quot; width=&quot;567&quot;&#xD;
+    height=&quot;207&quot; />&#xD;
+&lt;/p>&#xD;
+&lt;p class=&quot;picturetext&quot;>&#xD;
+    Type declarations are extracted from Subsystem D&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    .&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        &lt;b>Existing legacy code and component systems.&lt;/b> You may need to incorporate legacy code, a library of reusable&#xD;
+        components, or off-the-shelf products. If these have not been modeled in design, then implementation subsystems&#xD;
+        must be added.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;b>Adjust dependencies.&lt;/b> Assume that a subsystem A and a subsystem B have import dependencies to each other.&#xD;
+        However, you may want to make B less dependent on changes in subsystem A. Extract the work products of A that B&#xD;
+        imports and put in a new implementation subsystem A1 in a lower layer.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p align=&quot;center&quot;>&#xD;
+    &lt;img src=&quot;resources/ac_stri2.gif&quot; alt=&quot;Sample Artifact Grouping Transfer Diagram&quot; width=&quot;403&quot; height=&quot;106&quot; />&#xD;
+&lt;/p>&#xD;
+&lt;p class=&quot;picturetext&quot;>&#xD;
+    Work products are extracted from subsystem A, and placed in a new subsystem A1.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Now that the Implementation Subsystems no longer map one-to-one with packages/subsystems in the Design Model, you can&#xD;
+    either make a corresponding change in the Design Model (if you have decided to keep the Design Model closely aligned&#xD;
+    with the Implementation Model), or keep track of the mapping between Implementation and Design Models (such as through&#xD;
+    traceability or realization dependencies). If and how such mapping is done is a process decision that should be&#xD;
+    captured in the &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../core.base_rup/workproducts/rup_project_specific_guidelines_8DC8DA32.html&quot;&#xD;
+    guid=&quot;{E5501201-7EE6-4243-AE91-73880FF76FC1}&quot;>Artifact: Project-Specific Guidelines&lt;/a>.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_VeR6kNnnEdmO6L4XMImrsA" name=" Define imports for each implementation subsystem " guid="_VeR6kNnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;Define Imports for Each Subsystem&quot; name=&quot;Define Imports for Each Subsystem&quot;>&lt;/a>&#xD;
+&lt;div align=&quot;left&quot;>&#xD;
+    &lt;table border=&quot;1&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;4&quot; style=&quot;border: 1px solid rgb(128,128,128)&quot;&#xD;
+    bordercolorlight=&quot;#808080&quot; bordercolordark=&quot;#808080&quot;>&#xD;
+        &lt;tr>&#xD;
+            &lt;td width=&quot;5%&quot;>&#xD;
+                &lt;b>Purpose&lt;/b>&#xD;
+            &lt;/td>&#xD;
+            &lt;td width=&quot;95%&quot;>&#xD;
+                To define dependencies between subsystems.&amp;nbsp;&#xD;
+            &lt;/td>&#xD;
+        &lt;/tr>&#xD;
+    &lt;/table>&lt;br />&#xD;
+&lt;/div>&#xD;
+&lt;p>&#xD;
+    For each subsystem, define which other subsystems it imports. This can be done for whole sets of subsystems, allowing&#xD;
+    all subsystems in one layer to import all subsystems in a lower layer. Generally, the dependencies in the&#xD;
+    Implementation Model will mirror those of the Design Model, except where the structure of the Implementation Model has&#xD;
+    been adjusted (see &lt;a href=&quot;#Adjust%20Subsystems&quot;>Adjust implementation subsystems&lt;/a>).&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Present the layered structure of subsystems in component diagrams.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_VeR6kdnnEdmO6L4XMImrsA" name=" Decide how to treat executable programs (and other derived objects) " guid="_VeR6kdnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;Decide how to treat executable programs (and other derived objects)&quot;&#xD;
+name=&quot;Decide how to treat executable programs (and other derived objects)&quot;>&lt;/a>&#xD;
+&lt;p>&#xD;
+    Executables (and other derived objects) are the result of applying a build process to an implementation subsystem (or&#xD;
+    subsystems) or a part thereof, and so logically belong with the implementation subsystem. However, the software&#xD;
+    architect, working with the configuration manager, will need to decide the configuration item structure to be applied&#xD;
+    to the implementation model.&amp;nbsp;&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    For ease of selection and reference, particularly for deployment, the default recommendation is to define separate&#xD;
+    configuration items to contain the sets of executable programs that are deployable (what executable programs are&#xD;
+    deployed on what nodes is captured in the &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../core.base_rup/workproducts/rup_deployment_model_57DF1DF5.html&quot;&#xD;
+    guid=&quot;{5981B6BE-2FD1-4984-AA94-2F7428439BA6}&quot;>Deployment Model&lt;/a>). Thus, in the simple case, for each implementation&#xD;
+    subsystem there would be a configuration item for the deployable executable programs and a configuration item to&#xD;
+    contain the source etc. used to produce them.&amp;nbsp;The implementation subsystem can be considered to be represented by&#xD;
+    a composite configuration item containing these configuration items (and perhaps others, such as test assets).&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    From a modeling point of view, a collection of executable programs produced by a build process can be represented as a&#xD;
+    &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../core.base_rup/workproducts/rup_build_BA336272.html&quot;&#xD;
+    guid=&quot;{53728CD9-FA47-4B58-A443-E9F9DC196916}&quot;>Artifact: Build&lt;/a> (which is a package) contained within the associated&#xD;
+    implementation subsystem (itself a package).&amp;nbsp;&amp;nbsp;&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_VeR6ktnnEdmO6L4XMImrsA" name=" Decide how to treat test assets " guid="_VeR6ktnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;Decide how to treat test assets&quot; name=&quot;Decide how to treat test assets&quot;>&lt;/a>&#xD;
+&lt;div align=&quot;left&quot;>&#xD;
+    &lt;table border=&quot;1&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;4&quot; style=&quot;border: 1px solid rgb(128,128,128)&quot;&#xD;
+    bordercolorlight=&quot;#808080&quot; bordercolordark=&quot;#808080&quot;>&#xD;
+        &lt;tr>&#xD;
+            &lt;td width=&quot;5%&quot;>&#xD;
+                &lt;b>Purpose&lt;/b>&#xD;
+            &lt;/td>&#xD;
+            &lt;td width=&quot;95%&quot;>&#xD;
+                To add test work products to the Implementation Model.&amp;nbsp;&#xD;
+            &lt;/td>&#xD;
+        &lt;/tr>&#xD;
+    &lt;/table>&lt;br />&#xD;
+&lt;/div>&#xD;
+&lt;p>&#xD;
+    In general, test work products and test subsystems are not treated much differently in the Rational Unified Process&#xD;
+    from other developed software. However, test work products and subsystems do not usually form part of the deployed&#xD;
+    system, and often are not deliverable to the customer. Therefore the default recommendation is to align the test assets&#xD;
+    with the target-of-test (e.g. implementation element for unit test, implementation subsystem for integration test,&#xD;
+    system for system test) but keep the test assets in, for example, separate test directories, if the project repository&#xD;
+    is organized as a set or hierarchy of directories. Distinct test subsystems (intended for testing above the unit test&#xD;
+    level) should be treated in the same way as other implementation subsystems - as distinct configuration items.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    For modeling, a collection of test work products can be represented as a &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../core.base_rup/workproducts/rup_implementation_subsystem_118747E9.html&quot;&#xD;
+    guid=&quot;{0F629848-C19E-49AB-A6C1-C8D6A094898A}&quot;>Artifact: Implementation Subsystem&lt;/a> (a package). For unit test, such a&#xD;
+    test subsystem would normally be contained within the associated (tested) implementation subsystem. The software&#xD;
+    architect, in consultation with the configuration manager should decide whether test work products at this level should&#xD;
+    be configured together with the implementation elements they test, or as separate configuration items. For integration&#xD;
+    and system test, the test subsystems may be peers of the implementation subsystems under test.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_VeR6k9nnEdmO6L4XMImrsA" name=" Update the implementation view " guid="_VeR6k9nnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;XE_implementation_view__updating&quot; name=&quot;XE_implementation_view__updating&quot;>&lt;/a>&lt;a id=&quot;Update the Implementation View&quot;&#xD;
+name=&quot;Update the Implementation View&quot;>&lt;/a>&#xD;
+&lt;div align=&quot;left&quot;>&#xD;
+    &lt;table border=&quot;1&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;4&quot; style=&quot;border: 1px solid rgb(128,128,128)&quot;&#xD;
+    bordercolorlight=&quot;#808080&quot; bordercolordark=&quot;#808080&quot;>&#xD;
+        &lt;tr>&#xD;
+            &lt;td width=&quot;5%&quot;>&#xD;
+                &lt;b>Purpose&lt;/b>&#xD;
+            &lt;/td>&#xD;
+            &lt;td width=&quot;95%&quot;>&#xD;
+                To update the Implementation View of the Software Architecture Document.&amp;nbsp;&#xD;
+            &lt;/td>&#xD;
+        &lt;/tr>&#xD;
+    &lt;/table>&lt;br />&#xD;
+&lt;/div>&#xD;
+&lt;p>&#xD;
+    The Implementation View is described in the &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../core.base_rup/workproducts/rup_software_architecture_document_C367485C.html&quot;&#xD;
+    guid=&quot;{6F49641A-ED10-47B5-9E5D-3F90A6BF3006}&quot;>Software Architecture Document&lt;/a>. This section contains component&#xD;
+    diagrams that show the layers and the allocation of implementation subsystems to layers, as well as import dependencies&#xD;
+    between subsystems.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_VeR6lNnnEdmO6L4XMImrsA" name=" Evaluate the implementation model " guid="_VeR6lNnnEdmO6L4XMImrsA">
+    <sectionDescription>&lt;a id=&quot;Evaluate the implementation model&quot; name=&quot;Evaluate the implementation model&quot;>&lt;/a>&#xD;
+&lt;p>&#xD;
+    See &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../core.base_rup/guidances/checklists/implementation_model_DD65F54E.html&quot;&#xD;
+    guid=&quot;2.400665964241535E-305&quot;>Checklist: Implementation Model&lt;/a>.&#xD;
+&lt;/p>&amp;nbsp; &lt;br />&#xD;
+&lt;br /></sectionDescription>
+  </sections>
+</org.eclipse.epf.uma:TaskDescription>

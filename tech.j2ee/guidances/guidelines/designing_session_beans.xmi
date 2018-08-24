@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_EMZVINwuEdmRU7lXzo6lKQ" name="designing_session_beans,5.207478815358005E-306" guid="_EMZVINwuEdmRU7lXzo6lKQ" version="7.1.0">
+  <mainDescription>&lt;a id=&quot;Top&quot; name=&quot;Top&quot;>&lt;/a> &#xD;
+&lt;h3>&#xD;
+    &lt;a id=&quot;Introduction&quot; name=&quot;Introduction&quot;>&lt;/a>Introduction&#xD;
+&lt;/h3>&#xD;
+&lt;p>&#xD;
+    This guideline focuses on designing session beans. Additional guidance on session beans, such as how to identify and&#xD;
+    model them, is provided by &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../../tech.j2ee/guidances/guidelines/session_bean_B41C78.html&quot;&#xD;
+    guid=&quot;7.831474550884131E-306&quot;>Guideline: Session Bean&lt;/a>s. General guidance on EJBs is provided by &lt;a&#xD;
+    class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../../tech.j2ee/guidances/guidelines/enterprise_javabean_ejb_7F0C3AFF.html&quot;&#xD;
+    guid=&quot;1.5078998518719443E-305&quot;>Guideline: Enterprise JavaBean (EJB)&lt;/a>&#xD;
+&lt;/p>&#xD;
+&lt;h3>&#xD;
+    &lt;a id=&quot;Local&quot; name=&quot;Local&quot;>Local vs. Remote Interfaces&lt;/a>&#xD;
+&lt;/h3>&#xD;
+&lt;p>&#xD;
+    Session beans can provide local and/or remote interfaces. See &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../../tech.j2ee/guidances/guidelines/enterprise_javabean_ejb_7F0C3AFF.html&quot;&#xD;
+    guid=&quot;1.5078998518719443E-305&quot;>Guideline: Enterprise JavaBean (EJB)&lt;/a> for guidance on when to use which.&#xD;
+&lt;/p>&#xD;
+&lt;h3>&#xD;
+    &lt;a id=&quot;Granularity&quot; name=&quot;Granularity&quot;>&lt;/a>Parameter Passing&#xD;
+&lt;/h3>&#xD;
+&lt;p>&#xD;
+    Each call of a session bean's remote interface carries overhead. Thus, the number of remote calls required to perform a&#xD;
+    given use-case can be a significant driver of performance and network loading. See &lt;a class=&quot;elementLinkWithUserText&quot;&#xD;
+    href=&quot;./../../../tech.j2ee/guidances/guidelines/enterprise_javabean_ejb_7F0C3AFF.html&quot;&#xD;
+    guid=&quot;1.5078998518719443E-305&quot;>Work Product Guideline: Enterprise JavaBeans (EJBs)&lt;/a> for strategies for parameter&#xD;
+    passing.&#xD;
+&lt;/p>&#xD;
+&lt;h3>&#xD;
+    &lt;a id=&quot;Transactions&quot; name=&quot;Transactions&quot;>Transactions&lt;/a>&#xD;
+&lt;/h3>&#xD;
+&lt;p>&#xD;
+    Session beans can use use bean-managed or container-managed transactions. Generally container-managed transactions are&#xD;
+    simpler, and so are the preferred approach. See &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../../tech.j2ee/guidances/guidelines/designing_enterprise_javabeans_ejbs_1F6B0E88.html&quot;&#xD;
+    guid=&quot;2.8082009592332426E-306&quot;>Guideline: Designing Enterprise JavaBeans (EJBs)&lt;/a> for more guidance.&#xD;
+&lt;/p>&lt;br />&#xD;
+&lt;br /></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

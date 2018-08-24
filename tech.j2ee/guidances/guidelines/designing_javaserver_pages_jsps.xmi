@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_C81xwtwuEdmRU7lXzo6lKQ" name="designing_javaserver_pages_jsps,2.2384712199461326E-305" guid="_C81xwtwuEdmRU7lXzo6lKQ" version="7.1.0">
+  <mainDescription>&lt;h3>&#xD;
+    &lt;a id=&quot;Introduction&quot; name=&quot;Introduction&quot;>&lt;/a>Introduction&#xD;
+&lt;/h3>&#xD;
+&lt;p>&#xD;
+    This guideline focuses on designing of JSPs. Additional guidance on JSPs, such as how to identify and model them, is&#xD;
+    provided by &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../../tech.j2ee/guidances/guidelines/javaserver_page_jsp_C204C841.html&quot;&#xD;
+    guid=&quot;2.5833499297818664E-306&quot;>Guideline: JavaServer Page (JSP)&lt;/a>s.&#xD;
+&lt;/p>&#xD;
+&lt;h3>&#xD;
+    &lt;a id=&quot;Session State&quot; name=&quot;Session State&quot;>&lt;/a>Session State&#xD;
+&lt;/h3>&#xD;
+&lt;p>&#xD;
+    Session state data managed or used by a JSP should be documented in the design of the JSP. See &lt;a&#xD;
+    class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../../tech.j2ee/guidances/guidelines/designing_state_for_j2ee_applications_C145BCA3.html&quot;&#xD;
+    guid=&quot;7.896195949843941E-306&quot;>Guideline: Designing State for J2EE Applications&lt;/a> for guidance on session state.&#xD;
+&lt;/p>&#xD;
+&lt;h3>&#xD;
+    &lt;a id=&quot;JSP_context&quot; name=&quot;JSP_context&quot;>&lt;/a>Servlet Context&#xD;
+&lt;/h3>&#xD;
+&lt;p>&#xD;
+    Any interactions with the Servlet context should be documented in the design of the JSP. Servlet context is data global&#xD;
+    to the application, and should be managed carefully. See &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../../tech.j2ee/guidances/guidelines/designing_state_for_j2ee_applications_C145BCA3.html&quot;&#xD;
+    guid=&quot;7.896195949843941E-306&quot;>Guideline: Designing State for J2EE Applications&lt;/a> for additional discussion of this&#xD;
+    mechanism.&#xD;
+&lt;/p>&#xD;
+&lt;h3>&#xD;
+    &lt;a id=&quot;Granularity&quot; name=&quot;Granularity&quot;>&lt;/a>Granularity and Responsibility&#xD;
+&lt;/h3>&#xD;
+&lt;p>&#xD;
+    You should minimize the amount of Java code in a JSP, to improve maintainability and reusability, and to reduce&#xD;
+    complexity so that presentation designers can deal with page design without having to deal with Java code.&amp;nbsp; Do&#xD;
+    this by using JavaBeans and custom tag libraries.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    JSP provides specific tags for invoking JavaBeans. Custom tags provide a simpler tag-with-attributes interface for&#xD;
+    accessing JavaBeans.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Common control logic should be moved into servlets, and business logic should be moved into JavaBeans (or into EJBs).&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Consider using JavaScript to perform simple validation of input data at the client, to avoid the network overhead of&#xD;
+    passing a request back to the server.&#xD;
+&lt;/p>&lt;br />&#xD;
+&lt;br /></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

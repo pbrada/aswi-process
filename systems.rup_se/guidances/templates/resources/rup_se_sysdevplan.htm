@@ -1,0 +1,757 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2// EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>System Development Plan</title>
+<link type="text/css" href="../../../../css/default.css" rel="StyleSheet">
+<script src="../../../../scripts/contentpage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					backPath = './../../';
+				</script>
+</head>
+
+<body >
+
+<div class=Section1>
+
+<p class=MsoTitle align=right style='text-align:right'>&lt;Project Name&gt;</p>
+
+<p class=MsoTitle align=right style='text-align:right'>System Development Plan</p>
+
+<p class=MsoTitle align=right style='text-align:right'>&nbsp;</p>
+
+<p class=MsoTitle align=right style='text-align:right'><span style='font-size:
+14.0pt;'>Version &lt;1.0&gt;</span></p>
+
+<p class=MsoTitle><span style='font-size:14.0pt;'>&nbsp;</span></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+  <p class=InfoBlue><i>[<b>Note:</b> The following template is provided for use 
+    with the Rational Unified Process.&nbsp;Text enclosed in square brackets and 
+    displayed in blue italics (style=InfoBlue) is included to provide guidance 
+    to the author and must be deleted before publishing the document. A paragraph 
+    entered following this style is automatically set to normal (style=Body Text).]</i></p>
+
+</div>
+
+<span style='font-size:10.0pt;font-family:"Times New Roman";'><br clear=all
+style='page-break-before:always;'>
+</span>
+
+<p class=MsoTitle>Revision History</p>
+
+<table border=1 cellspacing=0 cellpadding=0 style='border-collapse:collapse;
+ border:none;'>
+ <tr>
+  <td width=154 valign=top style='width:1.6in;border:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=Tabletext align=center style='text-align:center'><b>Date</b></p>
+  </td>
+  <td width=77 valign=top style='width:.8in;border:solid windowtext .75pt;
+  border-left:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=Tabletext align=center style='text-align:center'><b>Version</b></p>
+  </td>
+  <td width=250 valign=top style='width:2.6in;border:solid windowtext .75pt;
+  border-left:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=Tabletext align=center style='text-align:center'><b>Description</b></p>
+  </td>
+  <td width=154 valign=top style='width:1.6in;border:solid windowtext .75pt;
+  border-left:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=Tabletext align=center style='text-align:center'><b>Author</b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=154 valign=top style='width:1.6in;border:solid windowtext .75pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=Tabletext>&lt;dd/mmm/yy&gt;</p>
+  </td>
+  <td width=77 valign=top style='width:.8in;border-top:none;border-left:none;
+  border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=Tabletext>&lt;x.x&gt;</p>
+  </td>
+  <td width=250 valign=top style='width:2.6in;border-top:none;border-left:none;
+  border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=Tabletext>&lt;details&gt;</p>
+  </td>
+  <td width=154 valign=top style='width:1.6in;border-top:none;border-left:none;
+  border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=Tabletext>&lt;name&gt;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=154 valign=top style='width:1.6in;border:solid windowtext .75pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=Tabletext>&nbsp;</p>
+  </td>
+  <td width=77 valign=top style='width:.8in;border-top:none;border-left:none;
+  border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=Tabletext>&nbsp;</p>
+  </td>
+  <td width=250 valign=top style='width:2.6in;border-top:none;border-left:none;
+  border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=Tabletext>&nbsp;</p>
+  </td>
+  <td width=154 valign=top style='width:1.6in;border-top:none;border-left:none;
+  border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=Tabletext>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=154 valign=top style='width:1.6in;border:solid windowtext .75pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=Tabletext>&nbsp;</p>
+  </td>
+  <td width=77 valign=top style='width:.8in;border-top:none;border-left:none;
+  border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=Tabletext>&nbsp;</p>
+  </td>
+  <td width=250 valign=top style='width:2.6in;border-top:none;border-left:none;
+  border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=Tabletext>&nbsp;</p>
+  </td>
+  <td width=154 valign=top style='width:1.6in;border-top:none;border-left:none;
+  border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=Tabletext>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=154 valign=top style='width:1.6in;border:solid windowtext .75pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=Tabletext>&nbsp;</p>
+  </td>
+  <td width=77 valign=top style='width:.8in;border-top:none;border-left:none;
+  border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=Tabletext>&nbsp;</p>
+  </td>
+  <td width=250 valign=top style='width:2.6in;border-top:none;border-left:none;
+  border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=Tabletext>&nbsp;</p>
+  </td>
+  <td width=154 valign=top style='width:1.6in;border-top:none;border-left:none;
+  border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=Tabletext>&nbsp;</p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<b><span style='font-size:18.0pt;font-family:Arial;'><br clear=all style='page-break-before:always'>
+</span></b>
+
+<p class=MsoTitle>Table of Contents</p>
+
+<p class=MsoToc1><a href="#1.                  Introduction">1.          Introduction</a>&nbsp;&nbsp;&nbsp;&nbsp;<!--TOC font is smaller than the TOC font in the "System Architecture Document" template. -->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p class=MsoToc2><a href="#1.1               Purpose">1.1      Purpose</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p class=MsoToc2><a href="#1.2               Scope">1.2      Scope</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p class=MsoToc2><a href="#1.3               Definitions, Acronyms and Abbreviations">1.3      
+  Definitions, Acronyms, and Abbreviations</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p class=MsoToc2><a href="#1.4               References">1.4     
+References</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p class=MsoToc2><a href="#1.5               Overview">1.5      Overview</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p class=MsoToc1><a href="#2.                  Project Overview">2.          Project
+Overview</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p class=MsoToc2><a href="#2.1               Project Purpose, Scope, and Objectives">2.1      
+  Project Purpose, Scope, and Objectives</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p class=MsoToc2><a href="#2.2               Assumptions and Constraints">2.2      Assumptions and
+Constraints</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p class=MsoToc2><a href="#2.3               Project Deliverables">2.3      Project
+Deliverables</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p class=MsoToc2><a href="#2.4               Evolution of the Software Development Plan">2.4      Evolution of the
+System Development
+Plan</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p class=MsoToc1><a href="#3.                  Project Organization">3.          Project
+Organization</a>&nbsp;&nbsp;</p>
+
+<p class=MsoToc2><a href="#3.1               Organizational Structure">3.1      Organizational
+Structure</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p class=MsoToc2><a href="#3.2               External Interfaces">3.2      External
+Interfaces</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p class=MsoToc2><a href="#3.3               Roles and Responsibilities">3.3      Roles and
+Responsibilities</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p class=MsoToc1><a href="#4.                  Management Process">4.          Management
+Process</a></p>
+
+<p class=MsoToc2><a href="#4.1               Project Estimates">4.1      Project
+Estimates</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p class=MsoToc2><a href="#4.2               Project Plan">4.2      Project
+Plan</a>&nbsp;</p>
+
+<p class=MsoToc3><a href="#4.2.1     System Breakdown Structure">4.2.1       System
+Breakdown Structure</a>&nbsp;&nbsp;</p>
+
+<p class=MsoToc3><a href="#4.2.2          Phase Plan">4.2.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Phase Plan</a></p>
+
+<p class=MsoToc3><a href="#4.2.3          Iteration Objectives">4.2.3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Iteration
+Objectives</a></p>
+
+<p class=MsoToc3><a href="#4.2.4         Releases">4.2.4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Releases</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p class=MsoToc3><a href="#4.2.5          Project Schedule">4.2.5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Project
+Schedule&nbsp;</a></p>
+
+<p class=MsoToc3><a href="#4.2.6          Project Resourcing">4.2.6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Project
+Resourcing</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p class=MsoToc3>              <a href="#4.2.6.1     Staffing Plan">4.2.6.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Staffing
+Plan</a></p>
+
+<p class=MsoToc3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="#4.2.6.2     Plan for Other Project Resources">4.2.6.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Plan for Other Project Resources</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p class=MsoToc3>              <a href="#4.2.6.3     Resource Acquisition Plan">4.2.6.3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Resource Acquisition
+Plan</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p class=MsoToc3>              <a href="#4.2.6.4     Training Plan">4.2.6.4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Training
+Plan</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p class=MsoToc3><a href="#4.2.7          Budget">4.2.7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Budget</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p class=MsoToc2><a href="#4.3               Iteration Plans">4.3      Iteration
+Plans</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p class=MsoToc2><a href="#4.4               Project Monitoring and control">4.4      Project Monitoring and
+Control</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p class=MsoToc3><a href="#4.4.1          Requirements Management Plan">4.4.1       Requirements Management
+Plan</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p class=MsoToc3><a href="#4.4.2          Schedule Control Plan">4.4.2       Schedule Control
+Plan</a></p>
+
+<p class=MsoToc3><a href="#4.4.3          Technical Performance Measurement Plan">4.4.3 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Technical Performance
+Measurement Plan&nbsp;</a>&nbsp;&nbsp;&nbsp;</p>
+
+<p class=MsoToc3><a href="#4.4.4          Budget Control Plan">4.4.4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Budget Control
+Plan</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p class=MsoToc3><a href="#4.4.5          Quality Control Plan">4.4.5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Quality Control
+Plan&nbsp;</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p class=MsoToc3><a href="#4.4.6          Reporting Plan">4.4.6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Reporting
+Plan</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p class=MsoToc3><a href="#4.4.7          Measurement Plan">4.4.7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Measurement
+Plan</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p class=MsoToc2><a href="#4.5               Risk Management plan">4.5      Risk Management
+plan</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p class=MsoToc2><a href="#4.6               Close-out Plan">4.6      Close-Out 
+  Plan</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p class=MsoToc1><a href="#5.                  Technical Process Plans">5.          
+  Technical Process Plans</a>&nbsp;</p>
+
+<p class=MsoToc2><a href="#5.1               Development Case">5.1      Development
+Case</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p class=MsoToc2><a href="#5.2               Methods, tools and techniques">5.2      
+  Methods, Tools, and Techniques</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p class=MsoToc2><a href="#5.3               Facilities Plan">5.3     
+Facilities Plan</a>&nbsp;</p>
+
+<p class=MsoToc2><a href="#5.4               System Integration, Evaluation and Test Plan">5.4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  System Integration, Evaluation, and Test Plan</a>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p class=MsoToc2><a href="#5.5               Product Acceptance Plan">5.5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Product Acceptance
+Plan</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p class=MsoToc1><a href="#6.                  Supporting Process Plans">6.          Supporting Process
+Plans</a>&nbsp;</p>
+
+<p class=MsoToc2><a href="#6.1               Configuration Management Plan">6.1      Configuration Management
+Plan</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p class=MsoToc2><a href="#6.2               Documentation Plan">6.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Documentation
+Plan</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p class=MsoToc2><a href="#6.3               Quality Assurance Plan">6.3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Quality Assurance
+Plan&nbsp;</a>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p class=MsoToc2><a href="#6.4               Problem Resolution Plan">6.4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Problem Resolution
+Plan</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p class=MsoToc2><a href="#6.5               Subcontractor Management Plan">6.5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Subcontractor
+and Supplier Management
+Plan&nbsp;</a>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p class=MsoToc2><a href="#6.6               Process Improvement Plan">6.6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Process Improvement
+Plan</a>&nbsp;</p>
+
+<p class=MsoToc2><a href="#6.7               V&amp;V and IV&amp;V Plan">6.7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; V&amp;V and IV&amp;V Plan</a></p>
+
+<p class=MsoToc2><a href="#6.8               Specialty Engineering Plans">6.8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Specialty Engineering Plans</a>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p class=MsoToc2><a href="#6.9               Value Engineering Plan">6.9&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Value Engineering Plan</a></p>
+
+<p class=MsoToc1><a href="#7.                  Subordinate Plans for Hardware and Software Development">7.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Subordinate Plans for Hardware and Software Development</a></p>
+
+<p class=MsoToc1><a href="#8.                  Additional plans">8.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Additional
+Plans</a>&nbsp;</p>
+
+<p class=MsoToc1><a href="#9.                  Annexes">9.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Annexes</a>&nbsp;</p>
+
+<p class=MsoToc1><a href="#10.                  Index">10.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Index</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p class=MsoTitle><br clear=all style='page-break-before:
+always'>System Development Plan</p>
+
+<h1 style='margin-left:0in;text-indent:0in;'>&nbsp;</h1>
+
+<h1><a name="1.                  Introduction">1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Introduction</a></h1>
+
+<p class=InfoBlue><i>[The introduction of the <b>System Development Plan</b> provides 
+  an overview of the entire document. It includes the purpose, scope, definitions, 
+  acronyms, abbreviations, references, and overview of this <b>System Development 
+  Plan</b>.]</i></p>
+
+<h2><a name="1.1               Purpose">1.1<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Purpose</a></h2>
+
+<p class=InfoBlue><i>[Specify the purpose of this <b>System Development Plan.</b>]</i></p>
+
+<h2><a name="1.2               Scope">1.2<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Scope</a></h2>
+
+<p class=InfoBlue><i>[A brief description of the scope of this <b>System Development 
+  Plan</b>; what Project(s) it is associated with, and anything else that is affected 
+  or influenced by this document.]</i></p>
+
+<h2><a name="1.3               Definitions, Acronyms and Abbreviations">1.3<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  </span>Definitions, Acronyms, and Abbreviations</a></h2>
+
+<p class=InfoBlue><i>[This subsection provides the definitions of all terms, acronyms, 
+  and abbreviations required to properly interpret the <b>System Development Plan</b>. 
+  This information can provided by reference to the project Glossary.]</i></p>
+
+<h2><a name="1.4               References">1.4<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>References</a></h2>
+
+<p class=InfoBlue><i>[This subsection provides a complete list of all documents 
+  referenced elsewhere in the <b>System Development Plan</b>. Idenify each document 
+  by title, report number (if applicable), date, and publishing organization. Specify 
+  the sources from which the references can be obtained. This information can 
+  be provided by reference to an appendix or to another document.</i></p>
+
+<p class=InfoBlue><i>For the <b>System Development Plan</b>, the list of referenced 
+  artifacts includes: </i></p>
+<ul>
+  <li><i>Iteration Plans </i></li>
+  <li><i>Requirements Management Plan </i></li>
+  <li><i>Measurement Plan </i></li>
+  <li><i>Risk Management Plan </i></li>
+  <li><i><span
+style='font-family:Symbol;font-style:normal'><span style='font:7.0pt "Times New Roman"'> 
+    </span></span>Development Case </i></li>
+  <li><i>Use-Case Modeling Guidelines </i></li>
+  <li><i>System Design Guidelines </i></li>
+  <li><i>System Integration, Evaluation, and Test Guidelines </i></li>
+  <li><i>Manual Style Guide </i></li>
+  <li><i>System Integration, Evaluation, and Test Plan </i></li>
+  <li><i>Facilities Plan </i></li>
+  <li><i>Product Acceptance Plan </i></li>
+  <li><i><span
+style='font-family:Symbol;font-style:normal'><span style='font:7.0pt "Times New Roman"'> 
+    </span></span>Configuration Management Plan </i></li>
+  <li><i>Documentation Plan </i></li>
+  <li><i>Quality Assurance Plan </i></li>
+  <li><i>Problem Resolution Plan </i></li>
+  <li><i>Subcontractor and Supplier Management Plan </i></li>
+  <li><i>V&amp;V and IV&amp;V Plan</i></li>
+  <li><i>Specialty Engineering Plans</i></li>
+  <li><i>Value Engineering Plan</i></li>
+  <li><i>Process Improvement Plan]</i></li>
+</ul>
+<h2><a name="1.5               Overview">1.5<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Overview</a></h2>
+
+<p class=InfoBlue><i>[This subsection describes what the rest of the <b>System 
+  Development Plan</b> contains and explains how the document is organized.]</i></p>
+
+<h1><a name="2.                  Project Overview">2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Project Overview</a></h1>
+
+<h2><a name="2.1               Project Purpose, Scope, and Objectives">2.1<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  </span>Project Purpose, Scope, and Objectives</a></h2>
+
+<p class=InfoBlue><i>[A brief description of the purpose and objectives of this 
+  project and a brief description of what deliverables the project is expected 
+  to deliver.]</i></p>
+
+<h2><a name="2.2               Assumptions and Constraints">2.2<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  </span>Assumptions and Constraints</a></h2>
+
+<p class=InfoBlue><i>[A list of assumptions upon which this plan is based and 
+  any constraints, for example, budget, staff, equipment, schedule, that apply 
+  to the project.]</i></p>
+
+<h2><a name="2.3               Project Deliverables">2.3<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  </span>Project Deliverables</a></h2>
+
+<p class=InfoBlue><i>[A tabular list of the products to be created during the 
+  project, including target delivery dates.]</i></p>
+
+<h2><a name="2.4               Evolution of the Software Development Plan">2.4<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Evolution of the System Development Plan</a></h2>
+
+<p class=InfoBlue><i>[A table of proposed versions of the <b>System Development 
+  Plan</b>, and the criteria for the unscheduled revision and reissue of this 
+  plan.]</i></p>
+
+<h1><a name="3.                  Project Organization">3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Project Organization</a></h1>
+
+<h2><a name="3.1               Organizational Structure">3.1<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Organizational Structure</a></h2>
+
+<p class=InfoBlue><i>[Describe the organizational structure of the project team, 
+  including management and other review authorities.]</i></p>
+
+<h2><a name="3.2               External Interfaces">3.2<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>External Interfaces</a></h2>
+
+<p class=InfoBlue><i>[Describe how the project interfaces with external groups, 
+  for example, associate contractors and IV&amp;V agents. For each external group, 
+  identify the internal and external contact names.]</i></p>
+
+<h2><a name="3.3               Roles and Responsibilities">3.3<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Roles and Responsibilities</a></h2>
+
+<p class=InfoBlue><i>[Identify the project organizational units that are responsible 
+  for each of the disciplines, workflow details, and supporting processes.]</i></p>
+
+<h1><a name="4.                  Management Process">4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Management Process</a></h1>
+
+<h2><a name="4.1               Project Estimates">4.1<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Project Estimates</a></h2>
+
+<p class=InfoBlue><i>[Provide the estimated cost and schedule for the project, 
+  as well as the basis for those estimates, and the points and circumstances in 
+  the project when re-estimation will occur.]</i></p>
+
+<h2><a name="4.2               Project Plan">4.2<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Project Plan</a></h2>
+
+<h3><a name="4.2.1     System Breakdown Structure">4.2.1&nbsp;&nbsp;&nbsp;&nbsp;
+System Breakdown Structure</a> (SBS)</h3>
+
+<p class="InfoBlue"><i>[The SBS is an evolving view of the way the system or product 
+  is broken down into elements (both operational and enabling/support) that constructed 
+  separately and are separately budgeted and resourced. Also known as the Product 
+  Breakdown Structure, the SBS contrasts with the Work Breakdown Structure that 
+  is task-based and defines the kinds and amounts of work and other resources 
+  needed to produce an element in the SBS.]</i></p>
+
+<h3><a name="4.2.2          Phase Plan">4.2.2<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Phase Plan</a></h3>
+
+<p class=InfoBlue><i>[Include the following:</i></p>
+<ul>
+  <li><i>Work Breakdown Structure (WBS)</i></li>
+  <li><i><span style='font-family:Symbol;
+font-style:normal'><span style='font:7.0pt "Times New Roman"'> </span></span>a 
+    timeline or Gantt chart showing the allocation of time to the project phases 
+    or iterations</i></li>
+  <li><i>identification of major milestones with their achievement criteria</i></li>
+  <li><i><span style='font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Symbol'> 
+    </span>identification of any dependencies (external and internal)</i></li>
+</ul>
+<p class=InfoBlue><i>Define any important release points and demonstrations.]</i></p>
+
+<h3><a name="4.2.3          Iteration Objectives">4.2.3<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Iteration Objectives</a></h3>
+
+<p class=InfoBlue><i>[List the objectives to be accomplished for each of the iterations.]</i></p>
+
+<h3><a name="4.2.4         Releases">4.2.4<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Releases</a></h3>
+
+<p class=InfoBlue><i>[A brief description of each system release and whether it 
+  is a prototype, demonstration, beta, and so forth.]</i></p>
+
+<h3><a name="4.2.5          Project Schedule">4.2.5<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Project Schedule</a></h3>
+
+<p class=InfoBlue><i>[Diagrams or tables showing target dates for completion of 
+  iterations and phases, release points, demos, and other milestones.]</i></p>
+
+<h3><a name="4.2.6          Project Resourcing">4.2.6<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Project Resourcing</a></h3>
+
+<h4><a name="4.2.6.1     Staffing Plan">4.2.6.1<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Staffing
+Plan</a></h4>
+
+<p class=InfoBlue><i>[Identify here the numbers and type of staff required, including 
+  any special skills or experience, scheduled by project phase or iteration.]</i></p>
+
+<h4><a name="4.2.6.2     Plan for Other Project Resources">4.2.6.2<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Plan for Other Project Resources</a></h4>
+
+<p class="InfoBlue"><i>[Identify other resources (materials, equipment, facilities, 
+  tools, and so forth) needed for the project. Refer to other plans (for example, 
+  the Facilities Plan) as appropriate.]</i></p>
+
+<h4><a name="4.2.6.3     Resource Acquisition Plan">4.2.6.3<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Resource
+Acquisition Plan</a></h4>
+
+<p class=InfoBlue><i>[Describe your approach to finding and acquiring the staff 
+  and other resources needed for the project. Refer to other plans (for example, 
+  the Facilities Plan) as appropriate.]</i></p>
+
+<h4><a name="4.2.6.4     Training Plan">4.2.6.4<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Training
+Plan</a></h4>
+
+<p class=InfoBlue><i>[List any special training project team members require, 
+  with target dates for when this training must be completed.]</i></p>
+
+<h3><a name="4.2.7          Budget">4.2.7<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Budget</a></h3>
+
+<p class=InfoBlue><i>[Allocation of costs against the WBS, the SBS and the Phase 
+  Plan.]</i></p>
+
+<h2><a name="4.3               Iteration Plans">4.3<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Iteration Plans</a></h2>
+
+<p class=InfoBlue><i>[Each iteration plan is enclosed in this section by reference.]</i></p>
+
+<h2><a name="4.4               Project Monitoring and control">4.4<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  </span>Project Monitoring and Control</a></h2>
+
+<h3><a name="4.4.1          Requirements Management Plan">4.4.1<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Requirements Management Plan</a></h3>
+
+<p class=InfoBlue><i>[Enclosed by reference.]</i></p>
+
+<h3><a name="4.4.2          Schedule Control Plan">4.4.2<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Schedule Control Plan</a></h3>
+
+<p class=InfoBlue>[Describes the approach to be taken to monitor progress
+against the planned schedule and how to take corrective action when required.]</p>
+
+<h3><a name="4.4.3          Technical Performance Measurement Plan">4.4.3<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Technical Performance Measurement Plan</a></h3>
+
+<p class="InfoBlue"><i>[Describes the approach and methods to identify, measure, 
+  track, and control the critical technical characteristics, for example weight, 
+  power consumption. Identify these characteristics and, where necessary, decompose 
+  them into lower-level characteristics and map to elements in the SBS. This plan 
+  also includes a description of the risks associated with meeting the planned 
+  profiles, and contingency plans to deal with deviations.]</i></p>
+
+<h3><a name="4.4.4          Budget Control Plan">4.4.4<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Budget Control Plan</a></h3>
+
+<p class=InfoBlue><i>[Describes the approach to be taken to monitor spending against 
+  the project budget and how to take corrective action when required.]</i></p>
+
+<h3><a name="4.4.5          Quality Control Plan">4.4.5<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Quality Control Plan</a> </h3>
+<p class=InfoBlue><i>[Describes the timing and methods used to control the quality of the project deliverables and how to take corrective action when required.]</i></p>
+<h3><a name="4.4.6          Reporting Plan">4.4.6<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Reporting Plan</a></h3>
+<p class=InfoBlue><i>[Describes internal and external reports to be generated, and the frequency and distribution of publication.]</i></p>
+<h3><a name="4.4.7          Measurement Plan">4.4.7<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Measurement Plan</a></h3>
+<p class=InfoBlue><i>[Enclosed by reference.]</i></p>
+<h2><a name="4.5               Risk Management plan">4.5<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  </span>Risk Management Plan</a></h2>
+<p class="InfoBlue"><i>[Enclosed by reference.]</i></p>
+<h2><a name="4.6               Close-out Plan">4.6<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Close-out Plan</a></h2>
+<p class=InfoBlue><i>[Describes the activities for the orderly completion of the 
+  project, including staff reassignment, archiving of project materials, post-mortem 
+  debriefings and reports, and so on.]</i></p>
+
+<h1><a name="5.                  Technical Process Plans">5.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Technical Process Plans</a></h1>
+
+<h2><a name="5.1               Development Case">5.1<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Development Case</a></h2>
+
+<p class=InfoBlue><i>[Enclosed by reference.]</i></p>
+
+<h2><a name="5.2               Methods, tools and techniques">5.2<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  </span>Methods, Tools, and Techniques</a></h2>
+
+<p class=InfoBlue><i>[Lists the documented project technical standards, and so 
+  forth, by reference:</i></p>
+<ul>
+  <li><i><span style='font-family:Symbol;
+font-style:normal'><span style='font:7.0pt "Times New Roman"'> </span></span>Use-Case 
+    Modeling Guidelines</i></li>
+  <li><i>System Design Guidelines </i></li>
+  <li><i>System Integration, Evaluation, and Test Guidelines </i></li>
+  <li><i>Manual Style Guide]</i></li>
+</ul>
+<h2><a name="5.3               Facilities Plan">5.3<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Facilities Plan</a></h2>
+
+<p class=InfoBlue><i>[Enclosed by reference.]</i></p>
+
+<h2><a name="5.4               System Integration, Evaluation and Test Plan">5.4<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  </span>System Integration, Evaluation, and Test Plan</a></h2>
+
+<p class="InfoBlue"><i>[Enclosed by reference.]</i></p>
+
+<h2><a name="5.5               Product Acceptance Plan">5.5<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Product Acceptance Plan</a></h2>
+
+<p class=InfoBlue><i>[Enclosed by reference.]</i></p>
+
+<h1><a name="6.                  Supporting Process Plans">6.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Supporting Process Plans</a></h1>
+
+<h2><a name="6.1               Configuration Management Plan">6.1<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Configuration Management Plan</a></h2>
+
+<p class=InfoBlue><i>[Enclosed by reference.]</i></p>
+
+<h2><a name="6.2               Documentation Plan">6.2<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Documentation Plan</a></h2>
+
+<p class=InfoBlue><i>[Enclosed by reference.]</i></p>
+
+<h2><a name="6.3               Quality Assurance Plan">6.3<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Quality Assurance Plan</a></h2>
+
+<p class=InfoBlue><i>[Enclosed by reference.]</i></p>
+
+<h2><a name="6.4               Problem Resolution Plan">6.4<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Problem Resolution Plan</a></h2>
+
+<p class=InfoBlue><i>[Enclosed by reference.]</i></p>
+
+<h2><a name="6.5               Subcontractor Management Plan">6.5<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Subcontractor Management Plan</a></h2>
+
+<p class=InfoBlue><i>[Enclosed by reference.]</i></p>
+
+<h2><a name="6.6               Process Improvement Plan">6.6<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Process Improvement Plan</a></h2>
+
+<p class=InfoBlue><i>[Enclosed by reference.]</i></p>
+
+<h2><a name="6.7               V&amp;V and IV&amp;V Plan">6.7<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>V&amp;V and IV&amp;V Plan</a></h2>
+
+<p class="InfoBlue"><i>[Enclosed by reference.]</i></p>
+
+<h2><a name="6.8               Specialty Engineering Plans">6.8<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Specialty Engineering Plans</a></h2>
+
+<p class="InfoBlue"><i>[These plans address the requirement for various special 
+  engineering disciplines, for example, covering:</i></p>
+<ul>
+  <li><i><span style='font-family:Symbol;
+font-style:normal'><span style='font:7.0pt "Times New Roman"'> </span></span>Safety</i></li>
+  <li><i>Human Factors</i></li>
+  <li><i>Security and Privacy</i></li>
+  <li><i>Integrated Logistics Support</i></li>
+  <li><i>Electromagnetic Compatibility and Electromagnetic Interference</i></li>
+  <li><i>Reliability, Maintainability, Testability, Availability, Survivability, 
+    Produce-ability</i></li>
+  <li><i>Corrosion Control</i></li>
+  <li><i>Environmental Impact]</i></li>
+</ul>
+<h2><a name="6.9               Value Engineering Plan">6.9<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Value Engineering Plan</a></h2>
+
+<p class="InfoBlue"><i>[Enclosed by reference.]</i></p>
+
+<h1><a name="7.                  Subordinate Plans for Hardware and Software Development">7.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Subordinate Plans for
+Hardware and Software Development</a></h1>
+
+<p class="InfoBlue"><i>[Enclosed by reference.]</i></p>
+
+<h1><a name="8.                  Additional plans">8.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Additional plans</a></h1>
+
+<p class=InfoBlue><i>[Additional plans may be required by the contract or regulations.]</i></p>
+
+<h1><a name="9.                  Annexes">9.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Annexes</a></h1>
+
+<p class=InfoBlue><i>[Additional material of use to the reader of the <b>System 
+  Development Plan.</b>]</i></p>
+
+<h1><a name="10.                  Index">10.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Index</a></h1>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</body>
+
+</html>

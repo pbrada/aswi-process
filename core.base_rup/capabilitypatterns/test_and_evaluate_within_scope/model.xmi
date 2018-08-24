@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:org.eclipse.epf.uma.resourcemanager="http:///org/eclipse/epf/uma/resourcemanager.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1">
+  <org.eclipse.epf.uma.resourcemanager:ResourceManager xmi:id="_HT6QkEdWEdqMoerwwyqMKQ" guid="_HT6QkEdWEdqMoerwwyqMKQ">
+    <resourceDescriptors xmi:id="_HT6QkUdWEdqMoerwwyqMKQ" id="-abags8KqyscfnSbtOSIndA" uri="content.xmi"/>
+  </org.eclipse.epf.uma.resourcemanager:ResourceManager>
+  <org.eclipse.epf.uma:ProcessComponent xmi:id="_D1WfAEdWEdqMoerwwyqMKQ" name="test_and_evaluate_within_scope" guid="_D1WfAEdWEdqMoerwwyqMKQ">
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_D1clqEdWEdqMoerwwyqMKQ" name="test_and_evaluate" guid="_D1clqEdWEdqMoerwwyqMKQ">
+      <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_D1clqUdWEdqMoerwwyqMKQ" name="test_and_evaluate" guid="_D1clqUdWEdqMoerwwyqMKQ" isPlanned="false" superActivities="_D2HUKEdWEdqMoerwwyqMKQ" variabilityType="extends">
+        <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:Activity" href="uma://_5rkvIRpREdqFPPVWQscZ5A#{93B7D625-C83A-4EFB-9772-B88F2EB02CE2}"/>
+      </processElements>
+    </childPackages>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_D1WfBUdWEdqMoerwwyqMKQ" name="achieve_acceptable_mission" guid="_D1WfBUdWEdqMoerwwyqMKQ">
+      <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_D1WfBkdWEdqMoerwwyqMKQ" name="achieve_acceptable_mission" guid="_D1WfBkdWEdqMoerwwyqMKQ" isPlanned="false" superActivities="_D2HUKEdWEdqMoerwwyqMKQ" variabilityType="extends">
+        <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:Activity" href="uma://_5rkvIRpREdqFPPVWQscZ5A#{5DA9C9E9-1538-4433-8B57-B28667D67514}"/>
+      </processElements>
+    </childPackages>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_D2HUI0dWEdqMoerwwyqMKQ" name="improve_test_assets" guid="_D2HUI0dWEdqMoerwwyqMKQ">
+      <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_D2HUJUdWEdqMoerwwyqMKQ" name="improve_test_assets" guid="_D2HUJUdWEdqMoerwwyqMKQ" isPlanned="false" superActivities="_D2HUKEdWEdqMoerwwyqMKQ" linkToPredecessor="_D2HUJEdWEdqMoerwwyqMKQ _D2HUJ0dWEdqMoerwwyqMKQ" variabilityType="extends">
+        <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:Activity" href="uma://_5rkvIRpREdqFPPVWQscZ5A#{CD77CBDA-CC13-4593-BB81-41AF3FF7A84C}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_D2HUJEdWEdqMoerwwyqMKQ" guid="_D2HUJEdWEdqMoerwwyqMKQ" pred="_D1WfBkdWEdqMoerwwyqMKQ"/>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_D2HUJ0dWEdqMoerwwyqMKQ" guid="_D2HUJ0dWEdqMoerwwyqMKQ" pred="_D1clqUdWEdqMoerwwyqMKQ"/>
+    </childPackages>
+    <process xsi:type="org.eclipse.epf.uma:CapabilityPattern" xmi:id="_D2HUKEdWEdqMoerwwyqMKQ" name="test_and_evaluate_within_scope" guid="_D2HUKEdWEdqMoerwwyqMKQ" presentationName="Test and Evaluate [within Scope]" briefDescription="This capability pattern covers the activities required for testing within a particular scope.  The scope could be a particular level or type of test, such as Function Test.  It may also limited in scope to the components, or portions thereof,  that have been implemented or are planned to be implemented during the iteration." hasMultipleOccurrences="true" breakdownElements="_D1clqUdWEdqMoerwwyqMKQ _D1WfBkdWEdqMoerwwyqMKQ _D2HUJUdWEdqMoerwwyqMKQ">
+      <ownedRules xmi:id="_kzKtwIMIEdq4psIjqD1Y1A" guid="_kzKtwIMIEdq4psIjqD1Y1A"/>
+      <presentation xmi:id="-abags8KqyscfnSbtOSIndA" href="uma://-abags8KqyscfnSbtOSIndA#-abags8KqyscfnSbtOSIndA"/>
+      <defaultContext href="uma://_0q85QJySEd2xJNwbI6lxKA#_xqmb0NnmEdmO6L4XMImrsA"/>
+      <validContext href="uma://_0q85QJySEd2xJNwbI6lxKA#_xqmb0NnmEdmO6L4XMImrsA"/>
+    </process>
+  </org.eclipse.epf.uma:ProcessComponent>
+</xmi:XMI>

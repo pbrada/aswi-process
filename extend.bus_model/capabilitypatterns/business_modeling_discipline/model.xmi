@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:org.eclipse.epf.uma.resourcemanager="http:///org/eclipse/epf/uma/resourcemanager.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1">
+  <org.eclipse.epf.uma.resourcemanager:ResourceManager xmi:id="_qE71YTXEEdq4lJjndbo9Yw" guid="_qE71YTXEEdq4lJjndbo9Yw">
+    <resourceDescriptors xmi:id="_qE71YjXEEdq4lJjndbo9Yw" id="-IUgdjJtiTGeN7V5Ehyp6iQ" uri="content.xmi"/>
+  </org.eclipse.epf.uma.resourcemanager:ResourceManager>
+  <org.eclipse.epf.uma:ProcessComponent xmi:id="_qAQwwDXEEdq4lJjndbo9Yw" name="business_modeling_discipline" guid="_qAQwwDXEEdq4lJjndbo9Yw">
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_BDnXoDXFEdq4lJjndbo9Yw" name="assess_business_status" guid="_BDnXoDXFEdq4lJjndbo9Yw">
+      <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_BDnXoTXFEdq4lJjndbo9Yw" name="assess_business_status" guid="_BDnXoTXFEdq4lJjndbo9Yw" presentationName="Assess Business Status" superActivities="_qAQwwTXEEdq4lJjndbo9Yw" variabilityType="extends">
+        <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:CapabilityPattern" href="uma://_MJApoDXDEdq4lJjndbo9Yw#_MJApoTXDEdq4lJjndbo9Yw"/>
+      </processElements>
+    </childPackages>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_DGdZIDXFEdq4lJjndbo9Yw" name="describe_current_business" guid="_DGdZIDXFEdq4lJjndbo9Yw">
+      <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_DGdZITXFEdq4lJjndbo9Yw" name="describe_current_business" guid="_DGdZITXFEdq4lJjndbo9Yw" presentationName="Describe Current Business" superActivities="_qAQwwTXEEdq4lJjndbo9Yw" variabilityType="extends">
+        <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:CapabilityPattern" href="uma://_WhJiIDXDEdq4lJjndbo9Yw#_WhJiITXDEdq4lJjndbo9Yw"/>
+      </processElements>
+    </childPackages>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_Fu7QMDXFEdq4lJjndbo9Yw" name="define_business" guid="_Fu7QMDXFEdq4lJjndbo9Yw">
+      <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_FvBW0DXFEdq4lJjndbo9Yw" name="define_business" guid="_FvBW0DXFEdq4lJjndbo9Yw" presentationName="Define Business" superActivities="_qAQwwTXEEdq4lJjndbo9Yw" variabilityType="extends">
+        <methodElementProperty xmi:id="_u16y4E-2EdycSsZPqwSvwg" name="publish_add" value="false"/>
+        <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:CapabilityPattern" href="uma://_yPt68DXDEdq4lJjndbo9Yw#_yPt68TXDEdq4lJjndbo9Yw"/>
+      </processElements>
+    </childPackages>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_IS6P4DXFEdq4lJjndbo9Yw" name="explore_process_automation" guid="_IS6P4DXFEdq4lJjndbo9Yw">
+      <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_ITAWgDXFEdq4lJjndbo9Yw" name="explore_process_automation" guid="_ITAWgDXFEdq4lJjndbo9Yw" presentationName="Explore Process Automation" superActivities="_qAQwwTXEEdq4lJjndbo9Yw" variabilityType="extends">
+        <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:CapabilityPattern" href="uma://_6B4PsDXDEdq4lJjndbo9Yw#_6B4PsTXDEdq4lJjndbo9Yw"/>
+      </processElements>
+    </childPackages>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_Kx1JYDXFEdq4lJjndbo9Yw" name="develop_domain_model" guid="_Kx1JYDXFEdq4lJjndbo9Yw">
+      <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_Kx7QADXFEdq4lJjndbo9Yw" name="develop_domain_model" guid="_Kx7QADXFEdq4lJjndbo9Yw" presentationName="Develop Domain Model" superActivities="_qAQwwTXEEdq4lJjndbo9Yw" variabilityType="extends">
+        <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:CapabilityPattern" href="uma://_BUgv0DXEEdq4lJjndbo9Yw#_BUgv0TXEEdq4lJjndbo9Yw"/>
+      </processElements>
+    </childPackages>
+    <process xsi:type="org.eclipse.epf.uma:CapabilityPattern" xmi:id="_qAQwwTXEEdq4lJjndbo9Yw" name="business_modeling_discipline" guid="_qAQwwTXEEdq4lJjndbo9Yw" presentationName="Business Modeling" briefDescription="This capability pattern covers the activities and workflow for the Business Modeling discipline." breakdownElements="_BDnXoTXFEdq4lJjndbo9Yw _DGdZITXFEdq4lJjndbo9Yw _FvBW0DXFEdq4lJjndbo9Yw _ITAWgDXFEdq4lJjndbo9Yw _Kx7QADXFEdq4lJjndbo9Yw">
+      <presentation xmi:id="-IUgdjJtiTGeN7V5Ehyp6iQ" href="uma://-IUgdjJtiTGeN7V5Ehyp6iQ#-IUgdjJtiTGeN7V5Ehyp6iQ"/>
+      <defaultContext href="uma://_0q85QJySEd2xJNwbI6lxKA#_xqmb0NnmEdmO6L4XMImrsA"/>
+      <validContext href="uma://_0q85QJySEd2xJNwbI6lxKA#_xqmb0NnmEdmO6L4XMImrsA"/>
+    </process>
+  </org.eclipse.epf.uma:ProcessComponent>
+</xmi:XMI>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="-uNXzwU0dmD0_oWakfCictg" name="soa_service_identification_data,_mJtYwCwTEduKcvYAyaKSaA" guid="-uNXzwU0dmD0_oWakfCictg" changeDate="2006-09-27T19:36:35.108-0700" version="1.0.0">
+  <mainDescription>&lt;p>&#xD;
+    This task uses Business Process Models as input and identifies a set of candidate services which are included in the&#xD;
+    project service portfolio. These candidate services may yet require additional refinement, however the steps included&#xD;
+    here provide an effective manner in which to produce an initial set of Service Specifications.&#xD;
+&lt;/p></mainDescription>
+  <sections xmi:id="_9yqBgC07EduMFMCuL1mFMw" name="Identify Candidate Services from Data Models" guid="_9yqBgC07EduMFMCuL1mFMw">
+    <sectionDescription>&lt;p>&#xD;
+    For most business-driven IT organizations, understanding and managing data in the form of complex &lt;a&#xD;
+    class=&quot;elementLinkWithType&quot; href=&quot;./../../extend.bus_model/workproducts/rup_business_entity_638A1D00.html&quot;&#xD;
+    guid=&quot;{9A14ED32-2AC5-457E-93B8-474642D33A50}&quot;>Artifact: Business Entity&lt;/a>(s) is key to the analysis and design of&#xD;
+    solutions. As such, many solutions will include services that act as data-management services and the identification of&#xD;
+    services will tend to focus more on the &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../core.base_rup/workproducts/rup_data_model_65B46980.html&quot; guid=&quot;{9DCF1723-1A21-4F48-BEDE-DBC543489682}&quot;>Artifact:&#xD;
+    Data Model&lt;/a> or &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../extend.bus_model/workproducts/rup_business_analysis_model_9449F63A.html&quot;&#xD;
+    guid=&quot;{CF53445C-3351-46C6-810E-8251830029A7}&quot;>Artifact: Business Analysis Model&lt;/a>. In terms of application&#xD;
+    reengineering to service-oriented solutions, data models have to be developed from the existing applications that can&#xD;
+    be used to identify coherent subsets that can be treated as autonomous services.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Where possible the creation of an enterprise-wide domain model is an activity that has great value, the domain model is&#xD;
+    a higher level of abstraction in general to a more complete logical data model (see &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../core.base_rup/workproducts/rup_data_model_65B46980.html&quot; guid=&quot;{9DCF1723-1A21-4F48-BEDE-DBC543489682}&quot;>Artifact:&#xD;
+    Data Model&lt;/a>) and so may be maintained more regularly. This domain model expresses the key concepts, in terms of &lt;a&#xD;
+    class=&quot;elementLinkWithType&quot; href=&quot;./../../extend.bus_model/workproducts/rup_business_entity_638A1D00.html&quot;&#xD;
+    guid=&quot;{9A14ED32-2AC5-457E-93B8-474642D33A50}&quot;>Artifact: Business Entity&lt;/a>, and can be considered to represent the key&#xD;
+    artifact types managed by either a business component or business service (see &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../extend.bus_model/guidances/concepts/business_component_modeling_527F8FC0.html&quot;&#xD;
+    guid=&quot;_uKecsC7xEdu14aFGpEDchg&quot;>Concept: Component Business Modeling&lt;/a>). As such the logical grouping of a domain&#xD;
+    model into a coherent set of dependent entities can be a starting point for service identification -- treating the&#xD;
+    service as the owner of the entities. For example, consider the following domain model fragment.&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;center&quot;>&#xD;
+    &lt;img height=&quot;405&quot; alt=&quot;&quot; src=&quot;./resources/soa_svce_identification-07a.gif&quot; width=&quot;672&quot; />&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    We see that the domain model identifies a set of business entities&amp;nbsp;that fall into two main&amp;nbsp;business&#xD;
+    competencies: account and customer management.&amp;nbsp;It is true that there is a significant relationship between an&#xD;
+    account and an organization; however, these two&amp;nbsp;artifact&amp;nbsp;types are most often dealt with separately and&#xD;
+    operations tend to be&amp;nbsp;carried out at either the account or organization level. We may then assign the relevant&#xD;
+    portions&amp;nbsp;of the domain model to a&amp;nbsp;RUP&amp;nbsp;&lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../extend.bus_model/workproducts/rup_business_system_BB28EEB.html&quot;&#xD;
+    guid=&quot;{4064F184-314B-4965-9F08-6AE5DBF6205A}&quot;>Artifact: Business System&lt;/a>&amp;nbsp;(Business Component in CBM) as shown&#xD;
+    below.&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;center&quot;>&#xD;
+    &lt;img height=&quot;478&quot; alt=&quot;&quot; src=&quot;./resources/soa_svce_identification-07b.gif&quot; width=&quot;721&quot; />&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    While this gives us a clear picture in terms of the ownership of the relevant artifact types we need to go one step&#xD;
+    further and identify the services that the business system provides to the organization, and in this case specifically&#xD;
+    the service provided to manage the identified artifact types. So, given the example we have we would identify the&#xD;
+    entity &quot;Account&quot; as the primary artifact owned by the &quot;Account Management&quot; Business System, and &quot;Customer&quot; as the&#xD;
+    primary artifact owned by the &quot;Customer Management&quot; system. Thus, we would provide a service that enables the access&#xD;
+    to, and update of, these entities as shown in the figure below.&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;center&quot;>&#xD;
+    &lt;img height=&quot;156&quot; alt=&quot;&quot; src=&quot;./resources/soa_svce_identification-07c.gif&quot; width=&quot;396&quot; />&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Again, these service specifications only represent candidate services (see the status property of the&amp;nbsp;&lt;a&#xD;
+    class=&quot;elementLinkWithType&quot; href=&quot;./../../soa.rup_soma/workproducts/soa_svce_model_svce_spec_37E89A91.html&quot;&#xD;
+    guid=&quot;{20F06B5E-95D5-422C-AB68-7C213D28533A}&quot;>Artifact: Service Specification&lt;/a>) and as such would need to be refined&#xD;
+    with details of the operations they provide, specifically operations that allow for the update of entities.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <purpose>&lt;ul>&#xD;
+    &lt;li>&#xD;
+        To identify the design elements of a service-oriented solution in terms of services and partitions.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        To document the initial specification of services.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        To determine the initial dependencies and the communication between services.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></purpose>
+</org.eclipse.epf.uma:TaskDescription>

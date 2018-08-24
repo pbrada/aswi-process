@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:org.eclipse.epf.uma.resourcemanager="http:///org/eclipse/epf/uma/resourcemanager.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1">
+  <org.eclipse.epf.uma.resourcemanager:ResourceManager xmi:id="_wvyAUEJHEdq4z9xc-r201w" guid="_wvyAUEJHEdq4z9xc-r201w">
+    <resourceDescriptors xmi:id="_wvyAUUJHEdq4z9xc-r201w" id="-cGyE_FsEx-KUvmJXPg1Wrw" uri="content.xmi"/>
+    <resourceDescriptors xmi:id="_FCEz0EmmEdqo-aQWadhKdQ" id="-Me6FYWPhv3kmhp-EKvdyJA" uri="content.xmi"/>
+    <resourceDescriptors xmi:id="_FCK6cEmmEdqo-aQWadhKdQ" id="-L-vAP5GuMsTPTkwMbRiQWw" uri="content.xmi"/>
+    <resourceDescriptors xmi:id="_FCRBEEmmEdqo-aQWadhKdQ" id="-ef9LM5PT_zJrm7hlU2P6mg" uri="content.xmi"/>
+    <resourceDescriptors xmi:id="_FCXHsEmmEdqo-aQWadhKdQ" id="-JVAwicyW-I92UQ8xBGsVbA" uri="content.xmi"/>
+    <resourceDescriptors xmi:id="_IE7VIFAaEdqCk4ydYQGlcQ" id="-ZwfRHt5W_tG2MA09iANeRg" uri="content.xmi"/>
+    <resourceDescriptors xmi:id="_IJ_bUFAaEdqCk4ydYQGlcQ" id="-AFCr_i9KDEsTGkaqmjU-tQ" uri="content.xmi"/>
+    <resourceDescriptors xmi:id="_IKqJsFAaEdqCk4ydYQGlcQ" id="-kmaaoig10Jrr7Zy-sVJQqg" uri="content.xmi"/>
+    <resourceDescriptors xmi:id="_ILCkMFAaEdqCk4ydYQGlcQ" id="-f1HtPtnevgJGPWTuEWccyA" uri="content.xmi"/>
+    <resourceDescriptors xmi:id="_XtizUFAbEdqCk4ydYQGlcQ" id="-eB80YyW_45Ff-NlYyvmNHQ" uri="content.xmi"/>
+  </org.eclipse.epf.uma.resourcemanager:ResourceManager>
+  <org.eclipse.epf.uma:ProcessComponent xmi:id="_vChNQEJHEdq4z9xc-r201w" name="small_rup" guid="_vChNQEJHEdq4z9xc-r201w">
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_vChNRkJHEdq4z9xc-r201w" name="Inception" guid="_vChNRkJHEdq4z9xc-r201w">
+      <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_vChNSUJHEdq4z9xc-r201w" name="inception_iteration" guid="_vChNSUJHEdq4z9xc-r201w">
+        <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_GfLPAEraEdqNBM3TV2Y0Vw" name="plan_entire_project" guid="_GfLPAEraEdqNBM3TV2Y0Vw">
+          <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_GfLPAUraEdqNBM3TV2Y0Vw" name="plan_entire_project" guid="_GfLPAUraEdqNBM3TV2Y0Vw" briefDescription="This covers general planning for the release. It does not include detailed planning for product testing (the evaluation mission)." superActivities="_vCtaiEJHEdq4z9xc-r201w" linkToPredecessor="_4PZhIEraEdqNBM3TV2Y0Vw" variabilityType="localContribution">
+            <presentation xmi:id="-ZwfRHt5W_tG2MA09iANeRg" href="uma://-cGyE_FsEx-KUvmJXPg1Wrw#-ZwfRHt5W_tG2MA09iANeRg"/>
+            <presentedAfter xsi:type="org.eclipse.epf.uma:Activity" href="uma://_o3nZoCFrEdqrX8YVzvtlIg#_wh5JcCGGEdqMcovRzkCQow"/>
+            <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:Activity" href="uma://_o3nZoCFrEdqrX8YVzvtlIg#_JCG4gDHxEdqLw-lQEI8RPw"/>
+          </processElements>
+          <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_4PZhIEraEdqNBM3TV2Y0Vw" guid="_4PZhIEraEdqNBM3TV2Y0Vw">
+            <pred xsi:type="org.eclipse.epf.uma:Activity" href="uma://_o3nZoCFrEdqrX8YVzvtlIg#_ojquoCGGEdqMcovRzkCQow"/>
+          </processElements>
+          <diagrams xmi:id="_I-AB4EraEdqNBM3TV2Y0Vw" guid="_I-AB4EraEdqNBM3TV2Y0Vw">
+            <contained xsi:type="org.eclipse.epf.uma:GraphNode" xmi:id="_DxYigMBLEdqrm7GPxYB94g" guid="_DxYigMBLEdqrm7GPxYB94g">
+              <contained xsi:type="org.eclipse.epf.uma:GraphEdge" xmi:id="_DxYigsBLEdqrm7GPxYB94g" guid="_DxYigsBLEdqrm7GPxYB94g" anchor="_DxYihMBLEdqrm7GPxYB94g _DxepJ8BLEdqrm7GPxYB94g"/>
+              <anchorage xmi:id="_DxYig8BLEdqrm7GPxYB94g" guid="_DxYig8BLEdqrm7GPxYB94g" graphEdge="_DxepIMBLEdqrm7GPxYB94g"/>
+              <anchorage xmi:id="_DxYihMBLEdqrm7GPxYB94g" guid="_DxYihMBLEdqrm7GPxYB94g" graphEdge="_DxYigsBLEdqrm7GPxYB94g"/>
+              <semanticModel xsi:type="org.eclipse.epf.uma:UMASemanticModelBridge" xmi:id="_DxYihsBLEdqrm7GPxYB94g" guid="_DxYihsBLEdqrm7GPxYB94g">
+                <element xsi:type="org.eclipse.epf.uma:Activity" href="uma://_o3nZoCFrEdqrX8YVzvtlIg#_QvFWwcBFEdqrm7GPxYB94g"/>
+              </semanticModel>
+            </contained>
+            <contained xsi:type="org.eclipse.epf.uma:GraphNode" xmi:id="_DxYiiMBLEdqrm7GPxYB94g" guid="_DxYiiMBLEdqrm7GPxYB94g">
+              <contained xsi:type="org.eclipse.epf.uma:GraphEdge" xmi:id="_DxYiisBLEdqrm7GPxYB94g" guid="_DxYiisBLEdqrm7GPxYB94g" anchor="_DxYijMBLEdqrm7GPxYB94g"/>
+              <anchorage xmi:id="_DxYii8BLEdqrm7GPxYB94g" guid="_DxYii8BLEdqrm7GPxYB94g"/>
+              <anchorage xmi:id="_DxYijMBLEdqrm7GPxYB94g" guid="_DxYijMBLEdqrm7GPxYB94g" graphEdge="_DxYiisBLEdqrm7GPxYB94g"/>
+              <semanticModel xsi:type="org.eclipse.epf.uma:UMASemanticModelBridge" xmi:id="_DxYijsBLEdqrm7GPxYB94g" guid="_DxYijsBLEdqrm7GPxYB94g">
+                <element xsi:type="org.eclipse.epf.uma:Activity" href="uma://_LnRYACCaEdq3qtLcbHn6PQ#_euaLgCCbEdq3qtLcbHn6PQ"/>
+              </semanticModel>
+            </contained>
+            <contained xsi:type="org.eclipse.epf.uma:GraphNode" xmi:id="_DxYikMBLEdqrm7GPxYB94g" guid="_DxYikMBLEdqrm7GPxYB94g">
+              <contained xsi:type="org.eclipse.epf.uma:GraphEdge" xmi:id="_DxYiksBLEdqrm7GPxYB94g" guid="_DxYiksBLEdqrm7GPxYB94g" anchor="_DxYilMBLEdqrm7GPxYB94g"/>
+              <anchorage xmi:id="_DxYik8BLEdqrm7GPxYB94g" guid="_DxYik8BLEdqrm7GPxYB94g"/>
+              <anchorage xmi:id="_DxYilMBLEdqrm7GPxYB94g" guid="_DxYilMBLEdqrm7GPxYB94g" graphEdge="_DxYiksBLEdqrm7GPxYB94g"/>
+              <semanticModel xsi:type="org.eclipse.epf.uma:UMASemanticModelBridge" xmi:id="_DxYilsBLEdqrm7GPxYB94g" guid="_DxYilsBLEdqrm7GPxYB94g">
+                <element xsi:type="org.eclipse.epf.uma:Activity" href="uma://_LnRYACCaEdq3qtLcbHn6PQ#_h0M3wCCbEdq3qtLcbHn6PQ"/>
+              </semanticModel>
+            </contained>
+            <contained xsi:type="org.eclipse.epf.uma:GraphNode" xmi:id="_DxYimMBLEdqrm7GPxYB94g" guid="_DxYimMBLEdqrm7GPxYB94g">
+              <contained xsi:type="org.eclipse.epf.uma:GraphEdge" xmi:id="_DxYimsBLEdqrm7GPxYB94g" guid="_DxYimsBLEdqrm7GPxYB94g" anchor="_DxYinMBLEdqrm7GPxYB94g"/>
+              <anchorage xmi:id="_DxYim8BLEdqrm7GPxYB94g" guid="_DxYim8BLEdqrm7GPxYB94g"/>
+              <anchorage xmi:id="_DxYinMBLEdqrm7GPxYB94g" guid="_DxYinMBLEdqrm7GPxYB94g" graphEdge="_DxYimsBLEdqrm7GPxYB94g"/>
+              <semanticModel xsi:type="org.eclipse.epf.uma:UMASemanticModelBridge" xmi:id="_DxYinsBLEdqrm7GPxYB94g" guid="_DxYinsBLEdqrm7GPxYB94g">
+                <element xsi:type="org.eclipse.epf.uma:Activity" href="uma://_LnRYACCaEdq3qtLcbHn6PQ#_jnwgECCbEdq3qtLcbHn6PQ"/>
+              </semanticModel>
+            </contained>
+            <contained xsi:type="org.eclipse.epf.uma:GraphNode" xmi:id="_DxYioMBLEdqrm7GPxYB94g" guid="_DxYioMBLEdqrm7GPxYB94g" briefDescription="_xjNasEpZEdqIWYHxYBysQA">
+              <contained xsi:type="org.eclipse.epf.uma:GraphEdge" xmi:id="_DxepIMBLEdqrm7GPxYB94g" guid="_DxepIMBLEdqrm7GPxYB94g" anchor="_DxepIcBLEdqrm7GPxYB94g _DxYig8BLEdqrm7GPxYB94g"/>
+              <anchorage xmi:id="_DxepIcBLEdqrm7GPxYB94g" guid="_DxepIcBLEdqrm7GPxYB94g" graphEdge="_DxepIMBLEdqrm7GPxYB94g"/>
+              <semanticModel xsi:type="org.eclipse.epf.uma:SimpleSemanticModelElement" xmi:id="_DxepI8BLEdqrm7GPxYB94g" guid="_DxepI8BLEdqrm7GPxYB94g" typeInfo="start node"/>
+            </contained>
+            <contained xsi:type="org.eclipse.epf.uma:GraphNode" xmi:id="_DxepJcBLEdqrm7GPxYB94g" guid="_DxepJcBLEdqrm7GPxYB94g" briefDescription="_xjNat0pZEdqIWYHxYBysQA">
+              <anchorage xmi:id="_DxepJ8BLEdqrm7GPxYB94g" guid="_DxepJ8BLEdqrm7GPxYB94g" graphEdge="_DxYigsBLEdqrm7GPxYB94g"/>
+              <semanticModel xsi:type="org.eclipse.epf.uma:SimpleSemanticModelElement" xmi:id="_DxepKMBLEdqrm7GPxYB94g" guid="_DxepKMBLEdqrm7GPxYB94g" typeInfo="end node"/>
+            </contained>
+            <contained xsi:type="org.eclipse.epf.uma:GraphNode" xmi:id="_DxepKsBLEdqrm7GPxYB94g" guid="_DxepKsBLEdqrm7GPxYB94g">
+              <semanticModel xsi:type="org.eclipse.epf.uma:UMASemanticModelBridge" xmi:id="_DxepLMBLEdqrm7GPxYB94g" guid="_DxepLMBLEdqrm7GPxYB94g"/>
+            </contained>
+            <contained xsi:type="org.eclipse.epf.uma:GraphNode" xmi:id="_PuyvsMBLEdqrm7GPxYB94g" guid="_PuyvsMBLEdqrm7GPxYB94g">
+              <semanticModel xsi:type="org.eclipse.epf.uma:UMASemanticModelBridge" xmi:id="_PvRQ0cBLEdqrm7GPxYB94g" guid="_PvRQ0cBLEdqrm7GPxYB94g">
+                <element xsi:type="org.eclipse.epf.uma:Activity" href="uma://_LnRYACCaEdq3qtLcbHn6PQ#_cBvJ4SCbEdq3qtLcbHn6PQ"/>
+              </semanticModel>
+            </contained>
+            <semanticModel xsi:type="org.eclipse.epf.uma:UMASemanticModelBridge" xmi:id="_I-ACLkraEdqNBM3TV2Y0Vw" guid="_I-ACLkraEdqNBM3TV2Y0Vw" presentation="Workflow" element="_GfLPAUraEdqNBM3TV2Y0Vw"/>
+          </diagrams>
+        </childPackages>
+        <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_q0ZyoJ4_Edq7s5zuJVEAAw" name="manage_the_scope_of_the_system" guid="_q0ZyoJ4_Edq7s5zuJVEAAw">
+          <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_q0ZyoZ4_Edq7s5zuJVEAAw" name="manage_the_scope_of_the_system" guid="_q0ZyoZ4_Edq7s5zuJVEAAw" presentedAfter="_rnmKIJ4_Edq7s5zuJVEAAw" superActivities="_vCtaiEJHEdq4z9xc-r201w" linkToPredecessor="_SXE2MJ5BEdq7s5zuJVEAAw _SXE2MZ5BEdq7s5zuJVEAAw _SXE2Mp5BEdq7s5zuJVEAAw" variabilityType="localContribution">
+            <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:Activity" href="uma://_o3nZoCFrEdqrX8YVzvtlIg#_1KaMsCGGEdqMcovRzkCQow"/>
+          </processElements>
+          <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_SXE2MJ5BEdq7s5zuJVEAAw" guid="_SXE2MJ5BEdq7s5zuJVEAAw">
+            <pred xsi:type="org.eclipse.epf.uma:Activity" href="uma://_5rYh4RpREdqFPPVWQscZ5A#{20E30ECF-7359-45EC-AA5F-8A7BFA21C472}"/>
+          </processElements>
+          <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_SXE2MZ5BEdq7s5zuJVEAAw" guid="_SXE2MZ5BEdq7s5zuJVEAAw">
+            <pred xsi:type="org.eclipse.epf.uma:Activity" href="uma://_o3nZoCFrEdqrX8YVzvtlIg#_PLlSwDUTEdqNn71iifr4xw"/>
+          </processElements>
+          <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_SXE2Mp5BEdq7s5zuJVEAAw" guid="_SXE2Mp5BEdq7s5zuJVEAAw">
+            <pred xsi:type="org.eclipse.epf.uma:Activity" href="uma://_o3nZoCFrEdqrX8YVzvtlIg#_moHsoEJvEdqdQt8Y6pP7RA"/>
+          </processElements>
+        </childPackages>
+        <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_rngDgJ4_Edq7s5zuJVEAAw" name="define_the_system" guid="_rngDgJ4_Edq7s5zuJVEAAw">
+          <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_rnmKIJ4_Edq7s5zuJVEAAw" name="define_the_system" guid="_rnmKIJ4_Edq7s5zuJVEAAw" presentedAfter="_sdeCMZ4_Edq7s5zuJVEAAw" superActivities="_vCtaiEJHEdq4z9xc-r201w" linkToPredecessor="_SXE2M55BEdq7s5zuJVEAAw _SXE2NJ5BEdq7s5zuJVEAAw" variabilityType="localContribution">
+            <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:Activity" href="uma://_o3nZoCFrEdqrX8YVzvtlIg#_2qqegCGGEdqMcovRzkCQow"/>
+          </processElements>
+          <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_SXE2M55BEdq7s5zuJVEAAw" guid="_SXE2M55BEdq7s5zuJVEAAw">
+            <pred xsi:type="org.eclipse.epf.uma:Activity" href="uma://_o3nZoCFrEdqrX8YVzvtlIg#_PLlSwDUTEdqNn71iifr4xw"/>
+          </processElements>
+          <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_SXE2NJ5BEdq7s5zuJVEAAw" guid="_SXE2NJ5BEdq7s5zuJVEAAw">
+            <pred xsi:type="org.eclipse.epf.uma:Activity" href="uma://_o3nZoCFrEdqrX8YVzvtlIg#_moHsoEJvEdqdQt8Y6pP7RA"/>
+          </processElements>
+        </childPackages>
+        <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_sdeCMJ4_Edq7s5zuJVEAAw" name="perform_architectural_synthesis" guid="_sdeCMJ4_Edq7s5zuJVEAAw">
+          <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_sdeCMZ4_Edq7s5zuJVEAAw" name="perform_architectural_synthesis" guid="_sdeCMZ4_Edq7s5zuJVEAAw" presentedAfter="_to6hoZ4_Edq7s5zuJVEAAw" superActivities="_vCtaiEJHEdq4z9xc-r201w" linkToPredecessor="_SXE2NZ5BEdq7s5zuJVEAAw _SXE2Np5BEdq7s5zuJVEAAw _Vg5G0J5BEdq7s5zuJVEAAw" variabilityType="localContribution">
+            <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:Activity" href="uma://_o3nZoCFrEdqrX8YVzvtlIg#_3-OYICGGEdqMcovRzkCQow"/>
+          </processElements>
+          <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_SXE2NZ5BEdq7s5zuJVEAAw" guid="_SXE2NZ5BEdq7s5zuJVEAAw">
+            <pred xsi:type="org.eclipse.epf.uma:Activity" href="uma://_o3nZoCFrEdqrX8YVzvtlIg#_PLlSwDUTEdqNn71iifr4xw"/>
+          </processElements>
+          <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_SXE2Np5BEdq7s5zuJVEAAw" guid="_SXE2Np5BEdq7s5zuJVEAAw">
+            <pred xsi:type="org.eclipse.epf.uma:Activity" href="uma://_o3nZoCFrEdqrX8YVzvtlIg#_moHsoEJvEdqdQt8Y6pP7RA"/>
+          </processElements>
+          <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_Vg5G0J5BEdq7s5zuJVEAAw" guid="_Vg5G0J5BEdq7s5zuJVEAAw">
+            <pred xsi:type="org.eclipse.epf.uma:Activity" href="uma://_o3nZoCFrEdqrX8YVzvtlIg#_ojquoCGGEdqMcovRzkCQow"/>
+          </processElements>
+        </childPackages>
+        <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_to6hoJ4_Edq7s5zuJVEAAw" name="define_evaluation_mission" guid="_to6hoJ4_Edq7s5zuJVEAAw">
+          <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_to6hoZ4_Edq7s5zuJVEAAw" name="define_evaluation_mission" guid="_to6hoZ4_Edq7s5zuJVEAAw" superActivities="_vCtaiEJHEdq4z9xc-r201w" linkToPredecessor="_SXE2N55BEdq7s5zuJVEAAw _SXE2OJ5BEdq7s5zuJVEAAw _WJ9R8J5BEdq7s5zuJVEAAw" variabilityType="localContribution">
+            <presentedAfter xsi:type="org.eclipse.epf.uma:Activity" href="uma://_o3nZoCFrEdqrX8YVzvtlIg#_9aS_QCGGEdqMcovRzkCQow"/>
+            <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:Activity" href="uma://_o3nZoCFrEdqrX8YVzvtlIg#_6Bt54CGGEdqMcovRzkCQow"/>
+          </processElements>
+          <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_SXE2N55BEdq7s5zuJVEAAw" guid="_SXE2N55BEdq7s5zuJVEAAw">
+            <pred xsi:type="org.eclipse.epf.uma:Activity" href="uma://_o3nZoCFrEdqrX8YVzvtlIg#_PLlSwDUTEdqNn71iifr4xw"/>
+          </processElements>
+          <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_SXE2OJ5BEdq7s5zuJVEAAw" guid="_SXE2OJ5BEdq7s5zuJVEAAw">
+            <pred xsi:type="org.eclipse.epf.uma:Activity" href="uma://_o3nZoCFrEdqrX8YVzvtlIg#_moHsoEJvEdqdQt8Y6pP7RA"/>
+          </processElements>
+          <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_WJ9R8J5BEdq7s5zuJVEAAw" guid="_WJ9R8J5BEdq7s5zuJVEAAw">
+            <pred xsi:type="org.eclipse.epf.uma:Activity" href="uma://_o3nZoCFrEdqrX8YVzvtlIg#_ojquoCGGEdqMcovRzkCQow"/>
+          </processElements>
+        </childPackages>
+        <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_vCtaiEJHEdq4z9xc-r201w" name="inception_iteration" guid="_vCtaiEJHEdq4z9xc-r201w" presentationName="Inception Iteration [n]" briefDescription="This iteration includes the activities to be performed during an iteration in the Inception Phase. The overriding goal of the inception phase is to achieve concurrence among all stakeholders on the lifecycle objectives for the project. The inception phase is of significance primarily for new development efforts, in which there are significant business and requirements risks which must be addressed before the project can proceed. For projects focused on enhancements to an existing system, the inception phase is more brief, but is still focused on ensuring that the project is both worth doing and possible to do." superActivities="_vChNR0JHEdq4z9xc-r201w" isRepeatable="true" variabilityType="extends" breakdownElements="_q0ZyoZ4_Edq7s5zuJVEAAw _GfLPAUraEdqNBM3TV2Y0Vw _rnmKIJ4_Edq7s5zuJVEAAw _sdeCMZ4_Edq7s5zuJVEAAw _to6hoZ4_Edq7s5zuJVEAAw">
+          <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:CapabilityPattern" href="uma://_o3nZoCFrEdqrX8YVzvtlIg#_o3nZoSFrEdqrX8YVzvtlIg"/>
+        </processElements>
+      </childPackages>
+      <processElements xsi:type="org.eclipse.epf.uma:Phase" xmi:id="_vChNR0JHEdq4z9xc-r201w" name="Inception" guid="_vChNR0JHEdq4z9xc-r201w" presentationName="Inception" briefDescription="The overriding goal of the inception phase is to achieve concurrence among all stakeholders on the lifecycle objectives for the project. The inception phase is of significance primarily for new development efforts, in which there are significant business and requirements risks which must be addressed before the project can proceed. For projects focused on enhancements to an existing system, the inception phase is more brief, but is still focused on ensuring that the project is both worth doing and possible to do." superActivities="_vCtak0JHEdq4z9xc-r201w" breakdownElements="_vCtaiEJHEdq4z9xc-r201w _vChNSEJHEdq4z9xc-r201w"/>
+      <processElements xsi:type="org.eclipse.epf.uma:Milestone" xmi:id="_vChNSEJHEdq4z9xc-r201w" name="Inception Milestone" guid="_vChNSEJHEdq4z9xc-r201w" presentationName="Lifecycle Objectives Milestone" briefDescription="At the end of the inception phase is the first major project milestone or Lifecycle Objectives Milestone. At this point, you examine the lifecycle objectives of the project, and decide either to proceed with the project or to cancel it. " superActivities="_vChNR0JHEdq4z9xc-r201w" linkToPredecessor="_yGgsQEmmEdqo-aQWadhKdQ">
+        <presentation xmi:id="-Me6FYWPhv3kmhp-EKvdyJA" href="uma://-cGyE_FsEx-KUvmJXPg1Wrw#-Me6FYWPhv3kmhp-EKvdyJA"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_yGgsQEmmEdqo-aQWadhKdQ" guid="_yGgsQEmmEdqo-aQWadhKdQ" pred="_vCtaiEJHEdq4z9xc-r201w"/>
+    </childPackages>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_vChNQUJHEdq4z9xc-r201w" name="Elaboration" guid="_vChNQUJHEdq4z9xc-r201w">
+      <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_vChNQ0JHEdq4z9xc-r201w" name="elaboration_iteration" guid="_vChNQ0JHEdq4z9xc-r201w">
+        <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_cy8_AEsaEdqchp_cYmfkiA" name="ongoing_management_and_support" guid="_cy8_AEsaEdqchp_cYmfkiA">
+          <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_cy8_AUsaEdqchp_cYmfkiA" name="ongoing_management_and_support" guid="_cy8_AUsaEdqchp_cYmfkiA" briefDescription="This covers the various management and support activities that are repeated on an ongoing basis throughout the project." superActivities="_vChNREJHEdq4z9xc-r201w" isOngoing="true" linkToPredecessor="_3a3m4EscEdqchp_cYmfkiA" variabilityType="localContribution">
+            <presentation xmi:id="-AFCr_i9KDEsTGkaqmjU-tQ" href="uma://-cGyE_FsEx-KUvmJXPg1Wrw#-AFCr_i9KDEsTGkaqmjU-tQ"/>
+            <presentedAfter xsi:type="org.eclipse.epf.uma:Activity" href="uma://_pV4NgCFsEdqrX8YVzvtlIg#_RAru0CFtEdqrX8YVzvtlIg"/>
+            <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:Activity" href="uma://_pV4NgCFsEdqrX8YVzvtlIg#_-VJOICJbEdqQipbmJ0SDbw"/>
+          </processElements>
+          <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_3a3m4EscEdqchp_cYmfkiA" guid="_3a3m4EscEdqchp_cYmfkiA">
+            <pred xsi:type="org.eclipse.epf.uma:Activity" href="uma://_pV4NgCFsEdqrX8YVzvtlIg#_48CqECFsEdqrX8YVzvtlIg"/>
+          </processElements>
+          <diagrams xmi:id="_plSKcEy5Edqt_5DlNfFHiQ" guid="_plSKcEy5Edqt_5DlNfFHiQ">
+            <contained xsi:type="org.eclipse.epf.uma:GraphNode" xmi:id="_QYBdEMACEdqR3ZodHcvf5Q" guid="_QYBdEMACEdqR3ZodHcvf5Q">
+              <contained xsi:type="org.eclipse.epf.uma:GraphEdge" xmi:id="_QYBdEsACEdqR3ZodHcvf5Q" guid="_QYBdEsACEdqR3ZodHcvf5Q" anchor="_QYBdFMACEdqR3ZodHcvf5Q _QYBdeMACEdqR3ZodHcvf5Q"/>
+              <anchorage xmi:id="_QYBdE8ACEdqR3ZodHcvf5Q" guid="_QYBdE8ACEdqR3ZodHcvf5Q" graphEdge="_QYBdWcACEdqR3ZodHcvf5Q"/>
+              <anchorage xmi:id="_QYBdFMACEdqR3ZodHcvf5Q" guid="_QYBdFMACEdqR3ZodHcvf5Q" graphEdge="_QYBdEsACEdqR3ZodHcvf5Q"/>
+              <semanticModel xsi:type="org.eclipse.epf.uma:UMASemanticModelBridge" xmi:id="_QYBdFsACEdqR3ZodHcvf5Q" guid="_QYBdFsACEdqR3ZodHcvf5Q">
+                <element xsi:type="org.eclipse.epf.uma:Activity" href="uma://_MiAAUCJaEdqQipbmJ0SDbw#_foD1wCJbEdqQipbmJ0SDbw"/>
+              </semanticModel>
+            </contained>
+            <contained xsi:type="org.eclipse.epf.uma:GraphNode" xmi:id="_QYBdGMACEdqR3ZodHcvf5Q" guid="_QYBdGMACEdqR3ZodHcvf5Q">
+              <contained xsi:type="org.eclipse.epf.uma:GraphEdge" xmi:id="_QYBdGsACEdqR3ZodHcvf5Q" guid="_QYBdGsACEdqR3ZodHcvf5Q" anchor="_QYBdHMACEdqR3ZodHcvf5Q _QYBdkMACEdqR3ZodHcvf5Q"/>
+              <anchorage xmi:id="_QYBdG8ACEdqR3ZodHcvf5Q" guid="_QYBdG8ACEdqR3ZodHcvf5Q" graphEdge="_QYBdWsACEdqR3ZodHcvf5Q"/>
+              <anchorage xmi:id="_QYBdHMACEdqR3ZodHcvf5Q" guid="_QYBdHMACEdqR3ZodHcvf5Q" graphEdge="_QYBdGsACEdqR3ZodHcvf5Q"/>
+              <semanticModel xsi:type="org.eclipse.epf.uma:UMASemanticModelBridge" xmi:id="_QYBdHsACEdqR3ZodHcvf5Q" guid="_QYBdHsACEdqR3ZodHcvf5Q">
+                <element xsi:type="org.eclipse.epf.uma:Activity" href="uma://_MiAAUCJaEdqQipbmJ0SDbw#_hpF5YCJbEdqQipbmJ0SDbw"/>
+              </semanticModel>
+            </contained>
+            <contained xsi:type="org.eclipse.epf.uma:GraphNode" xmi:id="_QYBdIMACEdqR3ZodHcvf5Q" guid="_QYBdIMACEdqR3ZodHcvf5Q">
+              <contained xsi:type="org.eclipse.epf.uma:GraphEdge" xmi:id="_QYBdIsACEdqR3ZodHcvf5Q" guid="_QYBdIsACEdqR3ZodHcvf5Q" anchor="_QYBdI8ACEdqR3ZodHcvf5Q _QYBdesACEdqR3ZodHcvf5Q"/>
+              <anchorage xmi:id="_QYBdI8ACEdqR3ZodHcvf5Q" guid="_QYBdI8ACEdqR3ZodHcvf5Q" graphEdge="_QYBdIsACEdqR3ZodHcvf5Q"/>
+              <anchorage xmi:id="_QYBdJcACEdqR3ZodHcvf5Q" guid="_QYBdJcACEdqR3ZodHcvf5Q" graphEdge="_QYBdx8ACEdqR3ZodHcvf5Q"/>
+              <semanticModel xsi:type="org.eclipse.epf.uma:UMASemanticModelBridge" xmi:id="_QYBdJsACEdqR3ZodHcvf5Q" guid="_QYBdJsACEdqR3ZodHcvf5Q">
+                <element xsi:type="org.eclipse.epf.uma:Activity" href="uma://_MiAAUCJaEdqQipbmJ0SDbw#_kcnw8CJbEdqQipbmJ0SDbw"/>
+              </semanticModel>
+            </contained>
+            <contained xsi:type="org.eclipse.epf.uma:GraphNode" xmi:id="_QYBdKMACEdqR3ZodHcvf5Q" guid="_QYBdKMACEdqR3ZodHcvf5Q">
+              <contained xsi:type="org.eclipse.epf.uma:GraphEdge" xmi:id="_QYBdKsACEdqR3ZodHcvf5Q" guid="_QYBdKsACEdqR3ZodHcvf5Q" anchor="_QYBdK8ACEdqR3ZodHcvf5Q _QYBdfMACEdqR3ZodHcvf5Q"/>
+              <anchorage xmi:id="_QYBdK8ACEdqR3ZodHcvf5Q" guid="_QYBdK8ACEdqR3ZodHcvf5Q" graphEdge="_QYBdKsACEdqR3ZodHcvf5Q"/>
+              <anchorage xmi:id="_QYBdLcACEdqR3ZodHcvf5Q" guid="_QYBdLcACEdqR3ZodHcvf5Q" graphEdge="_QYBd1MACEdqR3ZodHcvf5Q"/>
+              <semanticModel xsi:type="org.eclipse.epf.uma:UMASemanticModelBridge" xmi:id="_QYBdLsACEdqR3ZodHcvf5Q" guid="_QYBdLsACEdqR3ZodHcvf5Q">
+                <element xsi:type="org.eclipse.epf.uma:Activity" href="uma://_MiAAUCJaEdqQipbmJ0SDbw#_lxX9YCJbEdqQipbmJ0SDbw"/>
+              </semanticModel>
+            </contained>
+            <contained xsi:type="org.eclipse.epf.uma:GraphNode" xmi:id="_QYBdMMACEdqR3ZodHcvf5Q" guid="_QYBdMMACEdqR3ZodHcvf5Q">
+              <contained xsi:type="org.eclipse.epf.uma:GraphEdge" xmi:id="_QYBdMsACEdqR3ZodHcvf5Q" guid="_QYBdMsACEdqR3ZodHcvf5Q" anchor="_QYBdNMACEdqR3ZodHcvf5Q _QYBdfsACEdqR3ZodHcvf5Q"/>
+              <anchorage xmi:id="_QYBdM8ACEdqR3ZodHcvf5Q" guid="_QYBdM8ACEdqR3ZodHcvf5Q" graphEdge="_QYBdW8ACEdqR3ZodHcvf5Q"/>
+              <anchorage xmi:id="_QYBdNMACEdqR3ZodHcvf5Q" guid="_QYBdNMACEdqR3ZodHcvf5Q" graphEdge="_QYBdMsACEdqR3ZodHcvf5Q"/>
+              <semanticModel xsi:type="org.eclipse.epf.uma:UMASemanticModelBridge" xmi:id="_QYBdNsACEdqR3ZodHcvf5Q" guid="_QYBdNsACEdqR3ZodHcvf5Q">
+                <element xsi:type="org.eclipse.epf.uma:Activity" href="uma://_MiAAUCJaEdqQipbmJ0SDbw#_de6X8CJbEdqQipbmJ0SDbw"/>
+              </semanticModel>
+            </contained>
+            <contained xsi:type="org.eclipse.epf.uma:GraphNode" xmi:id="_QYBdOMACEdqR3ZodHcvf5Q" guid="_QYBdOMACEdqR3ZodHcvf5Q">
+              <contained xsi:type="org.eclipse.epf.uma:GraphEdge" xmi:id="_QYBdOsACEdqR3ZodHcvf5Q" guid="_QYBdOsACEdqR3ZodHcvf5Q" anchor="_QYBdO8ACEdqR3ZodHcvf5Q _QYBdgMACEdqR3ZodHcvf5Q"/>
+              <anchorage xmi:id="_QYBdO8ACEdqR3ZodHcvf5Q" guid="_QYBdO8ACEdqR3ZodHcvf5Q" graphEdge="_QYBdOsACEdqR3ZodHcvf5Q"/>
+              <anchorage xmi:id="_QYBdPcACEdqR3ZodHcvf5Q" guid="_QYBdPcACEdqR3ZodHcvf5Q"/>
+              <semanticModel xsi:type="org.eclipse.epf.uma:UMASemanticModelBridge" xmi:id="_QYBdPsACEdqR3ZodHcvf5Q" guid="_QYBdPsACEdqR3ZodHcvf5Q">
+                <element xsi:type="org.eclipse.epf.uma:Activity" href="uma://_MiAAUCJaEdqQipbmJ0SDbw#_nj3CEDHaEdqLw-lQEI8RPw"/>
+              </semanticModel>
+            </contained>
+            <contained xsi:type="org.eclipse.epf.uma:GraphNode" xmi:id="_QYBdQMACEdqR3ZodHcvf5Q" guid="_QYBdQMACEdqR3ZodHcvf5Q">
+              <contained xsi:type="org.eclipse.epf.uma:GraphEdge" xmi:id="_QYBdQsACEdqR3ZodHcvf5Q" guid="_QYBdQsACEdqR3ZodHcvf5Q" anchor="_QYBdRMACEdqR3ZodHcvf5Q _QYBdisACEdqR3ZodHcvf5Q"/>
+              <anchorage xmi:id="_QYBdQ8ACEdqR3ZodHcvf5Q" guid="_QYBdQ8ACEdqR3ZodHcvf5Q"/>
+              <anchorage xmi:id="_QYBdRMACEdqR3ZodHcvf5Q" guid="_QYBdRMACEdqR3ZodHcvf5Q" graphEdge="_QYBdQsACEdqR3ZodHcvf5Q"/>
+              <semanticModel xsi:type="org.eclipse.epf.uma:UMASemanticModelBridge" xmi:id="_QYBdRsACEdqR3ZodHcvf5Q" guid="_QYBdRsACEdqR3ZodHcvf5Q">
+                <element xsi:type="org.eclipse.epf.uma:Activity" href="uma://_MiAAUCJaEdqQipbmJ0SDbw#_o6SpgDHaEdqLw-lQEI8RPw"/>
+              </semanticModel>
+            </contained>
+            <contained xsi:type="org.eclipse.epf.uma:GraphNode" xmi:id="_QYBdSMACEdqR3ZodHcvf5Q" guid="_QYBdSMACEdqR3ZodHcvf5Q">
+              <contained xsi:type="org.eclipse.epf.uma:GraphEdge" xmi:id="_QYBdSsACEdqR3ZodHcvf5Q" guid="_QYBdSsACEdqR3ZodHcvf5Q" anchor="_QYBdTMACEdqR3ZodHcvf5Q _QYBdjsACEdqR3ZodHcvf5Q"/>
+              <anchorage xmi:id="_QYBdS8ACEdqR3ZodHcvf5Q" guid="_QYBdS8ACEdqR3ZodHcvf5Q" graphEdge="_QYBdYMACEdqR3ZodHcvf5Q"/>
+              <anchorage xmi:id="_QYBdTMACEdqR3ZodHcvf5Q" guid="_QYBdTMACEdqR3ZodHcvf5Q" graphEdge="_QYBdSsACEdqR3ZodHcvf5Q"/>
+              <semanticModel xsi:type="org.eclipse.epf.uma:UMASemanticModelBridge" xmi:id="_QYBdTsACEdqR3ZodHcvf5Q" guid="_QYBdTsACEdqR3ZodHcvf5Q">
+                <element xsi:type="org.eclipse.epf.uma:Activity" href="uma://_MiAAUCJaEdqQipbmJ0SDbw#_qX4o4DHaEdqLw-lQEI8RPw"/>
+              </semanticModel>
+            </contained>
+            <contained xsi:type="org.eclipse.epf.uma:GraphNode" xmi:id="_QYBdUMACEdqR3ZodHcvf5Q" guid="_QYBdUMACEdqR3ZodHcvf5Q" briefDescription="_E8k2EL_0EdqR3ZodHcvf5Q">
+              <contained xsi:type="org.eclipse.epf.uma:GraphEdge" xmi:id="_QYBdUsACEdqR3ZodHcvf5Q" guid="_QYBdUsACEdqR3ZodHcvf5Q" anchor="_QYBdU8ACEdqR3ZodHcvf5Q _QYBdYcACEdqR3ZodHcvf5Q"/>
+              <anchorage xmi:id="_QYBdU8ACEdqR3ZodHcvf5Q" guid="_QYBdU8ACEdqR3ZodHcvf5Q" graphEdge="_QYBdUsACEdqR3ZodHcvf5Q"/>
+              <semanticModel xsi:type="org.eclipse.epf.uma:SimpleSemanticModelElement" xmi:id="_QYBdVcACEdqR3ZodHcvf5Q" guid="_QYBdVcACEdqR3ZodHcvf5Q" typeInfo="start node"/>
+            </contained>
+            <contained xsi:type="org.eclipse.epf.uma:GraphNode" xmi:id="_QYBdV8ACEdqR3ZodHcvf5Q" guid="_QYBdV8ACEdqR3ZodHcvf5Q" briefDescription="_E8k2F7_0EdqR3ZodHcvf5Q">
+              <contained xsi:type="org.eclipse.epf.uma:GraphEdge" xmi:id="_QYBdWcACEdqR3ZodHcvf5Q" guid="_QYBdWcACEdqR3ZodHcvf5Q" anchor="_QYBdY8ACEdqR3ZodHcvf5Q _QYBdE8ACEdqR3ZodHcvf5Q"/>
+              <contained xsi:type="org.eclipse.epf.uma:GraphEdge" xmi:id="_QYBdWsACEdqR3ZodHcvf5Q" guid="_QYBdWsACEdqR3ZodHcvf5Q" anchor="_QYBdZcACEdqR3ZodHcvf5Q _QYBdG8ACEdqR3ZodHcvf5Q"/>
+              <contained xsi:type="org.eclipse.epf.uma:GraphEdge" xmi:id="_QYBdW8ACEdqR3ZodHcvf5Q" guid="_QYBdW8ACEdqR3ZodHcvf5Q" anchor="_QYBdZ8ACEdqR3ZodHcvf5Q _QYBdM8ACEdqR3ZodHcvf5Q"/>
+              <contained xsi:type="org.eclipse.epf.uma:GraphEdge" xmi:id="_QYBdXMACEdqR3ZodHcvf5Q" guid="_QYBdXMACEdqR3ZodHcvf5Q" anchor="_QYBdacACEdqR3ZodHcvf5Q _QYBdysACEdqR3ZodHcvf5Q"/>
+              <contained xsi:type="org.eclipse.epf.uma:GraphEdge" xmi:id="_QYBdXcACEdqR3ZodHcvf5Q" guid="_QYBdXcACEdqR3ZodHcvf5Q" anchor="_QYBda8ACEdqR3ZodHcvf5Q _QYBd18ACEdqR3ZodHcvf5Q"/>
+              <contained xsi:type="org.eclipse.epf.uma:GraphEdge" xmi:id="_QYBdYMACEdqR3ZodHcvf5Q" guid="_QYBdYMACEdqR3ZodHcvf5Q" anchor="_QYBdccACEdqR3ZodHcvf5Q _QYBdS8ACEdqR3ZodHcvf5Q"/>
+              <anchorage xmi:id="_QYBdYcACEdqR3ZodHcvf5Q" guid="_QYBdYcACEdqR3ZodHcvf5Q" graphEdge="_QYBdUsACEdqR3ZodHcvf5Q"/>
+              <anchorage xmi:id="_QYBdY8ACEdqR3ZodHcvf5Q" guid="_QYBdY8ACEdqR3ZodHcvf5Q" graphEdge="_QYBdWcACEdqR3ZodHcvf5Q"/>
+              <anchorage xmi:id="_QYBdZcACEdqR3ZodHcvf5Q" guid="_QYBdZcACEdqR3ZodHcvf5Q" graphEdge="_QYBdWsACEdqR3ZodHcvf5Q"/>
+              <anchorage xmi:id="_QYBdZ8ACEdqR3ZodHcvf5Q" guid="_QYBdZ8ACEdqR3ZodHcvf5Q" graphEdge="_QYBdW8ACEdqR3ZodHcvf5Q"/>
+              <anchorage xmi:id="_QYBdacACEdqR3ZodHcvf5Q" guid="_QYBdacACEdqR3ZodHcvf5Q" graphEdge="_QYBdXMACEdqR3ZodHcvf5Q"/>
+              <anchorage xmi:id="_QYBda8ACEdqR3ZodHcvf5Q" guid="_QYBda8ACEdqR3ZodHcvf5Q" graphEdge="_QYBdXcACEdqR3ZodHcvf5Q"/>
+              <anchorage xmi:id="_QYBdccACEdqR3ZodHcvf5Q" guid="_QYBdccACEdqR3ZodHcvf5Q" graphEdge="_QYBdYMACEdqR3ZodHcvf5Q"/>
+              <semanticModel xsi:type="org.eclipse.epf.uma:SimpleSemanticModelElement" xmi:id="_QYBdc8ACEdqR3ZodHcvf5Q" guid="_QYBdc8ACEdqR3ZodHcvf5Q" typeInfo="synchnonization bar"/>
+            </contained>
+            <contained xsi:type="org.eclipse.epf.uma:GraphNode" xmi:id="_QYBddcACEdqR3ZodHcvf5Q" guid="_QYBddcACEdqR3ZodHcvf5Q" briefDescription="_E8k2Nb_0EdqR3ZodHcvf5Q">
+              <contained xsi:type="org.eclipse.epf.uma:GraphEdge" xmi:id="_QYBdd8ACEdqR3ZodHcvf5Q" guid="_QYBdd8ACEdqR3ZodHcvf5Q" anchor="_QYBdgsACEdqR3ZodHcvf5Q _QYBdlsACEdqR3ZodHcvf5Q"/>
+              <anchorage xmi:id="_QYBdeMACEdqR3ZodHcvf5Q" guid="_QYBdeMACEdqR3ZodHcvf5Q" graphEdge="_QYBdEsACEdqR3ZodHcvf5Q"/>
+              <anchorage xmi:id="_QYBdesACEdqR3ZodHcvf5Q" guid="_QYBdesACEdqR3ZodHcvf5Q" graphEdge="_QYBdIsACEdqR3ZodHcvf5Q"/>
+              <anchorage xmi:id="_QYBdfMACEdqR3ZodHcvf5Q" guid="_QYBdfMACEdqR3ZodHcvf5Q" graphEdge="_QYBdKsACEdqR3ZodHcvf5Q"/>
+              <anchorage xmi:id="_QYBdfsACEdqR3ZodHcvf5Q" guid="_QYBdfsACEdqR3ZodHcvf5Q" graphEdge="_QYBdMsACEdqR3ZodHcvf5Q"/>
+              <anchorage xmi:id="_QYBdgMACEdqR3ZodHcvf5Q" guid="_QYBdgMACEdqR3ZodHcvf5Q" graphEdge="_QYBdOsACEdqR3ZodHcvf5Q"/>
+              <anchorage xmi:id="_QYBdgsACEdqR3ZodHcvf5Q" guid="_QYBdgsACEdqR3ZodHcvf5Q" graphEdge="_QYBdd8ACEdqR3ZodHcvf5Q"/>
+              <anchorage xmi:id="_QYBdhMACEdqR3ZodHcvf5Q" guid="_QYBdhMACEdqR3ZodHcvf5Q" graphEdge="_QYBdyMACEdqR3ZodHcvf5Q"/>
+              <anchorage xmi:id="_QYBdhsACEdqR3ZodHcvf5Q" guid="_QYBdhsACEdqR3ZodHcvf5Q" graphEdge="_QYBd1cACEdqR3ZodHcvf5Q"/>
+              <anchorage xmi:id="_QYBdisACEdqR3ZodHcvf5Q" guid="_QYBdisACEdqR3ZodHcvf5Q" graphEdge="_QYBdQsACEdqR3ZodHcvf5Q"/>
+              <anchorage xmi:id="_QYBdjsACEdqR3ZodHcvf5Q" guid="_QYBdjsACEdqR3ZodHcvf5Q" graphEdge="_QYBdSsACEdqR3ZodHcvf5Q"/>
+              <anchorage xmi:id="_QYBdkMACEdqR3ZodHcvf5Q" guid="_QYBdkMACEdqR3ZodHcvf5Q" graphEdge="_QYBdGsACEdqR3ZodHcvf5Q"/>
+              <semanticModel xsi:type="org.eclipse.epf.uma:SimpleSemanticModelElement" xmi:id="_QYBdksACEdqR3ZodHcvf5Q" guid="_QYBdksACEdqR3ZodHcvf5Q" typeInfo="synchnonization bar"/>
+            </contained>
+            <contained xsi:type="org.eclipse.epf.uma:GraphNode" xmi:id="_QYBdlMACEdqR3ZodHcvf5Q" guid="_QYBdlMACEdqR3ZodHcvf5Q" briefDescription="_E8k2VL_0EdqR3ZodHcvf5Q">
+              <anchorage xmi:id="_QYBdlsACEdqR3ZodHcvf5Q" guid="_QYBdlsACEdqR3ZodHcvf5Q" graphEdge="_QYBdd8ACEdqR3ZodHcvf5Q"/>
+              <semanticModel xsi:type="org.eclipse.epf.uma:SimpleSemanticModelElement" xmi:id="_QYBdl8ACEdqR3ZodHcvf5Q" guid="_QYBdl8ACEdqR3ZodHcvf5Q" typeInfo="end node"/>
+            </contained>
+            <contained xsi:type="org.eclipse.epf.uma:GraphNode" xmi:id="_QYBdmcACEdqR3ZodHcvf5Q" name="Add Free Text" guid="_QYBdmcACEdqR3ZodHcvf5Q" briefDescription="_E8k2Wb_0EdqR3ZodHcvf5Q">
+              <property xmi:id="_QYBdmsACEdqR3ZodHcvf5Q" guid="_QYBdmsACEdqR3ZodHcvf5Q" key="free text" value="[Requirements change]"/>
+              <property xmi:id="_QYBdm8ACEdqR3ZodHcvf5Q" guid="_QYBdm8ACEdqR3ZodHcvf5Q" key="property_font_name" value="Arial"/>
+              <property xmi:id="_QYBdnMACEdqR3ZodHcvf5Q" guid="_QYBdnMACEdqR3ZodHcvf5Q" key="property_font_style" value="0"/>
+              <property xmi:id="_QYBdncACEdqR3ZodHcvf5Q" guid="_QYBdncACEdqR3ZodHcvf5Q" key="property_font_height" value="8"/>
+              <property xmi:id="_QYBdnsACEdqR3ZodHcvf5Q" guid="_QYBdnsACEdqR3ZodHcvf5Q" key="property_font_red" value="0"/>
+              <property xmi:id="_QYBdn8ACEdqR3ZodHcvf5Q" guid="_QYBdn8ACEdqR3ZodHcvf5Q" key="property_font_blue" value="0"/>
+              <property xmi:id="_QYBdoMACEdqR3ZodHcvf5Q" guid="_QYBdoMACEdqR3ZodHcvf5Q" key="property_font_green" value="0"/>
+              <semanticModel xsi:type="org.eclipse.epf.uma:SimpleSemanticModelElement" xmi:id="_QYBdosACEdqR3ZodHcvf5Q" guid="_QYBdosACEdqR3ZodHcvf5Q" typeInfo="free text"/>
+            </contained>
+            <contained xsi:type="org.eclipse.epf.uma:GraphNode" xmi:id="_QYBdpMACEdqR3ZodHcvf5Q" name="Add Free Text" guid="_QYBdpMACEdqR3ZodHcvf5Q" briefDescription="_E8k2ZL_0EdqR3ZodHcvf5Q">
+              <property xmi:id="_QYBdpcACEdqR3ZodHcvf5Q" guid="_QYBdpcACEdqR3ZodHcvf5Q" key="free text" value="[Change Request]"/>
+              <property xmi:id="_QYBdpsACEdqR3ZodHcvf5Q" guid="_QYBdpsACEdqR3ZodHcvf5Q" key="property_font_name" value="Arial"/>
+              <property xmi:id="_QYBdp8ACEdqR3ZodHcvf5Q" guid="_QYBdp8ACEdqR3ZodHcvf5Q" key="property_font_style" value="0"/>
+              <property xmi:id="_QYBdqMACEdqR3ZodHcvf5Q" guid="_QYBdqMACEdqR3ZodHcvf5Q" key="property_font_height" value="8"/>
+              <property xmi:id="_QYBdqcACEdqR3ZodHcvf5Q" guid="_QYBdqcACEdqR3ZodHcvf5Q" key="property_font_red" value="0"/>
+              <property xmi:id="_QYBdqsACEdqR3ZodHcvf5Q" guid="_QYBdqsACEdqR3ZodHcvf5Q" key="property_font_blue" value="0"/>
+              <property xmi:id="_QYBdq8ACEdqR3ZodHcvf5Q" guid="_QYBdq8ACEdqR3ZodHcvf5Q" key="property_font_green" value="0"/>
+              <semanticModel xsi:type="org.eclipse.epf.uma:SimpleSemanticModelElement" xmi:id="_QYBdrcACEdqR3ZodHcvf5Q" guid="_QYBdrcACEdqR3ZodHcvf5Q" typeInfo="free text"/>
+            </contained>
+            <contained xsi:type="org.eclipse.epf.uma:GraphNode" xmi:id="_QYBdxcACEdqR3ZodHcvf5Q" guid="_QYBdxcACEdqR3ZodHcvf5Q" briefDescription="_E8k2hb_0EdqR3ZodHcvf5Q">
+              <contained xsi:type="org.eclipse.epf.uma:GraphEdge" xmi:id="_QYBdx8ACEdqR3ZodHcvf5Q" guid="_QYBdx8ACEdqR3ZodHcvf5Q" anchor="_QYBdzMACEdqR3ZodHcvf5Q _QYBdJcACEdqR3ZodHcvf5Q"/>
+              <contained xsi:type="org.eclipse.epf.uma:GraphEdge" xmi:id="_QYBdyMACEdqR3ZodHcvf5Q" guid="_QYBdyMACEdqR3ZodHcvf5Q" anchor="_QYBdzsACEdqR3ZodHcvf5Q _QYBdhMACEdqR3ZodHcvf5Q">
+                <waypoints xmi:id="_QYBdycACEdqR3ZodHcvf5Q" x="303.0" y="181.0"/>
+              </contained>
+              <anchorage xmi:id="_QYBdysACEdqR3ZodHcvf5Q" guid="_QYBdysACEdqR3ZodHcvf5Q" graphEdge="_QYBdXMACEdqR3ZodHcvf5Q"/>
+              <anchorage xmi:id="_QYBdzMACEdqR3ZodHcvf5Q" guid="_QYBdzMACEdqR3ZodHcvf5Q" graphEdge="_QYBdx8ACEdqR3ZodHcvf5Q"/>
+              <anchorage xmi:id="_QYBdzsACEdqR3ZodHcvf5Q" guid="_QYBdzsACEdqR3ZodHcvf5Q" graphEdge="_QYBdyMACEdqR3ZodHcvf5Q"/>
+              <semanticModel xsi:type="org.eclipse.epf.uma:SimpleSemanticModelElement" xmi:id="_QYBd0MACEdqR3ZodHcvf5Q" guid="_QYBd0MACEdqR3ZodHcvf5Q" typeInfo="decision node"/>
+            </contained>
+            <contained xsi:type="org.eclipse.epf.uma:GraphNode" xmi:id="_QYBd0sACEdqR3ZodHcvf5Q" guid="_QYBd0sACEdqR3ZodHcvf5Q" briefDescription="_E8k2kr_0EdqR3ZodHcvf5Q">
+              <contained xsi:type="org.eclipse.epf.uma:GraphEdge" xmi:id="_QYBd1MACEdqR3ZodHcvf5Q" guid="_QYBd1MACEdqR3ZodHcvf5Q" anchor="_QYBd2cACEdqR3ZodHcvf5Q _QYBdLcACEdqR3ZodHcvf5Q"/>
+              <contained xsi:type="org.eclipse.epf.uma:GraphEdge" xmi:id="_QYBd1cACEdqR3ZodHcvf5Q" guid="_QYBd1cACEdqR3ZodHcvf5Q" anchor="_QYBd28ACEdqR3ZodHcvf5Q _QYBdhsACEdqR3ZodHcvf5Q">
+                <waypoints xmi:id="_QYBd1sACEdqR3ZodHcvf5Q" x="430.0" y="237.0"/>
+              </contained>
+              <anchorage xmi:id="_QYBd18ACEdqR3ZodHcvf5Q" guid="_QYBd18ACEdqR3ZodHcvf5Q" graphEdge="_QYBdXcACEdqR3ZodHcvf5Q"/>
+              <anchorage xmi:id="_QYBd2cACEdqR3ZodHcvf5Q" guid="_QYBd2cACEdqR3ZodHcvf5Q" graphEdge="_QYBd1MACEdqR3ZodHcvf5Q"/>
+              <anchorage xmi:id="_QYBd28ACEdqR3ZodHcvf5Q" guid="_QYBd28ACEdqR3ZodHcvf5Q" graphEdge="_QYBd1cACEdqR3ZodHcvf5Q"/>
+              <semanticModel xsi:type="org.eclipse.epf.uma:SimpleSemanticModelElement" xmi:id="_QYBd3cACEdqR3ZodHcvf5Q" guid="_QYBd3cACEdqR3ZodHcvf5Q" typeInfo="decision node"/>
+            </contained>
+            <contained xsi:type="org.eclipse.epf.uma:GraphNode" xmi:id="_QYBeBMACEdqR3ZodHcvf5Q" name="Add Free Text" guid="_QYBeBMACEdqR3ZodHcvf5Q" briefDescription="_E8k2xL_0EdqR3ZodHcvf5Q">
+              <property xmi:id="_QYBeBcACEdqR3ZodHcvf5Q" guid="_QYBeBcACEdqR3ZodHcvf5Q" key="free text" value="[Begin iteration]"/>
+              <property xmi:id="_QYBeBsACEdqR3ZodHcvf5Q" guid="_QYBeBsACEdqR3ZodHcvf5Q" key="property_font_name" value="Arial"/>
+              <property xmi:id="_QYBeB8ACEdqR3ZodHcvf5Q" guid="_QYBeB8ACEdqR3ZodHcvf5Q" key="property_font_style" value="0"/>
+              <property xmi:id="_QYBeCMACEdqR3ZodHcvf5Q" guid="_QYBeCMACEdqR3ZodHcvf5Q" key="property_font_height" value="8"/>
+              <property xmi:id="_QYBeCcACEdqR3ZodHcvf5Q" guid="_QYBeCcACEdqR3ZodHcvf5Q" key="property_font_red" value="0"/>
+              <property xmi:id="_QYBeCsACEdqR3ZodHcvf5Q" guid="_QYBeCsACEdqR3ZodHcvf5Q" key="property_font_blue" value="0"/>
+              <property xmi:id="_QYBeC8ACEdqR3ZodHcvf5Q" guid="_QYBeC8ACEdqR3ZodHcvf5Q" key="property_font_green" value="0"/>
+              <semanticModel xsi:type="org.eclipse.epf.uma:SimpleSemanticModelElement" xmi:id="_QYBeDcACEdqR3ZodHcvf5Q" guid="_QYBeDcACEdqR3ZodHcvf5Q" typeInfo="free text"/>
+            </contained>
+            <contained xsi:type="org.eclipse.epf.uma:GraphNode" xmi:id="_QYBeD8ACEdqR3ZodHcvf5Q" name="Add Free Text" guid="_QYBeD8ACEdqR3ZodHcvf5Q" briefDescription="_E8k2z7_0EdqR3ZodHcvf5Q">
+              <property xmi:id="_QYBeEMACEdqR3ZodHcvf5Q" guid="_QYBeEMACEdqR3ZodHcvf5Q" key="free text" value="[End iteration]"/>
+              <property xmi:id="_QYBeEcACEdqR3ZodHcvf5Q" guid="_QYBeEcACEdqR3ZodHcvf5Q" key="property_font_name" value="Arial"/>
+              <property xmi:id="_QYBeEsACEdqR3ZodHcvf5Q" guid="_QYBeEsACEdqR3ZodHcvf5Q" key="property_font_style" value="0"/>
+              <property xmi:id="_QYBeE8ACEdqR3ZodHcvf5Q" guid="_QYBeE8ACEdqR3ZodHcvf5Q" key="property_font_height" value="8"/>
+              <property xmi:id="_QYBeFMACEdqR3ZodHcvf5Q" guid="_QYBeFMACEdqR3ZodHcvf5Q" key="property_font_red" value="0"/>
+              <property xmi:id="_QYBeFcACEdqR3ZodHcvf5Q" guid="_QYBeFcACEdqR3ZodHcvf5Q" key="property_font_blue" value="0"/>
+              <property xmi:id="_QYBeFsACEdqR3ZodHcvf5Q" guid="_QYBeFsACEdqR3ZodHcvf5Q" key="property_font_green" value="0"/>
+              <semanticModel xsi:type="org.eclipse.epf.uma:SimpleSemanticModelElement" xmi:id="_QYBeGMACEdqR3ZodHcvf5Q" guid="_QYBeGMACEdqR3ZodHcvf5Q" typeInfo="free text"/>
+            </contained>
+            <semanticModel xsi:type="org.eclipse.epf.uma:UMASemanticModelBridge" xmi:id="_plSLe0y5Edqt_5DlNfFHiQ" guid="_plSLe0y5Edqt_5DlNfFHiQ" presentation="Workflow" element="_cy8_AUsaEdqchp_cYmfkiA"/>
+          </diagrams>
+        </childPackages>
+        <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_hOyRIEsaEdqchp_cYmfkiA" name="plan_entire_project" guid="_hOyRIEsaEdqchp_cYmfkiA">
+          <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_hOyRIUsaEdqchp_cYmfkiA" name="plan_entire_project" guid="_hOyRIUsaEdqchp_cYmfkiA" briefDescription="This covers general planning for the release. It does not include detailed planning for product testing (the evaluation mission)." presentedAfter="_cy8_AUsaEdqchp_cYmfkiA" superActivities="_vChNREJHEdq4z9xc-r201w" linkToPredecessor="_3a9tgEscEdqchp_cYmfkiA" variabilityType="localContribution">
+            <presentation xmi:id="-eB80YyW_45Ff-NlYyvmNHQ" href="uma://-cGyE_FsEx-KUvmJXPg1Wrw#-eB80YyW_45Ff-NlYyvmNHQ"/>
+            <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:Activity" href="uma://_pV4NgCFsEdqrX8YVzvtlIg#_93TqMCFsEdqrX8YVzvtlIg"/>
+          </processElements>
+          <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_3a9tgEscEdqchp_cYmfkiA" guid="_3a9tgEscEdqchp_cYmfkiA">
+            <pred xsi:type="org.eclipse.epf.uma:Activity" href="uma://_pV4NgCFsEdqrX8YVzvtlIg#_48CqECFsEdqrX8YVzvtlIg"/>
+          </processElements>
+        </childPackages>
+        <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_vChNREJHEdq4z9xc-r201w" name="elaboration_iteration" guid="_vChNREJHEdq4z9xc-r201w" presentationName="Elaboration Iteration [n]" briefDescription="This iteration includes the activities to be performed during an iteration in the Elaboration Phase. The goal of the elaboration phase is to baseline the architecture of the system to provide a stable basis for the bulk of the design and implementation effort in the construction phase. The architecture evolves out of a consideration of the most significant requirements (those that have a great impact on the architecture of the system) and an assessment of risk. The stability of the architecture is evaluated through one or more architectural prototypes. " superActivities="_vChNQkJHEdq4z9xc-r201w" isRepeatable="true" variabilityType="extends" breakdownElements="_cy8_AUsaEdqchp_cYmfkiA _hOyRIUsaEdqchp_cYmfkiA">
+          <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:CapabilityPattern" href="uma://_pV4NgCFsEdqrX8YVzvtlIg#_pV4NgSFsEdqrX8YVzvtlIg"/>
+        </processElements>
+      </childPackages>
+      <processElements xsi:type="org.eclipse.epf.uma:Phase" xmi:id="_vChNQkJHEdq4z9xc-r201w" name="Elaboration" guid="_vChNQkJHEdq4z9xc-r201w" presentationName="Elaboration" briefDescription="The goal of the elaboration phase is to baseline the architecture of the system to provide a stable basis for the bulk of the design and implementation effort in the construction phase. The architecture evolves out of a consideration of the most significant requirements (those that have a great impact on the architecture of the system) and an assessment of risk. The stability of the architecture is evaluated through one or more architectural prototypes. " superActivities="_vCtak0JHEdq4z9xc-r201w" linkToPredecessor="_t4CgsEmmEdqo-aQWadhKdQ" breakdownElements="_vChNREJHEdq4z9xc-r201w _vChNRUJHEdq4z9xc-r201w"/>
+      <processElements xsi:type="org.eclipse.epf.uma:Milestone" xmi:id="_vChNRUJHEdq4z9xc-r201w" name="Elaboration Milestone" guid="_vChNRUJHEdq4z9xc-r201w" presentationName="Lifecycle Architecture Milestone" briefDescription="At the end of the elaboration phase is the second important project milestone, the Lifecycle Architecture Milestone. At this point, you examine the detailed system objectives and scope, the choice of architecture, and the resolution of the major risks." superActivities="_vChNQkJHEdq4z9xc-r201w" linkToPredecessor="_1lIvQEmmEdqo-aQWadhKdQ">
+        <presentation xmi:id="-L-vAP5GuMsTPTkwMbRiQWw" href="uma://-cGyE_FsEx-KUvmJXPg1Wrw#-L-vAP5GuMsTPTkwMbRiQWw"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_t4CgsEmmEdqo-aQWadhKdQ" guid="_t4CgsEmmEdqo-aQWadhKdQ" pred="_vChNR0JHEdq4z9xc-r201w"/>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_1lIvQEmmEdqo-aQWadhKdQ" guid="_1lIvQEmmEdqo-aQWadhKdQ" pred="_vChNREJHEdq4z9xc-r201w"/>
+    </childPackages>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_vCtaiUJHEdq4z9xc-r201w" name="Construction" guid="_vCtaiUJHEdq4z9xc-r201w">
+      <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_vCtaikJHEdq4z9xc-r201w" name="construction_iteration" guid="_vCtaikJHEdq4z9xc-r201w">
+        <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_XIC1MEsbEdqchp_cYmfkiA" name="ongoing_management_and_support" guid="_XIC1MEsbEdqchp_cYmfkiA">
+          <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_XIC1MUsbEdqchp_cYmfkiA" name="ongoing_management_and_support" guid="_XIC1MUsbEdqchp_cYmfkiA" briefDescription="This covers the various management and support activities that are repeated on an ongoing basis throughout the project." superActivities="_vCtai0JHEdq4z9xc-r201w" isOngoing="true" linkToPredecessor="_3a9tgUscEdqchp_cYmfkiA" variabilityType="localContribution">
+            <presentation xmi:id="-kmaaoig10Jrr7Zy-sVJQqg" href="uma://-cGyE_FsEx-KUvmJXPg1Wrw#-kmaaoig10Jrr7Zy-sVJQqg"/>
+            <presentedAfter xsi:type="org.eclipse.epf.uma:Activity" href="uma://_gMrD8CGFEdqMcovRzkCQow#_J1u8gCGYEdqMcovRzkCQow"/>
+            <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:Activity" href="uma://_gMrD8CGFEdqMcovRzkCQow#_gShAwDHtEdqLw-lQEI8RPw"/>
+          </processElements>
+          <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_3a9tgUscEdqchp_cYmfkiA" guid="_3a9tgUscEdqchp_cYmfkiA">
+            <pred xsi:type="org.eclipse.epf.uma:Activity" href="uma://_gMrD8CGFEdqMcovRzkCQow#_wsn9UCGHEdqMcovRzkCQow"/>
+          </processElements>
+          <diagrams xmi:id="_uQZOsEy5Edqt_5DlNfFHiQ" guid="_uQZOsEy5Edqt_5DlNfFHiQ">
+            <contained xsi:type="org.eclipse.epf.uma:GraphNode" xmi:id="_p_bVEMACEdqR3ZodHcvf5Q" guid="_p_bVEMACEdqR3ZodHcvf5Q">
+              <contained xsi:type="org.eclipse.epf.uma:GraphEdge" xmi:id="_p_bVEsACEdqR3ZodHcvf5Q" guid="_p_bVEsACEdqR3ZodHcvf5Q" anchor="_p_bVFMACEdqR3ZodHcvf5Q _p_bVeMACEdqR3ZodHcvf5Q"/>
+              <anchorage xmi:id="_p_bVE8ACEdqR3ZodHcvf5Q" guid="_p_bVE8ACEdqR3ZodHcvf5Q" graphEdge="_p_bVWcACEdqR3ZodHcvf5Q"/>
+              <anchorage xmi:id="_p_bVFMACEdqR3ZodHcvf5Q" guid="_p_bVFMACEdqR3ZodHcvf5Q" graphEdge="_p_bVEsACEdqR3ZodHcvf5Q"/>
+              <semanticModel xsi:type="org.eclipse.epf.uma:UMASemanticModelBridge" xmi:id="_p_bVFsACEdqR3ZodHcvf5Q" guid="_p_bVFsACEdqR3ZodHcvf5Q">
+                <element xsi:type="org.eclipse.epf.uma:Activity" href="uma://_MiAAUCJaEdqQipbmJ0SDbw#_foD1wCJbEdqQipbmJ0SDbw"/>
+              </semanticModel>
+            </contained>
+            <contained xsi:type="org.eclipse.epf.uma:GraphNode" xmi:id="_p_bVGMACEdqR3ZodHcvf5Q" guid="_p_bVGMACEdqR3ZodHcvf5Q">
+              <contained xsi:type="org.eclipse.epf.uma:GraphEdge" xmi:id="_p_bVGsACEdqR3ZodHcvf5Q" guid="_p_bVGsACEdqR3ZodHcvf5Q" anchor="_p_bVHMACEdqR3ZodHcvf5Q _p_bVkMACEdqR3ZodHcvf5Q"/>
+              <anchorage xmi:id="_p_bVG8ACEdqR3ZodHcvf5Q" guid="_p_bVG8ACEdqR3ZodHcvf5Q" graphEdge="_p_bVWsACEdqR3ZodHcvf5Q"/>
+              <anchorage xmi:id="_p_bVHMACEdqR3ZodHcvf5Q" guid="_p_bVHMACEdqR3ZodHcvf5Q" graphEdge="_p_bVGsACEdqR3ZodHcvf5Q"/>
+              <semanticModel xsi:type="org.eclipse.epf.uma:UMASemanticModelBridge" xmi:id="_p_bVHsACEdqR3ZodHcvf5Q" guid="_p_bVHsACEdqR3ZodHcvf5Q">
+                <element xsi:type="org.eclipse.epf.uma:Activity" href="uma://_MiAAUCJaEdqQipbmJ0SDbw#_hpF5YCJbEdqQipbmJ0SDbw"/>
+              </semanticModel>
+            </contained>
+            <contained xsi:type="org.eclipse.epf.uma:GraphNode" xmi:id="_p_bVIMACEdqR3ZodHcvf5Q" guid="_p_bVIMACEdqR3ZodHcvf5Q">
+              <contained xsi:type="org.eclipse.epf.uma:GraphEdge" xmi:id="_p_bVIsACEdqR3ZodHcvf5Q" guid="_p_bVIsACEdqR3ZodHcvf5Q" anchor="_p_bVI8ACEdqR3ZodHcvf5Q _p_bVesACEdqR3ZodHcvf5Q"/>
+              <anchorage xmi:id="_p_bVI8ACEdqR3ZodHcvf5Q" guid="_p_bVI8ACEdqR3ZodHcvf5Q" graphEdge="_p_bVIsACEdqR3ZodHcvf5Q"/>
+              <anchorage xmi:id="_p_bVJcACEdqR3ZodHcvf5Q" guid="_p_bVJcACEdqR3ZodHcvf5Q" graphEdge="_p_bVx8ACEdqR3ZodHcvf5Q"/>
+              <semanticModel xsi:type="org.eclipse.epf.uma:UMASemanticModelBridge" xmi:id="_p_bVJsACEdqR3ZodHcvf5Q" guid="_p_bVJsACEdqR3ZodHcvf5Q">
+                <element xsi:type="org.eclipse.epf.uma:Activity" href="uma://_MiAAUCJaEdqQipbmJ0SDbw#_kcnw8CJbEdqQipbmJ0SDbw"/>
+              </semanticModel>
+            </contained>
+            <contained xsi:type="org.eclipse.epf.uma:GraphNode" xmi:id="_p_bVKMACEdqR3ZodHcvf5Q" guid="_p_bVKMACEdqR3ZodHcvf5Q">
+              <contained xsi:type="org.eclipse.epf.uma:GraphEdge" xmi:id="_p_bVKsACEdqR3ZodHcvf5Q" guid="_p_bVKsACEdqR3ZodHcvf5Q" anchor="_p_bVK8ACEdqR3ZodHcvf5Q _p_bVfMACEdqR3ZodHcvf5Q"/>
+              <anchorage xmi:id="_p_bVK8ACEdqR3ZodHcvf5Q" guid="_p_bVK8ACEdqR3ZodHcvf5Q" graphEdge="_p_bVKsACEdqR3ZodHcvf5Q"/>
+              <anchorage xmi:id="_p_bVLcACEdqR3ZodHcvf5Q" guid="_p_bVLcACEdqR3ZodHcvf5Q" graphEdge="_p_bV1MACEdqR3ZodHcvf5Q"/>
+              <semanticModel xsi:type="org.eclipse.epf.uma:UMASemanticModelBridge" xmi:id="_p_bVLsACEdqR3ZodHcvf5Q" guid="_p_bVLsACEdqR3ZodHcvf5Q">
+                <element xsi:type="org.eclipse.epf.uma:Activity" href="uma://_MiAAUCJaEdqQipbmJ0SDbw#_lxX9YCJbEdqQipbmJ0SDbw"/>
+              </semanticModel>
+            </contained>
+            <contained xsi:type="org.eclipse.epf.uma:GraphNode" xmi:id="_p_bVMMACEdqR3ZodHcvf5Q" guid="_p_bVMMACEdqR3ZodHcvf5Q">
+              <contained xsi:type="org.eclipse.epf.uma:GraphEdge" xmi:id="_p_bVMsACEdqR3ZodHcvf5Q" guid="_p_bVMsACEdqR3ZodHcvf5Q" anchor="_p_bVNMACEdqR3ZodHcvf5Q _p_bVfsACEdqR3ZodHcvf5Q"/>
+              <anchorage xmi:id="_p_bVM8ACEdqR3ZodHcvf5Q" guid="_p_bVM8ACEdqR3ZodHcvf5Q" graphEdge="_p_bVW8ACEdqR3ZodHcvf5Q"/>
+              <anchorage xmi:id="_p_bVNMACEdqR3ZodHcvf5Q" guid="_p_bVNMACEdqR3ZodHcvf5Q" graphEdge="_p_bVMsACEdqR3ZodHcvf5Q"/>
+              <semanticModel xsi:type="org.eclipse.epf.uma:UMASemanticModelBridge" xmi:id="_p_bVNsACEdqR3ZodHcvf5Q" guid="_p_bVNsACEdqR3ZodHcvf5Q">
+                <element xsi:type="org.eclipse.epf.uma:Activity" href="uma://_MiAAUCJaEdqQipbmJ0SDbw#_de6X8CJbEdqQipbmJ0SDbw"/>
+              </semanticModel>
+            </contained>
+            <contained xsi:type="org.eclipse.epf.uma:GraphNode" xmi:id="_p_bVOMACEdqR3ZodHcvf5Q" guid="_p_bVOMACEdqR3ZodHcvf5Q">
+              <contained xsi:type="org.eclipse.epf.uma:GraphEdge" xmi:id="_p_bVOsACEdqR3ZodHcvf5Q" guid="_p_bVOsACEdqR3ZodHcvf5Q" anchor="_p_bVO8ACEdqR3ZodHcvf5Q _p_bVgMACEdqR3ZodHcvf5Q"/>
+              <anchorage xmi:id="_p_bVO8ACEdqR3ZodHcvf5Q" guid="_p_bVO8ACEdqR3ZodHcvf5Q" graphEdge="_p_bVOsACEdqR3ZodHcvf5Q"/>
+              <anchorage xmi:id="_p_bVPcACEdqR3ZodHcvf5Q" guid="_p_bVPcACEdqR3ZodHcvf5Q"/>
+              <semanticModel xsi:type="org.eclipse.epf.uma:UMASemanticModelBridge" xmi:id="_p_bVPsACEdqR3ZodHcvf5Q" guid="_p_bVPsACEdqR3ZodHcvf5Q">
+                <element xsi:type="org.eclipse.epf.uma:Activity" href="uma://_MiAAUCJaEdqQipbmJ0SDbw#_nj3CEDHaEdqLw-lQEI8RPw"/>
+              </semanticModel>
+            </contained>
+            <contained xsi:type="org.eclipse.epf.uma:GraphNode" xmi:id="_p_bVQMACEdqR3ZodHcvf5Q" guid="_p_bVQMACEdqR3ZodHcvf5Q">
+              <contained xsi:type="org.eclipse.epf.uma:GraphEdge" xmi:id="_p_bVQsACEdqR3ZodHcvf5Q" guid="_p_bVQsACEdqR3ZodHcvf5Q" anchor="_p_bVRMACEdqR3ZodHcvf5Q _p_bVisACEdqR3ZodHcvf5Q"/>
+              <anchorage xmi:id="_p_bVQ8ACEdqR3ZodHcvf5Q" guid="_p_bVQ8ACEdqR3ZodHcvf5Q"/>
+              <anchorage xmi:id="_p_bVRMACEdqR3ZodHcvf5Q" guid="_p_bVRMACEdqR3ZodHcvf5Q" graphEdge="_p_bVQsACEdqR3ZodHcvf5Q"/>
+              <semanticModel xsi:type="org.eclipse.epf.uma:UMASemanticModelBridge" xmi:id="_p_bVRsACEdqR3ZodHcvf5Q" guid="_p_bVRsACEdqR3ZodHcvf5Q">
+                <element xsi:type="org.eclipse.epf.uma:Activity" href="uma://_MiAAUCJaEdqQipbmJ0SDbw#_o6SpgDHaEdqLw-lQEI8RPw"/>
+              </semanticModel>
+            </contained>
+            <contained xsi:type="org.eclipse.epf.uma:GraphNode" xmi:id="_p_bVSMACEdqR3ZodHcvf5Q" guid="_p_bVSMACEdqR3ZodHcvf5Q">
+              <contained xsi:type="org.eclipse.epf.uma:GraphEdge" xmi:id="_p_bVSsACEdqR3ZodHcvf5Q" guid="_p_bVSsACEdqR3ZodHcvf5Q" anchor="_p_bVTMACEdqR3ZodHcvf5Q _p_bVjsACEdqR3ZodHcvf5Q"/>
+              <anchorage xmi:id="_p_bVS8ACEdqR3ZodHcvf5Q" guid="_p_bVS8ACEdqR3ZodHcvf5Q" graphEdge="_p_bVYMACEdqR3ZodHcvf5Q"/>
+              <anchorage xmi:id="_p_bVTMACEdqR3ZodHcvf5Q" guid="_p_bVTMACEdqR3ZodHcvf5Q" graphEdge="_p_bVSsACEdqR3ZodHcvf5Q"/>
+              <semanticModel xsi:type="org.eclipse.epf.uma:UMASemanticModelBridge" xmi:id="_p_bVTsACEdqR3ZodHcvf5Q" guid="_p_bVTsACEdqR3ZodHcvf5Q">
+                <element xsi:type="org.eclipse.epf.uma:Activity" href="uma://_MiAAUCJaEdqQipbmJ0SDbw#_qX4o4DHaEdqLw-lQEI8RPw"/>
+              </semanticModel>
+            </contained>
+            <contained xsi:type="org.eclipse.epf.uma:GraphNode" xmi:id="_p_bVUMACEdqR3ZodHcvf5Q" guid="_p_bVUMACEdqR3ZodHcvf5Q" briefDescription="_IEMHQL_0EdqR3ZodHcvf5Q">
+              <contained xsi:type="org.eclipse.epf.uma:GraphEdge" xmi:id="_p_bVUsACEdqR3ZodHcvf5Q" guid="_p_bVUsACEdqR3ZodHcvf5Q" anchor="_p_bVU8ACEdqR3ZodHcvf5Q _p_bVYcACEdqR3ZodHcvf5Q"/>
+              <anchorage xmi:id="_p_bVU8ACEdqR3ZodHcvf5Q" guid="_p_bVU8ACEdqR3ZodHcvf5Q" graphEdge="_p_bVUsACEdqR3ZodHcvf5Q"/>
+              <semanticModel xsi:type="org.eclipse.epf.uma:SimpleSemanticModelElement" xmi:id="_p_bVVcACEdqR3ZodHcvf5Q" guid="_p_bVVcACEdqR3ZodHcvf5Q" typeInfo="start node"/>
+            </contained>
+            <contained xsi:type="org.eclipse.epf.uma:GraphNode" xmi:id="_p_bVV8ACEdqR3ZodHcvf5Q" guid="_p_bVV8ACEdqR3ZodHcvf5Q" briefDescription="_IEMHR7_0EdqR3ZodHcvf5Q">
+              <contained xsi:type="org.eclipse.epf.uma:GraphEdge" xmi:id="_p_bVWcACEdqR3ZodHcvf5Q" guid="_p_bVWcACEdqR3ZodHcvf5Q" anchor="_p_bVY8ACEdqR3ZodHcvf5Q _p_bVE8ACEdqR3ZodHcvf5Q"/>
+              <contained xsi:type="org.eclipse.epf.uma:GraphEdge" xmi:id="_p_bVWsACEdqR3ZodHcvf5Q" guid="_p_bVWsACEdqR3ZodHcvf5Q" anchor="_p_bVZcACEdqR3ZodHcvf5Q _p_bVG8ACEdqR3ZodHcvf5Q"/>
+              <contained xsi:type="org.eclipse.epf.uma:GraphEdge" xmi:id="_p_bVW8ACEdqR3ZodHcvf5Q" guid="_p_bVW8ACEdqR3ZodHcvf5Q" anchor="_p_bVZ8ACEdqR3ZodHcvf5Q _p_bVM8ACEdqR3ZodHcvf5Q"/>
+              <contained xsi:type="org.eclipse.epf.uma:GraphEdge" xmi:id="_p_bVXMACEdqR3ZodHcvf5Q" guid="_p_bVXMACEdqR3ZodHcvf5Q" anchor="_p_bVacACEdqR3ZodHcvf5Q _p_bVysACEdqR3ZodHcvf5Q"/>
+              <contained xsi:type="org.eclipse.epf.uma:GraphEdge" xmi:id="_p_bVXcACEdqR3ZodHcvf5Q" guid="_p_bVXcACEdqR3ZodHcvf5Q" anchor="_p_bVa8ACEdqR3ZodHcvf5Q _p_bV18ACEdqR3ZodHcvf5Q"/>
+              <contained xsi:type="org.eclipse.epf.uma:GraphEdge" xmi:id="_p_bVYMACEdqR3ZodHcvf5Q" guid="_p_bVYMACEdqR3ZodHcvf5Q" anchor="_p_bVccACEdqR3ZodHcvf5Q _p_bVS8ACEdqR3ZodHcvf5Q"/>
+              <anchorage xmi:id="_p_bVYcACEdqR3ZodHcvf5Q" guid="_p_bVYcACEdqR3ZodHcvf5Q" graphEdge="_p_bVUsACEdqR3ZodHcvf5Q"/>
+              <anchorage xmi:id="_p_bVY8ACEdqR3ZodHcvf5Q" guid="_p_bVY8ACEdqR3ZodHcvf5Q" graphEdge="_p_bVWcACEdqR3ZodHcvf5Q"/>
+              <anchorage xmi:id="_p_bVZcACEdqR3ZodHcvf5Q" guid="_p_bVZcACEdqR3ZodHcvf5Q" graphEdge="_p_bVWsACEdqR3ZodHcvf5Q"/>
+              <anchorage xmi:id="_p_bVZ8ACEdqR3ZodHcvf5Q" guid="_p_bVZ8ACEdqR3ZodHcvf5Q" graphEdge="_p_bVW8ACEdqR3ZodHcvf5Q"/>
+              <anchorage xmi:id="_p_bVacACEdqR3ZodHcvf5Q" guid="_p_bVacACEdqR3ZodHcvf5Q" graphEdge="_p_bVXMACEdqR3ZodHcvf5Q"/>
+              <anchorage xmi:id="_p_bVa8ACEdqR3ZodHcvf5Q" guid="_p_bVa8ACEdqR3ZodHcvf5Q" graphEdge="_p_bVXcACEdqR3ZodHcvf5Q"/>
+              <anchorage xmi:id="_p_bVccACEdqR3ZodHcvf5Q" guid="_p_bVccACEdqR3ZodHcvf5Q" graphEdge="_p_bVYMACEdqR3ZodHcvf5Q"/>
+              <semanticModel xsi:type="org.eclipse.epf.uma:SimpleSemanticModelElement" xmi:id="_p_bVc8ACEdqR3ZodHcvf5Q" guid="_p_bVc8ACEdqR3ZodHcvf5Q" typeInfo="synchnonization bar"/>
+            </contained>
+            <contained xsi:type="org.eclipse.epf.uma:GraphNode" xmi:id="_p_bVdcACEdqR3ZodHcvf5Q" guid="_p_bVdcACEdqR3ZodHcvf5Q" briefDescription="_IEMHZb_0EdqR3ZodHcvf5Q">
+              <contained xsi:type="org.eclipse.epf.uma:GraphEdge" xmi:id="_p_bVd8ACEdqR3ZodHcvf5Q" guid="_p_bVd8ACEdqR3ZodHcvf5Q" anchor="_p_bVgsACEdqR3ZodHcvf5Q _p_bVlsACEdqR3ZodHcvf5Q"/>
+              <anchorage xmi:id="_p_bVeMACEdqR3ZodHcvf5Q" guid="_p_bVeMACEdqR3ZodHcvf5Q" graphEdge="_p_bVEsACEdqR3ZodHcvf5Q"/>
+              <anchorage xmi:id="_p_bVesACEdqR3ZodHcvf5Q" guid="_p_bVesACEdqR3ZodHcvf5Q" graphEdge="_p_bVIsACEdqR3ZodHcvf5Q"/>
+              <anchorage xmi:id="_p_bVfMACEdqR3ZodHcvf5Q" guid="_p_bVfMACEdqR3ZodHcvf5Q" graphEdge="_p_bVKsACEdqR3ZodHcvf5Q"/>
+              <anchorage xmi:id="_p_bVfsACEdqR3ZodHcvf5Q" guid="_p_bVfsACEdqR3ZodHcvf5Q" graphEdge="_p_bVMsACEdqR3ZodHcvf5Q"/>
+              <anchorage xmi:id="_p_bVgMACEdqR3ZodHcvf5Q" guid="_p_bVgMACEdqR3ZodHcvf5Q" graphEdge="_p_bVOsACEdqR3ZodHcvf5Q"/>
+              <anchorage xmi:id="_p_bVgsACEdqR3ZodHcvf5Q" guid="_p_bVgsACEdqR3ZodHcvf5Q" graphEdge="_p_bVd8ACEdqR3ZodHcvf5Q"/>
+              <anchorage xmi:id="_p_bVhMACEdqR3ZodHcvf5Q" guid="_p_bVhMACEdqR3ZodHcvf5Q" graphEdge="_p_bVyMACEdqR3ZodHcvf5Q"/>
+              <anchorage xmi:id="_p_bVhsACEdqR3ZodHcvf5Q" guid="_p_bVhsACEdqR3ZodHcvf5Q" graphEdge="_p_bV1cACEdqR3ZodHcvf5Q"/>
+              <anchorage xmi:id="_p_bVisACEdqR3ZodHcvf5Q" guid="_p_bVisACEdqR3ZodHcvf5Q" graphEdge="_p_bVQsACEdqR3ZodHcvf5Q"/>
+              <anchorage xmi:id="_p_bVjsACEdqR3ZodHcvf5Q" guid="_p_bVjsACEdqR3ZodHcvf5Q" graphEdge="_p_bVSsACEdqR3ZodHcvf5Q"/>
+              <anchorage xmi:id="_p_bVkMACEdqR3ZodHcvf5Q" guid="_p_bVkMACEdqR3ZodHcvf5Q" graphEdge="_p_bVGsACEdqR3ZodHcvf5Q"/>
+              <semanticModel xsi:type="org.eclipse.epf.uma:SimpleSemanticModelElement" xmi:id="_p_bVksACEdqR3ZodHcvf5Q" guid="_p_bVksACEdqR3ZodHcvf5Q" typeInfo="synchnonization bar"/>
+            </contained>
+            <contained xsi:type="org.eclipse.epf.uma:GraphNode" xmi:id="_p_bVlMACEdqR3ZodHcvf5Q" guid="_p_bVlMACEdqR3ZodHcvf5Q" briefDescription="_IEMHhL_0EdqR3ZodHcvf5Q">
+              <anchorage xmi:id="_p_bVlsACEdqR3ZodHcvf5Q" guid="_p_bVlsACEdqR3ZodHcvf5Q" graphEdge="_p_bVd8ACEdqR3ZodHcvf5Q"/>
+              <semanticModel xsi:type="org.eclipse.epf.uma:SimpleSemanticModelElement" xmi:id="_p_bVl8ACEdqR3ZodHcvf5Q" guid="_p_bVl8ACEdqR3ZodHcvf5Q" typeInfo="end node"/>
+            </contained>
+            <contained xsi:type="org.eclipse.epf.uma:GraphNode" xmi:id="_p_bVmcACEdqR3ZodHcvf5Q" name="Add Free Text" guid="_p_bVmcACEdqR3ZodHcvf5Q" briefDescription="_IEMHib_0EdqR3ZodHcvf5Q">
+              <property xmi:id="_p_bVmsACEdqR3ZodHcvf5Q" guid="_p_bVmsACEdqR3ZodHcvf5Q" key="free text" value="[Requirements change]"/>
+              <property xmi:id="_p_bVm8ACEdqR3ZodHcvf5Q" guid="_p_bVm8ACEdqR3ZodHcvf5Q" key="property_font_name" value="Arial"/>
+              <property xmi:id="_p_bVnMACEdqR3ZodHcvf5Q" guid="_p_bVnMACEdqR3ZodHcvf5Q" key="property_font_style" value="0"/>
+              <property xmi:id="_p_bVncACEdqR3ZodHcvf5Q" guid="_p_bVncACEdqR3ZodHcvf5Q" key="property_font_height" value="8"/>
+              <property xmi:id="_p_bVnsACEdqR3ZodHcvf5Q" guid="_p_bVnsACEdqR3ZodHcvf5Q" key="property_font_red" value="0"/>
+              <property xmi:id="_p_bVn8ACEdqR3ZodHcvf5Q" guid="_p_bVn8ACEdqR3ZodHcvf5Q" key="property_font_blue" value="0"/>
+              <property xmi:id="_p_bVoMACEdqR3ZodHcvf5Q" guid="_p_bVoMACEdqR3ZodHcvf5Q" key="property_font_green" value="0"/>
+              <semanticModel xsi:type="org.eclipse.epf.uma:SimpleSemanticModelElement" xmi:id="_p_bVosACEdqR3ZodHcvf5Q" guid="_p_bVosACEdqR3ZodHcvf5Q" typeInfo="free text"/>
+            </contained>
+            <contained xsi:type="org.eclipse.epf.uma:GraphNode" xmi:id="_p_bVpMACEdqR3ZodHcvf5Q" name="Add Free Text" guid="_p_bVpMACEdqR3ZodHcvf5Q" briefDescription="_IEMHlL_0EdqR3ZodHcvf5Q">
+              <property xmi:id="_p_bVpcACEdqR3ZodHcvf5Q" guid="_p_bVpcACEdqR3ZodHcvf5Q" key="free text" value="[Change Request]"/>
+              <property xmi:id="_p_bVpsACEdqR3ZodHcvf5Q" guid="_p_bVpsACEdqR3ZodHcvf5Q" key="property_font_name" value="Arial"/>
+              <property xmi:id="_p_bVp8ACEdqR3ZodHcvf5Q" guid="_p_bVp8ACEdqR3ZodHcvf5Q" key="property_font_style" value="0"/>
+              <property xmi:id="_p_bVqMACEdqR3ZodHcvf5Q" guid="_p_bVqMACEdqR3ZodHcvf5Q" key="property_font_height" value="8"/>
+              <property xmi:id="_p_bVqcACEdqR3ZodHcvf5Q" guid="_p_bVqcACEdqR3ZodHcvf5Q" key="property_font_red" value="0"/>
+              <property xmi:id="_p_bVqsACEdqR3ZodHcvf5Q" guid="_p_bVqsACEdqR3ZodHcvf5Q" key="property_font_blue" value="0"/>
+              <property xmi:id="_p_bVq8ACEdqR3ZodHcvf5Q" guid="_p_bVq8ACEdqR3ZodHcvf5Q" key="property_font_green" value="0"/>
+              <semanticModel xsi:type="org.eclipse.epf.uma:SimpleSemanticModelElement" xmi:id="_p_bVrcACEdqR3ZodHcvf5Q" guid="_p_bVrcACEdqR3ZodHcvf5Q" typeInfo="free text"/>
+            </contained>
+            <contained xsi:type="org.eclipse.epf.uma:GraphNode" xmi:id="_p_bVxcACEdqR3ZodHcvf5Q" guid="_p_bVxcACEdqR3ZodHcvf5Q" briefDescription="_IEMHtb_0EdqR3ZodHcvf5Q">
+              <contained xsi:type="org.eclipse.epf.uma:GraphEdge" xmi:id="_p_bVx8ACEdqR3ZodHcvf5Q" guid="_p_bVx8ACEdqR3ZodHcvf5Q" anchor="_p_bVzMACEdqR3ZodHcvf5Q _p_bVJcACEdqR3ZodHcvf5Q"/>
+              <contained xsi:type="org.eclipse.epf.uma:GraphEdge" xmi:id="_p_bVyMACEdqR3ZodHcvf5Q" guid="_p_bVyMACEdqR3ZodHcvf5Q" anchor="_p_bVzsACEdqR3ZodHcvf5Q _p_bVhMACEdqR3ZodHcvf5Q">
+                <waypoints xmi:id="_p_bVycACEdqR3ZodHcvf5Q" x="303.0" y="181.0"/>
+              </contained>
+              <anchorage xmi:id="_p_bVysACEdqR3ZodHcvf5Q" guid="_p_bVysACEdqR3ZodHcvf5Q" graphEdge="_p_bVXMACEdqR3ZodHcvf5Q"/>
+              <anchorage xmi:id="_p_bVzMACEdqR3ZodHcvf5Q" guid="_p_bVzMACEdqR3ZodHcvf5Q" graphEdge="_p_bVx8ACEdqR3ZodHcvf5Q"/>
+              <anchorage xmi:id="_p_bVzsACEdqR3ZodHcvf5Q" guid="_p_bVzsACEdqR3ZodHcvf5Q" graphEdge="_p_bVyMACEdqR3ZodHcvf5Q"/>
+              <semanticModel xsi:type="org.eclipse.epf.uma:SimpleSemanticModelElement" xmi:id="_p_bV0MACEdqR3ZodHcvf5Q" guid="_p_bV0MACEdqR3ZodHcvf5Q" typeInfo="decision node"/>
+            </contained>
+            <contained xsi:type="org.eclipse.epf.uma:GraphNode" xmi:id="_p_bV0sACEdqR3ZodHcvf5Q" guid="_p_bV0sACEdqR3ZodHcvf5Q" briefDescription="_IEMHwr_0EdqR3ZodHcvf5Q">
+              <contained xsi:type="org.eclipse.epf.uma:GraphEdge" xmi:id="_p_bV1MACEdqR3ZodHcvf5Q" guid="_p_bV1MACEdqR3ZodHcvf5Q" anchor="_p_bV2cACEdqR3ZodHcvf5Q _p_bVLcACEdqR3ZodHcvf5Q"/>
+              <contained xsi:type="org.eclipse.epf.uma:GraphEdge" xmi:id="_p_bV1cACEdqR3ZodHcvf5Q" guid="_p_bV1cACEdqR3ZodHcvf5Q" anchor="_p_bV28ACEdqR3ZodHcvf5Q _p_bVhsACEdqR3ZodHcvf5Q">
+                <waypoints xmi:id="_p_bV1sACEdqR3ZodHcvf5Q" x="430.0" y="237.0"/>
+              </contained>
+              <anchorage xmi:id="_p_bV18ACEdqR3ZodHcvf5Q" guid="_p_bV18ACEdqR3ZodHcvf5Q" graphEdge="_p_bVXcACEdqR3ZodHcvf5Q"/>
+              <anchorage xmi:id="_p_bV2cACEdqR3ZodHcvf5Q" guid="_p_bV2cACEdqR3ZodHcvf5Q" graphEdge="_p_bV1MACEdqR3ZodHcvf5Q"/>
+              <anchorage xmi:id="_p_bV28ACEdqR3ZodHcvf5Q" guid="_p_bV28ACEdqR3ZodHcvf5Q" graphEdge="_p_bV1cACEdqR3ZodHcvf5Q"/>
+              <semanticModel xsi:type="org.eclipse.epf.uma:SimpleSemanticModelElement" xmi:id="_p_bV3cACEdqR3ZodHcvf5Q" guid="_p_bV3cACEdqR3ZodHcvf5Q" typeInfo="decision node"/>
+            </contained>
+            <contained xsi:type="org.eclipse.epf.uma:GraphNode" xmi:id="_p_bWBMACEdqR3ZodHcvf5Q" name="Add Free Text" guid="_p_bWBMACEdqR3ZodHcvf5Q" briefDescription="_IEMH9L_0EdqR3ZodHcvf5Q">
+              <property xmi:id="_p_bWBcACEdqR3ZodHcvf5Q" guid="_p_bWBcACEdqR3ZodHcvf5Q" key="free text" value="[Begin iteration]"/>
+              <property xmi:id="_p_bWBsACEdqR3ZodHcvf5Q" guid="_p_bWBsACEdqR3ZodHcvf5Q" key="property_font_name" value="Arial"/>
+              <property xmi:id="_p_bWB8ACEdqR3ZodHcvf5Q" guid="_p_bWB8ACEdqR3ZodHcvf5Q" key="property_font_style" value="0"/>
+              <property xmi:id="_p_bWCMACEdqR3ZodHcvf5Q" guid="_p_bWCMACEdqR3ZodHcvf5Q" key="property_font_height" value="8"/>
+              <property xmi:id="_p_bWCcACEdqR3ZodHcvf5Q" guid="_p_bWCcACEdqR3ZodHcvf5Q" key="property_font_red" value="0"/>
+              <property xmi:id="_p_bWCsACEdqR3ZodHcvf5Q" guid="_p_bWCsACEdqR3ZodHcvf5Q" key="property_font_blue" value="0"/>
+              <property xmi:id="_p_bWC8ACEdqR3ZodHcvf5Q" guid="_p_bWC8ACEdqR3ZodHcvf5Q" key="property_font_green" value="0"/>
+              <semanticModel xsi:type="org.eclipse.epf.uma:SimpleSemanticModelElement" xmi:id="_p_bWDcACEdqR3ZodHcvf5Q" guid="_p_bWDcACEdqR3ZodHcvf5Q" typeInfo="free text"/>
+            </contained>
+            <contained xsi:type="org.eclipse.epf.uma:GraphNode" xmi:id="_p_bWD8ACEdqR3ZodHcvf5Q" name="Add Free Text" guid="_p_bWD8ACEdqR3ZodHcvf5Q" briefDescription="_IEMH_7_0EdqR3ZodHcvf5Q">
+              <property xmi:id="_p_bWEMACEdqR3ZodHcvf5Q" guid="_p_bWEMACEdqR3ZodHcvf5Q" key="free text" value="[End iteration]"/>
+              <property xmi:id="_p_bWEcACEdqR3ZodHcvf5Q" guid="_p_bWEcACEdqR3ZodHcvf5Q" key="property_font_name" value="Arial"/>
+              <property xmi:id="_p_bWEsACEdqR3ZodHcvf5Q" guid="_p_bWEsACEdqR3ZodHcvf5Q" key="property_font_style" value="0"/>
+              <property xmi:id="_p_bWE8ACEdqR3ZodHcvf5Q" guid="_p_bWE8ACEdqR3ZodHcvf5Q" key="property_font_height" value="8"/>
+              <property xmi:id="_p_bWFMACEdqR3ZodHcvf5Q" guid="_p_bWFMACEdqR3ZodHcvf5Q" key="property_font_red" value="0"/>
+              <property xmi:id="_p_bWFcACEdqR3ZodHcvf5Q" guid="_p_bWFcACEdqR3ZodHcvf5Q" key="property_font_blue" value="0"/>
+              <property xmi:id="_p_bWFsACEdqR3ZodHcvf5Q" guid="_p_bWFsACEdqR3ZodHcvf5Q" key="property_font_green" value="0"/>
+              <semanticModel xsi:type="org.eclipse.epf.uma:SimpleSemanticModelElement" xmi:id="_p_bWGMACEdqR3ZodHcvf5Q" guid="_p_bWGMACEdqR3ZodHcvf5Q" typeInfo="free text"/>
+            </contained>
+            <semanticModel xsi:type="org.eclipse.epf.uma:UMASemanticModelBridge" xmi:id="_uQfWR0y5Edqt_5DlNfFHiQ" guid="_uQfWR0y5Edqt_5DlNfFHiQ" presentation="Workflow" element="_XIC1MUsbEdqchp_cYmfkiA"/>
+          </diagrams>
+        </childPackages>
+        <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_vCtai0JHEdq4z9xc-r201w" name="construction_iteration" guid="_vCtai0JHEdq4z9xc-r201w" presentationName="Construction Iteration [n]" briefDescription="This iteration includes the activities to be performed during an iteration in the Construction Phase. The goal of the construction phase is clarifying the remaining requirements and completing the development of the system based upon the baselined architecture. The construction phase is in some sense a manufacturing process, where emphasis is placed on managing resources and controlling operations to optimize costs, schedules, and quality. In this sense the management mindset undergoes a transition from the development of intellectual property during inception and elaboration, to the development of deployable products during construction and transition. " superActivities="_vCtajUJHEdq4z9xc-r201w" isRepeatable="true" variabilityType="extends" breakdownElements="_XIC1MUsbEdqchp_cYmfkiA">
+          <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:CapabilityPattern" href="uma://_gMrD8CGFEdqMcovRzkCQow#_gM9X0CGFEdqMcovRzkCQow"/>
+        </processElements>
+      </childPackages>
+      <processElements xsi:type="org.eclipse.epf.uma:Phase" xmi:id="_vCtajUJHEdq4z9xc-r201w" name="Construction" guid="_vCtajUJHEdq4z9xc-r201w" presentationName="Construction" briefDescription="The goal of the construction phase is clarifying the remaining requirements and completing the development of the system based upon the baselined architecture. The construction phase is in some sense a manufacturing process, where emphasis is placed on managing resources and controlling operations to optimize costs, schedules, and quality. In this sense the management mindset undergoes a transition from the development of intellectual property during inception and elaboration, to the development of deployable products during construction and transition. " superActivities="_vCtak0JHEdq4z9xc-r201w" linkToPredecessor="_uYm3IEmmEdqo-aQWadhKdQ" breakdownElements="_vCtai0JHEdq4z9xc-r201w _vCtajEJHEdq4z9xc-r201w"/>
+      <processElements xsi:type="org.eclipse.epf.uma:Milestone" xmi:id="_vCtajEJHEdq4z9xc-r201w" name="Construction Milestone" guid="_vCtajEJHEdq4z9xc-r201w" presentationName="Initial Operational Capability Milestone" briefDescription="At the Initial Operational Capability Milestone, the product is ready to be handed over to the Transition Team. All functionality has been developed and all alpha testing (if any) has been completed. In addition to the software, a user manual has been developed, and there is a description of the current release. " superActivities="_vCtajUJHEdq4z9xc-r201w" linkToPredecessor="_5LGwYEmmEdqo-aQWadhKdQ">
+        <presentation xmi:id="-ef9LM5PT_zJrm7hlU2P6mg" href="uma://-cGyE_FsEx-KUvmJXPg1Wrw#-ef9LM5PT_zJrm7hlU2P6mg"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_uYm3IEmmEdqo-aQWadhKdQ" guid="_uYm3IEmmEdqo-aQWadhKdQ" pred="_vChNQkJHEdq4z9xc-r201w"/>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_5LGwYEmmEdqo-aQWadhKdQ" guid="_5LGwYEmmEdqo-aQWadhKdQ" pred="_vCtai0JHEdq4z9xc-r201w"/>
+    </childPackages>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_vCtajkJHEdq4z9xc-r201w" name="Transition" guid="_vCtajkJHEdq4z9xc-r201w">
+      <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_vCtakUJHEdq4z9xc-r201w" name="transition_iteration" guid="_vCtakUJHEdq4z9xc-r201w">
+        <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_1OqDcEsbEdqchp_cYmfkiA" name="ongoing_management_and_support" guid="_1OqDcEsbEdqchp_cYmfkiA">
+          <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_1OqDcUsbEdqchp_cYmfkiA" name="ongoing_management_and_support" guid="_1OqDcUsbEdqchp_cYmfkiA" briefDescription="This covers the various management and support activities that are repeated on an ongoing basis throughout the project." presentedAfter="_qGM5wJ5IEdq7s5zuJVEAAw" superActivities="_vCtakkJHEdq4z9xc-r201w" isOngoing="true" linkToPredecessor="_3a9tgkscEdqchp_cYmfkiA" variabilityType="localContribution">
+            <presentation xmi:id="-f1HtPtnevgJGPWTuEWccyA" href="uma://-cGyE_FsEx-KUvmJXPg1Wrw#-f1HtPtnevgJGPWTuEWccyA"/>
+            <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:Activity" href="uma://_zUDkgCGFEdqMcovRzkCQow#_bE7sIDHuEdqLw-lQEI8RPw"/>
+          </processElements>
+          <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_3a9tgkscEdqchp_cYmfkiA" guid="_3a9tgkscEdqchp_cYmfkiA">
+            <pred xsi:type="org.eclipse.epf.uma:Activity" href="uma://_zUDkgCGFEdqMcovRzkCQow#_5Lc7ECGYEdqMcovRzkCQow"/>
+          </processElements>
+        </childPackages>
+        <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_qGGzIJ5IEdq7s5zuJVEAAw" name="implement_components" guid="_qGGzIJ5IEdq7s5zuJVEAAw">
+          <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_qGM5wJ5IEdq7s5zuJVEAAw" name="implement_components" guid="_qGM5wJ5IEdq7s5zuJVEAAw" presentedAfter="_rw4S4Z5IEdq7s5zuJVEAAw" superActivities="_vCtakkJHEdq4z9xc-r201w" linkToPredecessor="_HY0p0J5KEdq7s5zuJVEAAw" variabilityType="localContribution">
+            <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:Activity" href="uma://_zUDkgCGFEdqMcovRzkCQow#_B3B94EdmEdqVZeSWHJlGyA"/>
+          </processElements>
+          <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_HY0p0J5KEdq7s5zuJVEAAw" guid="_HY0p0J5KEdq7s5zuJVEAAw">
+            <pred xsi:type="org.eclipse.epf.uma:Activity" href="uma://_zUDkgCGFEdqMcovRzkCQow#_5Lc7ECGYEdqMcovRzkCQow"/>
+          </processElements>
+        </childPackages>
+        <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_rw4S4J5IEdq7s5zuJVEAAw" name="develop_components_within_scope_1" guid="_rw4S4J5IEdq7s5zuJVEAAw">
+          <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_rw4S4Z5IEdq7s5zuJVEAAw" name="develop_components_within_scope_1" guid="_rw4S4Z5IEdq7s5zuJVEAAw" presentedAfter="_sz1ksZ5IEdq7s5zuJVEAAw" superActivities="_vCtakkJHEdq4z9xc-r201w" linkToPredecessor="_HY0p0Z5KEdq7s5zuJVEAAw" variabilityType="localContribution">
+            <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:Activity" href="uma://_zUDkgCGFEdqMcovRzkCQow#_vllcADIKEdqGgPtrSpB0vQ"/>
+          </processElements>
+          <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_HY0p0Z5KEdq7s5zuJVEAAw" guid="_HY0p0Z5KEdq7s5zuJVEAAw">
+            <pred xsi:type="org.eclipse.epf.uma:Activity" href="uma://_zUDkgCGFEdqMcovRzkCQow#_5Lc7ECGYEdqMcovRzkCQow"/>
+          </processElements>
+        </childPackages>
+        <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_sz1ksJ5IEdq7s5zuJVEAAw" name="integrate_and_test" guid="_sz1ksJ5IEdq7s5zuJVEAAw">
+          <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_sz1ksZ5IEdq7s5zuJVEAAw" name="integrate_and_test" guid="_sz1ksZ5IEdq7s5zuJVEAAw" superActivities="_vCtakkJHEdq4z9xc-r201w" linkToPredecessor="_HY0p0p5KEdq7s5zuJVEAAw" variabilityType="localContribution">
+            <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:Activity" href="uma://_zUDkgCGFEdqMcovRzkCQow#_zvv6IEdlEdqVZeSWHJlGyA"/>
+          </processElements>
+          <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_HY0p0p5KEdq7s5zuJVEAAw" guid="_HY0p0p5KEdq7s5zuJVEAAw">
+            <pred xsi:type="org.eclipse.epf.uma:Activity" href="uma://_zUDkgCGFEdqMcovRzkCQow#_5Lc7ECGYEdqMcovRzkCQow"/>
+          </processElements>
+        </childPackages>
+        <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_AgPocJ5KEdq7s5zuJVEAAw" name="plan_for_next_iteration" guid="_AgPocJ5KEdq7s5zuJVEAAw">
+          <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_AgPocZ5KEdq7s5zuJVEAAw" name="plan_for_next_iteration" guid="_AgPocZ5KEdq7s5zuJVEAAw" superActivities="_vCtakkJHEdq4z9xc-r201w" linkToPredecessor="_ICJ-EJ5zEdq7s5zuJVEAAw _MU8B4J5zEdq7s5zuJVEAAw _OoyT0J5zEdq7s5zuJVEAAw" variabilityType="localContribution">
+            <presentedAfter xsi:type="org.eclipse.epf.uma:Activity" href="uma://_zUDkgCGFEdqMcovRzkCQow#_QR1AwCGZEdqMcovRzkCQow"/>
+            <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:Activity" href="uma://_zUDkgCGFEdqMcovRzkCQow#_O4t4wCGZEdqMcovRzkCQow"/>
+          </processElements>
+          <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_ICJ-EJ5zEdq7s5zuJVEAAw" guid="_ICJ-EJ5zEdq7s5zuJVEAAw" pred="_sz1ksZ5IEdq7s5zuJVEAAw"/>
+          <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_MU8B4J5zEdq7s5zuJVEAAw" guid="_MU8B4J5zEdq7s5zuJVEAAw" pred="_rw4S4Z5IEdq7s5zuJVEAAw"/>
+          <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_OoyT0J5zEdq7s5zuJVEAAw" guid="_OoyT0J5zEdq7s5zuJVEAAw" pred="_qGM5wJ5IEdq7s5zuJVEAAw"/>
+        </childPackages>
+        <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_vCtakkJHEdq4z9xc-r201w" name="transition_iteration" guid="_vCtakkJHEdq4z9xc-r201w" presentationName="Transition Iteration [n]" briefDescription="This iteration includes the activities to be performed during an iteration in the Transition Phase. The focus of the Transition Phase is to ensure that software is available for its end users. The Transition Phase can span several iterations, and includes testing the product in preparation for release, and making minor adjustments based on user feedback. At this point in the lifecycle, user feedback should focus mainly on fine tuning the product, configuring, installing and usability issues, all the major structural issues should have been worked out much earlier in the project lifecycle. " superActivities="_vCtaj0JHEdq4z9xc-r201w" isRepeatable="true" variabilityType="extends" breakdownElements="_1OqDcUsbEdqchp_cYmfkiA _qGM5wJ5IEdq7s5zuJVEAAw _rw4S4Z5IEdq7s5zuJVEAAw _sz1ksZ5IEdq7s5zuJVEAAw _AgPocZ5KEdq7s5zuJVEAAw">
+          <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:CapabilityPattern" href="uma://_zUDkgCGFEdqMcovRzkCQow#_zUDkgSGFEdqMcovRzkCQow"/>
+        </processElements>
+      </childPackages>
+      <processElements xsi:type="org.eclipse.epf.uma:Phase" xmi:id="_vCtaj0JHEdq4z9xc-r201w" name="Transition" guid="_vCtaj0JHEdq4z9xc-r201w" presentationName="Transition" briefDescription="The focus of the Transition Phase is to ensure that software is available for its end users. The Transition Phase can span several iterations, and includes testing the product in preparation for release, and making minor adjustments based on user feedback. At this point in the lifecycle, user feedback should focus mainly on fine tuning the product, configuring, installing and usability issues, all the major structural issues should have been worked out much earlier in the project lifecycle. " superActivities="_vCtak0JHEdq4z9xc-r201w" linkToPredecessor="_vaOFIEmmEdqo-aQWadhKdQ" breakdownElements="_vCtakkJHEdq4z9xc-r201w _vCtakEJHEdq4z9xc-r201w"/>
+      <processElements xsi:type="org.eclipse.epf.uma:Milestone" xmi:id="_vCtakEJHEdq4z9xc-r201w" name="Transition Milestone" guid="_vCtakEJHEdq4z9xc-r201w" presentationName="Product Release Milestone" briefDescription="At the end of the transition phase is the fourth important project milestone, the Product Release Milestone. At this point, you decide if the objectives were met, and if you should start another development cycle. The Product Release Milestone is the result of the customer reviewing and accepting the project deliverables." superActivities="_vCtaj0JHEdq4z9xc-r201w" linkToPredecessor="_76XL8EmmEdqo-aQWadhKdQ">
+        <presentation xmi:id="-JVAwicyW-I92UQ8xBGsVbA" href="uma://-cGyE_FsEx-KUvmJXPg1Wrw#-JVAwicyW-I92UQ8xBGsVbA"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_vaOFIEmmEdqo-aQWadhKdQ" guid="_vaOFIEmmEdqo-aQWadhKdQ" pred="_vCtajUJHEdq4z9xc-r201w"/>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_76XL8EmmEdqo-aQWadhKdQ" guid="_76XL8EmmEdqo-aQWadhKdQ" pred="_vCtakkJHEdq4z9xc-r201w"/>
+    </childPackages>
+    <process xsi:type="org.eclipse.epf.uma:DeliveryProcess" xmi:id="_vCtak0JHEdq4z9xc-r201w" name="small_rup" guid="_vCtak0JHEdq4z9xc-r201w" presentationName="RUP Small Project Lifecycle" briefDescription="This delivery process is an example of the Classic RUP Lifecycle tailored for small projects. It can be used as-is or copied and modified to suit your project's needs." breakdownElements="_vChNR0JHEdq4z9xc-r201w _vChNQkJHEdq4z9xc-r201w _vCtajUJHEdq4z9xc-r201w _vCtaj0JHEdq4z9xc-r201w">
+      <ownedRules xmi:id="_H8-qQEJJEdq4z9xc-r201w" guid="_H8-qQEJJEdq4z9xc-r201w" body="cbs://_vCtak0JHEdq4z9xc-r201w/_vCtaj0JHEdq4z9xc-r201w/_vCtakkJHEdq4z9xc-r201w/_QR1AwCGZEdqMcovRzkCQow wpbs://_vCtak0JHEdq4z9xc-r201w/_vCtaj0JHEdq4z9xc-r201w/_vCtakkJHEdq4z9xc-r201w/_1OqDcUsbEdqchp_cYmfkiA/_nj3CEDHaEdqLw-lQEI8RPw cbs://_vCtak0JHEdq4z9xc-r201w/_vChNR0JHEdq4z9xc-r201w/_vCtaiEJHEdq4z9xc-r201w/_GfLPAUraEdqNBM3TV2Y0Vw/_euaLgCCbEdq3qtLcbHn6PQ wbs://_vCtak0JHEdq4z9xc-r201w/_vChNR0JHEdq4z9xc-r201w/_vCtaiEJHEdq4z9xc-r201w/_GfLPAUraEdqNBM3TV2Y0Vw/_euaLgCCbEdq3qtLcbHn6PQ tbs://_vCtak0JHEdq4z9xc-r201w/_vChNQkJHEdq4z9xc-r201w/_vChNREJHEdq4z9xc-r201w/_cy8_AUsaEdqchp_cYmfkiA/_nj3CEDHaEdqLw-lQEI8RPw cbs://_vCtak0JHEdq4z9xc-r201w/_vCtajUJHEdq4z9xc-r201w/_vCtai0JHEdq4z9xc-r201w/_XIC1MUsbEdqchp_cYmfkiA/_qX4o4DHaEdqLw-lQEI8RPw cbs://_vCtak0JHEdq4z9xc-r201w/_vChNQkJHEdq4z9xc-r201w/_vChNREJHEdq4z9xc-r201w/_cy8_AUsaEdqchp_cYmfkiA/_o6SpgDHaEdqLw-lQEI8RPw wpbs://_vCtak0JHEdq4z9xc-r201w/_vChNR0JHEdq4z9xc-r201w/_vCtaiEJHEdq4z9xc-r201w/_GfLPAUraEdqNBM3TV2Y0Vw/_euaLgCCbEdq3qtLcbHn6PQ tbs://_vCtak0JHEdq4z9xc-r201w/_vCtaj0JHEdq4z9xc-r201w/_vCtakkJHEdq4z9xc-r201w/_1OqDcUsbEdqchp_cYmfkiA/_qX4o4DHaEdqLw-lQEI8RPw tbs://_vCtak0JHEdq4z9xc-r201w/_vChNR0JHEdq4z9xc-r201w/_vCtaiEJHEdq4z9xc-r201w/_GfLPAUraEdqNBM3TV2Y0Vw/_euaLgCCbEdq3qtLcbHn6PQ wpbs://_vCtak0JHEdq4z9xc-r201w/_vCtajUJHEdq4z9xc-r201w/_vCtai0JHEdq4z9xc-r201w/_XIC1MUsbEdqchp_cYmfkiA/_qX4o4DHaEdqLw-lQEI8RPw tbs://_vCtak0JHEdq4z9xc-r201w/_vChNQkJHEdq4z9xc-r201w/_vChNREJHEdq4z9xc-r201w/_cy8_AUsaEdqchp_cYmfkiA/_qX4o4DHaEdqLw-lQEI8RPw cbs://_vCtak0JHEdq4z9xc-r201w/_vCtaj0JHEdq4z9xc-r201w/_vCtakkJHEdq4z9xc-r201w/_1OqDcUsbEdqchp_cYmfkiA/_o6SpgDHaEdqLw-lQEI8RPw wpbs://_vCtak0JHEdq4z9xc-r201w/_vChNQkJHEdq4z9xc-r201w/_vChNREJHEdq4z9xc-r201w/_hOyRIUsaEdqchp_cYmfkiA/_euaLgCCbEdq3qtLcbHn6PQ wbs://_vCtak0JHEdq4z9xc-r201w/_vCtajUJHEdq4z9xc-r201w/_vCtai0JHEdq4z9xc-r201w/_XIC1MUsbEdqchp_cYmfkiA/_nj3CEDHaEdqLw-lQEI8RPw wpbs://_vCtak0JHEdq4z9xc-r201w/_vChNR0JHEdq4z9xc-r201w/_vCtaiEJHEdq4z9xc-r201w/_GfLPAUraEdqNBM3TV2Y0Vw/_h0M3wCCbEdq3qtLcbHn6PQ tbs://_vCtak0JHEdq4z9xc-r201w/_vCtaj0JHEdq4z9xc-r201w/_vCtakkJHEdq4z9xc-r201w/_1OqDcUsbEdqchp_cYmfkiA/_nj3CEDHaEdqLw-lQEI8RPw tbs://_vCtak0JHEdq4z9xc-r201w/_vCtaj0JHEdq4z9xc-r201w/_vCtakkJHEdq4z9xc-r201w/_1OqDcUsbEdqchp_cYmfkiA/_o6SpgDHaEdqLw-lQEI8RPw wpbs://_vCtak0JHEdq4z9xc-r201w/_vCtaj0JHEdq4z9xc-r201w/_vCtakkJHEdq4z9xc-r201w/_1OqDcUsbEdqchp_cYmfkiA/_qX4o4DHaEdqLw-lQEI8RPw wbs://_vCtak0JHEdq4z9xc-r201w/_vCtaj0JHEdq4z9xc-r201w/_vCtakkJHEdq4z9xc-r201w/_1OqDcUsbEdqchp_cYmfkiA/_nj3CEDHaEdqLw-lQEI8RPw wpbs://_vCtak0JHEdq4z9xc-r201w/_vCtajUJHEdq4z9xc-r201w/_vCtai0JHEdq4z9xc-r201w/_XIC1MUsbEdqchp_cYmfkiA/_nj3CEDHaEdqLw-lQEI8RPw wpbs://_vCtak0JHEdq4z9xc-r201w/_vChNQkJHEdq4z9xc-r201w/_vChNREJHEdq4z9xc-r201w/_cy8_AUsaEdqchp_cYmfkiA/_qX4o4DHaEdqLw-lQEI8RPw wpbs://_vCtak0JHEdq4z9xc-r201w/_vCtaj0JHEdq4z9xc-r201w/_vCtakkJHEdq4z9xc-r201w/_1OqDcUsbEdqchp_cYmfkiA/_o6SpgDHaEdqLw-lQEI8RPw tbs://_vCtak0JHEdq4z9xc-r201w/_vCtajUJHEdq4z9xc-r201w/_vCtai0JHEdq4z9xc-r201w/_XIC1MUsbEdqchp_cYmfkiA/_o6SpgDHaEdqLw-lQEI8RPw cbs://_vCtak0JHEdq4z9xc-r201w/_vCtaj0JHEdq4z9xc-r201w/_vCtakkJHEdq4z9xc-r201w/_1OqDcUsbEdqchp_cYmfkiA/_nj3CEDHaEdqLw-lQEI8RPw wbs://_vCtak0JHEdq4z9xc-r201w/_vCtaj0JHEdq4z9xc-r201w/_vCtakkJHEdq4z9xc-r201w/_QR1AwCGZEdqMcovRzkCQow wbs://_vCtak0JHEdq4z9xc-r201w/_vCtaj0JHEdq4z9xc-r201w/_vCtakkJHEdq4z9xc-r201w/_1OqDcUsbEdqchp_cYmfkiA/_o6SpgDHaEdqLw-lQEI8RPw tbs://_vCtak0JHEdq4z9xc-r201w/_vCtaj0JHEdq4z9xc-r201w/_vCtakkJHEdq4z9xc-r201w/_QR1AwCGZEdqMcovRzkCQow cbs://_vCtak0JHEdq4z9xc-r201w/_vChNQkJHEdq4z9xc-r201w/_vChNREJHEdq4z9xc-r201w/_cy8_AUsaEdqchp_cYmfkiA/_qX4o4DHaEdqLw-lQEI8RPw cbs://_vCtak0JHEdq4z9xc-r201w/_vChNQkJHEdq4z9xc-r201w/_vChNREJHEdq4z9xc-r201w/_hOyRIUsaEdqchp_cYmfkiA/_euaLgCCbEdq3qtLcbHn6PQ cbs://_vCtak0JHEdq4z9xc-r201w/_vChNQkJHEdq4z9xc-r201w/_vChNREJHEdq4z9xc-r201w/_cy8_AUsaEdqchp_cYmfkiA/_nj3CEDHaEdqLw-lQEI8RPw wpbs://_vCtak0JHEdq4z9xc-r201w/_vCtaj0JHEdq4z9xc-r201w/_vCtakkJHEdq4z9xc-r201w/_QR1AwCGZEdqMcovRzkCQow wpbs://_vCtak0JHEdq4z9xc-r201w/_vChNQkJHEdq4z9xc-r201w/_vChNREJHEdq4z9xc-r201w/_cy8_AUsaEdqchp_cYmfkiA/_nj3CEDHaEdqLw-lQEI8RPw wbs://_vCtak0JHEdq4z9xc-r201w/_vChNR0JHEdq4z9xc-r201w/_vCtaiEJHEdq4z9xc-r201w/_GfLPAUraEdqNBM3TV2Y0Vw/_h0M3wCCbEdq3qtLcbHn6PQ cbs://_vCtak0JHEdq4z9xc-r201w/_vCtajUJHEdq4z9xc-r201w/_vCtai0JHEdq4z9xc-r201w/_XIC1MUsbEdqchp_cYmfkiA/_nj3CEDHaEdqLw-lQEI8RPw wbs://_vCtak0JHEdq4z9xc-r201w/_vChNQkJHEdq4z9xc-r201w/_vChNREJHEdq4z9xc-r201w/_cy8_AUsaEdqchp_cYmfkiA/_o6SpgDHaEdqLw-lQEI8RPw wbs://_vCtak0JHEdq4z9xc-r201w/_vCtajUJHEdq4z9xc-r201w/_vCtai0JHEdq4z9xc-r201w/_XIC1MUsbEdqchp_cYmfkiA/_qX4o4DHaEdqLw-lQEI8RPw tbs://_vCtak0JHEdq4z9xc-r201w/_vCtajUJHEdq4z9xc-r201w/_vCtai0JHEdq4z9xc-r201w/_XIC1MUsbEdqchp_cYmfkiA/_qX4o4DHaEdqLw-lQEI8RPw tbs://_vCtak0JHEdq4z9xc-r201w/_vChNQkJHEdq4z9xc-r201w/_vChNREJHEdq4z9xc-r201w/_cy8_AUsaEdqchp_cYmfkiA/_o6SpgDHaEdqLw-lQEI8RPw cbs://_vCtak0JHEdq4z9xc-r201w/_vCtaj0JHEdq4z9xc-r201w/_vCtakkJHEdq4z9xc-r201w/_1OqDcUsbEdqchp_cYmfkiA/_qX4o4DHaEdqLw-lQEI8RPw wbs://_vCtak0JHEdq4z9xc-r201w/_vChNQkJHEdq4z9xc-r201w/_vChNREJHEdq4z9xc-r201w/_cy8_AUsaEdqchp_cYmfkiA/_qX4o4DHaEdqLw-lQEI8RPw wbs://_vCtak0JHEdq4z9xc-r201w/_vCtaj0JHEdq4z9xc-r201w/_vCtakkJHEdq4z9xc-r201w/_1OqDcUsbEdqchp_cYmfkiA/_qX4o4DHaEdqLw-lQEI8RPw wpbs://_vCtak0JHEdq4z9xc-r201w/_vCtajUJHEdq4z9xc-r201w/_vCtai0JHEdq4z9xc-r201w/_XIC1MUsbEdqchp_cYmfkiA/_o6SpgDHaEdqLw-lQEI8RPw wpbs://_vCtak0JHEdq4z9xc-r201w/_vChNQkJHEdq4z9xc-r201w/_vChNREJHEdq4z9xc-r201w/_cy8_AUsaEdqchp_cYmfkiA/_o6SpgDHaEdqLw-lQEI8RPw tbs://_vCtak0JHEdq4z9xc-r201w/_vChNR0JHEdq4z9xc-r201w/_vCtaiEJHEdq4z9xc-r201w/_GfLPAUraEdqNBM3TV2Y0Vw/_h0M3wCCbEdq3qtLcbHn6PQ cbs://_vCtak0JHEdq4z9xc-r201w/_vCtajUJHEdq4z9xc-r201w/_vCtai0JHEdq4z9xc-r201w/_XIC1MUsbEdqchp_cYmfkiA/_o6SpgDHaEdqLw-lQEI8RPw tbs://_vCtak0JHEdq4z9xc-r201w/_vChNQkJHEdq4z9xc-r201w/_vChNREJHEdq4z9xc-r201w/_hOyRIUsaEdqchp_cYmfkiA/_euaLgCCbEdq3qtLcbHn6PQ tbs://_vCtak0JHEdq4z9xc-r201w/_vCtajUJHEdq4z9xc-r201w/_vCtai0JHEdq4z9xc-r201w/_XIC1MUsbEdqchp_cYmfkiA/_nj3CEDHaEdqLw-lQEI8RPw cbs://_vCtak0JHEdq4z9xc-r201w/_vChNR0JHEdq4z9xc-r201w/_vCtaiEJHEdq4z9xc-r201w/_GfLPAUraEdqNBM3TV2Y0Vw/_h0M3wCCbEdq3qtLcbHn6PQ wbs://_vCtak0JHEdq4z9xc-r201w/_vChNQkJHEdq4z9xc-r201w/_vChNREJHEdq4z9xc-r201w/_cy8_AUsaEdqchp_cYmfkiA/_nj3CEDHaEdqLw-lQEI8RPw wbs://_vCtak0JHEdq4z9xc-r201w/_vChNQkJHEdq4z9xc-r201w/_vChNREJHEdq4z9xc-r201w/_hOyRIUsaEdqchp_cYmfkiA/_euaLgCCbEdq3qtLcbHn6PQ wbs://_vCtak0JHEdq4z9xc-r201w/_vCtajUJHEdq4z9xc-r201w/_vCtai0JHEdq4z9xc-r201w/_XIC1MUsbEdqchp_cYmfkiA/_o6SpgDHaEdqLw-lQEI8RPw "/>
+      <presentation xmi:id="-cGyE_FsEx-KUvmJXPg1Wrw" href="uma://-cGyE_FsEx-KUvmJXPg1Wrw#-cGyE_FsEx-KUvmJXPg1Wrw"/>
+      <includesPatterns href="uma://_dRZcYDYPEdqQ8Lb12XU1pw#_dRfjADYPEdqQ8Lb12XU1pw"/>
+      <includesPatterns href="uma://_o3nZoCFrEdqrX8YVzvtlIg#_o3nZoSFrEdqrX8YVzvtlIg"/>
+      <includesPatterns href="uma://_pV4NgCFsEdqrX8YVzvtlIg#_pV4NgSFsEdqrX8YVzvtlIg"/>
+      <includesPatterns href="uma://_gMrD8CGFEdqMcovRzkCQow#_gM9X0CGFEdqMcovRzkCQow"/>
+      <includesPatterns href="uma://_zUDkgCGFEdqMcovRzkCQow#_zUDkgSGFEdqMcovRzkCQow"/>
+      <defaultContext href="uma://_0q85QJySEd2xJNwbI6lxKA#_7b91MC7KEdqnFYtvTYpATw"/>
+      <validContext href="uma://_0q85QJySEd2xJNwbI6lxKA#_7b91MC7KEdqnFYtvTYpATw"/>
+    </process>
+  </org.eclipse.epf.uma:ProcessComponent>
+</xmi:XMI>

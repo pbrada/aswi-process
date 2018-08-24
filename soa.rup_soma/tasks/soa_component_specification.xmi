@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="-8ABrJuhIcsJ0Hmvr8xY0bQ" name=",_OjBb4Ew_EduGSMz-5zscXg" guid="-8ABrJuhIcsJ0Hmvr8xY0bQ" changeDate="2006-09-27T00:58:01.212-0700" version="1.0.0">
+  <mainDescription>&lt;p>&#xD;
+    Services used in an SOA based solution are realized through &lt;a class=&quot;elementlinkwithtype&quot;&#xD;
+    href=&quot;./../../soa.rup_soma/workproducts/soa_svce_component_E259F3CC.html&quot;&#xD;
+    guid=&quot;{447385A0-E565-4C87-A082-402AF21CA088}&quot;>Artifact: Service Component&lt;/a>s which belong to a specific business&#xD;
+    function aligned subsystem. Each Service Component will have the responsibility of ensuring the QoS of the services it&#xD;
+    will realize. As an enterprise-scale asset, each Service Component qualifies for funding, governance and maintenance&#xD;
+    associated with it. Infrastructure management must be in place to ensure availability, load balancing, security,&#xD;
+    performance, versioning and overall health of the Service Component that will be responsible for implementing the&#xD;
+    functionality of a set of services and ensuring its quality of service. Functional components and technical components&#xD;
+    can be used across several Service Components.&#xD;
+&lt;/p></mainDescription>
+  <sections xmi:id="_pusoUE-HEdu0EMZ-3o0kDQ" name="Model Component Interfaces" guid="_pusoUE-HEdu0EMZ-3o0kDQ">
+    <sectionDescription>&lt;p>&#xD;
+    Components, and in particular Service Components, should not provide operations directly, they should instead use&#xD;
+    interfaces to describe a set of operations and then provide/realize&amp;nbsp;the interface. This is described in general in&#xD;
+    the RUP, see &lt;a class=&quot;elementLinkWithType&quot; href=&quot;./../../soa.rup_soma/tasks/soa_subsystem_design_B9BB36BD.html&quot;&#xD;
+    guid=&quot;{FACE1697-1CB6-4F57-8B39-ED507BE7006F}&quot;>Task: Subsystem Design (SOA)&lt;/a>&amp;nbsp;and &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../core.base_rup/tasks/identify_design_elements_E884AB82.html&quot; guid=&quot;{97D7343A-6993-4AB7-8F86-4DAC8C9075C8}&quot;>Task:&#xD;
+    Identify Design Elements&lt;/a>.&#xD;
+&lt;/p>&#xD;
+&lt;h4>&#xD;
+    Example&#xD;
+&lt;/h4>&#xD;
+&lt;p>&#xD;
+    In our Rent-a-Car example we have identified (through Subsystem Analysis) the need for a Reservation Service Component.&#xD;
+    To ensure a reusable and flexible design we may also create a corresponding Reservation interface, or use the Service&#xD;
+    Specification (from &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../soa.rup_soma/tasks/soa_service_specification_AB6BA763.html&quot;&#xD;
+    guid=&quot;{9EB2B302-79F6-4DF8-AEB7-98E6AC1756DD}&quot;>Task: Service Specification&lt;/a>) to describe the interface to our Service&#xD;
+    Component. The Component will realize (in UML terms) each provided interface and may also denote it's dependency on&#xD;
+    other component interfaces using the UML usage relationship, as shown in the diagram below.&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;center&quot;>&#xD;
+    &lt;img height=&quot;106&quot; alt=&quot;&quot; src=&quot;./resources/component_interfaces.png&quot; width=&quot;505&quot; />&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Note that we have elided the details of the interfaces themselves for clarity.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_NL_nYE-IEdu0EMZ-3o0kDQ" name="Model Component Attributes" guid="_NL_nYE-IEdu0EMZ-3o0kDQ">
+    <sectionDescription>In this step, we will define the details of each service component, including attributes, services, policies, and rules.&#xD;
+The template that is to document Service Component specification will include the following attributes: &#xD;
+&lt;ol>&#xD;
+    &lt;li>&#xD;
+        Properties or Attributes&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Rules&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Variations&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Depends on &amp;lt;other components&amp;gt;&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Composition of Functional and Technical components&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Services Provided&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Services Required&#xD;
+    &lt;/li>&#xD;
+&lt;/ol></sectionDescription>
+  </sections>
+  <sections xmi:id="_WzkloE-IEdu0EMZ-3o0kDQ" name="Model Component Events and Messages" guid="_WzkloE-IEdu0EMZ-3o0kDQ">
+    <sectionDescription>During this activity, we identify the events that the component must sense and respond to when they get triggered.&#xD;
+In-coming and out-going component messages are also specified. For services that are driven by changes to data, a&#xD;
+data-centric view must be taken and business processes not within the scope of the service-based solution must be&#xD;
+identified and assessed for generation of events and the supplying of data to the consumer services in the service-oriented&#xD;
+solution. For example, a new client may be added by multiple business processes within an ISV package. In all cases, the&#xD;
+same data may not be captured for the client depending upon the specific context of the business process. Consumer services&#xD;
+that need to be aware of new clients through a provider service need to be able to able to handle the invocation of the new&#xD;
+client service regardless of the business process that generates it.</sectionDescription>
+  </sections>
+  <sections xmi:id="_doRzoE-IEdu0EMZ-3o0kDQ" name="Model Component Internal Structure" guid="_doRzoE-IEdu0EMZ-3o0kDQ">
+    <sectionDescription>&lt;p>&#xD;
+    During this activity, it is important to create &lt;em>at least a&lt;/em>&amp;nbsp;class diagram showing the relationships&#xD;
+    between the functional and technical components of each service component. Standard UML modeling is applied at this&#xD;
+    stage. Use of patterns is encouraged to structure the resulting object graph in a manner that is extensible and open to&#xD;
+    changes. If a large degree of change is anticipated, it is recommended to conduct &lt;em>&lt;a&#xD;
+    class=&quot;elementLinkWithUserText&quot; href=&quot;./../../soa.rup_soma/guidances/guidelines/variability_analysis_ADC6BC98.html&quot;&#xD;
+    guid=&quot;_dyVEgDJdEduxsZm92FKuLw&quot;>Variability Analysis&lt;/a>&lt;/em>&amp;nbsp;at this stage.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    As described in the previous task, when designing for change, or anticipating significant impact on the design and&#xD;
+    structure of IT system as a result of the future business changes, then it is wise to employ the &lt;em>&lt;a&#xD;
+    class=&quot;elementLinkWithUserText&quot; href=&quot;./../../soa.rup_soma/guidances/guidelines/variability_analysis_ADC6BC98.html&quot;&#xD;
+    guid=&quot;_dyVEgDJdEduxsZm92FKuLw&quot;>Variability Analysis&lt;/a>&lt;/em> techniques. These techniques refactor commonality and&#xD;
+    externalize variations using design patterns. The commonality and variations discovered earliercan be used as a&#xD;
+    starting point and augmented through the use of common design patterns such as Strategy, State [i], Rule Object [ii]&#xD;
+    ,Type Object, etc.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Analysis done during detailed design identifies commonality and focuses on building pluggable variations and involves&#xD;
+    six principles that help separate the changing from the less changing aspects of software systems and isolate and&#xD;
+    encapsulate the changes:&#xD;
+&lt;/p>&#xD;
+&lt;ol>&#xD;
+    &lt;li>&#xD;
+        &lt;em>Separate and model changing from non-changing aspects of the domain: Identify, Separate, Encapsulate and&#xD;
+        Externalize Increasing Variations.&lt;/em>&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;em>Create type hierarchies for each variation point.&lt;/em>&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;em>Assign Rule Types to each Variation Type.&lt;/em>&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;em>Implement three-levels of abstraction; use aggregate inheritance meta-pattern.&lt;/em>&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;em>Start from reuse levels higher than objects and Build Assets at each reuse Level; Build Small Frameworks around&#xD;
+        Variation Points. In general, each Framework should have no more than 7+-2 classes.&lt;/em>&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;em>Each Reuse Element has its own behaviors. Externalize behavior as configurable data that can be read into the&#xD;
+        application to allow soft-wiring.&lt;/em>&#xD;
+    &lt;/li>&#xD;
+&lt;/ol>&#xD;
+&lt;hr align=&quot;left&quot; width=&quot;33%&quot; size=&quot;1&quot; />&#xD;
+&lt;p>&#xD;
+    [i] Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides, Design Patterns, Addision-Wesley 1994.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    [ii] Arsanjani, A., Rule Object: A Pattern Language for Flexible Modeling and Construction of Business Rules,&#xD;
+    Washington University Technical Report number:&amp;nbsp; wucs-00-29, Proceedings of the Pattern Languages of Program&#xD;
+    Design, 2000.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_r0pywE-IEdu0EMZ-3o0kDQ" name="Model Component Flow" guid="_r0pywE-IEdu0EMZ-3o0kDQ">
+    <sectionDescription>&lt;p>&#xD;
+    During this activity, we identify the internal flow of control within the service component. This can be represented as&#xD;
+    a sequence or activity diagram.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;b>ISV Consideration&lt;/b>: The Component Internal Flow within an ISV package Component may or may not be exposed and/or&#xD;
+    configurable depending upon the package. If objects within the ISV Component are exposed and configurable, their flow&#xD;
+    may be tailored and customized to better meet the solution. However, one should be cognizant of any potential ongoing&#xD;
+    maintenance issues associated with doing so. In many cases, it will not be possible, nor even necessary, to identify&#xD;
+    the Component Internal Flow within an ISV package. In this case, the ISV Component should be considered a &quot;black box&quot;,&#xD;
+    with only exposed and realized services documented.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_D6sGIE3-Edu1Eq153Mo3sg" name="Allocate Components to Layers" guid="_D6sGIE3-Edu1Eq153Mo3sg">
+    <sectionDescription>&lt;p>&#xD;
+    Layering offers the following benefits:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Layers help to bring quality attributes of modifiability and portability to an IT system. A change to a lower layer&#xD;
+        that does not affect its interface will require no change to a higher layer. For example, any J2EE&amp;trade; compliant&#xD;
+        application server that conforms to the J2EE&amp;trade; standard may be freely substituted without change to&#xD;
+        application-level software. A change to a higher layer that does not affect what facilities it requires from lower&#xD;
+        layers will not affect any lower layer. In general, changes to a layered software system that affect no interface&#xD;
+        are confined to a single layer.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Layers are part of the blueprint role that architecture plays for constructing the system. Knowing the layers in&#xD;
+        which their software resides, developers know what services they can rely on in the coding environment. Layers may&#xD;
+        define work assignments for development teams (although not always).&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Layers are part of the communication role played by architecture. In a large system, the number of dependencies&#xD;
+        among modules expands rapidly. Organizing the software into layers with interfaces is an important tool to manage&#xD;
+        complexity and communicate the structure to developers.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Layers help with the analysis role played by architecture. They can be used for analyzing the impact of changes to&#xD;
+        the design.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;p>&#xD;
+    Layering can be strict or non-strict. A strict layering scheme means that components can only use components in the&#xD;
+    same layer or layers immediately below them. A non-strict layering scheme means components can use components in the&#xD;
+    same or &lt;i>any&lt;/i> lower layer. Note that as a general rule, however, components should not be allowed to use&#xD;
+    components in upper layers. If components have dependencies on components in higher layers, then it becomes difficult&#xD;
+    to replace the upper layer components without having to change the lower layer components. For more information,&#xD;
+    including techniques for modeling layers,&amp;nbsp;see &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../soa.rup_soma/guidances/concepts/solution_partitioning_352116F8.html&quot;&#xD;
+    guid=&quot;1.6501323286225543E-305&quot;>Concept: Solution Partitioning&lt;/a>.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    An important point to note software layers are not the same as tiers. Allocation to machines in a distributed&#xD;
+    environment, data flow among elements, and the presence and utilization of communication channels all tend to be&#xD;
+    expressed in tier pictures which maybe indiscernible from layer diagrams. Tier diagrams tend to show two-way arrows&#xD;
+    indicating bi-directional communication of some sort. Bi-directional (symmetric) communication is bad news in a layer&#xD;
+    diagram. Further, assignment of a component to a tier is based on the placement rules considered when defining the&#xD;
+    Operational architecture and is defined by the required service level characteristics of the system. The main&#xD;
+    difference between layering diagrams and tier pictures is that the former has no notion of placement while the latter&#xD;
+    clearly has.&#xD;
+&lt;/p>&#xD;
+&lt;h4>&#xD;
+    Layering rules-of-thumb&#xD;
+&lt;/h4>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        All components that provide application-independent business functionality could go in one layer.&#xD;
+        Application-independent business functions are things like &quot;customer management&quot; and &quot;product management&quot; that&#xD;
+        apply to a range of different applications.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        All components that provide technical functions, such as error handling, authentication, logging and audit could go&#xD;
+        in another (logical) layer. These components are both business and application independent. In some cases,&#xD;
+        proximity of technical to functional components may require they be placed in a common layer. These are&#xD;
+        architectural decisions and need to be documented as such.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Middleware components such as message queuing and relational DBMS software could go in a further layer. This is&#xD;
+        also referred to as the &quot;Fabric&quot;.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;h4>&#xD;
+    Example&#xD;
+&lt;/h4>&#xD;
+&lt;p>&#xD;
+    The following is a layered view of an SOA showing typical (and indeed recommended) layers for the different elements&#xD;
+    present in a solution.&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;center&quot;>&#xD;
+    &lt;img height=&quot;379&quot; alt=&quot;&quot; src=&quot;./resources/soa_layers.png&quot; width=&quot;403&quot; />&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Now, in this layering scheme it is reasonably simple to realize where our components will reside, we place the relevant&#xD;
+    components for our Rent-a-Car example into the Service Components layer, as shown below. Note that we wish&#xD;
+    to&amp;nbsp;employ strict layers in our model and so we utilize UML Composition to contain our components in the Service&#xD;
+    Component layer and only expose the functionality of the Service Components using delegate ports where the port&#xD;
+    provides the same interface as the Service Component itself.&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;center&quot;>&#xD;
+    &lt;img height=&quot;214&quot; alt=&quot;&quot; src=&quot;./resources/component_layer.png&quot; width=&quot;469&quot; />&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <purpose>&lt;p>&#xD;
+    To elaborate on&amp;nbsp;one or more&amp;nbsp;&lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../core.base_rup/workproducts/rup_design_subsystem_1A8D169B.html&quot;&#xD;
+    guid=&quot;{A3C60B25-9780-4BFA-81AF-C1AD40D8A833}&quot;>Artifact: Design Subsystem&lt;/a>s which were described during &lt;a&#xD;
+    class=&quot;elementLinkWithType&quot; href=&quot;./../../soa.rup_soma/tasks/soa_subsystem_design_B9BB36BD.html&quot;&#xD;
+    guid=&quot;{FACE1697-1CB6-4F57-8B39-ED507BE7006F}&quot;>Task: Subsystem Design (SOA)&lt;/a>&amp;nbsp;and to provide detailed &lt;a&#xD;
+    class=&quot;elementLinkWithType&quot; href=&quot;./../../soa.rup_soma/workproducts/soa_svce_component_E259F3CC.html&quot;&#xD;
+    guid=&quot;{447385A0-E565-4C87-A082-402AF21CA088}&quot;>Artifact: Service Component&lt;/a>&amp;nbsp;designs.&#xD;
+&lt;/p></purpose>
+</org.eclipse.epf.uma:TaskDescription>

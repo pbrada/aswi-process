@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="-Fshu42Gp6jMo78dxZaIJew" name="bm_operation_analysis,_jMFtgBpVEdqUwb9RAn2tTA" guid="-Fshu42Gp6jMo78dxZaIJew" changeDate="2005-10-07T17:55:23.689-0700" version="7.1.0">
+  <mainDescription>In this task, the Business Designer begins the transformation of a behavioral description at the Business System Level,&#xD;
+intocoarse-grained system structure (and associated interactions) and behavior at the&amp;nbsp;Business&amp;nbsp;Subsystem Level.</mainDescription>
+  <sections xmi:id="_0W16cCDFEdq2Lq6r0Grljg" name="Elaborate black-box text into subsystem white-box steps" guid="_0W16cCDFEdq2Lq6r0Grljg">
+    <sectionDescription>&lt;p>&#xD;
+    In this step, you take the Business Use-Case Model and elaborate the black-box flow-of-events text (which is a property&#xD;
+    of each business&amp;nbsp;use case) into sequences of white-box steps (which speak in terms of subsystem actions and&#xD;
+    interactions, using the subsystems and outlined collaborations from Business Architectural Analysis). If this task is&#xD;
+    performed for a subsystem for which the operations have been already specified, then the starting point are the&#xD;
+    operations and you can proceed directly to the &lt;a href=&quot;#Initial%20White-Box%20Step%20Expansion&quot;>Initial White-Box Step&#xD;
+    Expansion&lt;/a>.&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    Next, a Business System Operation (black-box step) is expanded into one or more white-box steps, each of which is&#xD;
+    performed by a named subsystem. The Designer is guided by the work done by the Architect (during Architectural&#xD;
+    Analysis) in the selection of subsystems and interactions which are used to describe the white-box steps. Note that the&#xD;
+    analysis now proceeds driven by Business System Operation; that is, treat the next realization step as the realization&#xD;
+    of each Business System Operation (rather than the more abstract notion of&amp;nbsp;business use case black-box&#xD;
+    step).&amp;nbsp;&#xD;
+&lt;/p>&#xD;
+&lt;h4 align=&quot;left&quot;>&#xD;
+    &lt;a id=&quot;Initial White-Box Step Expansion&quot; name=&quot;Initial White-Box Step Expansion&quot;>Initial white-box step expansion&lt;/a>&#xD;
+&lt;/h4>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    The white-box steps for each Business System Operation are captured (initially) in the Business Analysis Model,&#xD;
+    associated with the corresponding Business System Operation as its realization. The white-box steps are not stored with&#xD;
+    the&amp;nbsp;Business Use-Case (they are shown that way here simply as an illustration), but can be traced from&#xD;
+    the&amp;nbsp;Business Use Case through the Business System Operation&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_4MA1MCDFEdq2Lq6r0Grljg" name="Augment white-box steps with locality, process and worker decisions" guid="_4MA1MCDFEdq2Lq6r0Grljg">
+    <sectionDescription>&lt;p>&#xD;
+    The description is then further augmented with locality decisions, process decisions, and worker decisions. The&#xD;
+    locality decision places, with some latitude (given the level of abstraction of locality) where the subsystem white-box&#xD;
+    step are performed. The process decision is necessary only when it is decided that (for this step at least), the&#xD;
+    subsystem is &quot;passive,&quot; that is, its operations are invoked by processes external to the subsystem. An &quot;active&quot;&#xD;
+    subsystem is able to respond autonomously, using processes internal to the subsystem. The&amp;nbsp;business designer is&#xD;
+    again guided by the work of the&amp;nbsp;business architect (in producing the Locality Model and Process Model). In worker&#xD;
+    decisions, appropriate when you make allocations to human resources, you start to identify the organizational entities&#xD;
+    and then system worker resources needed for a Business System Operation.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    If the analysis shows that a white-box step requires more than one locality (or process), then decompose it into&#xD;
+    smaller steps, so that each can be associated with a single locality (and process, where appropriate). This&#xD;
+    decomposition might have important architectural ramifications (it might need the subsystem to be refactored) and needs&#xD;
+    to be canvassed with the team or person playing the&amp;nbsp;Business Architect role.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_7uLUYCDFEdq2Lq6r0Grljg" name="Allocate white-box budgeted requirements" guid="_7uLUYCDFEdq2Lq6r0Grljg">
+    <sectionDescription>Next, apportion black-box step budgeted requirements to white-box steps. This allocation helps determine the performance&#xD;
+requirements for both the subsystem and the associated locality. In the case of a passive subsystem, it is an input into&#xD;
+latency analysis of the invoking process (which might have other responsibilities).</sectionDescription>
+  </sections>
+  <sections xmi:id="_DFm08CDGEdq2Lq6r0Grljg" name="Sort white-box steps by subsystem" guid="_DFm08CDGEdq2Lq6r0Grljg">
+    <sectionDescription>&lt;p>&#xD;
+    In this step, you collect together all white-box steps for each subsystem (that is, the white-box steps that&#xD;
+    &lt;i>belong&lt;/i> to that subsystem). This is done in preparation for the identification of &lt;i>Sub&lt;/i>system Operations&#xD;
+    (which are to the subsystem what Business System Operations are to the business system), by examination of the&#xD;
+    subsystem white-box step descriptions. As with the identification of business system operations, there &lt;i>might&lt;/i> not&#xD;
+    be a unique subsystem operation for each white-box step. Also note that the white-box steps are grouped by business&#xD;
+    system operation. For example, this might be done in tabular form as well, grouped by subsystem:&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_Fvav0CDGEdq2Lq6r0Grljg" name="Refine outlined collaborations for each system operation" guid="_Fvav0CDGEdq2Lq6r0Grljg">
+    <sectionDescription>&lt;p>&#xD;
+    Based on the white-box steps, subsystem interactions are created in sequence or collaboration diagrams (in the Business&#xD;
+    Analysis Model). This refines the work done previously by the&amp;nbsp;Business Architect. At this stage, the&#xD;
+    collaborations might still be abstract, perhaps only links are identified, or messages at an abstract level. This work,&#xD;
+    nevertheless, gives an insight into the coupling and cohesion of the subsystems. This refines the white-box step&#xD;
+    expansion performed previously (see &lt;a href=&quot;#Initial%20White-Box%20Step%20Expansion&quot;>Initial White-Box Step&#xD;
+    Expansion&lt;/a>).&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_KZBYMCDGEdq2Lq6r0Grljg" name="Evaluate the analysis" guid="_KZBYMCDGEdq2Lq6r0Grljg">
+    <sectionDescription>The&amp;nbsp;Business Designer needs to call for an informal review at the conclusion of this task, and thus ensure that all&#xD;
+emergent issues are recorded and scheduled for resolution.&lt;br /></sectionDescription>
+  </sections>
+  <purpose>&lt;ul class=&quot;noindent&quot;>&#xD;
+    &lt;li>&#xD;
+        To elaborate the black-box flow-of-events text for each&amp;nbsp;Business Operation in each architecturally significant&#xD;
+        business&amp;nbsp;use case into sequences of white-box steps, speaking in terms of subsystem actions and&#xD;
+        collaborations.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        To augment&amp;nbsp; these white-box descriptions with decisions regarding the relevant architectural views, and&#xD;
+        white-box budget requirements.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        To create subsystem interactions in sequence or collaboration diagrams (in the Business Analysis Model), based on&#xD;
+        the white-box steps.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></purpose>
+</org.eclipse.epf.uma:TaskDescription>

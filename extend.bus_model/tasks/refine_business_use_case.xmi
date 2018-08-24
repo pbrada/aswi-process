@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="-DviXNaCrgu6Xd6KNsWmSpA" name="refine_business_use_case,_NQD5oDOdEduwK5jZAAYgbw" guid="-DviXNaCrgu6Xd6KNsWmSpA" changeDate="2006-09-19T20:28:58.310-0700" version="7.1.0">
+  <mainDescription>&lt;p>&#xD;
+    Previous work (in &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../extend.bus_model/tasks/find_business_actors_and_use_cases_2D0CD77E.html&quot;&#xD;
+    guid=&quot;{1CCEB101-0027-451C-81CA-521D8B127F98}&quot;>Task: Find Business Actors and Use Cases&lt;/a>) has identified an initial&#xD;
+    set of business actors and business use-cases; in this task, this set is examined to determine if it is necessary to&#xD;
+    refine or partition the set of business use-cases to a level which makes their specification focused, their coverage&#xD;
+    adequate (in support of &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../extend.bus_model/workproducts/rup_business_goal_D99D08F9.html&quot;&#xD;
+    guid=&quot;{6DC6732B-E7F1-495E-B5EC-AEBFD7BE80FE}&quot;>Artifact: Business Goal&lt;/a>s, for example), and their realization&#xD;
+    feasible. This situation may arise when the initial set covers broad functions identified at the business boundary&#xD;
+    under consideration, when for example, the business use-case model is initially produced for an executive-level&#xD;
+    audience interested primarily in the high-level intent and purpose of the business.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    If this examination finds it necessary, the refinement of the business use-case model is then performed using one or&#xD;
+    more of the following techniques (note that in this process, the set of business actors may also be refined):&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        the high-level business use-case may have several business actors with interaction and information requirements&#xD;
+        that are partitionable&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        there are sequences of interactions which have value individually to a business&amp;nbsp;actor -- these&amp;nbsp;can be&#xD;
+        discoverable by examination of the black-box specification of the business use case. Examination (and refinement)&#xD;
+        of the results of the interactions may show that there are intermediate results that have value to the business&#xD;
+        actor. Long-running processes should also be examined for obvious checkpoints.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        the business actor(s) for the high-level business use-case may be specialized&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        lower-level&amp;nbsp;intentions or goals&amp;nbsp;(for the actors) that are usefully separated can be discerned, and&#xD;
+        business use-cases identified for these&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        consideration of &lt;a class=&quot;elementLinkWithUserText&quot;&#xD;
+        href=&quot;./../../extend.bus_model/workproducts/rup_business_goal_D99D08F9.html&quot;&#xD;
+        guid=&quot;{6DC6732B-E7F1-495E-B5EC-AEBFD7BE80FE}&quot;>Business Goals&lt;/a> may suggest supporting business use-cases that&#xD;
+        were not initially evident. For example, a taxi service may operate a fleet of premium quality cabs (newer, cleaner&#xD;
+        and more luxurious models). In times of high demand, one of their business goals is to maintain on-time service to&#xD;
+        their customers even if no quality cabs are available, which may mean dispatching a regular cab from another&#xD;
+        company.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        existing business-process documentation review, and further discussions with business subject-matter&#xD;
+        experts,&amp;nbsp;can suggest further refinement&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></mainDescription>
+  <sections xmi:id="_8ByO0DynEduG7MU-6vCUhA" name="Analyze Business Use-Case Model" guid="_8ByO0DynEduG7MU-6vCUhA">
+    <sectionDescription>&lt;p>&#xD;
+    The &lt;a class=&quot;elementlinkwithtype&quot; href=&quot;./../../extend.bus_model/workproducts/rup_business_use_case_model_EC79264C.html&quot;&#xD;
+    guid=&quot;{89BEF367-5875-47E0-97D6-23E5BCCE52B8}&quot;>Artifact: Business Use Case Model&lt;/a>&amp;nbsp;is analyzed to find business&#xD;
+    use cases that are too coarse grained to be sensibly realized directly (by &lt;a class=&quot;elementlinkwithtype&quot;&#xD;
+    href=&quot;./../../extend.bus_model/workproducts/rup_business_use_case_realization_55CAF00D.html&quot;&#xD;
+    guid=&quot;{47F095EB-E651-4A34-B75B-BACE38ED90C7}&quot;>Artifact: Business Use-Case Realization&lt;/a>s) -- the &lt;a&#xD;
+    class=&quot;elementlinkwithusertext&quot; href=&quot;./../../extend.bus_model/roles/rup_business_process_analyst_bpm_ADB80BA8.html&quot;&#xD;
+    guid=&quot;_Vs1xUDOgEduwK5jZAAYgbw&quot;>business-process analyst&lt;/a> makes the judgment that it would be better to partition the&#xD;
+    &lt;a class=&quot;elementlinkwithtype&quot; href=&quot;./../../extend.bus_model/workproducts/rup_business_use_case_14F1BAF2.html&quot;&#xD;
+    guid=&quot;{587A849E-B5F2-4B17-8C7F-1C59B0F5612D}&quot;>Artifact: Business Use Case&lt;/a>&amp;nbsp;into a refined set and specify these&#xD;
+    individually in detail -- and ultimately produce realizations for them. For example, the business use-case in the&#xD;
+    diagram below, named &lt;em>Rent Vehicle&lt;/em>, describes the intent or business purpose well enough, but is long-running&#xD;
+    and has some evident intermediate points at which value is delivered to its business actors, the rental customer and&#xD;
+    rental clerk.&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;center&quot;>&#xD;
+    &lt;img height=&quot;155&quot; alt=&quot;Rent Vehicle Business Use-Case&quot; src=&quot;./resources/rent_vehicle_buc.gif&quot; width=&quot;380&quot; />&#xD;
+&lt;/p>&#xD;
+&lt;p class=&quot;MsoCaption&quot; style=&quot;MARGIN: 6pt 0in&quot;>&#xD;
+    &lt;span style=&quot;mso-bookmark: _Toc107116741&quot;>For example, the vehicle must be &lt;em>reserved&lt;/em> before being allowed off&#xD;
+    the lot, and must be &lt;em>checked out&lt;/em> of the lot before being returned (and &lt;em>checked in&lt;/em>).&lt;/span>&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_FAdaADyoEduG7MU-6vCUhA" name="Refine High-Level (Level 1) Business Use Case" guid="_FAdaADyoEduG7MU-6vCUhA">
+    <sectionDescription>&lt;p>&#xD;
+    The high-level business use-case identified in the step &lt;em>Analyze Business Use-Case Model&lt;/em> is refined based on&#xD;
+    the criteria described in the &lt;em>Main Description.&lt;/em> In the example, we identified that &lt;em>Rent Vehicle&lt;/em> was a&#xD;
+    long-running process, with some checkpoints at which value was delivered to the business actors -- giving the refined&#xD;
+    business use-cases shown below, &lt;em>Reserve Vehicle, Check-out Vehicle&lt;/em> and &lt;em>Check-in Vehicle.&lt;/em>&amp;nbsp;&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;center&quot;>&#xD;
+    &lt;img height=&quot;329&quot; alt=&quot;Refined Business Use-Cases&quot; src=&quot;./resources/rent_vehicle_refine.gif&quot; width=&quot;374&quot; />&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    It is conceivable that another level of refinement could be needed, but it is preferable to produce any finer-grained&#xD;
+    description using a &lt;a class=&quot;elementlinkwithusertext&quot;&#xD;
+    href=&quot;./../../extend.bus_model/workproducts/rup_business_use_case_realization_55CAF00D.html&quot;&#xD;
+    guid=&quot;{47F095EB-E651-4A34-B75B-BACE38ED90C7}&quot;>Business Use-Case Realization&lt;/a>, typically in the form of an activity&#xD;
+    diagram, in &lt;a class=&quot;elementlinkwithtype&quot; href=&quot;./../../extend.bus_model/tasks/bm_uc_analysis_60F4BCAE.html&quot;&#xD;
+    guid=&quot;_T1XJMBpXEdqUwb9RAn2tTA&quot;>Task: Business Use-Case Analysis&lt;/a>.&amp;nbsp;The action nodes in the activity diagram&#xD;
+    represent another level of process decomposition, as described in &lt;a class=&quot;elementlinkwithtype&quot;&#xD;
+    href=&quot;./../../extend.bus_model/guidances/concepts/business_process_decomposition_C9A38841.html&quot;&#xD;
+    guid=&quot;_vHtFUC7CEdu64PK-GeN94Q&quot;>Concept: Business Process Decomposition&lt;/a>, and illustrated below for the business&#xD;
+    use-case &lt;em>Reserve Vehicle&lt;/em>.&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;center&quot;>&#xD;
+    &lt;img height=&quot;266&quot; alt=&quot;Realization of Reserve Vehicle&quot; src=&quot;./resources/buc_realization_activity.gif&quot; width=&quot;412&quot; />&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    These lower-level business use-cases will be further detailed in &lt;a class=&quot;elementlinkwithtype&quot;&#xD;
+    href=&quot;./../../extend.bus_model/tasks/detail_business_use_case_FDA3D473.html&quot; guid=&quot;{0DD91699-9FBA-420D-8E2B-C0945557A791}&quot;>Task:&#xD;
+    Detail a Business Use Case&lt;/a>.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    The refinement of a business use-case into lower-level business use-cases may reveal additional non-functional&#xD;
+    requirements (for example, performance, regulatory or security requirements) that must be captured in the &lt;a&#xD;
+    class=&quot;elementlinkwithtype&quot; href=&quot;./../../extend.bus_model/workproducts/rup_supplementary_business_specification_BBC64E05.html&quot;&#xD;
+    guid=&quot;{0DADA95B-7C1D-44BD-9DB5-41AC99767753}&quot;>Artifact: Supplementary Business Specification&lt;/a>.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <purpose>&lt;p>&#xD;
+    The purpose of this task is to take a business use-case that is defined at a high-level to show the intent and purpose&#xD;
+    of the business or business system -- but which is too abstract to realize directly -- and refine it into a set of use&#xD;
+    cases for the business system that can be realized by a business process (in &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+    href=&quot;./../../extend.bus_model/tasks/bm_uc_analysis_60F4BCAE.html&quot; guid=&quot;_T1XJMBpXEdqUwb9RAn2tTA&quot;>Task: Business Use-Case&#xD;
+    Analysis&lt;/a>).&#xD;
+&lt;/p></purpose>
+</org.eclipse.epf.uma:TaskDescription>

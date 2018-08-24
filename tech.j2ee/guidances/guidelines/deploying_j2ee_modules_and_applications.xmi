@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_DBCVQNwuEdmRU7lXzo6lKQ" name="deploying_j2ee_modules_and_applications,5.3908533897796765E-306" guid="_DBCVQNwuEdmRU7lXzo6lKQ" changeDate="2005-10-25T14:43:56.963-0700" version="7.1.0">
+  <mainDescription>&lt;h3>&#xD;
+    Introduction&#xD;
+&lt;/h3>&#xD;
+&lt;p>&#xD;
+    This page contains guidelines on deploying stand-alone J2EE Modules and J2EE Applications to an operational&#xD;
+    environment. The environment may be a development environment, test environment, or the customer installation site. The&#xD;
+    details of deployment vary depending on the application and the environment, and usually requires the use of&#xD;
+    vendor-specific tools. However, these guidelines provide a general outline of the required steps, including installing,&#xD;
+    configuring, and launching the application.&#xD;
+&lt;/p>&#xD;
+&lt;h3>&#xD;
+    Installing&#xD;
+&lt;/h3>&#xD;
+&lt;p>&#xD;
+    The following are performed when installing the J2EE archives into the deployment environment.&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Identify the files to be deployed (a specific &lt;a class=&quot;elementlink&quot;&#xD;
+        href=&quot;./../../../core.base_rup/workproducts/rup_build_BA336272.html&quot; guid=&quot;{53728CD9-FA47-4B58-A443-E9F9DC196916}&quot;>Build&lt;/a>&#xD;
+        in the Configuration Management Repository).&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Preconfigure any required resources like database connections.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Transfer the archives to the target hardware (should be specified in the deployment model and/or in installation&#xD;
+        instructions).&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        If the target hardware is a test configuration, perform any additional required installation instructions as&#xD;
+        specified in the test configuration.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;h3>&#xD;
+    Configuring&#xD;
+&lt;/h3>&#xD;
+&lt;p>&#xD;
+    The target hardware and software environment are checked to make sure they are properly configured in accordance with&#xD;
+    the installation instructions, including resolving any external dependencies, ensuring that security roles are mapped&#xD;
+    onto user groups and accounts in the target environment, and the setting up of other applications and resources that&#xD;
+    interact with the J2EE application, such as legacy systems, databases, and shared services and libraries (e.g.,&#xD;
+    third-party JAR's for Web Services and XML support).&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    If you want to debug the application, debugging should be enabled on the application server. Usually, this requires&#xD;
+    restarting the application server in debug mode, which will be described in the application server documentation.&#xD;
+&lt;/p>&#xD;
+&lt;h3>&#xD;
+    Launching&#xD;
+&lt;/h3>&#xD;
+&lt;p>&#xD;
+    The application is launched, so that is is available for use and or testing.&#xD;
+&lt;/p>&lt;br />&#xD;
+&lt;br /></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1">
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="-kunfIDnONudcQ3JCn7woOA" name="implement_components,{4DC6F53E-1FE1-44EE-812B-003D3BD1ACEA}" guid="-kunfIDnONudcQ3JCn7woOA">
+    <mainDescription>&lt;a id=&quot;Description&quot; name=&quot;Description&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    In this activity:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        The implementers write source code, adapt existing source code, compile, link and perform unit tests, as they&#xD;
+        implement the elements in the design model. If defects in the design are discovered, the implementer submits rework&#xD;
+        feedback on the design.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        The implementers also fix code defects and perform unit tests to verify the changes. Finally, the code is reviewed&#xD;
+        to evaluate quality and compliance with the Programming Guidelines.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></mainDescription>
+    <usageGuidance>&lt;p>&#xD;
+    The review task is best done in several sessions, each focused on small sections of the system or on specific issues.&#xD;
+    The goal of these sessions is to identify specific problems in the code that need to be resolved, not to resolve them&#xD;
+    on the spot; resolution discussions should be postponed until after the review. More frequent reviews which are smaller&#xD;
+    in scope are more productive than less frequent sessions which are larger in scope.&#xD;
+&lt;/p></usageGuidance>
+    <howtoStaff>&lt;a id=&quot;HowToStaff&quot; name=&quot;HowToStaff&quot;>&lt;/a> 
+&lt;p>
+    The tasks carried out by the implementer tend to be done by a single person. The review task is best carried out by a
+    small team staffed by cross-functional team members, typically more senior members of technical staff with greater
+    experience into common problems and pitfalls encountered in the programming language. Special expertise may be required
+    in the problem domain, as is often the case in systems involving telephony or devices with special interfaces.
+    Expertise in specific algorithms or programming techniques may also be required.
+&lt;/p></howtoStaff>
+  </org.eclipse.epf.uma:ActivityDescription>
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="-tDGQWrW5gcK-zXHgmsQ3bQ" name="integrate_each_subsystem,{26723872-54F2-48C0-8384-0F595BD86EAD}" guid="-tDGQWrW5gcK-zXHgmsQ3bQ">
+    <mainDescription>&lt;a id=&quot;Description&quot; name=&quot;Description&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    If several implementers work (as a team) on the same Implementation Subsystem, the changes from the individual&#xD;
+    implementers need to be integrated to create a new consistent version of the Implementation Subsystem. The integration&#xD;
+    results in series of builds in a subsystem integration workspace. Each build is then integration tested by a tester or&#xD;
+    an implementer executing the developer tests. Following testing, the Implementation Subsystem is delivered into the&#xD;
+    system integration workspace.&#xD;
+&lt;/p></mainDescription>
+    <usageGuidance>&lt;p>&#xD;
+    Integration work is typically automated to a large degree, with manual effort required when the build breaks. A&#xD;
+    frequent strategy is to perform automated nightly builds and some automated testing (usually at the unit level),&#xD;
+    allowing for frequent feedback from the build process.&lt;br />&#xD;
+&lt;/p></usageGuidance>
+    <howtoStaff>&lt;a id=&quot;HowToStaff&quot; name=&quot;HowToStaff&quot;>&lt;/a> 
+&lt;p>
+    Integration is typically carried out by a single person (for a small project on which the build process in simple) or a
+    small team (for a large project on which the build process is complex). The integrators need experience in software
+    build management, configuration management, and experience in the programming language in which the components to be
+    integrated are written. Because integration often involves a high degree of automation, expertise in operating system
+    shell or scripting languages and tools like 'make' (on Unix) or 'ant' (for Java) is also essential.
+&lt;/p></howtoStaff>
+  </org.eclipse.epf.uma:ActivityDescription>
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="-R-BrInOWeV1cRaaAM8AkIA" name="integrate_the_system,{1EBA0F67-240A-4402-B830-4DB0FDFEEB9D}" guid="-R-BrInOWeV1cRaaAM8AkIA">
+    <mainDescription>&lt;a id=&quot;Description&quot; name=&quot;Description&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    The integrator integrates the system, in accordance with the integration build plan, by adding the delivered&#xD;
+    implementation subsystems into the system integration workspace and creating builds. Each build is then integration&#xD;
+    tested by a tester. After the last increment, the build can be completely system tested by a tester.&#xD;
+&lt;/p></mainDescription>
+    <usageGuidance>&lt;p>&#xD;
+    Integration work is typically automated to a large degree, with manual effort required when the build breaks. A&#xD;
+    frequent strategy is to perform automated nightly builds and some automated testing (usually at the unit level),&#xD;
+    allowing for frequent feedback from the build process.&#xD;
+&lt;/p></usageGuidance>
+    <howtoStaff>&lt;a id=&quot;HowToStaff&quot; name=&quot;HowToStaff&quot;>&lt;/a> 
+&lt;p>
+    Integration is typically carried out by a single person (for a small project on which the build process in simple) or a
+    small team (for a large project on which the build process is complex). The integrators need experience in software
+    build management, configuration management, and experience in the programming language in which the components to be
+    integrated are written. Because integration often involves a high degree of automation, expertise in operating system
+    shell or scripting languages and tools like 'make' (on Unix) or 'ant' (for Java) is also essential.
+&lt;/p></howtoStaff>
+  </org.eclipse.epf.uma:ActivityDescription>
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="-NvMfvn4eKf0zR5NtYg8Htg" name="plan_the_integration,{3CBDBBD0-6482-4FA2-820B-F6711E0BD84B}" guid="-NvMfvn4eKf0zR5NtYg8Htg">
+    <mainDescription>&lt;a id=&quot;Description&quot; name=&quot;Description&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    Planning the integration is focused on which implementation subsystems should be implemented, and the order in which&#xD;
+    the implementation subsystems should be integrated in the current iteration.&#xD;
+&lt;/p></mainDescription>
+    <usageGuidance>&lt;p>&#xD;
+    Planning the integration process should be done early, at least in rough form, when the architecture is baselined. As&#xD;
+    the architecture and design evolve, the integration plan should be examined and updated to ensure that the build plan&#xD;
+    does not become obsolete by changes in the architecture or the design.&#xD;
+&lt;/p></usageGuidance>
+    <howtoStaff>&lt;a id=&quot;HowToStaff&quot; name=&quot;HowToStaff&quot;>&lt;/a> 
+&lt;p>
+    Integration is typically carried out by a single person (for a small project on which the build process in simple) or a
+    small team (for a large project on which the build process is complex). The integrators need experience in software
+    build management, configuration management, and experience in the programming language in which the components to be
+    integrated are written. Because integration often involves a high degree of automation, expertise in operating system
+    shell or scripting languages and tools like 'make' (on Unix) or 'ant' (for Java) is also essential.
+&lt;/p></howtoStaff>
+  </org.eclipse.epf.uma:ActivityDescription>
+  <org.eclipse.epf.uma:ActivityDescription xmi:id="-SGbJX7xqNQckoj0heFQkEA" name="structure_the_implementation_model,{4C4FF747-885B-4569-A462-756C8ADD79AB}" guid="-SGbJX7xqNQckoj0heFQkEA">
+    <mainDescription>&lt;a id=&quot;Description&quot; name=&quot;Description&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    Structuring the implementation model generally results in a set of Implementation Subsystems that can be developed&#xD;
+    relatively independently. A well-organized model will prevent configuration management problems and will allow the&#xD;
+    product to built-up from successively larger integration builds.&#xD;
+&lt;/p></mainDescription>
+    <usageGuidance>&lt;p>&#xD;
+    Structuring the implementation model should be done in parallel with the evolution of the other aspects of the&#xD;
+    architecture; failure to consider it early in the architecting process may lead to poor organization of the&#xD;
+    implementation and may impede the implementation and build process. In the worst case, a poorly organized&#xD;
+    implementation model will impede parallel development of software by the project team.&#xD;
+&lt;/p></usageGuidance>
+    <howtoStaff>&lt;a id=&quot;HowToStaff&quot; name=&quot;HowToStaff&quot;>&lt;/a> 
+&lt;p>
+    While the software architect has primary responsibility for the structure of the implementation model, the software
+    architect's experience needs to include that of an integrator at the system level. They need experience in software
+    build management, configuration management, and experience in the programming language in which the components to be
+    integrated are written. Because the automation of integration will be handled by the integrator, the software architect
+    need not be an expert in scripting or integration automation, but some familiarity with the topic will often help the
+    build process go more smoothly.
+&lt;/p></howtoStaff>
+  </org.eclipse.epf.uma:ActivityDescription>
+  <org.eclipse.epf.uma:ProcessDescription xmi:id="-gJUQ36qbBZvqhIlcIS7HTA" name="implementation,{F2AD342D-0F3B-4E19-A351-75ECDCB806F5}" guid="-gJUQ36qbBZvqhIlcIS7HTA">
+    <mainDescription>&lt;p>&#xD;
+    To help explain the work involved in the Implementation discipline, the activities and work products are organized into&#xD;
+    a capability pattern for the discipline.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Each&amp;nbsp;activity represents a high-level goal that needs to be achieved to effectively complete implementation.&amp;nbsp;&#xD;
+    &lt;a class=&quot;elementLink&quot; href=&quot;./../../core.base_rup/capabilitypatterns/structure_the_implementation_model_505A84E.html&quot;&#xD;
+    guid=&quot;{4C4FF747-885B-4569-A462-756C8ADD79AB}&quot;>Structure the Implementation Model&lt;/a>&amp;nbsp;is done early in the&#xD;
+    Elaboration phase. For each iteration, starting in Elaboration, you would &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../core.base_rup/capabilitypatterns/plan_the_integration_30EC233.html&quot;&#xD;
+    guid=&quot;{3CBDBBD0-6482-4FA2-820B-F6711E0BD84B}&quot;>Plan the Integration&lt;/a>, &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../core.base_rup/capabilitypatterns/implement_components_AFD1799D.html&quot;&#xD;
+    guid=&quot;{4DC6F53E-1FE1-44EE-812B-003D3BD1ACEA}&quot;>Implement Components&lt;/a>, &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../core.base_rup/capabilitypatterns/integrate_each_subsystem_B9835A47.html&quot;&#xD;
+    guid=&quot;{26723872-54F2-48C0-8384-0F595BD86EAD}&quot;>Integrate each Subsystem&lt;/a>, and finally &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../core.base_rup/capabilitypatterns/integrate_the_system_255F6819.html&quot;&#xD;
+    guid=&quot;{1EBA0F67-240A-4402-B830-4DB0FDFEEB9D}&quot;>Integrate the System&lt;/a>. The two latter activities are closely related&#xD;
+    to integration test activities.&#xD;
+&lt;/p></mainDescription>
+    <usageNotes>&lt;h4>&#xD;
+    Decide How to Perform the Workflow&#xD;
+&lt;/h4>&#xD;
+&lt;p>&#xD;
+    The following decisions should be made regarding the Implementation discipline's workflow:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Decide how to perform the workflow by looking at the activities in this workflow. Study the diagram with its &lt;a&#xD;
+        class=&quot;elementLink&quot; href=&quot;./../../core.base_rup/guidances/termdefinitions/guard_condition_E3068D2.html&quot;&#xD;
+        guid=&quot;_yJ5m89nmEdmO6L4XMImrsA&quot;>guard condition&lt;/a>s and the guidelines below. Decide which activities to perform&#xD;
+        and in which order.&amp;nbsp;&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Decide what parts of the Implementation activities to perform. The following are some parts that can be introduced&#xD;
+        relatively independently from each other.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;div align=&quot;center&quot;>&#xD;
+    &lt;table&#xD;
+    style=&quot;BORDER-RIGHT: rgb(128,128,128) 1px solid; BORDER-TOP: rgb(128,128,128) 1px solid; BORDER-LEFT: rgb(128,128,128) 1px solid; BORDER-BOTTOM: rgb(128,128,128) 1px solid&quot;&#xD;
+     cellspacing=&quot;0&quot; bordercolordark=&quot;#808080&quot; cellpadding=&quot;4&quot; width=&quot;85%&quot; bordercolorlight=&quot;#808080&quot; border=&quot;1&quot;>&#xD;
+        &lt;tbody>&#xD;
+            &lt;tr>&#xD;
+                &lt;th scope=&quot;col&quot; align=&quot;middle&quot; width=&quot;25%&quot;>&#xD;
+                    &lt;p class=&quot;tableheading&quot;>&#xD;
+                        Part of workflow&#xD;
+                    &lt;/p>&#xD;
+                &lt;/th>&#xD;
+                &lt;th scope=&quot;col&quot; align=&quot;middle&quot; width=&quot;75%&quot;>&#xD;
+                    &lt;p class=&quot;tableheading&quot;>&#xD;
+                        Comments&#xD;
+                    &lt;/p>&#xD;
+                &lt;/th>&#xD;
+            &lt;/tr>&#xD;
+            &lt;tr>&#xD;
+                &lt;td width=&quot;25%&quot;>&#xD;
+                    Integration and build management&#xD;
+                &lt;/td>&#xD;
+                &lt;td width=&quot;75%&quot;>&#xD;
+                    The role&amp;nbsp;&lt;a class=&quot;elementLink&quot; href=&quot;./../../core.base_rup/roles/rup_integrator_284A604C.html&quot;&#xD;
+                    guid=&quot;{502B4138-0772-4A4E-A183-C647497AFCB8}&quot;>Integrator&lt;/a> and the &lt;a class=&quot;elementLinkWithType&quot;&#xD;
+                    href=&quot;./../../core.base_rup/capabilitypatterns/plan_the_integration_30EC233.html&quot;&#xD;
+                    guid=&quot;{3CBDBBD0-6482-4FA2-820B-F6711E0BD84B}&quot;>Activity: Plan the Integration&lt;/a>&amp;nbsp;together with&#xD;
+                    the&amp;nbsp;&lt;a class=&quot;elementLinkWithType&quot;&#xD;
+                    href=&quot;./../../core.base_rup/workproducts/rup_integration_build_plan_31CE4B79.html&quot;&#xD;
+                    guid=&quot;{FA56B557-857D-4122-8E60-7A4A84418EB1}&quot;>Artifact: Integration Build Plan&lt;/a>&amp;nbsp;are usually&#xD;
+                    introduced early in the project. The other integration related activities, such as&amp;nbsp;&lt;a&#xD;
+                    class=&quot;elementLinkWithType&quot; href=&quot;./../../core.base_rup/tasks/plan_subsystem_integration_9CF14B68.html&quot;&#xD;
+                    guid=&quot;{197B2D0F-6B49-4998-8A71-0799BC29D13F}&quot;>Task: Plan Subsystem Integration&lt;/a>, &lt;a&#xD;
+                    class=&quot;elementLinkWithType&quot; href=&quot;./../../core.base_rup/tasks/integrate_subsystem_E8F878D6.html&quot;&#xD;
+                    guid=&quot;{58FF0476-120F-411A-AD8C-16573032BE91}&quot;>Task: Integrate Subsystem&lt;/a>, and&amp;nbsp;&lt;a&#xD;
+                    class=&quot;elementLinkWithType&quot; href=&quot;./../../core.base_rup/tasks/integrate_system_9AFF7BFD.html&quot;&#xD;
+                    guid=&quot;{3233A207-6271-4492-A8BF-64E1D89D6C5E}&quot;>Task: Integrate System&lt;/a> are introduced just in time&#xD;
+                    when the integration starts.&amp;nbsp;&#xD;
+                &lt;/td>&#xD;
+            &lt;/tr>&#xD;
+            &lt;tr>&#xD;
+                &lt;td width=&quot;25%&quot;>&#xD;
+                    Implementing components&#xD;
+                &lt;/td>&#xD;
+                &lt;td width=&quot;75%&quot;>&#xD;
+                    The roles&amp;nbsp;&lt;a class=&quot;elementLink&quot; href=&quot;./../../core.base_rup/roles/rup_implementer_D145E819.html&quot;&#xD;
+                    guid=&quot;{75501BAA-0CCE-4852-A7B2-B10CA71C002A}&quot;>Implementer&lt;/a> and &lt;a class=&quot;elementLink&quot;&#xD;
+                    href=&quot;./../../core.base_rup/roles/rup_reviewer_19930772.html&quot;&#xD;
+                    guid=&quot;{638E0897-F63B-444C-8178-D05224689DE7}&quot;>Reviewer&lt;/a>, and their activities and artifacts, are&#xD;
+                    introduced at the start of implementation, in each iteration.&#xD;
+                &lt;/td>&#xD;
+            &lt;/tr>&#xD;
+        &lt;/tbody>&#xD;
+    &lt;/table>&lt;br />&#xD;
+&lt;/div>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Decide when, during the project lifecycle, to introduce each part of the workflow. You can often wait until the&#xD;
+        Elaboration phase before introducing the whole Implementation discipline.&amp;nbsp;Any prototyping that occurs in the&#xD;
+        Inception phase is usually exploratory and is not conducted with the same rigor (with respect to artifacts and&#xD;
+        reviews, for example) as required by the complete Implementation workflow during elaboration and construction.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></usageNotes>
+  </org.eclipse.epf.uma:ProcessDescription>
+</xmi:XMI>

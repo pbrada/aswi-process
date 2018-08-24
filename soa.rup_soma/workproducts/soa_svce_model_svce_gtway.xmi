@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ArtifactDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.5.1" xmi:id="_q5RdgPS3EdmIX5Pw7v8pRw" name="soa_svce_model_svce_gtway,{B0BF4414-0382-4605-9EE9-82F0DEC7292C}" guid="_q5RdgPS3EdmIX5Pw7v8pRw" changeDate="2006-08-15T10:41:51.442-0700" version="7.1.0">
+  <purpose>&lt;a id=&quot;XE_service_gateway__artifact_definition&quot; name=&quot;XE_service_gateway__artifact_definition&quot;>&lt;/a>&lt;a id=&quot;Purpose&quot;&#xD;
+name=&quot;Purpose&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    The following people use the service gateways:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        &lt;b>Software Architects,&lt;/b> for an understanding of the communication between partitions.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;b>Implementers,&lt;/b> for an understanding of mediation requirements between partitions.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        &lt;b>Those who design the next version of the system&lt;/b>, to understand the composition of partitions and services in&#xD;
+        the service model.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></purpose>
+  <representationOptions>UML Representation: &#xD;
+&lt;p>&#xD;
+    Port, stereotyped as &amp;lt;&amp;lt;Service Gateway&amp;gt;&amp;gt;.&amp;nbsp;Its type &lt;i>shall&lt;/i> be a &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../soa.rup_soma/workproducts/soa_svce_model_svce_spec_37E89A91.html&quot;&#xD;
+    guid=&quot;{20F06B5E-95D5-422C-AB68-7C213D28533A}&quot;>Service Specification&lt;/a> and it &lt;i>shall&lt;/i> only be used on Service&#xD;
+    Partitions.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Properties:&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    allowedBindings : [*] String - denotes the allowed platform binding mechanism a channel may use in connecting to the&#xD;
+    service; examples might be SOAP-RPC, SOAP-Doc, HTTP-Get, and so on.&lt;br />&#xD;
+&lt;/p>&lt;br />&#xD;
+&lt;br /></representationOptions>
+</org.eclipse.epf.uma:ArtifactDescription>
