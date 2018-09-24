@@ -1,0 +1,52 @@
+<form name="comment-form" method="post" onsubmit="return doSubmit();">
+    <h5>Nový komentář</h5>
+    <label for="cmb-author">Jméno:</label>
+    <input type="text" name="cmb-author" id="cmb-author" required="required">
+    <label for="cmb-comment">Komentář:</label>
+    <div id="cmb-comment-form"></div>
+    <input type="submit" class="btn" value="Poslat">
+    <input type="hidden" name="cmb-page_id" id="cmb-page_id" value="%s">
+    <input type="hidden" name="cmb-page_url" id="cmb-page_url" value="%s">
+    <input type="hidden" name="cmb-comment" id="cmb-comment" value="">
+</form>
+<script type="text/javascript">
+    var toolbarOptions = [
+      ['bold', 'italic', 'underline', 'strike'],
+      ['blockquote', 'code-block'],
+      [{ 'header': 1 }, { 'header': 2 }],
+      [{ 'list': 'ordered'}, { 'list': 'bullet' }],
+      [{ 'script': 'sub'}, { 'script': 'super' }],
+      [{ 'indent': '-1'}, { 'indent': '+1' }],
+      [{ 'direction': 'rtl' }],
+      [{ 'size': ['small', false, 'large', 'huge'] }],
+      [{ 'header': [1, 2, 3, 4, 5, 6, false] }],
+      [{ 'color': [] }, { 'background': [] }],
+      [{ 'font': [] }],
+      [{ 'align': [] }],
+      ['image'],
+      ['clean']
+    ];
+
+    var options = {
+        modules: {
+            toolbar: toolbarOptions
+        },
+        placeholder: 'Napište svůj komentář...',
+        theme: 'snow'
+    };
+
+    var editor = new Quill('#cmb-comment-form', options);
+
+    function doSubmit() {
+        var innerHTML = document.querySelector(".ql-editor").innerHTML;
+
+        if (editor.getLength() == 1) {
+            alert('Musíte napsat komentář');
+            return false;
+        } else {
+            document['comment-form']['cmb-comment'].value = innerHTML;
+            return true;
+        }
+    }
+</script>
+
