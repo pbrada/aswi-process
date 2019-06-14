@@ -1,8 +1,9 @@
-# aswi-process
+# ASWI Process
 
-This is the DEV branch of the RMC/EPF description of the sw development process used for KIV/ASWI course projects.
+This is the DEV branch of the RMC/EPF description of the sw development process used for KIV/ASWI course projects.  See https://courseware.zcu.cz/portal/studium/courseware/kiv/aswi for course overview.
 
-See https://courseware.zcu.cz/portal/studium/courseware/kiv/aswi for course overview.
+Note: The Czech language is used throughout the process description, due to the target audience.
+
 
 ## How to install
 
